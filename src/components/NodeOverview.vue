@@ -2,7 +2,6 @@
 import { computed } from 'vue'
 
 import {
-  formatSlug,
   getAncestorIds,
   getNodeLabel,
   getTagLabel,
@@ -49,7 +48,7 @@ const localizedLabels = computed(() => {
     <!-- Breadcrumb -->
     <nav class="overview-breadcrumb">
       <template
-        v-for="(item, i) in breadcrumbs"
+        v-for="item in breadcrumbs"
         :key="item.id"
       >
         <button

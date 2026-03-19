@@ -3,17 +3,15 @@ import Graph from 'graphology'
 import forceAtlas2 from 'graphology-layout-forceatlas2'
 import FA2Layout from 'graphology-layout-forceatlas2/worker'
 import Sigma from 'sigma'
-import { onBeforeUnmount, onMounted, ref, watch } from 'vue'
+import { nextTick, onBeforeUnmount, onMounted, ref, watch } from 'vue'
 
-import type { LocaleCode, TaxonomyDataset } from '@/utils/taxonomy'
-import type { LocalizedLabel } from '@/utils/taxonomy'
+import type { LocaleCode, LocalizedLabel, TaxonomyDataset } from '@/utils/taxonomy'
 import { getNodeLabel } from '@/utils/taxonomy'
 
 const props = defineProps<{
   dataset: TaxonomyDataset
   locale: LocaleCode
   translations: Record<string, LocalizedLabel>
-  tagFrequency: Record<string, number>
   selectedNodeId: string
 }>()
 
@@ -27,129 +25,94 @@ let sigma: Sigma | null = null
 let graph: Graph | null = null
 let layout: FA2Layout | null = null
 let stopTimer: ReturnType<typeof setTimeout> | null = null
+let resizeObserver: ResizeObserver | null = null
+let prevHighlightedId: string | null = null
 
-// Muted, cohesive palette
+const REFINE_DURATION_MS = 3000
+
 const CATEGORY_COLORS = [
   '#b07080', '#b09070', '#a0a060', '#70a070',
   '#60a0a0', '#6090b0', '#7080b0', '#9070a0',
   '#a070a0', '#b07090', '#a08060', '#80a080',
 ]
 
-// Dimmed edge colors
 const EDGE_COLORS = [
   '#6e4850', '#6e5a46', '#636340', '#466346',
   '#3e6363', '#3e5a6e', '#4a5070', '#5a4664',
   '#644664', '#6e465a', '#64503e', '#506350',
 ]
 
-function getRootCategory(nodeId: string): string {
-  return nodeId.split('.')[0]
-}
-
-// Node size by depth: depth 0 (root) is largest
 const SIZE_BY_DEPTH = [18, 12, 8, 5.5, 4, 3.5, 3]
 
-function computePositions(): Map<string, { x: number; y: number }> {
-  const positions = new Map<string, { x: number; y: number }>()
-  const { nodes, rootChildren } = props.dataset
+const FA2_BASE = {
+  gravity: 1.5,
+  barnesHutOptimize: true,
+  barnesHutTheta: 0.5,
+  strongGravityMode: true,
+  slowDown: 20,
+  adjustSizes: true,
+  linLogMode: false,
+  outboundAttractionDistribution: false,
+  edgeWeightInfluence: 2,
+}
 
-  // Root node at center
-  positions.set('root', { x: 0, y: 0 })
+const PREWARM_PHASES = [
+  { iterations: 60, scalingRatio: 1 },
+  { iterations: 60, scalingRatio: 3 },
+  { iterations: 60, scalingRatio: 5 },
+  { iterations: 20, scalingRatio: 6 },
+]
 
+const fa2Settings = { ...FA2_BASE, scalingRatio: 30 }
+
+function buildGraph(): Graph {
+  const g = new Graph()
+  const { rootChildren, flatNodes, nodes } = props.dataset
+
+  // Color map for root categories
+  const colorIndexMap = new Map<string, number>()
+  rootChildren.forEach((id, i) => colorIndexMap.set(id, i % CATEGORY_COLORS.length))
+
+  // Radial initial positions
   const sectorAngle = (2 * Math.PI) / rootChildren.length
-  const radiusStep = 40
+  const radiusStep = 10
 
-  function layoutSubtree(nodeId: string, centerAngle: number, angleSpan: number, depth: number): void {
+  function assignPositions(nodeId: string, centerAngle: number, angleSpan: number, depth: number): void {
     const node = nodes[nodeId]
     if (!node) return
 
     const radius = depth * radiusStep
-    positions.set(nodeId, {
+    g.addNode(node.id, {
+      color: CATEGORY_COLORS[colorIndexMap.get(node.path[0]) ?? 0],
+      label: getNodeLabel(node, props.locale, props.translations),
+      size: SIZE_BY_DEPTH[Math.min(node.depth + 1, SIZE_BY_DEPTH.length - 1)],
       x: Math.cos(centerAngle) * radius,
       y: Math.sin(centerAngle) * radius,
     })
 
-    const childIds = node.children
-    if (childIds.length === 0) return
+    if (node.children.length === 0) return
+    const step = angleSpan / node.children.length
+    const start = centerAngle - angleSpan / 2 + step / 2
+    node.children.forEach((childId, i) => assignPositions(childId, start + i * step, step, depth + 1))
+  }
 
-    const childAngleStep = angleSpan / childIds.length
-    const startAngle = centerAngle - angleSpan / 2 + childAngleStep / 2
+  // Root node (fixed at center)
+  g.addNode('root', { color: '#8690a6', fixed: true, label: 'Danbooru Tags', size: SIZE_BY_DEPTH[0], x: 0, y: 0 })
+  rootChildren.forEach((id, i) => assignPositions(id, i * sectorAngle - Math.PI / 2, sectorAngle, 1))
 
-    childIds.forEach((childId, i) => {
-      const childAngle = startAngle + i * childAngleStep
-      layoutSubtree(childId, childAngle, childAngleStep, depth + 1)
+  // Edges (single loop)
+  for (const node of flatNodes) {
+    if (!node.parentId || !g.hasNode(node.parentId)) continue
+    const ci = colorIndexMap.get(node.path[0]) ?? 0
+    g.addEdge(node.parentId, node.id, {
+      color: EDGE_COLORS[ci],
+      size: node.parentId === 'root' ? 0.4 : 0.3,
     })
   }
 
-  rootChildren.forEach((rootId, i) => {
-    const centerAngle = i * sectorAngle - Math.PI / 2
-    layoutSubtree(rootId, centerAngle, sectorAngle, 1)
-  })
-
-  return positions
-}
-
-function buildGraph(): Graph {
-  const g = new Graph()
-  const { rootChildren } = props.dataset
-  // Color index per root category
-  const colorIndexMap = new Map<string, number>()
-  rootChildren.forEach((id, i) => {
-    colorIndexMap.set(id, i % CATEGORY_COLORS.length)
-  })
-
-  // Add root ancestor node at center, fixed in place
-  g.addNode('root', {
-    label: 'Danbooru Tags',
-    size: SIZE_BY_DEPTH[0],
-    color: '#8690a6',
-    x: 0,
-    y: 0,
-    fixed: true,
-  })
-
-  const allPositions = computePositions()
-
-  // Add all category nodes
-  for (const node of props.dataset.flatNodes) {
-    const rootCat = getRootCategory(node.id)
-    const ci = colorIndexMap.get(rootCat) ?? 0
-    const color = CATEGORY_COLORS[ci]
-    const label = getNodeLabel(node, props.locale, props.translations)
-    const depth = node.depth + 1
-    const size = SIZE_BY_DEPTH[Math.min(depth, SIZE_BY_DEPTH.length - 1)]
-    const pos = allPositions.get(node.id) ?? { x: 0, y: 0 }
-
-    g.addNode(node.id, {
-      label,
-      size,
-      color,
-      x: pos.x,
-      y: pos.y,
-    })
-  }
-
-  // Add edges: root -> top-level categories
-  for (const rootChildId of rootChildren) {
-    if (g.hasNode(rootChildId)) {
-      const ci = colorIndexMap.get(rootChildId) ?? 0
-      g.addEdge('root', rootChildId, {
-        color: EDGE_COLORS[ci],
-        size: 0.4,
-      })
-    }
-  }
-
-  // Add edges: parent -> child for all other nodes
-  for (const node of props.dataset.flatNodes) {
-    if (node.parentId && node.parentId !== 'root' && g.hasNode(node.parentId)) {
-      const rootCat = getRootCategory(node.id)
-      const ci = colorIndexMap.get(rootCat) ?? 0
-      g.addEdge(node.parentId, node.id, {
-        color: EDGE_COLORS[ci],
-        size: 0.3,
-      })
-    }
+  // Progressive prewarm
+  for (const phase of PREWARM_PHASES) {
+    forceAtlas2.assign(g, { iterations: phase.iterations, settings: { ...FA2_BASE, scalingRatio: phase.scalingRatio } })
   }
 
   return g
@@ -157,79 +120,62 @@ function buildGraph(): Graph {
 
 function highlightSelected(): void {
   if (!graph || !sigma) return
+
+  if (prevHighlightedId && graph.hasNode(prevHighlightedId)) {
+    graph.setNodeAttribute(prevHighlightedId, 'highlighted', false)
+    graph.setNodeAttribute(prevHighlightedId, 'zIndex', 0)
+  }
+
   const selectedId = props.selectedNodeId
+  if (selectedId && graph.hasNode(selectedId)) {
+    graph.setNodeAttribute(selectedId, 'highlighted', true)
+    graph.setNodeAttribute(selectedId, 'zIndex', 1)
+  }
 
-  graph.forEachNode((nodeId) => {
-    const isSelected = nodeId === selectedId
-    graph!.setNodeAttribute(nodeId, 'highlighted', isSelected)
-    graph!.setNodeAttribute(nodeId, 'zIndex', isSelected ? 1 : 0)
-  })
-
+  prevHighlightedId = selectedId
   sigma.refresh()
 }
 
 function initSigma(): void {
   if (!containerRef.value) return
-
   cleanup()
-
-  const fa2Settings = {
-    gravity: 0.5,
-    scalingRatio: 20,
-    barnesHutOptimize: true,
-    barnesHutTheta: 0.5,
-    strongGravityMode: true,
-    slowDown: 10,
-    adjustSizes: true,
-    linLogMode: false,
-    outboundAttractionDistribution: true,
-  }
 
   graph = buildGraph()
 
   sigma = new Sigma(graph, containerRef.value, {
-    renderLabels: true,
-    renderEdgeLabels: false,
-    labelColor: { color: '#8690a6' },
-    labelFont: 'Manrope, system-ui, sans-serif',
-    labelSize: 12,
-    labelDensity: 0.4,
-    labelGridCellSize: 120,
-    labelRenderedSizeThreshold: 4,
     defaultEdgeColor: '#1c2233',
     defaultEdgeType: 'line',
+    labelColor: { color: '#8690a6' },
+    labelDensity: 0.4,
+    labelFont: 'Manrope, system-ui, sans-serif',
+    labelGridCellSize: 120,
+    labelRenderedSizeThreshold: 4,
+    labelSize: 12,
+    renderEdgeLabels: false,
+    renderLabels: true,
     stagePadding: 40,
     zIndex: true,
-    nodeReducer(node, data) {
-      const res = { ...data }
-      if (data.highlighted) {
-        res.color = '#f0a830'
-        res.size = (data.size as number) + 2
-        res.zIndex = 1
+    nodeReducer(_node, data) {
+      if (!data.highlighted) return data
+      return {
+        ...data,
+        color: '#f0a830',
+        size: (typeof data.size === 'number' ? data.size : 0) + 2,
+        zIndex: 1,
       }
-      return res
     },
   })
 
-  // Worker refines the remaining details
   layout = new FA2Layout(graph, { settings: fa2Settings })
   layout.start()
 
-  // Auto-stop after convergence
   stopTimer = setTimeout(() => {
     if (layout?.isRunning()) layout.stop()
-  }, 8000)
+  }, REFINE_DURATION_MS)
 
-  sigma.on('clickNode', ({ node }) => {
-    emit('select', node)
-  })
-
-  sigma.on('enterNode', () => {
-    if (containerRef.value) containerRef.value.style.cursor = 'pointer'
-  })
-  sigma.on('leaveNode', () => {
-    if (containerRef.value) containerRef.value.style.cursor = 'default'
-  })
+  sigma.on('clickNode', ({ node }) => emit('select', node))
+  sigma.on('enterNode', () => { if (containerRef.value) containerRef.value.style.cursor = 'pointer' })
+  sigma.on('leaveNode', () => { if (containerRef.value) containerRef.value.style.cursor = 'default' })
 
   highlightSelected()
 }
@@ -238,38 +184,59 @@ function cleanup(): void {
   if (stopTimer) { clearTimeout(stopTimer); stopTimer = null }
   if (layout) { layout.kill(); layout = null }
   if (sigma) { sigma.kill(); sigma = null }
+  graph = null
+  prevHighlightedId = null
 }
 
 onMounted(() => {
-  initSigma()
+  resizeObserver = new ResizeObserver(() => {
+    const el = containerRef.value
+    if (!el) return
+    const { width, height } = el.getBoundingClientRect()
+    if (width <= 0 || height <= 0) return
+
+    if (sigma) {
+      sigma.resize()
+    } else {
+      initSigma()
+    }
+  })
+
+  if (containerRef.value) resizeObserver.observe(containerRef.value)
+  void nextTick(() => { if (!sigma) initSigma() })
 })
 
 onBeforeUnmount(() => {
+  if (resizeObserver) { resizeObserver.disconnect(); resizeObserver = null }
   cleanup()
 })
 
-watch(
-  () => [props.dataset, props.locale],
-  () => { initSigma() },
-)
+watch(() => props.dataset, () => initSigma())
 
-watch(
-  () => props.selectedNodeId,
-  () => { highlightSelected() },
-)
+watch(() => props.locale, () => {
+  if (!graph || !sigma) return
+  for (const node of props.dataset.flatNodes) {
+    graph.setNodeAttribute(node.id, 'label', getNodeLabel(node, props.locale, props.translations))
+  }
+  sigma.refresh()
+})
+
+watch(() => props.selectedNodeId, () => highlightSelected())
 </script>
 
 <template>
   <div
     ref="containerRef"
-    class="graph-container"
+    class="graph-surface"
   />
 </template>
 
 <style scoped>
-.graph-container {
+.graph-surface {
+  flex: 1;
   width: 100%;
   height: 100%;
-  background: var(--bg-base);
+  min-width: 0;
+  min-height: 0;
 }
 </style>
