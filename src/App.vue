@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { computed, ref, watch } from 'vue'
 
+import GraphView from '@/components/GraphView.vue'
 import NodeOverview from '@/components/NodeOverview.vue'
 import TaxonomyTree from '@/components/TaxonomyTree.vue'
 import { useTaxonomyData } from '@/composables/useTaxonomyData'
@@ -31,7 +32,10 @@ function readHashState(): {
 
 const initialHashState = readHashState()
 
+type ViewMode = 'tree' | 'graph'
+
 const locale = ref<LocaleCode>(initialHashState.locale)
+const viewMode = ref<ViewMode>('tree')
 const searchText = ref('')
 const focusedTag = ref<string | null>(null)
 const manualOpenIds = ref<Set<string>>(new Set())
@@ -274,6 +278,23 @@ function focusTag(nodeId: string, tag: string): void {
 
       <div class="toggle-group">
         <button
+          :class="['toggle-btn', { active: viewMode === 'tree' }]"
+          type="button"
+          @click="viewMode = 'tree'"
+        >
+          Tree
+        </button>
+        <button
+          :class="['toggle-btn', { active: viewMode === 'graph' }]"
+          type="button"
+          @click="viewMode = 'graph'"
+        >
+          Graph
+        </button>
+      </div>
+
+      <div class="toggle-group">
+        <button
           v-for="opt in localeOptions"
           :key="opt.value"
           :class="['toggle-btn', { active: locale === opt.value }]"
@@ -360,29 +381,42 @@ function focusTag(nodeId: string, tag: string): void {
     </header>
 
     <main class="workspace">
-      <aside class="sidebar">
-        <TaxonomyTree
-          :dataset="dataset"
-          :selected-id="selectedNodeId"
-          :locale="locale"
-          :open-ids="manualOpenIds"
-          :translations="translations"
-          @select="selectNode"
-          @toggle="toggleNode"
-        />
-      </aside>
+      <template v-if="viewMode === 'tree'">
+        <aside class="sidebar">
+          <TaxonomyTree
+            :dataset="dataset"
+            :selected-id="selectedNodeId"
+            :locale="locale"
+            :open-ids="manualOpenIds"
+            :translations="translations"
+            @select="selectNode"
+            @toggle="toggleNode"
+          />
+        </aside>
 
-      <section class="content">
-        <NodeOverview
+        <section class="content">
+          <NodeOverview
+            :dataset="dataset"
+            :node="selectedNode"
+            :locale="locale"
+            :focused-tag="focusedTag"
+            :translations="translations"
+            :tag-frequency="tagFrequency"
+            @select="selectNode"
+          />
+        </section>
+      </template>
+
+      <template v-else>
+        <GraphView
           :dataset="dataset"
-          :node="selectedNode"
           :locale="locale"
-          :focused-tag="focusedTag"
           :translations="translations"
           :tag-frequency="tagFrequency"
+          :selected-node-id="selectedNodeId"
           @select="selectNode"
         />
-      </section>
+      </template>
     </main>
   </div>
 </template>
