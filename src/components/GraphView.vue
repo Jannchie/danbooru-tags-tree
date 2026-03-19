@@ -1,7 +1,5 @@
 <script setup lang="ts">
 import Graph from 'graphology'
-import forceAtlas2 from 'graphology-layout-forceatlas2'
-import FA2Layout from 'graphology-layout-forceatlas2/worker'
 import Sigma from 'sigma'
 import { nextTick, onBeforeUnmount, onMounted, ref, watch } from 'vue'
 
@@ -13,6 +11,7 @@ const props = defineProps<{
   locale: LocaleCode
   translations: Record<string, LocalizedLabel>
   selectedNodeId: string
+  layoutPositions: Record<string, { x: number, y: number }> | null
 }>()
 
 const emit = defineEmits<{
@@ -23,12 +22,7 @@ const containerRef = ref<HTMLDivElement | null>(null)
 
 let sigma: Sigma | null = null
 let graph: Graph | null = null
-let layout: FA2Layout | null = null
-let stopTimer: ReturnType<typeof setTimeout> | null = null
 let resizeObserver: ResizeObserver | null = null
-let prevHighlightedId: string | null = null
-
-const REFINE_DURATION_MS = 3000
 
 const CATEGORY_COLORS = [
   '#b07080', '#b09070', '#a0a060', '#70a070',
@@ -44,26 +38,10 @@ const EDGE_COLORS = [
 
 const SIZE_BY_DEPTH = [18, 12, 8, 5.5, 4, 3.5, 3]
 
-const FA2_BASE = {
-  gravity: 1.5,
-  barnesHutOptimize: true,
-  barnesHutTheta: 0.5,
-  strongGravityMode: true,
-  slowDown: 20,
-  adjustSizes: true,
-  linLogMode: false,
-  outboundAttractionDistribution: false,
-  edgeWeightInfluence: 2,
+
+function edgeKey(sourceId: string, targetId: string): string {
+  return `${sourceId}->${targetId}`
 }
-
-const PREWARM_PHASES = [
-  { iterations: 60, scalingRatio: 1 },
-  { iterations: 60, scalingRatio: 3 },
-  { iterations: 60, scalingRatio: 5 },
-  { iterations: 20, scalingRatio: 6 },
-]
-
-const fa2Settings = { ...FA2_BASE, scalingRatio: 30 }
 
 function buildGraph(): Graph {
   const g = new Graph()
@@ -73,66 +51,99 @@ function buildGraph(): Graph {
   const colorIndexMap = new Map<string, number>()
   rootChildren.forEach((id, i) => colorIndexMap.set(id, i % CATEGORY_COLORS.length))
 
-  // Radial initial positions
-  const sectorAngle = (2 * Math.PI) / rootChildren.length
-  const radiusStep = 10
+  const positions = props.layoutPositions
 
-  function assignPositions(nodeId: string, centerAngle: number, angleSpan: number, depth: number): void {
-    const node = nodes[nodeId]
-    if (!node) return
+  // Add all nodes with pre-computed or fallback positions
+  g.addNode('root', {
+    baseColor: '#8690a6',
+    color: '#8690a6',
+    fixed: true,
+    label: 'Danbooru Tags',
+    size: SIZE_BY_DEPTH[0],
+    x: positions?.root?.x ?? 0,
+    y: positions?.root?.y ?? 0,
+  })
 
-    const radius = depth * radiusStep
+  for (const node of flatNodes) {
+    const pos = positions?.[node.id]
+    const ci = colorIndexMap.get(node.path[0]) ?? 0
     g.addNode(node.id, {
-      color: CATEGORY_COLORS[colorIndexMap.get(node.path[0]) ?? 0],
+      baseColor: CATEGORY_COLORS[ci],
+      color: CATEGORY_COLORS[ci],
       label: getNodeLabel(node, props.locale, props.translations),
       size: SIZE_BY_DEPTH[Math.min(node.depth + 1, SIZE_BY_DEPTH.length - 1)],
-      x: Math.cos(centerAngle) * radius,
-      y: Math.sin(centerAngle) * radius,
+      x: pos?.x ?? 0,
+      y: pos?.y ?? 0,
     })
-
-    if (node.children.length === 0) return
-    const step = angleSpan / node.children.length
-    const start = centerAngle - angleSpan / 2 + step / 2
-    node.children.forEach((childId, i) => assignPositions(childId, start + i * step, step, depth + 1))
   }
-
-  // Root node (fixed at center)
-  g.addNode('root', { color: '#8690a6', fixed: true, label: 'Danbooru Tags', size: SIZE_BY_DEPTH[0], x: 0, y: 0 })
-  rootChildren.forEach((id, i) => assignPositions(id, i * sectorAngle - Math.PI / 2, sectorAngle, 1))
 
   // Edges (single loop)
   for (const node of flatNodes) {
     if (!node.parentId || !g.hasNode(node.parentId)) continue
     const ci = colorIndexMap.get(node.path[0]) ?? 0
-    g.addEdge(node.parentId, node.id, {
+    g.addEdgeWithKey(edgeKey(node.parentId, node.id), node.parentId, node.id, {
+      baseColor: EDGE_COLORS[ci],
       color: EDGE_COLORS[ci],
       size: node.parentId === 'root' ? 0.4 : 0.3,
     })
   }
 
-  // Progressive prewarm
-  for (const phase of PREWARM_PHASES) {
-    forceAtlas2.assign(g, { iterations: phase.iterations, settings: { ...FA2_BASE, scalingRatio: phase.scalingRatio } })
+  return g
+}
+
+function buildPathState(nodeId: string): {
+  pathNodeIds: Set<string>
+  pathEdgeIds: Set<string>
+} {
+  const pathNodeIds = new Set<string>()
+  const pathEdgeIds = new Set<string>()
+
+  if (!nodeId || !props.dataset.nodes[nodeId]) {
+    return { pathNodeIds, pathEdgeIds }
   }
 
-  return g
+  let currentId: string | null = nodeId
+
+  while (currentId) {
+    pathNodeIds.add(currentId)
+
+    const parentId = props.dataset.nodes[currentId]?.parentId ?? null
+
+    if (!parentId) {
+      break
+    }
+
+    pathNodeIds.add(parentId)
+    pathEdgeIds.add(edgeKey(parentId, currentId))
+    currentId = parentId
+  }
+
+  return { pathNodeIds, pathEdgeIds }
 }
 
 function highlightSelected(): void {
   if (!graph || !sigma) return
 
-  if (prevHighlightedId && graph.hasNode(prevHighlightedId)) {
-    graph.setNodeAttribute(prevHighlightedId, 'highlighted', false)
-    graph.setNodeAttribute(prevHighlightedId, 'zIndex', 0)
-  }
-
   const selectedId = props.selectedNodeId
-  if (selectedId && graph.hasNode(selectedId)) {
-    graph.setNodeAttribute(selectedId, 'highlighted', true)
-    graph.setNodeAttribute(selectedId, 'zIndex', 1)
+  const { pathNodeIds, pathEdgeIds } = buildPathState(selectedId)
+
+  for (const nodeId of graph.nodes()) {
+    const isSelected = nodeId === selectedId
+    const isOnPath = pathNodeIds.has(nodeId)
+
+    graph.setNodeAttribute(nodeId, 'selected', isSelected)
+    graph.setNodeAttribute(nodeId, 'highlighted', isOnPath)
+    graph.setNodeAttribute(nodeId, 'forceLabel', isOnPath)
+    graph.setNodeAttribute(nodeId, 'zIndex', isSelected ? 2 : isOnPath ? 1 : 0)
   }
 
-  prevHighlightedId = selectedId
+  for (const currentEdgeId of graph.edges()) {
+    const isOnPath = pathEdgeIds.has(currentEdgeId)
+
+    graph.setEdgeAttribute(currentEdgeId, 'highlighted', isOnPath)
+    graph.setEdgeAttribute(currentEdgeId, 'zIndex', isOnPath ? 1 : 0)
+  }
+
   sigma.refresh()
 }
 
@@ -156,22 +167,47 @@ function initSigma(): void {
     stagePadding: 40,
     zIndex: true,
     nodeReducer(_node, data) {
-      if (!data.highlighted) return data
-      return {
-        ...data,
-        color: '#f0a830',
-        size: (typeof data.size === 'number' ? data.size : 0) + 2,
-        zIndex: 1,
+      const baseColor = typeof data.baseColor === 'string' ? data.baseColor : data.color
+      const baseSize = typeof data.size === 'number' ? data.size : 0
+
+      if (data.selected) {
+        return {
+          ...data,
+          color: baseColor,
+          forceLabel: true,
+          size: baseSize + 2,
+          zIndex: 2,
+        }
       }
+
+      if (data.highlighted) {
+        return {
+          ...data,
+          color: baseColor,
+          forceLabel: true,
+          size: baseSize + 0.8,
+          zIndex: 1,
+        }
+      }
+
+      return data
+    },
+    edgeReducer(_edge, data) {
+      const baseColor = typeof data.baseColor === 'string' ? data.baseColor : data.color
+      const baseSize = typeof data.size === 'number' ? data.size : 0.3
+
+      if (data.highlighted) {
+        return {
+          ...data,
+          color: baseColor,
+          size: baseSize + 0.7,
+          zIndex: 1,
+        }
+      }
+
+      return data
     },
   })
-
-  layout = new FA2Layout(graph, { settings: fa2Settings })
-  layout.start()
-
-  stopTimer = setTimeout(() => {
-    if (layout?.isRunning()) layout.stop()
-  }, REFINE_DURATION_MS)
 
   sigma.on('clickNode', ({ node }) => emit('select', node))
   sigma.on('enterNode', () => { if (containerRef.value) containerRef.value.style.cursor = 'pointer' })
@@ -181,11 +217,8 @@ function initSigma(): void {
 }
 
 function cleanup(): void {
-  if (stopTimer) { clearTimeout(stopTimer); stopTimer = null }
-  if (layout) { layout.kill(); layout = null }
   if (sigma) { sigma.kill(); sigma = null }
   graph = null
-  prevHighlightedId = null
 }
 
 onMounted(() => {

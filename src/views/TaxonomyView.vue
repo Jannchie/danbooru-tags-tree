@@ -2,13 +2,10 @@
 import { computed, ref, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 
-import GraphView from '@/components/GraphView.vue'
-import NodeOverview from '@/components/NodeOverview.vue'
-import TaxonomyTree from '@/components/TaxonomyTree.vue'
 import { useTaxonomyData } from '@/composables/useTaxonomyData'
 import {
   DEFAULT_LOCALE,
-  TAXONOMY_ROUTE_NAME,
+  taxonomyRouteName,
   type ViewMode,
 } from '@/router/routeState'
 import {
@@ -20,7 +17,7 @@ import {
   type TaxonomyNode,
 } from '@/utils/taxonomy'
 
-const { datasets, translations, tagFrequency, isLoading, error, localeOptions } = useTaxonomyData()
+const { datasets, translations, tagFrequency, graphLayout, isLoading, error, localeOptions } = useTaxonomyData()
 
 const route = useRoute()
 const router = useRouter()
@@ -36,7 +33,10 @@ const locale = computed<LocaleCode>(() => {
   return value === 'en' || value === 'ja' || value === 'zh-CN' ? value : DEFAULT_LOCALE
 })
 
-const viewMode = computed<ViewMode>(() => (route.params.view === 'graph' ? 'graph' : 'tree'))
+const viewMode = computed<ViewMode>(() => {
+  const name = route.name as string | undefined
+  return name?.endsWith('-graph') ? 'graph' : 'tree'
+})
 
 const routeNodeId = computed(() => (typeof route.params.nodeId === 'string' ? route.params.nodeId : null))
 const routeFocusedTag = computed(() => (typeof route.query.tag === 'string' ? route.query.tag : null))
@@ -81,12 +81,12 @@ function buildRouteLocation(options: {
 }) {
   const nodeId = options.nodeId ?? selectedNodeId.value
   const tag = options.tag === undefined ? routeFocusedTag.value : options.tag
+  const view = options.view ?? viewMode.value
 
   return {
-    name: TAXONOMY_ROUTE_NAME,
+    name: taxonomyRouteName(view),
     params: {
       locale: options.locale ?? locale.value,
-      view: options.view ?? viewMode.value,
       ...(nodeId ? { nodeId } : {}),
     },
     query: tag ? { tag } : {},
@@ -456,42 +456,19 @@ function setLocale(nextLocale: LocaleCode): void {
     </header>
 
     <main class="workspace">
-      <template v-if="viewMode === 'tree'">
-        <aside class="sidebar">
-          <TaxonomyTree
-            :dataset="dataset"
-            :selected-id="selectedNodeId"
-            :locale="locale"
-            :open-ids="manualOpenIds"
-            :translations="translations"
-            @select="selectNode"
-            @toggle="toggleNode"
-          />
-        </aside>
-
-        <section class="content">
-          <NodeOverview
-            :dataset="dataset"
-            :node="selectedNode"
-            :locale="locale"
-            :focused-tag="focusedTag"
-            :translations="translations"
-            :tag-frequency="tagFrequency"
-            @select="selectNode"
-          />
-        </section>
-      </template>
-
-      <template v-else>
-        <GraphView
-          :dataset="dataset"
-          :locale="locale"
-          :translations="translations"
-          :tag-frequency="tagFrequency"
-          :selected-node-id="selectedNodeId"
-          @select="selectNode"
-        />
-      </template>
+      <RouterView
+        :dataset="dataset"
+        :selected-node-id="selectedNodeId"
+        :selected-node="selectedNode"
+        :locale="locale"
+        :focused-tag="focusedTag"
+        :translations="translations"
+        :tag-frequency="tagFrequency"
+        :graph-layout="graphLayout"
+        :open-ids="manualOpenIds"
+        @select="selectNode"
+        @toggle="toggleNode"
+      />
     </main>
   </div>
 </template>

@@ -1,6 +1,8 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 
 import TaxonomyView from '@/views/TaxonomyView.vue'
+import TreePage from '@/views/TreePage.vue'
+import GraphPage from '@/views/GraphPage.vue'
 
 import {
   DEFAULT_LOCALE,
@@ -14,25 +16,41 @@ export const router = createRouter({
     {
       path: '/',
       redirect: {
-        name: TAXONOMY_ROUTE_NAME,
+        name: `${TAXONOMY_ROUTE_NAME}-${DEFAULT_VIEW}`,
         params: {
           locale: DEFAULT_LOCALE,
-          view: DEFAULT_VIEW,
         },
       },
     },
     {
-      path: '/:locale(zh-CN|en|ja)/:view(tree|graph)/:nodeId?',
-      name: TAXONOMY_ROUTE_NAME,
+      path: '/:locale(zh-CN|en|ja)',
       component: TaxonomyView,
+      children: [
+        {
+          path: 'tree/:nodeId?',
+          name: `${TAXONOMY_ROUTE_NAME}-tree`,
+          component: TreePage,
+        },
+        {
+          path: 'graph/:nodeId?',
+          name: `${TAXONOMY_ROUTE_NAME}-graph`,
+          component: GraphPage,
+        },
+        {
+          path: '',
+          redirect: (to) => ({
+            name: `${TAXONOMY_ROUTE_NAME}-${DEFAULT_VIEW}`,
+            params: { locale: to.params.locale },
+          }),
+        },
+      ],
     },
     {
       path: '/:pathMatch(.*)*',
       redirect: {
-        name: TAXONOMY_ROUTE_NAME,
+        name: `${TAXONOMY_ROUTE_NAME}-${DEFAULT_VIEW}`,
         params: {
           locale: DEFAULT_LOCALE,
-          view: DEFAULT_VIEW,
         },
       },
     },

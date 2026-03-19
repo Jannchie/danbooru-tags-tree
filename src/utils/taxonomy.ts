@@ -49,7 +49,7 @@ function isPlainRecord(value: unknown): value is RawRecord {
 }
 
 export function formatSlug(value: string): string {
-  return value.replaceAll('_', ' ').replaceAll('-', ' ').trim()
+  return value.replace(/[_-]/g, ' ').trim()
 }
 
 export function castTranslations(parsed: unknown): Record<string, LocalizedLabel> {
@@ -64,11 +64,21 @@ export function castTranslations(parsed: unknown): Record<string, LocalizedLabel
       continue
     }
 
-    translations[key] = {
-      en: typeof value.en === 'string' ? value.en : undefined,
-      'zh-CN': typeof value['zh-CN'] === 'string' ? value['zh-CN'] : undefined,
-      ja: typeof value.ja === 'string' ? value.ja : undefined,
+    const localized: LocalizedLabel = {}
+
+    if (typeof value.en === 'string') {
+      localized.en = value.en
     }
+
+    if (typeof value['zh-CN'] === 'string') {
+      localized['zh-CN'] = value['zh-CN']
+    }
+
+    if (typeof value.ja === 'string') {
+      localized.ja = value.ja
+    }
+
+    translations[key] = localized
   }
 
   return translations
@@ -186,6 +196,12 @@ export function buildDataset(
   }
 
   const rootSummary = finalizeNode('root')
+  const rootNode = nodes.root
+
+  if (!rootNode) {
+    throw new Error('Missing root taxonomy node')
+  }
+
   const flatNodes = Object.values(nodes).filter((node) => node.id !== 'root')
   const flatTags = flatNodes.flatMap((node) =>
     node.tags.map((tag) => ({
@@ -200,7 +216,7 @@ export function buildDataset(
     label: 'Danbooru Tag Taxonomy',
     meta,
     rootId: 'root',
-    rootChildren: [...nodes.root.children],
+    rootChildren: [...rootNode.children],
     nodes,
     flatNodes,
     flatTags,

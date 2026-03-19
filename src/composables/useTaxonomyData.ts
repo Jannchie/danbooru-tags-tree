@@ -12,6 +12,7 @@ import {
 const datasets = shallowRef<Record<DatasetVersion, TaxonomyDataset> | null>(null)
 const translations = shallowRef<Record<string, LocalizedLabel>>({})
 const tagFrequency = shallowRef<Record<string, number>>({})
+const graphLayout = shallowRef<Record<string, { x: number, y: number }> | null>(null)
 const isLoading = ref(false)
 const error = ref<string | null>(null)
 
@@ -43,14 +44,16 @@ async function ensureLoaded(): Promise<void> {
   error.value = null
 
   try {
-    const [rawTrans, rawFreq, rawData] = await Promise.all([
+    const [rawTrans, rawFreq, rawData, rawLayout] = await Promise.all([
       fetchJSON('output/translations.json'),
       fetchJSON('output/tag_frequency.json'),
       fetchJSON('output/taxonomy.json'),
+      fetchJSON('output/graph-layout.json').catch(() => null),
     ])
 
     translations.value = castTranslations(rawTrans)
     tagFrequency.value = rawFreq as Record<string, number>
+    graphLayout.value = rawLayout as Record<string, { x: number, y: number }> | null
 
     datasets.value = {
       default: buildDataset(rawData, 'default'),
@@ -69,6 +72,7 @@ export function useTaxonomyData() {
     datasets,
     translations,
     tagFrequency,
+    graphLayout,
     isLoading,
     error,
     ensureLoaded,

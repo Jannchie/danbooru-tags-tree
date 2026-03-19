@@ -17,11 +17,23 @@ describe('taxonomy helpers', () => {
       'default',
     )
 
+    const rootA = dataset.nodes.root_a
+    const branchB = dataset.nodes['root_a.branch_b']
+    const branchC = dataset.nodes['root_a.branch_c']
+
+    expect(rootA).toBeDefined()
+    expect(branchB).toBeDefined()
+    expect(branchC).toBeDefined()
+
+    if (!rootA || !branchB || !branchC) {
+      throw new Error('Expected taxonomy nodes to exist')
+    }
+
     expect(dataset.totalNodeCount).toBe(4)
     expect(dataset.totalTagCount).toBe(3)
-    expect(dataset.nodes.root_a.totalTagCount).toBe(3)
-    expect(dataset.nodes['root_a.branch_b'].directTagCount).toBe(2)
-    expect(dataset.nodes['root_a.branch_c'].descendantCount).toBe(1)
+    expect(rootA.totalTagCount).toBe(3)
+    expect(branchB.directTagCount).toBe(2)
+    expect(branchC.descendantCount).toBe(1)
   })
 
   it('casts translation entries and falls back to slug formatting', () => {
