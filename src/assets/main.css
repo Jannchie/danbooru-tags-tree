@@ -23,8 +23,49 @@
 
   --radius: 6px;
   --radius-lg: 10px;
-  --transition: 150ms ease;
   --shadow-overlay: 0 8px 32px rgba(0, 0, 0, 0.5), 0 2px 8px rgba(0, 0, 0, 0.3);
+
+  --graph-root-color: #8690a6;
+  --graph-label-color: #8690a6;
+  --graph-default-edge: #1c2233;
+  --graph-highlight-mix: #0c1020;
+  --graph-dim-mix: #0c1020;
+  --graph-minimap-bg: rgba(12, 16, 32, 0.6);
+  --graph-minimap-viewport: rgba(134, 144, 166, 0.7);
+}
+
+:root[data-theme='light'] {
+  color-scheme: light;
+
+  --bg-base: #f5f7fb;
+  --bg-surface: #ffffff;
+  --bg-elevated: #eef2f8;
+  --bg-hover: #e7edf6;
+  --bg-active: #dde6f2;
+
+  --border: #d8dfeb;
+  --border-light: #c6d0e0;
+  --border-accent: rgba(39, 93, 176, 0.24);
+
+  --text: #263246;
+  --text-bright: #111827;
+  --text-muted: #5b6b82;
+  --text-dim: #8491a4;
+
+  --accent: #275db0;
+  --accent-hover: #1f4d92;
+  --accent-soft: rgba(39, 93, 176, 0.08);
+  --accent-medium: rgba(39, 93, 176, 0.16);
+
+  --shadow-overlay: 0 12px 28px rgba(57, 76, 112, 0.12), 0 2px 8px rgba(57, 76, 112, 0.08);
+
+  --graph-root-color: #5b6b82;
+  --graph-label-color: #5b6b82;
+  --graph-default-edge: #d8dfeb;
+  --graph-highlight-mix: #1f2937;
+  --graph-dim-mix: #ffffff;
+  --graph-minimap-bg: rgba(255, 255, 255, 0.92);
+  --graph-minimap-viewport: rgba(91, 107, 130, 0.55);
 }
 
 *,
@@ -154,7 +195,6 @@ button {
   font-weight: 600;
   color: var(--text-muted);
   background: var(--bg-surface);
-  transition: all var(--transition);
   border-right: 1px solid var(--border);
   white-space: nowrap;
 }
@@ -171,6 +211,35 @@ button {
 .toggle-btn.active {
   color: var(--accent);
   background: var(--accent-soft);
+}
+
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  height: 34px;
+  padding: 0 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg-elevated);
+  color: var(--text);
+  white-space: nowrap;
+}
+
+.theme-toggle:hover {
+  border-color: var(--border-light);
+  background: var(--bg-hover);
+}
+
+.theme-toggle-icon {
+  color: var(--accent);
+  font-size: 0.9rem;
+  line-height: 1;
+}
+
+.theme-toggle-label {
+  font-size: 0.78rem;
+  font-weight: 600;
 }
 
 /* Header Search */
@@ -197,7 +266,6 @@ button {
   background: var(--bg-elevated);
   color: var(--text);
   font-size: 0.85rem;
-  transition: border-color var(--transition);
   outline: none;
 }
 
@@ -254,7 +322,6 @@ button {
   padding: 8px 12px;
   border-radius: var(--radius);
   text-align: left;
-  transition: background var(--transition);
 }
 
 .search-result:hover {
@@ -409,7 +476,6 @@ button {
   display: flex;
   align-items: center;
   border-radius: var(--radius);
-  transition: background var(--transition);
 }
 
 .tree-row:hover {
@@ -435,7 +501,6 @@ button {
   font-size: 0.7rem;
   color: var(--text-muted);
   border-radius: 3px;
-  transition: all var(--transition);
 }
 
 .tree-toggle:hover {
@@ -501,7 +566,6 @@ button {
   font-size: 0.82rem;
   color: var(--text-muted);
   padding: 3px 0;
-  transition: color var(--transition);
 }
 
 .crumb:hover {
@@ -567,7 +631,6 @@ button {
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
   background: var(--bg-surface);
-  transition: border-color var(--transition);
 }
 
 .stat-card:hover {
@@ -675,7 +738,6 @@ button {
   border-radius: var(--radius);
   background: var(--bg-surface);
   text-align: left;
-  transition: all var(--transition);
 }
 
 .child-card:hover {
@@ -713,7 +775,6 @@ button {
   border-radius: var(--radius);
   background: var(--bg-surface);
   font-size: 0.82rem;
-  transition: all var(--transition);
 }
 
 .tag-chip:hover {
@@ -762,13 +823,6 @@ button {
   border: 2px solid var(--border);
   border-top-color: var(--accent);
   border-radius: 50%;
-  animation: spin 0.8s linear infinite;
-}
-
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
 }
 
 .loading-text {

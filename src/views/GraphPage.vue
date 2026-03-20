@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import GraphView from '@/components/GraphView.vue'
+import type { ThemeMode } from '@/composables/useTheme'
 import type { LocaleCode, LocalizedLabel, TaxonomyDataset } from '@/utils/taxonomy'
 
 defineProps<{
@@ -8,6 +9,7 @@ defineProps<{
   locale: LocaleCode
   translations: Record<string, LocalizedLabel>
   graphLayout: Record<string, { x: number, y: number }> | null
+  theme: ThemeMode
 }>()
 
 const emit = defineEmits<{
@@ -24,6 +26,7 @@ const emit = defineEmits<{
     :translations="translations"
     :selected-node-id="selectedNodeId"
     :layout-positions="graphLayout"
+    :theme="theme"
     @select="emit('select', $event)"
     @deselect="emit('deselect')"
     @navigate-tree="emit('navigateTree', $event)"

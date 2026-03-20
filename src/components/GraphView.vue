@@ -3,6 +3,7 @@ import Graph from 'graphology'
 import Sigma from 'sigma'
 import { nextTick, onBeforeUnmount, onMounted, ref, watch } from 'vue'
 
+import type { ThemeMode } from '@/composables/useTheme'
 import type { LocaleCode, LocalizedLabel, TaxonomyDataset } from '@/utils/taxonomy'
 import { getNodeLabel } from '@/utils/taxonomy'
 
@@ -12,6 +13,7 @@ const props = defineProps<{
   translations: Record<string, LocalizedLabel>
   selectedNodeId: string
   layoutPositions: Record<string, { x: number, y: number }> | null
+  theme: ThemeMode
 }>()
 
 const emit = defineEmits<{
@@ -50,6 +52,16 @@ const EDGE_COLORS = [
 
 const SIZE_BY_DEPTH = [18, 12, 8, 5.5, 4, 3.5, 3]
 
+type GraphPalette = {
+  defaultEdgeColor: string
+  dimMixColor: string
+  highlightMixColor: string
+  labelColor: string
+  minimapBackground: string
+  minimapViewport: string
+  rootColor: string
+}
+
 function mixColor(color1: string, color2: string, t: number): string {
   const r1 = Number.parseInt(color1.slice(1, 3), 16)
   const g1 = Number.parseInt(color1.slice(3, 5), 16)
@@ -67,9 +79,31 @@ function edgeKey(sourceId: string, targetId: string): string {
   return `${sourceId}->${targetId}`
 }
 
+function readCssVar(name: string, fallback: string): string {
+  if (typeof window === 'undefined') {
+    return fallback
+  }
+
+  const value = window.getComputedStyle(document.documentElement).getPropertyValue(name).trim()
+  return value || fallback
+}
+
+function getGraphPalette(): GraphPalette {
+  return {
+    defaultEdgeColor: readCssVar('--graph-default-edge', '#1c2233'),
+    dimMixColor: readCssVar('--graph-dim-mix', '#0c1020'),
+    highlightMixColor: readCssVar('--graph-highlight-mix', '#0c1020'),
+    labelColor: readCssVar('--graph-label-color', '#8690a6'),
+    minimapBackground: readCssVar('--graph-minimap-bg', 'rgba(12, 16, 32, 0.6)'),
+    minimapViewport: readCssVar('--graph-minimap-viewport', 'rgba(134, 144, 166, 0.7)'),
+    rootColor: readCssVar('--graph-root-color', '#8690a6'),
+  }
+}
+
 function buildGraph(): Graph {
   const g = new Graph()
-  const { rootChildren, flatNodes, nodes } = props.dataset
+  const { rootChildren, flatNodes } = props.dataset
+  const palette = getGraphPalette()
 
   // Color map for root categories
   const colorIndexMap = new Map<string, number>()
@@ -79,8 +113,8 @@ function buildGraph(): Graph {
 
   // Add all nodes with pre-computed or fallback positions
   g.addNode('root', {
-    baseColor: '#8690a6',
-    color: '#8690a6',
+    baseColor: palette.rootColor,
+    color: palette.rootColor,
     fixed: true,
     label: props.locale === 'ja' ? 'Danbooru タグ' : props.locale === 'zh-CN' ? 'Danbooru 标签' : 'Danbooru Tags',
     size: SIZE_BY_DEPTH[0],
@@ -181,11 +215,12 @@ function initSigma(): void {
   cleanup()
 
   graph = buildGraph()
+  const palette = getGraphPalette()
 
   sigma = new Sigma(graph, containerRef.value, {
-    defaultEdgeColor: '#1c2233',
+    defaultEdgeColor: palette.defaultEdgeColor,
     defaultEdgeType: 'line',
-    labelColor: { color: '#8690a6' },
+    labelColor: { color: palette.labelColor },
     labelDensity: 0.4,
     labelFont: 'Manrope, system-ui, sans-serif',
     labelGridCellSize: 120,
@@ -212,7 +247,7 @@ function initSigma(): void {
       if (data.highlighted) {
         return {
           ...data,
-          color: mixColor(baseColor, '#0c1020', 0.25),
+          color: mixColor(baseColor, palette.highlightMixColor, 0.25),
           forceLabel: true,
           size: baseSize + 0.8,
           zIndex: 1,
@@ -222,7 +257,7 @@ function initSigma(): void {
       if (data.dimmed) {
         return {
           ...data,
-          color: mixColor(baseColor, '#0c1020', 0.75),
+          color: mixColor(baseColor, palette.dimMixColor, 0.75),
           forceLabel: false,
           zIndex: 0,
         }
@@ -246,7 +281,7 @@ function initSigma(): void {
       if (data.dimmed) {
         return {
           ...data,
-          color: mixColor(baseColor, '#0c1020', 0.8),
+          color: mixColor(baseColor, palette.dimMixColor, 0.8),
           size: baseSize * 0.6,
         }
       }
@@ -272,6 +307,7 @@ function initSigma(): void {
 
 function drawMinimap(): void {
   if (!sigma || !graph || !minimapRef.value) return
+  const palette = getGraphPalette()
   const canvas = minimapRef.value
   const ctx = canvas.getContext('2d')
   if (!ctx) return
@@ -286,7 +322,7 @@ function drawMinimap(): void {
   ctx.clearRect(0, 0, w, h)
 
   // Draw background
-  ctx.fillStyle = 'rgba(12, 16, 32, 0.6)'
+  ctx.fillStyle = palette.minimapBackground
   ctx.roundRect(0, 0, w, h, 6)
   ctx.fill()
 
@@ -355,7 +391,7 @@ function drawMinimap(): void {
   const vx2 = toMiniX(bottomRight.x)
   const vy2 = toMiniY(bottomRight.y)
 
-  ctx.strokeStyle = 'rgba(134, 144, 166, 0.7)'
+  ctx.strokeStyle = palette.minimapViewport
   ctx.lineWidth = 1.5
   ctx.strokeRect(vx, vy, vx2 - vx, vy2 - vy)
 }
@@ -395,12 +431,7 @@ function moveCameraToMinimapPos(e: MouseEvent): void {
 
   const camera = sigma.getCamera()
   const state = camera.getState()
-
-  if (minimapDragging) {
-    camera.setState({ ...state, x: framedPos.x, y: framedPos.y })
-  } else {
-    camera.animate({ ...state, x: framedPos.x, y: framedPos.y }, { duration: 200 })
-  }
+  camera.setState({ ...state, x: framedPos.x, y: framedPos.y })
 }
 
 function onMinimapPointerDown(e: PointerEvent): void {
@@ -468,6 +499,7 @@ watch(() => props.locale, () => {
 })
 
 watch(() => props.selectedNodeId, () => highlightSelected())
+watch(() => props.theme, () => initSigma())
 </script>
 
 <template>

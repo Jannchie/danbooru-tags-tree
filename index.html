@@ -7,6 +7,40 @@
       content="width=device-width, initial-scale=1.0"
     />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <script>
+      (() => {
+        const storageKey = 'danbooru-tags-tree-theme'
+        const storedTheme = window.localStorage.getItem(storageKey)
+        const theme =
+          storedTheme === 'dark' || storedTheme === 'light'
+            ? storedTheme
+            : window.matchMedia('(prefers-color-scheme: dark)').matches
+              ? 'dark'
+              : 'light'
+
+        const root = document.documentElement
+        root.dataset.theme = theme
+        root.style.colorScheme = theme
+      })()
+    </script>
+    <style>
+      html {
+        min-height: 100%;
+        background: #0b0e14;
+        color-scheme: dark;
+      }
+
+      html[data-theme='light'] {
+        background: #f5f7fb;
+        color-scheme: light;
+      }
+
+      body {
+        min-height: 100%;
+        margin: 0;
+        background: transparent;
+      }
+    </style>
     <title>Danbooru Tags Tree</title>
     <link
       rel="preconnect"

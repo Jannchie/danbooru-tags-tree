@@ -3,6 +3,7 @@ import { computed, ref, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 
 import { useTaxonomyData } from '@/composables/useTaxonomyData'
+import { useTheme } from '@/composables/useTheme'
 import {
   DEFAULT_LOCALE,
   taxonomyRouteName,
@@ -18,6 +19,7 @@ import {
 } from '@/utils/taxonomy'
 
 const { datasets, translations, tagFrequency, graphLayout, isLoading, error, localeOptions } = useTaxonomyData()
+const { theme, isDark, toggleTheme } = useTheme()
 
 const route = useRoute()
 const router = useRouter()
@@ -288,6 +290,7 @@ const graphRouteProps = computed(() => {
   return {
     ...sharedRouteProps.value,
     graphLayout: graphLayout.value,
+    theme: theme.value,
   }
 })
 
@@ -438,6 +441,16 @@ function setLocale(nextLocale: LocaleCode): void {
           {{ opt.label }}
         </button>
       </div>
+
+      <button
+        :aria-label="isDark ? 'Switch to light mode' : 'Switch to dark mode'"
+        class="theme-toggle"
+        type="button"
+        @click="toggleTheme"
+      >
+        <span class="theme-toggle-icon">{{ isDark ? '☀' : '☾' }}</span>
+        <span class="theme-toggle-label">{{ isDark ? 'Light' : 'Dark' }}</span>
+      </button>
 
       <div class="header-search">
         <div class="search-wrap">
