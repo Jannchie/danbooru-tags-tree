@@ -1,26 +1,45 @@
-# Danbooru Tags Tree Viewer
+# danbooru-tags-tree
 
-This project provides a Vue-based preview UI for the YAML taxonomy data in this repository.
+This repo is a small viewer for the Danbooru tag taxonomy stored here.
 
-## Stack
+The source data lives in `data/source` as YAML and CSV. The app turns that data into browser-friendly JSON, then lets you explore it in two ways:
 
-- Vue 3 + TypeScript
-- Vite powered by `rolldown-vite`
-- Vitest for tests
-- Oxlint for linting
+- a tree view for reading the hierarchy
+- a graph view for getting the overall shape
 
-## Development
+It also includes multilingual labels (`zh-CN`, `en`, `ja`) and tag frequency data, so it is useful when you want to inspect how tags are grouped instead of staring at raw YAML.
+
+## Files that matter
+
+- `data/source/`: taxonomy, translations, and tag frequency source files
+- `scripts/build-data.ts`: builds JSON files into `public/output/`
+- `src/`: the Vue app
+
+## Run it
 
 ```bash
 pnpm install
 pnpm dev
 ```
 
-## Checks
+The dev script will build missing data files automatically.
+
+Default local URL:
+
+```text
+http://localhost:5832
+```
+
+## If you changed the source data
 
 ```bash
-pnpm build
+pnpm build:data
+```
+
+## Basic checks
+
+```bash
 pnpm test
 pnpm lint
-pnpm lint:fix
+pnpm build
 ```
