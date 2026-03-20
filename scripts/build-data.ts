@@ -19,6 +19,7 @@ const SOURCE_FILES = {
   translations: 'danbooru_tag_tree_v3.multilingual.yaml',
   tagFrequency: 'tag_frequency_general.csv',
 } as const
+const TAG_KEY = '_tags'
 
 if (!existsSync(OUT)) mkdirSync(OUT, { recursive: true })
 
@@ -97,6 +98,10 @@ function buildGraphLayout(): void {
 
     if (isRecord(value)) {
       for (const [childKey, childValue] of Object.entries(value)) {
+        if (childKey === TAG_KEY) {
+          continue
+        }
+
         collectNodes(childKey, childValue, path)
         children.push([...path, childKey].join('.'))
       }

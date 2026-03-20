@@ -1936,11 +1936,11 @@ character:
       - sternum
       - heart_(organ)
   skin:
+    _tags:
+    - oiled
     sweat:
     - sweat
     - very_sweaty
-    oil:
-    - oiled
     color:
     - dark_skin
     - dark-skinned_female
@@ -2403,6 +2403,8 @@ character:
     - chimerism
   archetype:
     form:
+      _tags:
+      - inkling
       female:
       - horse_girl
       - monster_girl
@@ -2474,8 +2476,6 @@ character:
       - orca_boy
       - unicorn_boy
       - owl_boy
-      neutral:
-      - inkling
       stature_form:
       - colossus
       - mini_person
@@ -3381,117 +3381,117 @@ dynamics:
       - holding_own_arm
       - flexing
       - hands_in_opposite_sleeves
-        - tied_up_(nonsexual)
-        - zombie_pose
-        - hand_on_hilt
-        - stroking_own_chin
-        - hanging
-        - head_on_hand
-        - cupping_hands
-        - v_over_mouth
-        - hand_rest
-        - arms_between_legs
-        - arm_on_knee
-        - hand_on_wall
-        - ghost_pose
-        - hand_on_table
-        - hands_in_own_hair
-        - arm_above_head
-        - handstand
-        - arm_on_another's_shoulder
-        - hand_over_eye
-        - hand_on_floor
-        - hand_on_thigh
-        - hand_to_head
-        - hand_on_railing
-        - shrugging
-        - double_\m/
-        - self_hug
-        - covering_one_breast
-        - hands_in_pocket
-        - hands_on_another's_back
-        - arm_on_table
-        - hand_on_leg
-        - holding_own_foot
-        - arms_on_knees
-        - arms_around_back
-        - cross-body_stretch
-        - arms_on_table
-        - arm_on_own_head
-        - x_arms
-        - pointing_down
-        - hands_on_floor
-        - hidden_face
-        - cheek_rest
-        - v_over_head
-        - inward_v
-        - covering_chest
-        - arm_pillow
-        - horns_pose
-        - one_arm_handstand
-        - gendou_pose
-        - mudra
-        - heart_arms
-        - surprised_arms
-        - ok_sign_over_eye
-        - double_biceps_pose
-        - hands_on_table
-        - symmetrical_hand_pose
-        - victory_pose
-        - hand_on_window
-        - hand_on_forehead
-        - heart_arms_duo
-        - vocaloid_boxart_pose
-        - hands_on_thighs
-        - hoshino_ai's_pose
-        - hand_to_forehead
-        - hand_to_weapon
-        - thumb_in_pocket
-        - arms_across_body
-        - vitarka_mudra
-        - hands_on_legs
-        - arm_on_thigh
-        - arm_on_another's_head
-        - hand_between_thighs
-        - hand_on_mirror
-        - reverse_prayer
-        - hand_on_belt
-        - arm_around_leg
-        - hand_over_heart
-        - hands_under_legs
-        - yotsubato!_pose
-        - hand_on_sheath
-        - airplane_arms
-        - arm_on_own_leg
-        - ganbaru_pose
-        - paw_up
-        - double_gyaru_v
-        - pinky_to_mouth
-        - in_pocket
-        - face_in_hands
-        - mesugaki_pose
-        - hug_invitation
-        - hand_on_chair
-        - head_on_hands
-        - hands_on_stomach
-        - holding_behind_neck
-        - triangle_hands
-        - head_arms
-        - myoukou_pose
-        - kongou_pose
-        - pinching_gesture
-        - hand_on_cane
-        - ga_rune_pose
-        - heart_hands_over_eye
-        - head_hold
-        - hand_on_knees
-        - zun_pose
-        - uterus_pose
-        - hugging_own_leg
-        - covering_one_eye
-        - hands_on_ground
-        - hands_on_feet
-        - breasts_on_table
+      - tied_up_(nonsexual)
+      - zombie_pose
+      - hand_on_hilt
+      - stroking_own_chin
+      - hanging
+      - head_on_hand
+      - cupping_hands
+      - v_over_mouth
+      - hand_rest
+      - arms_between_legs
+      - arm_on_knee
+      - hand_on_wall
+      - ghost_pose
+      - hand_on_table
+      - hands_in_own_hair
+      - arm_above_head
+      - handstand
+      - arm_on_another's_shoulder
+      - hand_over_eye
+      - hand_on_floor
+      - hand_on_thigh
+      - hand_to_head
+      - hand_on_railing
+      - shrugging
+      - double_\m/
+      - self_hug
+      - covering_one_breast
+      - hands_in_pocket
+      - hands_on_another's_back
+      - arm_on_table
+      - hand_on_leg
+      - holding_own_foot
+      - arms_on_knees
+      - arms_around_back
+      - cross-body_stretch
+      - arms_on_table
+      - arm_on_own_head
+      - x_arms
+      - pointing_down
+      - hands_on_floor
+      - hidden_face
+      - cheek_rest
+      - v_over_head
+      - inward_v
+      - covering_chest
+      - arm_pillow
+      - horns_pose
+      - one_arm_handstand
+      - gendou_pose
+      - mudra
+      - heart_arms
+      - surprised_arms
+      - ok_sign_over_eye
+      - double_biceps_pose
+      - hands_on_table
+      - symmetrical_hand_pose
+      - victory_pose
+      - hand_on_window
+      - hand_on_forehead
+      - heart_arms_duo
+      - vocaloid_boxart_pose
+      - hands_on_thighs
+      - hoshino_ai's_pose
+      - hand_to_forehead
+      - hand_to_weapon
+      - thumb_in_pocket
+      - arms_across_body
+      - vitarka_mudra
+      - hands_on_legs
+      - arm_on_thigh
+      - arm_on_another's_head
+      - hand_between_thighs
+      - hand_on_mirror
+      - reverse_prayer
+      - hand_on_belt
+      - arm_around_leg
+      - hand_over_heart
+      - hands_under_legs
+      - yotsubato!_pose
+      - hand_on_sheath
+      - airplane_arms
+      - arm_on_own_leg
+      - ganbaru_pose
+      - paw_up
+      - double_gyaru_v
+      - pinky_to_mouth
+      - in_pocket
+      - face_in_hands
+      - mesugaki_pose
+      - hug_invitation
+      - hand_on_chair
+      - head_on_hands
+      - hands_on_stomach
+      - holding_behind_neck
+      - triangle_hands
+      - head_arms
+      - myoukou_pose
+      - kongou_pose
+      - pinching_gesture
+      - hand_on_cane
+      - ga_rune_pose
+      - heart_hands_over_eye
+      - head_hold
+      - hand_on_knees
+      - zun_pose
+      - uterus_pose
+      - hugging_own_leg
+      - covering_one_eye
+      - hands_on_ground
+      - hands_on_feet
+      - breasts_on_table
         - ojou-sama_pose
     head_gaze:
     - looking_at_viewer
@@ -4163,6 +4163,8 @@ dynamics:
     - ice_fishing
     - flexing_pectorals
     combat:
+      _tags:
+      - asymmetrical_dual_wielding
       melee:
       - kicking
       - punching
@@ -4246,8 +4248,6 @@ dynamics:
       - licking_blade
       - sword_clash
       - overhead_swing
-      weapon_use:
-      - asymmetrical_dual_wielding
       impact:
       - attack
       - incoming_attack
@@ -4305,105 +4305,105 @@ dynamics:
       - hand_on_weapon
       - headlock
       - scissorhold
-        - catfight
-        - cannibalism
-        - kidnapped
-        - hanged
-        - hemokinesis
-        - snowball_fight
-        - charging_forward
-        - faceoff
-        - threat
-        - imminent_suicide
-        - implied_murder
-        - submission_hold
-        - mind_reading
-        - constriction
-        - beaten
-        - power-up
-        - roaring
-        - master_spark
-        - clash
-        - bisected
-        - umbrakinesis
-        - pointing_sword
-        - knifed
-        - element_bending
-        - licking_blood
-        - boss_fight
-        - tackle
-        - reverse_ryona
-        - licking_weapon
-        - eye_beam
-        - geokinesis
-        - gattai
-        - looking_through_scope
-        - energy_drain
-        - healing
-        - stapled
-        - kneeing
-        - weapon_connection
-        - sword_in_front_of_face
-        - aerokinesis
-        - bloody_handprints
-        - weapon_formation
-        - elbowing
-        - bonk
-        - trample
-        - coughing_blood
-        - borrowed_weapon
-        - spitting_blood
-        - cocking_gun
-        - sword_in_head
-        - target_practice
-        - rear_naked_choke
-        - mouth_beam
-        - mexican_standoff
-        - taking_cover
-        - florakinesis
-        - dogfight
-        - shouryuuken
-        - gun_in_mouth
-        - hand_to_hand
-        - bath_of_blood
-        - at_knifepoint
-        - finishing_move
-        - z-move
-        - ultra_beam
-        - armlock
-        - imminent_fight
-        - spinning_weapon
-        - hunting
-        - kinniku_buster
-        - under_fire
-        - body_control
-        - slam
-        - ricocheting
-        - devil_trigger
-        - haki
-        - resurreccion
-        - photokinesis
-        - shun_goku_satsu
-        - smack
-        - seppuku
-        - sheathing
-        - armbar
-        - domain_expansion
-        - joint_lock
-        - k.o.
-        - triangle_choke
-        - eye_poke
-        - beating
-        - sword_to_throat
-        - robbery
-        - resisting
-        - lunging
-        - submission
-        - capoeira
-        - papyrokinesis
-        - iaidou
-        - sword_fight
-        - neck_hold
+      - catfight
+      - cannibalism
+      - kidnapped
+      - hanged
+      - hemokinesis
+      - snowball_fight
+      - charging_forward
+      - faceoff
+      - threat
+      - imminent_suicide
+      - implied_murder
+      - submission_hold
+      - mind_reading
+      - constriction
+      - beaten
+      - power-up
+      - roaring
+      - master_spark
+      - clash
+      - bisected
+      - umbrakinesis
+      - pointing_sword
+      - knifed
+      - element_bending
+      - licking_blood
+      - boss_fight
+      - tackle
+      - reverse_ryona
+      - licking_weapon
+      - eye_beam
+      - geokinesis
+      - gattai
+      - looking_through_scope
+      - energy_drain
+      - healing
+      - stapled
+      - kneeing
+      - weapon_connection
+      - sword_in_front_of_face
+      - aerokinesis
+      - bloody_handprints
+      - weapon_formation
+      - elbowing
+      - bonk
+      - trample
+      - coughing_blood
+      - borrowed_weapon
+      - spitting_blood
+      - cocking_gun
+      - sword_in_head
+      - target_practice
+      - rear_naked_choke
+      - mouth_beam
+      - mexican_standoff
+      - taking_cover
+      - florakinesis
+      - dogfight
+      - shouryuuken
+      - gun_in_mouth
+      - hand_to_hand
+      - bath_of_blood
+      - at_knifepoint
+      - finishing_move
+      - z-move
+      - ultra_beam
+      - armlock
+      - imminent_fight
+      - spinning_weapon
+      - hunting
+      - kinniku_buster
+      - under_fire
+      - body_control
+      - slam
+      - ricocheting
+      - devil_trigger
+      - haki
+      - resurreccion
+      - photokinesis
+      - shun_goku_satsu
+      - smack
+      - seppuku
+      - sheathing
+      - armbar
+      - domain_expansion
+      - joint_lock
+      - k.o.
+      - triangle_choke
+      - eye_poke
+      - beating
+      - sword_to_throat
+      - robbery
+      - resisting
+      - lunging
+      - submission
+      - capoeira
+      - papyrokinesis
+      - iaidou
+      - sword_fight
+      - neck_hold
     performance:
     - dancing
     - playing_instrument
@@ -4463,6 +4463,8 @@ dynamics:
     - hula
     - henshin
     gesture:
+      _tags:
+      - blowing_kiss
       hand_sign:
       - double_v
       - reaching_towards_viewer
@@ -4522,8 +4524,6 @@ dynamics:
       - three-finger_salute
       - waving_flag
       - hand_wave
-      face_gesture:
-      - blowing_kiss
       general:
       - v
       - heart_hands
@@ -4549,103 +4549,105 @@ dynamics:
       - cheering
       - double_w
       - ear_wiggle
-        - double_fox_shadow_puppet
-        - heart_in_heart_hands
-        - hat_tip
-        - hand_on_glass
-        - facepalm
-        - blowing
-        - scratching_head
-        - scratching_cheek
-        - hand_gesture
-        - handjob_gesture
-        - half-heart_hands
-        - heart_hands_failure
-        - fist_pump
-        - shaking_head
-        - holding_own_wrist
-        - x_fingers
-        - fanning_face
-        - biting_own_finger
-        - gesture
-        - moe_moe_kyun!
-        - toasting_(gesture)
-        - cracking_knuckles
-        - apologizing
-        - snapping_fingers
-        - finger_to_eye
-        - flower_over_mouth
-        - penetration_gesture
-        - fingers_to_mouth
-        - rock_paper_scissors
-        - peeking_through_fingers
-        - begging
-        - grabbing_own_thigh
-        - knocking
-        - grabbing_own_arm
-        - celebration
-        - clutching_chest
-        - middle_w
-        - cupping_hand
-        - crime_prevention_buzzer_threat
-        - grabbing_own_hair
-        - money_gesture
-        - photobomb
-        - wiggling_toes
-        - nodding
-        - finger_to_tongue
-        - shadow_puppet
-        - thumb_to_mouth
-        - flick
-        - insult
-        - wiping_forehead
-        - licking_own_finger
-        - cunnilingus_gesture
-        - biting_own_thumb
-        - biting_finger
-        - hands_on_eyewear
-        - patting_lap
-        - palm-fist_greeting
-        - bras_d'honneur
-        - convention_greeting
-        - finger_cannon
-        - fan_speaking
-        - counting
-        - finger_wagging
-        - fig_sign
-        - ei_ei_mun!
-        - grabbing_own_stomach
-        - holding_stomach
-        - fan_to_mouth
-        - pulling_own_ear
-        - grabbing_own_pectoral
-        - shouting_with_hands
-        - holding_own_hand
-        - hitchhiking
-        - hand_in_mouth
-        - hissing
-        - clutching_head
-        - finger_on_eyewear
-        - goodbye
-        - scratching_chin
-        - hand_on_headset
-        - hand_on_mask
-        - twiddling_fingers
-        - announcement
-        - ragequit
-        - sheeeh!
-        - finger_twirl
-        - stop_(gesture)
-        - dog_shadow_puppet
-        - bang_(gesture)
-        - fist_shaking
-        - desk_slam
-        - tapping_finger
-        - circle_hands
-        - kuji-in
-        - \o/
+      - double_fox_shadow_puppet
+      - heart_in_heart_hands
+      - hat_tip
+      - hand_on_glass
+      - facepalm
+      - blowing
+      - scratching_head
+      - scratching_cheek
+      - hand_gesture
+      - handjob_gesture
+      - half-heart_hands
+      - heart_hands_failure
+      - fist_pump
+      - shaking_head
+      - holding_own_wrist
+      - x_fingers
+      - fanning_face
+      - biting_own_finger
+      - gesture
+      - moe_moe_kyun!
+      - toasting_(gesture)
+      - cracking_knuckles
+      - apologizing
+      - snapping_fingers
+      - finger_to_eye
+      - flower_over_mouth
+      - penetration_gesture
+      - fingers_to_mouth
+      - rock_paper_scissors
+      - peeking_through_fingers
+      - begging
+      - grabbing_own_thigh
+      - knocking
+      - grabbing_own_arm
+      - celebration
+      - clutching_chest
+      - middle_w
+      - cupping_hand
+      - crime_prevention_buzzer_threat
+      - grabbing_own_hair
+      - money_gesture
+      - photobomb
+      - wiggling_toes
+      - nodding
+      - finger_to_tongue
+      - shadow_puppet
+      - thumb_to_mouth
+      - flick
+      - insult
+      - wiping_forehead
+      - licking_own_finger
+      - cunnilingus_gesture
+      - biting_own_thumb
+      - biting_finger
+      - hands_on_eyewear
+      - patting_lap
+      - palm-fist_greeting
+      - bras_d'honneur
+      - convention_greeting
+      - finger_cannon
+      - fan_speaking
+      - counting
+      - finger_wagging
+      - fig_sign
+      - ei_ei_mun!
+      - grabbing_own_stomach
+      - holding_stomach
+      - fan_to_mouth
+      - pulling_own_ear
+      - grabbing_own_pectoral
+      - shouting_with_hands
+      - holding_own_hand
+      - hitchhiking
+      - hand_in_mouth
+      - hissing
+      - clutching_head
+      - finger_on_eyewear
+      - goodbye
+      - scratching_chin
+      - hand_on_headset
+      - hand_on_mask
+      - twiddling_fingers
+      - announcement
+      - ragequit
+      - sheeeh!
+      - finger_twirl
+      - stop_(gesture)
+      - dog_shadow_puppet
+      - bang_(gesture)
+      - fist_shaking
+      - desk_slam
+      - tapping_finger
+      - circle_hands
+      - kuji-in
+      - \o/
     object_manipulation:
       holding:
+        _tags:
+        - carrying_under_arm
         grip_style:
         - mouth_hold
         - stalk_in_mouth
@@ -4656,8 +4658,6 @@ dynamics:
         - trigger_discipline
         - reverse_grip
         - two-handed
-        carry_object:
-        - carrying_under_arm
         general:
         - holding
         - holding_syringe
@@ -4771,142 +4771,142 @@ dynamics:
         - holding_spork
         - holding_flamethrower
         - holding_utensil
-          - holding_heart_(organ)
-          - holding_kunai
-          - holding_rock
-          - holding_boots
-          - holding_scale
-          - holding_rattle
-          - holding_wreath
-          - holding_picture_frame
-          - holding_drawing
-          - holding_cable
-          - holding_kettle
-          - holding_dice
-          - holding_doughnut
-          - holding_bullet
-          - holding_sandals
-          - holding_scalpel
-          - holding_lyre
-          - holding_jug
-          - holding_vial
-          - holding_sheet
-          - holding_rod
-          - holding_snowman
-          - holding_cue_stick
-          - holding_with_gesture
-          - holding_hairband
-          - holding_nail
-          - holding_maracas
-          - holding_sickle
-          - holding_hair_ornament
-          - holding_charm
-          - holding_omikuji
-          - holding_ruler
-          - holding_legwear
-          - holding_manga
-          - holding_above_head
-          - holding_crystal
-          - holding_thermometer
-          - holding_banner
-          - holding_vase
-          - holding_bandages
-          - holding_razor
-          - holding_pan
-          - holding_mistletoe
-          - holding_tool
-          - holding_pinwheel
-          - holding_tripod
-          - holding_ema
-          - holding_pill
-          - holding_belt
-          - holding_coffee_pot
-          - holding_computer_mouse
-          - holding_tissue
-          - holding_water
-          - holding_matchstick
-          - holding_tera_orb
-          - holding_rag
-          - holding_turret
-          - holding_veil
-          - holding_cd
-          - holding_bandaid
-          - holding_bamboo_steamer
-          - holding_compact
-          - holding_planet
-          - holding_flail
-          - gangsta_hold
-          - holding_thermos
-          - holding_lasso
-          - holding_stopwatch
-          - holding_moon
-          - holding_shawl
-          - holding_miniperson
-          - holding_eyepatch
-          - holding_tentacle
-          - holding_wheat
-          - holding_harp
-          - holding_ornament
-          - holding_potion
-          - holding_power_drill
-          - holding_limb
-          - holding_beaker
-          - holding_chair
-          - holding_dustpan
-          - holding_seashell
-          - holding_organ
-          - holding_cube
-          - holding_shoe
-          - holding_hoop
-          - holding_table_tennis_paddle
-          - holding_mascot_head
-          - holding_mp3_player
-          - holding_diploma
-          - holding_ear
-          - holding_machete
-          - holding_blade
-          - holding_snack
-          - holding_halo
-          - holding_cushion
-          - beak_hold
-          - holding_flame
-          - holding_ski_pole
-          - holding_gag
-          - holding_pants
-          - holding_record
-          - holding_cherry
-          - holding_lid
-          - holding_net
-          - holding_vacuum_cleaner
-          - holding_digital_media_player
-          - holding_figure
-          - holding_own_ears
-          - holding_clock
-          - holding_digimon
-          - holding_napkin
-          - holding_shaker
-          - holding_cloak
-          - holding_pitcher
-          - holding_chisel
-          - holding_on
-          - holding_lightstick
-          - holding_trombone
-          - holding_flyer
-          - holding_hoe
-          - holding_board
-          - holding_grass
-          - holding_head_wreath
-          - holding_lightning_bolt
-          - holding_frying_pan
-          - holding_test_tube
-          - holding_detached_head
-          - holding_money
-          - holding_skull
-          - holding_mop
-          - holding_lipstick_tube
-          - triple_wielding
-          - quadruple_wielding
-          - multiple_wielding
+        - holding_heart_(organ)
+        - holding_kunai
+        - holding_rock
+        - holding_boots
+        - holding_scale
+        - holding_rattle
+        - holding_wreath
+        - holding_picture_frame
+        - holding_drawing
+        - holding_cable
+        - holding_kettle
+        - holding_dice
+        - holding_doughnut
+        - holding_bullet
+        - holding_sandals
+        - holding_scalpel
+        - holding_lyre
+        - holding_jug
+        - holding_vial
+        - holding_sheet
+        - holding_rod
+        - holding_snowman
+        - holding_cue_stick
+        - holding_with_gesture
+        - holding_hairband
+        - holding_nail
+        - holding_maracas
+        - holding_sickle
+        - holding_hair_ornament
+        - holding_charm
+        - holding_omikuji
+        - holding_ruler
+        - holding_legwear
+        - holding_manga
+        - holding_above_head
+        - holding_crystal
+        - holding_thermometer
+        - holding_banner
+        - holding_vase
+        - holding_bandages
+        - holding_razor
+        - holding_pan
+        - holding_mistletoe
+        - holding_tool
+        - holding_pinwheel
+        - holding_tripod
+        - holding_ema
+        - holding_pill
+        - holding_belt
+        - holding_coffee_pot
+        - holding_computer_mouse
+        - holding_tissue
+        - holding_water
+        - holding_matchstick
+        - holding_tera_orb
+        - holding_rag
+        - holding_turret
+        - holding_veil
+        - holding_cd
+        - holding_bandaid
+        - holding_bamboo_steamer
+        - holding_compact
+        - holding_planet
+        - holding_flail
+        - gangsta_hold
+        - holding_thermos
+        - holding_lasso
+        - holding_stopwatch
+        - holding_moon
+        - holding_shawl
+        - holding_miniperson
+        - holding_eyepatch
+        - holding_tentacle
+        - holding_wheat
+        - holding_harp
+        - holding_ornament
+        - holding_potion
+        - holding_power_drill
+        - holding_limb
+        - holding_beaker
+        - holding_chair
+        - holding_dustpan
+        - holding_seashell
+        - holding_organ
+        - holding_cube
+        - holding_shoe
+        - holding_hoop
+        - holding_table_tennis_paddle
+        - holding_mascot_head
+        - holding_mp3_player
+        - holding_diploma
+        - holding_ear
+        - holding_machete
+        - holding_blade
+        - holding_snack
+        - holding_halo
+        - holding_cushion
+        - beak_hold
+        - holding_flame
+        - holding_ski_pole
+        - holding_gag
+        - holding_pants
+        - holding_record
+        - holding_cherry
+        - holding_lid
+        - holding_net
+        - holding_vacuum_cleaner
+        - holding_digital_media_player
+        - holding_figure
+        - holding_own_ears
+        - holding_clock
+        - holding_digimon
+        - holding_napkin
+        - holding_shaker
+        - holding_cloak
+        - holding_pitcher
+        - holding_chisel
+        - holding_on
+        - holding_lightstick
+        - holding_trombone
+        - holding_flyer
+        - holding_hoe
+        - holding_board
+        - holding_grass
+        - holding_head_wreath
+        - holding_lightning_bolt
+        - holding_frying_pan
+        - holding_test_tube
+        - holding_detached_head
+        - holding_money
+        - holding_skull
+        - holding_mop
+        - holding_lipstick_tube
+        - triple_wielding
+        - quadruple_wielding
+        - multiple_wielding
         household_tool:
         - holding_umbrella
         - holding_bag
@@ -5409,11 +5409,12 @@ dynamics:
         - hand_under_shirt
   expression:
     mouth:
+      _tags:
+      - closed_mouth
+      - saliva_trail_between_teeth
       open:
       - open_mouth
       - jaw_drop
-      closed:
-      - closed_mouth
       smile:
       - smile
       - grin
@@ -5442,8 +5443,6 @@ dynamics:
       - tongue_out
       - licking_lips
       - biting_tongue
-      saliva:
-      - saliva_trail_between_teeth
       general:
       - :d
       - parted_lips
@@ -5848,6 +5847,8 @@ dynamics:
     - allergy
   interaction:
     contact:
+      _tags:
+      - foot_on_another's_face
       hug:
       - hug
       - hug_from_behind
@@ -5897,244 +5898,242 @@ dynamics:
       - assisted_carrying
       hand_on:
       - hand_on_another's_head
-        - hand_on_another's_shoulder
-        - hand_on_another's_face
-        - headpat
-        - hand_on_another's_cheek
-        - hand_on_another's_chin
-        - hand_on_another's_back
-        - hand_on_another's_arm
-        - hand_on_another's_waist
-        - hand_on_another's_chest
-        - hand_on_another's_thigh
-        - hand_on_another's_hip
-        - hand_on_another's_neck
-        - hand_on_another's_ass
-        - hand_on_another's_stomach
-        - hand_on_another's_leg
-        - hand_on_another's_hand
-        - hand_on_another's_ear
-        - hand_on_another's_knee
-        - hand_on_another's_wrist
-        - hand_on_another's_mouth
-        - incoming_headpat
-        - hand_on_another's_foot
-        - hand_on_another's_forehead
-        - hand_on_another's_hat
-        - hand_on_another's_nape
-        - holding_another's_wrist
-        - holding_another's_arm
-        - hands_on_another's_face
-        - hands_on_another's_shoulders
-        - holding_another's_hair
-        - hands_on_another's_head
-        - hands_on_another's_cheeks
-        - holding_another's_leg
-        - hands_on_another's_thighs
-        - hands_on_another's_chest
-        - hands_on_another's_waist
-        - holding_another's_foot
-        - holding_another's_tail
-        - hands_on_another's_stomach
-        - hands_on_another's_neck
-        - hands_on_another's_shoulder
-        - holding_another's_wrists
-        - hands_on_another's_arms
-        - hands_on_another's_ass
-        - holding_another's_thighs
-        - hands_on_another's_arm
-        - hands_on_another's_leg
-        - holding_another's_legs
-        - hands_on_another's_knees
-        - holding_another's_waist
-        - holding_another's_finger
-        - poking_another's_breast
-        - holding_another's_horns
-        - holding_another's_tongue
-        - hands_on_another's_hips
+      - hand_on_another's_shoulder
+      - hand_on_another's_face
+      - headpat
+      - hand_on_another's_cheek
+      - hand_on_another's_chin
+      - hand_on_another's_back
+      - hand_on_another's_arm
+      - hand_on_another's_waist
+      - hand_on_another's_chest
+      - hand_on_another's_thigh
+      - hand_on_another's_hip
+      - hand_on_another's_neck
+      - hand_on_another's_ass
+      - hand_on_another's_stomach
+      - hand_on_another's_leg
+      - hand_on_another's_hand
+      - hand_on_another's_ear
+      - hand_on_another's_knee
+      - hand_on_another's_wrist
+      - hand_on_another's_mouth
+      - incoming_headpat
+      - hand_on_another's_foot
+      - hand_on_another's_forehead
+      - hand_on_another's_hat
+      - hand_on_another's_nape
+      - holding_another's_wrist
+      - holding_another's_arm
+      - hands_on_another's_face
+      - hands_on_another's_shoulders
+      - holding_another's_hair
+      - hands_on_another's_head
+      - hands_on_another's_cheeks
+      - holding_another's_leg
+      - hands_on_another's_thighs
+      - hands_on_another's_chest
+      - hands_on_another's_waist
+      - holding_another's_foot
+      - holding_another's_tail
+      - hands_on_another's_stomach
+      - hands_on_another's_neck
+      - hands_on_another's_shoulder
+      - holding_another's_wrists
+      - hands_on_another's_arms
+      - hands_on_another's_ass
+      - holding_another's_thighs
+      - hands_on_another's_arm
+      - hands_on_another's_leg
+      - holding_another's_legs
+      - hands_on_another's_knees
+      - holding_another's_waist
+      - holding_another's_finger
+      - poking_another's_breast
+      - holding_another's_horns
+      - holding_another's_tongue
+      - hands_on_another's_hips
       leaning:
       - arm_around_waist
-        - arm_around_neck
-        - lap_pillow_invitation
-        - leaning_on_animal
-        - arm_around_back
-        - face_to_pecs
-      leg_contact:
-      - foot_on_another's_face
+      - arm_around_neck
+      - lap_pillow_invitation
+      - leaning_on_animal
+      - arm_around_back
+      - face_to_pecs
       general:
       - glomp
-        - lifted_by_tail
-        - lifted_by_cursor
-        - hand_in_another's_hair
-        - noses_touching
-        - breast_poke
-        - touching
-        - patting
-        - hand_in_another's_mouth
-        - finger_touching
-        - hand_in_another's_clothes
-        - patting_back
-        - hand_in_another's_pocket
-        - telepathy
-        - arrest
-        - head_on_chest
-        - heads_together
-        - same-sex_bathing
-        - asymmetrical_docking
-        - symmetrical_docking
-        - mixed-sex_bathing
-        - locked_arms
-        - poking
-        - finger_in_another's_mouth
-        - kabedon
-        - cheek_poking
-        - tickling
-        - cheek_press
-        - looking_at_breasts
-        - cheek_squash
-        - ass_support
-        - reaching_towards_another
-        - biting_ear
-        - finger_to_another's_mouth
-        - covering_another's_eyes
-        - hands_on_ass
-        - fist_bump
-        - tickling_feet
-        - handshake
-        - entangled
-        - flirting
-        - biting_neck
-        - hand_over_another's_mouth
-        - high_five
-        - covering_with_blanket
-        - tickling_armpits
-        - playing_with_another's_hair
-        - arguing
-        - trapped
-        - sharing_food
-        - hiding_behind_another
-        - clinging
-        - surrounded_by_hands
-        - scolding
-        - accidental_pervert
-        - rubbing
-        - breast_pillow
-        - trolling
-        - whispering_in_ear
-        - pinky_swear
-        - tickling_sides
-        - drawing_on_another's_face
-        - bed_invitation
-        - hand_on_hand
-        - yukadon
-        - teamwork
-        - adjusting_another's_hair
-        - imminent_bite
-        - sexual_harassment
-        - rejection
-        - cuffed
-        - human_stacking
-        - washing_another
-        - stroking_another's_chin
-        - squishing
-        - biting_head
-        - belly_rub
-        - hand_around_neck
-        - punishment
-        - smelling_hair
-        - tickling_stomach
-        - head_pinned_down
-        - bunny_ears_prank
-        - hand_around_waist
-        - presenting_another
-        - snoot_challenge
-        - human_tower
-        - biting_another's_finger
-        - tying_another's_hair
-        - washing_back
-        - caress
-        - poking_belly
-        - hand_on_animal
-        - biting_another's_tail
-        - tail_around_another's_leg
-        - babywearing
-        - holding_ears
-        - finger_to_another's_cheek
-        - giving_food
-        - pouring_onto_another
-        - smother
-        - shoulder_massage
-        - love_train
-        - kabedon_on_viewer
-        - kanchou
-        - applying_another's_makeup
-        - bumping
-        - biting_another's_hand
-        - foot_massage
-        - sharing
-        - sleeping_together
-        - head_under_another's_clothes
-        - biting_shoulder
-        - helping
-        - blowing_in_ear
-        - looking_at_pectorals
-        - hover_hand
-        - waking_another
-        - imminent_hand_holding
-        - brushing_another's_teeth
-        - hand_gagged
-        - drying_another's_hair
-        - covering_another's_breasts
-        - abduction
-        - holding_finger
-        - rescue
-        - dogpile
-        - cheek-to-breast
-        - looking_at_bulge
-        - forced_partners
-        - holding_feet
-        - pectoral_pillow
-        - ear_fondling
-        - insect_on_finger
-        - blood_sucking
-        - giving_flower
-        - family_bonding
-        - foot_kabedon
-        - biting_arm
-        - taking_another's_hand
-        - interrogation
-        - cradling_head
-        - holding_back
-        - betrayal
-        - leg_on_another's_shoulder
-        - hair_in_another's_mouth
-        - hand_over_another's_eyes
-        - head_rub
-        - pov_bullying
-        - rubbing_nose
-        - giving_wedgie
-        - cutting_another's_hair
-        - biting_another's_lip
-        - shaving_another
-        - hostage
-        - fed_by_viewer
-        - fingers_between_toes
-        - tickling_navel
-        - poking_nose
-        - hands_in_another's_hair
-        - cradling
-        - tsukkomi
-        - hanging_on_arm
-        - finger_to_another's_nose
-        - guess_who
-        - imminent_tickling
-        - rope_train
-        - playing_with_another's_ears
-        - caressing_cheek
-        - waist_hold
-        - footsies
-        - bribery
-        - covering_another's_mouth
+      - lifted_by_tail
+      - lifted_by_cursor
+      - hand_in_another's_hair
+      - noses_touching
+      - breast_poke
+      - touching
+      - patting
+      - hand_in_another's_mouth
+      - finger_touching
+      - hand_in_another's_clothes
+      - patting_back
+      - hand_in_another's_pocket
+      - telepathy
+      - arrest
+      - head_on_chest
+      - heads_together
+      - same-sex_bathing
+      - asymmetrical_docking
+      - symmetrical_docking
+      - mixed-sex_bathing
+      - locked_arms
+      - poking
+      - finger_in_another's_mouth
+      - kabedon
+      - cheek_poking
+      - tickling
+      - cheek_press
+      - looking_at_breasts
+      - cheek_squash
+      - ass_support
+      - reaching_towards_another
+      - biting_ear
+      - finger_to_another's_mouth
+      - covering_another's_eyes
+      - hands_on_ass
+      - fist_bump
+      - tickling_feet
+      - handshake
+      - entangled
+      - flirting
+      - biting_neck
+      - hand_over_another's_mouth
+      - high_five
+      - covering_with_blanket
+      - tickling_armpits
+      - playing_with_another's_hair
+      - arguing
+      - trapped
+      - sharing_food
+      - hiding_behind_another
+      - clinging
+      - surrounded_by_hands
+      - scolding
+      - accidental_pervert
+      - rubbing
+      - breast_pillow
+      - trolling
+      - whispering_in_ear
+      - pinky_swear
+      - tickling_sides
+      - drawing_on_another's_face
+      - bed_invitation
+      - hand_on_hand
+      - yukadon
+      - teamwork
+      - adjusting_another's_hair
+      - imminent_bite
+      - sexual_harassment
+      - rejection
+      - cuffed
+      - human_stacking
+      - washing_another
+      - stroking_another's_chin
+      - squishing
+      - biting_head
+      - belly_rub
+      - hand_around_neck
+      - punishment
+      - smelling_hair
+      - tickling_stomach
+      - head_pinned_down
+      - bunny_ears_prank
+      - hand_around_waist
+      - presenting_another
+      - snoot_challenge
+      - human_tower
+      - biting_another's_finger
+      - tying_another's_hair
+      - washing_back
+      - caress
+      - poking_belly
+      - hand_on_animal
+      - biting_another's_tail
+      - tail_around_another's_leg
+      - babywearing
+      - holding_ears
+      - finger_to_another's_cheek
+      - giving_food
+      - pouring_onto_another
+      - smother
+      - shoulder_massage
+      - love_train
+      - kabedon_on_viewer
+      - kanchou
+      - applying_another's_makeup
+      - bumping
+      - biting_another's_hand
+      - foot_massage
+      - sharing
+      - sleeping_together
+      - head_under_another's_clothes
+      - biting_shoulder
+      - helping
+      - blowing_in_ear
+      - looking_at_pectorals
+      - hover_hand
+      - waking_another
+      - imminent_hand_holding
+      - brushing_another's_teeth
+      - hand_gagged
+      - drying_another's_hair
+      - covering_another's_breasts
+      - abduction
+      - holding_finger
+      - rescue
+      - dogpile
+      - cheek-to-breast
+      - looking_at_bulge
+      - forced_partners
+      - holding_feet
+      - pectoral_pillow
+      - ear_fondling
+      - insect_on_finger
+      - blood_sucking
+      - giving_flower
+      - family_bonding
+      - foot_kabedon
+      - biting_arm
+      - taking_another's_hand
+      - interrogation
+      - cradling_head
+      - holding_back
+      - betrayal
+      - leg_on_another's_shoulder
+      - hair_in_another's_mouth
+      - hand_over_another's_eyes
+      - head_rub
+      - pov_bullying
+      - rubbing_nose
+      - giving_wedgie
+      - cutting_another's_hair
+      - biting_another's_lip
+      - shaving_another
+      - hostage
+      - fed_by_viewer
+      - fingers_between_toes
+      - tickling_navel
+      - poking_nose
+      - hands_in_another's_hair
+      - cradling
+      - tsukkomi
+      - hanging_on_arm
+      - finger_to_another's_nose
+      - guess_who
+      - imminent_tickling
+      - rope_train
+      - playing_with_another's_ears
+      - caressing_cheek
+      - waist_hold
+      - footsies
+      - bribery
+      - covering_another's_mouth
       grab:
       - grabbing_from_behind
       - grabbing_another's_ass
@@ -9491,6 +9490,8 @@ apparel:
     - jika-tabi
     - gomusin
   headwear:
+    _tags:
+    - headphones_over_headwear
     hat:
     - hat
     - black_hat
@@ -9701,8 +9702,6 @@ apparel:
     - goggles_on_headwear
     - eyewear_on_headwear
     - snow_on_headwear
-    over_headwear:
-    - headphones_over_headwear
     interaction:
     - adjusting_headwear
     - hand_on_headwear
@@ -9941,28 +9940,31 @@ apparel:
     - grey_bandana
     - blue_bandana
   body_part_placement:
+    _tags:
+    - bandaid_on_foot
+    - bandaid_on_hand
+    - bandaid_on_stomach
     head:
-      on_head:
-      - bandaid_on_head
-      - bra_on_head
-      - diving_mask_on_head
-      - eyewear_on_head
-      - goggles_on_head
-      - mask_on_head
-      - necktie_on_head
-      - ofuda_on_head
-      - panties_on_head
-      - scarf_on_head
-      - towel_on_head
+    - bandaid_on_head
+    - bra_on_head
+    - diving_mask_on_head
+    - eyewear_on_head
+    - goggles_on_head
+    - mask_on_head
+    - necktie_on_head
+    - ofuda_on_head
+    - panties_on_head
+    - scarf_on_head
+    - towel_on_head
     face:
-      on_face:
-      - bandage_on_face
-      - bandaid_on_face
-      - gauze_on_face
-      - sticker_on_face
+    - bandage_on_face
+    - bandaid_on_face
+    - gauze_on_face
+    - sticker_on_face
     shoulder:
-      on_shoulder:
+      _tags:
       - bandaid_on_shoulder
+      - jacket_over_shoulder
       on_shoulders:
       - cardigan_on_shoulders
       - clothes_on_shoulders
@@ -9971,8 +9973,6 @@ apparel:
       - jacket_on_shoulders
       - kimono_on_shoulders
       - shirt_on_shoulders
-      over_shoulder:
-      - jacket_over_shoulder
     arm:
       on_arm:
       - bandaid_on_arm
@@ -9983,28 +9983,21 @@ apparel:
       - bandana_around_arm
       - chain_around_arm
     chest:
-      on_chest:
-      - bandaid_on_chest
-      - flower_on_chest
-    foot:
-      on_foot:
-      - bandaid_on_foot
-    hand:
-      on_hand:
-      - bandaid_on_hand
+    - bandaid_on_chest
+    - flower_on_chest
     knee:
-      on_knee:
-      - bandaid_on_knee
-      - bandage_on_knee
-      - gauze_on_knee
+    - bandaid_on_knee
+    - bandage_on_knee
+    - gauze_on_knee
     leg:
-      on_leg:
-      - bandaid_on_leg
-      - bandage_on_leg
-      - gauze_on_leg
-      - ofuda_on_leg
-      - sticker_on_leg
+    - bandaid_on_leg
+    - bandage_on_leg
+    - gauze_on_leg
+    - ofuda_on_leg
+    - sticker_on_leg
     neck:
+      _tags:
+      - shirt_behind_neck
       on_neck:
       - bandaid_on_neck
       - bandage_on_neck
@@ -10029,22 +10022,16 @@ apparel:
       - sweater_around_neck
       - towel_around_neck
       - whistle_around_neck
-      behind_neck:
-      - shirt_behind_neck
-    stomach:
-      on_stomach:
-      - bandaid_on_stomach
     waist:
-      around_waist:
-      - belt_around_waist
-      - clothes_around_waist
-      - jacket_around_waist
-      - sweater_around_waist
-      - cardigan_around_waist
-      - shirt_around_waist
-      - towel_around_waist
-      - jumpsuit_around_waist
-      - rope_around_waist
+    - belt_around_waist
+    - clothes_around_waist
+    - jacket_around_waist
+    - sweater_around_waist
+    - cardigan_around_waist
+    - shirt_around_waist
+    - towel_around_waist
+    - jumpsuit_around_waist
+    - rope_around_waist
   worn_accessory:
     neckwear:
       tie:
@@ -11725,6 +11712,8 @@ apparel:
     - horizontal-striped_sleeves
     - fishnet_sleeves
     pattern:
+      _tags:
+      - denim
       stripe:
       - striped_clothes
       - striped
@@ -11778,8 +11767,6 @@ apparel:
       - woodland_camouflage
       - desert_camouflage
       - snow_camouflage
-      material:
-      - denim
       general:
       - multicolored_clothes
       - clothes_writing
@@ -11962,8 +11949,11 @@ apparel:
       - maple_leaf_print
       - musical_note_print
       - fruit_print
-    trim_frill:
-    - frills
+    detail:
+      _tags:
+      - no_emblem
+      trim_frill:
+      - frills
       - fur_trim
       - ribbon_trim
       - lace_trim
@@ -11982,8 +11972,8 @@ apparel:
       - frilled_corset
       - pink_frills
       - black_lace_trim
-    collar_neckline:
-    - sailor_collar
+      collar_neckline:
+      - sailor_collar
       - blue_sailor_collar
       - white_sailor_collar
       - black_sailor_collar
@@ -11999,8 +11989,8 @@ apparel:
       - peter_pan_collar
       - shawl_lapels
       - plaid_lapels
-    opening_strap:
-    - clothing_cutout
+      opening_strap:
+      - clothing_cutout
       - strapless
       - halterneck
       - cleavage_cutout
@@ -12048,8 +12038,8 @@ apparel:
       - ladder_cutout
       - abs_cutout
       - spade_cutout
-    fastener:
-    - buttons
+      fastener:
+      - buttons
       - buckle
       - zipper
       - belt_buckle
@@ -12075,9 +12065,9 @@ apparel:
       - clasp
       - sleeve_zipper
       - v_buckle
-    other:
-      structural:
-      - sash
+      other:
+        structural:
+        - sash
         - black_belt
         - suspenders
         - strap_slip
@@ -12138,8 +12128,8 @@ apparel:
         - long_belt
         - dress_straps
         - shirt_straps
-      decorative:
-      - hat_ribbon
+        decorative:
+        - hat_ribbon
         - hat_bow
         - pom_pom_(clothes)
         - yellow_bow
@@ -12184,8 +12174,8 @@ apparel:
         - shirt_ribbon
         - silver_trim
         - embroidery
-      neckline:
-      - wing_collar
+        neckline:
+        - wing_collar
         - high_collar
         - fur_collar
         - popped_collar
@@ -12202,8 +12192,8 @@ apparel:
         - round_collar
         - shanghai_neckline
         - wingtip_collar
-      general:
-      - highleg
+        general:
+        - highleg
         - pelvic_curtain
         - o-ring
         - spikes
@@ -12362,17 +12352,17 @@ apparel:
         - meandros_trim
         - pink_trim
         - black_trim
-    damage_wear:
-    - gold_trim
+      damage_wear:
+      - gold_trim
       - fold-over_collar
       - gold_embroidery
-    pocket:
-    - pocket
+      pocket:
+      - pocket
       - breast_pocket
       - pocket_square
       - exposed_pocket
-    material_layer:
-    - double-breasted
+      material_layer:
+      - double-breasted
       - multiple_belts
       - multicolored_bow
       - multiple_bows
@@ -12387,8 +12377,6 @@ apparel:
       - two-tone_belt
       - see-through_bow
       - two-tone_wrist_cuffs
-    print_emblem:
-    - no_emblem
   state:
     open_loose:
     - open_clothes
@@ -12436,15 +12424,16 @@ apparel:
     - unbuttoned_dress
     - open_cuffs
     - loose_shirt
-    costume_change:
-    - alternate_costume
+    other:
+      costume_change:
+      - alternate_costume
       - official_alternate_costume
       - oversized_clothes
       - borrowed_clothes
       - undersized_clothes
       - imminent_wardrobe_malfunction
-    coverage:
-    - off_shoulder
+      coverage:
+      - off_shoulder
       - covered_nipples
       - covered_navel
       - hood_down
@@ -12462,8 +12451,8 @@ apparel:
       - see-through_nightgown
       - see-through_towel
       - exposed_gusset
-    general:
-    - bottomless
+      general:
+      - bottomless
       - formal_clothes
       - underwear_only
       - adapted_costume
@@ -13101,6 +13090,9 @@ composition:
       - pokemon_on_lap
       - sitting_on_lap
       shoulder:
+        _tags:
+        - hands_on_shoulders
+        - arm_around_shoulder
         on_shoulder:
         - animal_on_shoulder
         - bird_on_shoulder
@@ -13118,8 +13110,6 @@ composition:
         - sitting_on_shoulder
         - snake_on_shoulder
         - standing_on_shoulder
-        on_shoulders:
-        - hands_on_shoulders
         over_shoulder:
         - arm_over_shoulder
         - carrying_over_shoulder
@@ -13130,8 +13120,6 @@ composition:
         - sword_over_shoulder
         - umbrella_over_shoulder
         - weapon_over_shoulder
-        around_shoulder:
-        - arm_around_shoulder
   background_treatment:
   - simple_background
   - white_background
@@ -14980,6 +14968,8 @@ object:
     - unsheathed
     - saya_(scabbard)
   protective_gear:
+    _tags:
+    - hand_guard
     shield_type:
     - shield
     - arm_shield
@@ -14993,8 +14983,6 @@ object:
     body_protection:
     - body_armor
     - saiyan_armor
-    shield_part:
-    - hand_guard
   named_object:
     weapon:
     - laevatein_(touhou)
@@ -17001,18 +16989,18 @@ object:
       - starry_moon
       - broken_moon
     sun:
+      _tags:
+      - solar_eclipse
       general:
       - sun
       - red_sun
-      eclipse:
-      - solar_eclipse
     star:
+      _tags:
+      - falling_star
       general:
       - star_(sky)
       - christmas_star
       - vega_(star)
-      motion:
-      - falling_star
     planet_system:
       general:
       - planet
@@ -17055,12 +17043,12 @@ object:
       - pegasus_(constellation)
       - ursa_major_(constellation)
     small_body:
+      _tags:
+      - meteor_shower
       general:
       - comet
       - asteroid
       - meteor
-      shower:
-      - meteor_shower
     cosmic_structure:
       galaxy_nebula:
       - nebula
@@ -18765,6 +18753,8 @@ object:
     - playground_equipment_(kemono_friends_pavilion)
     - super_leaf_(transformation)
   scene_prop:
+    _tags:
+    - cd
     fragment_trace:
     - debris
     - broken_glass
@@ -18930,8 +18920,6 @@ object:
     - ink_tank_(splatoon)
     - dragon_bubble_(arknights)
     - kanohi_(bionicle)
-    award_media:
-    - cd
     symbolic_prop:
     - arrow_through_heart
     - snow_rabbit
@@ -22529,6 +22517,8 @@ fandom:
     - pixiv_bottle_(meme)
     - personality_excrement
   style_reference:
+    _tags:
+    - heavy_metal
     visual_style:
     - alphes_(style)
     - 1990s_(style)
@@ -22638,8 +22628,6 @@ fandom:
     - manba_gyaru
     - cowboy_western
     - shinsengumi
-    subculture:
-    - heavy_metal
   cosplay:
   - cosplay
   - shimakaze_(kancolle)_(cosplay)

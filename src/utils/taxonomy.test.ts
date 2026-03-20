@@ -6,6 +6,10 @@ import YAML from 'yaml'
 
 import { buildDataset, castTranslations, formatSlug } from '@/utils/taxonomy'
 
+function getVisitPath(path: string[]): string {
+  return path.at(-1) === '_tags' ? path.slice(0, -1).join('.') : path.join('.')
+}
+
 describe('taxonomy helpers', () => {
   it('builds nested nodes and aggregates tag counts', () => {
     const dataset = buildDataset(
@@ -52,6 +56,35 @@ describe('taxonomy helpers', () => {
     expect(formatSlug('black_hair')).toBe('black hair')
   })
 
+  it('supports direct node tags via _tags without creating a child node', () => {
+    const dataset = buildDataset(
+      {
+        _meta: { version: 'test' },
+        root_a: {
+          _tags: ['alpha_tag'],
+          branch_b: ['beta_tag'],
+        },
+      },
+      'default',
+    )
+
+    const rootA = dataset.nodes.root_a
+    const branchB = dataset.nodes['root_a.branch_b']
+
+    expect(rootA).toBeDefined()
+    expect(branchB).toBeDefined()
+
+    if (!rootA || !branchB) {
+      throw new Error('Expected taxonomy nodes to exist')
+    }
+
+    expect(rootA.tags).toEqual(['alpha_tag'])
+    expect(rootA.children).toEqual(['root_a.branch_b'])
+    expect(dataset.nodes['root_a._tags']).toBeUndefined()
+    expect(rootA.directTagCount).toBe(1)
+    expect(rootA.totalTagCount).toBe(2)
+  })
+
   it('keeps selected head and shoulder anchor tags consolidated', () => {
     const sourcePath = resolve(process.cwd(), 'data/source/danbooru_tag_tree_v3.yaml')
     const parsed = YAML.parse(readFileSync(sourcePath, 'utf8')) as unknown
@@ -61,10 +94,10 @@ describe('taxonomy helpers', () => {
       ['on_head', 'composition.framing.body_part_anchor.head'],
       ['animal_on_shoulder', 'composition.framing.body_part_anchor.shoulder.on_shoulder'],
       ['on_shoulder', 'composition.framing.body_part_anchor.shoulder.on_shoulder'],
-      ['hands_on_shoulders', 'composition.framing.body_part_anchor.shoulder.on_shoulders'],
+      ['hands_on_shoulders', 'composition.framing.body_part_anchor.shoulder'],
       ['arm_over_shoulder', 'composition.framing.body_part_anchor.shoulder.over_shoulder'],
       ['holding_over_opposite_shoulder', 'composition.framing.body_part_anchor.shoulder.over_shoulder'],
-      ['arm_around_shoulder', 'composition.framing.body_part_anchor.shoulder.around_shoulder'],
+      ['arm_around_shoulder', 'composition.framing.body_part_anchor.shoulder'],
     ])
     const rows: Array<{ tag: string, path: string }> = []
 
@@ -72,7 +105,7 @@ describe('taxonomy helpers', () => {
       if (Array.isArray(value)) {
         for (const item of value) {
           if (typeof item === 'string' && expectedPaths.has(item)) {
-            rows.push({ tag: item, path: path.join('.') })
+            rows.push({ tag: item, path: getVisitPath(path) })
           }
         }
 
@@ -92,6 +125,8 @@ describe('taxonomy helpers', () => {
 
     expect(rows).toHaveLength(expectedPaths.size)
     expect(rows.every((row) => row.path === expectedPaths.get(row.tag))).toBe(true)
+    expect(parsed).not.toHaveProperty('composition.framing.body_part_anchor.shoulder.on_shoulders')
+    expect(parsed).not.toHaveProperty('composition.framing.body_part_anchor.shoulder.around_shoulder')
   })
 
   it('keeps lap placement tags consolidated', () => {
@@ -117,7 +152,7 @@ describe('taxonomy helpers', () => {
       if (Array.isArray(value)) {
         for (const item of value) {
           if (typeof item === 'string' && expectedTags.has(item)) {
-            rows.push({ tag: item, path: path.join('.') })
+            rows.push({ tag: item, path: getVisitPath(path) })
           }
         }
 
@@ -164,7 +199,7 @@ describe('taxonomy helpers', () => {
       if (Array.isArray(value)) {
         for (const item of value) {
           if (typeof item === 'string' && expectedPaths.has(item)) {
-            rows.push({ tag: item, path: path.join('.') })
+            rows.push({ tag: item, path: getVisitPath(path) })
           }
         }
 
@@ -186,22 +221,23 @@ describe('taxonomy helpers', () => {
     expect(
       rows.every((row) => row.path === expectedPaths.get(row.tag)),
     ).toBe(true)
+    expect(parsed).not.toHaveProperty('apparel.body_part_placement.neck.behind_neck')
   })
 
   it('keeps selected headwear relation tags consolidated', () => {
     const sourcePath = resolve(process.cwd(), 'data/source/danbooru_tag_tree_v3.yaml')
     const parsed = YAML.parse(readFileSync(sourcePath, 'utf8')) as unknown
     const expectedPaths = new Map([
-      ['adjusting_headwear', 'apparel.headwear.state.interaction'],
-      ['cum_on_headwear', 'apparel.headwear.state.on_headwear'],
-      ['eyewear_on_headwear', 'apparel.headwear.state.on_headwear'],
-      ['goggles_on_headwear', 'apparel.headwear.state.on_headwear'],
-      ['hand_on_headwear', 'apparel.headwear.state.interaction'],
-      ['hands_on_headwear', 'apparel.headwear.state.interaction'],
-      ['headphones_over_headwear', 'apparel.headwear.state.over_headwear'],
-      ['headwear_switch', 'apparel.headwear.state.interaction'],
-      ['putting_on_headwear', 'apparel.headwear.state.interaction'],
-      ['snow_on_headwear', 'apparel.headwear.state.on_headwear'],
+      ['adjusting_headwear', 'apparel.headwear.interaction'],
+      ['cum_on_headwear', 'apparel.headwear.on_headwear'],
+      ['eyewear_on_headwear', 'apparel.headwear.on_headwear'],
+      ['goggles_on_headwear', 'apparel.headwear.on_headwear'],
+      ['hand_on_headwear', 'apparel.headwear.interaction'],
+      ['hands_on_headwear', 'apparel.headwear.interaction'],
+      ['headphones_over_headwear', 'apparel.headwear'],
+      ['headwear_switch', 'apparel.headwear.interaction'],
+      ['putting_on_headwear', 'apparel.headwear.interaction'],
+      ['snow_on_headwear', 'apparel.headwear.on_headwear'],
     ])
     const rows: Array<{ tag: string, path: string }> = []
 
@@ -209,7 +245,7 @@ describe('taxonomy helpers', () => {
       if (Array.isArray(value)) {
         for (const item of value) {
           if (typeof item === 'string' && expectedPaths.has(item)) {
-            rows.push({ tag: item, path: path.join('.') })
+            rows.push({ tag: item, path: getVisitPath(path) })
           }
         }
 
@@ -231,6 +267,94 @@ describe('taxonomy helpers', () => {
     expect(
       rows.every((row) => row.path === expectedPaths.get(row.tag)),
     ).toBe(true)
+    expect(parsed).not.toHaveProperty('apparel.headwear.state')
+    expect(parsed).not.toHaveProperty('apparel.headwear.over_headwear')
+  })
+
+  it('flattens redundant single-child wrappers in selected branches', () => {
+    const sourcePath = resolve(process.cwd(), 'data/source/danbooru_tag_tree_v3.yaml')
+    const parsed = YAML.parse(readFileSync(sourcePath, 'utf8')) as {
+      apparel: {
+        headwear: Record<string, unknown>
+      }
+      character: {
+        archetype: {
+          form: Record<string, unknown>
+        }
+      }
+      dynamics: {
+        action: {
+          combat: Record<string, unknown>
+          gesture: Record<string, unknown>
+          object_manipulation: {
+            holding: Record<string, unknown>
+          }
+        }
+        interaction: {
+          contact: Record<string, unknown>
+        }
+        pose: {
+          arm_hand: Record<string, unknown>
+        }
+      }
+    }
+    const expectedPaths = new Map([
+      ['inkling', 'character.archetype.form'],
+      ['monster_girl', 'character.archetype.form.female'],
+      ['elbow_rest', 'dynamics.pose.arm_hand.elbow_wrist'],
+      ['head_rest', 'dynamics.pose.arm_hand.general'],
+      ['asymmetrical_dual_wielding', 'dynamics.action.combat'],
+      ['fighting_stance', 'dynamics.action.combat.stance'],
+      ['attack', 'dynamics.action.combat.impact'],
+      ['blowing_kiss', 'dynamics.action.gesture'],
+      ['v', 'dynamics.action.gesture.general'],
+      ['carrying_under_arm', 'dynamics.action.object_manipulation.holding'],
+      ['mouth_hold', 'dynamics.action.object_manipulation.holding.grip_style'],
+      ['holding', 'dynamics.action.object_manipulation.holding.general'],
+      ['foot_on_another\'s_face', 'dynamics.interaction.contact'],
+      ['hand_on_another\'s_head', 'dynamics.interaction.contact.hand_on'],
+      ['glomp', 'dynamics.interaction.contact.general'],
+      ['headphones_over_headwear', 'apparel.headwear'],
+      ['cum_on_headwear', 'apparel.headwear.on_headwear'],
+    ])
+    const rows: Array<{ tag: string, path: string }> = []
+
+    function visit(value: unknown, path: string[]): void {
+      if (Array.isArray(value)) {
+        for (const item of value) {
+          if (typeof item === 'string' && expectedPaths.has(item)) {
+            rows.push({ tag: item, path: getVisitPath(path) })
+          }
+        }
+
+        return
+      }
+
+      if (typeof value !== 'object' || value === null) {
+        return
+      }
+
+      for (const [key, nestedValue] of Object.entries(value)) {
+        visit(nestedValue, [...path, key])
+      }
+    }
+
+    visit(parsed, [])
+
+    expect(rows).toHaveLength(expectedPaths.size)
+    expect(rows.every((row) => row.path === expectedPaths.get(row.tag))).toBe(true)
+    expect(parsed.character.archetype.form).not.toHaveProperty('kemono_type')
+    expect(parsed.character.archetype.form).not.toHaveProperty('neutral')
+    expect(parsed.dynamics.action.combat).not.toHaveProperty('weapon_use')
+    expect(parsed.dynamics.action.gesture).not.toHaveProperty('face_gesture')
+    expect(parsed.dynamics.action.object_manipulation.holding).not.toHaveProperty(
+      'general_object_hold',
+    )
+    expect(parsed.dynamics.action.object_manipulation.holding).not.toHaveProperty('carry_object')
+    expect(parsed.dynamics.interaction.contact).not.toHaveProperty('touch')
+    expect(parsed.dynamics.interaction.contact).not.toHaveProperty('leg_contact')
+    expect(parsed.apparel.headwear).not.toHaveProperty('state')
+    expect(parsed.apparel.headwear).not.toHaveProperty('over_headwear')
   })
 
   it('keeps selected neck apparel relation tags consolidated', () => {
@@ -252,7 +376,7 @@ describe('taxonomy helpers', () => {
       ['jacket_around_neck', 'apparel.body_part_placement.neck.around_neck'],
       ['mask_around_neck', 'apparel.body_part_placement.neck.around_neck'],
       ['rope_around_neck', 'apparel.body_part_placement.neck.around_neck'],
-      ['shirt_behind_neck', 'apparel.body_part_placement.neck.behind_neck'],
+      ['shirt_behind_neck', 'apparel.body_part_placement.neck'],
       ['sign_around_neck', 'apparel.body_part_placement.neck.around_neck'],
       ['stethoscope_around_neck', 'apparel.body_part_placement.neck.around_neck'],
       ['stopwatch_around_neck', 'apparel.body_part_placement.neck.around_neck'],
@@ -267,7 +391,7 @@ describe('taxonomy helpers', () => {
       if (Array.isArray(value)) {
         for (const item of value) {
           if (typeof item === 'string' && expectedPaths.has(item)) {
-            rows.push({ tag: item, path: path.join('.') })
+            rows.push({ tag: item, path: getVisitPath(path) })
           }
         }
 
@@ -321,7 +445,7 @@ describe('taxonomy helpers', () => {
       if (Array.isArray(value)) {
         for (const item of value) {
           if (typeof item === 'string' && expectedPaths.has(item)) {
-            rows.push({ tag: item, path: path.join('.') })
+            rows.push({ tag: item, path: getVisitPath(path) })
           }
         }
 
@@ -349,15 +473,15 @@ describe('taxonomy helpers', () => {
     const sourcePath = resolve(process.cwd(), 'data/source/danbooru_tag_tree_v3.yaml')
     const parsed = YAML.parse(readFileSync(sourcePath, 'utf8')) as unknown
     const expectedPaths = new Map([
-      ['belt_around_waist', 'apparel.body_part_placement.waist.around_waist'],
-      ['cardigan_around_waist', 'apparel.body_part_placement.waist.around_waist'],
-      ['clothes_around_waist', 'apparel.body_part_placement.waist.around_waist'],
-      ['jacket_around_waist', 'apparel.body_part_placement.waist.around_waist'],
-      ['jumpsuit_around_waist', 'apparel.body_part_placement.waist.around_waist'],
-      ['rope_around_waist', 'apparel.body_part_placement.waist.around_waist'],
-      ['shirt_around_waist', 'apparel.body_part_placement.waist.around_waist'],
-      ['sweater_around_waist', 'apparel.body_part_placement.waist.around_waist'],
-      ['towel_around_waist', 'apparel.body_part_placement.waist.around_waist'],
+      ['belt_around_waist', 'apparel.body_part_placement.waist'],
+      ['cardigan_around_waist', 'apparel.body_part_placement.waist'],
+      ['clothes_around_waist', 'apparel.body_part_placement.waist'],
+      ['jacket_around_waist', 'apparel.body_part_placement.waist'],
+      ['jumpsuit_around_waist', 'apparel.body_part_placement.waist'],
+      ['rope_around_waist', 'apparel.body_part_placement.waist'],
+      ['shirt_around_waist', 'apparel.body_part_placement.waist'],
+      ['sweater_around_waist', 'apparel.body_part_placement.waist'],
+      ['towel_around_waist', 'apparel.body_part_placement.waist'],
     ])
     const rows: Array<{ tag: string, path: string }> = []
 
@@ -365,7 +489,7 @@ describe('taxonomy helpers', () => {
       if (Array.isArray(value)) {
         for (const item of value) {
           if (typeof item === 'string' && expectedPaths.has(item)) {
-            rows.push({ tag: item, path: path.join('.') })
+            rows.push({ tag: item, path: getVisitPath(path) })
           }
         }
 
@@ -391,24 +515,28 @@ describe('taxonomy helpers', () => {
 
   it('keeps selected wearable body relation tags consolidated', () => {
     const sourcePath = resolve(process.cwd(), 'data/source/danbooru_tag_tree_v3.yaml')
-    const parsed = YAML.parse(readFileSync(sourcePath, 'utf8')) as unknown
+    const parsed = YAML.parse(readFileSync(sourcePath, 'utf8')) as {
+      apparel: {
+        body_part_placement: Record<string, unknown>
+      }
+    }
     const expectedPaths = new Map([
-      ['bandaid_on_head', 'apparel.body_part_placement.head.on_head'],
-      ['bra_on_head', 'apparel.body_part_placement.head.on_head'],
-      ['diving_mask_on_head', 'apparel.body_part_placement.head.on_head'],
-      ['eyewear_on_head', 'apparel.body_part_placement.head.on_head'],
-      ['goggles_on_head', 'apparel.body_part_placement.head.on_head'],
-      ['mask_on_head', 'apparel.body_part_placement.head.on_head'],
-      ['necktie_on_head', 'apparel.body_part_placement.head.on_head'],
-      ['ofuda_on_head', 'apparel.body_part_placement.head.on_head'],
-      ['panties_on_head', 'apparel.body_part_placement.head.on_head'],
-      ['scarf_on_head', 'apparel.body_part_placement.head.on_head'],
-      ['towel_on_head', 'apparel.body_part_placement.head.on_head'],
-      ['bandage_on_face', 'apparel.body_part_placement.face.on_face'],
-      ['bandaid_on_face', 'apparel.body_part_placement.face.on_face'],
-      ['gauze_on_face', 'apparel.body_part_placement.face.on_face'],
-      ['sticker_on_face', 'apparel.body_part_placement.face.on_face'],
-      ['bandaid_on_shoulder', 'apparel.body_part_placement.shoulder.on_shoulder'],
+      ['bandaid_on_head', 'apparel.body_part_placement.head'],
+      ['bra_on_head', 'apparel.body_part_placement.head'],
+      ['diving_mask_on_head', 'apparel.body_part_placement.head'],
+      ['eyewear_on_head', 'apparel.body_part_placement.head'],
+      ['goggles_on_head', 'apparel.body_part_placement.head'],
+      ['mask_on_head', 'apparel.body_part_placement.head'],
+      ['necktie_on_head', 'apparel.body_part_placement.head'],
+      ['ofuda_on_head', 'apparel.body_part_placement.head'],
+      ['panties_on_head', 'apparel.body_part_placement.head'],
+      ['scarf_on_head', 'apparel.body_part_placement.head'],
+      ['towel_on_head', 'apparel.body_part_placement.head'],
+      ['bandage_on_face', 'apparel.body_part_placement.face'],
+      ['bandaid_on_face', 'apparel.body_part_placement.face'],
+      ['gauze_on_face', 'apparel.body_part_placement.face'],
+      ['sticker_on_face', 'apparel.body_part_placement.face'],
+      ['bandaid_on_shoulder', 'apparel.body_part_placement.shoulder'],
       ['cardigan_on_shoulders', 'apparel.body_part_placement.shoulder.on_shoulders'],
       ['clothes_on_shoulders', 'apparel.body_part_placement.shoulder.on_shoulders'],
       ['coat_on_shoulders', 'apparel.body_part_placement.shoulder.on_shoulders'],
@@ -416,26 +544,26 @@ describe('taxonomy helpers', () => {
       ['jacket_on_shoulders', 'apparel.body_part_placement.shoulder.on_shoulders'],
       ['kimono_on_shoulders', 'apparel.body_part_placement.shoulder.on_shoulders'],
       ['shirt_on_shoulders', 'apparel.body_part_placement.shoulder.on_shoulders'],
-      ['jacket_over_shoulder', 'apparel.body_part_placement.shoulder.over_shoulder'],
+      ['jacket_over_shoulder', 'apparel.body_part_placement.shoulder'],
       ['bandaid_on_arm', 'apparel.body_part_placement.arm.on_arm'],
       ['gauze_on_arm', 'apparel.body_part_placement.arm.on_arm'],
       ['sticker_on_arm', 'apparel.body_part_placement.arm.on_arm'],
       ['towel_on_arm', 'apparel.body_part_placement.arm.on_arm'],
       ['bandana_around_arm', 'apparel.body_part_placement.arm.around_arm'],
       ['chain_around_arm', 'apparel.body_part_placement.arm.around_arm'],
-      ['bandaid_on_chest', 'apparel.body_part_placement.chest.on_chest'],
-      ['flower_on_chest', 'apparel.body_part_placement.chest.on_chest'],
-      ['bandaid_on_foot', 'apparel.body_part_placement.foot.on_foot'],
-      ['bandaid_on_hand', 'apparel.body_part_placement.hand.on_hand'],
-      ['bandaid_on_knee', 'apparel.body_part_placement.knee.on_knee'],
-      ['bandage_on_knee', 'apparel.body_part_placement.knee.on_knee'],
-      ['gauze_on_knee', 'apparel.body_part_placement.knee.on_knee'],
-      ['bandaid_on_leg', 'apparel.body_part_placement.leg.on_leg'],
-      ['bandage_on_leg', 'apparel.body_part_placement.leg.on_leg'],
-      ['gauze_on_leg', 'apparel.body_part_placement.leg.on_leg'],
-      ['ofuda_on_leg', 'apparel.body_part_placement.leg.on_leg'],
-      ['sticker_on_leg', 'apparel.body_part_placement.leg.on_leg'],
-      ['bandaid_on_stomach', 'apparel.body_part_placement.stomach.on_stomach'],
+      ['bandaid_on_chest', 'apparel.body_part_placement.chest'],
+      ['flower_on_chest', 'apparel.body_part_placement.chest'],
+      ['bandaid_on_foot', 'apparel.body_part_placement'],
+      ['bandaid_on_hand', 'apparel.body_part_placement'],
+      ['bandaid_on_knee', 'apparel.body_part_placement.knee'],
+      ['bandage_on_knee', 'apparel.body_part_placement.knee'],
+      ['gauze_on_knee', 'apparel.body_part_placement.knee'],
+      ['bandaid_on_leg', 'apparel.body_part_placement.leg'],
+      ['bandage_on_leg', 'apparel.body_part_placement.leg'],
+      ['gauze_on_leg', 'apparel.body_part_placement.leg'],
+      ['ofuda_on_leg', 'apparel.body_part_placement.leg'],
+      ['sticker_on_leg', 'apparel.body_part_placement.leg'],
+      ['bandaid_on_stomach', 'apparel.body_part_placement'],
     ])
     const rows: Array<{ tag: string, path: string }> = []
 
@@ -443,7 +571,7 @@ describe('taxonomy helpers', () => {
       if (Array.isArray(value)) {
         for (const item of value) {
           if (typeof item === 'string' && expectedPaths.has(item)) {
-            rows.push({ tag: item, path: path.join('.') })
+            rows.push({ tag: item, path: getVisitPath(path) })
           }
         }
 
@@ -465,6 +593,20 @@ describe('taxonomy helpers', () => {
     expect(
       rows.every((row) => row.path === expectedPaths.get(row.tag)),
     ).toBe(true)
+    expect(parsed.apparel.body_part_placement.head).toBeInstanceOf(Array)
+    expect(parsed.apparel.body_part_placement.face).toBeInstanceOf(Array)
+    expect(parsed.apparel.body_part_placement.shoulder).toHaveProperty('_tags')
+    expect(parsed.apparel.body_part_placement.chest).toBeInstanceOf(Array)
+    expect(parsed.apparel.body_part_placement.knee).toBeInstanceOf(Array)
+    expect(parsed.apparel.body_part_placement.leg).toBeInstanceOf(Array)
+    expect(parsed.apparel.body_part_placement.waist).toBeInstanceOf(Array)
+    expect(parsed.apparel.body_part_placement).toHaveProperty('_tags')
+    expect(parsed.apparel.body_part_placement.shoulder).not.toHaveProperty('on_shoulder')
+    expect(parsed.apparel.body_part_placement.shoulder).not.toHaveProperty('over_shoulder')
+    expect(parsed.apparel.body_part_placement.neck).not.toHaveProperty('behind_neck')
+    expect(parsed.apparel.body_part_placement).not.toHaveProperty('foot')
+    expect(parsed.apparel.body_part_placement).not.toHaveProperty('hand')
+    expect(parsed.apparel.body_part_placement).not.toHaveProperty('stomach')
   })
 
   it('keeps selected semantic body-part tags in non-anchor domains', () => {
@@ -496,7 +638,7 @@ describe('taxonomy helpers', () => {
       if (Array.isArray(value)) {
         for (const item of value) {
           if (typeof item === 'string' && expectedPaths.has(item)) {
-            rows.push({ tag: item, path: path.join('.') })
+            rows.push({ tag: item, path: getVisitPath(path) })
           }
         }
 
@@ -544,7 +686,7 @@ describe('taxonomy helpers', () => {
       ['body_blush', 'character.skin.blush'],
       ['glowing_veins', 'character.skin.vein'],
       ['sweat', 'character.skin.sweat'],
-      ['oiled', 'character.skin.oil'],
+      ['oiled', 'character.skin'],
     ])
     const rows: Array<{ tag: string, path: string }> = []
 
@@ -552,7 +694,7 @@ describe('taxonomy helpers', () => {
       if (Array.isArray(value)) {
         for (const item of value) {
           if (typeof item === 'string' && expectedPaths.has(item)) {
-            rows.push({ tag: item, path: path.join('.') })
+            rows.push({ tag: item, path: getVisitPath(path) })
           }
         }
 
@@ -579,6 +721,7 @@ describe('taxonomy helpers', () => {
     expect(parsed.character.body.face).not.toHaveProperty('teeth_fang')
     expect(parsed.character.skin).not.toHaveProperty('blush_vein')
     expect(parsed.character.skin).not.toHaveProperty('sweat_oil')
+    expect(parsed.character.skin).not.toHaveProperty('oil')
   })
 
   it('splits mixed mouth expression buckets into single-purpose categories', () => {
@@ -592,11 +735,11 @@ describe('taxonomy helpers', () => {
     }
     const expectedPaths = new Map([
       ['open_mouth', 'dynamics.expression.mouth.open'],
-      ['closed_mouth', 'dynamics.expression.mouth.closed'],
+      ['closed_mouth', 'dynamics.expression.mouth'],
       ['smile', 'dynamics.expression.mouth.smile'],
       ['wrinkled_frown_(detective_pikachu)', 'dynamics.expression.mouth.frown'],
       ['biting_tongue', 'dynamics.expression.mouth.tongue_action'],
-      ['saliva_trail_between_teeth', 'dynamics.expression.mouth.saliva'],
+      ['saliva_trail_between_teeth', 'dynamics.expression.mouth'],
     ])
     const rows: Array<{ tag: string, path: string }> = []
 
@@ -604,7 +747,7 @@ describe('taxonomy helpers', () => {
       if (Array.isArray(value)) {
         for (const item of value) {
           if (typeof item === 'string' && expectedPaths.has(item)) {
-            rows.push({ tag: item, path: path.join('.') })
+            rows.push({ tag: item, path: getVisitPath(path) })
           }
         }
 
@@ -627,6 +770,8 @@ describe('taxonomy helpers', () => {
     expect(parsed.dynamics.expression.mouth).not.toHaveProperty('open_close')
     expect(parsed.dynamics.expression.mouth).not.toHaveProperty('smile_frown')
     expect(parsed.dynamics.expression.mouth).not.toHaveProperty('tongue_drool')
+    expect(parsed.dynamics.expression.mouth).not.toHaveProperty('closed')
+    expect(parsed.dynamics.expression.mouth).not.toHaveProperty('saliva')
   })
 
   it('renames broad container buckets without over-splitting their contents', () => {
@@ -648,7 +793,7 @@ describe('taxonomy helpers', () => {
       if (Array.isArray(value)) {
         for (const item of value) {
           if (typeof item === 'string' && expectedPaths.has(item)) {
-            rows.push({ tag: item, path: path.join('.') })
+            rows.push({ tag: item, path: getVisitPath(path) })
           }
         }
 
@@ -694,7 +839,7 @@ describe('taxonomy helpers', () => {
       if (Array.isArray(value)) {
         for (const item of value) {
           if (typeof item === 'string' && expectedPaths.has(item)) {
-            rows.push({ tag: item, path: path.join('.') })
+            rows.push({ tag: item, path: getVisitPath(path) })
           }
         }
 
@@ -741,7 +886,7 @@ describe('taxonomy helpers', () => {
       if (Array.isArray(value)) {
         for (const item of value) {
           if (typeof item === 'string' && expectedPaths.has(item)) {
-            rows.push({ tag: item, path: path.join('.') })
+            rows.push({ tag: item, path: getVisitPath(path) })
           }
         }
 
@@ -778,15 +923,15 @@ describe('taxonomy helpers', () => {
       ['red_moon', 'object.celestial_body.moon.color_variant'],
       ['broken_moon', 'object.celestial_body.moon.special'],
       ['sun', 'object.celestial_body.sun.general'],
-      ['solar_eclipse', 'object.celestial_body.sun.eclipse'],
+      ['solar_eclipse', 'object.celestial_body.sun'],
       ['star_(sky)', 'object.celestial_body.star.general'],
-      ['falling_star', 'object.celestial_body.star.motion'],
+      ['falling_star', 'object.celestial_body.star'],
       ['earth_(planet)', 'object.celestial_body.planet_system.named_planet'],
       ['planetary_ring', 'object.celestial_body.planet_system.general'],
       ['gemini_(constellation)', 'object.celestial_body.constellation_asterism.zodiac'],
       ['orion_(constellation)', 'object.celestial_body.constellation_asterism.named'],
       ['big_dipper', 'object.celestial_body.constellation_asterism.general'],
-      ['meteor_shower', 'object.celestial_body.small_body.shower'],
+      ['meteor_shower', 'object.celestial_body.small_body'],
       ['comet', 'object.celestial_body.small_body.general'],
       ['nebula', 'object.celestial_body.cosmic_structure.galaxy_nebula'],
       ['black_hole', 'object.celestial_body.cosmic_structure.gravity_well'],
@@ -798,7 +943,7 @@ describe('taxonomy helpers', () => {
       if (Array.isArray(value)) {
         for (const item of value) {
           if (typeof item === 'string' && expectedPaths.has(item)) {
-            rows.push({ tag: item, path: path.join('.') })
+            rows.push({ tag: item, path: getVisitPath(path) })
           }
         }
 
@@ -819,5 +964,8 @@ describe('taxonomy helpers', () => {
     expect(rows).toHaveLength(expectedPaths.size)
     expect(rows.every((row) => row.path === expectedPaths.get(row.tag))).toBe(true)
     expect(Array.isArray(parsed.object.celestial_body)).toBe(false)
+    expect(parsed.object.celestial_body.sun).not.toHaveProperty('eclipse')
+    expect(parsed.object.celestial_body.star).not.toHaveProperty('motion')
+    expect(parsed.object.celestial_body.small_body).not.toHaveProperty('shower')
   })
 })

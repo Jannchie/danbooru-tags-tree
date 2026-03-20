@@ -43,6 +43,7 @@ export interface TaxonomyDataset {
 }
 
 type RawRecord = Record<string, unknown>
+const TAG_KEY = '_tags'
 
 function isPlainRecord(value: unknown): value is RawRecord {
   return typeof value === 'object' && value !== null && !Array.isArray(value)
@@ -134,7 +135,9 @@ export function buildDataset(
     const id = path.join('.')
     const tags = Array.isArray(entryValue)
       ? entryValue.filter((item): item is string => typeof item === 'string')
-      : []
+      : isPlainRecord(entryValue) && Array.isArray(entryValue[TAG_KEY])
+        ? entryValue[TAG_KEY].filter((item): item is string => typeof item === 'string')
+        : []
 
     nodes[id] = {
       id,
@@ -154,6 +157,10 @@ export function buildDataset(
 
     if (isPlainRecord(entryValue)) {
       for (const [childKey, childValue] of Object.entries(entryValue)) {
+        if (childKey === TAG_KEY) {
+          continue
+        }
+
         addNode(childKey, childValue, id, [...path, childKey])
       }
     }
