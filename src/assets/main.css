@@ -30,6 +30,7 @@
   --graph-default-edge: #1c2233;
   --graph-highlight-mix: #0c1020;
   --graph-dim-mix: #0c1020;
+  --graph-hover-bg: #111620;
   --graph-minimap-bg: rgba(12, 16, 32, 0.6);
   --graph-minimap-viewport: rgba(134, 144, 166, 0.7);
 }
@@ -60,10 +61,11 @@
   --shadow-overlay: 0 12px 28px rgba(57, 76, 112, 0.12), 0 2px 8px rgba(57, 76, 112, 0.08);
 
   --graph-root-color: #5b6b82;
-  --graph-label-color: #5b6b82;
+  --graph-label-color: #3a4a60;
   --graph-default-edge: #d8dfeb;
   --graph-highlight-mix: #1f2937;
   --graph-dim-mix: #ffffff;
+  --graph-hover-bg: #ffffff;
   --graph-minimap-bg: rgba(255, 255, 255, 0.92);
   --graph-minimap-viewport: rgba(91, 107, 130, 0.55);
 }

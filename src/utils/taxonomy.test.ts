@@ -517,4 +517,307 @@ describe('taxonomy helpers', () => {
     expect(rows).toHaveLength(expectedPaths.size)
     expect(rows.every((row) => row.path === expectedPaths.get(row.tag))).toBe(true)
   })
+
+  it('splits mixed body-part buckets into single-part categories', () => {
+    const sourcePath = resolve(process.cwd(), 'data/source/danbooru_tag_tree_v3.yaml')
+    const parsed = YAML.parse(readFileSync(sourcePath, 'utf8')) as {
+      character: {
+        body: {
+          body_part: Record<string, unknown>
+          face: Record<string, unknown>
+        }
+        skin: Record<string, unknown>
+      }
+    }
+    const expectedPaths = new Map([
+      ['bare_shoulders', 'character.body.body_part.shoulder'],
+      ['back', 'character.body.body_part.back'],
+      ['thigh_gap', 'character.body.body_part.thigh'],
+      ['broken_leg', 'character.body.body_part.leg'],
+      ['knees', 'character.body.body_part.knee'],
+      ['soles', 'character.body.body_part.foot'],
+      ['toe_scrunch', 'character.body.body_part.toe'],
+      ['palms', 'character.body.body_part.hand'],
+      ['missing_finger', 'character.body.body_part.finger'],
+      ['sharp_teeth', 'character.body.face.teeth'],
+      ['fangs_out', 'character.body.face.fang'],
+      ['body_blush', 'character.skin.blush'],
+      ['glowing_veins', 'character.skin.vein'],
+      ['sweat', 'character.skin.sweat'],
+      ['oiled', 'character.skin.oil'],
+    ])
+    const rows: Array<{ tag: string, path: string }> = []
+
+    function visit(value: unknown, path: string[]): void {
+      if (Array.isArray(value)) {
+        for (const item of value) {
+          if (typeof item === 'string' && expectedPaths.has(item)) {
+            rows.push({ tag: item, path: path.join('.') })
+          }
+        }
+
+        return
+      }
+
+      if (typeof value !== 'object' || value === null) {
+        return
+      }
+
+      for (const [key, nestedValue] of Object.entries(value)) {
+        visit(nestedValue, [...path, key])
+      }
+    }
+
+    visit(parsed, [])
+
+    expect(rows).toHaveLength(expectedPaths.size)
+    expect(rows.every((row) => row.path === expectedPaths.get(row.tag))).toBe(true)
+    expect(parsed.character.body.body_part).not.toHaveProperty('shoulder_back')
+    expect(parsed.character.body.body_part).not.toHaveProperty('leg_thigh')
+    expect(parsed.character.body.body_part).not.toHaveProperty('foot_toe')
+    expect(parsed.character.body.body_part).not.toHaveProperty('hand_finger')
+    expect(parsed.character.body.face).not.toHaveProperty('teeth_fang')
+    expect(parsed.character.skin).not.toHaveProperty('blush_vein')
+    expect(parsed.character.skin).not.toHaveProperty('sweat_oil')
+  })
+
+  it('splits mixed mouth expression buckets into single-purpose categories', () => {
+    const sourcePath = resolve(process.cwd(), 'data/source/danbooru_tag_tree_v3.yaml')
+    const parsed = YAML.parse(readFileSync(sourcePath, 'utf8')) as {
+      dynamics: {
+        expression: {
+          mouth: Record<string, unknown>
+        }
+      }
+    }
+    const expectedPaths = new Map([
+      ['open_mouth', 'dynamics.expression.mouth.open'],
+      ['closed_mouth', 'dynamics.expression.mouth.closed'],
+      ['smile', 'dynamics.expression.mouth.smile'],
+      ['wrinkled_frown_(detective_pikachu)', 'dynamics.expression.mouth.frown'],
+      ['biting_tongue', 'dynamics.expression.mouth.tongue_action'],
+      ['saliva_trail_between_teeth', 'dynamics.expression.mouth.saliva'],
+    ])
+    const rows: Array<{ tag: string, path: string }> = []
+
+    function visit(value: unknown, path: string[]): void {
+      if (Array.isArray(value)) {
+        for (const item of value) {
+          if (typeof item === 'string' && expectedPaths.has(item)) {
+            rows.push({ tag: item, path: path.join('.') })
+          }
+        }
+
+        return
+      }
+
+      if (typeof value !== 'object' || value === null) {
+        return
+      }
+
+      for (const [key, nestedValue] of Object.entries(value)) {
+        visit(nestedValue, [...path, key])
+      }
+    }
+
+    visit(parsed, [])
+
+    expect(rows).toHaveLength(expectedPaths.size)
+    expect(rows.every((row) => row.path === expectedPaths.get(row.tag))).toBe(true)
+    expect(parsed.dynamics.expression.mouth).not.toHaveProperty('open_close')
+    expect(parsed.dynamics.expression.mouth).not.toHaveProperty('smile_frown')
+    expect(parsed.dynamics.expression.mouth).not.toHaveProperty('tongue_drool')
+  })
+
+  it('renames broad container buckets without over-splitting their contents', () => {
+    const sourcePath = resolve(process.cwd(), 'data/source/danbooru_tag_tree_v3.yaml')
+    const parsed = YAML.parse(readFileSync(sourcePath, 'utf8')) as {
+      object: {
+        container: Record<string, unknown>
+      }
+    }
+    const expectedPaths = new Map([
+      ['wine_glass', 'object.container.drinkware'],
+      ['message_in_a_bottle', 'object.container.liquid_container'],
+      ['rice_bowl', 'object.container.dishware'],
+      ['shopping_bag', 'object.container.storage_container'],
+    ])
+    const rows: Array<{ tag: string, path: string }> = []
+
+    function visit(value: unknown, path: string[]): void {
+      if (Array.isArray(value)) {
+        for (const item of value) {
+          if (typeof item === 'string' && expectedPaths.has(item)) {
+            rows.push({ tag: item, path: path.join('.') })
+          }
+        }
+
+        return
+      }
+
+      if (typeof value !== 'object' || value === null) {
+        return
+      }
+
+      for (const [key, nestedValue] of Object.entries(value)) {
+        visit(nestedValue, [...path, key])
+      }
+    }
+
+    visit(parsed, [])
+
+    expect(rows).toHaveLength(expectedPaths.size)
+    expect(rows.every((row) => row.path === expectedPaths.get(row.tag))).toBe(true)
+    expect(parsed.object.container).not.toHaveProperty('cup_glass')
+    expect(parsed.object.container).not.toHaveProperty('bottle_can')
+    expect(parsed.object.container).not.toHaveProperty('plate_bowl')
+    expect(parsed.object.container).not.toHaveProperty('box_bag')
+  })
+
+  it('reorganizes small invertebrates into clearer creature subgroups', () => {
+    const sourcePath = resolve(process.cwd(), 'data/source/danbooru_tag_tree_v3.yaml')
+    const parsed = YAML.parse(readFileSync(sourcePath, 'utf8')) as {
+      creature: {
+        insect_arthropod: Record<string, unknown>
+      }
+    }
+    const expectedPaths = new Map([
+      ['mosquito', 'creature.insect_arthropod.insect'],
+      ['spider', 'creature.insect_arthropod.arachnid'],
+      ['centipede', 'creature.insect_arthropod.other_arthropod'],
+      ['snail', 'creature.insect_arthropod.worm_mollusk'],
+      ['slugcat', 'creature.insect_arthropod.misc'],
+    ])
+    const rows: Array<{ tag: string, path: string }> = []
+
+    function visit(value: unknown, path: string[]): void {
+      if (Array.isArray(value)) {
+        for (const item of value) {
+          if (typeof item === 'string' && expectedPaths.has(item)) {
+            rows.push({ tag: item, path: path.join('.') })
+          }
+        }
+
+        return
+      }
+
+      if (typeof value !== 'object' || value === null) {
+        return
+      }
+
+      for (const [key, nestedValue] of Object.entries(value)) {
+        visit(nestedValue, [...path, key])
+      }
+    }
+
+    visit(parsed, [])
+
+    expect(rows).toHaveLength(expectedPaths.size)
+    expect(rows.every((row) => row.path === expectedPaths.get(row.tag))).toBe(true)
+    expect(parsed.creature.insect_arthropod).not.toHaveProperty('insect_misc')
+  })
+
+  it('reorganizes meme tags by format instead of generic buckets', () => {
+    const sourcePath = resolve(process.cwd(), 'data/source/danbooru_tag_tree_v3.yaml')
+    const parsed = YAML.parse(readFileSync(sourcePath, 'utf8')) as {
+      fandom: {
+        meme: Record<string, unknown>
+      }
+    }
+    const expectedPaths = new Map([
+      ['jack-o\'_challenge', 'fandom.meme.challenge_redraw'],
+      ['padoru_(meme)', 'fandom.meme.character_icon'],
+      ['me!me!me!_dance_(meme)', 'fandom.meme.dance_motion'],
+      ['yamcha_pose_(meme)', 'fandom.meme.pose_scene'],
+      ['pogchamp_(meme)', 'fandom.meme.reaction_expression'],
+      ['oh?_you\'re_approaching_me?_(meme)', 'fandom.meme.quote_catchphrase'],
+      ['drakeposting_(meme)', 'fandom.meme.template_macro'],
+      ['114514_(meme)', 'fandom.meme.trend_meta'],
+      ['pixiv_bottle_(meme)', 'fandom.meme.misc'],
+    ])
+    const rows: Array<{ tag: string, path: string }> = []
+
+    function visit(value: unknown, path: string[]): void {
+      if (Array.isArray(value)) {
+        for (const item of value) {
+          if (typeof item === 'string' && expectedPaths.has(item)) {
+            rows.push({ tag: item, path: path.join('.') })
+          }
+        }
+
+        return
+      }
+
+      if (typeof value !== 'object' || value === null) {
+        return
+      }
+
+      for (const [key, nestedValue] of Object.entries(value)) {
+        visit(nestedValue, [...path, key])
+      }
+    }
+
+    visit(parsed, [])
+
+    expect(rows).toHaveLength(expectedPaths.size)
+    expect(rows.every((row) => row.path === expectedPaths.get(row.tag))).toBe(true)
+    expect(parsed.fandom.meme).not.toHaveProperty('general')
+    expect(parsed.fandom.meme).not.toHaveProperty('trend_meme')
+  })
+
+  it('reorganizes celestial bodies into astronomy-oriented subgroups', () => {
+    const sourcePath = resolve(process.cwd(), 'data/source/danbooru_tag_tree_v3.yaml')
+    const parsed = YAML.parse(readFileSync(sourcePath, 'utf8')) as {
+      object: {
+        celestial_body: Record<string, unknown>
+      }
+    }
+    const expectedPaths = new Map([
+      ['moon', 'object.celestial_body.moon.general'],
+      ['full_moon', 'object.celestial_body.moon.phase'],
+      ['red_moon', 'object.celestial_body.moon.color_variant'],
+      ['broken_moon', 'object.celestial_body.moon.special'],
+      ['sun', 'object.celestial_body.sun.general'],
+      ['solar_eclipse', 'object.celestial_body.sun.eclipse'],
+      ['star_(sky)', 'object.celestial_body.star.general'],
+      ['falling_star', 'object.celestial_body.star.motion'],
+      ['earth_(planet)', 'object.celestial_body.planet_system.named_planet'],
+      ['planetary_ring', 'object.celestial_body.planet_system.general'],
+      ['gemini_(constellation)', 'object.celestial_body.constellation_asterism.zodiac'],
+      ['orion_(constellation)', 'object.celestial_body.constellation_asterism.named'],
+      ['big_dipper', 'object.celestial_body.constellation_asterism.general'],
+      ['meteor_shower', 'object.celestial_body.small_body.shower'],
+      ['comet', 'object.celestial_body.small_body.general'],
+      ['nebula', 'object.celestial_body.cosmic_structure.galaxy_nebula'],
+      ['black_hole', 'object.celestial_body.cosmic_structure.gravity_well'],
+      ['wormhole', 'object.celestial_body.cosmic_structure.gravity_well'],
+    ])
+    const rows: Array<{ tag: string, path: string }> = []
+
+    function visit(value: unknown, path: string[]): void {
+      if (Array.isArray(value)) {
+        for (const item of value) {
+          if (typeof item === 'string' && expectedPaths.has(item)) {
+            rows.push({ tag: item, path: path.join('.') })
+          }
+        }
+
+        return
+      }
+
+      if (typeof value !== 'object' || value === null) {
+        return
+      }
+
+      for (const [key, nestedValue] of Object.entries(value)) {
+        visit(nestedValue, [...path, key])
+      }
+    }
+
+    visit(parsed, [])
+
+    expect(rows).toHaveLength(expectedPaths.size)
+    expect(rows.every((row) => row.path === expectedPaths.get(row.tag))).toBe(true)
+    expect(Array.isArray(parsed.object.celestial_body)).toBe(false)
+  })
 })

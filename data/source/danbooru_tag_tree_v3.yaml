@@ -667,15 +667,11 @@ character:
       - detached_eyes
       - compound_eyes
     face:
-      teeth_fang:
+      teeth:
       - teeth
-      - fang
-      - fangs
       - sharp_teeth
-      - skin_fang
       - round_teeth
       - buck_teeth
-      - fangs_out
       - yellow_teeth
       - colored_teeth
       - gold_teeth
@@ -683,6 +679,11 @@ character:
       - grid_teeth
       - teeth_print
       - blood_on_teeth
+      fang:
+      - fang
+      - fangs
+      - skin_fang
+      - fangs_out
       - crooked_teeth
       - long_fangs
       ear:
@@ -1616,24 +1617,27 @@ character:
       - stomach_hair
       - blood_on_stomach
       - stomach_focus
-      shoulder_back:
+      shoulder:
       - bare_shoulders
       - collarbone
-      - back
-      - bare_back
       - shoulder_blades
       - shoulder_blush
-      leg_thigh:
+      back:
+      - back
+      - bare_back
+      thigh:
       - thighs
-      - legs
-      - bare_legs
       - thick_thighs
       - ass_visible_through_thighs
       - thigh_gap
-      - kneepits
+      - veiny_thighs
+      - huge_thighs
+      - bandaid_on_thigh
+      leg:
+      - legs
+      - bare_legs
       - long_legs
       - bandaged_leg
-      - knees
       - mechanical_legs
       - prosthetic_leg
       - stitched_leg
@@ -1641,37 +1645,38 @@ character:
       - bad_leg
       - single_mechanical_leg
       - bruise_on_leg
-      - veiny_thighs
       - lipstick_mark_on_leg
       - peg_leg
       - severed_leg
       - trembling_legs
       - detached_legs
-      - bandaged_knees
       - broken_leg
       - bite_mark_on_leg
-      - huge_thighs
-      - bandaid_on_thigh
-      foot_toe:
+      knee:
+      - kneepits
+      - knees
+      - bandaged_knees
+      foot:
       - barefoot
       - feet
-      - toes
       - soles
-      - spread_toes
-      - toe_scrunch
-      - between_toes
       - dirty_feet
-      - toe_cleavage
       - bandaged_foot
       - wrong_foot
       - paw_print_soles
       - blood_on_feet
       - sweaty_foot
-      - long_toes
       - large_feet
       - mechanical_foot
-      - no_toes
       - red_feet
+      toe:
+      - toes
+      - spread_toes
+      - toe_scrunch
+      - between_toes
+      - toe_cleavage
+      - long_toes
+      - no_toes
       arm:
       - armpits
       - bare_arms
@@ -1760,7 +1765,7 @@ character:
       - alternate_pectoral_size
       - chest_hair_peek
       - sparse_chest_hair
-      hand_finger:
+      hand:
       - hands
       - disembodied_hand
       - blood_on_hands
@@ -1770,14 +1775,12 @@ character:
       - palms
       - large_hands
       - black_hands
-      - bandaged_fingers
       - veiny_hands
       - webbed_hands
       - glowing_hand
       - flaming_hand
       - skeletal_hand
       - hook_hand
-      - long_fingers
       - male_hand
       - multiple_hands
       - severed_hand
@@ -1793,21 +1796,24 @@ character:
       - ball_hands
       - dirty_hands
       - no_hands
-      - severed_finger
       - stitched_hand
       - yellow_hands
       - too_many_hands
       - paw_print_palms
       - drill_hand
       - small_hands
-      - no_fingers
       - bite_mark_on_hand
       - transparent_hand
+      - shadow_hands
+      finger:
+      - bandaged_fingers
+      - long_fingers
+      - severed_finger
+      - no_fingers
       - stitched_fingers
       - missing_finger
       - paint_on_fingers
       - long_finger
-      - shadow_hands
       prosthetic:
       - prosthesis
       - amputee
@@ -1930,9 +1936,10 @@ character:
       - sternum
       - heart_(organ)
   skin:
-    sweat_oil:
+    sweat:
     - sweat
     - very_sweaty
+    oil:
     - oiled
     color:
     - dark_skin
@@ -2095,9 +2102,10 @@ character:
     - lipstick_mark_on_shoulder
     - pregnancy_mark
     - vitiligo
-    blush_vein:
+    blush:
     - body_blush
     - full-body_blush
+    vein:
     - colored_veins
     - glowing_veins
     injury_condition:
@@ -2395,80 +2403,79 @@ character:
     - chimerism
   archetype:
     form:
-      kemono_type:
-        female:
-        - horse_girl
-        - monster_girl
-        - robot_girl
-        - fish_girl
-        - monkey_girl
-        - moth_girl
-        - frog_girl
-        - tapir_girl
-        - ghost_girl
-        - bee_girl
-        - owl_girl
-        - orca_girl
-        - jaguar_girl
-        - hyena_girl
-        - cockroach_girl
-        - hamster_girl
-        - squid_girl
-        - komainu_girl
-        - product_girl
-        - zebra_girl
-        - cheetah_girl
-        - butterfly_girl
-        - crab_girl
-        - chicken_girl
-        - stoat_girl
-        - mosquito_girl
-        - jackalope_girl
-        - snail_girl
-        male:
-        - monster_boy
-        - dog_boy
-        - demon_boy
-        - rabbit_boy
-        - lion_boy
-        - bear_boy
-        - cow_boy
-        - bird_boy
-        - magical_boy
-        - horse_boy
-        - hyena_boy
-        - reptile_boy
-        - raccoon_boy
-        - deer_boy
-        - mouse_boy
-        - komainu_boy
-        - jackal_boy
-        - leopard_boy
-        - snow_leopard_boy
-        - robot_boy
-        - sheep_boy
-        - octopus_boy
-        - slime_boy
-        - frog_boy
-        - snake_boy
-        - dinosaur_boy
-        - eel_boy
-        - turtle_boy
-        - lamia_boy
-        - panther_boy
-        - spider_boy
-        - duck_boy
-        - reindeer_boy
-        - parrot_boy
-        - moth_boy
-        - plant_boy
-        - red_panda_boy
-        - anglerfish_boy
-        - orca_boy
-        - unicorn_boy
-        - owl_boy
-        neutral:
-        - inkling
+      female:
+      - horse_girl
+      - monster_girl
+      - robot_girl
+      - fish_girl
+      - monkey_girl
+      - moth_girl
+      - frog_girl
+      - tapir_girl
+      - ghost_girl
+      - bee_girl
+      - owl_girl
+      - orca_girl
+      - jaguar_girl
+      - hyena_girl
+      - cockroach_girl
+      - hamster_girl
+      - squid_girl
+      - komainu_girl
+      - product_girl
+      - zebra_girl
+      - cheetah_girl
+      - butterfly_girl
+      - crab_girl
+      - chicken_girl
+      - stoat_girl
+      - mosquito_girl
+      - jackalope_girl
+      - snail_girl
+      male:
+      - monster_boy
+      - dog_boy
+      - demon_boy
+      - rabbit_boy
+      - lion_boy
+      - bear_boy
+      - cow_boy
+      - bird_boy
+      - magical_boy
+      - horse_boy
+      - hyena_boy
+      - reptile_boy
+      - raccoon_boy
+      - deer_boy
+      - mouse_boy
+      - komainu_boy
+      - jackal_boy
+      - leopard_boy
+      - snow_leopard_boy
+      - robot_boy
+      - sheep_boy
+      - octopus_boy
+      - slime_boy
+      - frog_boy
+      - snake_boy
+      - dinosaur_boy
+      - eel_boy
+      - turtle_boy
+      - lamia_boy
+      - panther_boy
+      - spider_boy
+      - duck_boy
+      - reindeer_boy
+      - parrot_boy
+      - moth_boy
+      - plant_boy
+      - red_panda_boy
+      - anglerfish_boy
+      - orca_boy
+      - unicorn_boy
+      - owl_boy
+      neutral:
+      - inkling
       stature_form:
       - colossus
       - mini_person
@@ -3337,44 +3344,43 @@ dynamics:
       - hands_on_own_feet
       - hands_on_own_arms
       - finger_to_own_nose
+      elbow_wrist:
+      - elbow_rest
+      - elbows_on_table
+      - elbow_on_knee
+      - elbow_on_table
+      - crossed_wrists
+      - elbows_on_knees
+      - wrists_extended
+      - elbow_on_thigh
+      - wrist_extended
+      - dorsiflexion_(wrist)
+      - elbow_on_another's_shoulder
+      - elbow_on_arm
+      hand_gesture:
+      - hand_in_pocket
+      - hand_between_legs
+      - hands_in_pockets
       general:
-        elbow_wrist:
-        - elbow_rest
-        - elbows_on_table
-        - elbow_on_knee
-        - elbow_on_table
-        - crossed_wrists
-        - elbows_on_knees
-        - wrists_extended
-        - elbow_on_thigh
-        - wrist_extended
-        - dorsiflexion_(wrist)
-        - elbow_on_another's_shoulder
-        - elbow_on_arm
-        hand_gesture:
-        - hand_in_pocket
-        - hand_between_legs
-        - hands_in_pockets
-        general:
-        - head_rest
-        - paw_pose
-        - v_arms
-        - outstretched_hand
-        - claw_pose
-        - bound_arms
-        - folded
-        - covering_crotch
-        - presenting_armpit
-        - breast_rest
-        - pinky_out
-        - v_over_eye
-        - arms_under_breasts
-        - arm_rest
-        - w_arms
-        - hands_in_hair
-        - holding_own_arm
-        - flexing
-        - hands_in_opposite_sleeves
+      - head_rest
+      - paw_pose
+      - v_arms
+      - outstretched_hand
+      - claw_pose
+      - bound_arms
+      - folded
+      - covering_crotch
+      - presenting_armpit
+      - breast_rest
+      - pinky_out
+      - v_over_eye
+      - arms_under_breasts
+      - arm_rest
+      - w_arms
+      - hands_in_hair
+      - holding_own_arm
+      - flexing
+      - hands_in_opposite_sleeves
         - tied_up_(nonsexual)
         - zombie_pose
         - hand_on_hilt
@@ -4222,84 +4228,83 @@ dynamics:
       - imminent_death
       - implied_death
       - execution
+      stance:
+      - fighting_stance
+      - battle
+      - fighting
+      - duel
+      - aerial_battle
+      - mixed-sex_combat
+      - pokemon_battle
+      - mixed_gender_duel
+      sword_attack:
+      - electrocution
+      - swinging_weapon
+      - hand_on_blade
+      - blade_to_throat
+      - hand_to_blade
+      - licking_blade
+      - sword_clash
+      - overhead_swing
+      weapon_use:
+      - asymmetrical_dual_wielding
+      impact:
+      - attack
+      - incoming_attack
+      - hitting
+      - crushing
+      - imminent_attack
+      - crushed
+      - hip_attack
+      - explosion_gag
+      - all-out_attack
+      - imminent_explosion
+      - shichiten_shichitou
       general:
-        stance:
-        - fighting_stance
-        - battle
-        - fighting
-        - duel
-        - aerial_battle
-        - mixed-sex_combat
-        - pokemon_battle
-        - mixed_gender_duel
-        sword_attack:
-        - electrocution
-        - swinging_weapon
-        - hand_on_blade
-        - blade_to_throat
-        - hand_to_blade
-        - licking_blade
-        - sword_clash
-        - overhead_swing
-        weapon_use:
-        - asymmetrical_dual_wielding
-        impact:
-        - attack
-        - incoming_attack
-        - hitting
-        - crushing
-        - imminent_attack
-        - crushed
-        - hip_attack
-        - explosion_gag
-        - all-out_attack
-        - imminent_explosion
-        - shichiten_shichitou
-        general:
-        - planted
-        - unsheathing
-        - danmaku
-        - finger_on_trigger
-        - pyrokinesis
-        - electrokinesis
-        - breath_weapon
-        - destruction
-        - breathing_fire
-        - drawing_bow
-        - drawing_sword
-        - in_the_face
-        - hydrokinesis
-        - slapping
-        - telekinesis
-        - struggling
-        - action
-        - self-harm
-        - powering_up
-        - pushing
-        - war
-        - abuse
-        - breaking
-        - pokemon_move
-        - protecting
-        - captured
-        - murder
-        - choke_hold
-        - martial_arts
-        - dodging
-        - cryokinesis
-        - casing_ejection
-        - blood_spray
-        - violence
-        - neck_grab
-        - tied_to_chair
-        - pointing_melee_weapon
-        - confrontation
-        - at_gunpoint
-        - kidnapping
-        - kung_fu
-        - hand_on_weapon
-        - headlock
-        - scissorhold
+      - planted
+      - unsheathing
+      - danmaku
+      - finger_on_trigger
+      - pyrokinesis
+      - electrokinesis
+      - breath_weapon
+      - destruction
+      - breathing_fire
+      - drawing_bow
+      - drawing_sword
+      - in_the_face
+      - hydrokinesis
+      - slapping
+      - telekinesis
+      - struggling
+      - action
+      - self-harm
+      - powering_up
+      - pushing
+      - war
+      - abuse
+      - breaking
+      - pokemon_move
+      - protecting
+      - captured
+      - murder
+      - choke_hold
+      - martial_arts
+      - dodging
+      - cryokinesis
+      - casing_ejection
+      - blood_spray
+      - violence
+      - neck_grab
+      - tied_to_chair
+      - pointing_melee_weapon
+      - confrontation
+      - at_gunpoint
+      - kidnapping
+      - kung_fu
+      - hand_on_weapon
+      - headlock
+      - scissorhold
         - catfight
         - cannibalism
         - kidnapped
@@ -4517,34 +4522,33 @@ dynamics:
       - three-finger_salute
       - waving_flag
       - hand_wave
+      face_gesture:
+      - blowing_kiss
       general:
-        face_gesture:
-        - blowing_kiss
-        general:
-        - v
-        - heart_hands
-        - hands_on_own_face
-        - breast_hold
-        - hand_on_own_head
-        - hand_to_own_mouth
-        - grabbing_own_breast
-        - holding_own_hair
-        - tail_wagging
-        - sheet_grab
-        - fox_shadow_puppet
-        - shushing
-        - \m/
-        - grabbing_own_ass
-        - peeking_out
-        - praying
-        - fellatio_gesture
-        - heart_hands_duo
-        - come_hither
-        - shading_eyes
-        - finger_in_own_mouth
-        - cheering
-        - double_w
-        - ear_wiggle
+      - v
+      - heart_hands
+      - hands_on_own_face
+      - breast_hold
+      - hand_on_own_head
+      - hand_to_own_mouth
+      - grabbing_own_breast
+      - holding_own_hair
+      - tail_wagging
+      - sheet_grab
+      - fox_shadow_puppet
+      - shushing
+      - \m/
+      - grabbing_own_ass
+      - peeking_out
+      - praying
+      - fellatio_gesture
+      - heart_hands_duo
+      - come_hither
+      - shading_eyes
+      - finger_in_own_mouth
+      - cheering
+      - double_w
+      - ear_wiggle
         - double_fox_shadow_puppet
         - heart_in_heart_hands
         - hat_tip
@@ -4642,132 +4646,131 @@ dynamics:
         - \o/
     object_manipulation:
       holding:
-        general_object_hold:
-          grip_style:
-          - mouth_hold
-          - stalk_in_mouth
-          - knives_between_fingers
-          - ofuda_between_fingers
-          - in_mouth
-          - dual_wielding
-          - trigger_discipline
-          - reverse_grip
-          - two-handed
-          carry_object:
-          - carrying_under_arm
-          general:
-          - holding
-          - holding_syringe
-          - holding_gohei
-          - holding_stick
-          - holding_helmet
-          - holding_saucer
-          - holding_own_tail
-          - holding_burger
-          - holding_fireworks
-          - holding_plectrum
-          - holding_jewelry
-          - holding_suitcase
-          - holding_person
-          - holding_riding_crop
-          - holding_teapot
-          - holding_heart
-          - holding_photo
-          - holding_scepter
-          - holding_legs
-          - holding_briefcase
-          - holding_glowstick
-          - holding_cross
-          - holding_watermelon
-          - holding_necklace
-          - holding_pole
-          - teeth_hold
-          - holding_swimsuit
-          - holding_with_feet
-          - holding_with_tail
-          - holding_gem
-          - hands_on_hilt
-          - holding_flask
-          - object_floating_above_hand
-          - holding_bell
-          - object_in_pocket
-          - holding_reins
-          - holding_footwear
-          - holding_menu
-          - holding_notepad
-          - holding_surfboard
-          - holding_blanket
-          - holding_handcuffs
-          - holding_spring_onion
-          - holding_crowbar
-          - holding_club
-          - holding_jar
-          - holding_carton
-          - holding_paddle
-          - holding_pocket_watch
-          - holding_feather
-          - holding_ofuda
-          - holding_leg
-          - holding_mallet
-          - standard_bearer
-          - holding_whistle
-          - holding_milk_carton
-          - holding_shower_head
-          - holding_pointer
-          - holding_cigar
-          - holding_handkerchief
-          - holding_duster
-          - holding_orb
-          - holding_mahjong_tile
-          - holding_star
-          - holding_pumpkin
-          - holding_butterfly_net
-          - holding_pregnancy_test
-          - holding_mini_person
-          - holding_cloth
-          - holding_sponge
-          - holding_string
-          - holding_chess_piece
-          - holding_party_popper
-          - holding_bone
-          - holding_tongs
-          - holding_torpedo
-          - holding_hair_dryer
-          - holding_crown
-          - holding_racket
-          - holding_ring
-          - holding_wallet
-          - holding_stethoscope
-          - holding_rocket_launcher
-          - holding_gourd
-          - holding_mushroom
-          - holding_ticket
-          - holding_lightsaber
-          - holding_anchor
-          - holding_cage
-          - holding_cooking_pot
-          - holding_trophy
-          - holding_tennis_racket
-          - holding_cleaver
-          - holding_walkie-talkie
-          - holding_shuriken
-          - holding_hand_grip
-          - holding_skateboard
-          - holding_chibi
-          - holding_screwdriver
-          - holding_tanzaku
-          - holding_dumbbell
-          - holding_case
-          - holding_oar
-          - holding_shell
-          - holding_goggles
-          - holding_folder
-          - holding_collar
-          - holding_sandwich
-          - holding_golf_club
-          - holding_spork
-          - holding_flamethrower
-          - holding_utensil
+        grip_style:
+        - mouth_hold
+        - stalk_in_mouth
+        - knives_between_fingers
+        - ofuda_between_fingers
+        - in_mouth
+        - dual_wielding
+        - trigger_discipline
+        - reverse_grip
+        - two-handed
+        carry_object:
+        - carrying_under_arm
+        general:
+        - holding
+        - holding_syringe
+        - holding_gohei
+        - holding_stick
+        - holding_helmet
+        - holding_saucer
+        - holding_own_tail
+        - holding_burger
+        - holding_fireworks
+        - holding_plectrum
+        - holding_jewelry
+        - holding_suitcase
+        - holding_person
+        - holding_riding_crop
+        - holding_teapot
+        - holding_heart
+        - holding_photo
+        - holding_scepter
+        - holding_legs
+        - holding_briefcase
+        - holding_glowstick
+        - holding_cross
+        - holding_watermelon
+        - holding_necklace
+        - holding_pole
+        - teeth_hold
+        - holding_swimsuit
+        - holding_with_feet
+        - holding_with_tail
+        - holding_gem
+        - hands_on_hilt
+        - holding_flask
+        - object_floating_above_hand
+        - holding_bell
+        - object_in_pocket
+        - holding_reins
+        - holding_footwear
+        - holding_menu
+        - holding_notepad
+        - holding_surfboard
+        - holding_blanket
+        - holding_handcuffs
+        - holding_spring_onion
+        - holding_crowbar
+        - holding_club
+        - holding_jar
+        - holding_carton
+        - holding_paddle
+        - holding_pocket_watch
+        - holding_feather
+        - holding_ofuda
+        - holding_leg
+        - holding_mallet
+        - standard_bearer
+        - holding_whistle
+        - holding_milk_carton
+        - holding_shower_head
+        - holding_pointer
+        - holding_cigar
+        - holding_handkerchief
+        - holding_duster
+        - holding_orb
+        - holding_mahjong_tile
+        - holding_star
+        - holding_pumpkin
+        - holding_butterfly_net
+        - holding_pregnancy_test
+        - holding_mini_person
+        - holding_cloth
+        - holding_sponge
+        - holding_string
+        - holding_chess_piece
+        - holding_party_popper
+        - holding_bone
+        - holding_tongs
+        - holding_torpedo
+        - holding_hair_dryer
+        - holding_crown
+        - holding_racket
+        - holding_ring
+        - holding_wallet
+        - holding_stethoscope
+        - holding_rocket_launcher
+        - holding_gourd
+        - holding_mushroom
+        - holding_ticket
+        - holding_lightsaber
+        - holding_anchor
+        - holding_cage
+        - holding_cooking_pot
+        - holding_trophy
+        - holding_tennis_racket
+        - holding_cleaver
+        - holding_walkie-talkie
+        - holding_shuriken
+        - holding_hand_grip
+        - holding_skateboard
+        - holding_chibi
+        - holding_screwdriver
+        - holding_tanzaku
+        - holding_dumbbell
+        - holding_case
+        - holding_oar
+        - holding_shell
+        - holding_goggles
+        - holding_folder
+        - holding_collar
+        - holding_sandwich
+        - holding_golf_club
+        - holding_spork
+        - holding_flamethrower
+        - holding_utensil
           - holding_heart_(organ)
           - holding_kunai
           - holding_rock
@@ -5406,38 +5409,41 @@ dynamics:
         - hand_under_shirt
   expression:
     mouth:
-      open_close:
+      open:
       - open_mouth
-      - closed_mouth
       - jaw_drop
-      smile_frown:
+      closed:
+      - closed_mouth
+      smile:
       - smile
       - grin
-      - frown
       - light_smile
-      - wavy_mouth
-      - pout
       - smirk
-      - light_frown
       - evil_smile
       - seductive_smile
       - nervous_smile
       - evil_grin
-      - scowl
       - crazy_smile
       - false_smile
       - forced_smile
       - sad_smile
-      - pouty_lips
       - fingersmile
       - crazy_grin
+      frown:
+      - frown
+      - wavy_mouth
+      - pout
+      - light_frown
+      - scowl
+      - pouty_lips
       - sneer
       - wrinkled_frown_(detective_pikachu)
-      tongue_drool:
+      tongue_action:
       - tongue_out
       - licking_lips
-      - saliva_trail_between_teeth
       - biting_tongue
+      saliva:
+      - saliva_trail_between_teeth
       general:
       - :d
       - parted_lips
@@ -5889,9 +5895,8 @@ dynamics:
       - fireman's_carry
       - carrying_multiple_people
       - assisted_carrying
-      touch:
-        hand_on:
-        - hand_on_another's_head
+      hand_on:
+      - hand_on_another's_head
         - hand_on_another's_shoulder
         - hand_on_another's_face
         - headpat
@@ -5947,17 +5952,17 @@ dynamics:
         - holding_another's_horns
         - holding_another's_tongue
         - hands_on_another's_hips
-        leaning:
-        - arm_around_waist
+      leaning:
+      - arm_around_waist
         - arm_around_neck
         - lap_pillow_invitation
         - leaning_on_animal
         - arm_around_back
         - face_to_pecs
-        leg_contact:
-        - foot_on_another's_face
-        general:
-        - glomp
+      leg_contact:
+      - foot_on_another's_face
+      general:
+      - glomp
         - lifted_by_tail
         - lifted_by_cursor
         - hand_in_another's_hair
@@ -9691,20 +9696,19 @@ apparel:
     - print_headwear
     - wide_brim
     - floating_headgear
-    state:
-      on_headwear:
-      - cum_on_headwear
-      - goggles_on_headwear
-      - eyewear_on_headwear
-      - snow_on_headwear
-      over_headwear:
-      - headphones_over_headwear
-      interaction:
-      - adjusting_headwear
-      - hand_on_headwear
-      - hands_on_headwear
-      - headwear_switch
-      - putting_on_headwear
+    on_headwear:
+    - cum_on_headwear
+    - goggles_on_headwear
+    - eyewear_on_headwear
+    - snow_on_headwear
+    over_headwear:
+    - headphones_over_headwear
+    interaction:
+    - adjusting_headwear
+    - hand_on_headwear
+    - hands_on_headwear
+    - headwear_switch
+    - putting_on_headwear
     headband:
     - red_headband
     - hachimaki
@@ -11958,9 +11962,8 @@ apparel:
       - maple_leaf_print
       - musical_note_print
       - fruit_print
-    detail:
-      trim_frill:
-      - frills
+    trim_frill:
+    - frills
       - fur_trim
       - ribbon_trim
       - lace_trim
@@ -11979,8 +11982,8 @@ apparel:
       - frilled_corset
       - pink_frills
       - black_lace_trim
-      collar_neckline:
-      - sailor_collar
+    collar_neckline:
+    - sailor_collar
       - blue_sailor_collar
       - white_sailor_collar
       - black_sailor_collar
@@ -11996,8 +11999,8 @@ apparel:
       - peter_pan_collar
       - shawl_lapels
       - plaid_lapels
-      opening_strap:
-      - clothing_cutout
+    opening_strap:
+    - clothing_cutout
       - strapless
       - halterneck
       - cleavage_cutout
@@ -12045,8 +12048,8 @@ apparel:
       - ladder_cutout
       - abs_cutout
       - spade_cutout
-      fastener:
-      - buttons
+    fastener:
+    - buttons
       - buckle
       - zipper
       - belt_buckle
@@ -12072,9 +12075,9 @@ apparel:
       - clasp
       - sleeve_zipper
       - v_buckle
-      other:
-        structural:
-        - sash
+    other:
+      structural:
+      - sash
         - black_belt
         - suspenders
         - strap_slip
@@ -12135,8 +12138,8 @@ apparel:
         - long_belt
         - dress_straps
         - shirt_straps
-        decorative:
-        - hat_ribbon
+      decorative:
+      - hat_ribbon
         - hat_bow
         - pom_pom_(clothes)
         - yellow_bow
@@ -12181,8 +12184,8 @@ apparel:
         - shirt_ribbon
         - silver_trim
         - embroidery
-        neckline:
-        - wing_collar
+      neckline:
+      - wing_collar
         - high_collar
         - fur_collar
         - popped_collar
@@ -12199,8 +12202,8 @@ apparel:
         - round_collar
         - shanghai_neckline
         - wingtip_collar
-        general:
-        - highleg
+      general:
+      - highleg
         - pelvic_curtain
         - o-ring
         - spikes
@@ -12359,17 +12362,17 @@ apparel:
         - meandros_trim
         - pink_trim
         - black_trim
-      damage_wear:
-      - gold_trim
+    damage_wear:
+    - gold_trim
       - fold-over_collar
       - gold_embroidery
-      pocket:
-      - pocket
+    pocket:
+    - pocket
       - breast_pocket
       - pocket_square
       - exposed_pocket
-      material_layer:
-      - double-breasted
+    material_layer:
+    - double-breasted
       - multiple_belts
       - multicolored_bow
       - multiple_bows
@@ -12384,8 +12387,8 @@ apparel:
       - two-tone_belt
       - see-through_bow
       - two-tone_wrist_cuffs
-      print_emblem:
-      - no_emblem
+    print_emblem:
+    - no_emblem
   state:
     open_loose:
     - open_clothes
@@ -12433,16 +12436,15 @@ apparel:
     - unbuttoned_dress
     - open_cuffs
     - loose_shirt
-    other:
-      costume_change:
-      - alternate_costume
+    costume_change:
+    - alternate_costume
       - official_alternate_costume
       - oversized_clothes
       - borrowed_clothes
       - undersized_clothes
       - imminent_wardrobe_malfunction
-      coverage:
-      - off_shoulder
+    coverage:
+    - off_shoulder
       - covered_nipples
       - covered_navel
       - hood_down
@@ -12460,8 +12462,8 @@ apparel:
       - see-through_nightgown
       - see-through_towel
       - exposed_gusset
-      general:
-      - bottomless
+    general:
+    - bottomless
       - formal_clothes
       - underwear_only
       - adapted_costume
@@ -16978,71 +16980,95 @@ object:
     - gracidea
     - seaweed
   celestial_body:
-  - moon
-  - star_(sky)
-  - crescent
-  - full_moon
-  - sun
-  - crescent_moon
-  - planet
-  - earth_(planet)
-  - constellation
-  - red_moon
-  - nebula
-  - milky_way
-  - meteor_shower
-  - black_hole
-  - comet
-  - red_sun
-  - planetary_ring
-  - asteroid
-  - meteor
-  - saturn_(planet)
-  - yellow_moon
-  - big_dipper
-  - gemini_(constellation)
-  - half_moon
-  - starry_moon
-  - cancer_(constellation)
-  - multiple_moons
-  - libra_(constellation)
-  - orbital_path
-  - taurus_(constellation)
-  - cassiopeia_(constellation)
-  - solar_eclipse
-  - jupiter_(planet)
-  - christmas_star
-  - scorpius_(constellation)
-  - sagittarius_(constellation)
-  - capricorn_(constellation)
-  - falling_star
-  - aries_(constellation)
-  - virgo_(constellation)
-  - pisces_(constellation)
-  - mars_(planet)
-  - gibbous_moon
-  - broken_moon
-  - aquarius_(constellation)
-  - blue_moon
-  - orion_(constellation)
-  - pink_moon
-  - solar_system
-  - cygnus_(constellation)
-  - venus_(planet)
-  - lyra_(constellation)
-  - neptune_(planet)
-  - uranus_(planet)
-  - ursa_minor_(constellation)
-  - aquila_(constellation)
-  - crux_(constellation)
-  - pegasus_(constellation)
-  - new_moon
-  - m87_black_hole
-  - wormhole
-  - mercury_(planet)
-  - ursa_major_(constellation)
-  - vega_(star)
-  - huge_moon
+    moon:
+      general:
+      - moon
+      - multiple_moons
+      - huge_moon
+      phase:
+      - crescent
+      - full_moon
+      - crescent_moon
+      - half_moon
+      - gibbous_moon
+      - new_moon
+      color_variant:
+      - red_moon
+      - yellow_moon
+      - blue_moon
+      - pink_moon
+      special:
+      - starry_moon
+      - broken_moon
+    sun:
+      general:
+      - sun
+      - red_sun
+      eclipse:
+      - solar_eclipse
+    star:
+      general:
+      - star_(sky)
+      - christmas_star
+      - vega_(star)
+      motion:
+      - falling_star
+    planet_system:
+      general:
+      - planet
+      - planetary_ring
+      - orbital_path
+      - solar_system
+      named_planet:
+      - earth_(planet)
+      - saturn_(planet)
+      - jupiter_(planet)
+      - mars_(planet)
+      - venus_(planet)
+      - neptune_(planet)
+      - uranus_(planet)
+      - mercury_(planet)
+    constellation_asterism:
+      general:
+      - constellation
+      - big_dipper
+      zodiac:
+      - gemini_(constellation)
+      - cancer_(constellation)
+      - libra_(constellation)
+      - taurus_(constellation)
+      - scorpius_(constellation)
+      - sagittarius_(constellation)
+      - capricorn_(constellation)
+      - aries_(constellation)
+      - virgo_(constellation)
+      - pisces_(constellation)
+      - aquarius_(constellation)
+      named:
+      - cassiopeia_(constellation)
+      - orion_(constellation)
+      - cygnus_(constellation)
+      - lyra_(constellation)
+      - ursa_minor_(constellation)
+      - aquila_(constellation)
+      - crux_(constellation)
+      - pegasus_(constellation)
+      - ursa_major_(constellation)
+    small_body:
+      general:
+      - comet
+      - asteroid
+      - meteor
+      shower:
+      - meteor_shower
+    cosmic_structure:
+      galaxy_nebula:
+      - nebula
+      - milky_way
+      gravity_well:
+      - black_hole
+      - m87_black_hole
+      - wormhole
   elemental_matter:
   - water
   - fire
@@ -17111,7 +17137,7 @@ object:
   - acid
   - energy_beam
   container:
-    cup_glass:
+    drinkware:
     - cup
     - drinking_glass
     - teacup
@@ -17145,7 +17171,7 @@ object:
     - skull_cup
     - tumbler_glass
     - chalice
-    bottle_can:
+    liquid_container:
     - bottle
     - can
     - drink_can
@@ -17204,7 +17230,7 @@ object:
     - sports_bottle
     - open_can
     - cookie_jar
-    plate_bowl:
+    dishware:
     - plate
     - tray
     - bowl
@@ -17227,7 +17253,7 @@ object:
     - empty_plate
     - wooden_bowl
     - pet_bowl
-    box_bag:
+    storage_container:
     - box
     - basket
     - bucket
@@ -19238,52 +19264,55 @@ creature:
   insect_arthropod:
     insect:
     - bug
-    - spider
     - white_butterfly
     - fireflies
-    - snail
     - ladybug
     - bee
     - beetle
     - red_butterfly
     - dragonfly
-    - centipede
-    - worm
     - cockroach
-    - slug
     - black_butterfly
     - ant
     - green_butterfly
     - caterpillar
     - rhinoceros_beetle
     - cicada
-    - scorpion
     - wasp
     - stag_beetle
-    - pillbug
-    - crest_worm
-    - slugcat
     - monarch_butterfly
-    - earthworm
     - maggot
     - larva
     - scarab
-    - giant_skeleton
     - aqua_butterfly
     - transparent_butterfly
     - swallowtail_butterfly
-    - tarantula
     - moth
     - praying_mantis
-    insect_misc:
     - fly
     - firefly
     - grasshopper
     - mosquito
-    - parasite
     - too_many_butterflies
     - cocoon
     - oversized_insect
+    arachnid:
+    - spider
+    - scorpion
+    - tarantula
+    other_arthropod:
+    - centipede
+    - pillbug
+    worm_mollusk:
+    - snail
+    - worm
+    - slug
+    - earthworm
+    misc:
+    - crest_worm
+    - slugcat
+    - giant_skeleton
+    - parasite
   reptile_amphibian:
   - snake
   - frog
@@ -22288,210 +22317,217 @@ fandom:
   - moe2022
   - moe2019
   meme:
-    general:
-    - meme
-    - yukkuri_shiteitte_ne
-    - you_gonna_get_raped
-    - you're_doing_it_wrong
+    challenge_redraw:
     - jack-o'_challenge
     - sailor_moon_redraw_challenge_(meme)
-    - kono_lolicon_domome
     - bubble_tea_challenge
-    - they_had_lots_of_sex_afterwards_(meme)
-    - troll_face
-    - don't_say_"lazy"
-    - menacing_(jojo)
-    - to_be_continued
-    - gaijin_4koma_(meme)
-    - can't_be_this_cute
     - twitter_cutting_game
-    - longcat_(meme)
-    - special_feeling_(meme)
-    - anya's_heh_face_(meme)
     - followers_favorite_challenge
-    - caramelldansen
-    - nico_nico_nii
-    - boobs_in_book_(meme)
-    - deal_with_it_(meme)
     - upward_angle_frieren_drawing_(meme)
-    - is_that_so
-    - lace_pantyhose_hooked_on_heel_(meme)
+    - one_finger_selfie_challenge_(meme)
+    - irasutoya_challenge
+    - genshin_impact_sticker_redraw_(meme)
+    - tawawa_challenge
+    - pajamas_challenge_(meme)
+    - guilty_challenge_(meme)
+    - buttercup_redraw_challenge_(meme)
+    - lapwing_face_tracking_redraws
+    - curtain_call_challenge_(meme)
+    - chin_on_palm_challenge
+    - honkai:_star_rail_sticker_redraw_(meme)
+    - lycoris_challenge_(meme)
+    character_icon:
+    - yukkuri_shiteitte_ne
+    - longcat_(meme)
     - space_cat_(meme)
-    - yaranaika
+    - padoru_(meme)
+    - genba_neko_(meme)
+    - bongo_cat_(meme)
+    - pringle_duck
+    - seyana_(meme)
+    dance_motion:
+    - caramelldansen
+    - umapyoi_densetsu
+    - zui_zui_dance
+    - shikairo_days_dance_(meme)
+    - hoshino_ruby_dance
+    - me!me!me!_dance_(meme)
+    - cat_breakdancing_(meme)
+    - sad_cat_dance_(meme)
+    - mochi_mochi_dance
+    - ankha_zone_(meme)
+    - paku_paku_desuwa
+    pose_scene:
+    - boobs_in_book_(meme)
+    - lace_pantyhose_hooked_on_heel_(meme)
     - yamcha_pose_(meme)
     - cat_shadow_puppet_(meme)
-    - one_finger_selfie_challenge_(meme)
-    - next_time_you're_getting_this_(meme)
     - pov_cheek_grabbing_(meme)
-    - daijoubu?_oppai_momu?_(meme)
-    - irasutoya_challenge
-    - why_dis_ninja_look_so_mad_(meme)
-    - gyate_gyate
-    - genshin_impact_sticker_redraw_(meme)
     - girl_staring_at_guy's_chest_(meme)
     - aura_bullying_(meme)
     - naoya_hitting_choso_without_looking_(meme)
-    - umapyoi_densetsu
     - iced_latte_with_breast_milk_(meme)
-    - you_work_you_lose
-    - i'll_teach_you_everything_(chainsaw_man)
     - fan_screaming_at_madison_beer_(meme)
-    - drakeposting_(meme)
-    - nyoro~n
-    - too_bad!_it_was_just_me!_(meme)
-    - image_macro_(meme)
-    - pan-pa-ka-paaan!
-    - ara_ara
-    - pet_shaming
-    - just_as_planned_(meme)
-    - here's_johnny!_(meme)
     - sidetail_miku_noodle_stopper_(meme)
-    - gununu_(meme)
-    - padoru_(meme)
-    - expectation_vs._reality
-    - uohhhhhhhhh!_(meme)
     - frieren_blowing_a_kiss
     - barbie_mugshot_(meme)
-    - vomiting_rainbows
-    - smash_invitation
-    - cool_&_sexy_(idolmaster)
-    - tawawa_challenge
     - salt_bae_(meme)
     - frieren_stuck_in_a_mimic_(meme)
-    - year_1_&_year_2_(squid_game)_(meme)
-    - pajamas_challenge_(meme)
-    - room_you_can't_get_out_of_unless_you_x_(meme)
     - pec_pov_(meme)
     - pov_cheek_warming_(meme)
-    - thour_(meme)
-    - two_soyjaks_pointing_(meme)
-    - i've_never_seen_a_guy_recreate_this_successfully_tbh_(meme)
-    - shirt_cut_meme
     - guy_tired_after_sex_(meme)
     - high_school_girls_posing_for_google_street_view_(meme)
-    - crying_aqua_(meme)
     - kiss_meter_(meme)
-    - dressed_shadow_(meme)
-    - genba_neko_(meme)
-    - speakiposting_(meme)
-    - face_of_the_people_who_sank_all_their_money_into_the_fx_(meme)
-    - teri_derp_(meme)
-    - he_wants_to_order_(meme)
-    - do_you_want_to_pet_my_cat_(meme)
-    - japan-korea_yuri_(meme)
-    - grimace_shake_(meme)
-    - no_nut_november
     - kotori_photobomb
-    - you_gonna_get_eaten
-    - bongo_cat_(meme)
-    - piper_perri_surrounded_(meme)
-    - ganbare_ganbare_(itou_life)
     - akira_slide
-    - distracted_boyfriend_(meme)
     - totoro_bus_stop
-    - wryyyyyyyyyyyyyyyyyyyy
-    - zui_zui_dance
-    - guilty_challenge_(meme)
-    - you_look_lonely_(meme)
-    - can't_show_this_(meme)
     - family_guy_death_pose_(meme)
-    - although_she_hurriedly_put_on_clothes_(meme)
-    - agemasen!_(meme)
-    - animation_meme
-    - ijimeka_(meme)
-    - trust_me_(durarara!!)
-    - shikairo_days_dance_(meme)
-    - mega_milk
-    - woe_plague_be_upon_ye_(meme)
     - yoshi_and_toad_kissing_(meme)
-    - buttercup_redraw_challenge_(meme)
-    - woman_yelling_at_cat_(meme)
-    - death_flag
-    - seggs_(meme)
-    - hoshino_ruby_dance
     - three_monkeys
     - shinji_in_a_chair_(meme)
-    - holding_hands_is_lewd
-    - me!me!me!_dance_(meme)
-    - prattkeeping_(meme)
-    - 500_dollar_four_foot_tall_mareep_(meme)
     - goku_and_vegeta_in_the_rain_(meme)
-    - miiverse_yeah!_(meme)
     - cicada_block_(meme)
-    - atsuko's_grin_(meme)
-    - death_momoi_(meme)
-    - motivator_(meme)
-    - i_think_we're_gonna_have_to_kill_this_guy_steven_(meme)
     - ghost_in_the_shell_lineup
     - negative_space_oral_(meme)
-    - okawaii_koto
-    - pringle_duck
-    - mutsuki_face_(blue_archive)
-    - lapwing_face_tracking_redraws
-    - pointing_spider-man_(meme)
     - colombia_pose_(meme)
-    - goslingposting_(meme)
     - yusuf_dikec_(meme)
-    - cat_breakdancing_(meme)
-    - absolute_cinema_(meme)
-    - deku's_photo_of_hagakure_toru
+    - nikke's_shooting_pose_(meme)
+    - vergil's_chair_(meme)
+    - astolfo_monster_cosplay_(meme)
+    - mayu-tan_no_kung_fu_(meme)
+    - pennywise_in_the_sewer_(meme)
+    - bakushin_o_armpit_gif_(meme)
+    - yjsnpi_interview_(meme)
+    - praise_the_sun
+    reaction_expression:
+    - troll_face
+    - menacing_(jojo)
+    - anya's_heh_face_(meme)
+    - special_feeling_(meme)
+    - nyoro~n
+    - gununu_(meme)
+    - crying_aqua_(meme)
+    - face_of_the_people_who_sank_all_their_money_into_the_fx_(meme)
+    - teri_derp_(meme)
+    - atsuko's_grin_(meme)
+    - death_momoi_(meme)
+    - vomiting_rainbows
+    - mutsuki_face_(blue_archive)
     - ah_eto..._bleh_(meme)
     - kimoi_girls_(meme)
-    - seyana_(meme)
-    - nijihub_(meme)
-    - good_morning_my_brother!_(meme)
-    - burger_malfunction
-    - sad_cat_dance_(meme)
-    - bakushin_o_armpit_gif_(meme)
+    - pogchamp_(meme)
     - apu_spills_his_tendies_(meme)
+    quote_catchphrase:
+    - you_gonna_get_raped
+    - you're_doing_it_wrong
+    - kono_lolicon_domome
+    - they_had_lots_of_sex_afterwards_(meme)
+    - don't_say_"lazy"
+    - to_be_continued
+    - can't_be_this_cute
+    - nico_nico_nii
+    - is_that_so
+    - yaranaika
+    - next_time_you're_getting_this_(meme)
+    - daijoubu?_oppai_momu?_(meme)
+    - why_dis_ninja_look_so_mad_(meme)
+    - gyate_gyate
+    - you_work_you_lose
+    - i'll_teach_you_everything_(chainsaw_man)
+    - too_bad!_it_was_just_me!_(meme)
+    - pan-pa-ka-paaan!
+    - ara_ara
+    - just_as_planned_(meme)
+    - here's_johnny!_(meme)
+    - uohhhhhhhhh!_(meme)
+    - i've_never_seen_a_guy_recreate_this_successfully_tbh_(meme)
+    - he_wants_to_order_(meme)
+    - do_you_want_to_pet_my_cat_(meme)
+    - you_gonna_get_eaten
+    - ganbare_ganbare_(itou_life)
+    - wryyyyyyyyyyyyyyyyyyyy
+    - you_look_lonely_(meme)
+    - can't_show_this_(meme)
+    - although_she_hurriedly_put_on_clothes_(meme)
+    - agemasen!_(meme)
+    - ijimeka_(meme)
+    - trust_me_(durarara!!)
+    - mega_milk
+    - woe_plague_be_upon_ye_(meme)
+    - death_flag
+    - seggs_(meme)
+    - holding_hands_is_lewd
+    - 500_dollar_four_foot_tall_mareep_(meme)
+    - miiverse_yeah!_(meme)
+    - i_think_we're_gonna_have_to_kill_this_guy_steven_(meme)
+    - okawaii_koto
+    - absolute_cinema_(meme)
+    - good_morning_my_brother!_(meme)
     - cover_them_up_slut_(meme)
     - you_died
-    - curtain_call_challenge_(meme)
     - ganbaruzoi
-    - trainer_wants_to_battle
-    - nipple_guessing_game_(meme)
     - yubi_yubi_(inugami_korone)
     - sakana~_(meme)
     - nah_i'd_win_(meme)
-    - mochi_mochi_dance
-    - yjsnpi_interview_(meme)
     - zako_(meme)
-    - nikke's_shooting_pose_(meme)
-    - 114514_(meme)
-    - pixiv_bottle_(meme)
-    - broly_culo_(meme)
-    - chin_on_palm_challenge
     - oh?_you're_approaching_me?_(meme)
-    - ankha_zone_(meme)
-    - praise_the_sun
-    - vergil's_chair_(meme)
-    - pogchamp_(meme)
-    - paku_paku_desuwa
-    - honkai:_star_rail_sticker_redraw_(meme)
     - tasukete_eirin
     - miku_miku_beaaaam!!_(meme)
-    - personality_excrement
     - nine_years_in_a_coma_(meme)
-    - lycoris_challenge_(meme)
-    - astolfo_monster_cosplay_(meme)
     - idiot_sandwich_(meme)
-    - sazae-san_food_gag_(meme)
-    - mayu-tan_no_kung_fu_(meme)
-    - pennywise_in_the_sewer_(meme)
     - you_can_just_give_this_kind_of_thing_to_men_and_they_will_be_thrilled_(meme)
     - i'm_this_clingy_(meme)
     - cutting_out_below_the_eyes_is_hot_(meme)
     - i'm_such_a_fool
-    trend_meme:
+    template_macro:
+    - gaijin_4koma_(meme)
+    - deal_with_it_(meme)
+    - drakeposting_(meme)
+    - image_macro_(meme)
+    - pet_shaming
+    - expectation_vs._reality
+    - smash_invitation
+    - year_1_&_year_2_(squid_game)_(meme)
+    - room_you_can't_get_out_of_unless_you_x_(meme)
+    - two_soyjaks_pointing_(meme)
+    - shirt_cut_meme
+    - dressed_shadow_(meme)
+    - speakiposting_(meme)
+    - piper_perri_surrounded_(meme)
+    - distracted_boyfriend_(meme)
+    - woman_yelling_at_cat_(meme)
+    - motivator_(meme)
+    - deku's_photo_of_hagakure_toru
+    - pointing_spider-man_(meme)
+    - goslingposting_(meme)
+    - prattkeeping_(meme)
+    - nijihub_(meme)
+    - trainer_wants_to_battle
+    - nipple_guessing_game_(meme)
+    - sazae-san_food_gag_(meme)
     - when_you_see_it
     - odd_one_out
-    - brown_egyptian_cat-eared_loli_(trend)
+    trend_meta:
+    - meme
+    - animation_meme
+    - grimace_shake_(meme)
+    - no_nut_november
+    - cool_&_sexy_(idolmaster)
     - mvp
+    - 114514_(meme)
+    - brown_egyptian_cat-eared_loli_(trend)
     - triple_ryuunen
     - umamusume_tanuki
     - umamusume_horse_relations
     - mecha_danshi
     - perverted_utility
+    misc:
+    - thour_(meme)
+    - japan-korea_yuri_(meme)
+    - burger_malfunction
+    - broly_culo_(meme)
+    - pixiv_bottle_(meme)
+    - personality_excrement
   style_reference:
     visual_style:
     - alphes_(style)

@@ -38,16 +38,28 @@ let mmScale = 1
 let mmOffsetX = 0
 let mmOffsetY = 0
 
-const CATEGORY_COLORS = [
+const CATEGORY_COLORS_DARK = [
   '#b07080', '#b09070', '#a0a060', '#70a070',
   '#60a0a0', '#6090b0', '#7080b0', '#9070a0',
   '#a070a0', '#b07090', '#a08060', '#80a080',
 ]
 
-const EDGE_COLORS = [
+const CATEGORY_COLORS_LIGHT = [
+  '#c74868', '#c87838', '#8a9428', '#38945a',
+  '#289494', '#2878b0', '#4860c0', '#8040b0',
+  '#b040a0', '#c74870', '#b08030', '#48a060',
+]
+
+const EDGE_COLORS_DARK = [
   '#6e4850', '#6e5a46', '#636340', '#466346',
   '#3e6363', '#3e5a6e', '#4a5070', '#5a4664',
   '#644664', '#6e465a', '#64503e', '#506350',
+]
+
+const EDGE_COLORS_LIGHT = [
+  '#d0a0a8', '#d0b8a0', '#b8c098', '#98c0a8',
+  '#90c0c0', '#90b0c8', '#a0a8c8', '#b8a0c0',
+  '#c0a0b8', '#d0a0b0', '#c0b098', '#a0c0a8',
 ]
 
 const SIZE_BY_DEPTH = [18, 12, 8, 5.5, 4, 3.5, 3]
@@ -56,6 +68,7 @@ type GraphPalette = {
   defaultEdgeColor: string
   dimMixColor: string
   highlightMixColor: string
+  hoverBackground: string
   labelColor: string
   minimapBackground: string
   minimapViewport: string
@@ -98,10 +111,66 @@ function getGraphPalette(): GraphPalette {
     defaultEdgeColor: readCssVar('--graph-default-edge', '#1c2233'),
     dimMixColor: readCssVar('--graph-dim-mix', '#0c1020'),
     highlightMixColor: readCssVar('--graph-highlight-mix', '#0c1020'),
+    hoverBackground: readCssVar('--graph-hover-bg', '#111620'),
     labelColor: readCssVar('--graph-label-color', '#8690a6'),
     minimapBackground: readCssVar('--graph-minimap-bg', 'rgba(12, 16, 32, 0.6)'),
     minimapViewport: readCssVar('--graph-minimap-viewport', 'rgba(134, 144, 166, 0.7)'),
     rootColor: readCssVar('--graph-root-color', '#8690a6'),
+  }
+}
+
+function drawNodeHover(
+  context: CanvasRenderingContext2D,
+  data: Record<string, unknown>,
+  settings: Record<string, unknown>,
+): void {
+  const size = settings.labelSize as number
+  const font = settings.labelFont as string
+  const weight = settings.labelWeight as string
+  const palette = getGraphPalette()
+
+  context.font = `${weight} ${size}px ${font}`
+
+  const PADDING = 2
+  const x = data.x as number
+  const y = data.y as number
+  const nodeSize = data.size as number
+  const label = data.label as string | undefined
+
+  context.fillStyle = palette.hoverBackground
+
+  if (typeof label === 'string') {
+    const textWidth = context.measureText(label).width
+    const boxWidth = Math.round(textWidth + 5)
+    const boxHeight = Math.round(size + 2 * PADDING)
+    const radius = Math.max(nodeSize, size / 2) + PADDING
+    const angleRadian = Math.asin(boxHeight / 2 / radius)
+    const xDeltaCoord = Math.sqrt(Math.abs(radius ** 2 - (boxHeight / 2) ** 2))
+
+    context.beginPath()
+    context.moveTo(x + xDeltaCoord, y + boxHeight / 2)
+    context.lineTo(x + radius + boxWidth, y + boxHeight / 2)
+    context.lineTo(x + radius + boxWidth, y - boxHeight / 2)
+    context.lineTo(x + xDeltaCoord, y - boxHeight / 2)
+    context.arc(x, y, radius, angleRadian, -angleRadian)
+    context.closePath()
+    context.fill()
+  } else {
+    context.beginPath()
+    context.arc(x, y, nodeSize + PADDING, 0, Math.PI * 2)
+    context.closePath()
+    context.fill()
+  }
+
+  // Draw label (no shadow)
+  if (typeof label === 'string') {
+    const labelColorSetting = settings.labelColor as { color?: string; attribute?: string }
+    const color = labelColorSetting.attribute
+      ? (data[labelColorSetting.attribute] as string) || labelColorSetting.color || '#000'
+      : labelColorSetting.color || '#000'
+    context.fillStyle = color
+    context.font = `${weight} ${size}px ${font}`
+    context.fillText(label, x + nodeSize + 3, y + size / 3)
   }
 }
 
@@ -156,9 +225,13 @@ function buildGraph(): Graph {
   const { rootChildren, flatNodes } = props.dataset
   const palette = getGraphPalette()
 
+  const isLight = props.theme === 'light'
+  const categoryColors = isLight ? CATEGORY_COLORS_LIGHT : CATEGORY_COLORS_DARK
+  const edgeColors = isLight ? EDGE_COLORS_LIGHT : EDGE_COLORS_DARK
+
   // Color map for root categories
   const colorIndexMap = new Map<string, number>()
-  rootChildren.forEach((id, i) => colorIndexMap.set(id, i % CATEGORY_COLORS.length))
+  rootChildren.forEach((id, i) => colorIndexMap.set(id, i % categoryColors.length))
 
   const positions = props.layoutPositions ?? buildFallbackPositions()
 
@@ -177,8 +250,8 @@ function buildGraph(): Graph {
     const pos = positions?.[node.id]
     const ci = colorIndexMap.get(node.path[0]) ?? 0
     g.addNode(node.id, {
-      baseColor: CATEGORY_COLORS[ci],
-      color: CATEGORY_COLORS[ci],
+      baseColor: categoryColors[ci],
+      color: categoryColors[ci],
       label: getNodeLabel(node, props.locale, props.translations),
       size: SIZE_BY_DEPTH[Math.min(node.depth + 1, SIZE_BY_DEPTH.length - 1)],
       x: pos?.x ?? 0,
@@ -191,8 +264,8 @@ function buildGraph(): Graph {
     if (!node.parentId || !g.hasNode(node.parentId)) continue
     const ci = colorIndexMap.get(node.path[0]) ?? 0
     g.addEdgeWithKey(edgeKey(node.parentId, node.id), node.parentId, node.id, {
-      baseColor: EDGE_COLORS[ci],
-      color: EDGE_COLORS[ci],
+      baseColor: edgeColors[ci],
+      color: edgeColors[ci],
       size: node.parentId === 'root' ? 0.4 : 0.3,
     })
   }
@@ -269,6 +342,7 @@ function initSigma(): void {
   const palette = getGraphPalette()
 
   sigma = new Sigma(graph, containerRef.value, {
+    defaultDrawNodeHover: drawNodeHover,
     defaultEdgeColor: palette.defaultEdgeColor,
     defaultEdgeType: 'line',
     labelColor: { color: palette.labelColor },
@@ -277,6 +351,7 @@ function initSigma(): void {
     labelGridCellSize: 120,
     labelRenderedSizeThreshold: 4,
     labelSize: 12,
+    pixelRatio: Math.min((window.devicePixelRatio || 1) * 2, 4),
     renderEdgeLabels: false,
     renderLabels: true,
     stagePadding: 40,

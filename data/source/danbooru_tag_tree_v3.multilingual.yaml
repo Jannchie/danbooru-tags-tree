@@ -1172,18 +1172,18 @@ category.character.body.body_part.chest:
   en: chest
   ja: 胸
   zh-CN: 胸部
-category.character.body.body_part.foot_toe:
-  en: foot & toe
-  ja: 足と足指
-  zh-CN: 脚与脚趾
+category.character.body.body_part.back:
+  en: back
+  ja: 背中
+  zh-CN: 背部
 category.character.body.body_part.groin_hip:
   en: groin
   ja: 股間と腰
   zh-CN: 胯部
-category.character.body.body_part.hand_finger:
-  en: hand & finger
-  ja: 手と指
-  zh-CN: 手与手指
+category.character.body.body_part.finger:
+  en: finger
+  ja: 指
+  zh-CN: 手指
 category.character.body.body_part.hip_buttock:
   en: hip & buttock
   ja: ヒップ
@@ -1196,9 +1196,21 @@ category.character.body.body_part.internal:
   en: internal
   ja: 内部
   zh-CN: 内部器官
-category.character.body.body_part.leg_thigh:
-  en: leg & thigh
-  ja: 脚と太もも
+category.character.body.body_part.foot:
+  en: foot
+  ja: 足
+  zh-CN: 脚部
+category.character.body.body_part.hand:
+  en: hand
+  ja: 手
+  zh-CN: 手部
+category.character.body.body_part.knee:
+  en: knee
+  ja: 膝
+  zh-CN: 膝部
+category.character.body.body_part.leg:
+  en: leg
+  ja: 脚
   zh-CN: 腿部
 category.character.body.body_part.muscle_detail:
   en: muscle detail
@@ -1224,10 +1236,18 @@ category.character.body.body_part.prosthetic:
   en: prosthetic
   ja: 補綴物
   zh-CN: 假肢
-category.character.body.body_part.shoulder_back:
-  en: shoulder & back
-  ja: 肩と背中
-  zh-CN: 肩背
+category.character.body.body_part.shoulder:
+  en: shoulder
+  ja: 肩
+  zh-CN: 肩部
+category.character.body.body_part.thigh:
+  en: thigh
+  ja: 太もも
+  zh-CN: 大腿
+category.character.body.body_part.toe:
+  en: toe
+  ja: 足指
+  zh-CN: 脚趾
 category.character.body.body_part.torso:
   en: torso
   ja: 胴体
@@ -1352,9 +1372,13 @@ category.character.body.face.scar_injury:
   en: scar & injury
   ja: 傷跡の損傷
   zh-CN: 面部伤疤
-category.character.body.face.teeth_fang:
-  en: teeth & fangs
-  ja: 歯と牙
+category.character.body.face.fang:
+  en: fang
+  ja: 牙
+  zh-CN: 獠牙
+category.character.body.face.teeth:
+  en: teeth
+  ja: 歯
   zh-CN: 牙齿
 category.character.body.face.tongue:
   en: tongue
@@ -1688,10 +1712,10 @@ category.character.skin.blood:
   en: blood
   ja: 血
   zh-CN: 血
-category.character.skin.blush_vein:
-  en: blush & vein
-  ja: 赤面と青筋
-  zh-CN: 红晕与青筋
+category.character.skin.blush:
+  en: blush
+  ja: 赤み
+  zh-CN: 红晕
 category.character.skin.body_hair:
   en: body hair
   ja: 体毛
@@ -1720,10 +1744,18 @@ category.character.skin.skin_mark:
   en: skin mark
   ja: 皮膚の跡
   zh-CN: 肤印
-category.character.skin.sweat_oil:
-  en: sweat & oil
-  ja: 汗と皮脂
-  zh-CN: 汗与油光
+category.character.skin.oil:
+  en: oil
+  ja: 皮脂
+  zh-CN: 油光
+category.character.skin.sweat:
+  en: sweat
+  ja: 汗
+  zh-CN: 汗液
+category.character.skin.vein:
+  en: vein
+  ja: 青筋
+  zh-CN: 青筋
 category.character.skin.synthetic_mod:
   en: synthetic
   ja: 人工改造
@@ -1925,17 +1957,29 @@ category.creature.fantasy_creature.mythical:
   ja: 神話的な
   zh-CN: 神话生物
 category.creature.insect_arthropod:
-  en: insect arthropod
-  ja: 昆虫・節足動物
-  zh-CN: 昆虫与节肢动物
+  en: small invertebrate
+  ja: 小型無脊椎動物
+  zh-CN: 小型无脊椎动物
+category.creature.insect_arthropod.arachnid:
+  en: arachnid
+  ja: クモ・サソリ類
+  zh-CN: 蜘蛛蝎类
 category.creature.insect_arthropod.insect:
   en: insect
   ja: 昆虫
   zh-CN: 昆虫
-category.creature.insect_arthropod.insect_misc:
-  en: insect misc
-  ja: 昆虫その他
-  zh-CN: 其他昆虫
+category.creature.insect_arthropod.misc:
+  en: misc
+  ja: その他
+  zh-CN: 杂项
+category.creature.insect_arthropod.other_arthropod:
+  en: other arthropod
+  ja: その他の節足動物
+  zh-CN: 其他节肢动物
+category.creature.insect_arthropod.worm_mollusk:
+  en: worm mollusk
+  ja: 軟体・蠕虫類
+  zh-CN: 软体与蠕虫类
 category.creature.mammal:
   en: mammal
   ja: 哺乳類
@@ -2195,18 +2239,30 @@ category.dynamics.expression.mouth.general:
   en: general
   ja: 一般
   zh-CN: 通用
-category.dynamics.expression.mouth.open_close:
-  en: open close
-  ja: 開閉
-  zh-CN: 开合
-category.dynamics.expression.mouth.smile_frown:
-  en: smile frown
-  ja: 笑顔としかめ面
-  zh-CN: 笑与皱眉
-category.dynamics.expression.mouth.tongue_drool:
-  en: tongue drool
-  ja: 舌とよだれ
-  zh-CN: 舌与口水
+category.dynamics.expression.mouth.closed:
+  en: closed mouth
+  ja: 閉じた口
+  zh-CN: 闭口
+category.dynamics.expression.mouth.frown:
+  en: frown
+  ja: しかめ面
+  zh-CN: 皱眉嘴型
+category.dynamics.expression.mouth.open:
+  en: open mouth
+  ja: 開いた口
+  zh-CN: 张口
+category.dynamics.expression.mouth.saliva:
+  en: saliva
+  ja: よだれ
+  zh-CN: 口涎
+category.dynamics.expression.mouth.smile:
+  en: smile
+  ja: 笑顔
+  zh-CN: 微笑嘴型
+category.dynamics.expression.mouth.tongue_action:
+  en: tongue action
+  ja: 舌の動き
+  zh-CN: 舌部动作
 category.dynamics.interaction:
   en: interaction
   ja: インタラクション
@@ -2575,14 +2631,42 @@ category.fandom.meme:
   en: meme
   ja: ミーム
   zh-CN: 梗
-category.fandom.meme.general:
-  en: general
-  ja: 一般的な
-  zh-CN: 一般
-category.fandom.meme.trend_meme:
-  en: trend meme
-  ja: トレンドミーム
-  zh-CN: 流行梗
+category.fandom.meme.challenge_redraw:
+  en: challenge redraw
+  ja: チャレンジ・再現
+  zh-CN: 挑战与重绘
+category.fandom.meme.character_icon:
+  en: character icon
+  ja: 梗角色
+  zh-CN: 梗角色
+category.fandom.meme.dance_motion:
+  en: dance motion
+  ja: 舞蹈・动作
+  zh-CN: 舞蹈与动作
+category.fandom.meme.misc:
+  en: misc
+  ja: その他
+  zh-CN: 杂项
+category.fandom.meme.pose_scene:
+  en: pose scene
+  ja: 姿势・场景
+  zh-CN: 姿势与场景
+category.fandom.meme.quote_catchphrase:
+  en: quote catchphrase
+  ja: セリフ・決まり文句
+  zh-CN: 台词与口号
+category.fandom.meme.reaction_expression:
+  en: reaction expression
+  ja: 反応・表情
+  zh-CN: 反应与表情
+category.fandom.meme.template_macro:
+  en: template macro
+  ja: テンプレート・マクロ
+  zh-CN: 模板与宏图
+category.fandom.meme.trend_meta:
+  en: trend meta
+  ja: トレンド・メタ
+  zh-CN: 趋势与元标签
 category.fandom.named_object_reference:
   en: named object reference
   ja: 名前付きオブジェクト参照
@@ -2748,30 +2832,126 @@ category.object.celestial_body:
   en: celestial body
   ja: 天体
   zh-CN: 天体
+category.object.celestial_body.constellation_asterism:
+  en: constellation asterism
+  ja: 星座・星群
+  zh-CN: 星座与星群
+category.object.celestial_body.constellation_asterism.general:
+  en: general
+  ja: 一般
+  zh-CN: 通用
+category.object.celestial_body.constellation_asterism.named:
+  en: named constellation
+  ja: 固有星座
+  zh-CN: 具名星座
+category.object.celestial_body.constellation_asterism.zodiac:
+  en: zodiac
+  ja: 黄道十二星座
+  zh-CN: 黄道星座
+category.object.celestial_body.cosmic_structure:
+  en: cosmic structure
+  ja: 宇宙構造
+  zh-CN: 宇宙结构
+category.object.celestial_body.cosmic_structure.galaxy_nebula:
+  en: galaxy nebula
+  ja: 銀河・星雲
+  zh-CN: 银河与星云
+category.object.celestial_body.cosmic_structure.gravity_well:
+  en: gravity well
+  ja: 重力井戸
+  zh-CN: 引力井
+category.object.celestial_body.moon:
+  en: moon
+  ja: 月
+  zh-CN: 月亮
+category.object.celestial_body.moon.color_variant:
+  en: color variant
+  ja: 色変化
+  zh-CN: 颜色变化
+category.object.celestial_body.moon.general:
+  en: general
+  ja: 一般
+  zh-CN: 通用
+category.object.celestial_body.moon.phase:
+  en: phase
+  ja: 月相
+  zh-CN: 月相
+category.object.celestial_body.moon.special:
+  en: special
+  ja: 特殊
+  zh-CN: 特殊形态
+category.object.celestial_body.planet_system:
+  en: planet system
+  ja: 惑星系
+  zh-CN: 行星系统
+category.object.celestial_body.planet_system.general:
+  en: general
+  ja: 一般
+  zh-CN: 通用
+category.object.celestial_body.planet_system.named_planet:
+  en: named planet
+  ja: 固有惑星
+  zh-CN: 具名行星
+category.object.celestial_body.small_body:
+  en: small body
+  ja: 小天体
+  zh-CN: 小天体
+category.object.celestial_body.small_body.general:
+  en: general
+  ja: 一般
+  zh-CN: 通用
+category.object.celestial_body.small_body.shower:
+  en: shower
+  ja: 群
+  zh-CN: 群现象
+category.object.celestial_body.star:
+  en: star
+  ja: 恒星
+  zh-CN: 恒星
+category.object.celestial_body.star.general:
+  en: general
+  ja: 一般
+  zh-CN: 通用
+category.object.celestial_body.star.motion:
+  en: motion
+  ja: 運動
+  zh-CN: 运动现象
+category.object.celestial_body.sun:
+  en: sun
+  ja: 太陽
+  zh-CN: 太阳
+category.object.celestial_body.sun.eclipse:
+  en: eclipse
+  ja: 食
+  zh-CN: 日食
+category.object.celestial_body.sun.general:
+  en: general
+  ja: 一般
+  zh-CN: 通用
 category.object.container:
   en: container
   ja: コンテナ
   zh-CN: 容器
-category.object.container.bottle_can:
-  en: bottle can
-  ja: ボトルと缶
-  zh-CN: 瓶罐
-category.object.container.box_bag:
-  en: box bag
-  ja: 箱と袋
-  zh-CN: 箱袋
-category.object.container.cup_glass:
-  en: cup glass
-  ja: カップとグラス
-  zh-CN: 杯具
+category.object.container.dishware:
+  en: dishware
+  ja: 食器
+  zh-CN: 餐具器皿
+category.object.container.drinkware:
+  en: drinkware
+  ja: 飲用器
+  zh-CN: 饮具
 category.object.container.general:
   en: general
   ja: 一般
   zh-CN: 通用
-category.object.container.plate_bowl:
-  en: plate bowl
-  ja: 皿と鉢
-  zh-CN: 盘碗
+category.object.container.liquid_container:
+  en: liquid container
+  ja: 液体容器
+  zh-CN: 液体容器
+category.object.container.storage_container:
+  en: storage container
+  ja: 収納容器
+  zh-CN: 收纳容器
 category.object.decorative_object:
   en: decorative object
   ja: 装飾品
