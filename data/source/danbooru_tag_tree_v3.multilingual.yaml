@@ -230,10 +230,6 @@ category.apparel.detail.detail.pocket:
   en: pocket
   ja: ポケット
   zh-CN: 口袋
-category.apparel.detail.detail.print_emblem:
-  en: print emblem
-  ja: プリントエンブレム
-  zh-CN: 印花徽章
 category.apparel.detail.detail.trim_frill:
   en: trim frill
   ja: トリムフリル
@@ -250,10 +246,6 @@ category.apparel.detail.pattern.general:
   en: general
   ja: 一般
   zh-CN: 通用
-category.apparel.detail.pattern.material:
-  en: material
-  ja: 材质
-  zh-CN: 材质
 category.apparel.detail.pattern.plaid_check:
   en: plaid check
   ja: 格纹
@@ -662,18 +654,10 @@ category.apparel.headwear.protective:
   en: protective
   ja: 防護頭飾り
   zh-CN: 防护头饰
-category.apparel.headwear.state:
-  en: wear relation
-  ja: 装着関係
-  zh-CN: 佩戴关系
 category.apparel.headwear.on_headwear:
   en: on headwear
   ja: 頭飾りの上
   zh-CN: 在头饰上
-category.apparel.headwear.over_headwear:
-  en: over headwear
-  ja: 頭飾りの外側
-  zh-CN: 在头饰外层
 category.apparel.headwear.interaction:
   en: handling
   ja: 装着操作
@@ -706,18 +690,10 @@ category.apparel.body_part_placement.shoulder:
   en: shoulder
   ja: 肩
   zh-CN: 肩部
-category.apparel.body_part_placement.shoulder.on_shoulder:
-  en: on shoulder
-  ja: 肩の上
-  zh-CN: 贴在肩上
 category.apparel.body_part_placement.shoulder.on_shoulders:
   en: on shoulders
   ja: 肩に羽織る
   zh-CN: 披在双肩上
-category.apparel.body_part_placement.shoulder.over_shoulder:
-  en: over shoulder
-  ja: 肩に掛ける
-  zh-CN: 搭在肩头
 category.apparel.body_part_placement.arm:
   en: arm
   ja: 腕
@@ -734,14 +710,6 @@ category.apparel.body_part_placement.chest:
   en: chest
   ja: 胸
   zh-CN: 胸部
-category.apparel.body_part_placement.foot:
-  en: foot
-  ja: 足
-  zh-CN: 足部
-category.apparel.body_part_placement.hand:
-  en: hand
-  ja: 手
-  zh-CN: 手部
 category.apparel.body_part_placement.knee:
   en: knee
   ja: 膝
@@ -762,14 +730,6 @@ category.apparel.body_part_placement.neck.around_neck:
   en: around neck
   ja: 首回り
   zh-CN: 围在脖子上
-category.apparel.body_part_placement.neck.behind_neck:
-  en: behind neck
-  ja: 首の後ろ
-  zh-CN: 在脖子后
-category.apparel.body_part_placement.stomach:
-  en: stomach
-  ja: 腹
-  zh-CN: 腹部
 category.apparel.body_part_placement.waist:
   en: waist
   ja: 腰
@@ -1028,10 +988,6 @@ category.character.archetype.form:
   en: form
   ja: フォーム
   zh-CN: 形态
-category.character.archetype.form.kemono_type:
-  en: kemono type
-  ja: ケモノタイプ
-  zh-CN: 兽化类型
 category.character.archetype.form.female:
   en: female
   ja: 女性
@@ -1040,10 +996,6 @@ category.character.archetype.form.male:
   en: male
   ja: 男性
   zh-CN: 男性
-category.character.archetype.form.neutral:
-  en: neutral
-  ja: 中性
-  zh-CN: 中性
 category.character.archetype.form.persona_form:
   en: persona
   ja: ペルソナフォーム
@@ -1708,10 +1660,6 @@ category.character.skin.skin_mark:
   en: skin mark
   ja: 皮膚の跡
   zh-CN: 肤印
-category.character.skin.oil:
-  en: oil
-  ja: 皮脂
-  zh-CN: 油光
 category.character.skin.sweat:
   en: sweat
   ja: 汗
@@ -1808,18 +1756,10 @@ category.composition.framing.body_part_anchor.shoulder.on_shoulder:
   en: on shoulder
   ja: 肩上
   zh-CN: 肩上
-category.composition.framing.body_part_anchor.shoulder.on_shoulders:
-  en: on shoulders
-  ja: 両肩
-  zh-CN: 双肩上
 category.composition.framing.body_part_anchor.shoulder.over_shoulder:
   en: over shoulder
   ja: 肩越し
   zh-CN: 过肩
-category.composition.framing.body_part_anchor.shoulder.around_shoulder:
-  en: around shoulder
-  ja: 肩回り
-  zh-CN: 肩部周围
 category.composition.framing.border:
   en: border
   ja: ボーダー
@@ -2025,10 +1965,6 @@ category.dynamics.action.combat.sword_attack:
   en: sword attack
   ja: 剣撃
   zh-CN: 刀剑攻击
-category.dynamics.action.combat.weapon_use:
-  en: weapon use
-  ja: 武器使用
-  zh-CN: 武器操作
 category.dynamics.action.combat.magic:
   en: magic
   ja: 魔法
@@ -2077,10 +2013,6 @@ category.dynamics.action.gesture.general.body_gesture:
   en: body gesture
   ja: 肢体动作
   zh-CN: 肢体动作
-category.dynamics.action.gesture.face_gesture:
-  en: face gesture
-  ja: 顔の動き
-  zh-CN: 脸部动作
 category.dynamics.action.gesture.greeting:
   en: greeting
   ja: 挨拶
@@ -2140,11 +2072,6 @@ category.dynamics.action.object_manipulation.holding: *id029
 category.dynamics.action.object_manipulation.holding.clothing: *id030
 category.dynamics.action.object_manipulation.holding.creature: *id031
 category.dynamics.action.object_manipulation.holding.food_drink: *id032
-category.dynamics.action.object_manipulation.holding.general_object_hold: *id033
-category.dynamics.action.object_manipulation.holding.carry_object:
-  en: carry object
-  ja: 運搬
-  zh-CN: 搬运
 category.dynamics.action.object_manipulation.holding.general:
   en: general
   ja: 一般
@@ -2195,10 +2122,6 @@ category.dynamics.expression.mouth.general:
   en: general
   ja: 一般
   zh-CN: 通用
-category.dynamics.expression.mouth.closed:
-  en: closed mouth
-  ja: 閉じた口
-  zh-CN: 闭口
 category.dynamics.expression.mouth.frown:
   en: frown
   ja: しかめ面
@@ -2207,10 +2130,6 @@ category.dynamics.expression.mouth.open:
   en: open mouth
   ja: 開いた口
   zh-CN: 张口
-category.dynamics.expression.mouth.saliva:
-  en: saliva
-  ja: よだれ
-  zh-CN: 口涎
 category.dynamics.expression.mouth.smile:
   en: smile
   ja: 笑顔
@@ -2255,10 +2174,6 @@ category.dynamics.interaction.contact.restrain:
   en: restrain
   ja: 拘束
   zh-CN: 制压
-category.dynamics.interaction.contact.touch:
-  en: touch
-  ja: タッチ
-  zh-CN: 触碰
 category.dynamics.interaction.contact.general:
   en: general
   ja: 一般
@@ -2271,10 +2186,6 @@ category.dynamics.interaction.contact.leaning:
   en: leaning
   ja: もたれかかり
   zh-CN: 倚靠
-category.dynamics.interaction.contact.leg_contact:
-  en: leg contact
-  ja: 脚の接触
-  zh-CN: 腿部接触
 category.dynamics.interaction.creature_interaction: &id052
   en: creature interaction
   ja: 生き物の相互作用
@@ -2719,10 +2630,6 @@ category.fandom.style_reference.culture_style:
   en: culture style
   ja: 文化スタイル
   zh-CN: 文化风格
-category.fandom.style_reference.subculture:
-  en: subculture
-  ja: サブカルチャー
-  zh-CN: 亚文化
 category.fandom.style_reference.theme_genre:
   en: theme genre
   ja: テーマジャンル
@@ -2852,10 +2759,6 @@ category.object.celestial_body.small_body.general:
   en: general
   ja: 一般
   zh-CN: 通用
-category.object.celestial_body.small_body.shower:
-  en: shower
-  ja: 群
-  zh-CN: 群现象
 category.object.celestial_body.star:
   en: star
   ja: 恒星
@@ -2864,18 +2767,10 @@ category.object.celestial_body.star.general:
   en: general
   ja: 一般
   zh-CN: 通用
-category.object.celestial_body.star.motion:
-  en: motion
-  ja: 運動
-  zh-CN: 运动现象
 category.object.celestial_body.sun:
   en: sun
   ja: 太陽
   zh-CN: 太阳
-category.object.celestial_body.sun.eclipse:
-  en: eclipse
-  ja: 食
-  zh-CN: 日食
 category.object.celestial_body.sun.general:
   en: general
   ja: 一般
@@ -3204,10 +3099,6 @@ category.object.protective_gear.body_protection:
   en: body protection
   ja: 身体防具
   zh-CN: 身体护具
-category.object.protective_gear.shield_part:
-  en: shield part
-  ja: 盾の部位
-  zh-CN: 盾牌部件
 category.object.protective_gear.shield_type:
   en: shield type
   ja: 盾の種類
@@ -3216,10 +3107,6 @@ category.object.scene_prop:
   en: scene prop
   ja: シーン小道具
   zh-CN: 场景道具
-category.object.scene_prop.award_media:
-  en: award media
-  ja: 受賞メディア
-  zh-CN: 奖品媒体
 category.object.scene_prop.barrier_restraint:
   en: barrier restraint
   ja: バリア拘束
