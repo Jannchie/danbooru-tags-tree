@@ -27,6 +27,14 @@ let sigma: Sigma | null = null
 let graph: Graph | null = null
 let resizeObserver: ResizeObserver | null = null
 let minimapRAF = 0
+let minimapDragging = false
+
+// Cached minimap transform (updated each draw, reused by drag)
+let mmMinX = 0
+let mmMaxY = 0
+let mmScale = 1
+let mmOffsetX = 0
+let mmOffsetY = 0
 
 const CATEGORY_COLORS = [
   '#b07080', '#b09070', '#a0a060', '#70a070',
@@ -256,8 +264,10 @@ function initSigma(): void {
   sigma.on('enterNode', () => { if (containerRef.value) containerRef.value.style.cursor = 'pointer' })
   sigma.on('leaveNode', () => { if (containerRef.value) containerRef.value.style.cursor = 'default' })
 
+  sigma.on('afterRender', scheduleMinimapDraw)
+
   highlightSelected()
-  startMinimapLoop()
+  scheduleMinimapDraw()
 }
 
 function drawMinimap(): void {
@@ -298,8 +308,15 @@ function drawMinimap(): void {
   const offsetX = (w - graphW * scale) / 2
   const offsetY = (h - graphH * scale) / 2
 
+  // Cache for drag handler
+  mmMinX = minX
+  mmMaxY = maxY
+  mmScale = scale
+  mmOffsetX = offsetX
+  mmOffsetY = offsetY
+
   function toMiniX(gx: number): number { return (gx - minX) * scale + offsetX }
-  function toMiniY(gy: number): number { return (gy - minY) * scale + offsetY }
+  function toMiniY(gy: number): number { return (maxY - gy) * scale + offsetY }
 
   // Draw edges
   ctx.lineWidth = 0.3
@@ -326,27 +343,29 @@ function drawMinimap(): void {
 
   // Draw viewport rectangle
   ctx.globalAlpha = 1
-  const camera = sigma!.getCamera()
-  const viewState = camera.getState()
-  // Convert viewport corners to graph coords, then to minimap coords
-  const viewW = graphW / viewState.ratio
-  const viewH = graphH / viewState.ratio
-  const vx = toMiniX(viewState.x - viewW / 2)
-  const vy = toMiniY(viewState.y - viewH / 2)
-  const vw = viewW * scale
-  const vh = viewH * scale
+  const sigmaContainer = sigma!.getContainer()
+  const containerWidth = sigmaContainer.clientWidth
+  const containerHeight = sigmaContainer.clientHeight
+
+  const topLeft = sigma!.viewportToGraph({ x: 0, y: 0 })
+  const bottomRight = sigma!.viewportToGraph({ x: containerWidth, y: containerHeight })
+
+  const vx = toMiniX(topLeft.x)
+  const vy = toMiniY(topLeft.y)
+  const vx2 = toMiniX(bottomRight.x)
+  const vy2 = toMiniY(bottomRight.y)
 
   ctx.strokeStyle = 'rgba(134, 144, 166, 0.7)'
   ctx.lineWidth = 1.5
-  ctx.strokeRect(vx, vy, vw, vh)
+  ctx.strokeRect(vx, vy, vx2 - vx, vy2 - vy)
 }
 
-function startMinimapLoop(): void {
-  function tick() {
+function scheduleMinimapDraw(): void {
+  if (minimapRAF) return
+  minimapRAF = requestAnimationFrame(() => {
+    minimapRAF = 0
     drawMinimap()
-    minimapRAF = requestAnimationFrame(tick)
-  }
-  minimapRAF = requestAnimationFrame(tick)
+  })
 }
 
 function stopMinimapLoop(): void {
@@ -354,6 +373,50 @@ function stopMinimapLoop(): void {
     cancelAnimationFrame(minimapRAF)
     minimapRAF = 0
   }
+}
+
+function minimapToGraph(mx: number, my: number): { x: number; y: number } {
+  return {
+    x: (mx - mmOffsetX) / mmScale + mmMinX,
+    y: mmMaxY - (my - mmOffsetY) / mmScale,
+  }
+}
+
+function moveCameraToMinimapPos(e: MouseEvent): void {
+  if (!sigma || !minimapRef.value) return
+  const rect = minimapRef.value.getBoundingClientRect()
+  const mx = e.clientX - rect.left
+  const my = e.clientY - rect.top
+  const graphPos = minimapToGraph(mx, my)
+
+  // Convert graph coords to viewport pixel, then to framed-graph coords used by camera
+  const viewportPos = sigma.graphToViewport(graphPos)
+  const framedPos = sigma.viewportToFramedGraph(viewportPos)
+
+  const camera = sigma.getCamera()
+  const state = camera.getState()
+
+  if (minimapDragging) {
+    camera.setState({ ...state, x: framedPos.x, y: framedPos.y })
+  } else {
+    camera.animate({ ...state, x: framedPos.x, y: framedPos.y }, { duration: 200 })
+  }
+}
+
+function onMinimapPointerDown(e: PointerEvent): void {
+  if (!minimapRef.value) return
+  minimapDragging = true
+  minimapRef.value.setPointerCapture(e.pointerId)
+  moveCameraToMinimapPos(e)
+}
+
+function onMinimapPointerMove(e: PointerEvent): void {
+  if (!minimapDragging) return
+  moveCameraToMinimapPos(e)
+}
+
+function onMinimapPointerUp(): void {
+  minimapDragging = false
 }
 
 function cleanup(): void {
@@ -416,6 +479,10 @@ watch(() => props.selectedNodeId, () => highlightSelected())
     <canvas
       ref="minimapRef"
       class="graph-minimap"
+      @pointerdown="onMinimapPointerDown"
+      @pointermove="onMinimapPointerMove"
+      @pointerup="onMinimapPointerUp"
+      @pointercancel="onMinimapPointerUp"
     />
   </div>
 </template>
@@ -431,8 +498,8 @@ watch(() => props.selectedNodeId, () => highlightSelected())
 }
 
 .graph-surface {
-  width: 100%;
-  height: 100%;
+  position: absolute;
+  inset: 0;
 }
 
 .graph-minimap {
@@ -442,6 +509,6 @@ watch(() => props.selectedNodeId, () => highlightSelected())
   width: 180px;
   height: 130px;
   border-radius: 6px;
-  pointer-events: none;
+  cursor: grab;
 }
 </style>

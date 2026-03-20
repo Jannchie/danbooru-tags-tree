@@ -29,10 +29,8 @@ const emit = defineEmits<{
   <nav class="tree-panel">
     <ul class="tree-root">
       <TreeNodeItem
-        v-for="rootId in dataset.rootChildren"
-        :key="rootId"
         :dataset="dataset"
-        :node-id="rootId"
+        :node-id="'root'"
         :selected-id="selectedId"
         :locale="locale"
         :open-ids="openIds"

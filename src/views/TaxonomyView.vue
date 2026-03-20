@@ -105,6 +105,11 @@ watch(
       return
     }
 
+    // Graph view allows empty selection
+    if (viewMode.value === 'graph') {
+      return
+    }
+
     const fallbackNodeId = nodeId && activeDataset.nodes[nodeId] ? nodeId : firstNodeId()
 
     if (fallbackNodeId && fallbackNodeId !== nodeId) {
@@ -396,7 +401,7 @@ function setLocale(nextLocale: LocaleCode): void {
   </div>
 
   <div
-    v-else-if="dataset && selectedNode"
+    v-else-if="dataset && (selectedNode || viewMode === 'graph')"
     class="app"
   >
     <header class="header">

@@ -373,6 +373,34 @@ button {
   border-left: 1px solid var(--border);
 }
 
+.tree-root-children {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tree-item--root {
+  margin-bottom: 2px;
+}
+
+.tree-row--root {
+  margin-bottom: 4px;
+  min-height: 32px;
+  align-items: center;
+}
+
+.tree-row--root .tree-label {
+  padding: 6px 8px;
+}
+
+.tree-row--root .tree-label-text {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
 .tree-item + .tree-item {
   margin-top: 1px;
 }
