@@ -257,9 +257,107 @@ function initSigma(): void {
   sigma.on('leaveNode', () => { if (containerRef.value) containerRef.value.style.cursor = 'default' })
 
   highlightSelected()
+  startMinimapLoop()
+}
+
+function drawMinimap(): void {
+  if (!sigma || !graph || !minimapRef.value) return
+  const canvas = minimapRef.value
+  const ctx = canvas.getContext('2d')
+  if (!ctx) return
+
+  const dpr = window.devicePixelRatio || 1
+  const w = canvas.clientWidth
+  const h = canvas.clientHeight
+  canvas.width = w * dpr
+  canvas.height = h * dpr
+  ctx.scale(dpr, dpr)
+
+  ctx.clearRect(0, 0, w, h)
+
+  // Draw background
+  ctx.fillStyle = 'rgba(12, 16, 32, 0.6)'
+  ctx.roundRect(0, 0, w, h, 6)
+  ctx.fill()
+
+  // Compute graph bounding box in graph coordinates
+  let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity
+  graph.forEachNode((_id, attrs) => {
+    const x = attrs.x as number
+    const y = attrs.y as number
+    if (x < minX) minX = x
+    if (x > maxX) maxX = x
+    if (y < minY) minY = y
+    if (y > maxY) maxY = y
+  })
+
+  const pad = 10
+  const graphW = maxX - minX || 1
+  const graphH = maxY - minY || 1
+  const scale = Math.min((w - pad * 2) / graphW, (h - pad * 2) / graphH)
+  const offsetX = (w - graphW * scale) / 2
+  const offsetY = (h - graphH * scale) / 2
+
+  function toMiniX(gx: number): number { return (gx - minX) * scale + offsetX }
+  function toMiniY(gy: number): number { return (gy - minY) * scale + offsetY }
+
+  // Draw edges
+  ctx.lineWidth = 0.3
+  ctx.globalAlpha = 0.3
+  graph!.forEachEdge((_edge, _attrs, _source, _target, sourceAttrs, targetAttrs) => {
+    ctx!.strokeStyle = (sourceAttrs.color as string) || '#333'
+    ctx!.beginPath()
+    ctx!.moveTo(toMiniX(sourceAttrs.x as number), toMiniY(sourceAttrs.y as number))
+    ctx!.lineTo(toMiniX(targetAttrs.x as number), toMiniY(targetAttrs.y as number))
+    ctx!.stroke()
+  })
+
+  // Draw nodes
+  ctx.globalAlpha = 0.8
+  graph!.forEachNode((_id, attrs) => {
+    const mx = toMiniX(attrs.x as number)
+    const my = toMiniY(attrs.y as number)
+    const r = Math.max(((attrs.size as number) || 3) * scale * 0.08, 0.8)
+    ctx!.fillStyle = (attrs.color as string) || '#8690a6'
+    ctx!.beginPath()
+    ctx!.arc(mx, my, r, 0, Math.PI * 2)
+    ctx!.fill()
+  })
+
+  // Draw viewport rectangle
+  ctx.globalAlpha = 1
+  const camera = sigma!.getCamera()
+  const viewState = camera.getState()
+  // Convert viewport corners to graph coords, then to minimap coords
+  const viewW = graphW / viewState.ratio
+  const viewH = graphH / viewState.ratio
+  const vx = toMiniX(viewState.x - viewW / 2)
+  const vy = toMiniY(viewState.y - viewH / 2)
+  const vw = viewW * scale
+  const vh = viewH * scale
+
+  ctx.strokeStyle = 'rgba(134, 144, 166, 0.7)'
+  ctx.lineWidth = 1.5
+  ctx.strokeRect(vx, vy, vw, vh)
+}
+
+function startMinimapLoop(): void {
+  function tick() {
+    drawMinimap()
+    minimapRAF = requestAnimationFrame(tick)
+  }
+  minimapRAF = requestAnimationFrame(tick)
+}
+
+function stopMinimapLoop(): void {
+  if (minimapRAF) {
+    cancelAnimationFrame(minimapRAF)
+    minimapRAF = 0
+  }
 }
 
 function cleanup(): void {
+  stopMinimapLoop()
   if (sigma) { sigma.kill(); sigma = null }
   graph = null
 }
@@ -299,6 +397,7 @@ watch(() => props.dataset, () => initSigma())
 
 watch(() => props.locale, () => {
   if (!graph || !sigma) return
+  graph.setNodeAttribute('root', 'label', props.locale === 'ja' ? 'Danbooru タグ' : props.locale === 'zh-CN' ? 'Danbooru 标签' : 'Danbooru Tags')
   for (const node of props.dataset.flatNodes) {
     graph.setNodeAttribute(node.id, 'label', getNodeLabel(node, props.locale, props.translations))
   }
@@ -309,18 +408,40 @@ watch(() => props.selectedNodeId, () => highlightSelected())
 </script>
 
 <template>
-  <div
-    ref="containerRef"
-    class="graph-surface"
-  />
+  <div class="graph-wrapper">
+    <div
+      ref="containerRef"
+      class="graph-surface"
+    />
+    <canvas
+      ref="minimapRef"
+      class="graph-minimap"
+    />
+  </div>
 </template>
 
 <style scoped>
-.graph-surface {
+.graph-wrapper {
+  position: relative;
   flex: 1;
   width: 100%;
   height: 100%;
   min-width: 0;
   min-height: 0;
+}
+
+.graph-surface {
+  width: 100%;
+  height: 100%;
+}
+
+.graph-minimap {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  width: 180px;
+  height: 130px;
+  border-radius: 6px;
+  pointer-events: none;
 }
 </style>
