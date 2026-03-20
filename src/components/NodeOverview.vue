@@ -32,15 +32,6 @@ const childNodes = computed(() =>
   props.node.children.map((id) => props.dataset.nodes[id]),
 )
 
-const localizedLabels = computed(() => {
-  const entry = props.translations[props.node.categoryKey]
-
-  return [
-    { locale: 'zh-CN', label: entry?.['zh-CN'] ?? null },
-    { locale: 'en', label: entry?.en ?? null },
-    { locale: 'ja', label: entry?.ja ?? null },
-  ].filter((item) => item.label !== null)
-})
 </script>
 
 <template>
@@ -91,21 +82,6 @@ const localizedLabels = computed(() => {
       <div class="stat-card">
         <span class="stat-card-label">Descendants</span>
         <span class="stat-card-value">{{ node.descendantCount }}</span>
-      </div>
-    </div>
-
-    <!-- Localized Labels -->
-    <div
-      v-if="localizedLabels.length > 0"
-      class="locale-row"
-    >
-      <div
-        v-for="item in localizedLabels"
-        :key="item.locale"
-        class="locale-chip"
-      >
-        <span class="locale-chip-code">{{ item.locale }}</span>
-        <span class="locale-chip-value">{{ item.label }}</span>
       </div>
     </div>
 

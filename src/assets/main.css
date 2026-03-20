@@ -112,6 +112,12 @@ button {
   flex-shrink: 0;
 }
 
+.header-logo {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+}
+
 .header-brand h1 {
   margin: 0;
   font-family: "Bricolage Grotesque", sans-serif;

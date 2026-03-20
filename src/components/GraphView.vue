@@ -16,13 +16,17 @@ const props = defineProps<{
 
 const emit = defineEmits<{
   select: [nodeId: string]
+  deselect: []
+  navigateTree: [nodeId: string]
 }>()
 
 const containerRef = ref<HTMLDivElement | null>(null)
+const minimapRef = ref<HTMLCanvasElement | null>(null)
 
 let sigma: Sigma | null = null
 let graph: Graph | null = null
 let resizeObserver: ResizeObserver | null = null
+let minimapRAF = 0
 
 const CATEGORY_COLORS = [
   '#b07080', '#b09070', '#a0a060', '#70a070',
@@ -38,6 +42,18 @@ const EDGE_COLORS = [
 
 const SIZE_BY_DEPTH = [18, 12, 8, 5.5, 4, 3.5, 3]
 
+function mixColor(color1: string, color2: string, t: number): string {
+  const r1 = Number.parseInt(color1.slice(1, 3), 16)
+  const g1 = Number.parseInt(color1.slice(3, 5), 16)
+  const b1 = Number.parseInt(color1.slice(5, 7), 16)
+  const r2 = Number.parseInt(color2.slice(1, 3), 16)
+  const g2 = Number.parseInt(color2.slice(3, 5), 16)
+  const b2 = Number.parseInt(color2.slice(5, 7), 16)
+  const r = Math.round(r1 + (r2 - r1) * t)
+  const g = Math.round(g1 + (g2 - g1) * t)
+  const b = Math.round(b1 + (b2 - b1) * t)
+  return `#${r.toString(16).padStart(2, '0')}${g.toString(16).padStart(2, '0')}${b.toString(16).padStart(2, '0')}`
+}
 
 function edgeKey(sourceId: string, targetId: string): string {
   return `${sourceId}->${targetId}`
@@ -58,7 +74,7 @@ function buildGraph(): Graph {
     baseColor: '#8690a6',
     color: '#8690a6',
     fixed: true,
-    label: 'Danbooru Tags',
+    label: props.locale === 'ja' ? 'Danbooru タグ' : props.locale === 'zh-CN' ? 'Danbooru 标签' : 'Danbooru Tags',
     size: SIZE_BY_DEPTH[0],
     x: positions?.root?.x ?? 0,
     y: positions?.root?.y ?? 0,
@@ -125,22 +141,27 @@ function highlightSelected(): void {
   if (!graph || !sigma) return
 
   const selectedId = props.selectedNodeId
+  const hasSelection = !!selectedId && !!props.dataset.nodes[selectedId]
   const { pathNodeIds, pathEdgeIds } = buildPathState(selectedId)
 
   for (const nodeId of graph.nodes()) {
     const isSelected = nodeId === selectedId
     const isOnPath = pathNodeIds.has(nodeId)
+    const dimmed = hasSelection && !isSelected && !isOnPath
 
     graph.setNodeAttribute(nodeId, 'selected', isSelected)
-    graph.setNodeAttribute(nodeId, 'highlighted', isOnPath)
+    graph.setNodeAttribute(nodeId, 'highlighted', isOnPath && !isSelected)
+    graph.setNodeAttribute(nodeId, 'dimmed', dimmed)
     graph.setNodeAttribute(nodeId, 'forceLabel', isOnPath)
     graph.setNodeAttribute(nodeId, 'zIndex', isSelected ? 2 : isOnPath ? 1 : 0)
   }
 
   for (const currentEdgeId of graph.edges()) {
     const isOnPath = pathEdgeIds.has(currentEdgeId)
+    const dimmed = hasSelection && !isOnPath
 
     graph.setEdgeAttribute(currentEdgeId, 'highlighted', isOnPath)
+    graph.setEdgeAttribute(currentEdgeId, 'dimmed', dimmed)
     graph.setEdgeAttribute(currentEdgeId, 'zIndex', isOnPath ? 1 : 0)
   }
 
@@ -183,10 +204,19 @@ function initSigma(): void {
       if (data.highlighted) {
         return {
           ...data,
-          color: baseColor,
+          color: mixColor(baseColor, '#0c1020', 0.25),
           forceLabel: true,
           size: baseSize + 0.8,
           zIndex: 1,
+        }
+      }
+
+      if (data.dimmed) {
+        return {
+          ...data,
+          color: mixColor(baseColor, '#0c1020', 0.75),
+          forceLabel: false,
+          zIndex: 0,
         }
       }
 
@@ -205,11 +235,24 @@ function initSigma(): void {
         }
       }
 
+      if (data.dimmed) {
+        return {
+          ...data,
+          color: mixColor(baseColor, '#0c1020', 0.8),
+          size: baseSize * 0.6,
+        }
+      }
+
       return data
     },
   })
 
   sigma.on('clickNode', ({ node }) => emit('select', node))
+  sigma.on('doubleClickNode', ({ node, event }) => {
+    event.original.preventDefault()
+    emit('navigateTree', node)
+  })
+  sigma.on('clickStage', () => emit('deselect'))
   sigma.on('enterNode', () => { if (containerRef.value) containerRef.value.style.cursor = 'pointer' })
   sigma.on('leaveNode', () => { if (containerRef.value) containerRef.value.style.cursor = 'default' })
 
@@ -221,7 +264,14 @@ function cleanup(): void {
   graph = null
 }
 
+function onKeyDown(e: KeyboardEvent): void {
+  if (e.key === 'Escape') {
+    emit('deselect')
+  }
+}
+
 onMounted(() => {
+  window.addEventListener('keydown', onKeyDown)
   resizeObserver = new ResizeObserver(() => {
     const el = containerRef.value
     if (!el) return
@@ -240,6 +290,7 @@ onMounted(() => {
 })
 
 onBeforeUnmount(() => {
+  window.removeEventListener('keydown', onKeyDown)
   if (resizeObserver) { resizeObserver.disconnect(); resizeObserver = null }
   cleanup()
 })

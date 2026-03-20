@@ -56,6 +56,11 @@ const selectedNodeId = computed(() => {
     return nodeId
   }
 
+  // Graph view allows empty selection
+  if (viewMode.value === 'graph') {
+    return ''
+  }
+
   return firstNodeId()
 })
 
@@ -346,6 +351,16 @@ function focusTag(nodeId: string, tag: string): void {
   void router.push(buildRouteLocation({ nodeId, tag }))
 }
 
+function deselectNode(): void {
+  void router.push(buildRouteLocation({ nodeId: '', tag: null }))
+}
+
+function navigateToTree(nodeId: string): void {
+  if (!dataset.value?.nodes[nodeId]) return
+  openSelectedAncestors(nodeId)
+  void router.push(buildRouteLocation({ nodeId, view: 'tree', tag: null }))
+}
+
 function setViewMode(nextView: ViewMode): void {
   if (viewMode.value === nextView) {
     return
@@ -386,6 +401,7 @@ function setLocale(nextLocale: LocaleCode): void {
   >
     <header class="header">
       <div class="header-brand">
+        <img src="/favicon.svg" alt="logo" class="header-logo" />
         <h1>Danbooru Tags Tree</h1>
       </div>
 
@@ -507,6 +523,8 @@ function setLocale(nextLocale: LocaleCode): void {
           v-else-if="graphRouteProps"
           v-bind="graphRouteProps"
           @select="selectNode"
+          @deselect="deselectNode"
+          @navigate-tree="navigateToTree"
         />
       </RouterView>
     </main>

@@ -12,6 +12,8 @@ defineProps<{
 
 const emit = defineEmits<{
   select: [nodeId: string]
+  deselect: []
+  navigateTree: [nodeId: string]
 }>()
 </script>
 
@@ -23,5 +25,7 @@ const emit = defineEmits<{
     :selected-node-id="selectedNodeId"
     :layout-positions="graphLayout"
     @select="emit('select', $event)"
+    @deselect="emit('deselect')"
+    @navigate-tree="emit('navigateTree', $event)"
   />
 </template>
