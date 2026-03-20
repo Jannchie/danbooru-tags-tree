@@ -216,7 +216,7 @@ category.apparel.detail.detail.other.decorative:
   zh-CN: 装饰件
 category.apparel.detail.detail.other.general:
   en: general
-  ja: general
+  ja: 一般
   zh-CN: 通用
 category.apparel.detail.detail.other.neckline:
   en: neckline
@@ -248,7 +248,7 @@ category.apparel.detail.pattern.dot_geometric:
   zh-CN: 点与几何
 category.apparel.detail.pattern.general:
   en: general
-  ja: general
+  ja: 一般
   zh-CN: 通用
 category.apparel.detail.pattern.material:
   en: material
@@ -360,7 +360,7 @@ category.apparel.garment.handwear.arm_cover:
   zh-CN: 臂套
 category.apparel.garment.handwear.general:
   en: general
-  ja: general
+  ja: 一般
   zh-CN: 通用
 category.apparel.garment.handwear.gloves:
   en: gloves
@@ -400,19 +400,19 @@ category.apparel.garment.swimwear:
   zh-CN: 泳装
 category.apparel.garment.swimwear.bikini:
   en: bikini
-  ja: bikini
+  ja: ビキニ
   zh-CN: 比基尼
 category.apparel.garment.swimwear.general:
   en: general
-  ja: general
+  ja: 一般
   zh-CN: 通用
 category.apparel.garment.swimwear.one_piece:
   en: one piece
-  ja: one piece
+  ja: ワンピース水着
   zh-CN: 连体泳衣
 category.apparel.garment.swimwear.swim_trunk:
   en: swim trunk
-  ja: swim trunk
+  ja: スイムトランクス
   zh-CN: 泳裤
 category.apparel.garment.top:
   en: top
@@ -512,19 +512,19 @@ category.apparel.garment.traditional:
   zh-CN: 传统服饰
 category.apparel.garment.traditional.chinese:
   en: chinese
-  ja: chinese
+  ja: 中華風
   zh-CN: 中式
 category.apparel.garment.traditional.general:
   en: general
-  ja: general
+  ja: 一般
   zh-CN: 通用
 category.apparel.garment.traditional.japanese:
   en: japanese
-  ja: japanese
+  ja: 和風
   zh-CN: 日式
 category.apparel.garment.traditional.western:
   en: western
-  ja: western
+  ja: 西洋風
   zh-CN: 西式
 category.apparel.garment.underwear:
   en: underwear
@@ -662,6 +662,22 @@ category.apparel.headwear.protective:
   en: protective
   ja: 防護頭飾り
   zh-CN: 防护头饰
+category.apparel.headwear.state:
+  en: wear relation
+  ja: 装着関係
+  zh-CN: 佩戴关系
+category.apparel.headwear.state.on_headwear:
+  en: on headwear
+  ja: 頭飾りの上
+  zh-CN: 在头饰上
+category.apparel.headwear.state.over_headwear:
+  en: over headwear
+  ja: 頭飾りの外側
+  zh-CN: 在头饰外层
+category.apparel.headwear.state.interaction:
+  en: handling
+  ja: 装着操作
+  zh-CN: 佩戴动作
 category.apparel.headwear.traditional_headwear:
   en: traditional headwear
   ja: 伝統的な帽子
@@ -674,6 +690,126 @@ category.apparel.headwear.visor:
   en: visor
   ja: バイザー
   zh-CN: 遮阳板
+category.apparel.body_part_placement:
+  en: body-part placement
+  ja: 身体部位ごとの装着
+  zh-CN: 身体部位穿戴关系
+category.apparel.body_part_placement.head:
+  en: head
+  ja: 頭
+  zh-CN: 头部
+category.apparel.body_part_placement.head.on_head:
+  en: on head
+  ja: 頭の上
+  zh-CN: 戴在头上
+category.apparel.body_part_placement.face:
+  en: face
+  ja: 顔
+  zh-CN: 脸部
+category.apparel.body_part_placement.face.on_face:
+  en: on face
+  ja: 顔の上
+  zh-CN: 贴在脸上
+category.apparel.body_part_placement.shoulder:
+  en: shoulder
+  ja: 肩
+  zh-CN: 肩部
+category.apparel.body_part_placement.shoulder.on_shoulder:
+  en: on shoulder
+  ja: 肩の上
+  zh-CN: 贴在肩上
+category.apparel.body_part_placement.shoulder.on_shoulders:
+  en: on shoulders
+  ja: 肩に羽織る
+  zh-CN: 披在双肩上
+category.apparel.body_part_placement.shoulder.over_shoulder:
+  en: over shoulder
+  ja: 肩に掛ける
+  zh-CN: 搭在肩头
+category.apparel.body_part_placement.arm:
+  en: arm
+  ja: 腕
+  zh-CN: 手臂
+category.apparel.body_part_placement.arm.on_arm:
+  en: on arm
+  ja: 腕の上
+  zh-CN: 在手臂上
+category.apparel.body_part_placement.arm.around_arm:
+  en: around arm
+  ja: 腕回り
+  zh-CN: 缠在手臂上
+category.apparel.body_part_placement.chest:
+  en: chest
+  ja: 胸
+  zh-CN: 胸部
+category.apparel.body_part_placement.chest.on_chest:
+  en: on chest
+  ja: 胸の上
+  zh-CN: 贴在胸前
+category.apparel.body_part_placement.foot:
+  en: foot
+  ja: 足
+  zh-CN: 足部
+category.apparel.body_part_placement.foot.on_foot:
+  en: on foot
+  ja: 足の上
+  zh-CN: 在脚上
+category.apparel.body_part_placement.hand:
+  en: hand
+  ja: 手
+  zh-CN: 手部
+category.apparel.body_part_placement.hand.on_hand:
+  en: on hand
+  ja: 手の上
+  zh-CN: 在手上
+category.apparel.body_part_placement.knee:
+  en: knee
+  ja: 膝
+  zh-CN: 膝部
+category.apparel.body_part_placement.knee.on_knee:
+  en: on knee
+  ja: 膝の上
+  zh-CN: 在膝上
+category.apparel.body_part_placement.leg:
+  en: leg
+  ja: 脚
+  zh-CN: 腿部
+category.apparel.body_part_placement.leg.on_leg:
+  en: on leg
+  ja: 脚の上
+  zh-CN: 在腿上
+category.apparel.body_part_placement.neck:
+  en: neck
+  ja: 首
+  zh-CN: 颈部
+category.apparel.body_part_placement.neck.on_neck:
+  en: on neck
+  ja: 首の上
+  zh-CN: 贴在脖子上
+category.apparel.body_part_placement.neck.around_neck:
+  en: around neck
+  ja: 首回り
+  zh-CN: 围在脖子上
+category.apparel.body_part_placement.neck.behind_neck:
+  en: behind neck
+  ja: 首の後ろ
+  zh-CN: 在脖子后
+category.apparel.body_part_placement.stomach:
+  en: stomach
+  ja: 腹
+  zh-CN: 腹部
+category.apparel.body_part_placement.stomach.on_stomach:
+  en: on stomach
+  ja: 腹の上
+  zh-CN: 贴在腹部
+category.apparel.body_part_placement.waist:
+  en: waist
+  ja: 腰
+  zh-CN: 腰部
+category.apparel.body_part_placement.waist.around_waist:
+  en: around waist
+  ja: 腰回り
+  zh-CN: 围在腰间
 category.apparel.legwear:
   en: legwear
   ja: レッグウェア
@@ -732,7 +868,7 @@ category.apparel.state.other.coverage:
   zh-CN: 遮露
 category.apparel.state.other.general:
   en: general
-  ja: general
+  ja: 一般
   zh-CN: 通用
 category.apparel.state.torn:
   en: torn
@@ -760,7 +896,7 @@ category.apparel.worn_accessory.eyewear:
   zh-CN: 眼镜
 category.apparel.worn_accessory.eyewear.general:
   en: general
-  ja: general
+  ja: 一般
   zh-CN: 通用
 category.apparel.worn_accessory.eyewear.glasses:
   en: glasses
@@ -848,7 +984,7 @@ category.apparel.worn_accessory.neckwear.collar_piece:
   zh-CN: 领饰
 category.apparel.worn_accessory.neckwear.general:
   en: general
-  ja: general
+  ja: 一般
   zh-CN: 通用
 category.apparel.worn_accessory.neckwear.neck_ribbon:
   en: neck ribbon
@@ -880,7 +1016,7 @@ category.apparel.worn_accessory.wearable.body_accessory:
   zh-CN: 身体配饰
 category.apparel.worn_accessory.wearable.general:
   en: general
-  ja: general
+  ja: 一般
   zh-CN: 通用
 category.apparel.worn_accessory.wearable.headphone:
   en: headphone
@@ -1633,13 +1769,41 @@ category.composition.framing.arrangement:
   ja: アレンジ
   zh-CN: 画面编排
 category.composition.framing.body_part_anchor:
-  en: body part anchor
-  ja: 身体部位アンカー
-  zh-CN: 身体部位锚点
+  en: body-relative placement
+  ja: 身体部位基準の配置
+  zh-CN: 相对身体部位的位置
+category.composition.framing.body_part_anchor.back:
+  en: back
+  ja: 背中
+  zh-CN: 背部
+category.composition.framing.body_part_anchor.back.on_back:
+  en: on back
+  ja: 背中の上
+  zh-CN: 在背上
+category.composition.framing.body_part_anchor.back.behind_back:
+  en: behind back
+  ja: 背中の後ろ
+  zh-CN: 在背后
 category.composition.framing.body_part_anchor.head:
-  en: on head
-  ja: 頭上
-  zh-CN: 头上
+  en: head
+  ja: 頭
+  zh-CN: 头部
+category.composition.framing.body_part_anchor.face:
+  en: face
+  ja: 顔
+  zh-CN: 脸部
+category.composition.framing.body_part_anchor.face.on_face:
+  en: on face
+  ja: 顔の上
+  zh-CN: 脸上
+category.composition.framing.body_part_anchor.face.over_face:
+  en: over face
+  ja: 顔の前
+  zh-CN: 脸前
+category.composition.framing.body_part_anchor.lap:
+  en: lap
+  ja: 膝上
+  zh-CN: 膝上
 category.composition.framing.body_part_anchor.shoulder:
   en: shoulder
   ja: 肩
@@ -1655,11 +1819,11 @@ category.composition.framing.body_part_anchor.shoulder.on_shoulders:
 category.composition.framing.body_part_anchor.shoulder.over_shoulder:
   en: over shoulder
   ja: 肩越し
-  zh-CN: 搭肩
+  zh-CN: 过肩
 category.composition.framing.body_part_anchor.shoulder.around_shoulder:
   en: around shoulder
   ja: 肩回り
-  zh-CN: 绕肩
+  zh-CN: 肩部周围
 category.composition.framing.border:
   en: border
   ja: ボーダー
@@ -1702,7 +1866,7 @@ category.composition.visual_effect.effect.color_effect:
   zh-CN: 色彩效果
 category.composition.visual_effect.effect.general:
   en: general
-  ja: general
+  ja: 一般
   zh-CN: 通用
 category.composition.visual_effect.effect.glow_light:
   en: glow light
@@ -1843,23 +2007,23 @@ category.dynamics.action.combat.general:
   zh-CN: 通用
 category.dynamics.action.combat.general.general:
   en: general
-  ja: general
+  ja: 一般
   zh-CN: 通用
 category.dynamics.action.combat.general.impact:
   en: impact
-  ja: impact
+  ja: 衝撃
   zh-CN: 冲击
 category.dynamics.action.combat.general.stance:
   en: stance
-  ja: stance
+  ja: 構え
   zh-CN: 战斗架势
 category.dynamics.action.combat.general.sword_attack:
   en: sword attack
-  ja: sword attack
+  ja: 剣撃
   zh-CN: 刀剑攻击
 category.dynamics.action.combat.general.weapon_use:
   en: weapon use
-  ja: weapon use
+  ja: 武器使用
   zh-CN: 武器操作
 category.dynamics.action.combat.magic:
   en: magic
@@ -1911,11 +2075,11 @@ category.dynamics.action.gesture.general.body_gesture:
   zh-CN: 肢体动作
 category.dynamics.action.gesture.general.face_gesture:
   en: face gesture
-  ja: face gesture
-  zh-CN: 面部动作
+  ja: 顔の動き
+  zh-CN: 脸部动作
 category.dynamics.action.gesture.general.general:
   en: general
-  ja: general
+  ja: 一般
   zh-CN: 通用
 category.dynamics.action.gesture.greeting:
   en: greeting
@@ -1932,23 +2096,23 @@ category.dynamics.action.gesture.pointing:
 category.dynamics.action.locomotion: *id026
 category.dynamics.action.locomotion.aerial:
   en: aerial
-  ja: aerial
+  ja: 空中移動
   zh-CN: 空中
 category.dynamics.action.locomotion.climb:
   en: climb
-  ja: climb
+  ja: 登攀
   zh-CN: 攀爬
 category.dynamics.action.locomotion.general:
   en: general
-  ja: general
+  ja: 一般
   zh-CN: 通用
 category.dynamics.action.locomotion.ground_move:
   en: ground move
-  ja: ground move
+  ja: 地上移動
   zh-CN: 地面移动
 category.dynamics.action.locomotion.water:
   en: water
-  ja: water
+  ja: 水中移動
   zh-CN: 水中
 category.dynamics.action.object_manipulation: *id027
 category.dynamics.action.object_manipulation.clothing_adjustment: *id028
@@ -1979,15 +2143,15 @@ category.dynamics.action.object_manipulation.holding.food_drink: *id032
 category.dynamics.action.object_manipulation.holding.general_object_hold: *id033
 category.dynamics.action.object_manipulation.holding.general_object_hold.carry_object:
   en: carry object
-  ja: carry object
+  ja: 運搬
   zh-CN: 搬运
 category.dynamics.action.object_manipulation.holding.general_object_hold.general:
   en: general
-  ja: general
+  ja: 一般
   zh-CN: 通用
 category.dynamics.action.object_manipulation.holding.general_object_hold.grip_style:
   en: grip style
-  ja: grip style
+  ja: 持ち方
   zh-CN: 握法
 category.dynamics.action.object_manipulation.holding.household_tool: *id034
 category.dynamics.action.object_manipulation.holding.instrument: *id035
@@ -2006,43 +2170,43 @@ category.dynamics.expression:
 category.dynamics.expression.emotion: *id044
 category.dynamics.expression.emotion.general:
   en: general
-  ja: general
+  ja: 一般
   zh-CN: 通用
 category.dynamics.expression.emotion.negative:
   en: negative
-  ja: negative
+  ja: ネガティブ
   zh-CN: 负面
 category.dynamics.expression.emotion.positive:
   en: positive
-  ja: positive
+  ja: ポジティブ
   zh-CN: 正面
 category.dynamics.expression.emotion.shy:
   en: shy
-  ja: shy
+  ja: 照れ
   zh-CN: 害羞
 category.dynamics.expression.emotion.surprise:
   en: surprise
-  ja: surprise
+  ja: 驚き
   zh-CN: 惊讶
 category.dynamics.expression.eye_expression: *id045
 category.dynamics.expression.face_effect: *id046
 category.dynamics.expression.mouth: *id047
 category.dynamics.expression.mouth.general:
   en: general
-  ja: general
+  ja: 一般
   zh-CN: 通用
 category.dynamics.expression.mouth.open_close:
   en: open close
-  ja: open close
+  ja: 開閉
   zh-CN: 开合
 category.dynamics.expression.mouth.smile_frown:
   en: smile frown
-  ja: smile frown
-  zh-CN: 笑与愁
+  ja: 笑顔としかめ面
+  zh-CN: 笑与皱眉
 category.dynamics.expression.mouth.tongue_drool:
   en: tongue drool
-  ja: tongue drool
-  zh-CN: 舌与涎
+  ja: 舌とよだれ
+  zh-CN: 舌与口水
 category.dynamics.interaction:
   en: interaction
   ja: インタラクション
@@ -2085,19 +2249,19 @@ category.dynamics.interaction.contact.touch:
   zh-CN: 触碰
 category.dynamics.interaction.contact.touch.general:
   en: general
-  ja: general
+  ja: 一般
   zh-CN: 通用
 category.dynamics.interaction.contact.touch.hand_on:
   en: hand on
-  ja: hand on
-  zh-CN: 手部接触
+  ja: 手を当てる
+  zh-CN: 手部贴触
 category.dynamics.interaction.contact.touch.leaning:
   en: leaning
-  ja: leaning
+  ja: もたれかかり
   zh-CN: 倚靠
 category.dynamics.interaction.contact.touch.leg_contact:
   en: leg contact
-  ja: leg contact
+  ja: 脚の接触
   zh-CN: 腿部接触
 category.dynamics.interaction.creature_interaction: &id052
   en: creature interaction
@@ -2121,15 +2285,15 @@ category.dynamics.pose.arm_hand.general:
   zh-CN: 通用
 category.dynamics.pose.arm_hand.general.elbow_wrist:
   en: elbow wrist
-  ja: elbow wrist
+  ja: 肘と手首
   zh-CN: 肘腕
 category.dynamics.pose.arm_hand.general.general:
   en: general
-  ja: general
+  ja: 一般
   zh-CN: 通用
 category.dynamics.pose.arm_hand.general.hand_gesture:
   en: hand gesture
-  ja: hand gesture
+  ja: 手のしぐさ
   zh-CN: 手部动作
 category.dynamics.pose.arm_hand.hand:
   en: hand
@@ -2138,7 +2302,7 @@ category.dynamics.pose.arm_hand.hand:
 category.dynamics.pose.arm_hand.self_touch:
   en: self touch
   ja: 自分に触れる
-  zh-CN: 自摸（姿势）
+  zh-CN: 自我触碰
 category.dynamics.pose.head_gaze: &id054
   en: head gaze
   ja: 顔向きと視線
@@ -2209,7 +2373,7 @@ category.environment.location.indoor.facility:
   zh-CN: 设施
 category.environment.location.indoor.general:
   en: general
-  ja: general
+  ja: 一般
   zh-CN: 通用
 category.environment.location.indoor.room:
   en: room
@@ -2241,7 +2405,7 @@ category.environment.location.outdoor.urban.country_city:
   zh-CN: 国家与城市
 category.environment.location.outdoor.urban.general:
   en: general
-  ja: general
+  ja: 一般
   zh-CN: 通用
 category.environment.location.outdoor.urban.infrastructure:
   en: infrastructure
@@ -2305,7 +2469,7 @@ category.explicit.nudity.full:
   zh-CN: 全裸
 category.explicit.nudity.general:
   en: general
-  ja: general
+  ja: 一般
   zh-CN: 通用
 category.explicit.nudity.partial:
   en: partial
@@ -2349,7 +2513,7 @@ category.explicit.sexual_anatomy.anus:
   zh-CN: 肛门
 category.explicit.sexual_anatomy.general:
   en: general
-  ja: general
+  ja: 一般
   zh-CN: 通用
 category.explicit.sexual_anatomy.penis:
   en: penis
@@ -2590,23 +2754,23 @@ category.object.container:
   zh-CN: 容器
 category.object.container.bottle_can:
   en: bottle can
-  ja: bottle can
+  ja: ボトルと缶
   zh-CN: 瓶罐
 category.object.container.box_bag:
   en: box bag
-  ja: box bag
+  ja: 箱と袋
   zh-CN: 箱袋
 category.object.container.cup_glass:
   en: cup glass
-  ja: cup glass
-  zh-CN: 杯
+  ja: カップとグラス
+  zh-CN: 杯具
 category.object.container.general:
   en: general
-  ja: general
+  ja: 一般
   zh-CN: 通用
 category.object.container.plate_bowl:
   en: plate bowl
-  ja: plate bowl
+  ja: 皿と鉢
   zh-CN: 盘碗
 category.object.decorative_object:
   en: decorative object
@@ -2690,7 +2854,7 @@ category.object.food_drink.food.fruit_vegetable.fruit:
   zh-CN: 水果
 category.object.food_drink.food.fruit_vegetable.general:
   en: general
-  ja: general
+  ja: 一般
   zh-CN: 通用
 category.object.food_drink.food.fruit_vegetable.nut_seed:
   en: nut seed
@@ -2714,7 +2878,7 @@ category.object.food_drink.food.meal.condiment:
   zh-CN: 调味料
 category.object.food_drink.food.meal.general:
   en: general
-  ja: general
+  ja: 一般
   zh-CN: 通用
 category.object.food_drink.food.meal.meat_fish:
   en: meat fish
@@ -2746,7 +2910,7 @@ category.object.food_drink.food.snack.candy:
   zh-CN: 糖果
 category.object.food_drink.food.snack.general:
   en: general
-  ja: general
+  ja: 一般
   zh-CN: 通用
 category.object.food_drink.food.snack.ice_cream:
   en: ice cream
@@ -2766,7 +2930,7 @@ category.object.furniture.bed:
   zh-CN: 床
 category.object.furniture.general:
   en: general
-  ja: general
+  ja: 一般
   zh-CN: 通用
 category.object.furniture.seating:
   en: seating
@@ -2786,27 +2950,27 @@ category.object.household_item:
   zh-CN: 家居用品
 category.object.household_item.bedding:
   en: bedding
-  ja: bedding
-  zh-CN: 寝具
+  ja: 寝具
+  zh-CN: 床上用品
 category.object.household_item.cleaning:
   en: cleaning
-  ja: cleaning
-  zh-CN: 清洁
+  ja: 清掃用品
+  zh-CN: 清洁用品
 category.object.household_item.fabric:
   en: fabric
-  ja: fabric
-  zh-CN: 织物
+  ja: 布製品
+  zh-CN: 布制品
 category.object.household_item.general:
   en: general
-  ja: general
+  ja: 一般
   zh-CN: 通用
 category.object.household_item.light:
   en: light
-  ja: light
+  ja: 照明
   zh-CN: 照明
 category.object.household_item.timepiece:
   en: timepiece
-  ja: timepiece
+  ja: 時計
   zh-CN: 钟表
 category.object.instrument:
   en: instrument
@@ -2814,7 +2978,7 @@ category.object.instrument:
   zh-CN: 乐器
 category.object.instrument.general:
   en: general
-  ja: general
+  ja: 一般
   zh-CN: 通用
 category.object.instrument.keyboard:
   en: keyboard
@@ -2886,7 +3050,7 @@ category.object.plant.flower.bouquet_arrange:
   zh-CN: 花束与装饰
 category.object.plant.flower.general:
   en: general
-  ja: general
+  ja: 一般
   zh-CN: 通用
 category.object.plant.flower.specific_flower:
   en: specific flower
@@ -2994,7 +3158,7 @@ category.object.stationery:
   zh-CN: 文具
 category.object.stationery.general:
   en: general
-  ja: general
+  ja: 一般
   zh-CN: 通用
 category.object.stationery.paper:
   en: paper
@@ -3046,27 +3210,27 @@ category.object.tool:
   zh-CN: 工具
 category.object.tool.binding:
   en: binding
-  ja: binding
+  ja: 拘束具
   zh-CN: 绳索
 category.object.tool.cutting:
   en: cutting
-  ja: cutting
+  ja: 切断具
   zh-CN: 切割工具
 category.object.tool.eating_utensil:
   en: eating utensil
-  ja: eating utensil
+  ja: 食具
   zh-CN: 餐具
 category.object.tool.general:
   en: general
-  ja: general
+  ja: 一般
   zh-CN: 通用
 category.object.tool.grip_tool:
   en: grip tool
-  ja: grip tool
-  zh-CN: 手动工具
+  ja: 手持ち工具
+  zh-CN: 手持工具
 category.object.tool.writing:
   en: writing
-  ja: writing
+  ja: 筆記具
   zh-CN: 书写工具
 category.object.toy_game_item:
   en: toy game item
@@ -3106,7 +3270,7 @@ category.object.toy_game_item.toy.ball:
   zh-CN: 球类
 category.object.toy_game_item.toy.general:
   en: general
-  ja: general
+  ja: 一般
   zh-CN: 通用
 category.object.toy_game_item.toy.spinning:
   en: spinning
@@ -3266,7 +3430,7 @@ category.production.art_style.border_style:
   zh-CN: 边框风格
 category.production.art_style.general:
   en: general
-  ja: general
+  ja: 一般
   zh-CN: 通用
 category.production.art_style.outline_line:
   en: outline line
@@ -3334,7 +3498,7 @@ category.production.format.cover:
   zh-CN: 封面
 category.production.format.general:
   en: general
-  ja: general
+  ja: 一般
   zh-CN: 通用
 category.production.format.screenshot:
   en: screenshot
@@ -3862,7 +4026,7 @@ category.text.symbol.arrow_pointer:
   zh-CN: 箭头
 category.text.symbol.general:
   en: general
-  ja: general
+  ja: 一般
   zh-CN: 通用
 category.text.symbol.heart:
   en: heart
@@ -10010,8 +10174,8 @@ tag.barrel:
   zh-CN: 桶
 tag.barrett_m82:
   en: barrett m82
-  ja: バレットm82
-  zh-CN: 巴雷特 m82
+  ja: バレットM82
+  zh-CN: 巴雷特M82
 tag.barricade:
   en: barricade
   ja: バリケード
@@ -15754,8 +15918,8 @@ tag.browning_m1919:
   zh-CN: 勃朗宁M1919
 tag.browning_m2:
   en: browning m2
-  ja: 褐変m2
-  zh-CN: 布朗宁米2
+  ja: ブローニングM2
+  zh-CN: 布朗宁M2
 tag.bruce_lee's_jumpsuit:
   en: bruce lee's jumpsuit
   ja: トラックスーツ
@@ -24191,7 +24355,7 @@ tag.deadpan:
 tag.deal_with_it_(meme):
   en: deal with it (meme)
   ja: ドットサングラス
-  zh-CN: 处理它（梗）
+  zh-CN: Deal with it（梗）
 tag.dearly_stars_(idolmaster):
   en: dearly stars (idolmaster)
   ja: ディアリースターズ（アイドルマスター）
@@ -31242,32 +31406,32 @@ tag.flyswatter:
   zh-CN: 苍蝇拍
 tag.fn_f2000:
   en: fn f2000
-  ja: fn f2000
-  zh-CN: fn f2000
+  ja: FN F2000
+  zh-CN: FN F2000
 tag.fn_fal:
   en: fn fal
-  ja: fn ファル
-  zh-CN: 法尔
+  ja: FN FAL
+  zh-CN: FN FAL
 tag.fn_five-seven:
   en: fn five-seven
-  ja: fn 5-7
-  zh-CN: fn 五七
+  ja: FN Five-seveN
+  zh-CN: FN Five-seveN
 tag.fn_fnc:
   en: fn fnc
-  ja: fn fnc
-  zh-CN: fn fnc
+  ja: FN FNC
+  zh-CN: FN FNC
 tag.fn_scar:
   en: fn scar
-  ja: fn傷跡
-  zh-CN: fn 疤痕
+  ja: FN SCAR
+  zh-CN: FN SCAR
 tag.fn_scar_16:
   en: fn scar 16
-  ja: fn傷跡16
-  zh-CN: FN 疤痕 16
+  ja: FN SCAR 16
+  zh-CN: FN SCAR 16
 tag.fn_scar_17:
   en: fn scar 17
-  ja: fn傷跡17
-  zh-CN: FN 疤痕 17
+  ja: FN SCAR 17
+  zh-CN: FN SCAR 17
 tag.foam:
   en: foam
   ja: 泡
@@ -37310,40 +37474,40 @@ tag.h&k_g36c:
   zh-CN: H&K G36 C
 tag.h&k_hk416:
   en: h&k hk416
-  ja: h&k hk416
+  ja: H&K HK416
   zh-CN: HK416
 tag.h&k_mark_23:
   en: h&k mark 23
-  ja: H&Kマーク23
-  zh-CN: H&K 标记 23
+  ja: H&K Mark 23
+  zh-CN: H&K Mark 23
 tag.h&k_mg5:
   en: h&k mg5
-  ja: h&k mg5
-  zh-CN: H&K 毫克5
+  ja: H&K MG5
+  zh-CN: H&K MG5
 tag.h&k_mp5:
   en: h&k mp5
-  ja: H&K mp5
-  zh-CN: H&K mp5
+  ja: H&K MP5
+  zh-CN: H&K MP5
 tag.h&k_mp5k:
   en: h&k mp5 k
-  ja: H&K mp5 k
-  zh-CN: H&K MP5 K
+  ja: H&K MP5K
+  zh-CN: H&K MP5K
 tag.h&k_mp7:
   en: h&k mp7
-  ja: H&K mp7
+  ja: H&K MP7
   zh-CN: H&K MP7
 tag.h&k_p30:
   en: h&k p30
-  ja: h&k p30
+  ja: H&K P30
   zh-CN: H&K P30
 tag.h&k_psg1:
   en: h&k psg1
-  ja: h&k psg1
+  ja: H&K PSG1
   zh-CN: H&K PSG1
 tag.h&k_ump:
   en: h&k ump
-  ja: H&K アンプ
-  zh-CN: 香港联合总会
+  ja: H&K UMP
+  zh-CN: H&K UMP
 tag.h&k_usp:
   en: h&k usp
   ja: H&K USP
@@ -41042,8 +41206,8 @@ tag.holding_beachball:
   zh-CN: 拿着沙滩球
 tag.holding_beaker:
   en: holding beaker
-  ja: ビーカーを保持
-  zh-CN: 保持烧杯
+  ja: ビーカーを持つ
+  zh-CN: 拿着烧杯
 tag.holding_behind_back:
   en: holding behind back
   ja: 後ろに抱えて
@@ -41374,8 +41538,8 @@ tag.holding_comb:
   zh-CN: 持梳子
 tag.holding_compact:
   en: holding compact
-  ja: コンパクトに保持
-  zh-CN: 保持紧凑
+  ja: コンパクトを持つ
+  zh-CN: 拿着化妆盒
 tag.holding_computer_mouse:
   en: holding computer mouse
   ja: コンピューターのマウスを持っている
@@ -41602,8 +41766,8 @@ tag.holding_flail:
   zh-CN: 持连枷
 tag.holding_flame:
   en: holding flame
-  ja: 炎を保持
-  zh-CN: 保持火焰
+  ja: 炎を持つ
+  zh-CN: 手持火焰
 tag.holding_flamethrower:
   en: holding flamethrower
   ja: 火炎放射器を持つ
@@ -41914,8 +42078,8 @@ tag.holding_letter:
   zh-CN: 拿着信
 tag.holding_lid:
   en: holding lid
-  ja: 保持蓋
-  zh-CN: 保持盖子
+  ja: 蓋を持つ
+  zh-CN: 拿着盖子
 tag.holding_lighter:
   en: holding lighter
   ja: ライターを持っている
@@ -42086,8 +42250,8 @@ tag.holding_needle:
   zh-CN: 持针
 tag.holding_net:
   en: holding net
-  ja: 保持ネット
-  zh-CN: 保持网
+  ja: 網を持つ
+  zh-CN: 拿着网
 tag.holding_newspaper:
   en: holding newspaper
   ja: 新聞を持っている
@@ -42126,8 +42290,8 @@ tag.holding_orb:
   zh-CN: 拿着球体
 tag.holding_organ:
   en: holding organ
-  ja: 保持器官
-  zh-CN: 保持机构
+  ja: 器官を持つ
+  zh-CN: 拿着器官
 tag.holding_ornament:
   en: holding ornament
   ja: 保持飾り
@@ -42386,8 +42550,8 @@ tag.holding_razor:
   zh-CN: 拿着剃须刀
 tag.holding_record:
   en: holding record
-  ja: 保有記録
-  zh-CN: 保持记录
+  ja: レコードを持つ
+  zh-CN: 拿着唱片
 tag.holding_reins:
   en: holding reins
   ja: 手綱を握る
@@ -45618,12 +45782,12 @@ tag.ipad:
   zh-CN: 平板电脑
 tag.iphone:
   en: iphone
-  ja: iphone
-  zh-CN: 苹果手机
+  ja: iPhone
+  zh-CN: iPhone
 tag.iphone_11_pro:
   en: iphone 11 pro
   ja: iPhone11プロ
-  zh-CN: iPhone 11 专业版
+  zh-CN: iPhone 11 Pro
 tag.ipod:
   en: ipod
   ja: iPod
@@ -49006,8 +49170,8 @@ tag.lcb_uniform_(project_moon):
   zh-CN: lcb制服（Project Moon）
 tag.lcl:
   en: lcl
-  ja: lcl
-  zh-CN: 拼箱
+  ja: LCL
+  zh-CN: LCL
 tag.le_mans_prototype:
   en: le mans prototype
   ja: ルマンプロトタイプ
@@ -51347,71 +51511,71 @@ tag.m._bison_(cosplay):
 tag.m134_minigun:
   en: m134 minigun
   ja: M134 ミニガン
-  zh-CN: m134迷你机枪
+  zh-CN: M134迷你机枪
 tag.m14:
   en: m14
-  ja: m14
-  zh-CN: m14
+  ja: M14
+  zh-CN: M14
 tag.m16:
   en: m16
-  ja: m16
-  zh-CN: 米16
+  ja: M16
+  zh-CN: M16
 tag.m16a1:
   en: m16 a1
-  ja: m16a1
+  ja: M16A1
   zh-CN: M16A1
 tag.m16a2:
   en: m16 a2
-  ja: m16 a2
-  zh-CN: m16 a2
+  ja: M16A2
+  zh-CN: M16A2
 tag.m16a4:
   en: m16 a4
-  ja: m16a4
-  zh-CN: m16 a4
+  ja: M16A4
+  zh-CN: M16A4
 tag.m1903_springfield:
   en: m1903 springfield
-  ja: m1903 スプリングフィールド
-  zh-CN: m1903 斯普林菲尔德
+  ja: M1903スプリングフィールド
+  zh-CN: M1903斯普林菲尔德
 tag.m1911:
   en: m1911
   ja: コルトガバメント
   zh-CN: m1911
 tag.m1918_bar:
   en: m1918 bar
-  ja: m1918バー
-  zh-CN: m1918酒吧
+  ja: M1918 BAR
+  zh-CN: M1918 BAR
 tag.m1_abrams:
   en: m1 abrams
   ja: M1 エイブラムス
-  zh-CN: m1艾布拉姆斯
+  zh-CN: M1艾布拉姆斯
 tag.m1_garand:
   en: m1 garand
-  ja: m1ガーランド
-  zh-CN: m1加兰德
+  ja: M1ガーランド
+  zh-CN: M1加兰德
 tag.m1_helmet:
   en: m1 helmet
   ja: M1ヘルメット
-  zh-CN: m1头盔
+  zh-CN: M1头盔
 tag.m203:
   en: m203
-  ja: m203
-  zh-CN: m203
+  ja: M203
+  zh-CN: M203
 tag.m249_saw:
   en: m249 saw
-  ja: m249 のこぎり
-  zh-CN: m249锯
+  ja: M249 SAW
+  zh-CN: M249 SAW
 tag.m320:
   en: m320
-  ja: m320
-  zh-CN: 米320
+  ja: M320
+  zh-CN: M320
 tag.m3_lee:
   en: m3 lee
-  ja: m3リー
-  zh-CN: m3李
+  ja: M3リー
+  zh-CN: M3李
 tag.m4_carbine:
   en: m4 carbine
   ja: M4カービン
-  zh-CN: m4卡宾枪
+  zh-CN: M4卡宾枪
 tag.m4_sherman:
   en: m4 sherman
   ja: M4シャーマン
@@ -51419,15 +51583,15 @@ tag.m4_sherman:
 tag.m60_(machine_gun):
   en: m60 (machine gun)
   ja: M60 (機関銃)
-  zh-CN: m60（机枪）
+  zh-CN: M60（机枪）
 tag.m87_black_hole:
   en: m87 black hole
-  ja: m87ブラックホール
-  zh-CN: m87黑洞
+  ja: M87ブラックホール
+  zh-CN: M87黑洞
 tag.m_legs:
   en: m legs
   ja: m脚
-  zh-CN: 米腿
+  zh-CN: M字腿
 tag.ma5:
   en: ma5
   ja: マ5
@@ -53094,12 +53258,12 @@ tag.mexico:
   zh-CN: 墨西哥
 tag.mg34:
   en: mg34
-  ja: mg34
-  zh-CN: 毫克34
+  ja: MG34
+  zh-CN: MG34
 tag.mg42:
   en: mg42
-  ja: mg42
-  zh-CN: 毫克42
+  ja: MG42
+  zh-CN: MG42
 tag.mg_mg:
   en: mg mg
   ja: もぐもぐ
@@ -55794,8 +55958,8 @@ tag.nabe:
   zh-CN: 火锅
 tag.nagant_m1895:
   en: nagant m1895
-  ja: ナガン m1895
-  zh-CN: 纳甘 m1895
+  ja: ナガンM1895
+  zh-CN: 纳甘M1895
 tag.nagashi_soumen:
   en: nagashi soumen
   ja: 流しそうめん
@@ -57126,8 +57290,8 @@ tag.no_ears:
   zh-CN: 没有耳朵
 tag.no_emblem:
   en: no emblem
-  ja: no emblem
-  zh-CN: 没有徽章
+  ja: エンブレムなし
+  zh-CN: 无徽章
 tag.no_entry_sign:
   en: no entry sign
   ja: 車両進入禁止
@@ -57203,11 +57367,11 @@ tag.no_heterochromia:
 tag.no_horns:
   en: no horns
   ja: 角がない
-  zh-CN: 没有喇叭
+  zh-CN: 无角
 tag.no_humans:
   en: no humans
   ja: 誰もいない
-  zh-CN: 非人类
+  zh-CN: 无人类
 tag.no_image:
   en: no image
   ja: 画像がありません
@@ -57234,8 +57398,8 @@ tag.no_mask:
   zh-CN: 没有口罩
 tag.no_mole:
   en: no mole
-  ja: no mole
-  zh-CN: 没有痣
+  ja: ほくろなし
+  zh-CN: 无痣
 tag.no_mouth:
   en: no mouth
   ja: 口がない

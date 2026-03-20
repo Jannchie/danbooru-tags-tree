@@ -52,17 +52,26 @@ describe('taxonomy helpers', () => {
     expect(formatSlug('black_hair')).toBe('black hair')
   })
 
-  it('keeps head and shoulder placement tags consolidated', () => {
+  it('keeps selected head and shoulder anchor tags consolidated', () => {
     const sourcePath = resolve(process.cwd(), 'data/source/danbooru_tag_tree_v3.yaml')
     const parsed = YAML.parse(readFileSync(sourcePath, 'utf8')) as unknown
+    const expectedPaths = new Map([
+      ['animal_on_head', 'composition.framing.body_part_anchor.head'],
+      ['book_on_head', 'composition.framing.body_part_anchor.head'],
+      ['on_head', 'composition.framing.body_part_anchor.head'],
+      ['animal_on_shoulder', 'composition.framing.body_part_anchor.shoulder.on_shoulder'],
+      ['on_shoulder', 'composition.framing.body_part_anchor.shoulder.on_shoulder'],
+      ['hands_on_shoulders', 'composition.framing.body_part_anchor.shoulder.on_shoulders'],
+      ['arm_over_shoulder', 'composition.framing.body_part_anchor.shoulder.over_shoulder'],
+      ['holding_over_opposite_shoulder', 'composition.framing.body_part_anchor.shoulder.over_shoulder'],
+      ['arm_around_shoulder', 'composition.framing.body_part_anchor.shoulder.around_shoulder'],
+    ])
     const rows: Array<{ tag: string, path: string }> = []
-    const placementPattern =
-      /_on_head$|_on_shoulder$|_on_shoulders$|_over_shoulder$|_around_shoulder$|^on_head$|^on_shoulder$|^over_shoulder$|^holding_over_opposite_shoulder$/
 
     function visit(value: unknown, path: string[]): void {
       if (Array.isArray(value)) {
         for (const item of value) {
-          if (typeof item === 'string' && placementPattern.test(item)) {
+          if (typeof item === 'string' && expectedPaths.has(item)) {
             rows.push({ tag: item, path: path.join('.') })
           }
         }
@@ -81,7 +90,431 @@ describe('taxonomy helpers', () => {
 
     visit(parsed, [])
 
-    expect(rows.length).toBeGreaterThan(0)
-    expect(rows.every((row) => row.path.startsWith('composition.framing.body_part_anchor'))).toBe(true)
+    expect(rows).toHaveLength(expectedPaths.size)
+    expect(rows.every((row) => row.path === expectedPaths.get(row.tag))).toBe(true)
+  })
+
+  it('keeps lap placement tags consolidated', () => {
+    const sourcePath = resolve(process.cwd(), 'data/source/danbooru_tag_tree_v3.yaml')
+    const parsed = YAML.parse(readFileSync(sourcePath, 'utf8')) as unknown
+    const expectedTags = new Set([
+      'animal_on_lap',
+      'bag_on_lap',
+      'book_on_lap',
+      'cat_on_lap',
+      'creature_on_lap',
+      'hand_on_lap',
+      'hands_on_lap',
+      'lap',
+      'lying_on_lap',
+      'on_lap',
+      'pokemon_on_lap',
+      'sitting_on_lap',
+    ])
+    const rows: Array<{ tag: string, path: string }> = []
+
+    function visit(value: unknown, path: string[]): void {
+      if (Array.isArray(value)) {
+        for (const item of value) {
+          if (typeof item === 'string' && expectedTags.has(item)) {
+            rows.push({ tag: item, path: path.join('.') })
+          }
+        }
+
+        return
+      }
+
+      if (typeof value !== 'object' || value === null) {
+        return
+      }
+
+      for (const [key, nestedValue] of Object.entries(value)) {
+        visit(nestedValue, [...path, key])
+      }
+    }
+
+    visit(parsed, [])
+
+    expect(rows).toHaveLength(expectedTags.size)
+    expect(rows.every((row) => row.path === 'composition.framing.body_part_anchor.lap')).toBe(true)
+  })
+
+  it('keeps selected face anchor tags consolidated', () => {
+    const sourcePath = resolve(process.cwd(), 'data/source/danbooru_tag_tree_v3.yaml')
+    const parsed = YAML.parse(readFileSync(sourcePath, 'utf8')) as unknown
+    const expectedPaths = new Map([
+      ['animal_on_face', 'composition.framing.body_part_anchor.face.on_face'],
+      ['butterfly_on_face', 'composition.framing.body_part_anchor.face.on_face'],
+      ['chocolate_on_face', 'composition.framing.body_part_anchor.face.on_face'],
+      ['cream_on_face', 'composition.framing.body_part_anchor.face.on_face'],
+      ['fan_over_face', 'composition.framing.body_part_anchor.face.over_face'],
+      ['food_on_face', 'composition.framing.body_part_anchor.face.on_face'],
+      ['hair_over_face', 'composition.framing.body_part_anchor.face.over_face'],
+      ['hand_over_face', 'composition.framing.body_part_anchor.face.over_face'],
+      ['ice_cream_on_face', 'composition.framing.body_part_anchor.face.on_face'],
+      ['paint_splatter_on_face', 'composition.framing.body_part_anchor.face.on_face'],
+      ['phone_over_face', 'composition.framing.body_part_anchor.face.over_face'],
+      ['pie_in_face', 'composition.framing.body_part_anchor.face.on_face'],
+      ['rice_on_face', 'composition.framing.body_part_anchor.face.on_face'],
+      ['tail_on_face', 'composition.framing.body_part_anchor.face.on_face'],
+    ])
+    const rows: Array<{ tag: string, path: string }> = []
+
+    function visit(value: unknown, path: string[]): void {
+      if (Array.isArray(value)) {
+        for (const item of value) {
+          if (typeof item === 'string' && expectedPaths.has(item)) {
+            rows.push({ tag: item, path: path.join('.') })
+          }
+        }
+
+        return
+      }
+
+      if (typeof value !== 'object' || value === null) {
+        return
+      }
+
+      for (const [key, nestedValue] of Object.entries(value)) {
+        visit(nestedValue, [...path, key])
+      }
+    }
+
+    visit(parsed, [])
+
+    expect(rows).toHaveLength(expectedPaths.size)
+    expect(
+      rows.every((row) => row.path === expectedPaths.get(row.tag)),
+    ).toBe(true)
+  })
+
+  it('keeps selected headwear relation tags consolidated', () => {
+    const sourcePath = resolve(process.cwd(), 'data/source/danbooru_tag_tree_v3.yaml')
+    const parsed = YAML.parse(readFileSync(sourcePath, 'utf8')) as unknown
+    const expectedPaths = new Map([
+      ['adjusting_headwear', 'apparel.headwear.state.interaction'],
+      ['cum_on_headwear', 'apparel.headwear.state.on_headwear'],
+      ['eyewear_on_headwear', 'apparel.headwear.state.on_headwear'],
+      ['goggles_on_headwear', 'apparel.headwear.state.on_headwear'],
+      ['hand_on_headwear', 'apparel.headwear.state.interaction'],
+      ['hands_on_headwear', 'apparel.headwear.state.interaction'],
+      ['headphones_over_headwear', 'apparel.headwear.state.over_headwear'],
+      ['headwear_switch', 'apparel.headwear.state.interaction'],
+      ['putting_on_headwear', 'apparel.headwear.state.interaction'],
+      ['snow_on_headwear', 'apparel.headwear.state.on_headwear'],
+    ])
+    const rows: Array<{ tag: string, path: string }> = []
+
+    function visit(value: unknown, path: string[]): void {
+      if (Array.isArray(value)) {
+        for (const item of value) {
+          if (typeof item === 'string' && expectedPaths.has(item)) {
+            rows.push({ tag: item, path: path.join('.') })
+          }
+        }
+
+        return
+      }
+
+      if (typeof value !== 'object' || value === null) {
+        return
+      }
+
+      for (const [key, nestedValue] of Object.entries(value)) {
+        visit(nestedValue, [...path, key])
+      }
+    }
+
+    visit(parsed, [])
+
+    expect(rows).toHaveLength(expectedPaths.size)
+    expect(
+      rows.every((row) => row.path === expectedPaths.get(row.tag)),
+    ).toBe(true)
+  })
+
+  it('keeps selected neck apparel relation tags consolidated', () => {
+    const sourcePath = resolve(process.cwd(), 'data/source/danbooru_tag_tree_v3.yaml')
+    const parsed = YAML.parse(readFileSync(sourcePath, 'utf8')) as unknown
+    const expectedPaths = new Map([
+      ['bandaid_on_neck', 'apparel.body_part_placement.neck.on_neck'],
+      ['bandage_on_neck', 'apparel.body_part_placement.neck.on_neck'],
+      ['bandana_around_neck', 'apparel.body_part_placement.neck.around_neck'],
+      ['camera_around_neck', 'apparel.body_part_placement.neck.around_neck'],
+      ['chain_around_neck', 'apparel.body_part_placement.neck.around_neck'],
+      ['earmuffs_around_neck', 'apparel.body_part_placement.neck.around_neck'],
+      ['eyewear_around_neck', 'apparel.body_part_placement.neck.around_neck'],
+      ['furoshiki_around_neck', 'apparel.body_part_placement.neck.around_neck'],
+      ['gag_around_neck', 'apparel.body_part_placement.neck.around_neck'],
+      ['goggles_around_neck', 'apparel.body_part_placement.neck.around_neck'],
+      ['headband_around_neck', 'apparel.body_part_placement.neck.around_neck'],
+      ['headphones_around_neck', 'apparel.body_part_placement.neck.around_neck'],
+      ['jacket_around_neck', 'apparel.body_part_placement.neck.around_neck'],
+      ['mask_around_neck', 'apparel.body_part_placement.neck.around_neck'],
+      ['rope_around_neck', 'apparel.body_part_placement.neck.around_neck'],
+      ['shirt_behind_neck', 'apparel.body_part_placement.neck.behind_neck'],
+      ['sign_around_neck', 'apparel.body_part_placement.neck.around_neck'],
+      ['stethoscope_around_neck', 'apparel.body_part_placement.neck.around_neck'],
+      ['stopwatch_around_neck', 'apparel.body_part_placement.neck.around_neck'],
+      ['string_around_neck', 'apparel.body_part_placement.neck.around_neck'],
+      ['sweater_around_neck', 'apparel.body_part_placement.neck.around_neck'],
+      ['towel_around_neck', 'apparel.body_part_placement.neck.around_neck'],
+      ['whistle_around_neck', 'apparel.body_part_placement.neck.around_neck'],
+    ])
+    const rows: Array<{ tag: string, path: string }> = []
+
+    function visit(value: unknown, path: string[]): void {
+      if (Array.isArray(value)) {
+        for (const item of value) {
+          if (typeof item === 'string' && expectedPaths.has(item)) {
+            rows.push({ tag: item, path: path.join('.') })
+          }
+        }
+
+        return
+      }
+
+      if (typeof value !== 'object' || value === null) {
+        return
+      }
+
+      for (const [key, nestedValue] of Object.entries(value)) {
+        visit(nestedValue, [...path, key])
+      }
+    }
+
+    visit(parsed, [])
+
+    expect(rows).toHaveLength(expectedPaths.size)
+    expect(
+      rows.every((row) => row.path === expectedPaths.get(row.tag)),
+    ).toBe(true)
+  })
+
+  it('keeps selected back anchor tags consolidated', () => {
+    const sourcePath = resolve(process.cwd(), 'data/source/danbooru_tag_tree_v3.yaml')
+    const parsed = YAML.parse(readFileSync(sourcePath, 'utf8')) as unknown
+    const expectedPaths = new Map([
+      ['animal_on_back', 'composition.framing.body_part_anchor.back.on_back'],
+      ['arms_behind_back', 'composition.framing.body_part_anchor.back.behind_back'],
+      ['arm_behind_back', 'composition.framing.body_part_anchor.back.behind_back'],
+      ['gun_on_back', 'composition.framing.body_part_anchor.back.on_back'],
+      ['hat_on_back', 'composition.framing.body_part_anchor.back.on_back'],
+      ['holding_behind_back', 'composition.framing.body_part_anchor.back.behind_back'],
+      ['holding_polearm_behind_back', 'composition.framing.body_part_anchor.back.behind_back'],
+      ['holding_sword_behind_back', 'composition.framing.body_part_anchor.back.behind_back'],
+      ['holding_weapon_behind_back', 'composition.framing.body_part_anchor.back.behind_back'],
+      ['instrument_case_on_back', 'composition.framing.body_part_anchor.back.on_back'],
+      ['instrument_on_back', 'composition.framing.body_part_anchor.back.on_back'],
+      ['on_back', 'composition.framing.body_part_anchor.back.on_back'],
+      ['pokemon_on_back', 'composition.framing.body_part_anchor.back.on_back'],
+      ['polearm_behind_back', 'composition.framing.body_part_anchor.back.behind_back'],
+      ['shield_on_back', 'composition.framing.body_part_anchor.back.on_back'],
+      ['sword_behind_back', 'composition.framing.body_part_anchor.back.behind_back'],
+      ['sword_on_back', 'composition.framing.body_part_anchor.back.on_back'],
+      ['weapon_behind_back', 'composition.framing.body_part_anchor.back.behind_back'],
+      ['weapon_on_back', 'composition.framing.body_part_anchor.back.on_back'],
+    ])
+    const rows: Array<{ tag: string, path: string }> = []
+
+    function visit(value: unknown, path: string[]): void {
+      if (Array.isArray(value)) {
+        for (const item of value) {
+          if (typeof item === 'string' && expectedPaths.has(item)) {
+            rows.push({ tag: item, path: path.join('.') })
+          }
+        }
+
+        return
+      }
+
+      if (typeof value !== 'object' || value === null) {
+        return
+      }
+
+      for (const [key, nestedValue] of Object.entries(value)) {
+        visit(nestedValue, [...path, key])
+      }
+    }
+
+    visit(parsed, [])
+
+    expect(rows).toHaveLength(expectedPaths.size)
+    expect(
+      rows.every((row) => row.path === expectedPaths.get(row.tag)),
+    ).toBe(true)
+  })
+
+  it('keeps selected waist apparel relation tags consolidated', () => {
+    const sourcePath = resolve(process.cwd(), 'data/source/danbooru_tag_tree_v3.yaml')
+    const parsed = YAML.parse(readFileSync(sourcePath, 'utf8')) as unknown
+    const expectedPaths = new Map([
+      ['belt_around_waist', 'apparel.body_part_placement.waist.around_waist'],
+      ['cardigan_around_waist', 'apparel.body_part_placement.waist.around_waist'],
+      ['clothes_around_waist', 'apparel.body_part_placement.waist.around_waist'],
+      ['jacket_around_waist', 'apparel.body_part_placement.waist.around_waist'],
+      ['jumpsuit_around_waist', 'apparel.body_part_placement.waist.around_waist'],
+      ['rope_around_waist', 'apparel.body_part_placement.waist.around_waist'],
+      ['shirt_around_waist', 'apparel.body_part_placement.waist.around_waist'],
+      ['sweater_around_waist', 'apparel.body_part_placement.waist.around_waist'],
+      ['towel_around_waist', 'apparel.body_part_placement.waist.around_waist'],
+    ])
+    const rows: Array<{ tag: string, path: string }> = []
+
+    function visit(value: unknown, path: string[]): void {
+      if (Array.isArray(value)) {
+        for (const item of value) {
+          if (typeof item === 'string' && expectedPaths.has(item)) {
+            rows.push({ tag: item, path: path.join('.') })
+          }
+        }
+
+        return
+      }
+
+      if (typeof value !== 'object' || value === null) {
+        return
+      }
+
+      for (const [key, nestedValue] of Object.entries(value)) {
+        visit(nestedValue, [...path, key])
+      }
+    }
+
+    visit(parsed, [])
+
+    expect(rows).toHaveLength(expectedPaths.size)
+    expect(
+      rows.every((row) => row.path === expectedPaths.get(row.tag)),
+    ).toBe(true)
+  })
+
+  it('keeps selected wearable body relation tags consolidated', () => {
+    const sourcePath = resolve(process.cwd(), 'data/source/danbooru_tag_tree_v3.yaml')
+    const parsed = YAML.parse(readFileSync(sourcePath, 'utf8')) as unknown
+    const expectedPaths = new Map([
+      ['bandaid_on_head', 'apparel.body_part_placement.head.on_head'],
+      ['bra_on_head', 'apparel.body_part_placement.head.on_head'],
+      ['diving_mask_on_head', 'apparel.body_part_placement.head.on_head'],
+      ['eyewear_on_head', 'apparel.body_part_placement.head.on_head'],
+      ['goggles_on_head', 'apparel.body_part_placement.head.on_head'],
+      ['mask_on_head', 'apparel.body_part_placement.head.on_head'],
+      ['necktie_on_head', 'apparel.body_part_placement.head.on_head'],
+      ['ofuda_on_head', 'apparel.body_part_placement.head.on_head'],
+      ['panties_on_head', 'apparel.body_part_placement.head.on_head'],
+      ['scarf_on_head', 'apparel.body_part_placement.head.on_head'],
+      ['towel_on_head', 'apparel.body_part_placement.head.on_head'],
+      ['bandage_on_face', 'apparel.body_part_placement.face.on_face'],
+      ['bandaid_on_face', 'apparel.body_part_placement.face.on_face'],
+      ['gauze_on_face', 'apparel.body_part_placement.face.on_face'],
+      ['sticker_on_face', 'apparel.body_part_placement.face.on_face'],
+      ['bandaid_on_shoulder', 'apparel.body_part_placement.shoulder.on_shoulder'],
+      ['cardigan_on_shoulders', 'apparel.body_part_placement.shoulder.on_shoulders'],
+      ['clothes_on_shoulders', 'apparel.body_part_placement.shoulder.on_shoulders'],
+      ['coat_on_shoulders', 'apparel.body_part_placement.shoulder.on_shoulders'],
+      ['haori_on_shoulders', 'apparel.body_part_placement.shoulder.on_shoulders'],
+      ['jacket_on_shoulders', 'apparel.body_part_placement.shoulder.on_shoulders'],
+      ['kimono_on_shoulders', 'apparel.body_part_placement.shoulder.on_shoulders'],
+      ['shirt_on_shoulders', 'apparel.body_part_placement.shoulder.on_shoulders'],
+      ['jacket_over_shoulder', 'apparel.body_part_placement.shoulder.over_shoulder'],
+      ['bandaid_on_arm', 'apparel.body_part_placement.arm.on_arm'],
+      ['gauze_on_arm', 'apparel.body_part_placement.arm.on_arm'],
+      ['sticker_on_arm', 'apparel.body_part_placement.arm.on_arm'],
+      ['towel_on_arm', 'apparel.body_part_placement.arm.on_arm'],
+      ['bandana_around_arm', 'apparel.body_part_placement.arm.around_arm'],
+      ['chain_around_arm', 'apparel.body_part_placement.arm.around_arm'],
+      ['bandaid_on_chest', 'apparel.body_part_placement.chest.on_chest'],
+      ['flower_on_chest', 'apparel.body_part_placement.chest.on_chest'],
+      ['bandaid_on_foot', 'apparel.body_part_placement.foot.on_foot'],
+      ['bandaid_on_hand', 'apparel.body_part_placement.hand.on_hand'],
+      ['bandaid_on_knee', 'apparel.body_part_placement.knee.on_knee'],
+      ['bandage_on_knee', 'apparel.body_part_placement.knee.on_knee'],
+      ['gauze_on_knee', 'apparel.body_part_placement.knee.on_knee'],
+      ['bandaid_on_leg', 'apparel.body_part_placement.leg.on_leg'],
+      ['bandage_on_leg', 'apparel.body_part_placement.leg.on_leg'],
+      ['gauze_on_leg', 'apparel.body_part_placement.leg.on_leg'],
+      ['ofuda_on_leg', 'apparel.body_part_placement.leg.on_leg'],
+      ['sticker_on_leg', 'apparel.body_part_placement.leg.on_leg'],
+      ['bandaid_on_stomach', 'apparel.body_part_placement.stomach.on_stomach'],
+    ])
+    const rows: Array<{ tag: string, path: string }> = []
+
+    function visit(value: unknown, path: string[]): void {
+      if (Array.isArray(value)) {
+        for (const item of value) {
+          if (typeof item === 'string' && expectedPaths.has(item)) {
+            rows.push({ tag: item, path: path.join('.') })
+          }
+        }
+
+        return
+      }
+
+      if (typeof value !== 'object' || value === null) {
+        return
+      }
+
+      for (const [key, nestedValue] of Object.entries(value)) {
+        visit(nestedValue, [...path, key])
+      }
+    }
+
+    visit(parsed, [])
+
+    expect(rows).toHaveLength(expectedPaths.size)
+    expect(
+      rows.every((row) => row.path === expectedPaths.get(row.tag)),
+    ).toBe(true)
+  })
+
+  it('keeps selected semantic body-part tags in non-anchor domains', () => {
+    const sourcePath = resolve(process.cwd(), 'data/source/danbooru_tag_tree_v3.yaml')
+    const parsed = YAML.parse(readFileSync(sourcePath, 'utf8')) as unknown
+    const expectedPaths = new Map([
+      ['blood_on_back', 'character.skin.blood'],
+      ['blood_on_face', 'character.body.face.fluid_mess'],
+      ['blood_on_shoulder', 'character.skin.blood'],
+      ['bite_mark_on_shoulder', 'character.skin.scar_wound'],
+      ['cum_on_back', 'explicit.sexual_fluid'],
+      ['grabbed_breast_over_shoulder', 'explicit.sexual_act.general'],
+      ['lipstick_mark_on_face', 'character.body.face.lips_mouth'],
+      ['lipstick_mark_on_shoulder', 'character.skin.skin_mark'],
+      ['mole_on_shoulder', 'character.skin.body_mole_freckle'],
+      ['paizuri_on_lap', 'explicit.sexual_act.general'],
+      ['penis_on_face', 'explicit.sexual_act.general'],
+      ['penis_on_head', 'explicit.sexual_act.general'],
+      ['penis_on_shoulder', 'explicit.sexual_act.general'],
+      ['pussy_juice_on_face', 'explicit.sexual_fluid'],
+      ['scar_on_head', 'character.skin.scar_wound'],
+      ['scar_on_shoulder', 'character.skin.scar_wound'],
+      ['snow_on_head', 'character.skin.texture_condition'],
+      ['testicles_on_face', 'explicit.sexual_act.general'],
+    ])
+    const rows: Array<{ tag: string, path: string }> = []
+
+    function visit(value: unknown, path: string[]): void {
+      if (Array.isArray(value)) {
+        for (const item of value) {
+          if (typeof item === 'string' && expectedPaths.has(item)) {
+            rows.push({ tag: item, path: path.join('.') })
+          }
+        }
+
+        return
+      }
+
+      if (typeof value !== 'object' || value === null) {
+        return
+      }
+
+      for (const [key, nestedValue] of Object.entries(value)) {
+        visit(nestedValue, [...path, key])
+      }
+    }
+
+    visit(parsed, [])
+
+    expect(rows).toHaveLength(expectedPaths.size)
+    expect(rows.every((row) => row.path === expectedPaths.get(row.tag))).toBe(true)
   })
 })

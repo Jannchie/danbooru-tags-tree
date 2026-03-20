@@ -394,7 +394,6 @@ character:
       - hair_between_horns
       - hair_between_breasts
       - convenient_hair
-      - hair_over_face
       - hair_floating_upwards
       - hair_over_one_breast
       - severed_hair
@@ -770,7 +769,6 @@ character:
       - stitched_mouth
       - brown_lips
       - lipgloss
-      - lipstick_mark_on_face
       - blood_in_mouth
       - glowing_mouth
       - black_mouth
@@ -786,6 +784,7 @@ character:
       - puffy_lips
       - colored_mouth
       - lipstick_mark_on_cheek
+      - lipstick_mark_on_face
       - smeared_lipstick
       facial_hair:
       - facial_hair
@@ -822,16 +821,13 @@ character:
       - tied_beard
       fluid_mess:
       - saliva
-      - blood_on_face
       - dirty_face
-      - rice_on_face
       - wet_face
-      - chocolate_on_face
+      - blood_on_face
       - blood_on_cheek
       - blood_on_mask
       - excessive_saliva
       - flying_spittle
-      - paint_splatter_on_face
       head_shape:
       - wide_face
       - big_head
@@ -858,7 +854,6 @@ character:
       - broken_tooth
       face_mark_misc:
       - aegyo_sal
-      - sticker_on_face
       - marking_on_cheek
       - eye_black
       - huadian
@@ -924,12 +919,10 @@ character:
       scar_injury:
       - scar_on_face
       - scar_across_eye
-      - bandaid_on_face
       - scar_on_cheek
       - bandaged_head
       - crossed_bandaids
       - stitched_face
-      - bandage_on_face
       - slap_mark
       - bruise_on_face
       - head_bump
@@ -1614,7 +1607,6 @@ character:
       - stomach_growling
       - x_navel
       - full_stomach
-      - bandaid_on_stomach
       - navel_peek
       - lipstick_mark_on_stomach
       - no_navel
@@ -1631,7 +1623,6 @@ character:
       - bare_back
       - shoulder_blades
       - shoulder_blush
-      - blood_on_back
       leg_thigh:
       - thighs
       - legs
@@ -1642,7 +1633,6 @@ character:
       - kneepits
       - long_legs
       - bandaged_leg
-      - bandaid_on_leg
       - knees
       - mechanical_legs
       - prosthetic_leg
@@ -1694,7 +1684,6 @@ character:
       - armpit_hair
       - prosthetic_arm
       - armpit_peek
-      - bandaid_on_arm
       - veiny_arms
       - thick_arms
       - sweaty_armpits
@@ -1777,7 +1766,6 @@ character:
       - blood_on_hands
       - bandaged_hand
       - mechanical_hands
-      - bandaid_on_hand
       - red_hands
       - palms
       - large_hands
@@ -1921,7 +1909,6 @@ character:
       - scrape
       - exposed_brain
       - dismemberment
-      - bandage_on_knee
       - knife_in_head
       - scraped_knee
       - bandaged_ankle
@@ -2051,6 +2038,7 @@ character:
     - stitches
     - scar_on_arm
     - scar_on_chest
+    - scar_on_head
     - bite_mark
     - cross_scar
     - burn_scar
@@ -2065,6 +2053,7 @@ character:
     - bite_mark_on_neck
     - self-harm_scar
     - scar_on_back
+    - scar_on_shoulder
     - scars_all_over
     - no_scar
     - claw_mark
@@ -2078,6 +2067,7 @@ character:
     - scar_on_ear
     - titan_shifter_scars
     - bite_mark_on_chest
+    - bite_mark_on_shoulder
     - scar_on_thighs
     - track_marks
     texture_condition:
@@ -2089,6 +2079,7 @@ character:
     - spotted_fur
     - glowing_skin
     - starry_skin
+    - snow_on_head
     - snow_on_body
     - sand_on_skin
     - skin_seams
@@ -2101,6 +2092,7 @@ character:
     - handprint
     - fingerprint
     - linea_nigra
+    - lipstick_mark_on_shoulder
     - pregnancy_mark
     - vitiligo
     blush_vein:
@@ -2151,6 +2143,8 @@ character:
     - blood_stain
     - blood_drip
     - blood_on_bandages
+    - blood_on_back
+    - blood_on_shoulder
     - blood_trail
     - blood_drop
     - sweat_stain
@@ -2171,6 +2165,7 @@ character:
     - ass_freckles
     - mole_on_crotch
     - mole_on_leg
+    - mole_on_shoulder
     - shoulder_freckles
     - mole_on_back
     - thigh_freckles
@@ -3120,12 +3115,10 @@ dynamics:
       - on_ground
       - indian_style
       - hugging_own_legs
-      - sitting_on_lap
       - on_desk
       - on_bench
       - sitting_on_throne
       - on_table
-      - on_lap
       - sitting_on_stairs
       - sitting_in_tree
       - on_motorcycle
@@ -3175,7 +3168,6 @@ dynamics:
       - on_piano
       - lotus_position
       - pretzel_pose
-      - lap
       - on_cushion
       - on_windowsill
       - on_suitcase
@@ -3191,7 +3183,6 @@ dynamics:
       - leaning_on_self
       lying:
       - lying
-      - on_back
       - on_bed
       - on_side
       - on_stomach
@@ -3207,7 +3198,6 @@ dynamics:
       - fetal_position
       - fallen_down
       - curled_up
-      - lying_on_lap
       - face_down
       - lying_on_water
       - face_in_pillow
@@ -3254,13 +3244,11 @@ dynamics:
       - arm_up
       - arms_up
       - arm_support
-      - arms_behind_back
       - crossed_arms
       - outstretched_arm
       - outstretched_arms
       - arms_behind_head
       - arm_at_side
-      - arm_behind_back
       - arm_behind_head
       - arms_at_sides
       - spread_arms
@@ -3271,7 +3259,6 @@ dynamics:
       - arm_between_legs
       - arm_across_waist
       - arm_over_head
-      - polearm_behind_back
       - arm_across_chest
       - raised_fists
       - outstretched_crossed_arms
@@ -3389,18 +3376,14 @@ dynamics:
         - flexing
         - hands_in_opposite_sleeves
         - tied_up_(nonsexual)
-        - hands_on_lap
         - zombie_pose
         - hand_on_hilt
-        - hands_on_headwear
-        - holding_behind_back
         - stroking_own_chin
         - hanging
         - head_on_hand
         - cupping_hands
         - v_over_mouth
         - hand_rest
-        - hand_on_lap
         - arms_between_legs
         - arm_on_knee
         - hand_on_wall
@@ -3414,7 +3397,6 @@ dynamics:
         - hand_on_floor
         - hand_on_thigh
         - hand_to_head
-        - sword_behind_back
         - hand_on_railing
         - shrugging
         - double_\m/
@@ -3433,7 +3415,6 @@ dynamics:
         - x_arms
         - pointing_down
         - hands_on_floor
-        - hand_over_face
         - hidden_face
         - cheek_rest
         - v_over_head
@@ -3728,7 +3709,6 @@ dynamics:
       eating_drinking:
       - eating
       - licking
-      - food_on_face
       - food_in_mouth
       - drinking
       - licking_finger
@@ -3851,7 +3831,6 @@ dynamics:
       - looking_at_phone
       - talking_on_phone
       - adjusting_headphones
-      - phone_over_face
       - text_messaging
       - talking
       - video_call
@@ -4037,7 +4016,6 @@ dynamics:
       - leaf_in_mouth
       - can_to_cheek
       - pencil_as_mustache
-      - fan_over_face
       - pen_to_mouth
       - pill_on_tongue
       - leash_in_mouth
@@ -5006,11 +4984,8 @@ dynamics:
         weapon:
         - holding_baseball_bat
         - holding_water_gun
-        - shield_on_back
         - holding_crossbow
         - holding_mace
-        - gun_on_back
-        - weapon_behind_back
         - holding_trident
         - holding_pickaxe
         - holding_grenade
@@ -5029,7 +5004,6 @@ dynamics:
         - holding_staff
         - holding_knife
         - holding_polearm
-        - weapon_on_back
         - holding_bow_(weapon)
         - holding_shield
         - holding_bowl
@@ -5041,10 +5015,7 @@ dynamics:
         - holding_sheath
         - holding_whip
         - holding_bow_(music)
-        - holding_weapon_behind_back
-        - holding_sword_behind_back
         - holding_bow_(ornament)
-        - holding_polearm_behind_back
         - holding_magazine_(weapon)
         - holding_toy_gun
         tech:
@@ -5184,7 +5155,6 @@ dynamics:
         instrument:
         - holding_bass_guitar
         - holding_baton
-        - instrument_on_back
         - holding_trumpet
         - holding_ribbon_baton
         - holding_flute
@@ -5320,7 +5290,6 @@ dynamics:
         adjust:
         - adjusting_clothes
         - adjusting_eyewear
-        - adjusting_headwear
         - dressing
         - adjusting_swimsuit
         - adjusting_gloves
@@ -5339,7 +5308,6 @@ dynamics:
         - tying_footwear
         - putting_on_jewelry
         - adjusting_shoe
-        - putting_on_headwear
         - adjusting_hood
         - tying_apron
         - zipping
@@ -5362,7 +5330,6 @@ dynamics:
         - adjusting_shirt
         general:
         - skirt_hold
-        - hand_on_headwear
         - clothes_grab
         - wedgie
         - breast_suppress
@@ -5400,7 +5367,6 @@ dynamics:
         - sweater_tug
         - necktie_in_mouth
         - apron_hold
-        - headwear_switch
         - hat_tug
         - wringing_skirt
         - ripping
@@ -5998,9 +5964,7 @@ dynamics:
         - noses_touching
         - breast_poke
         - touching
-        - pokemon_on_lap
         - patting
-        - pokemon_on_back
         - hand_in_another's_mouth
         - finger_touching
         - hand_in_another's_clothes
@@ -6114,7 +6078,6 @@ dynamics:
         - imminent_hand_holding
         - brushing_another's_teeth
         - hand_gagged
-        - pie_in_face
         - drying_another's_hair
         - covering_another's_breasts
         - abduction
@@ -6153,7 +6116,6 @@ dynamics:
         - fingers_between_toes
         - tickling_navel
         - poking_nose
-        - tail_on_face
         - hands_in_another's_hair
         - cradling
         - tsukkomi
@@ -6315,20 +6277,15 @@ dynamics:
     - petting
     - bird_on_hand
     - butterfly_on_hand
-    - animal_on_lap
     - animal_on_arm
     - animal_on_hand
     - bird_on_arm
-    - cat_on_lap
     - animal_around_neck
-    - animal_on_back
     - butterfly_on_nose
     - animal_between_breasts
     - snake_wrapped_around_body
-    - creature_on_lap
     - snake_wrapped_around_arm
     - bird_on_leg
-    - animal_on_face
     - snake_bite
     - butterfly_sitting
     - cat_on_person
@@ -8020,7 +7977,6 @@ apparel:
       - impossible_jacket
       - cross-laced_jacket
       - half-jacket
-      - jacket_around_neck
       - polka_dot_jacket
       - unworn_blazer
       - floral_print_jacket
@@ -9653,7 +9609,6 @@ apparel:
     - bicorne
     - hard_hat
     - sideways_hat
-    - hat_on_back
     - tulip_hat
     - eel_hat
     hood:
@@ -9733,10 +9688,23 @@ apparel:
     - headwear_writing
     - glowing_headgear
     - winged_headwear
-    - snow_on_headwear
     - print_headwear
     - wide_brim
     - floating_headgear
+    state:
+      on_headwear:
+      - cum_on_headwear
+      - goggles_on_headwear
+      - eyewear_on_headwear
+      - snow_on_headwear
+      over_headwear:
+      - headphones_over_headwear
+      interaction:
+      - adjusting_headwear
+      - hand_on_headwear
+      - hands_on_headwear
+      - headwear_switch
+      - putting_on_headwear
     headband:
     - red_headband
     - hachimaki
@@ -9968,6 +9936,111 @@ apparel:
     - black_headscarf
     - grey_bandana
     - blue_bandana
+  body_part_placement:
+    head:
+      on_head:
+      - bandaid_on_head
+      - bra_on_head
+      - diving_mask_on_head
+      - eyewear_on_head
+      - goggles_on_head
+      - mask_on_head
+      - necktie_on_head
+      - ofuda_on_head
+      - panties_on_head
+      - scarf_on_head
+      - towel_on_head
+    face:
+      on_face:
+      - bandage_on_face
+      - bandaid_on_face
+      - gauze_on_face
+      - sticker_on_face
+    shoulder:
+      on_shoulder:
+      - bandaid_on_shoulder
+      on_shoulders:
+      - cardigan_on_shoulders
+      - clothes_on_shoulders
+      - coat_on_shoulders
+      - haori_on_shoulders
+      - jacket_on_shoulders
+      - kimono_on_shoulders
+      - shirt_on_shoulders
+      over_shoulder:
+      - jacket_over_shoulder
+    arm:
+      on_arm:
+      - bandaid_on_arm
+      - gauze_on_arm
+      - sticker_on_arm
+      - towel_on_arm
+      around_arm:
+      - bandana_around_arm
+      - chain_around_arm
+    chest:
+      on_chest:
+      - bandaid_on_chest
+      - flower_on_chest
+    foot:
+      on_foot:
+      - bandaid_on_foot
+    hand:
+      on_hand:
+      - bandaid_on_hand
+    knee:
+      on_knee:
+      - bandaid_on_knee
+      - bandage_on_knee
+      - gauze_on_knee
+    leg:
+      on_leg:
+      - bandaid_on_leg
+      - bandage_on_leg
+      - gauze_on_leg
+      - ofuda_on_leg
+      - sticker_on_leg
+    neck:
+      on_neck:
+      - bandaid_on_neck
+      - bandage_on_neck
+      around_neck:
+      - bandana_around_neck
+      - camera_around_neck
+      - chain_around_neck
+      - earmuffs_around_neck
+      - eyewear_around_neck
+      - furoshiki_around_neck
+      - gag_around_neck
+      - goggles_around_neck
+      - headphones_around_neck
+      - headband_around_neck
+      - jacket_around_neck
+      - mask_around_neck
+      - rope_around_neck
+      - sign_around_neck
+      - stethoscope_around_neck
+      - stopwatch_around_neck
+      - string_around_neck
+      - sweater_around_neck
+      - towel_around_neck
+      - whistle_around_neck
+      behind_neck:
+      - shirt_behind_neck
+    stomach:
+      on_stomach:
+      - bandaid_on_stomach
+    waist:
+      around_waist:
+      - belt_around_waist
+      - clothes_around_waist
+      - jacket_around_waist
+      - sweater_around_waist
+      - cardigan_around_waist
+      - shirt_around_waist
+      - towel_around_waist
+      - jumpsuit_around_waist
+      - rope_around_waist
   worn_accessory:
     neckwear:
       tie:
@@ -10061,7 +10134,6 @@ apparel:
       - grey_neckerchief
       - purple_neckerchief
       - two-tone_scarf
-      - bandana_around_neck
       - scarf_over_mouth
       - multicolored_scarf
       - brown_neckerchief
@@ -10148,7 +10220,6 @@ apparel:
       - blue_collar
       - pink_collar
       - ribbon-trimmed_collar
-      - mask_around_neck
       - green_neckwear
       - purple_collar
       - green_collar
@@ -10174,7 +10245,6 @@ apparel:
       - aqua_collar
       - striped_sash
       - striped_collar
-      - headband_around_neck
       - american_flag_neckwear
       - no_neckwear
       - string_choker
@@ -10385,7 +10455,6 @@ apparel:
       - leather_choker
       - hand_chains
       - scarf_choker
-      - chain_around_neck
       - snowflake_choker
       - diamond_choker
       - silver_chain
@@ -10515,7 +10584,6 @@ apparel:
       - barefoot_sandals_(jewelry)
       - pink_gem
       - gold_thighlet
-      - bandaid_on_neck
       - butterfly_brooch
       - cuff_links
       - aqua_gemstone
@@ -10544,7 +10612,6 @@ apparel:
       - skull_brooch
       - hand_jewel
       - gold_jewelry
-      - rope_around_neck
       - ankle_bell
       - face_jewel
       - body_jewelry
@@ -10578,7 +10645,6 @@ apparel:
       - diamond-shaped_brooch
       - shell_brooch
       - finger_ribbon
-      - string_around_neck
       - ear_cuffs
       - diamond_brooch
       - flower_anklet
@@ -11091,14 +11157,12 @@ apparel:
       - partially_opaque_sunglasses
       - opaque_monocle
       sunglasses:
-      - goggles_on_headwear
       - assault_visor
       - orange_visor
       - shutter_shades
       - slave_visor_(tsmg_nao!)
       goggles:
       - goggles
-      - goggles_around_neck
       - ski_goggles
       - unworn_goggles
       - orange_goggles
@@ -11136,7 +11200,6 @@ apparel:
       - no_eyewear
       - eyewear_strap
       - blue-tinted_eyewear
-      - eyewear_on_headwear
       - brown-framed_eyewear
       - green-framed_eyewear
       - yellow-tinted_eyewear
@@ -11168,7 +11231,6 @@ apparel:
       - gauze_over_eye
       - lace-trimmed_eyepatch
       - unworn_blindfold
-      - eyewear_around_neck
       - semi-circular_eyewear
       - nose_pads
       - clown_mask
@@ -11252,7 +11314,6 @@ apparel:
     - transparent_bag
     - rabbit_bag
     - heart_pouch
-    - instrument_case_on_back
     - character_bag
     - print_bag
     - crossbody_bag
@@ -11260,7 +11321,6 @@ apparel:
     - round_bag
     - drawstring_bag
     - aqua_bag
-    - bag_on_lap
     - card_holster
     - women's_wallet
     - mailbag
@@ -11299,7 +11359,6 @@ apparel:
       - chinstrap
       - skull_belt
       - heart_belt
-      - belt_around_waist
       - metal_belt
       - tail_belt
       - championship_belt
@@ -11328,7 +11387,6 @@ apparel:
       - bandaid
       - fox_mask
       - bandaid_on_nose
-      - bandaid_on_knee
       - bandaid_on_cheek
       - surgical_mask
       - white_mask
@@ -11357,15 +11415,12 @@ apparel:
       - boar_mask
       - hyottoko_mask
       - coin_mask
-      - bandaid_on_foot
-      - bandaid_on_chest
       - pink_bandaid
       - heart-shaped_bandaid
       - horned_mask
       headphone:
       - headphones
       - headset
-      - headphones_around_neck
       - earphones
       - animal_ear_headphones
       - cat_ear_headphones
@@ -11380,22 +11435,15 @@ apparel:
       - rabbit_ear_headphones
       - single_earphone_removed
       - pink_headphones
-      - headphones_over_headwear
       - white_headphones
       - unworn_headphones
       - red_headphones
       - bunny_headphones
       bandage:
       - bandages
-      - gauze_on_knee
-      - gauze_on_face
-      - gauze_on_leg
-      - bandage_on_leg
-      - gauze_on_arm
       - bandage_on_nose
       - bandage_on_thigh
       - bandages_over_mouth
-      - bandage_on_neck
       body_accessory:
       - collar
       - wrist_cuffs
@@ -11486,11 +11534,9 @@ apparel:
       - waist_bow
       - forehead_protector
       - single_ear_cover
-      - towel_around_neck
       - tie_clip
       - pocket_watch
       - wrist_ribbon
-      - whistle_around_neck
       - headlamp
       - respirator
       - star_sticker
@@ -11508,7 +11554,6 @@ apparel:
       - polka_dot_bowtie
       - orange_bandana
       - multicolored_bowtie
-      - camera_around_neck
       - wrist_flower
       - pendant_watch
       - fake_claws
@@ -11518,7 +11563,6 @@ apparel:
       - wallet_chain
       - bat_ornament
       - underworld_(ornament)
-      - flower_on_chest
       - gold_buckle
       - horseshoe_hat_ornament
       - grape_hat_ornament
@@ -11529,35 +11573,26 @@ apparel:
       - accessories
       - knot
       - fake_beard
-      - sign_around_neck
       - arm_scrunchie
-      - chain_around_arm
       - pom_pom_hat_ornament
       - gold_bracer
       - hearing_aid
       - polka_dot_scarf
       - over_the_nose_gag
       - thigh_sheath
-      - stopwatch_around_neck
-      - stethoscope_around_neck
       - purity_seal
       - over_the_mouth_gag
-      - furoshiki_around_neck
       - smartwatch
       - ribbon_bar
       - mismatched_ear_covers
-      - gag_around_neck
-      - sticker_on_arm
       - heart_stickers
       - spiked_thighlet
       - waist_poke_ball
       - award_ribbon
-      - earmuffs_around_neck
       - single_bracer
       - borrowed_accessory
       - print_umbrella
       - finger_cots
-      - sticker_on_leg
       - cross_hat_ornament
       - food-themed_hat_ornament
       - head_mirror
@@ -11579,12 +11614,10 @@ apparel:
       - fourragere
       - lapel_chain
       - rabbit_charm
-      - rope_around_waist
       - neck_brace
       - infinity_gauntlet
       - battle_chatelaine
       - frilled_armlet
-      - ofuda_on_leg
       - matching_accessory
       - hat_chain
       - cape_clasp
@@ -12261,7 +12294,6 @@ apparel:
         - exoskeleton
         - footwear_flower
         - toe_seam
-        - bandana_around_arm
         - underwear_writing
         - cuisses
         - hip_armor
@@ -12295,7 +12327,6 @@ apparel:
         - spiked
         - leaf_clothing
         - codpiece
-        - towel_on_arm
         - unit_patch
         - 1980s_fashion
         - bandaid_on_clothes
@@ -12443,7 +12474,6 @@ apparel:
       - shiny_clothes
       - panties_around_one_leg
       - tight_clothes
-      - clothes_around_waist
       - taut_clothes
       - tied_shirt
       - transparent
@@ -12456,7 +12486,6 @@ apparel:
       - reverse_outfit
       - taut_shirt
       - layered_clothes
-      - jacket_around_waist
       - bike_shorts_under_skirt
       - tail_through_clothes
       - bra_peek
@@ -12471,11 +12500,9 @@ apparel:
       - breastless_clothes
       - clothes_down
       - holstered
-      - sweater_around_waist
       - taut_dress
       - skirt_around_one_leg
       - undone_necktie
-      - cardigan_around_waist
       - sweaty_clothes
       - torn
       - tented_shirt
@@ -12498,13 +12525,11 @@ apparel:
       - arm_out_of_sleeve
       - stained_clothes
       - male_underwear_peek
-      - shirt_around_waist
       - taut_leotard
       - undone_neck_ribbon
       - broken_armor
       - hat_over_eyes
       - battle_damage
-      - towel_around_waist
       - disguise
       - bandages_over_clothes
       - shirt_under_sweater
@@ -12528,7 +12553,6 @@ apparel:
       - skirt_caught_on_object
       - panties_around_ankles
       - food_on_clothes
-      - jumpsuit_around_waist
       - clothes_in_front
       - object_in_clothes
       - convenient_skirt
@@ -12538,7 +12562,6 @@ apparel:
       - clothes_on_and_off
       - hat_loss
       - panties_visible_through_clothes
-      - sweater_around_neck
       - weapon_in_garters
       - wrinkled_fabric
       - hooked_on_heel
@@ -12559,7 +12582,6 @@ apparel:
       - bikini_over_clothes
       - bra_over_clothes
       - camisole_over_clothes
-      - shirt_behind_neck
       - taut_skirt
       - bikini_visible_through_clothes
       - horns_through_hood
@@ -12977,17 +12999,37 @@ composition:
     - zooming_out
     - camera_feed
     body_part_anchor:
+      back:
+        on_back:
+        - animal_on_back
+        - gun_on_back
+        - hat_on_back
+        - instrument_case_on_back
+        - instrument_on_back
+        - on_back
+        - pokemon_on_back
+        - shield_on_back
+        - sword_on_back
+        - weapon_on_back
+        behind_back:
+        - arms_behind_back
+        - arm_behind_back
+        - holding_behind_back
+        - holding_polearm_behind_back
+        - holding_sword_behind_back
+        - holding_weapon_behind_back
+        - polearm_behind_back
+        - sword_behind_back
+        - weapon_behind_back
       head:
       - animal_on_head
       - apple_on_head
       - arms_on_head
       - bag_on_head
       - balancing_on_head
-      - bandaid_on_head
       - bird_on_head
       - book_on_head
       - box_on_head
-      - bra_on_head
       - breasts_on_head
       - bucket_on_head
       - butterfly_on_head
@@ -12999,30 +13041,22 @@ composition:
       - crab_on_head
       - creature_on_head
       - cup_on_head
-      - diving_mask_on_head
       - dog_on_head
       - doll_on_head
-      - eyewear_on_head
       - flower_on_head
       - food_on_head
       - foot_on_head
       - frog_on_head
       - fruit_on_head
-      - goggles_on_head
       - hand_on_head
       - head_on_head
       - insect_on_head
       - leaf_on_head
-      - mask_on_head
       - mouse_on_head
       - mushroom_on_head
-      - necktie_on_head
       - object_on_head
-      - ofuda_on_head
       - on_head
       - paper_on_head
-      - panties_on_head
-      - penis_on_head
       - person_on_head
       - petal_on_head
       - plant_on_head
@@ -13030,21 +13064,44 @@ composition:
       - pot_on_head
       - pumpkin_on_head
       - rabbit_on_head
-      - scar_on_head
-      - scarf_on_head
       - sitting_on_head
       - skull_on_head
       - snake_on_head
-      - snow_on_head
       - sprout_on_head
-      - towel_on_head
+      face:
+        on_face:
+        - animal_on_face
+        - butterfly_on_face
+        - chocolate_on_face
+        - cream_on_face
+        - food_on_face
+        - ice_cream_on_face
+        - paint_splatter_on_face
+        - pie_in_face
+        - rice_on_face
+        - tail_on_face
+        over_face:
+        - fan_over_face
+        - hair_over_face
+        - hand_over_face
+        - phone_over_face
+      lap:
+      - animal_on_lap
+      - bag_on_lap
+      - book_on_lap
+      - cat_on_lap
+      - creature_on_lap
+      - hand_on_lap
+      - hands_on_lap
+      - lap
+      - lying_on_lap
+      - on_lap
+      - pokemon_on_lap
+      - sitting_on_lap
       shoulder:
         on_shoulder:
         - animal_on_shoulder
-        - bandaid_on_shoulder
         - bird_on_shoulder
-        - bite_mark_on_shoulder
-        - blood_on_shoulder
         - butterfly_on_shoulder
         - cat_on_shoulder
         - chibi_on_shoulder
@@ -13052,34 +13109,21 @@ composition:
         - creature_on_shoulder
         - dragon_on_shoulder
         - hand_on_shoulder
-        - lipstick_mark_on_shoulder
-        - mole_on_shoulder
         - on_shoulder
-        - penis_on_shoulder
         - person_on_shoulder
         - pokemon_on_shoulder
         - rabbit_on_shoulder
-        - scar_on_shoulder
         - sitting_on_shoulder
         - snake_on_shoulder
         - standing_on_shoulder
         on_shoulders:
-        - cardigan_on_shoulders
-        - clothes_on_shoulders
-        - coat_on_shoulders
         - hands_on_shoulders
-        - haori_on_shoulders
-        - jacket_on_shoulders
-        - kimono_on_shoulders
-        - shirt_on_shoulders
         over_shoulder:
         - arm_over_shoulder
         - carrying_over_shoulder
-        - grabbed_breast_over_shoulder
         - hair_half_over_shoulder
         - hair_over_shoulder
         - holding_over_opposite_shoulder
-        - jacket_over_shoulder
         - over_shoulder
         - sword_over_shoulder
         - umbrella_over_shoulder
@@ -14464,7 +14508,6 @@ object:
       - planted_sword
       - energy_sword
       - rapier
-      - sword_on_back
       - greatsword
       - glowing_sword
       - short_sword
@@ -15502,7 +15545,6 @@ object:
         - scone
         - multiple_scoops
         - ice_cream_cone_spill
-        - ice_cream_on_face
         - triple_scoop
         - ice_cream_crepe
         - too_many_scoops
@@ -17343,7 +17385,6 @@ object:
     - papers
     - flying_paper
     - floating_book
-    - book_on_lap
     - map_(object)
     - paperclip
     - crumpled_paper
@@ -19228,7 +19269,6 @@ creature:
     - larva
     - scarab
     - giant_skeleton
-    - butterfly_on_face
     - aqua_butterfly
     - transparent_butterfly
     - swallowtail_butterfly
@@ -19742,7 +19782,6 @@ explicit:
     - deep_penetration
     - double_handjob
     - male_masturbation
-    - penis_on_face
     - imminent_vaginal
     - imminent_rape
     - after_anal
@@ -19799,7 +19838,11 @@ explicit:
     - penises_touching
     - two-handed_handjob
     - penis_over_eyes
+    - penis_on_head
+    - penis_on_face
+    - penis_on_shoulder
     - testicle_sucking
+    - testicles_on_face
     - implied_fingering
     - uncommon_stimulation
     - guided_penetration
@@ -19864,6 +19907,7 @@ explicit:
     - cooperative_handjob
     - naizuri
     - implied_paizuri
+    - paizuri_on_lap
     - hand_on_own_penis
     - condom_left_inside
     - mutual_orgasm
@@ -19892,7 +19936,6 @@ explicit:
     - muscular_uke
     - hand_under_swimsuit
     - autoarousal
-    - paizuri_on_lap
     - stealth_masturbation
     - cuntboy_with_male
     - power_bottom
@@ -19947,6 +19990,7 @@ explicit:
     - buying_condoms
     - lipstick_mark_on_ass
     - groping_motion
+    - grabbed_breast_over_shoulder
     - licking_stomach
     - pecjob
     - cooperative_grinding
@@ -19992,7 +20036,6 @@ explicit:
     - breast_biting
     - ear_sex
     - '6_9'
-    - testicles_on_face
     - onahole_job
     - bite_mark_on_ass
     - penis_and_testicles_touching
@@ -20253,6 +20296,7 @@ explicit:
   - pussy_juice
   - cum_in_pussy
   - cum_on_body
+  - cum_on_back
   - ejaculation
   - facial
   - cum_on_breasts
@@ -20303,7 +20347,6 @@ explicit:
   - cum_in_container
   - cum_in_nose
   - saliva_on_penis
-  - cream_on_face
   - cum_on_pectorals
   - cum_on_legwear
   - breast_milk
@@ -20314,7 +20357,7 @@ explicit:
   - excessive_pussy_juice
   - cum_through_clothes
   - pussy_juice_on_fingers
-  - cum_on_back
+  - pussy_juice_on_face
   - cum_on_floor
   - cum_bubble
   - cum_in_cup
@@ -20358,13 +20401,11 @@ explicit:
   - pee_puddle
   - leaking
   - bedwetting
-  - cum_on_headwear
   - cum_on_gloves
   - cum_on_object
   - cum_on_tail
   - peeing_in_cup
   - cum_on_testicles
-  - pussy_juice_on_face
   - peed_self
   - cum_on_bed
   - cum_on_crotch
