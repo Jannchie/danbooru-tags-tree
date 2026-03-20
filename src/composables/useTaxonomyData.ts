@@ -14,6 +14,7 @@ const translations = shallowRef<Record<string, LocalizedLabel>>({})
 const tagFrequency = shallowRef<Record<string, number>>({})
 const graphLayout = shallowRef<Record<string, { x: number, y: number }> | null>(null)
 const isLoading = ref(false)
+const isGraphLayoutLoading = ref(false)
 const error = ref<string | null>(null)
 
 const localeOptions: {
@@ -44,16 +45,14 @@ async function ensureLoaded(): Promise<void> {
   error.value = null
 
   try {
-    const [rawTrans, rawFreq, rawData, rawLayout] = await Promise.all([
+    const [rawTrans, rawFreq, rawData] = await Promise.all([
       fetchJSON('output/translations.json'),
       fetchJSON('output/tag_frequency.json'),
       fetchJSON('output/taxonomy.json'),
-      fetchJSON('output/graph-layout.json').catch(() => null),
     ])
 
     translations.value = castTranslations(rawTrans)
     tagFrequency.value = rawFreq as Record<string, number>
-    graphLayout.value = rawLayout as Record<string, { x: number, y: number }> | null
 
     datasets.value = {
       default: buildDataset(rawData, 'default'),
@@ -62,6 +61,26 @@ async function ensureLoaded(): Promise<void> {
     error.value = loadError instanceof Error ? loadError.message : 'Failed to load taxonomy files.'
   } finally {
     isLoading.value = false
+  }
+}
+
+async function ensureGraphLayoutLoaded(): Promise<void> {
+  if (graphLayout.value || isGraphLayoutLoading.value) {
+    return
+  }
+
+  isGraphLayoutLoading.value = true
+
+  try {
+    graphLayout.value = await fetchJSON('output/graph-layout.json') as Record<string, { x: number, y: number }>
+  } catch (loadError) {
+    console.error(
+      loadError instanceof Error
+        ? loadError.message
+        : 'Failed to load graph layout file.',
+    )
+  } finally {
+    isGraphLayoutLoading.value = false
   }
 }
 
@@ -74,8 +93,10 @@ export function useTaxonomyData() {
     tagFrequency,
     graphLayout,
     isLoading,
+    isGraphLayoutLoading,
     error,
     ensureLoaded,
+    ensureGraphLayoutLoaded,
     localeOptions,
   }
 }

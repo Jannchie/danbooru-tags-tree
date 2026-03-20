@@ -62,6 +62,11 @@ type GraphPalette = {
   rootColor: string
 }
 
+type GraphPosition = {
+  x: number
+  y: number
+}
+
 function mixColor(color1: string, color2: string, t: number): string {
   const r1 = Number.parseInt(color1.slice(1, 3), 16)
   const g1 = Number.parseInt(color1.slice(3, 5), 16)
@@ -100,6 +105,52 @@ function getGraphPalette(): GraphPalette {
   }
 }
 
+function buildFallbackPositions(): Record<string, GraphPosition> {
+  const positions: Record<string, GraphPosition> = {
+    root: { x: 0, y: 0 },
+  }
+
+  const { rootChildren, nodes } = props.dataset
+
+  if (rootChildren.length === 0) {
+    return positions
+  }
+
+  const sectorAngle = (2 * Math.PI) / rootChildren.length
+  const radiusStep = 10
+
+  function assignNodePosition(nodeId: string, centerAngle: number, angleSpan: number, depth: number): void {
+    const node = nodes[nodeId]
+
+    if (!node) {
+      return
+    }
+
+    const radius = depth * radiusStep
+    positions[nodeId] = {
+      x: Math.cos(centerAngle) * radius,
+      y: Math.sin(centerAngle) * radius,
+    }
+
+    if (node.children.length === 0) {
+      return
+    }
+
+    const step = angleSpan / node.children.length
+    const start = centerAngle - angleSpan / 2 + step / 2
+
+    node.children.forEach((childId, index) => {
+      assignNodePosition(childId, start + index * step, step, depth + 1)
+    })
+  }
+
+  rootChildren.forEach((nodeId, index) => {
+    assignNodePosition(nodeId, index * sectorAngle - Math.PI / 2, sectorAngle, 1)
+  })
+
+  return positions
+}
+
 function buildGraph(): Graph {
   const g = new Graph()
   const { rootChildren, flatNodes } = props.dataset
@@ -109,7 +160,7 @@ function buildGraph(): Graph {
   const colorIndexMap = new Map<string, number>()
   rootChildren.forEach((id, i) => colorIndexMap.set(id, i % CATEGORY_COLORS.length))
 
-  const positions = props.layoutPositions
+  const positions = props.layoutPositions ?? buildFallbackPositions()
 
   // Add all nodes with pre-computed or fallback positions
   g.addNode('root', {
@@ -488,6 +539,7 @@ onBeforeUnmount(() => {
 })
 
 watch(() => props.dataset, () => initSigma())
+watch(() => props.layoutPositions, () => initSigma())
 
 watch(() => props.locale, () => {
   if (!graph || !sigma) return

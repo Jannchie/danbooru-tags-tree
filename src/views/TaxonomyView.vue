@@ -18,7 +18,16 @@ import {
   type TaxonomyNode,
 } from '@/utils/taxonomy'
 
-const { datasets, translations, tagFrequency, graphLayout, isLoading, error, localeOptions } = useTaxonomyData()
+const {
+  datasets,
+  translations,
+  tagFrequency,
+  graphLayout,
+  isLoading,
+  error,
+  ensureGraphLayoutLoaded,
+  localeOptions,
+} = useTaxonomyData()
 const { theme, isDark, toggleTheme } = useTheme()
 
 const route = useRoute()
@@ -26,6 +35,18 @@ const router = useRouter()
 
 const searchText = ref('')
 const manualOpenIds = ref<Set<string>>(new Set())
+
+type NodeSearchEntry = {
+  node: TaxonomyNode
+  texts: string[]
+}
+
+type TagSearchEntry = {
+  value: string
+  label: string
+  nodeId: string
+  texts: string[]
+}
 
 const dataset = computed(() => datasets.value?.default ?? null)
 
@@ -101,14 +122,14 @@ function buildRouteLocation(options: {
 }
 
 watch(
-  [dataset, routeNodeId],
-  ([activeDataset, nodeId]) => {
+  [dataset, routeNodeId, viewMode],
+  ([activeDataset, nodeId, activeViewMode]) => {
     if (!activeDataset) {
       return
     }
 
     // Graph view allows empty selection
-    if (viewMode.value === 'graph') {
+    if (activeViewMode === 'graph') {
       return
     }
 
@@ -116,6 +137,18 @@ watch(
 
     if (fallbackNodeId && fallbackNodeId !== nodeId) {
       void router.replace(buildRouteLocation({ nodeId: fallbackNodeId, tag: null }))
+    }
+  },
+  {
+    immediate: true,
+  },
+)
+
+watch(
+  viewMode,
+  (activeViewMode) => {
+    if (activeViewMode === 'graph') {
+      void ensureGraphLayoutLoaded()
     }
   },
   {
@@ -186,15 +219,75 @@ const summaryStats = computed(() =>
     : [],
 )
 
-const searchResults = computed(() => {
+const normalizedSearchText = computed(() => searchText.value.trim().toLowerCase())
+
+function normalizeSearchTexts(texts: string[]): string[] {
+  return [...new Set(texts.map((text) => text.toLowerCase()))]
+}
+
+const nodeSearchEntries = computed<NodeSearchEntry[]>(() => {
   if (!dataset.value) {
-    return {
-      nodes: [],
-      tags: [],
-    }
+    return []
   }
 
-  const query = searchText.value.trim().toLowerCase()
+  return dataset.value.flatNodes.map((node) => ({
+    node,
+    texts: normalizeSearchTexts([
+      getNodeLabel(node, locale.value, translations.value),
+      getNodeLabel(node, 'en', translations.value),
+      node.id,
+      formatSlug(node.slug),
+    ]),
+  }))
+})
+
+const tagSearchEntries = computed<TagSearchEntry[]>(() => {
+  if (!dataset.value) {
+    return []
+  }
+
+  return dataset.value.flatTags.map((tag) => {
+    const translatedLabel = getTagLabel(tag.value, locale.value, translations.value)
+
+    return {
+      value: tag.value,
+      label: tag.label,
+      nodeId: tag.nodeId,
+      texts: normalizeSearchTexts([
+        tag.value,
+        tag.label,
+        translatedLabel,
+        `${tag.nodeId} ${tag.value}`,
+      ]),
+    }
+  })
+})
+
+function insertTopMatch<T>(
+  results: Array<{ item: T; score: number }>,
+  item: T,
+  score: number,
+  limit: number,
+): void {
+  let insertAt = results.findIndex((entry) => score > entry.score)
+
+  if (insertAt === -1) {
+    if (results.length >= limit) {
+      return
+    }
+
+    insertAt = results.length
+  }
+
+  results.splice(insertAt, 0, { item, score })
+
+  if (results.length > limit) {
+    results.pop()
+  }
+}
+
+const searchResults = computed(() => {
+  const query = normalizedSearchText.value
 
   if (!query) {
     return {
@@ -203,56 +296,46 @@ const searchResults = computed(() => {
     }
   }
 
-  const nodeResults = dataset.value.flatNodes
-    .map((node) => {
-      const texts = [
-        getNodeLabel(node, locale.value, translations.value),
-        getNodeLabel(node, 'en', translations.value),
-        node.id,
-        formatSlug(node.slug),
-      ]
-      const score = bestScore(texts, query)
+  const nodeResults: Array<{ item: TaxonomyNode; score: number }> = []
 
-      return score === -1
-        ? null
-        : {
-            node,
-            score,
-          }
-    })
-    .filter((item): item is { node: TaxonomyNode; score: number } => item !== null)
-    .sort((left, right) => right.score - left.score)
-    .slice(0, 8)
+  for (const entry of nodeSearchEntries.value) {
+    const score = bestScore(entry.texts, query)
 
-  const tagResults = dataset.value.flatTags
-    .map((tag) => {
-      const translatedLabel = getTagLabel(tag.value, locale.value, translations.value)
-      const texts = [tag.value, tag.label, translatedLabel, `${tag.nodeId} ${tag.value}`]
-      const score = bestScore(texts, query)
+    if (score !== -1) {
+      insertTopMatch(nodeResults, entry.node, score, 8)
+    }
+  }
 
-      return score === -1
-        ? null
-        : {
-            ...tag,
-            score,
-          }
-    })
-    .filter((item): item is { value: string; label: string; nodeId: string; score: number } => item !== null)
-    .sort((left, right) => right.score - left.score)
-    .slice(0, 10)
+  const tagResults: Array<{
+    item: { value: string; label: string; nodeId: string }
+    score: number
+  }> = []
+
+  for (const entry of tagSearchEntries.value) {
+    const score = bestScore(entry.texts, query)
+
+    if (score !== -1) {
+      insertTopMatch(tagResults, entry, score, 10)
+    }
+  }
 
   return {
-    nodes: nodeResults,
-    tags: tagResults,
+    nodes: nodeResults.map(({ item, score }) => ({ node: item, score })),
+    tags: tagResults.map(({ item, score }) => ({
+      value: item.value,
+      label: item.label,
+      nodeId: item.nodeId,
+      score,
+    })),
   }
 })
 
 const hasSearchResults = computed(
-  () => searchText.value.trim().length > 0 && (searchResults.value.nodes.length > 0 || searchResults.value.tags.length > 0),
+  () => normalizedSearchText.value.length > 0 && (searchResults.value.nodes.length > 0 || searchResults.value.tags.length > 0),
 )
 
 const hasNoResults = computed(
-  () => searchText.value.trim().length > 0 && searchResults.value.nodes.length === 0 && searchResults.value.tags.length === 0,
+  () => normalizedSearchText.value.length > 0 && searchResults.value.nodes.length === 0 && searchResults.value.tags.length === 0,
 )
 
 const sharedRouteProps = computed(() => {

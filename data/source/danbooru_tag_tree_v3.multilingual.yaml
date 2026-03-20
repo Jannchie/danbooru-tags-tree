@@ -1632,6 +1632,34 @@ category.composition.framing.arrangement:
   en: arrangement
   ja: アレンジ
   zh-CN: 画面编排
+category.composition.framing.body_part_anchor:
+  en: body part anchor
+  ja: 身体部位アンカー
+  zh-CN: 身体部位锚点
+category.composition.framing.body_part_anchor.head:
+  en: on head
+  ja: 頭上
+  zh-CN: 头上
+category.composition.framing.body_part_anchor.shoulder:
+  en: shoulder
+  ja: 肩
+  zh-CN: 肩部
+category.composition.framing.body_part_anchor.shoulder.on_shoulder:
+  en: on shoulder
+  ja: 肩上
+  zh-CN: 肩上
+category.composition.framing.body_part_anchor.shoulder.on_shoulders:
+  en: on shoulders
+  ja: 両肩
+  zh-CN: 双肩上
+category.composition.framing.body_part_anchor.shoulder.over_shoulder:
+  en: over shoulder
+  ja: 肩越し
+  zh-CN: 搭肩
+category.composition.framing.body_part_anchor.shoulder.around_shoulder:
+  en: around shoulder
+  ja: 肩回り
+  zh-CN: 绕肩
 category.composition.framing.border:
   en: border
   ja: ボーダー

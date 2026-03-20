@@ -368,12 +368,10 @@ character:
       - kishimen_hair
       position:
       - hair_spread_out
-      - hair_half_over_shoulder
       - hair_between_eyes
       - hair_over_one_eye
       - hair_intakes
       - floating_hair
-      - hair_over_shoulder
       - one_eye_covered
       - hair_flaps
       - blunt_ends
@@ -399,7 +397,6 @@ character:
       - hair_over_face
       - hair_floating_upwards
       - hair_over_one_breast
-      - snow_on_head
       - severed_hair
       - hair_through_hood
       - hair_around_ear
@@ -724,7 +721,6 @@ character:
       - mole_on_arm
       - mole_on_collarbone
       - no_mole
-      - mole_on_shoulder
       - mole_above_eye
       - mole_on_armpit
       - mole_on_pussy
@@ -941,7 +937,6 @@ character:
       - bandage_on_cheek
       - scar_on_chin
       - slap_mark_on_face
-      - scar_on_head
       - scar_across_eyes
       - bandaid_on_forehead
       nose:
@@ -1636,8 +1631,6 @@ character:
       - bare_back
       - shoulder_blades
       - shoulder_blush
-      - blood_on_shoulder
-      - lipstick_mark_on_shoulder
       - blood_on_back
       leg_thigh:
       - thighs
@@ -2069,12 +2062,10 @@ character:
     - scar_on_stomach
     - scar_on_leg
     - scar_on_hand
-    - scar_on_shoulder
     - bite_mark_on_neck
     - self-harm_scar
     - scar_on_back
     - scars_all_over
-    - bite_mark_on_shoulder
     - no_scar
     - claw_mark
     - mastectomy_scar
@@ -2394,7 +2385,6 @@ character:
     - screw_in_head
     - flaming_head
     - key_in_head
-    - sprout_on_head
     - jack-o'-lantern_head
     - rabbit_head
     - horse_head
@@ -3046,7 +3036,6 @@ dynamics:
       - a-pose
       - pose_imitation
       - on_stairs
-      - person_on_head
       - sway_back
       - henshin_pose
       - en_pointe
@@ -3110,7 +3099,6 @@ dynamics:
       - villain_pose
       - standing_on_branch
       - against_bookshelf
-      - standing_on_shoulder
       - crane_stance
       - z-move_trainer_pose
       - cure_white_pose
@@ -3136,7 +3124,6 @@ dynamics:
       - on_desk
       - on_bench
       - sitting_on_throne
-      - on_shoulder
       - on_table
       - on_lap
       - sitting_on_stairs
@@ -3150,7 +3137,6 @@ dynamics:
       - on_car
       - sitting_on_table
       - sitting_backwards
-      - sitting_on_shoulder
       - sitting_on_branch
       - sitting_sideways
       - figure_four_sitting
@@ -3159,7 +3145,6 @@ dynamics:
       - sitting_on_water
       - sitting_on_animal
       - thigh_straddling
-      - sitting_on_head
       - sitting_on_box
       - sitting_on_food
       - sitting_in_window
@@ -3171,7 +3156,6 @@ dynamics:
       - sitting_split
       - sitting_on_log
       - on_animal
-      - chibi_on_shoulder
       - side_sitting_split
       - sitting_on_fence
       - sitting_on_arm
@@ -3186,7 +3170,6 @@ dynamics:
       - cat_loaf
       - sitting_on_wall
       - sitting_between_lap
-      - person_on_shoulder
       - on_ball
       - sitting_on_drum
       - on_piano
@@ -3385,14 +3368,12 @@ dynamics:
         - hand_in_pocket
         - hand_between_legs
         - hands_in_pockets
-        - hand_on_head
         general:
         - head_rest
         - paw_pose
         - v_arms
         - outstretched_hand
         - claw_pose
-        - on_head
         - bound_arms
         - folded
         - covering_crotch
@@ -3440,7 +3421,6 @@ dynamics:
         - self_hug
         - covering_one_breast
         - hands_in_pocket
-        - hand_on_shoulder
         - hands_on_another's_back
         - arm_on_table
         - hand_on_leg
@@ -3494,7 +3474,6 @@ dynamics:
         - hands_under_legs
         - yotsubato!_pose
         - hand_on_sheath
-        - arms_on_head
         - airplane_arms
         - arm_on_own_leg
         - ganbaru_pose
@@ -3542,7 +3521,6 @@ dynamics:
     - looking_afar
     - face-to-face
     - facing_another
-    - over_shoulder
     - turning_head
     - facing_to_the_side
     - head_back
@@ -3555,7 +3533,6 @@ dynamics:
     - looking_through_own_legs
     - looking_at_hand
     - facing_ahead
-    - head_on_head
     - head_on_arm
     - head_on_table
     - facing_back
@@ -3607,7 +3584,6 @@ dynamics:
     - hanging_legs
     - v_legs
     - bent_v
-    - foot_on_head
     - heel_pop
     - arched_soles
     - knee_to_chest
@@ -4039,7 +4015,6 @@ dynamics:
       - attempted_suicide
       - implied_cannibalism
       object_placement:
-      - food_on_head
       - shoe_dangle
       - hand_on_eyewear
       - popsicle_in_mouth
@@ -4048,15 +4023,11 @@ dynamics:
       - under_kotatsu
       - toast_in_mouth
       - lollipop_in_mouth
-      - paper_on_head
-      - fruit_on_head
       - toothbrush_in_mouth
       - fish_in_mouth
       - pipe_in_mouth
       - in_shopping_cart
       - under_umbrella
-      - bucket_on_head
-      - book_on_head
       - in_trash_can
       - wrapped_in_blanket
       - eyewear_in_mouth
@@ -4070,9 +4041,7 @@ dynamics:
       - pen_to_mouth
       - pill_on_tongue
       - leash_in_mouth
-      - cup_on_head
       - carrot_in_pocket
-      - box_on_head
       - unlit_cigarette_in_mouth
       - string_in_mouth
       - in_cauldron
@@ -4707,9 +4676,7 @@ dynamics:
           - reverse_grip
           - two-handed
           carry_object:
-          - object_on_head
           - carrying_under_arm
-          - balancing_on_head
           general:
           - holding
           - holding_syringe
@@ -4820,7 +4787,6 @@ dynamics:
           - holding_collar
           - holding_sandwich
           - holding_golf_club
-          - holding_over_opposite_shoulder
           - holding_spork
           - holding_flamethrower
           - holding_utensil
@@ -4993,7 +4959,6 @@ dynamics:
         - holding_toothbrush
         - holding_whisk
         - holding_key
-        - umbrella_over_shoulder
         - holding_lighter
         - holding_rope
         - holding_torch
@@ -5041,7 +5006,6 @@ dynamics:
         weapon:
         - holding_baseball_bat
         - holding_water_gun
-        - sword_over_shoulder
         - shield_on_back
         - holding_crossbow
         - holding_mace
@@ -5067,7 +5031,6 @@ dynamics:
         - holding_polearm
         - weapon_on_back
         - holding_bow_(weapon)
-        - weapon_over_shoulder
         - holding_shield
         - holding_bowl
         - holding_axe
@@ -5949,7 +5912,6 @@ dynamics:
       - lifting_person
       - piggyback
       - shoulder_carry
-      - carrying_over_shoulder
       - elbow_carry
       - child_carry
       - carrying_overhead
@@ -6020,16 +5982,12 @@ dynamics:
         - holding_another's_tongue
         - hands_on_another's_hips
         leaning:
-        - pokemon_on_shoulder
-        - arm_around_shoulder
         - arm_around_waist
         - arm_around_neck
         - lap_pillow_invitation
         - leaning_on_animal
         - arm_around_back
-        - hands_on_shoulders
         - face_to_pecs
-        - crab_on_shoulder
         leg_contact:
         - foot_on_another's_face
         general:
@@ -6037,7 +5995,6 @@ dynamics:
         - lifted_by_tail
         - lifted_by_cursor
         - hand_in_another's_hair
-        - pokemon_on_head
         - noses_touching
         - breast_poke
         - touching
@@ -6064,7 +6021,6 @@ dynamics:
         - cheek_poking
         - tickling
         - cheek_press
-        - breasts_on_head
         - looking_at_breasts
         - cheek_squash
         - ass_support
@@ -6090,7 +6046,6 @@ dynamics:
         - hiding_behind_another
         - clinging
         - surrounded_by_hands
-        - chibi_on_head
         - scolding
         - accidental_pervert
         - rubbing
@@ -6111,7 +6066,6 @@ dynamics:
         - cuffed
         - human_stacking
         - washing_another
-        - arm_over_shoulder
         - stroking_another's_chin
         - squishing
         - biting_head
@@ -6202,8 +6156,6 @@ dynamics:
         - tail_on_face
         - hands_in_another's_hair
         - cradling
-        - insect_on_head
-        - cake_on_head
         - tsukkomi
         - hanging_on_arm
         - finger_to_another's_nose
@@ -6360,41 +6312,27 @@ dynamics:
     - massage
     - dressing_another
     creature_interaction:
-    - animal_on_head
-    - animal_on_shoulder
     - petting
-    - bird_on_head
     - bird_on_hand
     - butterfly_on_hand
-    - bird_on_shoulder
-    - cat_on_head
     - animal_on_lap
     - animal_on_arm
-    - cat_on_shoulder
-    - creature_on_head
-    - creature_on_shoulder
     - animal_on_hand
     - bird_on_arm
     - cat_on_lap
     - animal_around_neck
     - animal_on_back
-    - mouse_on_head
     - butterfly_on_nose
     - animal_between_breasts
     - snake_wrapped_around_body
-    - snake_on_shoulder
     - creature_on_lap
     - snake_wrapped_around_arm
-    - rabbit_on_shoulder
     - bird_on_leg
-    - butterfly_on_shoulder
     - animal_on_face
     - snake_bite
     - butterfly_sitting
     - cat_on_person
     - animal_on_chest
-    - dog_on_head
-    - frog_on_head
     - snake_wrapped_around_neck
     - animal_on_leg
 apparel:
@@ -8950,7 +8888,6 @@ apparel:
       - polka_dot_kimono
       - purple_haori
       - strapless_kimono
-      - haori_on_shoulders
       - butterfly_print_kimono
       - plaid_kimono
       - aqua_haori
@@ -9889,18 +9826,13 @@ apparel:
     - black_visor
     - white_visor
     novelty:
-    - towel_on_head
     - animal_ear_headwear
     - horned_headwear
     - bag_over_head
     - multiple_hats
     - no_headgear
-    - pot_on_head
     - mascot_head
-    - scarf_on_head
-    - bra_on_head
     - rabbit_ear_headwear
-    - necktie_on_head
     - hood_over_eyes
     - beanie
     - ushanka
@@ -10009,7 +9941,6 @@ apparel:
     - diving_mask
     - ninja_mask
     - bird_mask
-    - diving_mask_on_head
     - blindfold_mask
     - yellow_mask
     - two-tone_mask
@@ -11075,25 +11006,20 @@ apparel:
       - fake_horns
       - hair_bell
       - headpiece
-      - leaf_on_head
       - flower_knot
       - horseshoe_ornament
       - chinese_knot
       - fake_antlers
       - ring_hair_extensions
       - star_ornament
-      - flower_on_head
       - moon_(ornament)
-      - ofuda_on_head
       - earth_(ornament)
       - skull_ornament
       - wig
       - horn_flower
       - butterfly_ornament
-      - bandaid_on_head
       - heart-shaped_ornament
       - motoyui
-      - skull_on_head
       - anchor_ornament
       - pankou
       - multiple_hair_clips
@@ -11165,7 +11091,6 @@ apparel:
       - partially_opaque_sunglasses
       - opaque_monocle
       sunglasses:
-      - goggles_on_head
       - goggles_on_headwear
       - assault_visor
       - orange_visor
@@ -11184,7 +11109,6 @@ apparel:
       - goggles_on_eyes
       general:
       - eyepatch
-      - eyewear_on_head
       - black-framed_eyewear
       - red-framed_eyewear
       - tinted_eyewear
@@ -11336,7 +11260,6 @@ apparel:
     - round_bag
     - drawstring_bag
     - aqua_bag
-    - bag_on_head
     - bag_on_lap
     - card_holster
     - women's_wallet
@@ -11403,7 +11326,6 @@ apparel:
       mask_face:
       - mask
       - bandaid
-      - mask_on_head
       - fox_mask
       - bandaid_on_nose
       - bandaid_on_knee
@@ -11424,7 +11346,6 @@ apparel:
       - plague_doctor_mask
       - character_mask
       - blue_mask
-      - bandaid_on_shoulder
       - oxygen_mask
       - hockey_mask
       - cracked_mask
@@ -12519,14 +12440,12 @@ apparel:
       - impossible_clothes
       - backless_outfit
       - blood_on_clothes
-      - jacket_on_shoulders
       - shiny_clothes
       - panties_around_one_leg
       - tight_clothes
       - clothes_around_waist
       - taut_clothes
       - tied_shirt
-      - coat_on_shoulders
       - transparent
       - floating_clothes
       - button_gap
@@ -12569,7 +12488,6 @@ apparel:
       - clothes_between_breasts
       - shirt_under_dress
       - undersized_breast_cup
-      - panties_on_head
       - shirt_overhang
       - shorts_around_one_leg
       - oversized_breast_cup
@@ -12601,7 +12519,6 @@ apparel:
       - clothes_on_floor
       - wardrobe_error
       - liquid_clothes
-      - jacket_over_shoulder
       - painted_clothes
       - panties_around_one_ankle
       - undone_bra
@@ -12635,7 +12552,6 @@ apparel:
       - downpants
       - strap_break
       - business_casual
-      - shirt_on_shoulders
       - buruma_around_one_leg
       - food_as_clothes
       - swaddled
@@ -12670,7 +12586,6 @@ apparel:
       - dress_over_shirt
       - panties_around_thighs
       - skirt_under_kimono
-      - cardigan_on_shoulders
       - bloomers_around_one_leg
       - bikini_bottom_around_leg
       - underwear_around_one_leg
@@ -12697,7 +12612,6 @@ apparel:
       - shirt_over_head
       - towel_slip
       - coat_stash
-      - clothes_on_shoulders
       - panty_dangle
       - wrapped
       - jacket_over_head
@@ -12806,7 +12720,6 @@ apparel:
     - no_armor
     - unworn_sweater
     - unworn_headgear
-    - kimono_on_shoulders
     - unworn_sarong
     - unworn_wig
     adjusted:
@@ -13063,6 +12976,116 @@ composition:
     - social_media_composition
     - zooming_out
     - camera_feed
+    body_part_anchor:
+      head:
+      - animal_on_head
+      - apple_on_head
+      - arms_on_head
+      - bag_on_head
+      - balancing_on_head
+      - bandaid_on_head
+      - bird_on_head
+      - book_on_head
+      - box_on_head
+      - bra_on_head
+      - breasts_on_head
+      - bucket_on_head
+      - butterfly_on_head
+      - cake_on_head
+      - candle_on_head
+      - cat_on_head
+      - chibi_on_head
+      - condom_on_head
+      - crab_on_head
+      - creature_on_head
+      - cup_on_head
+      - diving_mask_on_head
+      - dog_on_head
+      - doll_on_head
+      - eyewear_on_head
+      - flower_on_head
+      - food_on_head
+      - foot_on_head
+      - frog_on_head
+      - fruit_on_head
+      - goggles_on_head
+      - hand_on_head
+      - head_on_head
+      - insect_on_head
+      - leaf_on_head
+      - mask_on_head
+      - mouse_on_head
+      - mushroom_on_head
+      - necktie_on_head
+      - object_on_head
+      - ofuda_on_head
+      - on_head
+      - paper_on_head
+      - panties_on_head
+      - penis_on_head
+      - person_on_head
+      - petal_on_head
+      - plant_on_head
+      - pokemon_on_head
+      - pot_on_head
+      - pumpkin_on_head
+      - rabbit_on_head
+      - scar_on_head
+      - scarf_on_head
+      - sitting_on_head
+      - skull_on_head
+      - snake_on_head
+      - snow_on_head
+      - sprout_on_head
+      - towel_on_head
+      shoulder:
+        on_shoulder:
+        - animal_on_shoulder
+        - bandaid_on_shoulder
+        - bird_on_shoulder
+        - bite_mark_on_shoulder
+        - blood_on_shoulder
+        - butterfly_on_shoulder
+        - cat_on_shoulder
+        - chibi_on_shoulder
+        - crab_on_shoulder
+        - creature_on_shoulder
+        - dragon_on_shoulder
+        - hand_on_shoulder
+        - lipstick_mark_on_shoulder
+        - mole_on_shoulder
+        - on_shoulder
+        - penis_on_shoulder
+        - person_on_shoulder
+        - pokemon_on_shoulder
+        - rabbit_on_shoulder
+        - scar_on_shoulder
+        - sitting_on_shoulder
+        - snake_on_shoulder
+        - standing_on_shoulder
+        on_shoulders:
+        - cardigan_on_shoulders
+        - clothes_on_shoulders
+        - coat_on_shoulders
+        - hands_on_shoulders
+        - haori_on_shoulders
+        - jacket_on_shoulders
+        - kimono_on_shoulders
+        - shirt_on_shoulders
+        over_shoulder:
+        - arm_over_shoulder
+        - carrying_over_shoulder
+        - grabbed_breast_over_shoulder
+        - hair_half_over_shoulder
+        - hair_over_shoulder
+        - holding_over_opposite_shoulder
+        - jacket_over_shoulder
+        - over_shoulder
+        - sword_over_shoulder
+        - umbrella_over_shoulder
+        - weapon_over_shoulder
+        around_shoulder:
+        - arm_around_shoulder
   background_treatment:
   - simple_background
   - white_background
@@ -15641,7 +15664,6 @@ object:
         - bitten_apple
         - banana_slice
         - orange_peel
-        - apple_on_head
         - pineapple_slice
         - yuzu_(fruit)
         - apple_core
@@ -15693,7 +15715,6 @@ object:
         - edamame
         - soybean
         - carrot_slice
-        - pumpkin_on_head
         - lotus_root
         - pepper_(spice)
         - red_pepper
@@ -16773,7 +16794,6 @@ object:
       - blood_on_flower
       - gentiana_(flower)
       - ice_flower
-      - petal_on_head
       - orange_petals
       - bougainvillea_(flower)
       - padisarah_flower
@@ -16855,7 +16875,6 @@ object:
     - cattail
     - twig
     - pansy
-    - mushroom_on_head
     - daffodil
     - gerbera
     - silent_princess
@@ -16876,7 +16895,6 @@ object:
     - magnolia
     - chinese_lantern_(plant)
     - fly_agaric
-    - plant_on_head
     - venus_flytrap
     - susuki_grass
     - mandrake
@@ -17534,7 +17552,6 @@ object:
     - floor_lamp
     - lava_lamp
     - string_lights
-    - candle_on_head
     - number_candle
     - lamp_(e.g.o)
     timepiece:
@@ -18169,7 +18186,6 @@ object:
     - clam_shell
     - orange_butterfly
     - nest
-    - butterfly_on_head
     - fossil
     - pile_of_skulls
     - framed_insect
@@ -18370,7 +18386,6 @@ object:
       - stuffed_duck
       - stuffed_wolf
       - stuffed_pig
-      - doll_on_head
       - stuffed_horse
       - doqute_stuffed_doll
       - large_teddy_bear
@@ -18986,7 +19001,6 @@ creature:
     - white_rabbit_(animal)
     - angora_rabbit
     - otter
-    - rabbit_on_head
     - bull
     - gorilla
     - elephant
@@ -19145,7 +19159,6 @@ creature:
     - seahorse
     - stingray
     - hermit_crab
-    - crab_on_head
     - puffer_fish
     - umbrella_octopus
     - catfish
@@ -19256,7 +19269,6 @@ creature:
   - triceratops
   - toad_(animal)
   - tadpole
-  - snake_on_head
   - raptor
   - iguana
   - sauropod
@@ -19301,7 +19313,6 @@ creature:
     - imp
     - troll
     - yeti_(creature)
-    - dragon_on_shoulder
     - living_armor
     - wyrm
     - kraken
@@ -19955,7 +19966,6 @@ explicit:
     - hands_on_penis
     - imminent_netorare
     - pillow_humping
-    - grabbed_breast_over_shoulder
     - reverse_nursing_fingering
     - licking_navel
     - female_footjob
@@ -20059,7 +20069,6 @@ explicit:
     - yukadon_on_viewer
     - facejob
     - imminent_masturbation
-    - penis_on_shoulder
     - bulge_to_face
     - pillow_bite
     - implied_orgasm
@@ -20098,7 +20107,6 @@ explicit:
     - tucked_penis
     - penis_on_stomach
     - penis_over_one_eye
-    - penis_on_head
     - extra_penises
     - bouncing_penis
     - spiked_penis
@@ -20727,7 +20735,6 @@ explicit:
     - nipple_sleeves
     - standing_restraints
     - tube_chastity_cage
-    - condom_on_head
     - unbirthing
     - implied_object_insertion
     - object_in_panties

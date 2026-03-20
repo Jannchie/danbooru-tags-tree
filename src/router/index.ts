@@ -1,8 +1,6 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 
 import TaxonomyView from '@/views/TaxonomyView.vue'
-import TreePage from '@/views/TreePage.vue'
-import GraphPage from '@/views/GraphPage.vue'
 
 import {
   DEFAULT_LOCALE,
@@ -29,12 +27,12 @@ export const router = createRouter({
         {
           path: 'tree/:nodeId?',
           name: `${TAXONOMY_ROUTE_NAME}-tree`,
-          component: TreePage,
+          component: () => import('@/views/TreePage.vue'),
         },
         {
           path: 'graph/:nodeId?',
           name: `${TAXONOMY_ROUTE_NAME}-graph`,
-          component: GraphPage,
+          component: () => import('@/views/GraphPage.vue'),
         },
         {
           path: '',
