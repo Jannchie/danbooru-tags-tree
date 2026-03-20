@@ -243,6 +243,44 @@ const hasNoResults = computed(
   () => searchText.value.trim().length > 0 && searchResults.value.nodes.length === 0 && searchResults.value.tags.length === 0,
 )
 
+const sharedRouteProps = computed(() => {
+  if (!dataset.value) {
+    return null
+  }
+
+  return {
+    dataset: dataset.value,
+    selectedNodeId: selectedNodeId.value,
+    locale: locale.value,
+    translations: translations.value,
+  }
+})
+
+const treeRouteProps = computed(() => {
+  if (!sharedRouteProps.value || !selectedNode.value) {
+    return null
+  }
+
+  return {
+    ...sharedRouteProps.value,
+    selectedNode: selectedNode.value,
+    focusedTag: focusedTag.value,
+    tagFrequency: tagFrequency.value,
+    openIds: manualOpenIds.value,
+  }
+})
+
+const graphRouteProps = computed(() => {
+  if (!sharedRouteProps.value) {
+    return null
+  }
+
+  return {
+    ...sharedRouteProps.value,
+    graphLayout: graphLayout.value,
+  }
+})
+
 function bestScore(texts: string[], query: string): number {
   let score = -1
 
@@ -456,19 +494,21 @@ function setLocale(nextLocale: LocaleCode): void {
     </header>
 
     <main class="workspace">
-      <RouterView
-        :dataset="dataset"
-        :selected-node-id="selectedNodeId"
-        :selected-node="selectedNode"
-        :locale="locale"
-        :focused-tag="focusedTag"
-        :translations="translations"
-        :tag-frequency="tagFrequency"
-        :graph-layout="graphLayout"
-        :open-ids="manualOpenIds"
-        @select="selectNode"
-        @toggle="toggleNode"
-      />
+      <RouterView v-slot="{ Component }">
+        <component
+          :is="Component"
+          v-if="viewMode === 'tree' && treeRouteProps"
+          v-bind="treeRouteProps"
+          @select="selectNode"
+          @toggle="toggleNode"
+        />
+        <component
+          :is="Component"
+          v-else-if="graphRouteProps"
+          v-bind="graphRouteProps"
+          @select="selectNode"
+        />
+      </RouterView>
     </main>
   </div>
 </template>

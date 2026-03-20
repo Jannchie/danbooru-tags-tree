@@ -7,7 +7,7 @@ This project provides a Vue-based preview UI for the YAML taxonomy data in this 
 - Vue 3 + TypeScript
 - Vite powered by `rolldown-vite`
 - Vitest for tests
-- ESLint and Oxlint for linting
+- Oxlint for linting
 
 ## Development
 
@@ -22,5 +22,5 @@ pnpm dev
 pnpm build
 pnpm test
 pnpm lint
-pnpm lint:ox
+pnpm lint:fix
 ```
