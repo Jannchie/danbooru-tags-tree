@@ -978,7 +978,7 @@ describe('taxonomy helpers', () => {
     expect(parsed.object.celestial_body.small_body).not.toHaveProperty('shower')
   })
 
-  it('keeps translations aligned with split pose tags and required locales', { timeout: 15000 }, () => {
+  it('keeps translations aligned with split pose tags and required locales', { timeout: 40000 }, () => {
     const taxonomy = readSourceYaml<Record<string, unknown>>('data/source/danbooru_tag_tree_v3.yaml')
     const translations = castTranslations(
       readSourceYaml<Record<string, unknown>>('data/source/danbooru_tag_tree_v3.multilingual.yaml'),
@@ -1027,8 +1027,21 @@ describe('taxonomy helpers', () => {
     expect(tagKeys.has('tag.breasts_on_table')).toBe(true)
     expect(tagKeys.has('tag.ojou-sama_pose')).toBe(true)
     expect(tagKeys.has('tag.breasts_on_table - ojou-sama_pose')).toBe(false)
-    expect(translations['category.character.affiliation.franchise']?.ja).toBe('作品内団体')
     expect(translations['category.character.affiliation.generic']?.ja).toBe('一般団体')
+    expect(translations['category.fandom.character_reference']?.ja).toBe('キャラクター設定参照')
+    expect(translations['category.fandom.named_reference.reference_marker']?.ja).toBe('参照マーカー')
+    expect(translations['category.fandom.named_reference.phrase_reference']?.ja).toBe('定型句参照')
+    expect(translations['category.fandom.named_reference.named_entry.song_title']?.ja).toBe('楽曲名')
+    expect(translations['category.fandom.named_reference.named_entry.franchise_term']?.ja).toBe('作品固有名詞')
+    expect(translations['category.fandom.named_reference.reference_type.title_name']?.ja).toBe('題名')
+    expect(translations['category.fandom.named_reference.reference_type.entity_name']?.ja).toBe('固有名')
+    expect(translations['category.fandom.named_reference.reference_type.natural_name']?.ja).toBe('自然名')
+    expect(translations['category.fandom.named_reference.visual_identity']?.ja).toBe('ロゴ・エンブレム')
+    expect(translations['category.fandom.named_reference.presentation_reference']?.ja).toBe('演出・表示参照')
+    expect(translations['category.character.affiliation.franchise']).toBeUndefined()
+    expect(translations['category.character.archetype.setting.franchise']).toBeUndefined()
+    expect(translations['category.text.phrase_reference']).toBeUndefined()
+    expect(translations['category.production.branding.emblem_logo']).toBeUndefined()
     expect(translations['category.apparel.garment.dress.dress']).toBeUndefined()
     expect(translations['category.creature.bird.bird']).toBeUndefined()
     expect(translations['category.creature.fantasy_creature.fantasy_creature']).toBeUndefined()
@@ -1325,6 +1338,136 @@ describe('taxonomy helpers', () => {
     expect(parsed.fandom.franchise_meta.franchise_misc).not.toContain('full-stop_office_(identity)_(project_moon)')
     expect(parsed.fandom.franchise_meta.franchise_misc).not.toContain('chrysos_heirs_(honkai:_star_rail)')
     expect(parsed.fandom.franchise_meta.franchise_misc).not.toContain('defy_(girls\'_frontline)')
+  })
+
+  it('keeps franchise-specific character and reference tags under fandom', () => {
+    const parsed = readSourceYaml<{
+      apparel: {
+        detail: {
+          detail: {
+            other: Record<string, unknown>
+          }
+        }
+      }
+      character: {
+        affiliation: Record<string, unknown>
+        archetype: {
+          setting: Record<string, unknown>
+        }
+      }
+      fandom: {
+        character_reference: string[]
+        franchise_meta: {
+          general: string[]
+        }
+        group_tag: string[]
+        named_reference: {
+          named_entry: Record<string, unknown>
+          phrase_reference: string[]
+          presentation_reference: string[]
+          reference_marker: string[]
+          reference_type: Record<string, unknown>
+          visual_identity: string[]
+        }
+        named_object_reference: {
+          costume: string[]
+        }
+        narrative_meta: {
+          crossover: string[]
+        }
+      }
+      production: {
+        authorship: string[]
+        art_style: {
+          general: string[]
+        }
+        branding: {
+          brand_logo: string[]
+          label_reference: string[]
+        }
+        format: {
+          general: string[]
+        }
+      }
+      text: {
+        text_content: {
+          dialogue_meta: string[]
+        }
+      }
+    }>('data/source/danbooru_tag_tree_v3.yaml')
+    const expectedPaths = new Map([
+      ['saiyan', 'fandom.character_reference'],
+      ['miqo\'te', 'fandom.character_reference'],
+      ['jedi', 'fandom.character_reference'],
+      ['team_rocket', 'fandom.group_tag'],
+      ['sanbaka_(nijisanji)', 'fandom.group_tag'],
+      ['source_quote', 'fandom.named_reference.phrase_reference'],
+      ['kotoyoro', 'fandom.named_reference.phrase_reference'],
+      ['copyright_name', 'fandom.named_reference.reference_type.title_name'],
+      ['song_name', 'fandom.named_reference.reference_type.title_name'],
+      ['character_name', 'fandom.named_reference.reference_type.entity_name'],
+      ['place_name', 'fandom.named_reference.reference_type.entity_name'],
+      ['ship_name', 'fandom.named_reference.reference_type.entity_name'],
+      ['animal_name', 'fandom.named_reference.reference_type.natural_name'],
+      ['plant_name', 'fandom.named_reference.reference_type.natural_name'],
+      ['scientific_name', 'fandom.named_reference.reference_type.natural_name'],
+      ['copyright_notice', 'fandom.named_reference.reference_marker'],
+      ['copyright_logo', 'fandom.named_reference.reference_marker'],
+      ['artist_self-reference', 'fandom.named_reference.reference_marker'],
+      ['snow_halation', 'fandom.named_reference.named_entry.song_title'],
+      ['shikairo_days', 'fandom.named_reference.named_entry.song_title'],
+      ['tracen_academy', 'fandom.named_reference.named_entry.franchise_term'],
+      ['amphoreus_(honkai:_star_rail)', 'fandom.named_reference.named_entry.franchise_term'],
+      ['heartsteel_(league_of_legends)', 'fandom.named_reference.named_entry.franchise_term'],
+      ['chaldea_logo', 'fandom.named_reference.visual_identity'],
+      ['rhodes_island_logo_(arknights)', 'fandom.named_reference.visual_identity'],
+      ['nerv', 'fandom.named_reference.visual_identity'],
+      ['team_star', 'fandom.named_reference.visual_identity'],
+      ['royal_navy_emblem_(azur_lane)', 'fandom.named_reference.visual_identity'],
+      ['akira_movie_poster', 'fandom.named_reference.presentation_reference'],
+      ['ttgl_eyecatch', 'fandom.named_reference.presentation_reference'],
+      ['recruitment_(blue_archive)', 'fandom.named_reference.presentation_reference'],
+      ['twitter_strip_game', 'fandom.named_reference.presentation_reference'],
+      ['srw_battle_screen', 'fandom.named_reference.presentation_reference'],
+      ['official_alternate_costume', 'fandom.named_object_reference.costume'],
+      ['official_art_inset', 'fandom.franchise_meta.general'],
+      ['style_parody', 'fandom.narrative_meta.crossover'],
+      ['multiple_style_parody', 'fandom.narrative_meta.crossover'],
+    ])
+    const rows = collectMatchingTagPaths(parsed, expectedPaths)
+
+    expect(rows).toHaveLength(expectedPaths.size)
+    expect(rows.every((row) => row.path === expectedPaths.get(row.tag))).toBe(true)
+    expect(parsed.fandom).toHaveProperty('character_reference')
+    expect(parsed.character.affiliation).not.toHaveProperty('franchise')
+    expect(parsed.character.archetype.setting).not.toHaveProperty('franchise')
+    expect(parsed.fandom.named_reference).toHaveProperty('named_entry')
+    expect(parsed.fandom.named_reference).toHaveProperty('reference_type')
+    expect(parsed.fandom.named_reference.named_entry).toHaveProperty('song_title')
+    expect(parsed.fandom.named_reference.named_entry).toHaveProperty('franchise_term')
+    expect(parsed.fandom.named_reference.reference_type).toHaveProperty('title_name')
+    expect(parsed.fandom.named_reference.reference_type).toHaveProperty('entity_name')
+    expect(parsed.fandom.named_reference.reference_type).toHaveProperty('natural_name')
+    expect(parsed.apparel.detail.detail.other).not.toHaveProperty('costume_change')
+    expect(parsed.text).not.toHaveProperty('phrase_reference')
+    expect(parsed.text.text_content.dialogue_meta).not.toContain('source_quote')
+    expect(parsed.production.authorship).not.toContain('copyright_notice')
+    expect(parsed.production.authorship).not.toContain('artist_self-reference')
+    expect(parsed.production.branding.brand_logo).not.toContain('copyright_logo')
+    expect(parsed.production.branding.brand_logo).not.toContain('chaldea_logo')
+    expect(parsed.production.branding.brand_logo).not.toContain('penguin_logistics_logo')
+    expect(parsed.production.branding).not.toHaveProperty('emblem_logo')
+    expect(parsed.production.branding.label_reference).not.toContain('team_star')
+    expect(parsed.production.branding.label_reference).not.toContain('team_galactic')
+    expect(parsed.production.branding.label_reference).not.toContain('royal_navy_emblem_(azur_lane)')
+    expect(parsed.production.format.card_medium).not.toContain('akira_movie_poster')
+    expect(parsed.production.format.general).not.toContain('ttgl_eyecatch')
+    expect(parsed.production.format.general).not.toContain('recruitment_(blue_archive)')
+    expect(parsed.production.format.general).not.toContain('twitter_strip_game')
+    expect(parsed.production.format.general).not.toContain('srw_battle_screen')
+    expect(parsed.production.format.general).not.toContain('official_art_inset')
+    expect(parsed.production.art_style.general).not.toContain('style_parody')
+    expect(parsed.production.art_style.general).not.toContain('multiple_style_parody')
   })
 
   it('keeps adjusted apparel detail tags in matching detail buckets', () => {

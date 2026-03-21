@@ -778,10 +778,6 @@ category.character.affiliation:
   en: affiliation
   ja: 所属
   zh-CN: 所属
-category.character.affiliation.franchise:
-  en: franchise group
-  ja: 作品内団体
-  zh-CN: 作品内团体
 category.character.affiliation.generic:
   en: general group
   ja: 一般団体
@@ -858,10 +854,6 @@ category.character.archetype.setting.fantasy:
   en: fantasy
   ja: ファンタジー
   zh-CN: 奇幻
-category.character.archetype.setting.franchise:
-  en: franchise-specific
-  ja: 作品固有
-  zh-CN: 作品特定
 category.character.archetype.setting.scifi:
   en: sci-fi
   ja: SF
@@ -1529,7 +1521,7 @@ category.composition.background_treatment:
 category.composition.camera_angle:
   en: camera angle
   ja: カメラアングル
-  zh-CN: 拍摄角度
+  zh-CN: 机位与视角
 category.composition.color_design:
   en: color design
   ja: カラーデザイン
@@ -2414,6 +2406,10 @@ category.fandom.cosplay:
   en: cosplay
   ja: コスプレ
   zh-CN: Cosplay
+category.fandom.character_reference:
+  en: character reference
+  ja: キャラクター設定参照
+  zh-CN: 角色设定引用
 category.fandom.franchise_meta:
   en: franchise meta
   ja: 作品メタ
@@ -2514,10 +2510,46 @@ category.fandom.named_reference.named_entry:
   en: named entry
   ja: 名前付きエントリ
   zh-CN: 具名条目
+category.fandom.named_reference.named_entry.song_title:
+  en: song title
+  ja: 楽曲名
+  zh-CN: 歌曲名
+category.fandom.named_reference.named_entry.franchise_term:
+  en: franchise term
+  ja: 作品固有名詞
+  zh-CN: 作品专名
 category.fandom.named_reference.reference_type:
   en: reference type
   ja: 参照型
   zh-CN: 引用类型
+category.fandom.named_reference.reference_type.title_name:
+  en: title name
+  ja: 題名
+  zh-CN: 标题名称
+category.fandom.named_reference.reference_type.entity_name:
+  en: entity name
+  ja: 固有名
+  zh-CN: 实体名称
+category.fandom.named_reference.reference_type.natural_name:
+  en: natural name
+  ja: 自然名
+  zh-CN: 自然名称
+category.fandom.named_reference.visual_identity:
+  en: visual identity
+  ja: ロゴ・エンブレム
+  zh-CN: 标志与徽记
+category.fandom.named_reference.presentation_reference:
+  en: presentation reference
+  ja: 演出・表示参照
+  zh-CN: 展示形式引用
+category.fandom.named_reference.reference_marker:
+  en: reference marker
+  ja: 参照マーカー
+  zh-CN: 引用标记
+category.fandom.named_reference.phrase_reference:
+  en: phrase reference
+  ja: 定型句参照
+  zh-CN: 短语引用
 category.fandom.narrative_meta:
   en: narrative meta
   ja: 物語メタ
@@ -3370,10 +3402,6 @@ category.production.branding.brand_logo:
   en: brand logo
   ja: ブランドロゴ
   zh-CN: 品牌标志
-category.production.branding.emblem_logo:
-  en: emblem logo
-  ja: エンブレムロゴ
-  zh-CN: 会徽标志
 category.production.branding.label_reference:
   en: label reference
   ja: ラベルリファレンス
@@ -3438,10 +3466,6 @@ category.text.language:
   en: language
   ja: 言語
   zh-CN: 语言
-category.text.phrase_reference:
-  en: phrase reference
-  ja: 定型句引用
-  zh-CN: 短语引用
 category.text.symbol:
   en: symbol
   ja: シンボル
@@ -4817,7 +4841,7 @@ tag.against_fence:
 tag.against_fourth_wall:
   en: against fourth wall
   ja: 第四の壁に寄りかかる
-  zh-CN: 贴着画面边缘
+  zh-CN: 贴近镜头
 tag.against_glass:
   en: against glass
   ja: ガラス越し
@@ -4829,7 +4853,7 @@ tag.against_locker:
 tag.against_mirror:
   en: against mirror
   ja: 鏡に対して
-  zh-CN: 对着镜子
+  zh-CN: 贴镜拍摄
 tag.against_pillar:
   en: against pillar
   ja: 柱に対して
@@ -7681,7 +7705,7 @@ tag.arondight_(fate):
 tag.around_corner:
   en: around corner
   ja: 角を曲がったところ
-  zh-CN: 在拐角处
+  zh-CN: 拐角后视角
 tag.aroused:
   en: aroused
   ja: 被挑逗
@@ -10269,11 +10293,11 @@ tag.behind_another:
 tag.behind_curtains:
   en: behind curtains
   ja: カーテンの後ろ
-  zh-CN: 在窗帘后面
+  zh-CN: 帘后视角
 tag.behind_tree:
   en: behind tree
   ja: 木の後ろに
-  zh-CN: 在树后面
+  zh-CN: 树后视角
 tag.beige_background:
   en: beige background
   ja: ベージュ色の背景
@@ -18393,7 +18417,7 @@ tag.chest_harness:
 tag.chest_height:
   en: chest height
   ja: 胸の高さ
-  zh-CN: 胸部高度视角
+  zh-CN: 胸口高度视角
 tag.chest_jewel:
   en: chest jewel
   ja: 胸の宝石
@@ -25121,7 +25145,7 @@ tag.dollchestra:
 tag.dollhouse_view:
   en: dollhouse view
   ja: ドールハウスビュー
-  zh-CN: 玩具屋视图
+  zh-CN: 娃娃屋视角
 tag.dolphin:
   en: dolphin
   ja: 海豚
@@ -26317,7 +26341,7 @@ tag.dustpan:
 tag.dutch_angle:
   en: dutch angle
   ja: ダッチアングル
-  zh-CN: 倾斜构图
+  zh-CN: 倾斜镜头
 tag.dutch_braided_ponytail:
   en: dutch braided ponytail
   ja: オランダの編み込みポニーテール
@@ -27749,7 +27773,7 @@ tag.extendable_limbs:
 tag.extended_downblouse:
   en: extended downblouse
   ja: エクステンデッドダウンブラウス
-  zh-CN: 俯视领口
+  zh-CN: 深俯视领口
 tag.extended_magazine:
   en: extended magazine
   ja: 拡張マガジン
@@ -28317,7 +28341,7 @@ tag.facing_up:
 tag.facing_viewer:
   en: facing viewer
   ja: 正面向き
-  zh-CN: 面向镜头
+  zh-CN: 面向观者
 tag.factory:
   en: factory
   ja: 工場
@@ -29057,7 +29081,7 @@ tag.female_pervert:
 tag.female_pov:
   en: female pov
   ja: 女性主観視点
-  zh-CN: 女性视角
+  zh-CN: 女性主观视角
 tag.female_protagonist_(pokemon_go)_(cosplay):
   en: female protagonist (pokemon go) (cosplay)
   ja: 女主人公（ポケモンGO）（コスプレ）
@@ -29793,7 +29817,7 @@ tag.fishbowl_helmet:
 tag.fisheye:
   en: fisheye
   ja: 魚眼
-  zh-CN: 鱼眼透视
+  zh-CN: 鱼眼镜头
 tag.fishing:
   en: fishing
   ja: 釣り
@@ -31345,7 +31369,7 @@ tag.foreplay:
 tag.foreshortening:
   en: foreshortening
   ja: 短縮
-  zh-CN: 近大远小
+  zh-CN: 透视缩短
 tag.foreskin:
   en: foreskin
   ja: 包皮
@@ -32065,31 +32089,31 @@ tag.frogtie:
 tag.from_above:
   en: from above
   ja: ハイアングル
-  zh-CN: 俯视视角
+  zh-CN: 俯视
 tag.from_behind:
   en: from behind
   ja: 後ろ姿
-  zh-CN: 背面
+  zh-CN: 背后视角
 tag.from_below:
   en: from below
   ja: アオリ
-  zh-CN: 仰视视角
+  zh-CN: 仰视
 tag.from_hat_trick:
   en: from hat trick
   ja: ハットトリックから
-  zh-CN: 从帽子戏法
+  zh-CN: 帽子戏法
 tag.from_inside:
   en: from inside
   ja: 内側から
-  zh-CN: 从内部
+  zh-CN: 内部视角
 tag.from_outside:
   en: from outside
   ja: 从外向里
-  zh-CN: 从外部
+  zh-CN: 外部视角
 tag.from_side:
   en: from side
   ja: たかみよこがお
-  zh-CN: 侧面
+  zh-CN: 侧面视角
 tag.front-hook_bra:
   en: front-hook bra
   ja: フロントホックブラ
@@ -40193,7 +40217,7 @@ tag.high_tops:
 tag.high_up:
   en: high up
   ja: 高いところに
-  zh-CN: 高处
+  zh-CN: 高处视角
 tag.highleg:
   en: highleg
   ja: ハイレグ
@@ -44577,7 +44601,7 @@ tag.in_pot:
 tag.in_refrigerator:
   en: in refrigerator
   ja: 冷蔵庫の中
-  zh-CN: 在冰箱里
+  zh-CN: 冰箱内
 tag.in_sack:
   en: in sack
   ja: 袋の中
@@ -44605,7 +44629,7 @@ tag.in_tree:
 tag.in_trunk:
   en: in trunk
   ja: トランクの中
-  zh-CN: 在后备箱里
+  zh-CN: 后备箱内
 tag.in_washing_machine:
   en: in washing machine
   ja: 洗濯機の中
@@ -45325,7 +45349,7 @@ tag.island:
 tag.isometric:
   en: isometric
   ja: アイソメトリック
-  zh-CN: 等距
+  zh-CN: 等距视角
 tag.isopod:
   en: isopod
   ja: フナムシ
@@ -47365,7 +47389,7 @@ tag.knocking:
 tag.knolling:
   en: knolling
   ja: 知っている
-  zh-CN: 小丘
+  zh-CN: 平铺整理
 tag.knot:
   en: knot
   ja: 結び目
@@ -48229,7 +48253,7 @@ tag.lap_pillow_invitation:
 tag.lap_pov:
   en: lap pov
   ja: ラップハメ撮り
-  zh-CN: 圈视角
+  zh-CN: 膝上主观视角
 tag.lapel_chain:
   en: lapel chain
   ja: ラペルチェーン
@@ -50457,7 +50481,7 @@ tag.looking_over_eyewear:
 tag.looking_past_viewer:
   en: looking past viewer
   ja: 視聴者の前を見ている
-  zh-CN: 目光越过观众
+  zh-CN: 望向观者身后
 tag.looking_through_fingers:
   en: looking through fingers
   ja: 指を通して見る
@@ -53225,7 +53249,7 @@ tag.mirror_image:
 tag.mirror_selfie:
   en: mirror selfie
   ja: 鏡で自分撮り
-  zh-CN: 对着镜子自拍
+  zh-CN: 镜前自拍
 tag.mirror_twins:
   en: mirror twins
   ja: ミラーツイン
@@ -54981,7 +55005,7 @@ tag.multiple_piercings:
 tag.multiple_pov:
   en: multiple pov
   ja: 複数のハメ撮り
-  zh-CN: 多重视角
+  zh-CN: 多重主观视角
 tag.multiple_riders:
   en: multiple riders
   ja: 二人乗り
@@ -60697,7 +60721,7 @@ tag.partially_unbuttoned:
 tag.partially_underwater_shot:
   en: partially underwater shot
   ja: 部分的に水中撮影
-  zh-CN: 部分水下拍摄
+  zh-CN: 半水下镜头
 tag.partially_undressed:
   en: partially undressed
   ja: 部分的に服を脱いでいる
@@ -64749,7 +64773,7 @@ tag.pouty_lips:
 tag.pov:
   en: pov
   ja: 主観視点
-  zh-CN: 第一人称视角
+  zh-CN: 主观视角
 tag.pov_across_bed:
   en: pov across bed
   ja: ベッド越しにハメ撮り
@@ -64761,11 +64785,11 @@ tag.pov_across_table:
 tag.pov_adoring:
   en: pov adoring
   ja: ハメ撮り大好き
-  zh-CN: 视角崇拜
+  zh-CN: 被爱慕主观视角
 tag.pov_breasts:
   en: pov breasts
   ja: ハメ撮りの胸
-  zh-CN: 胸部主观视角
+  zh-CN: 胸前主观视角
 tag.pov_bullying:
   en: pov bullying
   ja: ハメ撮りいじめ
@@ -64781,7 +64805,7 @@ tag.pov_cheek_warming_(meme):
 tag.pov_crotch:
   en: pov crotch
   ja: 主観股間
-  zh-CN: 主观胯部视角
+  zh-CN: 胯部主观视角
 tag.pov_dating:
   en: pov dating
   ja: ハメ撮りデート
@@ -64793,7 +64817,7 @@ tag.pov_doorway:
 tag.pov_hands:
   en: pov hands
   ja: 主観の手
-  zh-CN: 主观手部视角
+  zh-CN: 手部主观视角
 tag.pov_legs:
   en: pov legs
   ja: ハメ撮り脚
@@ -64801,15 +64825,15 @@ tag.pov_legs:
 tag.pov_peephole:
   en: pov peephole
   ja: ハメ撮りのぞき穴
-  zh-CN: 窥视孔主观视角
+  zh-CN: 猫眼主观视角
 tag.pov_shadow:
   en: pov shadow
   ja: ハメ撮りシャドウ
-  zh-CN: 影子主观视角
+  zh-CN: 观者投影视角
 tag.pov_stomped:
   en: pov stomped
   ja: ハメ撮り踏みつけ
-  zh-CN: 视角踩踏
+  zh-CN: 被踩踏主观视角
 tag.poverty:
   en: poverty
   ja: 貧困
@@ -68597,7 +68621,7 @@ tag.refrigerator:
 tag.refrigerator_interior:
   en: refrigerator interior
   ja: 冷蔵庫の内部
-  zh-CN: 冰箱内视角
+  zh-CN: 冰箱内部视角
 tag.refrigerator_magnet:
   en: refrigerator magnet
   ja: 冷蔵庫用マグネット
@@ -74133,7 +74157,7 @@ tag.sidewalk:
 tag.sideways:
   en: sideways
   ja: 横向き
-  zh-CN: 侧身
+  zh-CN: 侧转画面
 tag.sideways_glance:
   en: sideways glance
   ja: 流し目
@@ -79173,7 +79197,7 @@ tag.straddling_paizuri:
 tag.straight-on:
   en: straight-on
   ja: 正面
-  zh-CN: 正面
+  zh-CN: 正对视角
 tag.straight_hair:
   en: straight hair
   ja: 直毛
@@ -81585,7 +81609,7 @@ tag.takeout_container:
 tag.taker_pov:
   en: taker pov
   ja: 正面向き前傾ペニス
-  zh-CN: 接受者视角
+  zh-CN: 接受方主观视角
 tag.takeuchi_takashi_(style):
   en: takeuchi takashi (style)
   ja: 武内崇
@@ -83145,7 +83169,7 @@ tag.three_of_spades:
 tag.three_quarter_profile:
   en: three quarter profile
   ja: 四半期の 3 つのプロフィール
-  zh-CN: 四分之三轮廓
+  zh-CN: 四分之三侧面像
 tag.three_quarter_view:
   en: three quarter view
   ja: 4分の3ビュー
@@ -83185,7 +83209,7 @@ tag.through_clothes:
 tag.through_ground:
   en: through ground
   ja: 地面を通して
-  zh-CN: 透过地面
+  zh-CN: 透地视角
 tag.through_medium:
   en: through medium
   ja: 媒体を通して
@@ -86569,15 +86593,15 @@ tag.under_kotatsu:
 tag.under_shot:
   en: under shot
   ja: アンダーショット
-  zh-CN: 仰拍
+  zh-CN: 胯下仰拍
 tag.under_skirt:
   en: under skirt
   ja: スカート捕食
-  zh-CN: 裙子下
+  zh-CN: 裙底视角
 tag.under_table:
   en: under table
   ja: 桌下
-  zh-CN: 桌子下
+  zh-CN: 桌下视角
 tag.under_tree:
   en: under tree
   ja: 木の下で
@@ -87681,7 +87705,7 @@ tag.van:
 tag.vanishing_point:
   en: vanishing point
   ja: 消失点
-  zh-CN: 消失点
+  zh-CN: 消失点透视
 tag.vanity_table:
   en: vanity table
   ja: 化粧台
@@ -88221,7 +88245,7 @@ tag.vietnamese_text:
 tag.view_between_legs:
   en: view between legs
   ja: アーチフェラ
-  zh-CN: 股间视角
+  zh-CN: 腿间取景
 tag.viewer_holding_leash:
   en: viewer holding leash
   ja: リードを保持している視聴者
@@ -88229,7 +88253,7 @@ tag.viewer_holding_leash:
 tag.viewer_holding_phone:
   en: viewer holding phone
   ja: 携帯電話を持つ視聴者
-  zh-CN: 观众拿着手机
+  zh-CN: 手持手机主观视角
 tag.viewer_on_leash:
   en: viewer on leash
   ja: ひもにつながれた視聴者
@@ -91149,7 +91173,7 @@ tag.worm:
 tag.worm's_eye_view:
   en: worm's eye view
   ja: 虫の目で見た図
-  zh-CN: 虫眼视图
+  zh-CN: 虫眼视角
 tag.wormhole:
   en: wormhole
   ja: ワームホール

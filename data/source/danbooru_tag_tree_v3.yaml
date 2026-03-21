@@ -2557,121 +2557,6 @@ character:
       - astronaut
       - clothed_robot
       - armored_trooper
-      franchise:
-      - night_elf_(warcraft)
-      - angel_(evangelion)
-      - blood_elf_(warcraft)
-      - pin_(hollow_knight)
-      - heartless_(kingdom_hearts)
-      - hannya_(arknights)
-      - space_marine
-      - clone_trooper
-      - persocom_(chobits)
-      - shiny_pokemon
-      - draph
-      - miqo'te
-      - mega_pokemon
-      - bangboo_(zenless_zone_zero)
-      - hyur
-      - youkai_(youkai_watch)
-      - harvin
-      - lalafell
-      - decepticon
-      - blake_bloom_(wuthering_waves)
-      - mithra_(ff11)
-      - zora
-      - gerudo
-      - netnavi
-      - saiyan
-      - sheikah
-      - sailor_senshi
-      - arrancar
-      - elvaan
-      - inner_senshi
-      - hume
-      - titans_(gundam)
-      - laguz_(fire_emblem)
-      - chaos_(warhammer)
-      - ethereal_(zenless_zone_zero)
-      - togruta
-      - simulacrum_(titanfall)
-      - chao_(sonic)
-      - gold_saint
-      - roegadyn
-      - tarutaru
-      - jedi
-      - rider-tan
-      - spartan_(halo)
-      - namekian
-      - raana_the_cat
-      - companion/af
-      - dancer_(fire_emblem:_three_houses)
-      - wonderlands_x_showtime_(project_sekai)
-      - hongyuan_(identity)_(project_moon)
-      - colorful_festival_(project_sekai)
-      - meltrandi
-      - sith
-      - hrothgar
-      - alpha_pokemon
-      - outer_senshi
-      - troll_(homestuck)
-      - stormtrooper
-      - mimicry_(e.g.o)
-      - origami_bird_(honkai:_star_rail)
-      - human_(warcraft)
-      - christmas_nightmare_(e.g.o)
-      - distortion_(project_moon)
-      - charisma_guard
-      - gith_(d&d)
-      - noah_(d.gray-man)
-      - kokiri
-      - team_yell
-      - team_7_(naruto)
-      - ring_(identity)_(project_moon)
-      - dragonborn_(d&d)
-      - mandalorian
-      - zonai
-      - golem_(d.gray-man)
-      - omnic
-      - guardian_chara
-      - dromas_(honkai:_star_rail)
-      - id_(fate/grand_order)
-      - the_monkey
-      - garmentmaker_(honkai:_star_rail)
-      - pixie_(ff14)
-      - killkiss_(bang_dream!)
-      - gem_(azur_lane)
-      - dark_cure_(yes!_precure_5)
-      - maximal
-      - caved_(touhou)
-      - horn_(e.g.o)
-      - proof_(love_live!)
-      - iterator_(rain_world)
-      - bibi_(love_live!)
-      - hollow_(bleach)
-      - phantometal_(paradox_live)
-      - kirino_ranmaru_(mixi_max_jeanne_d'arc)
-      - k_corp._(identity)_(project_moon)
-      - safeguard_(blame!)
-      - kalar_(race)
-      - quarian
-      - rapture_(nikke)
-      - deepness_(love_live!)
-      - everlasting_(e.g.o)
-      - militaria_(nikke)
-      - himitsu_no_valentine_daisakusen!_(project_sekai)
-      - ags_(last_origin)
-      - heartbreak_(futsuu_no_keion-bu)
-      - typhoon_(kamen_rider)
-      - predacon
-      - thumb_(identity)_(project_moon)
-      - r.b._(identity)_(project_moon)
-      - mephistopheles_(project_moon)
-      - g'ie_(hundred_line)
-      - goddess_(nikke)
-      - molar_boatworks_(identity)_(project_moon)
-      - disguised_pyra_(xenoblade)
-      - yordle
     role:
       occupation:
       - cheerleader
@@ -2956,63 +2841,6 @@ character:
     - french_army
     - republic_of_korea_army
     - people's_liberation_army_air_force
-    franchise:
-    - sanbaka_(nijisanji)
-    - amazons_quartet
-    - holofive
-    - group_(toaru)
-    - team_rocket
-    - starter_pokemon_trio
-    - v_sisters
-    - chiester_sisters
-    - nigekiri_sisters_(umamusume)
-    - mejiro_family_(umamusume)
-    - infection_monitor_(arknights)
-    - gourmet_guild_(princess_connect!)
-    - knights_of_the_round_table_(fate)
-    - faerie_knights_(fate)
-    - straw_hat_pirates
-    - noctchill_(idolmaster)
-    - new_generations_(idolmaster)
-    - triad_primus_(idolmaster)
-    - illumination_stars_(idolmaster)
-    - concept_gyarus_(idolmaster)
-    - cosmic_&_funny_(idolmaster)
-    - individuals_(idolmaster)
-    - jupiter_(idolmaster)
-    - beyond_the_bluesky_(idolmaster)
-    - ave_mujica_(bang_dream!)
-    - paradeus
-    - sos_brigade
-    - s.e.e.s
-    - chaldea_security_organization
-    - hololive_gamers
-    - nepolabo
-    - make-up_work_club_(blue_archive)
-    - prefect_team_(blue_archive)
-    - red_ribbon_army
-    - holox
-    - team_plasma
-    - team_flare
-    - counters_(nikke)
-    - lazulight
-    - justice_task_force_(blue_archive)
-    - vivid_bad_squad_(project_sekai)
-    - pokemon_team
-    - golden_generation_(umamusume)
-    - stay_gold_clan_(umamusume)
-    - innovators_(gundam_00)
-    - kcco_(girls'_frontline)
-    - afterglow_(bang_dream!)
-    - fox_platoon_(blue_archive)
-    - gourmet_research_society_(blue_archive)
-    - crossbone_vanguard
-    - trickstar_(ensemble_stars!)
-    - b-komachi_(new)
-    - time_patrol_(dragon_ball)
-    - turks_(ff7)
-    - veritas_(blue_archive)
-    - death_guard
 dynamics:
   pose:
     whole_body:
@@ -12433,7 +12261,6 @@ apparel:
     other:
       costume_change:
       - alternate_costume
-      - official_alternate_costume
       - oversized_clothes
       - borrowed_clothes
       - undersized_clothes
@@ -20923,7 +20750,6 @@ text:
   text_content:
     dialogue_meta:
     - wall_of_text
-    - source_quote
     - mirrored_text
     - caption
     - foreground_text
@@ -20977,28 +20803,6 @@ text:
     - happy_halloween
     - happy_valentine
     - virtual_graduation_commemoration
-  phrase_reference:
-  - kotoyoro
-  - nanodesu_(phrase)
-  - a_(phrase)
-  - poi
-  - sugoi_dekai
-  - tsuki_ni_kawatte_oshioki_yo
-  - shitty_admiral_(phrase)
-  - ayaya~
-  - myon_(phrase)
-  - the_end_(phrase)
-  - ze_(phrase)
-  - horosho
-  - ko~n
-  - koa_(phrase)
-  - make_a_contract
-  - zako_(phrase)
-  - blacked_(phrase)
-  - are_you_my_master
-  - chesto_(phrase)
-  - burning_love_(phrase)
-  - rest_in_peace_(phrase)
   symbol:
     heart:
     - heart
@@ -21289,7 +21093,6 @@ production:
   - artist_name
   - signature
   - watermark
-  - copyright_notice
   - sample_watermark
   - weibo_watermark
   - name_tag
@@ -21302,7 +21105,6 @@ production:
   - oda_uri
   - character_signature
   - credits
-  - artist_self-reference
   - miyoushe_watermark
   - character_watermark
   - artist's_hand_in_frame
@@ -21355,7 +21157,6 @@ production:
     - patreon_logo
     - weibo_logo
     - twitter_logo
-    - copyright_logo
     - instagram_logo
     - pixiv_logo
     - twitter_x_logo
@@ -21365,20 +21166,14 @@ production:
     - youtube_logo
     - subscribestar_logo
     - fanbox_logo
-    - millennium_science_school_logo
     - school_emblem
-    - gehenna_academy_logo
     - company_logo
-    - penguin_logistics_logo
     - tiktok_logo
-    - griffin_&_kryuger_logo
-    - superman_logo
     - gumroad_logo
     - tumblr_logo
     - nasa_logo
     - character_logo
     - twitch_logo
-    - red_winter_federal_academy_logo
     - playstation_logo
     - artstation_logo
     - bilibili_logo
@@ -21389,49 +21184,6 @@ production:
     - xiaohongshu_logo
     - windows_logo
     - itch.io_logo
-    - chaldea_logo
-    emblem_logo:
-    - rhodes_island_logo_(arknights)
-    - survey_corps_(emblem)
-    - st._gloriana's_(emblem)
-    - kamisato_clan_(emblem)
-    - trinity_general_school_logo
-    - rhine_lab_logo
-    - training_corps_(emblem)
-    - ooarai_(emblem)
-    - bc_freedom_(emblem)
-    - sakura_empire_(emblem)
-    - iron_blood_(emblem)
-    - abydos_high_school_logo
-    - reunion_logo_(arknights)
-    - kessoku_band_logo
-    - kingdom_of_kazimierz_logo
-    - kjerag_logo
-    - chi-hatan_(emblem)
-    - fatui_logo
-    - sardegna_empire_(emblem)
-    - uva_academy_(emblem)
-    - ursus_empire_logo
-    - northern_parliament_(emblem)
-    - vichya_dominion_(emblem)
-    - iris_libre_(emblem)
-    - overwatch_(logo)
-    - super_smash_bros._logo
-    - fairy_tail_logo
-    - sangvis_ferri
-    - zeon
-    - ho-kago_tea_time
-    - earth_federation
-    - neo_zeon
-    - aeug
-    - nerv
-    - gryffindor
-    - u.n._spacy
-    - slytherin
-    - wandenreich
-    - straw_hats_jolly_roger
-    - heart_pirates_jolly_roger
-    - whitebeard_pirates_jolly_roger
     label_reference:
     - year_of_the_rabbit
     - year_of_the_tiger
@@ -21449,22 +21201,10 @@ production:
     - snapchat
     - album_name
     - alpha_signature
-    - pravda_(emblem)
-    - eagle_union_(emblem)
-    - team_star
-    - team_aqua
-    - earth_federation_space_forces
     - arena_(company)
-    - team_galactic
-    - kuromorimine_(emblem)
     - christian_louboutin_(brand)
     - sponsor
-    - japanese_tankery_league_(emblem)
-    - royal_navy_emblem_(azur_lane)
     - suzuki_(company)
-    - anzio_(emblem)
-    - imperium_of_man
-    - saunders_(emblem)
     - nose_art
     - gibson_brands_inc
     - akg
@@ -21576,7 +21316,6 @@ production:
     - sticker_(medium)
     - mousepad_(medium)
     - movie_poster_(medium)
-    - akira_movie_poster
     - clear_file_(medium)
     screenshot:
     - fake_screenshot
@@ -21615,7 +21354,6 @@ production:
     - text-only_page
     - variations
     - livestream
-    - twitter_strip_game
     - multiple_drawing_challenge
     - circle_cut
     - before_and_after
@@ -21645,7 +21383,6 @@ production:
     - omake
     - character_sticker
     - news
-    - ttgl_eyecatch
     - danmaku_comments
     - choice
     - blank_page
@@ -21668,7 +21405,6 @@ production:
     - video_thumbnail
     - science_babies
     - buffering
-    - recruitment_(blue_archive)
     - information_sheet
     - super_chat
     - episode_title
@@ -21682,7 +21418,6 @@ production:
     - search_bar
     - sprite_sheet
     - idle_animation
-    - srw_battle_screen
     - striped_border
     - audio_visualizer
     - waveform
@@ -21701,7 +21436,6 @@ production:
     - multiple_forms
     - comparison
     - sequential
-    - official_art_inset
   art_style:
     outline_line:
     - outline
@@ -21757,7 +21491,6 @@ production:
     - chibi
     - sketch
     - chibi_only
-    - style_parody
     - realistic
     - oekaki
     - 3d
@@ -21835,7 +21568,6 @@ production:
     - cathead
     - sliced
     - furry_and_humanization
-    - multiple_style_parody
     - itano_circus
     - stylized_blood
     - street_snap
@@ -21946,6 +21678,7 @@ fandom:
     - gaze_on_me!_outfit_(umamusume)
     - black_gothic_dress_(idolmaster)
     - dancer's_costume_(dq)
+    - official_alternate_costume
     - sanbaka_anniversary_outfit
     - slave_gear_(tsmg_nao!)
     - sunshower_(e.g.o)
@@ -21994,6 +21727,121 @@ fandom:
     - akg_k-series_headphones
     - humagear_headphones
     - gym_leader_badge
+  character_reference:
+  - night_elf_(warcraft)
+  - angel_(evangelion)
+  - blood_elf_(warcraft)
+  - pin_(hollow_knight)
+  - heartless_(kingdom_hearts)
+  - hannya_(arknights)
+  - space_marine
+  - clone_trooper
+  - persocom_(chobits)
+  - shiny_pokemon
+  - draph
+  - miqo'te
+  - mega_pokemon
+  - bangboo_(zenless_zone_zero)
+  - hyur
+  - youkai_(youkai_watch)
+  - harvin
+  - lalafell
+  - decepticon
+  - blake_bloom_(wuthering_waves)
+  - mithra_(ff11)
+  - zora
+  - gerudo
+  - netnavi
+  - saiyan
+  - sheikah
+  - sailor_senshi
+  - arrancar
+  - elvaan
+  - inner_senshi
+  - hume
+  - titans_(gundam)
+  - laguz_(fire_emblem)
+  - chaos_(warhammer)
+  - ethereal_(zenless_zone_zero)
+  - togruta
+  - simulacrum_(titanfall)
+  - chao_(sonic)
+  - gold_saint
+  - roegadyn
+  - tarutaru
+  - jedi
+  - rider-tan
+  - spartan_(halo)
+  - namekian
+  - raana_the_cat
+  - companion/af
+  - dancer_(fire_emblem:_three_houses)
+  - wonderlands_x_showtime_(project_sekai)
+  - hongyuan_(identity)_(project_moon)
+  - colorful_festival_(project_sekai)
+  - meltrandi
+  - sith
+  - hrothgar
+  - alpha_pokemon
+  - outer_senshi
+  - troll_(homestuck)
+  - stormtrooper
+  - mimicry_(e.g.o)
+  - origami_bird_(honkai:_star_rail)
+  - human_(warcraft)
+  - christmas_nightmare_(e.g.o)
+  - distortion_(project_moon)
+  - charisma_guard
+  - gith_(d&d)
+  - noah_(d.gray-man)
+  - kokiri
+  - team_yell
+  - team_7_(naruto)
+  - ring_(identity)_(project_moon)
+  - dragonborn_(d&d)
+  - mandalorian
+  - zonai
+  - golem_(d.gray-man)
+  - omnic
+  - guardian_chara
+  - dromas_(honkai:_star_rail)
+  - id_(fate/grand_order)
+  - the_monkey
+  - garmentmaker_(honkai:_star_rail)
+  - pixie_(ff14)
+  - killkiss_(bang_dream!)
+  - gem_(azur_lane)
+  - dark_cure_(yes!_precure_5)
+  - maximal
+  - caved_(touhou)
+  - horn_(e.g.o)
+  - proof_(love_live!)
+  - iterator_(rain_world)
+  - bibi_(love_live!)
+  - hollow_(bleach)
+  - phantometal_(paradox_live)
+  - kirino_ranmaru_(mixi_max_jeanne_d'arc)
+  - k_corp._(identity)_(project_moon)
+  - safeguard_(blame!)
+  - kalar_(race)
+  - quarian
+  - rapture_(nikke)
+  - deepness_(love_live!)
+  - everlasting_(e.g.o)
+  - militaria_(nikke)
+  - himitsu_no_valentine_daisakusen!_(project_sekai)
+  - ags_(last_origin)
+  - heartbreak_(futsuu_no_keion-bu)
+  - typhoon_(kamen_rider)
+  - predacon
+  - thumb_(identity)_(project_moon)
+  - r.b._(identity)_(project_moon)
+  - mephistopheles_(project_moon)
+  - g'ie_(hundred_line)
+  - goddess_(nikke)
+  - molar_boatworks_(identity)_(project_moon)
+  - disguised_pyra_(xenoblade)
+  - yordle
   franchise_meta:
     general:
     - remodel_(kantai_collection)
@@ -22012,6 +21860,7 @@ fandom:
     - legendary_super_saiyan
     - ultra_instinct
     - original_remodel_(kantai_collection)
+    - official_art_inset
     franchise_meta_other:
     - dream_soul
     - sukusuku_hakutaku
@@ -22263,6 +22112,62 @@ fandom:
   - tristar_vision_(idolmaster)
   - nightmare_blood_(idolmaster)
   - k/da_(league_of_legends)
+  - sanbaka_(nijisanji)
+  - amazons_quartet
+  - holofive
+  - group_(toaru)
+  - team_rocket
+  - starter_pokemon_trio
+  - v_sisters
+  - chiester_sisters
+  - nigekiri_sisters_(umamusume)
+  - mejiro_family_(umamusume)
+  - infection_monitor_(arknights)
+  - gourmet_guild_(princess_connect!)
+  - knights_of_the_round_table_(fate)
+  - faerie_knights_(fate)
+  - straw_hat_pirates
+  - noctchill_(idolmaster)
+  - new_generations_(idolmaster)
+  - triad_primus_(idolmaster)
+  - illumination_stars_(idolmaster)
+  - concept_gyarus_(idolmaster)
+  - cosmic_&_funny_(idolmaster)
+  - individuals_(idolmaster)
+  - jupiter_(idolmaster)
+  - beyond_the_bluesky_(idolmaster)
+  - ave_mujica_(bang_dream!)
+  - paradeus
+  - sos_brigade
+  - s.e.e.s
+  - chaldea_security_organization
+  - hololive_gamers
+  - nepolabo
+  - make-up_work_club_(blue_archive)
+  - prefect_team_(blue_archive)
+  - red_ribbon_army
+  - holox
+  - team_plasma
+  - team_flare
+  - counters_(nikke)
+  - lazulight
+  - justice_task_force_(blue_archive)
+  - vivid_bad_squad_(project_sekai)
+  - pokemon_team
+  - golden_generation_(umamusume)
+  - stay_gold_clan_(umamusume)
+  - innovators_(gundam_00)
+  - kcco_(girls'_frontline)
+  - afterglow_(bang_dream!)
+  - fox_platoon_(blue_archive)
+  - gourmet_research_society_(blue_archive)
+  - crossbone_vanguard
+  - trickstar_(ensemble_stars!)
+  - b-komachi_(new)
+  - time_patrol_(dragon_ball)
+  - turks_(ff7)
+  - veritas_(blue_archive)
+  - death_guard
   challenge_event:
   - one-hour_drawing_challenge
   - koishi_day
@@ -22915,6 +22820,8 @@ fandom:
     - fusion
     - multiple_fusions
     - multiple_crossover
+    - style_parody
+    - multiple_style_parody
     - fine_art_parody
     - logo_parody
     - title_parody
@@ -23099,139 +23006,238 @@ fandom:
     - satire
   named_reference:
     reference_type:
-    - character_name
-    - copyright_name
-    - song_name
-    - plant_name
-    - ship_name
-    - scientific_name
-    - animal_name
-    - place_name
+      title_name:
+      - copyright_name
+      - song_name
+      entity_name:
+      - character_name
+      - place_name
+      - ship_name
+      natural_name:
+      - plant_name
+      - scientific_name
+      - animal_name
+    visual_identity:
+    - millennium_science_school_logo
+    - gehenna_academy_logo
+    - penguin_logistics_logo
+    - griffin_&_kryuger_logo
+    - superman_logo
+    - red_winter_federal_academy_logo
+    - chaldea_logo
+    - rhodes_island_logo_(arknights)
+    - survey_corps_(emblem)
+    - st._gloriana's_(emblem)
+    - kamisato_clan_(emblem)
+    - trinity_general_school_logo
+    - rhine_lab_logo
+    - training_corps_(emblem)
+    - ooarai_(emblem)
+    - bc_freedom_(emblem)
+    - sakura_empire_(emblem)
+    - iron_blood_(emblem)
+    - abydos_high_school_logo
+    - reunion_logo_(arknights)
+    - kessoku_band_logo
+    - kingdom_of_kazimierz_logo
+    - kjerag_logo
+    - chi-hatan_(emblem)
+    - fatui_logo
+    - sardegna_empire_(emblem)
+    - uva_academy_(emblem)
+    - ursus_empire_logo
+    - northern_parliament_(emblem)
+    - vichya_dominion_(emblem)
+    - iris_libre_(emblem)
+    - overwatch_(logo)
+    - super_smash_bros._logo
+    - fairy_tail_logo
+    - sangvis_ferri
+    - zeon
+    - ho-kago_tea_time
+    - earth_federation
+    - neo_zeon
+    - aeug
+    - nerv
+    - gryffindor
+    - u.n._spacy
+    - slytherin
+    - wandenreich
+    - straw_hats_jolly_roger
+    - heart_pirates_jolly_roger
+    - whitebeard_pirates_jolly_roger
+    - pravda_(emblem)
+    - eagle_union_(emblem)
+    - team_star
+    - team_aqua
+    - earth_federation_space_forces
+    - team_galactic
+    - kuromorimine_(emblem)
+    - japanese_tankery_league_(emblem)
+    - royal_navy_emblem_(azur_lane)
+    - anzio_(emblem)
+    - imperium_of_man
+    - saunders_(emblem)
+    presentation_reference:
+    - akira_movie_poster
+    - ttgl_eyecatch
+    - recruitment_(blue_archive)
+    - twitter_strip_game
+    - srw_battle_screen
+    reference_marker:
+    - copyright_notice
+    - copyright_logo
+    - artist_self-reference
+    phrase_reference:
+    - source_quote
+    - kotoyoro
+    - nanodesu_(phrase)
+    - a_(phrase)
+    - poi
+    - sugoi_dekai
+    - tsuki_ni_kawatte_oshioki_yo
+    - shitty_admiral_(phrase)
+    - ayaya~
+    - myon_(phrase)
+    - the_end_(phrase)
+    - ze_(phrase)
+    - horosho
+    - ko~n
+    - koa_(phrase)
+    - make_a_contract
+    - zako_(phrase)
+    - blacked_(phrase)
+    - are_you_my_master
+    - chesto_(phrase)
+    - burning_love_(phrase)
+    - rest_in_peace_(phrase)
     named_entry:
-    - mami_mogu_mogu
-    - bokura_wa_ima_no_naka_de
-    - natsuiro_egao_de_1_2_jump!
-    - kimi_to_semi_blue_(idolmaster)
-    - seikan_hikou
-    - dream_believers
-    - meni_shuki_rush-sshu!
-    - emotional_engine_-_full_drive
-    - mogyutto_"love"_de_sekkin_chuu!
-    - sore_wa_bokutachi_no_kiseki
-    - snow_halation
-    - kuuhaku_to_catharsis
-    - ichininmae_no_lady
-    - my_dear_vampire_(idolmaster)
-    - starpiece_memories_(idolmaster)
-    - rough_time_school_(idolmaster)
-    - kawaii_boku_to_142's_(idolmaster)
-    - kankaku_shadan
-    - wonderful_rush
-    - negai_wa_itsuka_asa_wo_koete_(project_sekai)
-    - motteke!_serafuku
-    - majo_shuukai_de_aimashou
-    - shikai_no_sumi_kuchiru_oto
-    - holiday_holiday_(love_live!)
-    - bokura_no_live_kimi_to_no_life
-    - million_dreams_(idolmaster)
-    - cake_cat_(honkai:_star_rail)
-    - koi_ni_naritai_aquarium
-    - amphoreus_(honkai:_star_rail)
-    - beyond_the_nobles_(idolmaster)
-    - tracen_academy
-    - korekara_no_someday
-    - kira-kira_sensation!
-    - kimi_no_kokoro_wa_kagayaiteru_kai?
-    - as_i've_written_(honkai:_star_rail)
-    - yume_no_tobira
-    - pikapikapop_(idolmaster)
-    - kimi_to_boku_no_mirai
-    - star!!_(idolmaster)
-    - pure_white_memories_(idolmaster)
-    - do!_do!_do!_(love_live!)
-    - boku_wa_sonzai_shiteinakatta
-    - ai_scream!_(love_live!)
-    - bad_apple!!
-    - no_brand_girls
-    - ryouran!_victory_road_(love_live!)
-    - koukei_(idolmaster)
-    - keikyoku_no_machi_wa_doko_e_(project_sekai)
-    - close_game/offline_(project_sekai)
-    - love_wing_bell
-    - bloom_festival_(project_sekai)
-    - singing!_(k-on!)
-    - angelic_angel
-    - kaitou_shinshi_no_harahara!?_white_day_(project_sekai)
-    - happy_mille-feuille_(idolmaster)
-    - whip_the_wimp_girl!!_(project_sekai)
-    - mitsuketa_keshiki_tazusaete
-    - chase!_(love_live!)
-    - cutie_panther
-    - shikairo_days
-    - dancing_stars_on_me!
-    - seizon_honnou_valkyria_(idolmaster)
-    - komaniya_express_(genshin_impact)
-    - doukyo's
-    - chocolate_lady_no_karasawagi
-    - sunny_day_song
-    - boku_no_ashiato_kimi_no_yukusaki_(project_sekai)
-    - palace_of_dragon_(idolmaster)
-    - dive!_(love_live!)
-    - muchourin
-    - adrenaline!!!
-    - sekai_wo_kakumei_suru_chikara_wo
-    - your_present_is_me
-    - music_s.t.a.r.t!!
-    - primrose_field_illusion
-    - genkai_made_pom_pon!!
-    - pool_party_(league_of_legends)
-    - international_precure
-    - it's_just_not_right!
-    - aozora_jumping_heart
-    - orel_cruise
-    - hakuchu_a_la_mode
-    - tracen_ondo_(song)
-    - suisai_sekai
-    - area_15
-    - beyond_the_vibes_(idolmaster)
-    - fighting_my_way_(idolmaster)
-    - sunfaded_(idolmaster)
-    - high_schoolmate_(idolmaster)
-    - punkish_gothic_(idolmaster)
-    - faewish_sprite
-    - bokutachi_no_seizon_tousou_(project_sekai)
-    - starting_brighty_(idolmaster)
-    - contrast_(idolmaster)
-    - candle_no_kaori_wa_omoide_to_tomo_ni_(project_sekai)
-    - suiten_nikkou_amaterasu_yanoshisu_ishi
-    - hajime_(idolmaster)
-    - shocking_party
-    - sunset_nostalgie_(idolmaster)
-    - hajimari_wa_kimi_no_sora
-    - chase_my_ideal_idol!_(project_sekai)
-    - holiday_holiday_(tenko)_(love_live!)
-    - sexy_guilty_(idolmaster)
-    - ladybug/beauty_(love_live!)
-    - dearly_stars_(idolmaster)
-    - hyakkaryouran_(blue_archive)
-    - sekaiichi_kawaii_watashi_(idolmaster)
-    - heartsteel_(league_of_legends)
-    - sparkling_daydream
-    - i_do_me!_(love_live!)
-    - ichigo_ichie_na_hyakki_yagyou!?_(project_sekai)
-    - link_to_the_future_(love_live!)
-    - bokutachi_wa_hitotsu_no_hikari
-    - hasu_no_sanrenka
-    - sugar_song_and_bitter_step
-    - sakura_photograph_(idolmaster)
-    - kirara_jump
-    - lilistia
-    - relax_teatime_(project_sekai)
-    - rise_up_high!_(love_live!)
-    - the_vivid_old_tale_(project_sekai)
-    - happy_party_train
-    - kono_matsuri_ni_yuuyami_iro_mo_(project_sekai)
-    - jaws
-    - bloody_stream
-    - mira-cra_park!
-    - starry_sky_bright_(idolmaster)
+      song_title:
+      - mami_mogu_mogu
+      - bokura_wa_ima_no_naka_de
+      - natsuiro_egao_de_1_2_jump!
+      - kimi_to_semi_blue_(idolmaster)
+      - seikan_hikou
+      - dream_believers
+      - meni_shuki_rush-sshu!
+      - emotional_engine_-_full_drive
+      - mogyutto_"love"_de_sekkin_chuu!
+      - sore_wa_bokutachi_no_kiseki
+      - snow_halation
+      - kuuhaku_to_catharsis
+      - ichininmae_no_lady
+      - my_dear_vampire_(idolmaster)
+      - starpiece_memories_(idolmaster)
+      - rough_time_school_(idolmaster)
+      - kawaii_boku_to_142's_(idolmaster)
+      - kankaku_shadan
+      - wonderful_rush
+      - negai_wa_itsuka_asa_wo_koete_(project_sekai)
+      - motteke!_serafuku
+      - majo_shuukai_de_aimashou
+      - shikai_no_sumi_kuchiru_oto
+      - holiday_holiday_(love_live!)
+      - bokura_no_live_kimi_to_no_life
+      - million_dreams_(idolmaster)
+      - koi_ni_naritai_aquarium
+      - beyond_the_nobles_(idolmaster)
+      - korekara_no_someday
+      - kira-kira_sensation!
+      - kimi_no_kokoro_wa_kagayaiteru_kai?
+      - as_i've_written_(honkai:_star_rail)
+      - yume_no_tobira
+      - pikapikapop_(idolmaster)
+      - kimi_to_boku_no_mirai
+      - star!!_(idolmaster)
+      - pure_white_memories_(idolmaster)
+      - do!_do!_do!_(love_live!)
+      - boku_wa_sonzai_shiteinakatta
+      - ai_scream!_(love_live!)
+      - bad_apple!!
+      - no_brand_girls
+      - ryouran!_victory_road_(love_live!)
+      - koukei_(idolmaster)
+      - keikyoku_no_machi_wa_doko_e_(project_sekai)
+      - close_game/offline_(project_sekai)
+      - love_wing_bell
+      - bloom_festival_(project_sekai)
+      - singing!_(k-on!)
+      - angelic_angel
+      - kaitou_shinshi_no_harahara!?_white_day_(project_sekai)
+      - happy_mille-feuille_(idolmaster)
+      - whip_the_wimp_girl!!_(project_sekai)
+      - mitsuketa_keshiki_tazusaete
+      - chase!_(love_live!)
+      - cutie_panther
+      - shikairo_days
+      - dancing_stars_on_me!
+      - seizon_honnou_valkyria_(idolmaster)
+      - chocolate_lady_no_karasawagi
+      - sunny_day_song
+      - boku_no_ashiato_kimi_no_yukusaki_(project_sekai)
+      - palace_of_dragon_(idolmaster)
+      - dive!_(love_live!)
+      - muchourin
+      - adrenaline!!!
+      - sekai_wo_kakumei_suru_chikara_wo
+      - your_present_is_me
+      - music_s.t.a.r.t!!
+      - primrose_field_illusion
+      - genkai_made_pom_pon!!
+      - it's_just_not_right!
+      - aozora_jumping_heart
+      - hakuchu_a_la_mode
+      - tracen_ondo_(song)
+      - suisai_sekai
+      - beyond_the_vibes_(idolmaster)
+      - fighting_my_way_(idolmaster)
+      - sunfaded_(idolmaster)
+      - high_schoolmate_(idolmaster)
+      - punkish_gothic_(idolmaster)
+      - bokutachi_no_seizon_tousou_(project_sekai)
+      - starting_brighty_(idolmaster)
+      - contrast_(idolmaster)
+      - candle_no_kaori_wa_omoide_to_tomo_ni_(project_sekai)
+      - suiten_nikkou_amaterasu_yanoshisu_ishi
+      - hajime_(idolmaster)
+      - shocking_party
+      - sunset_nostalgie_(idolmaster)
+      - hajimari_wa_kimi_no_sora
+      - chase_my_ideal_idol!_(project_sekai)
+      - holiday_holiday_(tenko)_(love_live!)
+      - sexy_guilty_(idolmaster)
+      - ladybug/beauty_(love_live!)
+      - dearly_stars_(idolmaster)
+      - hyakkaryouran_(blue_archive)
+      - sekaiichi_kawaii_watashi_(idolmaster)
+      - sparkling_daydream
+      - i_do_me!_(love_live!)
+      - ichigo_ichie_na_hyakki_yagyou!?_(project_sekai)
+      - link_to_the_future_(love_live!)
+      - bokutachi_wa_hitotsu_no_hikari
+      - sugar_song_and_bitter_step
+      - sakura_photograph_(idolmaster)
+      - kirara_jump
+      - relax_teatime_(project_sekai)
+      - rise_up_high!_(love_live!)
+      - the_vivid_old_tale_(project_sekai)
+      - happy_party_train
+      - kono_matsuri_ni_yuuyami_iro_mo_(project_sekai)
+      - jaws
+      - bloody_stream
+      - starry_sky_bright_(idolmaster)
+      franchise_term:
+      - cake_cat_(honkai:_star_rail)
+      - amphoreus_(honkai:_star_rail)
+      - tracen_academy
+      - komaniya_express_(genshin_impact)
+      - doukyo's
+      - pool_party_(league_of_legends)
+      - international_precure
+      - orel_cruise
+      - area_15
+      - faewish_sprite
+      - heartsteel_(league_of_legends)
+      - hasu_no_sanrenka
+      - lilistia
+      - mira-cra_park!
