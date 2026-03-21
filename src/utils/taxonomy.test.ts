@@ -7,7 +7,39 @@ import YAML from 'yaml'
 import { buildDataset, castTranslations, formatSlug } from '@/utils/taxonomy'
 
 function getVisitPath(path: string[]): string {
-  return path.at(-1) === '_tags' ? path.slice(0, -1).join('.') : path.join('.')
+  return path.join('.')
+}
+
+function readSourceYaml<T = unknown>(relativePath: string): T {
+  return YAML.parse(readFileSync(resolve(process.cwd(), relativePath), 'utf8')) as T
+}
+
+function collectMatchingTagPaths(parsed: unknown, expectedPaths: Map<string, string>): Array<{ tag: string, path: string }> {
+  const rows: Array<{ tag: string, path: string }> = []
+
+  function visit(value: unknown, path: string[]): void {
+    if (Array.isArray(value)) {
+      for (const item of value) {
+        if (typeof item === 'string' && expectedPaths.has(item)) {
+          rows.push({ tag: item, path: getVisitPath(path) })
+        }
+      }
+
+      return
+    }
+
+    if (typeof value !== 'object' || value === null) {
+      return
+    }
+
+    for (const [key, nestedValue] of Object.entries(value)) {
+      visit(nestedValue, [...path, key])
+    }
+  }
+
+  visit(parsed, [])
+
+  return rows
 }
 
 describe('taxonomy helpers', () => {
@@ -56,33 +88,10 @@ describe('taxonomy helpers', () => {
     expect(formatSlug('black_hair')).toBe('black hair')
   })
 
-  it('supports direct node tags via _tags without creating a child node', () => {
-    const dataset = buildDataset(
-      {
-        _meta: { version: 'test' },
-        root_a: {
-          _tags: ['alpha_tag'],
-          branch_b: ['beta_tag'],
-        },
-      },
-      'default',
-    )
+  it('keeps source taxonomy free of non-leaf _tags buckets', () => {
+    const source = readFileSync(resolve(process.cwd(), 'data/source/danbooru_tag_tree_v3.yaml'), 'utf8')
 
-    const rootA = dataset.nodes.root_a
-    const branchB = dataset.nodes['root_a.branch_b']
-
-    expect(rootA).toBeDefined()
-    expect(branchB).toBeDefined()
-
-    if (!rootA || !branchB) {
-      throw new Error('Expected taxonomy nodes to exist')
-    }
-
-    expect(rootA.tags).toEqual(['alpha_tag'])
-    expect(rootA.children).toEqual(['root_a.branch_b'])
-    expect(dataset.nodes['root_a._tags']).toBeUndefined()
-    expect(rootA.directTagCount).toBe(1)
-    expect(rootA.totalTagCount).toBe(2)
+    expect(source).not.toContain('\n_tags:')
   })
 
   it('keeps selected head and shoulder anchor tags consolidated', () => {
@@ -94,10 +103,10 @@ describe('taxonomy helpers', () => {
       ['on_head', 'composition.framing.body_part_anchor.head'],
       ['animal_on_shoulder', 'composition.framing.body_part_anchor.shoulder.on_shoulder'],
       ['on_shoulder', 'composition.framing.body_part_anchor.shoulder.on_shoulder'],
-      ['hands_on_shoulders', 'composition.framing.body_part_anchor.shoulder'],
+      ['hands_on_shoulders', 'composition.framing.body_part_anchor.shoulder.general'],
       ['arm_over_shoulder', 'composition.framing.body_part_anchor.shoulder.over_shoulder'],
       ['holding_over_opposite_shoulder', 'composition.framing.body_part_anchor.shoulder.over_shoulder'],
-      ['arm_around_shoulder', 'composition.framing.body_part_anchor.shoulder'],
+      ['arm_around_shoulder', 'composition.framing.body_part_anchor.shoulder.general'],
     ])
     const rows: Array<{ tag: string, path: string }> = []
 
@@ -234,7 +243,7 @@ describe('taxonomy helpers', () => {
       ['goggles_on_headwear', 'apparel.headwear.on_headwear'],
       ['hand_on_headwear', 'apparel.headwear.interaction'],
       ['hands_on_headwear', 'apparel.headwear.interaction'],
-      ['headphones_over_headwear', 'apparel.headwear'],
+      ['headphones_over_headwear', 'apparel.headwear.on_headwear'],
       ['headwear_switch', 'apparel.headwear.interaction'],
       ['putting_on_headwear', 'apparel.headwear.interaction'],
       ['snow_on_headwear', 'apparel.headwear.on_headwear'],
@@ -299,22 +308,22 @@ describe('taxonomy helpers', () => {
       }
     }
     const expectedPaths = new Map([
-      ['inkling', 'character.archetype.form'],
+      ['inkling', 'character.archetype.form.general'],
       ['monster_girl', 'character.archetype.form.female'],
       ['elbow_rest', 'dynamics.pose.arm_hand.elbow_wrist'],
       ['head_rest', 'dynamics.pose.arm_hand.general'],
-      ['asymmetrical_dual_wielding', 'dynamics.action.combat'],
+      ['asymmetrical_dual_wielding', 'dynamics.action.combat.general'],
       ['fighting_stance', 'dynamics.action.combat.stance'],
       ['attack', 'dynamics.action.combat.impact'],
-      ['blowing_kiss', 'dynamics.action.gesture'],
+      ['blowing_kiss', 'dynamics.action.gesture.greeting'],
       ['v', 'dynamics.action.gesture.general'],
-      ['carrying_under_arm', 'dynamics.action.object_manipulation.holding'],
+      ['carrying_under_arm', 'dynamics.action.object_manipulation.holding.general'],
       ['mouth_hold', 'dynamics.action.object_manipulation.holding.grip_style'],
       ['holding', 'dynamics.action.object_manipulation.holding.general'],
-      ['foot_on_another\'s_face', 'dynamics.interaction.contact'],
+      ['foot_on_another\'s_face', 'dynamics.interaction.contact.general'],
       ['hand_on_another\'s_head', 'dynamics.interaction.contact.hand_on'],
       ['glomp', 'dynamics.interaction.contact.general'],
-      ['headphones_over_headwear', 'apparel.headwear'],
+      ['headphones_over_headwear', 'apparel.headwear.on_headwear'],
       ['cum_on_headwear', 'apparel.headwear.on_headwear'],
     ])
     const rows: Array<{ tag: string, path: string }> = []
@@ -376,7 +385,7 @@ describe('taxonomy helpers', () => {
       ['jacket_around_neck', 'apparel.body_part_placement.neck.around_neck'],
       ['mask_around_neck', 'apparel.body_part_placement.neck.around_neck'],
       ['rope_around_neck', 'apparel.body_part_placement.neck.around_neck'],
-      ['shirt_behind_neck', 'apparel.body_part_placement.neck'],
+      ['shirt_behind_neck', 'apparel.body_part_placement.neck.general'],
       ['sign_around_neck', 'apparel.body_part_placement.neck.around_neck'],
       ['stethoscope_around_neck', 'apparel.body_part_placement.neck.around_neck'],
       ['stopwatch_around_neck', 'apparel.body_part_placement.neck.around_neck'],
@@ -536,7 +545,7 @@ describe('taxonomy helpers', () => {
       ['bandaid_on_face', 'apparel.body_part_placement.face'],
       ['gauze_on_face', 'apparel.body_part_placement.face'],
       ['sticker_on_face', 'apparel.body_part_placement.face'],
-      ['bandaid_on_shoulder', 'apparel.body_part_placement.shoulder'],
+      ['bandaid_on_shoulder', 'apparel.body_part_placement.shoulder.general'],
       ['cardigan_on_shoulders', 'apparel.body_part_placement.shoulder.on_shoulders'],
       ['clothes_on_shoulders', 'apparel.body_part_placement.shoulder.on_shoulders'],
       ['coat_on_shoulders', 'apparel.body_part_placement.shoulder.on_shoulders'],
@@ -544,7 +553,7 @@ describe('taxonomy helpers', () => {
       ['jacket_on_shoulders', 'apparel.body_part_placement.shoulder.on_shoulders'],
       ['kimono_on_shoulders', 'apparel.body_part_placement.shoulder.on_shoulders'],
       ['shirt_on_shoulders', 'apparel.body_part_placement.shoulder.on_shoulders'],
-      ['jacket_over_shoulder', 'apparel.body_part_placement.shoulder'],
+      ['jacket_over_shoulder', 'apparel.body_part_placement.shoulder.general'],
       ['bandaid_on_arm', 'apparel.body_part_placement.arm.on_arm'],
       ['gauze_on_arm', 'apparel.body_part_placement.arm.on_arm'],
       ['sticker_on_arm', 'apparel.body_part_placement.arm.on_arm'],
@@ -553,8 +562,8 @@ describe('taxonomy helpers', () => {
       ['chain_around_arm', 'apparel.body_part_placement.arm.around_arm'],
       ['bandaid_on_chest', 'apparel.body_part_placement.chest'],
       ['flower_on_chest', 'apparel.body_part_placement.chest'],
-      ['bandaid_on_foot', 'apparel.body_part_placement'],
-      ['bandaid_on_hand', 'apparel.body_part_placement'],
+      ['bandaid_on_foot', 'apparel.body_part_placement.general'],
+      ['bandaid_on_hand', 'apparel.body_part_placement.general'],
       ['bandaid_on_knee', 'apparel.body_part_placement.knee'],
       ['bandage_on_knee', 'apparel.body_part_placement.knee'],
       ['gauze_on_knee', 'apparel.body_part_placement.knee'],
@@ -563,7 +572,7 @@ describe('taxonomy helpers', () => {
       ['gauze_on_leg', 'apparel.body_part_placement.leg'],
       ['ofuda_on_leg', 'apparel.body_part_placement.leg'],
       ['sticker_on_leg', 'apparel.body_part_placement.leg'],
-      ['bandaid_on_stomach', 'apparel.body_part_placement'],
+      ['bandaid_on_stomach', 'apparel.body_part_placement.general'],
     ])
     const rows: Array<{ tag: string, path: string }> = []
 
@@ -595,12 +604,12 @@ describe('taxonomy helpers', () => {
     ).toBe(true)
     expect(parsed.apparel.body_part_placement.head).toBeInstanceOf(Array)
     expect(parsed.apparel.body_part_placement.face).toBeInstanceOf(Array)
-    expect(parsed.apparel.body_part_placement.shoulder).toHaveProperty('_tags')
+    expect(parsed.apparel.body_part_placement.shoulder).toHaveProperty('general')
     expect(parsed.apparel.body_part_placement.chest).toBeInstanceOf(Array)
     expect(parsed.apparel.body_part_placement.knee).toBeInstanceOf(Array)
     expect(parsed.apparel.body_part_placement.leg).toBeInstanceOf(Array)
     expect(parsed.apparel.body_part_placement.waist).toBeInstanceOf(Array)
-    expect(parsed.apparel.body_part_placement).toHaveProperty('_tags')
+    expect(parsed.apparel.body_part_placement).toHaveProperty('general')
     expect(parsed.apparel.body_part_placement.shoulder).not.toHaveProperty('on_shoulder')
     expect(parsed.apparel.body_part_placement.shoulder).not.toHaveProperty('over_shoulder')
     expect(parsed.apparel.body_part_placement.neck).not.toHaveProperty('behind_neck')
@@ -686,7 +695,7 @@ describe('taxonomy helpers', () => {
       ['body_blush', 'character.skin.blush'],
       ['glowing_veins', 'character.skin.vein'],
       ['sweat', 'character.skin.sweat'],
-      ['oiled', 'character.skin'],
+      ['oiled', 'character.skin.texture_condition'],
     ])
     const rows: Array<{ tag: string, path: string }> = []
 
@@ -735,11 +744,11 @@ describe('taxonomy helpers', () => {
     }
     const expectedPaths = new Map([
       ['open_mouth', 'dynamics.expression.mouth.open'],
-      ['closed_mouth', 'dynamics.expression.mouth'],
+      ['closed_mouth', 'dynamics.expression.mouth.general'],
       ['smile', 'dynamics.expression.mouth.smile'],
       ['wrinkled_frown_(detective_pikachu)', 'dynamics.expression.mouth.frown'],
       ['biting_tongue', 'dynamics.expression.mouth.tongue_action'],
-      ['saliva_trail_between_teeth', 'dynamics.expression.mouth'],
+      ['saliva_trail_between_teeth', 'dynamics.expression.mouth.general'],
     ])
     const rows: Array<{ tag: string, path: string }> = []
 
@@ -923,15 +932,15 @@ describe('taxonomy helpers', () => {
       ['red_moon', 'object.celestial_body.moon.color_variant'],
       ['broken_moon', 'object.celestial_body.moon.special'],
       ['sun', 'object.celestial_body.sun.general'],
-      ['solar_eclipse', 'object.celestial_body.sun'],
+      ['solar_eclipse', 'object.celestial_body.sun.general'],
       ['star_(sky)', 'object.celestial_body.star.general'],
-      ['falling_star', 'object.celestial_body.star'],
+      ['falling_star', 'object.celestial_body.star.general'],
       ['earth_(planet)', 'object.celestial_body.planet_system.named_planet'],
       ['planetary_ring', 'object.celestial_body.planet_system.general'],
       ['gemini_(constellation)', 'object.celestial_body.constellation_asterism.zodiac'],
       ['orion_(constellation)', 'object.celestial_body.constellation_asterism.named'],
       ['big_dipper', 'object.celestial_body.constellation_asterism.general'],
-      ['meteor_shower', 'object.celestial_body.small_body'],
+      ['meteor_shower', 'object.celestial_body.small_body.general'],
       ['comet', 'object.celestial_body.small_body.general'],
       ['nebula', 'object.celestial_body.cosmic_structure.galaxy_nebula'],
       ['black_hole', 'object.celestial_body.cosmic_structure.gravity_well'],
@@ -967,5 +976,383 @@ describe('taxonomy helpers', () => {
     expect(parsed.object.celestial_body.sun).not.toHaveProperty('eclipse')
     expect(parsed.object.celestial_body.star).not.toHaveProperty('motion')
     expect(parsed.object.celestial_body.small_body).not.toHaveProperty('shower')
+  })
+
+  it('keeps translations aligned with split pose tags and required locales', { timeout: 15000 }, () => {
+    const taxonomy = readSourceYaml<Record<string, unknown>>('data/source/danbooru_tag_tree_v3.yaml')
+    const translations = castTranslations(
+      readSourceYaml<Record<string, unknown>>('data/source/danbooru_tag_tree_v3.multilingual.yaml'),
+    )
+    const categoryKeys = new Set<string>()
+    const tagKeys = new Set<string>()
+
+    function visit(value: unknown, path: string[]): void {
+      if (Array.isArray(value)) {
+        for (const item of value) {
+          if (typeof item === 'string') {
+            tagKeys.add(`tag.${item}`)
+          }
+        }
+
+        return
+      }
+
+      if (typeof value !== 'object' || value === null) {
+        return
+      }
+
+      for (const [key, nestedValue] of Object.entries(value)) {
+        if (key === '_meta') {
+          continue
+        }
+
+        const id = [...path, key].join('.')
+        categoryKeys.add(`category.${id}`)
+        visit(nestedValue, [...path, key])
+      }
+    }
+
+    visit(taxonomy, [])
+
+    const missingCategoryTranslations = [...categoryKeys].filter((key) => !translations[key])
+    const missingTagTranslations = [...tagKeys].filter((key) => !translations[key])
+    const extraCategoryTranslations = Object.keys(translations)
+      .filter((key) => key.startsWith('category.'))
+      .filter((key) => !categoryKeys.has(key))
+
+    expect(missingCategoryTranslations).toEqual([])
+    expect(missingTagTranslations).toEqual([])
+    expect(extraCategoryTranslations).toEqual([])
+    expect(readFileSync(resolve(process.cwd(), 'data/source/danbooru_tag_tree_v3.yaml'), 'utf8')).not.toContain('\n_tags:')
+    expect(tagKeys.has('tag.breasts_on_table')).toBe(true)
+    expect(tagKeys.has('tag.ojou-sama_pose')).toBe(true)
+    expect(tagKeys.has('tag.breasts_on_table - ojou-sama_pose')).toBe(false)
+    expect(translations['category.character.affiliation.franchise']?.ja).toBe('作品内団体')
+    expect(translations['category.character.affiliation.generic']?.ja).toBe('一般団体')
+    expect(translations['category.apparel.garment.dress.dress']).toBeUndefined()
+    expect(translations['category.creature.bird.bird']).toBeUndefined()
+    expect(translations['category.creature.fantasy_creature.fantasy_creature']).toBeUndefined()
+    expect(translations['category.creature.mammal.mammal']).toBeUndefined()
+    expect(translations['category.fandom.affiliation']).toBeUndefined()
+    expect(translations['category.action']).toBeUndefined()
+    expect(translations['category.interaction']).toBeUndefined()
+    expect(translations['category.pose']).toBeUndefined()
+    expect(translations['category.subject']).toBeUndefined()
+    expect(translations['category.character.expression']).toBeUndefined()
+    expect(translations['category.object.weapon_part']).toBeUndefined()
+  })
+
+  it('keeps adjusted creature tags in the intended animal subgroups', () => {
+    const parsed = readSourceYaml<{
+      creature: {
+        mammal: Record<string, unknown>
+        aquatic: Record<string, unknown>
+      }
+    }>('data/source/danbooru_tag_tree_v3.yaml')
+    const expectedPaths = new Map([
+      ['dobermann', 'creature.mammal.canine'],
+      ['great_pyrenees', 'creature.mammal.canine'],
+      ['german_shepherd', 'creature.mammal.canine'],
+      ['pug', 'creature.mammal.canine'],
+      ['chihuahua', 'creature.mammal.canine'],
+      ['border_collie', 'creature.mammal.canine'],
+      ['st_bernard', 'creature.mammal.canine'],
+      ['serval', 'creature.mammal.feline'],
+      ['scottish_fold', 'creature.mammal.feline'],
+      ['calico', 'creature.mammal.feline'],
+      ['prairie_dog', 'creature.mammal.general'],
+      ['sea_lion', 'creature.mammal.general'],
+      ['seal_(animal)', 'creature.mammal.general'],
+      ['walrus', 'creature.mammal.general'],
+    ])
+    const rows = collectMatchingTagPaths(parsed, expectedPaths)
+
+    expect(rows).toHaveLength(expectedPaths.size)
+    expect(rows.every((row) => row.path === expectedPaths.get(row.tag))).toBe(true)
+    expect(parsed.creature.aquatic).not.toHaveProperty('marine_mammal')
+  })
+
+  it('separates collective group-shape tags from strict character counts', () => {
+    const parsed = readSourceYaml<{
+      character: {
+        demographic: Record<string, unknown>
+      }
+    }>('data/source/danbooru_tag_tree_v3.yaml')
+    const expectedPaths = new Map([
+      ['1girl', 'character.demographic.count'],
+      ['2boys', 'character.demographic.count'],
+      ['quintuplets', 'character.demographic.count'],
+      ['everyone', 'character.demographic.collective'],
+      ['people', 'character.demographic.collective'],
+      ['crowd', 'character.demographic.collective'],
+      ['too_many', 'character.demographic.collective'],
+      ['absolutely_everyone', 'character.demographic.collective'],
+      ['fleet', 'character.demographic.collective'],
+      ['audience', 'character.demographic.collective'],
+    ])
+    const rows = collectMatchingTagPaths(parsed, expectedPaths)
+
+    expect(rows).toHaveLength(expectedPaths.size)
+    expect(rows.every((row) => row.path === expectedPaths.get(row.tag))).toBe(true)
+    expect(parsed.character.demographic).toHaveProperty('collective')
+  })
+
+  it('keeps identity and fusion tags out of raw headcount buckets', () => {
+    const parsed = readSourceYaml<{
+      character: {
+        demographic: Record<string, unknown>
+      }
+      fandom: {
+        narrative_meta: {
+          crossover: string[]
+        }
+      }
+    }>('data/source/danbooru_tag_tree_v3.yaml')
+    const expectedPaths = new Map([
+      ['character_single', 'character.demographic.identity_count'],
+      ['multiple_traps', 'character.demographic.gender_presentation.feminine_male'],
+      ['multiple_fusions', 'fandom.narrative_meta.crossover'],
+      ['trap', 'character.demographic.gender_presentation.feminine_male'],
+      ['fusion', 'fandom.narrative_meta.crossover'],
+    ])
+    const rows = collectMatchingTagPaths(parsed, expectedPaths)
+
+    expect(rows).toHaveLength(expectedPaths.size)
+    expect(rows.every((row) => row.path === expectedPaths.get(row.tag))).toBe(true)
+    expect(parsed.character.demographic).toHaveProperty('identity_count')
+  })
+
+  it('separates subject presence tags from strict headcount', () => {
+    const parsed = readSourceYaml<{
+      character: {
+        demographic: Record<string, unknown>
+      }
+    }>('data/source/danbooru_tag_tree_v3.yaml')
+    const expectedPaths = new Map([
+      ['1girl', 'character.demographic.count'],
+      ['multiple_boys', 'character.demographic.count'],
+      ['solo', 'character.demographic.presence'],
+      ['solo_focus', 'character.demographic.presence'],
+      ['no_humans', 'character.demographic.presence'],
+      ['character_single', 'character.demographic.identity_count'],
+    ])
+    const rows = collectMatchingTagPaths(parsed, expectedPaths)
+
+    expect(rows).toHaveLength(expectedPaths.size)
+    expect(rows.every((row) => row.path === expectedPaths.get(row.tag))).toBe(true)
+    expect(parsed.character.demographic).toHaveProperty('presence')
+  })
+
+  it('separates subject focus and depiction tags from gender presentation', () => {
+    const parsed = readSourceYaml<{
+      character: {
+        demographic: Record<string, unknown>
+        archetype: {
+          form: Record<string, unknown>
+        }
+      }
+    }>('data/source/danbooru_tag_tree_v3.yaml')
+    const expectedPaths = new Map([
+      ['male_focus', 'character.demographic.focus'],
+      ['faceless_male', 'character.demographic.depiction'],
+      ['faceless_female', 'character.demographic.depiction'],
+      ['androgynous', 'character.demographic.gender_presentation.neutral'],
+      ['ambiguous_gender', 'character.demographic.gender_presentation.neutral'],
+      ['trap', 'character.demographic.gender_presentation.feminine_male'],
+      ['otoko_no_ko', 'character.demographic.gender_presentation.feminine_male'],
+      ['multiple_traps', 'character.demographic.gender_presentation.feminine_male'],
+      ['tomboy', 'character.demographic.gender_presentation.masculine_female'],
+      ['reverse_trap', 'character.demographic.gender_presentation.masculine_female'],
+      ['genderswap', 'character.demographic.gender_presentation.transformation'],
+      ['crossdressing_(mtf)', 'character.demographic.gender_presentation.transformation'],
+      ['bara', 'character.demographic.gender_presentation.male_style'],
+      ['bishounen', 'character.demographic.gender_presentation.male_style'],
+      ['furry_female', 'character.archetype.form.female'],
+      ['furry_male', 'character.archetype.form.male'],
+      ['fujoshi', 'character.archetype.identity.social_type'],
+      ['himejoshi', 'character.archetype.identity.social_type'],
+      ['himedanshi', 'character.archetype.identity.social_type'],
+      ['bisexual_male', 'character.archetype.identity.social_type'],
+      ['implied_bisexual', 'character.archetype.identity.social_type'],
+    ])
+    const rows = collectMatchingTagPaths(parsed, expectedPaths)
+
+    expect(rows).toHaveLength(expectedPaths.size)
+    expect(rows.every((row) => row.path === expectedPaths.get(row.tag))).toBe(true)
+    expect(parsed.character.demographic).toHaveProperty('focus')
+    expect(parsed.character.demographic).toHaveProperty('depiction')
+    expect(parsed.character.demographic).toHaveProperty('gender_presentation')
+    expect(parsed.character.archetype.form).toHaveProperty('female')
+    expect(parsed.character.archetype.form).toHaveProperty('male')
+  })
+
+  it('splits age stage tags from age changes and age relations', () => {
+    const parsed = readSourceYaml<{
+      character: {
+        demographic: {
+          age: Record<string, unknown>
+        }
+      }
+    }>('data/source/danbooru_tag_tree_v3.yaml')
+    const expectedPaths = new Map([
+      ['loli', 'character.demographic.age.stage'],
+      ['shota', 'character.demographic.age.stage'],
+      ['teenage', 'character.demographic.age.stage'],
+      ['lost_child', 'character.demographic.age.stage'],
+      ['aged_down', 'character.demographic.age.change'],
+      ['age_progression', 'character.demographic.age.change'],
+      ['age_difference', 'character.demographic.age.relation'],
+      ['age_comparison', 'character.demographic.age.relation'],
+      ['character_age', 'character.demographic.age.metadata'],
+    ])
+    const rows = collectMatchingTagPaths(parsed, expectedPaths)
+
+    expect(rows).toHaveLength(expectedPaths.size)
+    expect(rows.every((row) => row.path === expectedPaths.get(row.tag))).toBe(true)
+    expect(parsed.character.demographic.age).toHaveProperty('stage')
+    expect(parsed.character.demographic.age).toHaveProperty('change')
+    expect(parsed.character.demographic.age).toHaveProperty('relation')
+    expect(parsed.character.demographic.age).toHaveProperty('metadata')
+  })
+
+  it('splits altered nonhuman body traits away from mechanization-only buckets', () => {
+    const parsed = readSourceYaml<{
+      character: {
+        nonhuman_trait: Record<string, unknown>
+      }
+    }>('data/source/danbooru_tag_tree_v3.yaml')
+    const expectedPaths = new Map([
+      ['material_growth', 'character.nonhuman_trait.altered_body.material_growth'],
+      ['core_crystal_(xenoblade)', 'character.nonhuman_trait.altered_body.material_growth'],
+      ['gem_(steven_universe)', 'character.nonhuman_trait.altered_body.material_growth'],
+      ['colored_extremities', 'character.nonhuman_trait.altered_body.surface_change'],
+      ['see-through_body', 'character.nonhuman_trait.altered_body.surface_change'],
+      ['mechanization', 'character.nonhuman_trait.altered_body.mechanization'],
+      ['mechanical_spine', 'character.nonhuman_trait.altered_body.mechanization'],
+      ['body_horror', 'character.nonhuman_trait.altered_body.mutation'],
+      ['kagune_(tokyo_ghoul)', 'character.nonhuman_trait.altered_body.mutation'],
+      ['chest_tuft', 'character.nonhuman_trait.fur'],
+    ])
+    const rows = collectMatchingTagPaths(parsed, expectedPaths)
+
+    expect(rows).toHaveLength(expectedPaths.size)
+    expect(rows.every((row) => row.path === expectedPaths.get(row.tag))).toBe(true)
+    expect(parsed.character.nonhuman_trait).toHaveProperty('altered_body')
+    expect(parsed.character.nonhuman_trait).not.toHaveProperty('synthetic_mutation')
+    expect(parsed.character.nonhuman_trait.altered_body).toHaveProperty('surface_change')
+  })
+
+  it('flattens redundant repeated-name wrappers in selected branches', () => {
+    const parsed = readSourceYaml<{
+      apparel: {
+        garment: {
+          dress: Record<string, unknown>
+        }
+      }
+      creature: {
+        mammal: Record<string, unknown>
+        bird: Record<string, unknown>
+        fantasy_creature: Record<string, unknown>
+      }
+    }>('data/source/danbooru_tag_tree_v3.yaml')
+    const expectedPaths = new Map([
+      ['dress', 'apparel.garment.dress.general'],
+      ['wedding_dress', 'apparel.garment.dress.general'],
+      ['rabbit', 'creature.mammal.general'],
+      ['sea_lion', 'creature.mammal.general'],
+      ['bird', 'creature.bird.general'],
+      ['penguin', 'creature.bird.general'],
+      ['angel', 'creature.fantasy_creature.general'],
+      ['abyssal_ship', 'creature.fantasy_creature.general'],
+    ])
+    const rows = collectMatchingTagPaths(parsed, expectedPaths)
+
+    expect(rows).toHaveLength(expectedPaths.size)
+    expect(rows.every((row) => row.path === expectedPaths.get(row.tag))).toBe(true)
+    expect(parsed.apparel.garment.dress).toHaveProperty('general')
+    expect(parsed.creature.mammal).toHaveProperty('general')
+    expect(parsed.creature.bird).toHaveProperty('general')
+    expect(parsed.creature.fantasy_creature).toHaveProperty('general')
+    expect(parsed.apparel.garment.dress).not.toHaveProperty('dress')
+    expect(parsed.creature.mammal).not.toHaveProperty('mammal')
+    expect(parsed.creature.bird).not.toHaveProperty('bird')
+    expect(parsed.creature.fantasy_creature).not.toHaveProperty('fantasy_creature')
+  })
+
+  it('keeps aquatic and fandom group tags in clearer buckets', () => {
+    const parsed = readSourceYaml<{
+      creature: {
+        aquatic: Record<string, unknown>
+      }
+      fandom: {
+        franchise_meta: {
+          general: string[]
+          franchise_misc: string[]
+        }
+        group_tag: string[]
+      }
+    }>('data/source/danbooru_tag_tree_v3.yaml')
+    const expectedPaths = new Map([
+      ['eel', 'creature.aquatic.fish_marine'],
+      ['carp', 'creature.aquatic.fish_marine'],
+      ['moorish_idol', 'creature.aquatic.fish_marine'],
+      ['regal_blue_tang', 'creature.aquatic.fish_marine'],
+      ['yellow_tang', 'creature.aquatic.fish_marine'],
+      ['lobster', 'creature.aquatic.aquatic_misc'],
+      ['sea_anemone', 'creature.aquatic.aquatic_misc'],
+      ['holomyth', 'fandom.group_tag'],
+      ['team_9_(touhou)', 'fandom.group_tag'],
+      ['arius_squad_(blue_archive)', 'fandom.group_tag'],
+      ['team_rainbow_rocket', 'fandom.group_tag'],
+      ['team_skull', 'fandom.group_tag'],
+      ['team_magma', 'fandom.group_tag'],
+      ['full-stop_office_(identity)_(project_moon)', 'fandom.group_tag'],
+      ['chrysos_heirs_(honkai:_star_rail)', 'fandom.group_tag'],
+      ['defy_(girls\'_frontline)', 'fandom.group_tag'],
+      ['the_children_(zettai_karen_children)', 'fandom.group_tag'],
+      ['gap_(touhou)', 'fandom.franchise_meta.franchise_misc'],
+      ['devil_fruit_power', 'fandom.franchise_meta.franchise_misc'],
+    ])
+    const rows = collectMatchingTagPaths(parsed, expectedPaths)
+
+    expect(rows).toHaveLength(expectedPaths.size)
+    expect(rows.every((row) => row.path === expectedPaths.get(row.tag))).toBe(true)
+    expect(parsed.fandom.franchise_meta.general).not.toContain('holomyth')
+    expect(parsed.fandom.franchise_meta.general).not.toContain('team_9_(touhou)')
+    expect(parsed.fandom.franchise_meta.general).not.toContain('team_rainbow_rocket')
+    expect(parsed.fandom.franchise_meta.franchise_misc).not.toContain('team_skull')
+    expect(parsed.fandom.franchise_meta.franchise_misc).not.toContain('team_magma')
+    expect(parsed.fandom.franchise_meta.franchise_misc).not.toContain('full-stop_office_(identity)_(project_moon)')
+    expect(parsed.fandom.franchise_meta.franchise_misc).not.toContain('chrysos_heirs_(honkai:_star_rail)')
+    expect(parsed.fandom.franchise_meta.franchise_misc).not.toContain('defy_(girls\'_frontline)')
+  })
+
+  it('keeps adjusted apparel detail tags in matching detail buckets', () => {
+    const parsed = readSourceYaml<{
+      apparel: {
+        detail: Record<string, unknown>
+      }
+    }>('data/source/danbooru_tag_tree_v3.yaml')
+    const expectedPaths = new Map([
+      ['gold_trim', 'apparel.detail.detail.trim_frill'],
+      ['fold-over_collar', 'apparel.detail.detail.collar_neckline'],
+      ['double-breasted', 'apparel.detail.detail.fastener'],
+      ['multiple_belts', 'apparel.detail.detail.other.structural'],
+      ['multiple_thigh_straps', 'apparel.detail.detail.other.structural'],
+      ['multiple_straps', 'apparel.detail.detail.other.structural'],
+      ['two-tone_belt', 'apparel.detail.detail.other.structural'],
+      ['multicolored_bow', 'apparel.detail.detail.other.decorative'],
+      ['multiple_bows', 'apparel.detail.detail.other.decorative'],
+      ['gold_embroidery', 'apparel.detail.detail.other.decorative'],
+      ['multiple_hat_bows', 'apparel.detail.detail.other.decorative'],
+      ['see-through_bow', 'apparel.detail.detail.other.decorative'],
+      ['translucent', 'apparel.detail.detail.material_layer'],
+      ['mesh', 'apparel.detail.detail.material_layer'],
+    ])
+    const rows = collectMatchingTagPaths(parsed, expectedPaths)
+
+    expect(rows).toHaveLength(expectedPaths.size)
+    expect(rows.every((row) => row.path === expectedPaths.get(row.tag))).toBe(true)
+    expect((parsed.apparel.detail.detail as Record<string, unknown>)).not.toHaveProperty('damage_wear')
   })
 })

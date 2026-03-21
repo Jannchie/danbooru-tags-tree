@@ -1,179 +1,3 @@
-category.action:
-  en: action
-  ja: 動作
-  zh-CN: 动作
-category.action.combat: &id001
-  en: combat
-  ja: 戦闘
-  zh-CN: 战斗
-category.action.daily_activity: &id002
-  en: daily activity
-  ja: 日常行為
-  zh-CN: 日常活动
-category.action.daily_activity.bathing: &id003
-  en: bathing
-  ja: 入浴
-  zh-CN: 洗澡
-category.action.daily_activity.communication: &id004
-  en: communication
-  ja: コミュニケーション
-  zh-CN: 沟通
-category.action.daily_activity.cooking: &id005
-  en: cooking
-  ja: 料理
-  zh-CN: 烹饪
-category.action.daily_activity.craft_task: &id006
-  en: craft task
-  ja: 手仕事
-  zh-CN: 手工活动
-category.action.daily_activity.delivery_service: &id007
-  en: delivery service
-  ja: 配送サービス
-  zh-CN: 送货服务
-category.action.daily_activity.eating_drinking: &id008
-  en: eating drinking
-  ja: 食べる、飲む
-  zh-CN: 吃喝
-category.action.daily_activity.food_preparation: &id009
-  en: food preparation
-  ja: 食事の準備
-  zh-CN: 食物准备
-category.action.daily_activity.grooming: &id010
-  en: grooming
-  ja: グルーミング
-  zh-CN: 修饰
-category.action.daily_activity.manual_handling: &id011
-  en: manual handling
-  ja: 手作業
-  zh-CN: 手动操作
-category.action.daily_activity.media_use: &id012
-  en: media use
-  ja: メディア利用
-  zh-CN: 媒体使用
-category.action.daily_activity.object_placement: &id013
-  en: object placement
-  ja: 物の配置
-  zh-CN: 物件摆放
-category.action.daily_activity.observation_attention: &id014
-  en: observation attention
-  ja: 観察
-  zh-CN: 观察
-category.action.daily_activity.reading_writing: &id015
-  en: reading writing
-  ja: 読み書き
-  zh-CN: 阅读写作
-category.action.daily_activity.recreation: &id016
-  en: recreation
-  ja: レクリエーション
-  zh-CN: 休闲
-category.action.daily_activity.risk_state: &id017
-  en: risk state
-  ja: リスク状態
-  zh-CN: 风险状态
-category.action.daily_activity.ritual_task: &id018
-  en: ritual task
-  ja: 儀式的な任務
-  zh-CN: 仪式任务
-category.action.daily_activity.self_care: &id019
-  en: self care
-  ja: セルフケア
-  zh-CN: 自我照顾
-category.action.daily_activity.self_signal: &id020
-  en: self signal
-  ja: 自己アピール
-  zh-CN: 自我示意
-category.action.daily_activity.sleeping: &id021
-  en: sleeping
-  ja: 眠っている
-  zh-CN: 睡觉
-category.action.daily_activity.smoking: &id022
-  en: smoking
-  ja: 喫煙
-  zh-CN: 吸烟
-category.action.daily_activity.travel_outdoor: &id023
-  en: travel outdoor
-  ja: 屋外活動
-  zh-CN: 户外活动
-category.action.daily_activity.upkeep_task: &id024
-  en: upkeep task
-  ja: 手入れ
-  zh-CN: 维护作业
-category.action.gesture: &id025
-  en: gesture
-  ja: ジェスチャー
-  zh-CN: 手势
-category.action.locomotion: &id026
-  en: locomotion
-  ja: 移動
-  zh-CN: 移动
-category.action.object_manipulation: &id027
-  en: object manipulation
-  ja: 物の操作
-  zh-CN: 物件操作
-category.action.object_manipulation.clothing_adjustment: &id028
-  en: clothing adjustment
-  ja: 衣服の調整
-  zh-CN: 服装调整
-category.action.object_manipulation.holding: &id029
-  en: holding
-  ja: 持っている
-  zh-CN: 手持
-category.action.object_manipulation.holding.clothing: &id030
-  en: clothing
-  ja: 衣類
-  zh-CN: 服装
-category.action.object_manipulation.holding.creature: &id031
-  en: creature
-  ja: 生き物
-  zh-CN: 生物
-category.action.object_manipulation.holding.food_drink: &id032
-  en: food drink
-  ja: 食べ物飲み物
-  zh-CN: 食品饮料
-category.action.object_manipulation.holding.general_object_hold: &id033
-  en: general object hold
-  ja: 一般物
-  zh-CN: 一般物品
-category.action.object_manipulation.holding.household_tool: &id034
-  en: household tool
-  ja: 家庭用ツール
-  zh-CN: 家用工具
-category.action.object_manipulation.holding.instrument: &id035
-  en: instrument
-  ja: 楽器
-  zh-CN: 乐器
-category.action.object_manipulation.holding.plant: &id036
-  en: plant
-  ja: 植物
-  zh-CN: 植物
-category.action.object_manipulation.holding.small_item: &id037
-  en: small item
-  ja: 小物
-  zh-CN: 小件物品
-category.action.object_manipulation.holding.stationery: &id038
-  en: stationery
-  ja: 文房具
-  zh-CN: 文具
-category.action.object_manipulation.holding.tech: &id039
-  en: tech
-  ja: 機器
-  zh-CN: 电子设备
-category.action.object_manipulation.holding.toy: &id040
-  en: toy
-  ja: おもちゃ
-  zh-CN: 玩具
-category.action.object_manipulation.holding.weapon: &id041
-  en: weapon
-  ja: 武器
-  zh-CN: 武器
-category.action.performance: &id042
-  en: performance
-  ja: パフォーマンス
-  zh-CN: 表演
-category.action.sport: &id043
-  en: sport
-  ja: スポーツ
-  zh-CN: 运动
 category.apparel:
   en: apparel
   ja: 服飾
@@ -183,25 +7,21 @@ category.apparel.detail:
   ja: 詳細
   zh-CN: 细节
 category.apparel.detail.detail:
-  en: detail
-  ja: 詳細
-  zh-CN: 细节
+  en: garment detail
+  ja: 服飾の細部
+  zh-CN: 服饰细节
 category.apparel.detail.detail.collar_neckline:
   en: collar neckline
   ja: 襟ネックライン
   zh-CN: 领口
-category.apparel.detail.detail.damage_wear:
-  en: damage wear
-  ja: ダメージ摩耗
-  zh-CN: 损坏磨损
 category.apparel.detail.detail.fastener:
   en: fastener
   ja: ファスナー
   zh-CN: 扣件
 category.apparel.detail.detail.material_layer:
-  en: material layer
-  ja: マテリアルレイヤー
-  zh-CN: 材质层次
+  en: material and layering
+  ja: 素材とレイヤー
+  zh-CN: 材质与层次
 category.apparel.detail.detail.opening_strap:
   en: opening strap
   ja: オープニングストラップ
@@ -306,10 +126,6 @@ category.apparel.garment.bottom.buruma:
   en: buruma
   ja: ブルマ
   zh-CN: 灯笼短裤
-category.apparel.garment.bottom.other:
-  en: other
-  ja: その他
-  zh-CN: 其他
 category.apparel.garment.bottom.overalls:
   en: overalls
   ja: オーバーオール
@@ -330,6 +146,10 @@ category.apparel.garment.dress:
   en: dress
   ja: ドレス
   zh-CN: 连衣裙
+category.apparel.garment.dress.general:
+  en: general
+  ja: 一般
+  zh-CN: 通用
 category.apparel.garment.dress.bodysuit:
   en: bodysuit
   ja: ボディスーツ
@@ -338,10 +158,6 @@ category.apparel.garment.dress.costume:
   en: costume
   ja: コスチューム
   zh-CN: 装扮
-category.apparel.garment.dress.dress:
-  en: dress
-  ja: ドレス
-  zh-CN: 连衣裙
 category.apparel.garment.handwear:
   en: handwear
   ja: 手袋
@@ -430,10 +246,6 @@ category.apparel.garment.top.cardigan:
   en: cardigan
   ja: カーディガン
   zh-CN: 开衫
-category.apparel.garment.top.casual:
-  en: casual
-  ja: カジュアルトップス
-  zh-CN: 休闲上装
 category.apparel.garment.top.corset:
   en: corset
   ja: コルセット
@@ -450,10 +262,6 @@ category.apparel.garment.top.misc:
   en: miscellaneous
   ja: その他
   zh-CN: 杂项
-category.apparel.garment.top.other:
-  en: other tops
-  ja: その他トップス
-  zh-CN: 其他上装
 category.apparel.garment.top.pajama:
   en: pajama
   ja: パジャマ
@@ -554,10 +362,6 @@ category.apparel.garment.underwear.male:
   en: male underwear
   ja: 男性下着
   zh-CN: 男性内衣
-category.apparel.garment.underwear.other:
-  en: other
-  ja: その他
-  zh-CN: 其他
 category.apparel.garment.underwear.panties:
   en: panties
   ja: パンツ
@@ -678,6 +482,10 @@ category.apparel.body_part_placement:
   en: body-part placement
   ja: 身体部位ごとの装着
   zh-CN: 身体部位穿戴关系
+category.apparel.body_part_placement.general:
+  en: general
+  ja: 一般
+  zh-CN: 通用
 category.apparel.body_part_placement.head:
   en: head
   ja: 頭
@@ -690,6 +498,10 @@ category.apparel.body_part_placement.shoulder:
   en: shoulder
   ja: 肩
   zh-CN: 肩部
+category.apparel.body_part_placement.shoulder.general:
+  en: general
+  ja: 一般
+  zh-CN: 通用
 category.apparel.body_part_placement.shoulder.on_shoulders:
   en: on shoulders
   ja: 肩に羽織る
@@ -722,6 +534,10 @@ category.apparel.body_part_placement.neck:
   en: neck
   ja: 首
   zh-CN: 颈部
+category.apparel.body_part_placement.neck.general:
+  en: general
+  ja: 一般
+  zh-CN: 通用
 category.apparel.body_part_placement.neck.on_neck:
   en: on neck
   ja: 首の上
@@ -963,31 +779,25 @@ category.character.affiliation:
   ja: 所属
   zh-CN: 所属
 category.character.affiliation.franchise:
-  en: franchise
-  zh-CN: 作品组织
+  en: franchise group
+  ja: 作品内団体
+  zh-CN: 作品内团体
 category.character.affiliation.generic:
-  en: generic
-  zh-CN: 通用组织
+  en: general group
+  ja: 一般団体
+  zh-CN: 通用团体
 category.character.archetype:
   en: archetype
   ja: 原型
   zh-CN: 原型
-category.character.archetype.affiliation:
-  en: affiliation
-  ja: 所属
-  zh-CN: 隶属关系
-category.character.archetype.affiliation.military_affiliation:
-  en: military affiliation
-  ja: 軍関係
-  zh-CN: 军事背景
-category.character.archetype.affiliation.public_group:
-  en: public group
-  ja: パブリックグループ
-  zh-CN: 公共团体
 category.character.archetype.form:
   en: form
   ja: フォーム
   zh-CN: 形态
+category.character.archetype.form.general:
+  en: general
+  ja: 一般
+  zh-CN: 通用
 category.character.archetype.form.female:
   en: female
   ja: 女性
@@ -1008,10 +818,6 @@ category.character.archetype.identity:
   en: identity
   ja: アイデンティティ
   zh-CN: 身份
-category.character.archetype.identity.ceremonial_status:
-  en: ceremonial status
-  ja: 儀式のステータス
-  zh-CN: 仪式身份
 category.character.archetype.identity.cultural_role:
   en: cultural
   ja: 文化的役割
@@ -1044,10 +850,6 @@ category.character.archetype.role.service_role:
   en: service
   ja: サービスの役割
   zh-CN: 服务职业
-category.character.archetype.role.service_role_other:
-  en: service role other
-  ja: サービスの役割その他
-  zh-CN: 服务角色 其他
 category.character.archetype.setting:
   en: setting
   ja: 設定
@@ -1144,10 +946,6 @@ category.character.body.body_part.nipple:
   en: nipple
   ja: 乳首
   zh-CN: 乳头
-category.character.body.body_part.other:
-  en: other
-  ja: その他
-  zh-CN: 其他
 category.character.body.body_part.prosthetic:
   en: prosthetic
   ja: 補綴物
@@ -1204,10 +1002,6 @@ category.character.body.eye.eyelash:
   en: eyelash
   ja: まつ毛
   zh-CN: 睫毛
-category.character.body.eye.feature:
-  en: feature
-  ja: 特徴
-  zh-CN: 特征
 category.character.body.eye.pupil:
   en: pupil
   ja: 瞳孔
@@ -1336,10 +1130,6 @@ category.character.body.hair.drill:
   en: drill
   ja: ドリル
   zh-CN: 钻卷
-category.character.body.hair.feature:
-  en: feature
-  ja: 特徴
-  zh-CN: 特征
 category.character.body.hair.length:
   en: length
   ja: 長さ
@@ -1360,10 +1150,6 @@ category.character.body.hair.special:
   en: special
   ja: ファンタジーヘア
   zh-CN: 特殊发质
-category.character.body.hair.style:
-  en: style
-  ja: スタイル
-  zh-CN: 风格
 category.character.body.hair.texture:
   en: texture
   ja: 質感
@@ -1464,34 +1250,70 @@ category.character.demographic.age:
   en: age
   ja: 年齢
   zh-CN: 年龄
+category.character.demographic.age.stage:
+  en: age stage
+  ja: 年齢層
+  zh-CN: 年龄阶段
+category.character.demographic.age.change:
+  en: age change
+  ja: 年齢変化
+  zh-CN: 年龄变化
+category.character.demographic.age.relation:
+  en: age relation
+  ja: 年齢関係
+  zh-CN: 年龄关系
+category.character.demographic.age.metadata:
+  en: age metadata
+  ja: 年齢メタ情報
+  zh-CN: 年龄元信息
 category.character.demographic.count:
   en: count
   ja: 人数
   zh-CN: 人数
+category.character.demographic.collective:
+  en: collective
+  ja: 集合体
+  zh-CN: 群体形态
+category.character.demographic.focus:
+  en: focus
+  ja: 焦点
+  zh-CN: 关注焦点
+category.character.demographic.presence:
+  en: presence
+  ja: 登場状態
+  zh-CN: 出场状态
+category.character.demographic.identity_count:
+  en: identity count
+  ja: キャラクター数
+  zh-CN: 角色身份数量
+category.character.demographic.depiction:
+  en: depiction
+  ja: 描写形態
+  zh-CN: 描写形态
 category.character.demographic.gender_presentation:
-  en: gender
+  en: gender presentation
   ja: ジェンダー表現
-  zh-CN: 性别
-category.character.expression:
-  en: expression
-  ja: 表情
-  zh-CN: 表情
-category.character.expression.emotion: &id044
-  en: emotion
-  ja: 感情
-  zh-CN: 情感
-category.character.expression.eye_expression: &id045
-  en: eye expression
-  ja: 目の表情
-  zh-CN: 眼神
-category.character.expression.face_effect: &id046
-  en: face effect
-  ja: 顔の効果
-  zh-CN: 脸部效果
-category.character.expression.mouth: &id047
-  en: mouth
-  ja: 口
-  zh-CN: 嘴
+  zh-CN: 性别呈现
+category.character.demographic.gender_presentation.feminine_male:
+  en: feminine male
+  ja: 女性的な男性
+  zh-CN: 女性化男性
+category.character.demographic.gender_presentation.masculine_female:
+  en: masculine female
+  ja: 男性的な女性
+  zh-CN: 男性化女性
+category.character.demographic.gender_presentation.neutral:
+  en: neutral
+  ja: 中性
+  zh-CN: 中性
+category.character.demographic.gender_presentation.transformation:
+  en: transformation
+  ja: 性別変化
+  zh-CN: 性别变化
+category.character.demographic.gender_presentation.male_style:
+  en: male style
+  ja: 男性系スタイル
+  zh-CN: 男性风格
 category.character.nonhuman_trait:
   en: nonhuman trait
   ja: 人間以外の特性
@@ -1576,10 +1398,26 @@ category.character.nonhuman_trait.species_trait:
   en: species trait
   ja: 種の特徴
   zh-CN: 种族特征
-category.character.nonhuman_trait.synthetic_mutation:
-  en: synthetic mod
-  ja: 合成突然変異
-  zh-CN: 机械改造
+category.character.nonhuman_trait.altered_body:
+  en: altered body
+  ja: 変質した身体
+  zh-CN: 身体异变
+category.character.nonhuman_trait.altered_body.material_growth:
+  en: material growth
+  ja: 物質増生
+  zh-CN: 物质增生
+category.character.nonhuman_trait.altered_body.surface_change:
+  en: surface change
+  ja: 体表変化
+  zh-CN: 体表变化
+category.character.nonhuman_trait.altered_body.mechanization:
+  en: mechanization
+  ja: 機械化
+  zh-CN: 机械化
+category.character.nonhuman_trait.altered_body.mutation:
+  en: mutation
+  ja: 変異
+  zh-CN: 变异
 category.character.nonhuman_trait.tentacle:
   en: tentacle
   ja: 触手
@@ -1592,10 +1430,6 @@ category.character.relationship.comparison_relation:
   en: comparison
   ja: 比較関係
   zh-CN: 比较关系
-category.character.relationship.competitive_relation:
-  en: competition
-  ja: 競争関係
-  zh-CN: 竞争关系
 category.character.relationship.cross_type_relation:
   en: cross-type
   ja: クロスタイプ関係
@@ -1616,10 +1450,6 @@ category.character.relationship.romantic_pairing:
   en: romantic pairing
   ja: 恋愛カップリング
   zh-CN: 恋爱配对
-category.character.relationship.social_bond:
-  en: social bond
-  ja: 社会的な絆
-  zh-CN: 社会纽带
 category.character.skin:
   en: skin
   ja: 肌
@@ -1752,6 +1582,10 @@ category.composition.framing.body_part_anchor.shoulder:
   en: shoulder
   ja: 肩
   zh-CN: 肩部
+category.composition.framing.body_part_anchor.shoulder.general:
+  en: general
+  ja: 一般
+  zh-CN: 通用
 category.composition.framing.body_part_anchor.shoulder.on_shoulder:
   en: on shoulder
   ja: 肩上
@@ -1829,21 +1663,21 @@ category.creature.aquatic:
   ja: 水生の
   zh-CN: 水生生物
 category.creature.aquatic.aquatic_misc:
-  en: aquatic misc
-  ja: 水生その他
-  zh-CN: 其他水生
+  en: other aquatic life
+  ja: その他の水生生物
+  zh-CN: 其他水生生物
 category.creature.aquatic.fish_marine:
-  en: fish marine
-  ja: 魚類・海洋生物
-  zh-CN: 鱼类与海洋生物
+  en: aquatic animal
+  ja: 水生動物
+  zh-CN: 水生动物
 category.creature.bird:
   en: bird
   ja: 鳥
   zh-CN: 鸟
-category.creature.bird.bird:
-  en: bird
-  ja: 鳥
-  zh-CN: 鸟
+category.creature.bird.general:
+  en: general
+  ja: 一般
+  zh-CN: 通用
 category.creature.bird.bird_misc:
   en: bird misc
   ja: 鳥その他
@@ -1852,10 +1686,10 @@ category.creature.fantasy_creature:
   en: fantasy creature
   ja: 空想上の生き物
   zh-CN: 幻想生物
-category.creature.fantasy_creature.fantasy_creature:
-  en: fantasy creature
-  ja: 空想上の生き物
-  zh-CN: 幻想生物
+category.creature.fantasy_creature.general:
+  en: general
+  ja: 一般
+  zh-CN: 通用
 category.creature.fantasy_creature.mythical:
   en: mythical
   ja: 神話的な
@@ -1888,6 +1722,10 @@ category.creature.mammal:
   en: mammal
   ja: 哺乳類
   zh-CN: 哺乳动物
+category.creature.mammal.general:
+  en: general
+  ja: 一般
+  zh-CN: 通用
 category.creature.mammal.canine:
   en: canine
   ja: イヌ科
@@ -1896,10 +1734,6 @@ category.creature.mammal.feline:
   en: feline
   ja: ネコ科の動物
   zh-CN: 猫科动物
-category.creature.mammal.mammal:
-  en: mammal
-  ja: 哺乳類
-  zh-CN: 哺乳动物
 category.creature.mammal.small_animal:
   en: small animal
   ja: 小動物
@@ -1940,7 +1774,10 @@ category.dynamics.action:
   en: action
   ja: 動作
   zh-CN: 动作
-category.dynamics.action.combat: *id001
+category.dynamics.action.combat:
+  en: combat
+  ja: 戦闘
+  zh-CN: 战斗
 category.dynamics.action.combat.aftermath:
   en: aftermath
   ja: 結果
@@ -1977,30 +1814,86 @@ category.dynamics.action.combat.ranged:
   en: ranged
   ja: 遠距離
   zh-CN: 远程
-category.dynamics.action.daily_activity: *id002
-category.dynamics.action.daily_activity.bathing: *id003
-category.dynamics.action.daily_activity.communication: *id004
-category.dynamics.action.daily_activity.cooking: *id005
-category.dynamics.action.daily_activity.craft_task: *id006
-category.dynamics.action.daily_activity.delivery_service: *id007
-category.dynamics.action.daily_activity.eating_drinking: *id008
-category.dynamics.action.daily_activity.food_preparation: *id009
-category.dynamics.action.daily_activity.grooming: *id010
-category.dynamics.action.daily_activity.manual_handling: *id011
-category.dynamics.action.daily_activity.media_use: *id012
-category.dynamics.action.daily_activity.object_placement: *id013
-category.dynamics.action.daily_activity.observation_attention: *id014
-category.dynamics.action.daily_activity.reading_writing: *id015
-category.dynamics.action.daily_activity.recreation: *id016
-category.dynamics.action.daily_activity.risk_state: *id017
-category.dynamics.action.daily_activity.ritual_task: *id018
-category.dynamics.action.daily_activity.self_care: *id019
-category.dynamics.action.daily_activity.self_signal: *id020
-category.dynamics.action.daily_activity.sleeping: *id021
-category.dynamics.action.daily_activity.smoking: *id022
-category.dynamics.action.daily_activity.travel_outdoor: *id023
-category.dynamics.action.daily_activity.upkeep_task: *id024
-category.dynamics.action.gesture: *id025
+category.dynamics.action.daily_activity:
+  en: daily activity
+  ja: 日常行為
+  zh-CN: 日常活动
+category.dynamics.action.daily_activity.bathing:
+  en: bathing
+  ja: 入浴
+  zh-CN: 洗澡
+category.dynamics.action.daily_activity.cooking:
+  en: cooking
+  ja: 料理
+  zh-CN: 烹饪
+category.dynamics.action.daily_activity.craft_task:
+  en: craft task
+  ja: 手仕事
+  zh-CN: 手工活动
+category.dynamics.action.daily_activity.eating_drinking:
+  en: eating and drinking
+  ja: 食べる、飲む
+  zh-CN: 吃喝
+category.dynamics.action.daily_activity.food_preparation:
+  en: meal preparation
+  ja: 食事の準備
+  zh-CN: 备餐
+category.dynamics.action.daily_activity.grooming:
+  en: grooming
+  ja: グルーミング
+  zh-CN: 仪容整理
+category.dynamics.action.daily_activity.manual_handling:
+  en: manual handling
+  ja: 手作業
+  zh-CN: 手部操作
+category.dynamics.action.daily_activity.media_use:
+  en: media use
+  ja: メディア利用
+  zh-CN: 媒体使用
+category.dynamics.action.daily_activity.object_placement:
+  en: object placement
+  ja: 物の配置
+  zh-CN: 物品放置
+category.dynamics.action.daily_activity.observation_attention:
+  en: observation attention
+  ja: 観察
+  zh-CN: 观察
+category.dynamics.action.daily_activity.reading_writing:
+  en: reading and writing
+  ja: 読み書き
+  zh-CN: 阅读写作
+category.dynamics.action.daily_activity.recreation:
+  en: recreation
+  ja: レクリエーション
+  zh-CN: 休闲
+category.dynamics.action.daily_activity.risk_state:
+  en: risk state
+  ja: リスク状態
+  zh-CN: 风险状态
+category.dynamics.action.daily_activity.self_care:
+  en: self-care
+  ja: セルフケア
+  zh-CN: 自我照顾
+category.dynamics.action.daily_activity.self_signal:
+  en: self-expression
+  ja: 自己アピール
+  zh-CN: 自我表现
+category.dynamics.action.daily_activity.sleeping:
+  en: sleeping
+  ja: 眠っている
+  zh-CN: 睡觉
+category.dynamics.action.daily_activity.travel_outdoor:
+  en: travel and outdoor
+  ja: 屋外活動
+  zh-CN: 出行户外
+category.dynamics.action.daily_activity.upkeep_task:
+  en: upkeep task
+  ja: 手入れ
+  zh-CN: 维护作业
+category.dynamics.action.gesture:
+  en: gesture
+  ja: ジェスチャー
+  zh-CN: 手势
 category.dynamics.action.gesture.cover:
   en: covering
   ja: 隠す
@@ -2009,10 +1902,6 @@ category.dynamics.action.gesture.general:
   en: general
   ja: 一般
   zh-CN: 通用
-category.dynamics.action.gesture.general.body_gesture:
-  en: body gesture
-  ja: 肢体动作
-  zh-CN: 肢体动作
 category.dynamics.action.gesture.greeting:
   en: greeting
   ja: 挨拶
@@ -2025,7 +1914,10 @@ category.dynamics.action.gesture.pointing:
   en: pointing
   ja: 指差し
   zh-CN: 指向
-category.dynamics.action.locomotion: *id026
+category.dynamics.action.locomotion:
+  en: locomotion
+  ja: 移動
+  zh-CN: 移动
 category.dynamics.action.locomotion.aerial:
   en: aerial
   ja: 空中移動
@@ -2046,8 +1938,14 @@ category.dynamics.action.locomotion.water:
   en: water
   ja: 水中移動
   zh-CN: 水中
-category.dynamics.action.object_manipulation: *id027
-category.dynamics.action.object_manipulation.clothing_adjustment: *id028
+category.dynamics.action.object_manipulation:
+  en: object manipulation
+  ja: 物の操作
+  zh-CN: 物品操作
+category.dynamics.action.object_manipulation.clothing_adjustment:
+  en: clothing adjustment
+  ja: 衣服の調整
+  zh-CN: 服装调整
 category.dynamics.action.object_manipulation.clothing_adjustment.adjust:
   en: adjust
   ja: 調整
@@ -2068,10 +1966,22 @@ category.dynamics.action.object_manipulation.clothing_adjustment.undress:
   en: undress
   ja: 脱衣
   zh-CN: 脱衣
-category.dynamics.action.object_manipulation.holding: *id029
-category.dynamics.action.object_manipulation.holding.clothing: *id030
-category.dynamics.action.object_manipulation.holding.creature: *id031
-category.dynamics.action.object_manipulation.holding.food_drink: *id032
+category.dynamics.action.object_manipulation.holding:
+  en: holding
+  ja: 持っている
+  zh-CN: 手持
+category.dynamics.action.object_manipulation.holding.clothing:
+  en: clothing
+  ja: 衣類
+  zh-CN: 服装
+category.dynamics.action.object_manipulation.holding.creature:
+  en: creature
+  ja: 生き物
+  zh-CN: 生物
+category.dynamics.action.object_manipulation.holding.food_drink:
+  en: food drink
+  ja: 食べ物飲み物
+  zh-CN: 食品饮料
 category.dynamics.action.object_manipulation.holding.general:
   en: general
   ja: 一般
@@ -2080,21 +1990,54 @@ category.dynamics.action.object_manipulation.holding.grip_style:
   en: grip style
   ja: 持ち方
   zh-CN: 握法
-category.dynamics.action.object_manipulation.holding.household_tool: *id034
-category.dynamics.action.object_manipulation.holding.instrument: *id035
-category.dynamics.action.object_manipulation.holding.plant: *id036
-category.dynamics.action.object_manipulation.holding.small_item: *id037
-category.dynamics.action.object_manipulation.holding.stationery: *id038
-category.dynamics.action.object_manipulation.holding.tech: *id039
-category.dynamics.action.object_manipulation.holding.toy: *id040
-category.dynamics.action.object_manipulation.holding.weapon: *id041
-category.dynamics.action.performance: *id042
-category.dynamics.action.sport: *id043
+category.dynamics.action.object_manipulation.holding.household_tool:
+  en: household tool
+  ja: 家庭用ツール
+  zh-CN: 家用工具
+category.dynamics.action.object_manipulation.holding.instrument:
+  en: instrument
+  ja: 楽器
+  zh-CN: 乐器
+category.dynamics.action.object_manipulation.holding.plant:
+  en: plant
+  ja: 植物
+  zh-CN: 植物
+category.dynamics.action.object_manipulation.holding.small_item:
+  en: small item
+  ja: 小物
+  zh-CN: 小件物品
+category.dynamics.action.object_manipulation.holding.stationery:
+  en: stationery
+  ja: 文房具
+  zh-CN: 文具
+category.dynamics.action.object_manipulation.holding.tech:
+  en: tech
+  ja: 機器
+  zh-CN: 电子设备
+category.dynamics.action.object_manipulation.holding.toy:
+  en: toy
+  ja: おもちゃ
+  zh-CN: 玩具
+category.dynamics.action.object_manipulation.holding.weapon:
+  en: weapon
+  ja: 武器
+  zh-CN: 武器
+category.dynamics.action.performance:
+  en: performance
+  ja: パフォーマンス
+  zh-CN: 表演
+category.dynamics.action.sport:
+  en: sport
+  ja: スポーツ
+  zh-CN: 运动
 category.dynamics.expression:
   en: expression
   ja: 表情
   zh-CN: 表情
-category.dynamics.expression.emotion: *id044
+category.dynamics.expression.emotion: &id044
+  en: emotion
+  ja: 感情
+  zh-CN: 情感
 category.dynamics.expression.emotion.general:
   en: general
   ja: 一般
@@ -2115,9 +2058,18 @@ category.dynamics.expression.emotion.surprise:
   en: surprise
   ja: 驚き
   zh-CN: 惊讶
-category.dynamics.expression.eye_expression: *id045
-category.dynamics.expression.face_effect: *id046
-category.dynamics.expression.mouth: *id047
+category.dynamics.expression.eye_expression: &id045
+  en: eye expression
+  ja: 目の表情
+  zh-CN: 眼神
+category.dynamics.expression.face_effect: &id046
+  en: face effect
+  ja: 顔の効果
+  zh-CN: 脸部效果
+category.dynamics.expression.mouth: &id047
+  en: mouth
+  ja: 口
+  zh-CN: 嘴
 category.dynamics.expression.mouth.general:
   en: general
   ja: 一般
@@ -2454,10 +2406,6 @@ category.fandom:
   en: fandom
   ja: ファンダム
   zh-CN: 作品关联
-category.fandom.affiliation:
-  en: affiliation
-  ja: 所属
-  zh-CN: 隶属关系
 category.fandom.challenge_event:
   en: challenge event
   ja: チャレンジイベント
@@ -2638,51 +2586,6 @@ category.fandom.style_reference.visual_style:
   en: visual style
   ja: ビジュアルスタイル
   zh-CN: 视觉风格
-category.interaction:
-  en: interaction
-  ja: 相互作用
-  zh-CN: 互动
-category.interaction.affection: *id048
-category.interaction.care: *id049
-category.interaction.conflict: *id050
-category.interaction.contact: *id051
-category.interaction.creature_interaction: *id052
-category.interaction.social_situation:
-  en: social situation
-  ja: 対人関係
-  zh-CN: 社交关系
-category.interaction.social_situation.comparison_relation:
-  en: comparison relation
-  ja: 比較関係
-  zh-CN: 比较关系
-category.interaction.social_situation.competitive_relation:
-  en: competitive relation
-  ja: 競争関係
-  zh-CN: 竞争关系
-category.interaction.social_situation.cross_type_relation:
-  en: cross type relation
-  ja: クロスタイプ関係
-  zh-CN: 交叉类型关系
-category.interaction.social_situation.family_relation:
-  en: family relation
-  ja: 家族関係
-  zh-CN: 家庭关系
-category.interaction.social_situation.identity_relation:
-  en: identity relation
-  ja: 同一関係
-  zh-CN: 身份关系
-category.interaction.social_situation.romantic_dynamic:
-  en: romantic dynamic
-  ja: 恋愛関係性
-  zh-CN: 恋爱关系模式
-category.interaction.social_situation.romantic_pairing:
-  en: romantic pairing
-  ja: 恋愛カップリング
-  zh-CN: 恋爱配对
-category.interaction.social_situation.social_bond:
-  en: social bond
-  ja: 社会的な絆
-  zh-CN: 社会纽带
 category.object:
   en: object
   ja: 物体
@@ -3095,6 +2998,10 @@ category.object.protective_gear:
   en: protective gear
   ja: 保護具
   zh-CN: 防护装备
+category.object.protective_gear.general:
+  en: general
+  ja: 一般
+  zh-CN: 通用
 category.object.protective_gear.body_protection:
   en: body protection
   ja: 身体防具
@@ -3107,6 +3014,10 @@ category.object.scene_prop:
   en: scene prop
   ja: シーン小道具
   zh-CN: 场景道具
+category.object.scene_prop.general:
+  en: general
+  ja: 一般
+  zh-CN: 通用
 category.object.scene_prop.barrier_restraint:
   en: barrier restraint
   ja: バリア拘束
@@ -3323,14 +3234,6 @@ category.object.vehicle.water:
   en: water
   ja: 水上
   zh-CN: 水上
-category.object.weapon_part:
-  en: weapon part
-  ja: 武器部分
-  zh-CN: 武器部分
-category.object.weapon_part.sheath:
-  en: sheath
-  ja: 鞘
-  zh-CN: 鞘
 category.object.weapon_type:
   en: weapon type
   ja: 武器の種類
@@ -3419,18 +3322,6 @@ category.object.weapon_type.sheath:
   en: sheath
   ja: 鞘
   zh-CN: 鞘
-category.pose:
-  en: pose
-  ja: ポーズ
-  zh-CN: 姿势
-category.pose.arm_hand: *id053
-category.pose.head_gaze: *id054
-category.pose.leg_foot: *id055
-category.pose.whole_body: *id056
-category.pose.whole_body.kneeling: *id057
-category.pose.whole_body.lying: *id058
-category.pose.whole_body.sitting: *id059
-category.pose.whole_body.standing: *id060
 category.production:
   en: production
   ja: 制作情報
@@ -3535,490 +3426,6 @@ category.production.software_context:
   en: software context
   ja: ソフトウェア関連
   zh-CN: 软件相关
-category.subject:
-  en: subject
-  ja: 主体
-  zh-CN: 主体
-category.subject.anatomy:
-  en: anatomy
-  ja: 解剖学
-  zh-CN: 解剖学
-category.subject.anatomy.body_part:
-  en: body part
-  ja: 体の部分
-  zh-CN: 身体部位
-category.subject.anatomy.body_part.arm:
-  en: arm
-  ja: 腕
-  zh-CN: 手臂
-category.subject.anatomy.body_part.blood:
-  en: blood
-  ja: 血
-  zh-CN: 血
-category.subject.anatomy.body_part.chest:
-  en: chest
-  ja: 胸
-  zh-CN: 胸部
-category.subject.anatomy.body_part.foot_toe:
-  en: foot toe
-  ja: 足と足指
-  zh-CN: 脚与脚趾
-category.subject.anatomy.body_part.groin_hip:
-  en: groin hip
-  ja: 股間と腰
-  zh-CN: 腹股沟与胯部
-category.subject.anatomy.body_part.hand_finger:
-  en: hand finger
-  ja: 手と指
-  zh-CN: 手与手指
-category.subject.anatomy.body_part.leg_thigh:
-  en: leg thigh
-  ja: 脚と太もも
-  zh-CN: 腿与大腿
-category.subject.anatomy.body_part.nail:
-  en: nail
-  ja: 爪
-  zh-CN: 指甲
-category.subject.anatomy.body_part.nipple:
-  en: nipple
-  ja: 乳首
-  zh-CN: 乳头
-category.subject.anatomy.body_part.other:
-  en: other
-  ja: その他
-  zh-CN: 其他
-category.subject.anatomy.body_part.prosthetic:
-  en: prosthetic
-  ja: 補綴物
-  zh-CN: 假肢
-category.subject.anatomy.body_part.shoulder_back:
-  en: shoulder back
-  ja: 肩と背中
-  zh-CN: 肩与背部
-category.subject.anatomy.body_part.torso:
-  en: torso
-  ja: 胴体
-  zh-CN: 躯干
-category.subject.anatomy.breast:
-  en: breast
-  ja: 胸
-  zh-CN: 乳房
-category.subject.anatomy.ear:
-  en: ear
-  ja: 耳
-  zh-CN: 耳朵
-category.subject.anatomy.eye:
-  en: eye
-  ja: 目
-  zh-CN: 眼睛
-category.subject.anatomy.eye.color:
-  en: color
-  ja: 色
-  zh-CN: 颜色
-category.subject.anatomy.eye.feature:
-  en: feature
-  ja: 特徴
-  zh-CN: 特征
-category.subject.anatomy.face:
-  en: face
-  ja: 顔
-  zh-CN: 脸
-category.subject.anatomy.face.ear:
-  en: ear
-  ja: 耳
-  zh-CN: 耳朵
-category.subject.anatomy.face.eyebrow:
-  en: eyebrow
-  ja: 眉毛
-  zh-CN: 眉毛
-category.subject.anatomy.face.face_mark_misc:
-  en: face mark misc
-  ja: フェイスマークその他
-  zh-CN: 面部标记杂项
-category.subject.anatomy.face.facial_hair:
-  en: facial hair
-  ja: 顔の毛
-  zh-CN: 面部毛发
-category.subject.anatomy.face.fluid_mess:
-  en: fluid mess
-  ja: 液体汚れ
-  zh-CN: 液体沾污
-category.subject.anatomy.face.head_shape:
-  en: head shape
-  ja: 頭の形
-  zh-CN: 头型
-category.subject.anatomy.face.lips_mouth:
-  en: lips mouth
-  ja: 口元
-  zh-CN: 嘴唇与口部
-category.subject.anatomy.face.makeup:
-  en: makeup
-  ja: メイクアップ
-  zh-CN: 化妆
-category.subject.anatomy.face.marking:
-  en: marking
-  ja: マーキング
-  zh-CN: 标记
-category.subject.anatomy.face.mole_freckle:
-  en: mole freckle
-  ja: ほくろそばかす
-  zh-CN: 痣雀斑
-category.subject.anatomy.face.morphology:
-  en: morphology
-  ja: 形態学
-  zh-CN: 形态学
-category.subject.anatomy.face.nose:
-  en: nose
-  ja: 鼻
-  zh-CN: 鼻子
-category.subject.anatomy.face.oral_detail:
-  en: oral detail
-  ja: 口元の細部
-  zh-CN: 口部细节
-category.subject.anatomy.face.scar_injury:
-  en: scar injury
-  ja: 傷跡の損傷
-  zh-CN: 疤痕损伤
-category.subject.anatomy.face.teeth_fang:
-  en: teeth fang
-  ja: 歯と牙
-  zh-CN: 牙齿与獠牙
-category.subject.anatomy.face.tongue:
-  en: tongue
-  ja: 舌
-  zh-CN: 舌头
-category.subject.anatomy.hair:
-  en: hair
-  ja: 髪
-  zh-CN: 头发
-category.subject.anatomy.hair.color:
-  en: color
-  ja: 色
-  zh-CN: 颜色
-category.subject.anatomy.hair.feature:
-  en: feature
-  ja: 特徴
-  zh-CN: 特征
-category.subject.anatomy.hair.length:
-  en: length
-  ja: 長さ
-  zh-CN: 长度
-category.subject.anatomy.hair.style:
-  en: style
-  ja: スタイル
-  zh-CN: 风格
-category.subject.anatomy.horn:
-  en: horn
-  ja: 角
-  zh-CN: 角
-category.subject.anatomy.kemonomimi:
-  en: kemonomimi
-  ja: 獣耳
-  zh-CN: 兽耳属性
-category.subject.anatomy.physique:
-  en: physique
-  ja: 体格
-  zh-CN: 体格
-category.subject.anatomy.tail:
-  en: tail
-  ja: 尻尾
-  zh-CN: 尾巴
-category.subject.anatomy.wing:
-  en: wing
-  ja: 翼
-  zh-CN: 翼
-category.subject.archetype:
-  en: archetype
-  ja: 原型
-  zh-CN: 原型
-category.subject.archetype.affiliation:
-  en: affiliation
-  ja: 所属
-  zh-CN: 隶属关系
-category.subject.archetype.affiliation.military_affiliation:
-  en: military affiliation
-  ja: 軍関係
-  zh-CN: 军事背景
-category.subject.archetype.affiliation.public_group:
-  en: public group
-  ja: パブリックグループ
-  zh-CN: 公共团体
-category.subject.archetype.form:
-  en: form
-  ja: フォーム
-  zh-CN: 形式
-category.subject.archetype.form.kemono_type:
-  en: kemono type
-  ja: ケモノタイプ
-  zh-CN: 兽型
-category.subject.archetype.form.persona_form:
-  en: persona form
-  ja: ペルソナフォーム
-  zh-CN: 人物形象
-category.subject.archetype.form.stature_form:
-  en: stature form
-  ja: 身長フォーム
-  zh-CN: 身材形态
-category.subject.archetype.identity:
-  en: identity
-  ja: アイデンティティ
-  zh-CN: 身份
-category.subject.archetype.identity.ceremonial_status:
-  en: ceremonial status
-  ja: 儀式のステータス
-  zh-CN: 礼仪地位
-category.subject.archetype.identity.cultural_role:
-  en: cultural role
-  ja: 文化的役割
-  zh-CN: 文化角色
-category.subject.archetype.identity.social_type:
-  en: social type
-  ja: 社会的なタイプ
-  zh-CN: 社会类型
-category.subject.archetype.role:
-  en: role
-  ja: 役割
-  zh-CN: 角色
-category.subject.archetype.role.combat_role:
-  en: combat role
-  ja: 戦闘の役割
-  zh-CN: 战斗角色
-category.subject.archetype.role.modern_role:
-  en: modern role
-  ja: 現代の役割
-  zh-CN: 现代角色
-category.subject.archetype.role.occupation:
-  en: occupation
-  ja: 職業
-  zh-CN: 职业
-category.subject.archetype.role.performance_role:
-  en: performance role
-  ja: パフォーマンスの役割
-  zh-CN: 表演角色
-category.subject.archetype.role.service_role:
-  en: service role
-  ja: サービスの役割
-  zh-CN: 服务角色
-category.subject.archetype.role.service_role_other:
-  en: service role other
-  ja: サービスの役割その他
-  zh-CN: 服务角色 其他
-category.subject.archetype.setting:
-  en: setting
-  ja: 設定
-  zh-CN: 题材设定
-category.subject.archetype.setting.fantasy_role:
-  en: fantasy role
-  ja: ファンタジーの役割
-  zh-CN: 幻想角色
-category.subject.archetype.setting.game_specific:
-  en: game specific
-  ja: ゲーム特有の
-  zh-CN: 游戏特定
-category.subject.archetype.setting.scifi:
-  en: scifi
-  ja: サイエンスフィクション
-  zh-CN: 科幻
-category.subject.archetype.setting.supernatural:
-  en: supernatural
-  ja: 超自然的な
-  zh-CN: 超自然的
-category.subject.demographic:
-  en: demographic
-  ja: 人口統計
-  zh-CN: 人口统计
-category.subject.demographic.age:
-  en: age
-  ja: 年齢
-  zh-CN: 年龄
-category.subject.demographic.count:
-  en: count
-  ja: 人数
-  zh-CN: 人数
-category.subject.demographic.gender_presentation:
-  en: gender presentation
-  ja: ジェンダー表現
-  zh-CN: 性别表现
-category.subject.expression:
-  en: expression
-  ja: 表情
-  zh-CN: 表情
-category.subject.expression.emotion:
-  en: emotion
-  ja: 感情
-  zh-CN: 情感
-category.subject.expression.eye_expression:
-  en: eye expression
-  ja: 目の表情
-  zh-CN: 眼神
-category.subject.expression.face_effect:
-  en: face effect
-  ja: 顔の効果
-  zh-CN: 脸部效果
-category.subject.expression.mouth:
-  en: mouth
-  ja: 口
-  zh-CN: 嘴
-category.subject.nonhuman_trait:
-  en: nonhuman trait
-  ja: 人間以外の特性
-  zh-CN: 非人类特征
-category.subject.nonhuman_trait.mythical_trait:
-  en: mythical trait
-  ja: 神話上の特徴
-  zh-CN: 神话特质
-category.subject.nonhuman_trait.mythical_trait.animal_face:
-  en: animal face
-  ja: 動物の顔
-  zh-CN: 动物脸
-category.subject.nonhuman_trait.mythical_trait.animal_limb:
-  en: animal limb
-  ja: 動物の手足
-  zh-CN: 动物肢体
-category.subject.nonhuman_trait.mythical_trait.antenna:
-  en: antenna
-  ja: アンテナ
-  zh-CN: 天线
-category.subject.nonhuman_trait.mythical_trait.blood_body_feature:
-  en: blood body feature
-  ja: 血液の体の特徴
-  zh-CN: 血体特征
-category.subject.nonhuman_trait.mythical_trait.body_anomaly:
-  en: body anomaly
-  ja: 体の異常
-  zh-CN: 身体异常
-category.subject.nonhuman_trait.mythical_trait.claw:
-  en: claw
-  ja: 爪
-  zh-CN: 爪子
-category.subject.nonhuman_trait.mythical_trait.feather:
-  en: feather
-  ja: 羽
-  zh-CN: 羽毛
-category.subject.nonhuman_trait.mythical_trait.fin:
-  en: fin
-  ja: ひれ
-  zh-CN: 鳍
-category.subject.nonhuman_trait.mythical_trait.fur:
-  en: fur
-  ja: 毛皮
-  zh-CN: 毛皮
-category.subject.nonhuman_trait.mythical_trait.halo:
-  en: halo
-  ja: 光輪
-  zh-CN: 光环
-category.subject.nonhuman_trait.mythical_trait.joint:
-  en: joint
-  ja: 関節
-  zh-CN: 关节
-category.subject.nonhuman_trait.mythical_trait.limb_body_structure:
-  en: limb body structure
-  ja: 四肢の体の構造
-  zh-CN: 四肢身体结构
-category.subject.nonhuman_trait.mythical_trait.misc_trait:
-  en: misc trait
-  ja: その他の特性
-  zh-CN: 杂项特质
-category.subject.nonhuman_trait.mythical_trait.mouth_anomaly:
-  en: mouth anomaly
-  ja: 口の異常
-  zh-CN: 口腔异常
-category.subject.nonhuman_trait.mythical_trait.scale:
-  en: scale
-  ja: 鱗
-  zh-CN: 鳞片
-category.subject.nonhuman_trait.mythical_trait.sensory_feature:
-  en: sensory feature
-  ja: 感覚機能
-  zh-CN: 感觉特征
-category.subject.nonhuman_trait.mythical_trait.shell_spine:
-  en: shell spine
-  ja: 貝殻の背骨
-  zh-CN: 壳脊椎
-category.subject.nonhuman_trait.mythical_trait.special_head:
-  en: special head
-  ja: 特別なヘッド
-  zh-CN: 特殊头
-category.subject.nonhuman_trait.mythical_trait.special_tongue:
-  en: special tongue
-  ja: 特別な舌
-  zh-CN: 特殊的舌头
-category.subject.nonhuman_trait.mythical_trait.species_trait:
-  en: species trait
-  ja: 種の特徴
-  zh-CN: 物种性状
-category.subject.nonhuman_trait.mythical_trait.synthetic_mutation:
-  en: synthetic mutation
-  ja: 合成突然変異
-  zh-CN: 合成突变
-category.subject.nonhuman_trait.mythical_trait.tentacle:
-  en: tentacle
-  ja: 触手
-  zh-CN: 触手
-category.subject.surface:
-  en: surface
-  ja: 表面
-  zh-CN: 表面
-category.subject.surface.skin:
-  en: skin
-  ja: 皮膚
-  zh-CN: 皮肤
-category.subject.surface.skin.blood:
-  en: blood
-  ja: 血
-  zh-CN: 血
-category.subject.surface.skin.blush_vein:
-  en: blush vein
-  ja: 赤面と青筋
-  zh-CN: 红晕与青筋
-category.subject.surface.skin.body_hair:
-  en: body hair
-  ja: 体毛
-  zh-CN: 体毛
-category.subject.surface.skin.body_marking:
-  en: body marking
-  ja: ボディマーキング
-  zh-CN: 身体标记
-category.subject.surface.skin.body_mole_freckle:
-  en: body mole freckle
-  ja: 体のほくろそばかす
-  zh-CN: 身体痣雀斑
-category.subject.surface.skin.color:
-  en: color
-  ja: 色
-  zh-CN: 颜色
-category.subject.surface.skin.injury_condition:
-  en: injury condition
-  ja: 怪我の状態
-  zh-CN: 受伤情况
-category.subject.surface.skin.scar_wound:
-  en: scar wound
-  ja: 傷跡
-  zh-CN: 疤痕伤口
-category.subject.surface.skin.skin_mark:
-  en: skin mark
-  ja: 皮膚の跡
-  zh-CN: 皮肤标记
-category.subject.surface.skin.sweat_oil:
-  en: sweat oil
-  ja: 汗と皮脂
-  zh-CN: 汗液与油光
-category.subject.surface.skin.synthetic_mod:
-  en: synthetic mod
-  ja: 人工改造
-  zh-CN: 人工改造
-category.subject.surface.skin.tan:
-  en: tan
-  ja: 黄褐色
-  zh-CN: 晒黑
-category.subject.surface.skin.tattoo:
-  en: tattoo
-  ja: タトゥー
-  zh-CN: 纹身
-category.subject.surface.skin.texture_condition:
-  en: texture condition
-  ja: 質感の状態
-  zh-CN: 纹理状况
 category.text:
   en: text
   ja: テキスト
@@ -6086,7 +5493,7 @@ tag.amber_(gemstone):
 tag.ambiguous_gender:
   en: ambiguous gender
   ja: 曖昧な性別
-  zh-CN: 性别模糊
+  zh-CN: 性别不明
 tag.ambiguous_red_liquid:
   en: ambiguous red liquid
   ja: 曖昧な赤い液体
@@ -6370,7 +5777,7 @@ tag.androgyne_symbol:
 tag.androgynous:
   en: androgynous
   ja: 中性的
-  zh-CN: 无性别
+  zh-CN: 中性气质
 tag.android:
   en: android
   ja: メカバレ
@@ -10057,8 +9464,8 @@ tag.bar_stool:
   zh-CN: 吧台凳
 tag.bara:
   en: bara
-  ja: 大叔
-  zh-CN: 肌肉男
+  ja: バラ
+  zh-CN: 蔷薇系男性
 tag.barbarian:
   en: barbarian
   ja: 野蛮人
@@ -23665,8 +23072,8 @@ tag.cunnilingus_through_clothes:
   zh-CN: 透过衣服舔阴
 tag.cuntboy:
   en: cuntboy
-  ja: マンコ男
-  zh-CN: 女穴男
+  ja: 女性器のある男性
+  zh-CN: 有女阴的男性
 tag.cuntboy_with_male:
   en: cuntboy with male
   ja: 男性との女
@@ -28834,11 +28241,11 @@ tag.faceless:
 tag.faceless_female:
   en: faceless female
   ja: 顔のない女性
-  zh-CN: 不露面的女性
+  zh-CN: 无脸女性
 tag.faceless_male:
   en: faceless male
   ja: 顔のない男性
-  zh-CN: 不露面的男性
+  zh-CN: 无脸男性
 tag.faceoff:
   en: faceoff
   ja: 対決
@@ -33349,11 +32756,11 @@ tag.furry_and_humanization:
   zh-CN: 毛茸茸和人性化
 tag.furry_female:
   en: furry female
-  ja: 獣人
+  ja: 女性の獣人
   zh-CN: 兽人女
 tag.furry_male:
   en: furry male
-  ja: 獣人
+  ja: 男性の獣人
   zh-CN: 兽人男
 tag.furry_with_furry:
   en: furry with furry
@@ -34009,19 +33416,19 @@ tag.genba_neko_(meme):
   zh-CN: 玄场猫 (meme)
 tag.gender_transitioning:
   en: gender transitioning
-  ja: 性転換
-  zh-CN: 性别转变
+  ja: 性別移行中
+  zh-CN: 性别过渡中
 tag.genderswap:
   en: genderswap
   ja: 性転換
   zh-CN: 性转
 tag.genderswap_(ftm):
   en: genderswap (ftm)
-  ja: 男の娘化
+  ja: 男体化
   zh-CN: 男体化
 tag.genderswap_(mtf):
   en: genderswap (mtf)
-  ja: にょたゆり
+  ja: 女体化
   zh-CN: 女体化
 tag.genderswap_(otf):
   en: genderswap (otf)
@@ -34425,8 +33832,8 @@ tag.girl_staring_at_guy's_chest_(meme):
   zh-CN: 女孩盯着男人的胸部（表情包）
 tag.girly_boy:
   en: girly boy
-  ja: オネエ
-  zh-CN: 女装男
+  ja: 女の子っぽい男の子
+  zh-CN: 偏女性气的男孩
 tag.girly_running:
   en: girly running
   ja: 女の子走り
@@ -55621,8 +55028,8 @@ tag.multiple_torii:
   zh-CN: 多个鸟居
 tag.multiple_traps:
   en: multiple traps
-  ja: 複数のトラップ
-  zh-CN: 多位伪娘
+  ja: 複数の男の娘
+  zh-CN: 多名伪娘
 tag.multiple_unit_train:
   en: multiple unit train
   ja: 気動車
@@ -59965,7 +59372,7 @@ tag.other_with_other:
   zh-CN: 其他与其他
 tag.otoko_no_ko:
   en: otoko no ko
-  ja: 偽娘
+  ja: 男の娘
   zh-CN: 伪娘
 tag.otonokizaka_school_uniform:
   en: otonokizaka school uniform
@@ -69633,7 +69040,7 @@ tag.reverse_suspended_congress:
   zh-CN: 背面駅弁
 tag.reverse_trap:
   en: reverse trap
-  ja: 正莉
+  ja: 逆トラップ
   zh-CN: 伪郎
 tag.reverse_upright_straddle:
   en: reverse upright straddle
@@ -74106,7 +73513,7 @@ tag.short_kimono:
 tag.short_male:
   en: short male
   ja: 背の低い男性
-  zh-CN: 矮男
+  zh-CN: 矮个男性
 tag.short_necktie:
   en: short necktie
   ja: 短いネクタイ
@@ -84489,7 +83896,7 @@ tag.tomato_slice:
   zh-CN: 番茄片
 tag.tomboy:
   en: tomboy
-  ja: 假小子
+  ja: ボーイッシュ
   zh-CN: 假小子
 tag.tombstone:
   en: tombstone
@@ -85493,7 +84900,7 @@ tag.transverse_flute:
   zh-CN: 横向槽
 tag.trap:
   en: trap
-  ja: トラップ
+  ja: 女装男子
   zh-CN: 伪娘
 tag.trap_door:
   en: trap door

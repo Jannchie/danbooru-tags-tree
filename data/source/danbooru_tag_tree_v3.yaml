@@ -9,15 +9,12 @@ character:
   demographic:
     count:
     - 1girl
-    - solo
     - multiple_girls
     - 1boy
     - 2girls
     - multiple_boys
-    - solo_focus
     - 2boys
     - 3girls
-    - no_humans
     - 4girls
     - 1other
     - 6+girls
@@ -27,76 +24,84 @@ character:
     - 6+boys
     - multiple_others
     - 5boys
-    - everyone
     - 2others
-    - people
-    - crowd
-    - too_many
     - 3others
     - 6+others
     - 4others
-    - absolutely_everyone
     - sextuplets
     - 5others
     - quintuplets
+    collective:
+    - everyone
+    - people
+    - crowd
+    - too_many
+    - absolutely_everyone
     - fleet
-    - multiple_traps
-    - multiple_fusions
-    - character_single
     - audience
-    gender_presentation:
+    focus:
     - male_focus
-    - bara
-    - genderswap
-    - otoko_no_ko
-    - androgynous
-    - furry_female
-    - furry_male
-    - genderswap_(mtf)
+    presence:
+    - solo
+    - solo_focus
+    - no_humans
+    identity_count:
+    - character_single
+    depiction:
     - faceless_male
-    - bishounen
-    - trap
     - faceless_female
-    - tomboy
-    - genderswap_(ftm)
-    - crossdressing_(mtf)
-    - ambiguous_gender
-    - reverse_trap
-    - girly_boy
-    - bisexual_male
-    - cuntboy
-    - himejoshi
-    - fujoshi
-    - implied_bisexual
-    - short_male
-    - gender_transitioning
-    - himedanshi
+    gender_presentation:
+      feminine_male:
+      - otoko_no_ko
+      - trap
+      - girly_boy
+      - cuntboy
+      - multiple_traps
+      masculine_female:
+      - tomboy
+      - reverse_trap
+      neutral:
+      - androgynous
+      - ambiguous_gender
+      transformation:
+      - genderswap
+      - genderswap_(mtf)
+      - genderswap_(ftm)
+      - crossdressing_(mtf)
+      - gender_transitioning
+      male_style:
+      - bara
+      - bishounen
+      - short_male
     age:
-    - loli
-    - aged_down
-    - child
-    - age_difference
-    - mature_female
-    - mature_male
-    - aged_up
-    - shota
-    - old
-    - old_man
-    - oppai_loli
-    - baby
-    - age_progression
-    - mesugaki
-    - old_woman
-    - character_age
-    - toddler
-    - cub
-    - osugaki
-    - lolibaba
-    - the_children_(zettai_karen_children)
-    - lost_child
-    - teenage
-    - age_comparison
-    - age_regression
+      stage:
+      - loli
+      - child
+      - mature_female
+      - mature_male
+      - shota
+      - old
+      - old_man
+      - oppai_loli
+      - baby
+      - mesugaki
+      - old_woman
+      - toddler
+      - cub
+      - osugaki
+      - lolibaba
+      - lost_child
+      - teenage
+      change:
+      - aged_down
+      - aged_up
+      - age_progression
+      - age_regression
+      relation:
+      - age_difference
+      - age_comparison
+      metadata:
+      - character_age
   body:
     hair:
       color:
@@ -1936,8 +1941,6 @@ character:
       - sternum
       - heart_(organ)
   skin:
-    _tags:
-    - oiled
     sweat:
     - sweat
     - very_sweaty
@@ -2078,6 +2081,7 @@ character:
     - scar_on_thighs
     - track_marks
     texture_condition:
+    - oiled
     - skindentation
     - shiny_skin
     - cracked_skin
@@ -2277,22 +2281,25 @@ character:
     - tamaranean
     - draenei
     - sulong_form
-    synthetic_mutation:
-    - material_growth
-    - colored_extremities
-    - core_crystal_(xenoblade)
-    - see-through_body
-    - mechanization
-    - body_horror
-    - chest_tuft
-    - gem_(steven_universe)
-    - mutation
-    - exposed_internal_machinery
-    - kagune_(tokyo_ghoul)
-    - hollow_body
-    - hole_on_body
-    - mechanical_spine
-    - togenashi_togeari
+    altered_body:
+      material_growth:
+      - material_growth
+      - core_crystal_(xenoblade)
+      - gem_(steven_universe)
+      surface_change:
+      - colored_extremities
+      - see-through_body
+      mechanization:
+      - mechanization
+      - exposed_internal_machinery
+      - mechanical_spine
+      mutation:
+      - body_horror
+      - mutation
+      - kagune_(tokyo_ghoul)
+      - hollow_body
+      - hole_on_body
+      - togenashi_togeari
     misc_trait:
     - tusks
     - stinger
@@ -2336,6 +2343,7 @@ character:
     - green_fur
     - striped_fur
     - chest_fur
+    - chest_tuft
     - aqua_fur
     - gradient_fur
     antenna:
@@ -2403,7 +2411,7 @@ character:
     - chimerism
   archetype:
     form:
-      _tags:
+      general:
       - inkling
       female:
       - horse_girl
@@ -2434,6 +2442,7 @@ character:
       - mosquito_girl
       - jackalope_girl
       - snail_girl
+      - furry_female
       male:
       - monster_boy
       - dog_boy
@@ -2476,6 +2485,7 @@ character:
       - orca_boy
       - unicorn_boy
       - owl_boy
+      - furry_male
       stature_form:
       - colossus
       - mini_person
@@ -2820,6 +2830,11 @@ character:
       - ugly_man
       - ugly_bastard
       - fat_man
+      - bisexual_male
+      - himejoshi
+      - fujoshi
+      - implied_bisexual
+      - himedanshi
       cultural_role:
       - asian
       - native_american
@@ -3492,7 +3507,7 @@ dynamics:
       - hands_on_ground
       - hands_on_feet
       - breasts_on_table
-        - ojou-sama_pose
+      - ojou-sama_pose
     head_gaze:
     - looking_at_viewer
     - looking_at_another
@@ -4163,8 +4178,6 @@ dynamics:
     - ice_fishing
     - flexing_pectorals
     combat:
-      _tags:
-      - asymmetrical_dual_wielding
       melee:
       - kicking
       - punching
@@ -4261,6 +4274,7 @@ dynamics:
       - imminent_explosion
       - shichiten_shichitou
       general:
+      - asymmetrical_dual_wielding
       - planted
       - unsheathing
       - danmaku
@@ -4463,8 +4477,6 @@ dynamics:
     - hula
     - henshin
     gesture:
-      _tags:
-      - blowing_kiss
       hand_sign:
       - double_v
       - reaching_towards_viewer
@@ -4514,6 +4526,7 @@ dynamics:
       - covering_head
       - covering_own_face
       greeting:
+      - blowing_kiss
       - waving
       - salute
       - clapping
@@ -4646,8 +4659,6 @@ dynamics:
       - \o/
     object_manipulation:
       holding:
-        _tags:
-        - carrying_under_arm
         grip_style:
         - mouth_hold
         - stalk_in_mouth
@@ -4659,6 +4670,7 @@ dynamics:
         - reverse_grip
         - two-handed
         general:
+        - carrying_under_arm
         - holding
         - holding_syringe
         - holding_gohei
@@ -5409,9 +5421,6 @@ dynamics:
         - hand_under_shirt
   expression:
     mouth:
-      _tags:
-      - closed_mouth
-      - saliva_trail_between_teeth
       open:
       - open_mouth
       - jaw_drop
@@ -5444,6 +5453,8 @@ dynamics:
       - licking_lips
       - biting_tongue
       general:
+      - closed_mouth
+      - saliva_trail_between_teeth
       - :d
       - parted_lips
       - :o
@@ -5847,8 +5858,6 @@ dynamics:
     - allergy
   interaction:
     contact:
-      _tags:
-      - foot_on_another's_face
       hug:
       - hug
       - hug_from_behind
@@ -5961,6 +5970,7 @@ dynamics:
       - arm_around_back
       - face_to_pecs
       general:
+      - foot_on_another's_face
       - glomp
       - lifted_by_tail
       - lifted_by_cursor
@@ -6939,7 +6949,7 @@ apparel:
       - bow_bloomers
       - yellow_bloomers
     dress:
-      dress:
+      general:
       - dress
       - white_dress
       - black_dress
@@ -9490,8 +9500,6 @@ apparel:
     - jika-tabi
     - gomusin
   headwear:
-    _tags:
-    - headphones_over_headwear
     hat:
     - hat
     - black_hat
@@ -9698,6 +9706,7 @@ apparel:
     - wide_brim
     - floating_headgear
     on_headwear:
+    - headphones_over_headwear
     - cum_on_headwear
     - goggles_on_headwear
     - eyewear_on_headwear
@@ -9940,7 +9949,7 @@ apparel:
     - grey_bandana
     - blue_bandana
   body_part_placement:
-    _tags:
+    general:
     - bandaid_on_foot
     - bandaid_on_hand
     - bandaid_on_stomach
@@ -9962,7 +9971,7 @@ apparel:
     - gauze_on_face
     - sticker_on_face
     shoulder:
-      _tags:
+      general:
       - bandaid_on_shoulder
       - jacket_over_shoulder
       on_shoulders:
@@ -9996,7 +10005,7 @@ apparel:
     - ofuda_on_leg
     - sticker_on_leg
     neck:
-      _tags:
+      general:
       - shirt_behind_neck
       on_neck:
       - bandaid_on_neck
@@ -11712,8 +11721,6 @@ apparel:
     - horizontal-striped_sleeves
     - fishnet_sleeves
     pattern:
-      _tags:
-      - denim
       stripe:
       - striped_clothes
       - striped
@@ -11768,6 +11775,7 @@ apparel:
       - desert_camouflage
       - snow_camouflage
       general:
+      - denim
       - multicolored_clothes
       - clothes_writing
       - cow_print
@@ -11950,12 +11958,11 @@ apparel:
       - musical_note_print
       - fruit_print
     detail:
-      _tags:
-      - no_emblem
       trim_frill:
       - frills
       - fur_trim
       - ribbon_trim
+      - gold_trim
       - lace_trim
       - frilled_shirt_collar
       - center_frills
@@ -11985,6 +11992,7 @@ apparel:
       - peaked_lapels
       - collar_tabs
       - contrast_lapels
+      - fold-over_collar
       - plaid_sailor_collar
       - peter_pan_collar
       - shawl_lapels
@@ -12040,6 +12048,7 @@ apparel:
       - spade_cutout
       fastener:
       - buttons
+      - double-breasted
       - buckle
       - zipper
       - belt_buckle
@@ -12111,6 +12120,7 @@ apparel:
         - black_straps
         - striped_belt
         - crossed_belts
+        - multiple_belts
         - aqua_belt
         - print_sash
         - shin_strap
@@ -12121,11 +12131,14 @@ apparel:
         - black_suspenders
         - crotch_strap
         - too_many_belts
+        - multiple_thigh_straps
+        - multiple_straps
         - o-ring_strap
         - belt_bow
         - waistband
         - silver_belt
         - long_belt
+        - two-tone_belt
         - dress_straps
         - shirt_straps
         decorative:
@@ -12137,6 +12150,7 @@ apparel:
         - purple_bow
         - lace
         - striped_bow
+        - multicolored_bow
         - back_bow
         - cross-laced_clothes
         - hat_feather
@@ -12144,6 +12158,7 @@ apparel:
         - dress_bow
         - footwear_bow
         - large_bow
+        - multiple_bows
         - elbow_pads
         - naked_ribbon
         - sleeve_bow
@@ -12174,6 +12189,9 @@ apparel:
         - shirt_ribbon
         - silver_trim
         - embroidery
+        - gold_embroidery
+        - multiple_hat_bows
+        - see-through_bow
         neckline:
         - wing_collar
         - high_collar
@@ -12193,6 +12211,7 @@ apparel:
         - shanghai_neckline
         - wingtip_collar
         general:
+        - no_emblem
         - highleg
         - pelvic_curtain
         - o-ring
@@ -12352,30 +12371,17 @@ apparel:
         - meandros_trim
         - pink_trim
         - black_trim
-      damage_wear:
-      - gold_trim
-      - fold-over_collar
-      - gold_embroidery
       pocket:
       - pocket
       - breast_pocket
       - pocket_square
       - exposed_pocket
       material_layer:
-      - double-breasted
-      - multiple_belts
-      - multicolored_bow
-      - multiple_bows
       - translucent
-      - multiple_thigh_straps
-      - multiple_straps
-      - multiple_hat_bows
       - fishnet_fabric
       - see-through_midriff
       - see-through_pelvic_curtain
       - mesh
-      - two-tone_belt
-      - see-through_bow
       - two-tone_wrist_cuffs
   state:
     open_loose:
@@ -13090,7 +13096,7 @@ composition:
       - pokemon_on_lap
       - sitting_on_lap
       shoulder:
-        _tags:
+        general:
         - hands_on_shoulders
         - arm_around_shoulder
         on_shoulder:
@@ -14968,7 +14974,7 @@ object:
     - unsheathed
     - saya_(scabbard)
   protective_gear:
-    _tags:
+    general:
     - hand_guard
     shield_type:
     - shield
@@ -16989,15 +16995,13 @@ object:
       - starry_moon
       - broken_moon
     sun:
-      _tags:
-      - solar_eclipse
       general:
+      - solar_eclipse
       - sun
       - red_sun
     star:
-      _tags:
-      - falling_star
       general:
+      - falling_star
       - star_(sky)
       - christmas_star
       - vega_(star)
@@ -17043,9 +17047,8 @@ object:
       - pegasus_(constellation)
       - ursa_major_(constellation)
     small_body:
-      _tags:
-      - meteor_shower
       general:
+      - meteor_shower
       - comet
       - asteroid
       - meteor
@@ -18753,7 +18756,7 @@ object:
     - playground_equipment_(kemono_friends_pavilion)
     - super_leaf_(transformation)
   scene_prop:
-    _tags:
+    general:
     - cd
     fragment_trace:
     - debris
@@ -18999,10 +19002,16 @@ creature:
     - afghan_hound
     - bulldog
     - terrier_(dog)
-    - prairie_dog
     - akita_inu
     - borzoi
     - yellow_dog
+    - dobermann
+    - great_pyrenees
+    - german_shepherd
+    - pug
+    - chihuahua
+    - border_collie
+    - st_bernard
     feline:
     - cat
     - black_cat
@@ -19029,7 +19038,6 @@ creature:
     - snow_leopard
     - leopard
     - blue_cat
-    - sea_lion
     - cat_(nyanko_daisensou)
     - jaguar
     - green_cat
@@ -19038,7 +19046,10 @@ creature:
     - robot_cat
     - lynx
     - black_panther
-    mammal:
+    - serval
+    - scottish_fold
+    - calico
+    general:
     - rabbit
     - horse
     - bear
@@ -19069,25 +19080,18 @@ creature:
     - koala
     - alpaca
     - tapir
-    - dobermann
-    - great_pyrenees
     - ape
     - hippopotamus
     - camel
-    - german_shepherd
     - black_rabbit_(animal)
     - zebra
-    - serval
     - brown_horse
     - donkey
-    - pug
+    - prairie_dog
     - too_many_rabbits
     - black_horse
-    - chihuahua
-    - border_collie
     - fawn
     - hyena
-    - scottish_fold
     - llama
     - banbi
     - rhinoceros
@@ -19096,13 +19100,14 @@ creature:
     - armadillo
     - beaver
     - moose
-    - st_bernard
     - lemur
     - leopon_(animal)
     - sloth_(animal)
     - japanese_macaque
     - raccoon
-    - calico
+    - sea_lion
+    - seal_(animal)
+    - walrus
     - anteater
     - mammoth
     small_animal:
@@ -19120,7 +19125,7 @@ creature:
     - mole_(animal)
     - flying_squirrel
   bird:
-    bird:
+    general:
     - bird
     - penguin
     - crow
@@ -19201,7 +19206,6 @@ creature:
     - dolphin
     - tropical_fish
     - koi
-    - seal_(animal)
     - flying_fish
     - clownfish
     - anglerfish
@@ -19233,21 +19237,20 @@ creature:
     - narwhal
     - barnacle
     - beluga_whale
-    - walrus
+    - eel
+    - carp
+    - moorish_idol
+    - regal_blue_tang
+    - yellow_tang
     - leech
     - coelacanth
     - sea_slug
     aquatic_misc:
-    - eel
     - lobster
     - crustacean
     - sea_urchin
-    - carp
-    - moorish_idol
     - sea_anemone
     - sea_cucumber
-    - regal_blue_tang
-    - yellow_tang
     - puka_puka
   insect_arthropod:
     insect:
@@ -19374,7 +19377,7 @@ creature:
     - wyrm
     - kraken
     - living_shadow
-    fantasy_creature:
+    general:
     - angel
     - abyssal_ship
     - karakasa_obake
@@ -22000,8 +22003,6 @@ fandom:
     - super_saiyan_1
     - evolutionary_line
     - copy_ability
-    - holomyth
-    - team_9_(touhou)
     - super_saiyan_2
     - super_saiyan_3
     - super_saiyan_4
@@ -22010,20 +22011,7 @@ fandom:
     - super_saiyan_rose
     - legendary_super_saiyan
     - ultra_instinct
-    - holocouncil
-    - holoadvent
-    - hololive_fantasy
     - original_remodel_(kantai_collection)
-    - arius_squad_(blue_archive)
-    - holojustice
-    - holoforce
-    - startend_(hololive)
-    - holotempus
-    - regloss_(hololive)
-    - holopromise
-    - team_rainbow_rocket
-    - fubumicomet_(hololive)
-    - holoh3roes
     franchise_meta_other:
     - dream_soul
     - sukusuku_hakutaku
@@ -22051,18 +22039,13 @@ fandom:
     franchise_misc:
     - gap_(touhou)
     - crisis_management_form_(machimazo)
-    - team_skull
-    - team_magma
     - sandstar
     - hex_nail_(e.g.o)
     - roseate_desire_(e.g.o)
     - index_(identity)_(project_moon)
     - asacoco
-    - full-stop_office_(identity)_(project_moon)
     - shikai
-    - chrysos_heirs_(honkai:_star_rail)
     - yearning-mircalla_(e.g.o)
-    - defy_(girls'_frontline)
     - devil_fruit_power
     game_mechanic:
     - gameplay_mechanics
@@ -22142,6 +22125,26 @@ fandom:
     - rex_genome
     - inner_ego
   group_tag:
+  - holomyth
+  - team_9_(touhou)
+  - holocouncil
+  - holoadvent
+  - hololive_fantasy
+  - arius_squad_(blue_archive)
+  - holojustice
+  - holoforce
+  - startend_(hololive)
+  - holotempus
+  - regloss_(hololive)
+  - holopromise
+  - team_rainbow_rocket
+  - fubumicomet_(hololive)
+  - holoh3roes
+  - team_skull
+  - team_magma
+  - full-stop_office_(identity)_(project_moon)
+  - chrysos_heirs_(honkai:_star_rail)
+  - defy_(girls'_frontline)
   - dollchestra
   - squidbeak_splatoon
   - starting_future_(umamusume)
@@ -22183,6 +22186,7 @@ fandom:
   - chimame-tai
   - recruiters_(disney)
   - earth_eleven
+  - the_children_(zettai_karen_children)
   - shinsengumi_(fate)
   - caldari_state_(eve_online)
   - ring_of_light_(blue_archive)
@@ -22517,8 +22521,6 @@ fandom:
     - pixiv_bottle_(meme)
     - personality_excrement
   style_reference:
-    _tags:
-    - heavy_metal
     visual_style:
     - alphes_(style)
     - 1990s_(style)
@@ -22609,6 +22611,7 @@ fandom:
     - nemlei_(style)
     - nomura_tetsuya_(style)
     theme_genre:
+    - heavy_metal
     - science_fiction
     - music
     - contemporary
@@ -22910,6 +22913,7 @@ fandom:
     - crossover
     - in-franchise_crossover
     - fusion
+    - multiple_fusions
     - multiple_crossover
     - fine_art_parody
     - logo_parody
