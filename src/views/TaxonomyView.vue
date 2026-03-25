@@ -17,6 +17,7 @@ import {
   type LocaleCode,
   type TaxonomyNode,
 } from '@/utils/taxonomy'
+import { createUiText } from '@/utils/uiText'
 
 const {
   datasets,
@@ -204,20 +205,22 @@ const summaryStats = computed(() =>
   dataset.value
     ? [
         {
-          label: 'categories',
+          label: ui.value.categories,
           value: dataset.value.rootChildren.length,
         },
         {
-          label: 'nodes',
+          label: ui.value.nodes,
           value: dataset.value.totalNodeCount,
         },
         {
-          label: 'tags',
+          label: ui.value.tags,
           value: dataset.value.totalTagCount,
         },
       ]
     : [],
 )
+
+const ui = computed(() => createUiText(locale.value))
 
 const normalizedSearchText = computed(() => searchText.value.trim().toLowerCase())
 
@@ -475,14 +478,14 @@ function setLocale(nextLocale: LocaleCode): void {
     class="loading-screen"
   >
     <div class="loading-spinner" />
-    <span class="loading-text">Loading taxonomy data...</span>
+    <span class="loading-text">{{ ui.loading }}</span>
   </div>
 
   <div
     v-else-if="error"
     class="error-screen"
   >
-    <span class="error-title">Failed to load data</span>
+    <span class="error-title">{{ ui.errorTitle }}</span>
     <span class="error-message">{{ error }}</span>
   </div>
 
@@ -492,8 +495,8 @@ function setLocale(nextLocale: LocaleCode): void {
   >
     <header class="header">
       <div class="header-brand">
-        <img src="/favicon.svg" alt="logo" class="header-logo" />
-        <h1>Danbooru Tags Tree</h1>
+        <img :alt="ui.logoAlt" src="/favicon.svg" class="header-logo" />
+        <h1>{{ ui.appTitle }}</h1>
       </div>
 
       <div class="toggle-group">
@@ -502,14 +505,14 @@ function setLocale(nextLocale: LocaleCode): void {
           type="button"
           @click="setViewMode('tree')"
         >
-          Tree
+          {{ ui.treeView }}
         </button>
         <button
           :class="['toggle-btn', { active: viewMode === 'graph' }]"
           type="button"
           @click="setViewMode('graph')"
         >
-          Graph
+          {{ ui.graphView }}
         </button>
       </div>
 
@@ -526,13 +529,13 @@ function setLocale(nextLocale: LocaleCode): void {
       </div>
 
       <button
-        :aria-label="isDark ? 'Switch to light mode' : 'Switch to dark mode'"
+        :aria-label="isDark ? ui.switchToLightMode : ui.switchToDarkMode"
         class="theme-toggle"
         type="button"
         @click="toggleTheme"
       >
         <span class="theme-toggle-icon">{{ isDark ? '☀' : '☾' }}</span>
-        <span class="theme-toggle-label">{{ isDark ? 'Light' : 'Dark' }}</span>
+        <span class="theme-toggle-label">{{ isDark ? ui.lightMode : ui.darkMode }}</span>
       </button>
 
       <div class="header-search">
@@ -542,7 +545,7 @@ function setLocale(nextLocale: LocaleCode): void {
             v-model.trim="searchText"
             class="search-input"
             type="search"
-            placeholder="Search categories & tags..."
+            :placeholder="ui.searchCategoriesAndTags"
             @keydown.escape="searchText = ''"
           >
 
@@ -552,7 +555,7 @@ function setLocale(nextLocale: LocaleCode): void {
           >
             <template v-if="searchResults.nodes.length > 0">
               <div class="search-group-title">
-                Categories
+                {{ ui.searchCategoriesGroup }}
               </div>
               <button
                 v-for="item in searchResults.nodes"
@@ -573,7 +576,7 @@ function setLocale(nextLocale: LocaleCode): void {
 
             <template v-if="searchResults.tags.length > 0">
               <div class="search-group-title">
-                Tags
+                {{ ui.searchTagsGroup }}
               </div>
               <button
                 v-for="item in searchResults.tags"
@@ -593,7 +596,7 @@ function setLocale(nextLocale: LocaleCode): void {
             class="search-overlay"
           >
             <div class="search-empty">
-              No results for "{{ searchText }}"
+              {{ ui.noResults({ query: searchText }) }}
             </div>
           </div>
         </div>
@@ -605,7 +608,7 @@ function setLocale(nextLocale: LocaleCode): void {
           :key="item.label"
           class="stat-badge"
         >
-          <strong>{{ item.value.toLocaleString() }}</strong> {{ item.label }}
+          <strong>{{ item.value.toLocaleString(locale) }}</strong> {{ item.label }}
         </span>
       </div>
     </header>
@@ -618,6 +621,7 @@ function setLocale(nextLocale: LocaleCode): void {
           v-bind="treeRouteProps"
           @select="selectNode"
           @toggle="toggleNode"
+          @focus-tag="focusTag(selectedNodeId, $event)"
         />
         <component
           :is="Component"

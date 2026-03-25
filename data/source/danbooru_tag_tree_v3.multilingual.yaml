@@ -1522,6 +1522,26 @@ category.composition.camera_angle:
   en: camera angle
   ja: カメラアングル
   zh-CN: 机位与视角
+category.composition.camera_angle.orientation:
+  en: orientation
+  ja: 向き・アングル
+  zh-CN: 朝向与机位
+category.composition.camera_angle.perspective:
+  en: perspective
+  ja: パース・投影
+  zh-CN: 透视与投影
+category.composition.camera_angle.subjective_view:
+  en: subjective view
+  ja: 主観視点
+  zh-CN: 主观视角
+category.composition.camera_angle.situated_view:
+  en: situated view
+  ja: 状況・位置の視点
+  zh-CN: 场景位置视角
+category.composition.camera_angle.mediated_view:
+  en: mediated view
+  ja: 媒介越しの視点
+  zh-CN: 借助媒介的视角
 category.composition.color_design:
   en: color design
   ja: カラーデザイン
@@ -1529,7 +1549,7 @@ category.composition.color_design:
 category.composition.framing:
   en: framing
   ja: フレーミング
-  zh-CN: 景别
+  zh-CN: 取景与框定
 category.composition.framing.arrangement:
   en: arrangement
   ja: アレンジ

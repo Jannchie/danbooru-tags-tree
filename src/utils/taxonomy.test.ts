@@ -94,6 +94,96 @@ describe('taxonomy helpers', () => {
     expect(source).not.toContain('\n_tags:')
   })
 
+  it('keeps camera-angle tags separated by viewpoint semantics', () => {
+    const parsed = readSourceYaml<{
+      composition: {
+        camera_angle: Record<string, unknown>
+        framing: {
+          arrangement: string[]
+        }
+      }
+    }>('data/source/danbooru_tag_tree_v3.yaml')
+    const expectedPaths = new Map([
+      ['from_behind', 'composition.camera_angle.orientation'],
+      ['from_side', 'composition.camera_angle.orientation'],
+      ['profile', 'composition.camera_angle.orientation'],
+      ['from_above', 'composition.camera_angle.orientation'],
+      ['from_below', 'composition.camera_angle.orientation'],
+      ['facing_viewer', 'composition.camera_angle.orientation'],
+      ['straight-on', 'composition.camera_angle.orientation'],
+      ['three_quarter_view', 'composition.camera_angle.orientation'],
+      ['sideways', 'composition.camera_angle.orientation'],
+      ['three_quarter_profile', 'composition.camera_angle.orientation'],
+      ['looking_past_viewer', 'composition.camera_angle.orientation'],
+      ['high_up', 'composition.camera_angle.orientation'],
+      ['under_shot', 'composition.camera_angle.orientation'],
+      ['chest_height', 'composition.camera_angle.orientation'],
+      ['worm\'s_eye_view', 'composition.camera_angle.orientation'],
+      ['dutch_angle', 'composition.camera_angle.perspective'],
+      ['foreshortening', 'composition.camera_angle.perspective'],
+      ['perspective', 'composition.camera_angle.perspective'],
+      ['fisheye', 'composition.camera_angle.perspective'],
+      ['vanishing_point', 'composition.camera_angle.perspective'],
+      ['isometric', 'composition.camera_angle.perspective'],
+      ['forced_perspective', 'composition.camera_angle.perspective'],
+      ['dollhouse_view', 'composition.camera_angle.perspective'],
+      ['pov', 'composition.camera_angle.subjective_view'],
+      ['pov_hands', 'composition.camera_angle.subjective_view'],
+      ['pov_crotch', 'composition.camera_angle.subjective_view'],
+      ['female_pov', 'composition.camera_angle.subjective_view'],
+      ['pov_doorway', 'composition.camera_angle.subjective_view'],
+      ['pov_across_table', 'composition.camera_angle.subjective_view'],
+      ['against_fourth_wall', 'composition.camera_angle.subjective_view'],
+      ['pov_peephole', 'composition.camera_angle.subjective_view'],
+      ['pov_across_bed', 'composition.camera_angle.subjective_view'],
+      ['taker_pov', 'composition.camera_angle.subjective_view'],
+      ['pov_breasts', 'composition.camera_angle.subjective_view'],
+      ['pov_legs', 'composition.camera_angle.subjective_view'],
+      ['pov_dating', 'composition.camera_angle.subjective_view'],
+      ['pov_shadow', 'composition.camera_angle.subjective_view'],
+      ['lap_pov', 'composition.camera_angle.subjective_view'],
+      ['pov_adoring', 'composition.camera_angle.subjective_view'],
+      ['multiple_pov', 'composition.camera_angle.subjective_view'],
+      ['pov_stomped', 'composition.camera_angle.subjective_view'],
+      ['under_table', 'composition.camera_angle.situated_view'],
+      ['partially_underwater_shot', 'composition.camera_angle.situated_view'],
+      ['view_between_legs', 'composition.camera_angle.situated_view'],
+      ['extended_downblouse', 'composition.camera_angle.situated_view'],
+      ['through_window', 'composition.camera_angle.situated_view'],
+      ['under_skirt', 'composition.camera_angle.situated_view'],
+      ['from_inside', 'composition.camera_angle.situated_view'],
+      ['around_corner', 'composition.camera_angle.situated_view'],
+      ['refrigerator_interior', 'composition.camera_angle.situated_view'],
+      ['through_ground', 'composition.camera_angle.situated_view'],
+      ['behind_tree', 'composition.camera_angle.situated_view'],
+      ['behind_curtains', 'composition.camera_angle.situated_view'],
+      ['through_portal', 'composition.camera_angle.situated_view'],
+      ['from_hat_trick', 'composition.camera_angle.situated_view'],
+      ['in_trunk', 'composition.camera_angle.situated_view'],
+      ['in_refrigerator', 'composition.camera_angle.situated_view'],
+      ['from_outside', 'composition.camera_angle.situated_view'],
+      ['mirror_selfie', 'composition.camera_angle.mediated_view'],
+      ['viewer_holding_phone', 'composition.camera_angle.mediated_view'],
+      ['against_mirror', 'composition.camera_angle.mediated_view'],
+      ['eyewear_view', 'composition.camera_angle.mediated_view'],
+      ['fixed-point_camera', 'composition.camera_angle.mediated_view'],
+      ['through_mirror', 'composition.camera_angle.mediated_view'],
+      ['knolling', 'composition.framing.arrangement'],
+    ])
+
+    const rows = collectMatchingTagPaths(parsed, expectedPaths)
+
+    expect(rows).toHaveLength(expectedPaths.size)
+    expect(rows.every((row) => row.path === expectedPaths.get(row.tag))).toBe(true)
+    expect(parsed.composition.camera_angle).toHaveProperty('orientation')
+    expect(parsed.composition.camera_angle).toHaveProperty('perspective')
+    expect(parsed.composition.camera_angle).toHaveProperty('subjective_view')
+    expect(parsed.composition.camera_angle).toHaveProperty('situated_view')
+    expect(parsed.composition.camera_angle).toHaveProperty('mediated_view')
+    expect(parsed.composition.framing.arrangement).toContain('knolling')
+    expect(parsed.composition.camera_angle).not.toBeInstanceOf(Array)
+  })
+
   it('keeps selected head and shoulder anchor tags consolidated', () => {
     const sourcePath = resolve(process.cwd(), 'data/source/danbooru_tag_tree_v3.yaml')
     const parsed = YAML.parse(readFileSync(sourcePath, 'utf8')) as unknown

@@ -17,6 +17,7 @@ defineProps<{
 const emit = defineEmits<{
   select: [nodeId: string]
   toggle: [nodeId: string]
+  focusTag: [tag: string]
 }>()
 </script>
 
@@ -42,6 +43,7 @@ const emit = defineEmits<{
       :translations="translations"
       :tag-frequency="tagFrequency"
       @select="emit('select', $event)"
+      @focus-tag="emit('focusTag', $event)"
     />
   </section>
 </template>

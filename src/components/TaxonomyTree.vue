@@ -1,10 +1,13 @@
 <script setup lang="ts">
+import { computed } from 'vue'
+
 import TreeNodeItem from '@/components/TreeNodeItem.vue'
 import type {
   LocaleCode,
   LocalizedLabel,
   TaxonomyDataset,
 } from '@/utils/taxonomy'
+import { createUiText } from '@/utils/uiText'
 
 const props = defineProps<{
   dataset: TaxonomyDataset
@@ -18,12 +21,14 @@ const emit = defineEmits<{
   select: [nodeId: string]
   toggle: [nodeId: string]
 }>()
+
+const ui = computed(() => createUiText(props.locale))
 </script>
 
 <template>
   <div class="sidebar-header">
-    <span class="sidebar-title">Explorer</span>
-    <span class="sidebar-count">{{ props.dataset.totalNodeCount }} nodes</span>
+    <span class="sidebar-title">{{ ui.sidebarTitle }}</span>
+    <span class="sidebar-count">{{ ui.sidebarCount({ count: props.dataset.totalNodeCount }) }}</span>
   </div>
 
   <nav class="tree-panel">

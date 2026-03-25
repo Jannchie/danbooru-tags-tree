@@ -7,6 +7,7 @@ import {
   type LocalizedLabel,
   type TaxonomyDataset,
 } from '@/utils/taxonomy'
+import { getRootLabel } from '@/utils/uiText'
 
 defineOptions({
   name: 'TreeNodeItem',
@@ -47,15 +48,9 @@ const isOpen = computed(
 
 const isSelected = computed(() => props.selectedId === props.nodeId)
 
-const ROOT_LABELS: Record<LocaleCode, string> = {
-  'en': 'Danbooru Tags',
-  'ja': 'Danbooru タグ',
-  'zh-CN': 'Danbooru 标签',
-}
-
 const label = computed(() => {
   if (isRoot.value) {
-    return ROOT_LABELS[props.locale]
+    return getRootLabel(props.locale)
   }
   return getNodeLabel(node.value, props.locale, props.translations)
 })

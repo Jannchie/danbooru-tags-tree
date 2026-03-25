@@ -12604,71 +12604,75 @@ apparel:
     - robe_partially_removed
 composition:
   camera_angle:
-  - from_behind
-  - from_side
-  - pov
-  - profile
-  - dutch_angle
-  - from_above
-  - from_below
-  - facing_viewer
-  - foreshortening
-  - straight-on
-  - pov_hands
-  - pov_crotch
-  - perspective
-  - female_pov
-  - fisheye
-  - three_quarter_view
-  - sideways
-  - under_table
-  - pov_doorway
-  - partially_underwater_shot
-  - pov_across_table
-  - vanishing_point
-  - isometric
-  - mirror_selfie
-  - against_fourth_wall
-  - pov_peephole
-  - pov_across_bed
-  - viewer_holding_phone
-  - taker_pov
-  - view_between_legs
-  - extended_downblouse
-  - pov_breasts
-  - through_window
-  - three_quarter_profile
-  - pov_legs
-  - under_skirt
-  - looking_past_viewer
-  - from_inside
-  - high_up
-  - pov_dating
-  - under_shot
-  - around_corner
-  - refrigerator_interior
-  - forced_perspective
-  - through_ground
-  - pov_shadow
-  - behind_tree
-  - against_mirror
-  - eyewear_view
-  - fixed-point_camera
-  - chest_height
-  - dollhouse_view
-  - behind_curtains
-  - lap_pov
-  - pov_adoring
-  - worm's_eye_view
-  - multiple_pov
-  - pov_stomped
-  - through_portal
-  - from_hat_trick
-  - knolling
-  - in_trunk
-  - through_mirror
-  - in_refrigerator
-  - from_outside
+    orientation:
+    - from_behind
+    - from_side
+    - profile
+    - from_above
+    - from_below
+    - facing_viewer
+    - straight-on
+    - three_quarter_view
+    - sideways
+    - three_quarter_profile
+    - looking_past_viewer
+    - high_up
+    - under_shot
+    - chest_height
+    - worm's_eye_view
+    perspective:
+    - dutch_angle
+    - foreshortening
+    - perspective
+    - fisheye
+    - vanishing_point
+    - isometric
+    - forced_perspective
+    - dollhouse_view
+    subjective_view:
+    - pov
+    - pov_hands
+    - pov_crotch
+    - female_pov
+    - pov_doorway
+    - pov_across_table
+    - against_fourth_wall
+    - pov_peephole
+    - pov_across_bed
+    - taker_pov
+    - pov_breasts
+    - pov_legs
+    - pov_dating
+    - pov_shadow
+    - lap_pov
+    - pov_adoring
+    - multiple_pov
+    - pov_stomped
+    situated_view:
+    - under_table
+    - partially_underwater_shot
+    - view_between_legs
+    - extended_downblouse
+    - through_window
+    - under_skirt
+    - from_inside
+    - around_corner
+    - refrigerator_interior
+    - through_ground
+    - behind_tree
+    - behind_curtains
+    - through_portal
+    - from_hat_trick
+    - in_trunk
+    - in_refrigerator
+    - from_outside
+    mediated_view:
+    - mirror_selfie
+    - viewer_holding_phone
+    - against_mirror
+    - eyewear_view
+    - fixed-point_camera
+    - through_mirror
   framing:
     shot_size:
     - full_body
@@ -12809,6 +12813,7 @@ composition:
     - minimized
     - crowded
     - equipment_layout
+    - knolling
     - oval_image
     - cramped
     - corner

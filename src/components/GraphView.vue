@@ -6,6 +6,7 @@ import { nextTick, onBeforeUnmount, onMounted, ref, watch } from 'vue'
 import type { ThemeMode } from '@/composables/useTheme'
 import type { LocaleCode, LocalizedLabel, TaxonomyDataset } from '@/utils/taxonomy'
 import { getNodeLabel } from '@/utils/taxonomy'
+import { getRootLabel } from '@/utils/uiText'
 
 const props = defineProps<{
   dataset: TaxonomyDataset
@@ -240,7 +241,7 @@ function buildGraph(): Graph {
     baseColor: palette.rootColor,
     color: palette.rootColor,
     fixed: true,
-    label: props.locale === 'ja' ? 'Danbooru タグ' : props.locale === 'zh-CN' ? 'Danbooru 标签' : 'Danbooru Tags',
+    label: getRootLabel(props.locale),
     size: SIZE_BY_DEPTH[0],
     x: positions?.root?.x ?? 0,
     y: positions?.root?.y ?? 0,
@@ -618,7 +619,7 @@ watch(() => props.layoutPositions, () => initSigma())
 
 watch(() => props.locale, () => {
   if (!graph || !sigma) return
-  graph.setNodeAttribute('root', 'label', props.locale === 'ja' ? 'Danbooru タグ' : props.locale === 'zh-CN' ? 'Danbooru 标签' : 'Danbooru Tags')
+  graph.setNodeAttribute('root', 'label', getRootLabel(props.locale))
   for (const node of props.dataset.flatNodes) {
     graph.setNodeAttribute(node.id, 'label', getNodeLabel(node, props.locale, props.translations))
   }
