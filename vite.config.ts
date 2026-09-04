@@ -1,6 +1,7 @@
 import { execFileSync } from 'node:child_process'
 import { existsSync } from 'node:fs'
 import { basename } from 'node:path'
+import process from 'node:process'
 import { fileURLToPath, URL } from 'node:url'
 
 import vue from '@vitejs/plugin-vue'
@@ -20,7 +21,8 @@ function runBuildData(args: string[] = []): void {
     commandArgs.push('--', ...args)
   }
 
-  execFileSync('pnpm', commandArgs, { stdio: 'inherit' })
+  // `pnpm` is a shim on Windows, so it needs a shell to be spawnable.
+  execFileSync('pnpm', commandArgs, { stdio: 'inherit', shell: process.platform === 'win32' })
 }
 
 /**
