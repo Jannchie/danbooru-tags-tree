@@ -15,10 +15,13 @@ import { resolve } from 'node:path'
 import process from 'node:process'
 import YAML from 'yaml'
 
+import { readTagFrequency } from './tag-frequency.ts'
+
 const ROOT = resolve(import.meta.dirname, '..')
 const SRC = resolve(ROOT, 'data', 'source')
 const TAXONOMY_FILE = 'danbooru_tag_tree_v3.yaml'
 const TRANSLATIONS_FILE = 'danbooru_tag_tree_v3.multilingual.yaml'
+const FREQUENCY_FILE = 'tag_frequency_general.csv'
 const HOMOGRAPH_FILE = 'ja-zh-homographs.txt'
 const TAG_KEY = '_tags'
 const MAX_DEPTH = 6
@@ -42,8 +45,16 @@ interface Leaf {
   tags: string[]
 }
 
+/** How the tree decides which Danbooru tags it covers, from `_meta.membership`. */
+interface MembershipRule {
+  source: string
+  min_post_count: number
+  exempt: string[]
+}
+
 interface Taxonomy {
   declaredTotalTags: number | undefined
+  membership: MembershipRule | undefined
   nodeIds: string[]
   leaves: Leaf[]
   tagOwners: Map<string, string[]>
@@ -160,6 +171,7 @@ function loadTaxonomy(): Taxonomy {
 
   return {
     declaredTotalTags: typeof declared === 'number' ? declared : undefined,
+    membership: isPlainRecord(meta.membership) ? (meta.membership as unknown as MembershipRule) : undefined,
     nodeIds,
     leaves,
     tagOwners,
@@ -236,6 +248,47 @@ function checkMeta(taxonomy: Taxonomy): void {
 
   if (declared !== actual) {
     fail(`_meta.source_total_tags says ${declared}, the tree holds ${actual}`)
+  }
+}
+
+function checkMembership(taxonomy: Taxonomy, frequency: Record<string, number>): void {
+  const rule = taxonomy.membership
+
+  if (!rule) {
+    warn('_meta.membership is missing, so the tree has no recorded admission rule')
+    return
+  }
+
+  const exempt = new Set(rule.exempt ?? [])
+  const floor = rule.min_post_count
+
+  for (const tag of taxonomy.tagOwners.keys()) {
+    if (exempt.has(tag)) {
+      continue
+    }
+
+    const count = frequency[tag]
+
+    if (count === undefined) {
+      fail(`tag "${tag}" is not in ${rule.source}; check its spelling against the CSV`)
+      continue
+    }
+
+    if (count < floor) {
+      fail(`tag "${tag}" has ${count} posts, below the ${floor} the tree admits`)
+    }
+  }
+
+  const uncollected = Object.entries(frequency)
+    .filter(([tag, count]) => count >= floor && !taxonomy.tagOwners.has(tag) && !exempt.has(tag))
+    .sort((a, b) => b[1] - a[1])
+
+  for (const [tag, count] of uncollected.slice(0, 20)) {
+    fail(`tag "${tag}" has ${count} posts but no place in the tree`)
+  }
+
+  if (uncollected.length > 20) {
+    fail(`... and ${uncollected.length - 20} more tags above the ${floor}-post floor are uncollected`)
   }
 }
 
@@ -317,37 +370,59 @@ function printIssues(label: string, marker: string, messages: string[]): void {
   }
 }
 
-function reportCatchAll(taxonomy: Taxonomy): void {
-  const perRoot = new Map<string, { total: number; catchAll: number }>()
-  let total = 0
-  let catchAll = 0
+interface Load {
+  tags: number
+  vagueTags: number
+  posts: number
+  vaguePosts: number
+}
+
+function percent(part: number, whole: number): string {
+  return whole === 0 ? '0.0%' : `${((part / whole) * 100).toFixed(1)}%`
+}
+
+/**
+ * How much of each branch still sits in a `general` / `other` / `misc` leaf.
+ *
+ * Reported twice: by tag count, and weighted by how often those tags are
+ * actually used. A branch can hold a lot of vague tags that nobody applies,
+ * and the second number is the one worth sorting work by.
+ */
+function reportCatchAll(taxonomy: Taxonomy, frequency: Record<string, number>): void {
+  const perRoot = new Map<string, Load>()
+  const all: Load = { tags: 0, vagueTags: 0, posts: 0, vaguePosts: 0 }
 
   for (const leaf of taxonomy.leaves) {
     const root = leaf.id.split('.')[0] ?? leaf.id
-    const bucket = perRoot.get(root) ?? { total: 0, catchAll: 0 }
-    const size = leaf.tags.length
+    const load = perRoot.get(root) ?? { tags: 0, vagueTags: 0, posts: 0, vaguePosts: 0 }
+    const posts = leaf.tags.reduce((sum, tag) => sum + (frequency[tag] ?? 0), 0)
 
-    bucket.total += size
-    total += size
+    load.tags += leaf.tags.length
+    load.posts += posts
+    all.tags += leaf.tags.length
+    all.posts += posts
 
     if (isCatchAll(leaf.slug)) {
-      bucket.catchAll += size
-      catchAll += size
+      load.vagueTags += leaf.tags.length
+      load.vaguePosts += posts
+      all.vagueTags += leaf.tags.length
+      all.vaguePosts += posts
     }
 
-    perRoot.set(root, bucket)
+    perRoot.set(root, load)
   }
 
-  const share = total === 0 ? 0 : catchAll / total
+  console.log(`\nCatch-all load: ${all.vagueTags}/${all.tags} tags (${percent(all.vagueTags, all.tags)}), `
+    + `${percent(all.vaguePosts, all.posts)} weighted by use`)
 
-  console.log(`\nCatch-all load: ${catchAll}/${total} tags (${(share * 100).toFixed(1)}%)`)
-
-  const rows = [...perRoot.entries()].sort((a, b) => b[1].catchAll / b[1].total - a[1].catchAll / a[1].total)
+  const rows = [...perRoot.entries()].sort((a, b) => b[1].vaguePosts / b[1].posts - a[1].vaguePosts / a[1].posts)
   const nameWidth = Math.max(...rows.map(([root]) => root.length)) + 2
 
-  for (const [root, bucket] of rows) {
-    const rootShare = ((bucket.catchAll / bucket.total) * 100).toFixed(1)
-    console.log(`  ${root.padEnd(nameWidth)}${String(bucket.total).padStart(6)}${String(bucket.catchAll).padStart(7)}${rootShare.padStart(8)}%`)
+  console.log(`  ${'branch'.padEnd(nameWidth)}${'tags'.padStart(6)}${'vague'.padStart(7)}${'share'.padStart(8)}${'by use'.padStart(9)}`)
+
+  for (const [root, load] of rows) {
+    console.log(`  ${root.padEnd(nameWidth)}${String(load.tags).padStart(6)}${String(load.vagueTags).padStart(7)}`
+      + `${percent(load.vagueTags, load.tags).padStart(8)}${percent(load.vaguePosts, load.posts).padStart(9)}`)
   }
 }
 
@@ -355,14 +430,16 @@ const strict = process.argv.includes('--strict')
 const taxonomy = loadTaxonomy()
 const translations = loadTranslations()
 const homographs = loadHomographs()
+const frequency = readTagFrequency(resolve(SRC, FREQUENCY_FILE))
 
 checkStructure(taxonomy)
 checkMeta(taxonomy)
+checkMembership(taxonomy, frequency)
 checkTranslations(taxonomy, translations)
 checkJapanese(translations, homographs)
 
 console.log(`Nodes: ${taxonomy.nodeIds.length}  Leaves: ${taxonomy.leaves.length}  Tags: ${countTags(taxonomy.leaves)}`)
-reportCatchAll(taxonomy)
+reportCatchAll(taxonomy, frequency)
 
 printIssues('warning', '!', warnings)
 printIssues('error', 'x', errors)

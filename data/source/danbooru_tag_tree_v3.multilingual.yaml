@@ -93166,7 +93166,31 @@ tag.marshmallow_(site):
   en: marshmallow (site)
   ja: マシュマロ (サイト)
   zh-CN: Marshmallow（网站）
-tag."don't_say_""lazy""":
-  en: don't say "lazy"
-  ja: Don't Say "Lazy"
-  zh-CN: Don't say "lazy"
+tag.cross_of_prontera:
+  en: cross of prontera
+  ja: プロンテラの十字
+  zh-CN: 普隆德拉十字
+tag.ink_on_face:
+  en: ink on face
+  ja: 顔にインク
+  zh-CN: 脸上有墨
+tag.heisei:
+  en: heisei
+  ja: 平成
+  zh-CN: 平成
+tag.mjolnir_(marvel):
+  en: mjolnir
+  ja: ムジョルニア
+  zh-CN: 雷神之锤
+tag.splash-o-matic_(splatoon):
+  en: splash-o-matic
+  ja: シャープマーカー
+  zh-CN: 速喷nova
+tag.large_cross:
+  en: large cross
+  ja: 大きな十字架
+  zh-CN: 大十字
+tag.dragon_(arms):
+  en: dragon
+  ja: ドラゴン
+  zh-CN: 龙

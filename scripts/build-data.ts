@@ -11,6 +11,8 @@ import Graph from 'graphology'
 import forceAtlas2 from 'graphology-layout-forceatlas2'
 import YAML from 'yaml'
 
+import { parseTagFrequency } from './tag-frequency.ts'
+
 const ROOT = resolve(import.meta.dirname, '..')
 const SRC = resolve(ROOT, 'data', 'source')
 const OUT = resolve(ROOT, 'public', 'output')
@@ -66,21 +68,7 @@ function buildTranslations(): void {
 
 function buildTagFrequency(): void {
   console.log('Converting tag frequency CSV...')
-  const csv = read(SOURCE_FILES.tagFrequency)
-  const freq: Record<string, number> = {}
-
-  for (const line of csv.split('\n').slice(1)) {
-    if (!line) continue
-    const lastComma = line.lastIndexOf(',')
-    if (lastComma === -1) continue
-    const tag = line.slice(0, lastComma)
-    const count = parseInt(line.slice(lastComma + 1), 10)
-    if (tag && !isNaN(count)) {
-      freq[tag] = count
-    }
-  }
-
-  writeJSON('tag_frequency.json', freq)
+  writeJSON('tag_frequency.json', parseTagFrequency(read(SOURCE_FILES.tagFrequency)))
 }
 
 function buildGraphLayout(): void {

@@ -1,5 +1,5 @@
 _meta:
-  version: '3.7'
+  version: '3.8'
   source_file: data/output/danbooru_tag_tree_v2.yaml
   design_basis: v1 character cohesion + v2 non-character structure
   migration_note:
@@ -10,7 +10,14 @@ _meta:
   - 'v3.5: moved franchise units out of the generic affiliation bucket'
   - 'v3.6: dissolved the object.named_object parallel tree into the functional categories'
   - 'v3.7: dissolved the fandom.named_object_reference parallel tree into apparel'
-  source_total_tags: 22366
+  - 'v3.8: recorded the admission rule in _meta and collected the tags it required'
+  source_total_tags: 22372
+  membership:
+    source: tag_frequency_general.csv
+    min_post_count: 100
+    exempt:
+    - ;"|
+    - \//
 character:
   demographic:
     count:
@@ -833,10 +840,11 @@ character:
       - tied_beard
       fluid_mess:
       - saliva
+      - blood_on_face
       - dirty_face
       - wet_face
-      - blood_on_face
       - blood_on_cheek
+      - ink_on_face
       - blood_on_mask
       - excessive_saliva
       - flying_spittle
@@ -14613,14 +14621,15 @@ object:
       - hidden_blade_(assassin's_creed)
       - great_knife
       blunt:
-      - combat_knife
       - hammer
       - club_(weapon)
       - mace
       - kanabou
+      - combat_knife
       - war_hammer
       - flail
       - flanged_mace
+      - mjolnir_(marvel)
       polearm:
       - polearm
       - spear
@@ -14739,6 +14748,7 @@ object:
       - luna_blaster_(splatoon)
       - dominator_(gun)
       - r-301_carbine
+      - splash-o-matic_(splatoon)
       - hero_shot_(splatoon_1)
       - laser_rifle
       - .52_gal_(splatoon)
@@ -15033,6 +15043,7 @@ object:
       - photon_ray_(fate)
       - graviton_beam_emitter
       - gasterblaster
+      - dragon_(arms)
       - energy_bullet
       heavy:
       - cannon
@@ -21102,6 +21113,7 @@ text:
     - good_fortune_symbol
     - inverted_pentagram
     - '666'
+    - large_cross
     - flamel_symbol
     - cross_patty
     - strength_(tarot)
@@ -21350,37 +21362,38 @@ production:
     - united_nations
   date_mark:
   - dated
-  - timestamp
-  - release_date
-  - reiwa
-  - '2026'
-  - '2025'
-  - '2024'
   - '2023'
+  - '2024'
   - '2022'
+  - '2025'
   - '2021'
   - '2020'
   - '2019'
+  - timestamp
   - '2018'
-  - '2017'
   - '2016'
+  - '2017'
   - '2015'
+  - '2026'
   - '2014'
   - '2013'
   - '2012'
-  - '2011'
   - '2010'
+  - '2011'
   - '2009'
+  - '2005'
   - '2008'
   - '2007'
   - '2006'
-  - '2005'
   - '2004'
+  - release_date
   - '2003'
+  - reiwa
   - '2002'
+  - heisei
+  - '1996'
   - '1998'
   - '1997'
-  - '1996'
   - '1995'
   reference_year:
   - '2001'
@@ -22310,6 +22323,7 @@ fandom:
     - ankha_zone_(meme)
     - paku_paku_desuwa
     pose_scene:
+    - cross_of_prontera
     - boobs_in_book_(meme)
     - lace_pantyhose_hooked_on_heel_(meme)
     - yamcha_pose_(meme)
@@ -22343,14 +22357,14 @@ fandom:
     - negative_space_oral_(meme)
     - colombia_pose_(meme)
     - yusuf_dikec_(meme)
+    - bakushin_o_armpit_gif_(meme)
     - nikke's_shooting_pose_(meme)
+    - yjsnpi_interview_(meme)
+    - praise_the_sun
     - vergil's_chair_(meme)
     - astolfo_monster_cosplay_(meme)
     - mayu-tan_no_kung_fu_(meme)
     - pennywise_in_the_sewer_(meme)
-    - bakushin_o_armpit_gif_(meme)
-    - yjsnpi_interview_(meme)
-    - praise_the_sun
     reaction_expression:
     - troll_face
     - menacing_(jojo)
@@ -23175,7 +23189,6 @@ fandom:
     - rest_in_peace_(phrase)
     named_entry:
       song_title:
-      - '"don''t_say_""lazy"""'
       - mami_mogu_mogu
       - bokura_wa_ima_no_naka_de
       - natsuiro_egao_de_1_2_jump!
