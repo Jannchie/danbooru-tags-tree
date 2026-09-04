@@ -1,5 +1,5 @@
 _meta:
-  version: '3.8'
+  version: '3.9'
   source_file: data/output/danbooru_tag_tree_v2.yaml
   design_basis: v1 character cohesion + v2 non-character structure
   migration_note:
@@ -11,6 +11,7 @@ _meta:
   - 'v3.6: dissolved the object.named_object parallel tree into the functional categories'
   - 'v3.7: dissolved the fandom.named_object_reference parallel tree into apparel'
   - 'v3.8: recorded the admission rule in _meta and collected the tags it required'
+  - 'v3.9: gathered scattered body-part descriptor families under one placement rule'
   source_total_tags: 22372
   membership:
     source: tag_frequency_general.csv
@@ -18,6 +19,14 @@ _meta:
     exempt:
     - ;"|
     - \//
+  placement_rules:
+  - A tag describing what a body part looks like lives with that part, and every tag in the same family lives in the same node. Splitting a family by whether a member reads as explicit is what scattered nipples, pubic hair and moles.
+  - Exposure of a part (nipple_slip, breast_slip) goes to explicit.nudity. A `_peek` tag is about the hair, not the exposure, so it stays with its family.
+  - An act performed on a part goes to explicit.sexual_act or dynamics.
+  - A part hidden by clothing (covered_nipples) goes to apparel.state.coverage.
+  - A censorship marker goes to explicit.censorship.
+  - An object attached to a part goes to apparel or explicit.fetish by what the object is.
+  - 'Known exception: genital anatomy has no character.body node, so its descriptors stay under explicit.sexual_anatomy. They are consistent there, which is what the first rule actually asks for.'
 character:
   demographic:
     count:
@@ -162,13 +171,11 @@ character:
       - dyed_ahoge
       - spotted_hair
       - two-tone_beard
-      - alternate_body_hair
       - orange_streaks
       - polka_dot_hair
       - grey_streaks
       - iridescent_hair
       - hair_dye
-      - colored_armpit_hair
       - red_facial_hair
       - brown_streaks
       - green_highlights
@@ -426,18 +433,59 @@ character:
       - hair_behind_eyewear
       - hair_around_horn
       body_hair:
+      - pubic_hair
+      - female_pubic_hair
+      - male_pubic_hair
+      - chest_hair
+      - navel_hair
+      - armpit_hair
+      - arm_hair
+      - pubic_hair_peek
+      - colored_pubic_hair
+      - leg_hair
+      - stray_pubic_hair
+      - sparse_pubic_hair
+      - black_pubic_hair
+      - mismatched_pubic_hair
+      - excessive_pubic_hair
+      - blonde_pubic_hair
+      - body_hair
+      - sparse_chest_hair
+      - white_pubic_hair
+      - pubic_stubble
       - very_long_beard
+      - blue_pubic_hair
       - mane
       - thick_chest_hair
       - balding
       - armpit_hair_peek
+      - purple_pubic_hair
       - thick_arm_hair
+      - brown_pubic_hair
+      - red_pubic_hair
       - thick_navel_hair
+      - sparse_arm_hair
+      - shaped_pubic_hair
+      - sparse_navel_hair
       - lion_mane
+      - grey_pubic_hair
+      - green_pubic_hair
+      - pink_pubic_hair
+      - sparse_leg_hair
+      - ass_hair
+      - thick_leg_hair
+      - heart-shaped_pubic_hair
+      - alternate_body_hair
+      - orange_pubic_hair
       - back_hair
       - receding_hairline
       - temporal_hairline
+      - chest_hair_peek
       - bald_spot
+      - aqua_pubic_hair
+      - excessive_armpit_hair
+      - colored_armpit_hair
+      - sparse_ass_hair
       - mismatched_armpit_hair
       - thick_ass_hair
       - foot_hair
@@ -729,23 +777,15 @@ character:
       - mole_under_eye
       - mole_under_mouth
       - freckles
-      - mole_on_neck
       - multiple_moles
-      - mole_on_thigh
       - mole_on_cheek
       - mole_under_each_eye
-      - mole_on_stomach
       - mole_above_mouth
-      - mole_on_arm
-      - mole_on_collarbone
       - no_mole
       - mole_above_eye
-      - mole_on_armpit
-      - mole_on_pussy
       - mole_on_forehead
       - mole_on_nose
       - mole_beside_mouth
-      - mole_under_breast
       makeup:
       - makeup
       - eyeshadow
@@ -1043,7 +1083,6 @@ character:
     - underboob
     - between_breasts
     - breasts_apart
-    - mole_on_breast
     - alternate_breast_size
     - bouncing_breasts
     - hanging_breasts
@@ -1058,27 +1097,23 @@ character:
     - veiny_breasts
     - breast_curtain
     - pointy_breasts
+    - sweaty_breasts
     - blood_on_breasts
     - inconvenient_breasts
-    - blue_nipples
     - manboobs
-    - small_nipples
     - glands_of_montgomery
     - male_with_breasts
-    - scar_on_breasts
     - alternate_breast_size_(smaller)
-    - breast_freckles
     - asymmetrical_breasts
     - extra_breasts
     - spread_cleavage
     - full_cleavage
     - bandaid_on_breast
-    - mole_on_areola
     - high-waist_sideboob
     - cup_size
     - covered_underboob
-    - breast_size_difference
     - breast_reduction
+    - breast_size_difference
     ear:
       type:
       - animal_ears
@@ -1619,11 +1654,9 @@ character:
       - ribs
       - median_furrow
       - linea_alba
-      - navel_hair
       - dimples_of_venus
       - covered_abs
       - outie_navel
-      - sparse_navel_hair
       - stomach_growling
       - x_navel
       - full_stomach
@@ -1705,7 +1738,6 @@ character:
       - extra_arms
       - biceps
       - single_mechanical_arm
-      - armpit_hair
       - prosthetic_arm
       - armpit_peek
       - veiny_arms
@@ -1730,7 +1762,6 @@ character:
       - covered_armpit
       - false_arm
       - separated_arms
-      - excessive_armpit_hair
       - taped_arms
       - no_prosthetic_arm
       - lipstick_mark_on_arm
@@ -1766,8 +1797,10 @@ character:
       groin_hip:
       - groin
       - crotch
+      - perineum
       - bare_hips
       - groin_tendon
+      - veiny_crotch
       blood:
       - blood
       - yellow_blood
@@ -1777,13 +1810,10 @@ character:
       - large_pectorals
       - bare_pectorals
       - pectoral_cleavage
-      - chest_hair
       - huge_pectorals
       - between_pectorals
       - pectoral_focus
       - alternate_pectoral_size
-      - chest_hair_peek
-      - sparse_chest_hair
       hand:
       - hands
       - disembodied_hand
@@ -1840,15 +1870,27 @@ character:
       - triple_amputee
       - legless_amputee
       nipple:
+      - puffy_nipples
+      - areolae
+      - large_areolae
+      - inverted_nipples
       - dark_nipples
       - no_nipples
+      - huge_nipples
       - colored_nipples
       - light_areolae
+      - dark_areolae
+      - blue_nipples
+      - small_nipples
+      - nipple_indents
       - purple_nipples
       - long_nipples
       - green_nipples
+      - black_nipples
       - nipple_hair
+      - single_inverted_nipple
       - grey_nipples
+      - glowing_nipples
       - extra_nipples
       neck:
       - bandaged_neck
@@ -1869,9 +1911,11 @@ character:
       - fat_mons
       - hip_bones
       - flat_ass
+      - ass_ripple
       - underbutt
       - dark_labia
       - hip_dips
+      - between_buttocks
       - bikini_bridge
       - bandaid_on_ass
       - y_shaped_butt_crack
@@ -1880,8 +1924,6 @@ character:
       muscle_detail:
       - veins
       - steaming_body
-      - arm_hair
-      - leg_hair
       - fewer_digits
       - disembodied_head
       - obliques
@@ -1891,14 +1933,11 @@ character:
       - greek_toe
       - underpec
       - bralines
-      - sparse_arm_hair
       - knee_blush
       - hand_blush
       - very_hairy
-      - sparse_leg_hair
       - hand_hair
       - head
-      - thick_leg_hair
       - triceps
       - deltoids
       - torso
@@ -1946,14 +1985,23 @@ character:
       - broken_bone
       - bandaid_on_wrist
       internal:
+      - uterus
+      - ovum
+      - cervix
+      - heart_(organ)
+      - intestines
       - brain
       - flesh
+      - ovaries
+      - hymen
+      - prostate
+      - ovum_with_heart
       - fetus
       - bladder
+      - fallopian_tubes
       - umbilical_cord
       - lungs
       - sternum
-      - heart_(organ)
   skin:
     sweat:
     - sweat
@@ -1996,6 +2044,7 @@ character:
     - arm_tattoo
     - shoulder_tattoo
     - chest_tattoo
+    - pubic_tattoo
     - leg_tattoo
     - number_tattoo
     - neck_tattoo
@@ -2011,6 +2060,8 @@ character:
     - full-body_tattoo
     - star_tattoo
     - forehead_tattoo
+    - glowing_tattoo
+    - teardrop_tattoo
     - sun_tattoo
     - butterfly_tattoo
     - tribal_tattoo
@@ -2043,8 +2094,8 @@ character:
     - anchor_tattoo
     - midriff_tattoo
     - scorpion_tattoo
-    - spider_web_tattoo
     - no_tattoo
+    - spider_web_tattoo
     - non-pubic_inmon
     - wing_tattoo
     - blue_tattoo
@@ -2055,14 +2106,11 @@ character:
     - square_tattoo
     - rabbit_tattoo
     - character_tattoo
-    - glowing_tattoo
-    - teardrop_tattoo
     scar_wound:
     - scar
     - stitches
     - scar_on_arm
     - scar_on_chest
-    - scar_on_head
     - bite_mark
     - cross_scar
     - burn_scar
@@ -2074,15 +2122,18 @@ character:
     - scar_on_stomach
     - scar_on_leg
     - scar_on_hand
+    - scar_on_shoulder
     - bite_mark_on_neck
     - self-harm_scar
     - scar_on_back
-    - scar_on_shoulder
     - scars_all_over
+    - bite_mark_on_shoulder
+    - scar_on_breasts
     - no_scar
     - claw_mark
     - mastectomy_scar
     - gunshot_wound
+    - scar_on_head
     - broken_skin
     - torn_skin
     - scar_on_hip
@@ -2091,7 +2142,6 @@ character:
     - scar_on_ear
     - titan_shifter_scars
     - bite_mark_on_chest
-    - bite_mark_on_shoulder
     - scar_on_thighs
     - track_marks
     texture_condition:
@@ -2181,21 +2231,31 @@ character:
     - dripping_blood
     body_hair:
     - hairy
-    - body_hair
     - shaved_body
     body_mole_freckle:
+    - mole_on_breast
+    - mole_on_neck
+    - mole_on_thigh
     - body_freckles
     - mole_on_ass
+    - mole_on_stomach
+    - mole_on_arm
+    - mole_on_collarbone
+    - mole_on_shoulder
+    - mole_on_armpit
+    - mole_on_pussy
     - mole_on_body
     - mole_on_chest
     - ass_freckles
     - mole_on_crotch
     - mole_on_leg
-    - mole_on_shoulder
     - shoulder_freckles
+    - breast_freckles
     - mole_on_back
+    - mole_on_areola
     - thigh_freckles
     - chest_freckles
+    - mole_under_breast
     - no_freckles
   nonhuman_trait:
     halo:
@@ -19534,8 +19594,6 @@ explicit:
     - bra_pull
     - bikini_bottom_aside
     - pussy_peek
-    - pubic_hair_peek
-    - huge_nipples
     - bandaids_on_nipples
     - flashing
     - swimsuit_aside
@@ -19559,7 +19617,6 @@ explicit:
     - presenting_breasts
     - nipple_jewelry
     - star_pasties
-    - sweaty_breasts
     - upshorts
     - bikini_bottom_pull
     - hands_on_own_breasts
@@ -19581,7 +19638,6 @@ explicit:
     - crotchless_pants
     - carried_breast_rest
     - pussy_cutout
-    - nipple_indents
     - implied_nudity
     - skinny_dipping
     - implied_pantyshot
@@ -20222,74 +20278,27 @@ explicit:
     - veiny_testicles
     - testicle_hair
     general:
-    - pubic_hair
-    - female_pubic_hair
-    - male_pubic_hair
     - futanari
-    - puffy_nipples
-    - areolae
     - cleft_of_venus
-    - large_areolae
-    - inverted_nipples
-    - pubic_tattoo
-    - uterus
     - clitoral_hood
     - spread_ass
     - gaping
-    - stray_pubic_hair
-    - sparse_pubic_hair
-    - black_pubic_hair
-    - perineum
-    - ovum
-    - cervix
-    - ass_ripple
-    - mismatched_pubic_hair
     - implied_futanari
-    - excessive_pubic_hair
     - full-package_futanari
-    - intestines
-    - white_pubic_hair
-    - pubic_stubble
     - smegma
-    - shaped_pubic_hair
-    - ass_hair
     - kupaa
-    - heart-shaped_pubic_hair
     - prolapse
     - bursting_ass
     - giving_birth
     - animal_genitalia_on_humanoid
-    - ovaries
     - large_bulge
-    - hymen
-    - between_buttocks
-    - prostate
-    - ovum_with_heart
     - extreme_gaping
     - cloaca
-    - fallopian_tubes
     - menstrual_pad
     - misplaced_genitals
-    - veiny_crotch
-    - black_nipples
-    - single_inverted_nipple
     - morning_wood
     - no_genitals
-    - sparse_ass_hair
-    - glowing_nipples
     - circumcision_scar
-    - dark_areolae
-    - colored_pubic_hair
-    - blue_pubic_hair
-    - purple_pubic_hair
-    - brown_pubic_hair
-    - red_pubic_hair
-    - grey_pubic_hair
-    - green_pubic_hair
-    - pink_pubic_hair
-    - orange_pubic_hair
-    - aqua_pubic_hair
-    - blonde_pubic_hair
   sexual_fluid:
   - cum
   - pussy_juice
