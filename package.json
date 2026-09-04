@@ -11,7 +11,8 @@
     "test": "vitest run",
     "typecheck": "vue-tsc --noEmit",
     "lint": "oxlint --vue-plugin --vitest-plugin .",
-    "lint:fix": "oxlint --vue-plugin --vitest-plugin --fix ."
+    "lint:fix": "oxlint --vue-plugin --vitest-plugin --fix .",
+    "sync:zh": "tsx scripts/sync-zh.ts"
   },
   "dependencies": {
     "graphology": "^0.26.0",
