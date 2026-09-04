@@ -6,54 +6,6 @@ category.apparel.detail:
   en: detail
   ja: 詳細
   zh-CN: 细节
-category.apparel.detail.detail:
-  en: garment detail
-  ja: 服飾の細部
-  zh-CN: 服饰细节
-category.apparel.detail.detail.collar_neckline:
-  en: collar neckline
-  ja: 襟ネックライン
-  zh-CN: 领口
-category.apparel.detail.detail.fastener:
-  en: fastener
-  ja: ファスナー
-  zh-CN: 扣件
-category.apparel.detail.detail.material_layer:
-  en: material and layering
-  ja: 素材とレイヤー
-  zh-CN: 材质与层次
-category.apparel.detail.detail.opening_strap:
-  en: opening strap
-  ja: オープニングストラップ
-  zh-CN: 开口绑带
-category.apparel.detail.detail.other:
-  en: other
-  ja: その他
-  zh-CN: 其他
-category.apparel.detail.detail.other.decorative:
-  en: decorative
-  ja: 装饰件
-  zh-CN: 装饰件
-category.apparel.detail.detail.other.general:
-  en: general
-  ja: 一般
-  zh-CN: 通用
-category.apparel.detail.detail.other.neckline:
-  en: neckline
-  ja: 领型
-  zh-CN: 领型
-category.apparel.detail.detail.other.structural:
-  en: structural
-  ja: 结构件
-  zh-CN: 结构件
-category.apparel.detail.detail.pocket:
-  en: pocket
-  ja: ポケット
-  zh-CN: 口袋
-category.apparel.detail.detail.trim_frill:
-  en: trim frill
-  ja: トリムフリル
-  zh-CN: 花边褶边
 category.apparel.detail.pattern:
   en: pattern
   ja: パターン
@@ -594,22 +546,6 @@ category.apparel.state.open_loose:
   en: open loose
   ja: ゆるく開いた
   zh-CN: 敞开
-category.apparel.state.other:
-  en: other
-  ja: その他
-  zh-CN: 其他
-category.apparel.state.other.costume_change:
-  en: costume change
-  ja: 换装
-  zh-CN: 换装
-category.apparel.state.other.coverage:
-  en: coverage
-  ja: 遮露
-  zh-CN: 遮露
-category.apparel.state.other.general:
-  en: general
-  ja: 一般
-  zh-CN: 通用
 category.apparel.state.torn:
   en: torn
   ja: 破れた
@@ -2046,7 +1982,7 @@ category.dynamics.expression:
   en: expression
   ja: 表情
   zh-CN: 表情
-category.dynamics.expression.emotion: &id044
+category.dynamics.expression.emotion:
   en: emotion
   ja: 感情
   zh-CN: 情感
@@ -2070,15 +2006,15 @@ category.dynamics.expression.emotion.surprise:
   en: surprise
   ja: 驚き
   zh-CN: 惊讶
-category.dynamics.expression.eye_expression: &id045
+category.dynamics.expression.eye_expression:
   en: eye expression
   ja: 目の表情
   zh-CN: 眼神
-category.dynamics.expression.face_effect: &id046
+category.dynamics.expression.face_effect:
   en: face effect
   ja: 顔の効果
   zh-CN: 脸部效果
-category.dynamics.expression.mouth: &id047
+category.dynamics.expression.mouth:
   en: mouth
   ja: 口
   zh-CN: 嘴
@@ -2106,19 +2042,19 @@ category.dynamics.interaction:
   en: interaction
   ja: インタラクション
   zh-CN: 互动
-category.dynamics.interaction.affection: &id048
+category.dynamics.interaction.affection:
   en: affection
   ja: 愛情
   zh-CN: 亲昵
-category.dynamics.interaction.care: &id049
+category.dynamics.interaction.care:
   en: care
   ja: ケア
   zh-CN: 照顾
-category.dynamics.interaction.conflict: &id050
+category.dynamics.interaction.conflict:
   en: conflict
   ja: 紛争
   zh-CN: 冲突
-category.dynamics.interaction.contact: &id051
+category.dynamics.interaction.contact:
   en: contact
   ja: 接触
   zh-CN: 接触
@@ -2134,10 +2070,6 @@ category.dynamics.interaction.contact.hug:
   en: hug
   ja: ハグ
   zh-CN: 拥抱
-category.dynamics.interaction.contact.restrain:
-  en: restrain
-  ja: 拘束
-  zh-CN: 制压
 category.dynamics.interaction.contact.general:
   en: general
   ja: 一般
@@ -2150,7 +2082,7 @@ category.dynamics.interaction.contact.leaning:
   en: leaning
   ja: もたれかかり
   zh-CN: 倚靠
-category.dynamics.interaction.creature_interaction: &id052
+category.dynamics.interaction.creature_interaction:
   en: creature interaction
   ja: 生き物の相互作用
   zh-CN: 生物互动
@@ -2158,7 +2090,7 @@ category.dynamics.pose:
   en: pose
   ja: ポーズ
   zh-CN: 姿势
-category.dynamics.pose.arm_hand: &id053
+category.dynamics.pose.arm_hand:
   en: arm hand
   ja: 腕と手
   zh-CN: 手臂与手势
@@ -2186,31 +2118,31 @@ category.dynamics.pose.arm_hand.self_touch:
   en: self touch
   ja: 自分に触れる
   zh-CN: 自我触碰
-category.dynamics.pose.head_gaze: &id054
+category.dynamics.pose.head_gaze:
   en: head gaze
   ja: 顔向きと視線
   zh-CN: 头部朝向
-category.dynamics.pose.leg_foot: &id055
+category.dynamics.pose.leg_foot:
   en: leg foot
   ja: 脚と足
   zh-CN: 腿与脚
-category.dynamics.pose.whole_body: &id056
+category.dynamics.pose.whole_body:
   en: whole body
   ja: 全身
   zh-CN: 全身
-category.dynamics.pose.whole_body.kneeling: &id057
+category.dynamics.pose.whole_body.kneeling:
   en: kneeling
   ja: ひざまずく
   zh-CN: 跪着
-category.dynamics.pose.whole_body.lying: &id058
+category.dynamics.pose.whole_body.lying:
   en: lying
   ja: 横たわる
   zh-CN: 躺卧
-category.dynamics.pose.whole_body.sitting: &id059
+category.dynamics.pose.whole_body.sitting:
   en: sitting
   ja: 座っている
   zh-CN: 坐着
-category.dynamics.pose.whole_body.standing: &id060
+category.dynamics.pose.whole_body.standing:
   en: standing
   ja: 立っている
   zh-CN: 站立
@@ -2330,10 +2262,6 @@ category.explicit.fetish.bondage:
   en: bondage
   ja: 緊縛
   zh-CN: 束缚
-category.explicit.fetish.general:
-  en: general
-  ja: 一般
-  zh-CN: 通用
 category.explicit.fetish.mind_break:
   en: mind break
   ja: 精神崩壊
@@ -2366,10 +2294,6 @@ category.explicit.sexual_act:
   en: sexual act
   ja: 性行為
   zh-CN: 性行为
-category.explicit.sexual_act.general:
-  en: general
-  ja: 一般
-  zh-CN: 通用
 category.explicit.sexual_act.group:
   en: group
   ja: 複数
@@ -2494,34 +2418,6 @@ category.fandom.meme.trend_meta:
   en: trend meta
   ja: トレンド・メタ
   zh-CN: 趋势与元标签
-category.fandom.named_object_reference:
-  en: named object reference
-  ja: 名前付きオブジェクト参照
-  zh-CN: 具名物品
-category.fandom.named_object_reference.costume:
-  en: costume
-  ja: 衣装
-  zh-CN: 服装
-category.fandom.named_object_reference.dress:
-  en: dress
-  ja: ドレス
-  zh-CN: 连衣裙
-category.fandom.named_object_reference.outerwear:
-  en: outerwear
-  ja: アウターウェア
-  zh-CN: 外套
-category.fandom.named_object_reference.swimwear:
-  en: swimwear
-  ja: 水着
-  zh-CN: 泳装
-category.fandom.named_object_reference.uniform:
-  en: uniform
-  ja: ユニフォーム
-  zh-CN: 制服
-category.fandom.named_object_reference.wearable:
-  en: wearable
-  ja: ウェアラブル
-  zh-CN: 穿戴物
 category.fandom.named_reference:
   en: named reference
   ja: 名前付き参照
@@ -2986,38 +2882,6 @@ category.object.medical_item:
   en: medical item
   ja: 医療品
   zh-CN: 医疗用品
-category.object.named_object:
-  en: named object
-  ja: 名前付きオブジェクト
-  zh-CN: 特定物品
-category.object.named_object.anime_item:
-  en: anime item
-  ja: アニメアイテム
-  zh-CN: 动漫物品
-category.object.named_object.collectible:
-  en: collectible
-  ja: 収集品
-  zh-CN: 收藏品
-category.object.named_object.game_item:
-  en: game item
-  ja: ゲームアイテム
-  zh-CN: 游戏物品
-category.object.named_object.protective_gear:
-  en: protective gear
-  ja: 保護具
-  zh-CN: 防护装备
-category.object.named_object.scene_prop:
-  en: scene prop
-  ja: シーン小道具
-  zh-CN: 场景道具
-category.object.named_object.toy:
-  en: toy
-  ja: おもちゃ
-  zh-CN: 玩具
-category.object.named_object.weapon:
-  en: weapon
-  ja: 武器
-  zh-CN: 武器
 category.object.plant:
   en: plant
   ja: 植物
@@ -3050,10 +2914,6 @@ category.object.protective_gear:
   en: protective gear
   ja: 保護具
   zh-CN: 防护装备
-category.object.protective_gear.general:
-  en: general
-  ja: 一般
-  zh-CN: 通用
 category.object.protective_gear.body_protection:
   en: body protection
   ja: 身体防具
@@ -3066,10 +2926,6 @@ category.object.scene_prop:
   en: scene prop
   ja: シーン小道具
   zh-CN: 场景道具
-category.object.scene_prop.general:
-  en: general
-  ja: 一般
-  zh-CN: 通用
 category.object.scene_prop.barrier_restraint:
   en: barrier restraint
   ja: バリア拘束
@@ -3270,10 +3126,6 @@ category.object.vehicle.air:
   en: air
   ja: 空
   zh-CN: 空中
-category.object.vehicle.general:
-  en: general
-  ja: 一般
-  zh-CN: 通用
 category.object.vehicle.land:
   en: land
   ja: 陸上
@@ -4145,7 +3997,7 @@ tag.>_<:
 tag.>_o:
   en: '> o'
   ja: '> ああ'
-  zh-CN: '挤眼'
+  zh-CN: 挤眼
 tag.>o<:
   en: '>o<'
   ja: '>o<'
@@ -92962,3 +92814,359 @@ tag.|_|:
   en: '|_|'
   ja: '|_|'
   zh-CN: '|_|'
+category.apparel.detail.trim_frill:
+  en: trim frill
+  ja: トリムフリル
+  zh-CN: 花边褶边
+category.apparel.detail.collar_neckline:
+  en: collar neckline
+  ja: 襟ネックライン
+  zh-CN: 领口
+category.apparel.detail.opening_strap:
+  en: opening strap
+  ja: オープニングストラップ
+  zh-CN: 开口绑带
+category.apparel.detail.fastener:
+  en: fastener
+  ja: ファスナー
+  zh-CN: 扣件
+category.apparel.detail.pocket:
+  en: pocket
+  ja: ポケット
+  zh-CN: 口袋
+category.apparel.detail.material_layer:
+  en: material and layering
+  ja: 素材とレイヤー
+  zh-CN: 材质与层次
+category.apparel.state.costume_change:
+  en: costume change
+  ja: 换装
+  zh-CN: 换装
+category.apparel.state.coverage:
+  en: coverage
+  ja: 遮露
+  zh-CN: 遮露
+category.apparel.detail.belt_sash:
+  en: belt & sash
+  ja: ベルト・帯
+  zh-CN: 腰带与饰带
+category.apparel.detail.bow_ribbon_lace:
+  en: bow, ribbon & lace
+  ja: リボン・レース
+  zh-CN: 蝴蝶结与蕾丝
+category.apparel.detail.armor_plate:
+  en: armor plate
+  ja: 装甲パーツ
+  zh-CN: 铠甲部件
+category.apparel.detail.emblem_marking:
+  en: emblem & marking
+  ja: 紋章・マーキング
+  zh-CN: 徽章与标记
+category.apparel.detail.garment_construction:
+  en: garment construction
+  ja: 服の構造
+  zh-CN: 服装结构
+category.apparel.detail.fashion_aesthetic:
+  en: fashion aesthetic
+  ja: ファッションスタイル
+  zh-CN: 时尚风格
+category.apparel.garment.dress.suit:
+  en: suit
+  ja: スーツ
+  zh-CN: 套装
+category.apparel.garment.dress.overalls_romper:
+  en: overalls & romper
+  ja: オーバーオール・ロンパース
+  zh-CN: 背带裤与连身衣
+category.apparel.garment.dress.fashion_aesthetic:
+  en: fashion aesthetic
+  ja: ファッションスタイル
+  zh-CN: 时尚风格
+category.apparel.garment.dress.occasion_dress:
+  en: occasion dress
+  ja: シーン別ドレス
+  zh-CN: 场合礼服
+category.apparel.garment.dress.dress_cut:
+  en: dress cut
+  ja: ドレスのカット
+  zh-CN: 裙装剪裁
+category.apparel.garment.dress.dress_material_pattern:
+  en: dress material & pattern
+  ja: ドレスの素材・柄
+  zh-CN: 裙装材质与图案
+category.apparel.state.clothing_context:
+  en: clothing context
+  ja: 着用シーン
+  zh-CN: 着装场合
+category.apparel.state.clothing_surface_condition:
+  en: clothing stains & effects
+  ja: 汚れ・特殊効果
+  zh-CN: 污渍与特效
+category.apparel.state.clothing_fit:
+  en: fit
+  ja: フィット感
+  zh-CN: 合身度
+category.apparel.state.layering_order:
+  en: layering order
+  ja: 重ね着の順序
+  zh-CN: 穿着层次
+category.apparel.state.slipped_garment:
+  en: slipped garment
+  ja: ずれた衣類
+  zh-CN: 滑落衣物
+category.apparel.state.visibility_peek:
+  en: visibility & peek
+  ja: 透け・チラ見え
+  zh-CN: 透视与若隐若现
+category.apparel.state.garment_position:
+  en: garment position
+  ja: 衣類の乱れ
+  zh-CN: 衣物位置异常
+category.apparel.garment.general:
+  en: general garment
+  ja: 衣類全般
+  zh-CN: 服装通用
+category.dynamics.action.object_manipulation.holding.container:
+  en: Container
+  ja: 容器
+  zh-CN: 容器
+category.dynamics.action.object_manipulation.holding.decorative_object:
+  en: Decorative Object
+  ja: 装飾品
+  zh-CN: 装饰物
+category.dynamics.action.object_manipulation.holding.body_part:
+  en: Body Part
+  ja: 身体部位
+  zh-CN: 身体部位
+category.explicit.sexual_act.handjob:
+  en: handjob
+  ja: 手コキ
+  zh-CN: 手交
+category.explicit.sexual_act.breast:
+  en: breast play
+  ja: 乳房プレイ
+  zh-CN: 胸部性爱
+category.explicit.sexual_act.bodypart_play:
+  en: body part play
+  ja: 部位プレイ
+  zh-CN: 身体部位性爱
+category.explicit.sexual_act.masturbation:
+  en: masturbation
+  ja: オナニー
+  zh-CN: 自慰
+category.explicit.sexual_act.anal:
+  en: anal
+  ja: アナル
+  zh-CN: 肛交
+category.explicit.sexual_act.penetration:
+  en: penetration
+  ja: 挿入
+  zh-CN: 插入
+category.explicit.sexual_act.foreplay:
+  en: foreplay
+  ja: 前戯
+  zh-CN: 前戏
+category.explicit.sexual_act.climax:
+  en: climax
+  ja: 絶頂・避妊
+  zh-CN: 高潮与避孕
+category.explicit.sexual_act.scenario:
+  en: scenario
+  ja: シチュエーション
+  zh-CN: 情境
+category.explicit.fetish.body_modification:
+  en: body modification
+  ja: 身体改造
+  zh-CN: 身体改造
+category.explicit.fetish.pain_and_torture:
+  en: pain and torture
+  ja: 拷問・折檻
+  zh-CN: 疼痛与拷问
+category.explicit.fetish.watersports_and_food_play:
+  en: watersports and food play
+  ja: 排泄・食べ物プレイ
+  zh-CN: 排泄与食物play
+category.explicit.fetish.power_and_humiliation:
+  en: power and humiliation
+  ja: 支配・屈辱
+  zh-CN: 支配与屈辱
+category.explicit.fetish.creature_and_transformation:
+  en: creature and transformation
+  ja: 異形・変貌
+  zh-CN: 异种与变身
+category.object.technology.gaming_device:
+  en: Gaming Devices
+  ja: ゲーム機器
+  zh-CN: 游戏设备
+category.object.technology.video_media:
+  en: Video & Broadcast Media
+  ja: 映像・放送機器
+  zh-CN: 影像播放设备
+category.object.technology.communication_network:
+  en: Communication & Network
+  ja: 通信・ネットワーク機器
+  zh-CN: 通信与网络设备
+category.object.technology.fictional_device:
+  en: Fictional Gadgets
+  ja: 架空のガジェット
+  zh-CN: 虚构设备
+category.object.technology.instruments_sensors:
+  en: Instruments & Sensors
+  ja: 計測・センサー機器
+  zh-CN: 仪器与传感设备
+category.object.technology.machinery_electronics:
+  en: Power & Machinery
+  ja: 電源・機械装置
+  zh-CN: 电力与机械装置
+category.object.technology.appliance_infrastructure:
+  en: Appliances & Infrastructure
+  ja: 家電・公共設備
+  zh-CN: 家电与公共设施
+category.object.vehicle.brand:
+  en: Vehicle Brands
+  ja: 自動車ブランド
+  zh-CN: 汽车品牌
+category.object.vehicle.model:
+  en: Vehicle Models
+  ja: 車種・モデル
+  zh-CN: 车型
+category.object.vehicle.parts:
+  en: Vehicle Parts
+  ja: 乗り物の部品
+  zh-CN: 载具零件
+category.object.vehicle.military:
+  en: Military Vehicles
+  ja: 軍用車両・軍用機
+  zh-CN: 军用载具
+category.object.vehicle.scifi_fantasy:
+  en: Sci-Fi & Fantasy Vehicles
+  ja: SF・ファンタジー系乗り物
+  zh-CN: 科幻奇幻载具
+category.text.symbol.astrology_symbol:
+  en: Astrology Symbol
+  ja: 占星術記号
+  zh-CN: 占星符号
+category.text.symbol.gender_symbol:
+  en: Gender Symbol
+  ja: 性別記号
+  zh-CN: 性别符号
+category.text.symbol.religious_occult_symbol:
+  en: Religious & Occult Symbol
+  ja: 宗教・オカルト記号
+  zh-CN: 宗教与神秘学符号
+category.text.symbol.card_suit_symbol:
+  en: Card Suit Symbol
+  ja: トランプスート記号
+  zh-CN: 扑克花色符号
+category.text.symbol.notation_symbol:
+  en: Notation Symbol
+  ja: 表記記号
+  zh-CN: 标记符号
+category.text.symbol.pictogram_icon:
+  en: Pictogram & Icon
+  ja: ピクトグラム・アイコン
+  zh-CN: 图标标识
+category.text.symbol.heraldry_emblem:
+  en: Heraldry & Emblem
+  ja: 紋章・エンブレム
+  zh-CN: 纹章徽饰
+category.text.symbol.emoticon_face:
+  en: Emoticon Face
+  ja: 顔文字
+  zh-CN: 颜文字表情
+category.fandom.franchise_meta.emblem:
+  en: Emblem
+  ja: 紋章
+  zh-CN: 徽记
+category.object.tool.fishing_trap:
+  en: Fishing & Trapping Tool
+  ja: 漁具・罠
+  zh-CN: 渔猎捕捞用具
+category.object.tool.kitchen_tool:
+  en: Kitchen Cookware
+  ja: 調理器具
+  zh-CN: 厨房炊具
+category.object.tool.sewing_craft:
+  en: Sewing & Textile Craft Tool
+  ja: 裁縫・手芸道具
+  zh-CN: 缝纫编织用具
+category.object.tool.art_tool:
+  en: Art & Craft Supply
+  ja: 美術・工作道具
+  zh-CN: 美术工艺用具
+category.object.tool.hardware_material:
+  en: Hardware & Construction Material
+  ja: 金物・建築資材
+  zh-CN: 五金建材
+category.object.tool.garden_tool:
+  en: Garden & Farm Tool
+  ja: 園芸・農具
+  zh-CN: 园艺农具
+category.object.tool.machine_part:
+  en: Machine Part
+  ja: 機械部品
+  zh-CN: 机械零件
+category.object.tool.measuring_instrument:
+  en: Measuring Instrument
+  ja: 測定器具
+  zh-CN: 测量仪器
+category.object.tool.grooming_tool:
+  en: Grooming & Beauty Tool
+  ja: 美容道具
+  zh-CN: 美容护理用具
+category.object.tool.power_tool:
+  en: Power Tool
+  ja: 電動工具
+  zh-CN: 电动工具
+tag.cross:
+  en: cross
+  ja: 十字
+  zh-CN: 十字
+tag....:
+  en: ellipsis
+  ja: 三点リーダー
+  zh-CN: 省略号
+tag.web_address:
+  en: web address
+  ja: ウェブアドレス
+  zh-CN: 网址
+tag.ofuda:
+  en: ofuda
+  ja: 御札
+  zh-CN: 符咒
+tag.gohei:
+  en: gohei
+  ja: 御幣
+  zh-CN: 御币
+tag.charm_(object):
+  en: charm
+  ja: お守り
+  zh-CN: 护身符
+tag.shimenawa:
+  en: shimenawa
+  ja: 注連縄
+  zh-CN: 注连绳
+tag.magatama:
+  en: magatama
+  ja: 勾玉
+  zh-CN: 勾玉
+tag.shide:
+  en: shide
+  ja: 紙垂
+  zh-CN: 纸垂
+tag.talisman:
+  en: talisman
+  ja: 護符
+  zh-CN: 护符
+tag.two-sided_headwear:
+  en: two-sided headwear
+  ja: 両面カラーの帽子
+  zh-CN: 双色头饰
+tag.marshmallow_(site):
+  en: marshmallow (site)
+  ja: マシュマロ (サイト)
+  zh-CN: Marshmallow（网站）
+tag."don't_say_""lazy""":
+  en: don't say "lazy"
+  ja: Don't say "lazy"
+  zh-CN: Don't say "lazy"

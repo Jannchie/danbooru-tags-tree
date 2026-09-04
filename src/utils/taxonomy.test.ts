@@ -407,7 +407,7 @@ describe('taxonomy helpers', () => {
       ['attack', 'dynamics.action.combat.impact'],
       ['blowing_kiss', 'dynamics.action.gesture.greeting'],
       ['v', 'dynamics.action.gesture.general'],
-      ['carrying_under_arm', 'dynamics.action.object_manipulation.holding.general'],
+      ['carrying_under_arm', 'dynamics.action.object_manipulation.holding.grip_style'],
       ['mouth_hold', 'dynamics.action.object_manipulation.holding.grip_style'],
       ['holding', 'dynamics.action.object_manipulation.holding.general'],
       ['foot_on_another\'s_face', 'dynamics.interaction.contact.general'],
@@ -717,19 +717,19 @@ describe('taxonomy helpers', () => {
       ['blood_on_shoulder', 'character.skin.blood'],
       ['bite_mark_on_shoulder', 'character.skin.scar_wound'],
       ['cum_on_back', 'explicit.sexual_fluid'],
-      ['grabbed_breast_over_shoulder', 'explicit.sexual_act.general'],
+      ['grabbed_breast_over_shoulder', 'explicit.sexual_act.breast'],
       ['lipstick_mark_on_face', 'character.body.face.lips_mouth'],
       ['lipstick_mark_on_shoulder', 'character.skin.skin_mark'],
       ['mole_on_shoulder', 'character.skin.body_mole_freckle'],
-      ['paizuri_on_lap', 'explicit.sexual_act.general'],
-      ['penis_on_face', 'explicit.sexual_act.general'],
-      ['penis_on_head', 'explicit.sexual_act.general'],
-      ['penis_on_shoulder', 'explicit.sexual_act.general'],
+      ['paizuri_on_lap', 'explicit.sexual_act.breast'],
+      ['penis_on_face', 'explicit.sexual_act.bodypart_play'],
+      ['penis_on_head', 'explicit.sexual_act.bodypart_play'],
+      ['penis_on_shoulder', 'explicit.sexual_act.bodypart_play'],
       ['pussy_juice_on_face', 'explicit.sexual_fluid'],
       ['scar_on_head', 'character.skin.scar_wound'],
       ['scar_on_shoulder', 'character.skin.scar_wound'],
       ['snow_on_head', 'character.skin.texture_condition'],
-      ['testicles_on_face', 'explicit.sexual_act.general'],
+      ['testicles_on_face', 'explicit.sexual_act.bodypart_play'],
     ])
     const rows: Array<{ tag: string, path: string }> = []
 
@@ -1360,7 +1360,7 @@ describe('taxonomy helpers', () => {
     }>('data/source/danbooru_tag_tree_v3.yaml')
     const expectedPaths = new Map([
       ['dress', 'apparel.garment.dress.general'],
-      ['wedding_dress', 'apparel.garment.dress.general'],
+      ['wedding_dress', 'apparel.garment.dress.occasion_dress'],
       ['rabbit', 'creature.mammal.general'],
       ['sea_lion', 'creature.mammal.general'],
       ['bird', 'creature.bird.general'],
@@ -1433,11 +1433,7 @@ describe('taxonomy helpers', () => {
   it('keeps franchise-specific character and reference tags under fandom', () => {
     const parsed = readSourceYaml<{
       apparel: {
-        detail: {
-          detail: {
-            other: Record<string, unknown>
-          }
-        }
+        detail: Record<string, unknown>
       }
       character: {
         affiliation: Record<string, unknown>
@@ -1459,10 +1455,8 @@ describe('taxonomy helpers', () => {
           reference_type: Record<string, unknown>
           visual_identity: string[]
         }
-        named_object_reference: {
-          costume: string[]
-        }
         narrative_meta: {
+          alternate_version: string[]
           crossover: string[]
         }
       }
@@ -1519,7 +1513,7 @@ describe('taxonomy helpers', () => {
       ['recruitment_(blue_archive)', 'fandom.named_reference.presentation_reference'],
       ['twitter_strip_game', 'fandom.named_reference.presentation_reference'],
       ['srw_battle_screen', 'fandom.named_reference.presentation_reference'],
-      ['official_alternate_costume', 'fandom.named_object_reference.costume'],
+      ['official_alternate_costume', 'fandom.narrative_meta.alternate_version'],
       ['official_art_inset', 'fandom.franchise_meta.general'],
       ['style_parody', 'fandom.narrative_meta.crossover'],
       ['multiple_style_parody', 'fandom.narrative_meta.crossover'],
@@ -1538,7 +1532,7 @@ describe('taxonomy helpers', () => {
     expect(parsed.fandom.named_reference.reference_type).toHaveProperty('title_name')
     expect(parsed.fandom.named_reference.reference_type).toHaveProperty('entity_name')
     expect(parsed.fandom.named_reference.reference_type).toHaveProperty('natural_name')
-    expect(parsed.apparel.detail.detail.other).not.toHaveProperty('costume_change')
+    expect(parsed.apparel.detail).not.toHaveProperty('costume_change')
     expect(parsed.text).not.toHaveProperty('phrase_reference')
     expect(parsed.text.text_content.dialogue_meta).not.toContain('source_quote')
     expect(parsed.production.authorship).not.toContain('copyright_notice')
@@ -1567,25 +1561,76 @@ describe('taxonomy helpers', () => {
       }
     }>('data/source/danbooru_tag_tree_v3.yaml')
     const expectedPaths = new Map([
-      ['gold_trim', 'apparel.detail.detail.trim_frill'],
-      ['fold-over_collar', 'apparel.detail.detail.collar_neckline'],
-      ['double-breasted', 'apparel.detail.detail.fastener'],
-      ['multiple_belts', 'apparel.detail.detail.other.structural'],
-      ['multiple_thigh_straps', 'apparel.detail.detail.other.structural'],
-      ['multiple_straps', 'apparel.detail.detail.other.structural'],
-      ['two-tone_belt', 'apparel.detail.detail.other.structural'],
-      ['multicolored_bow', 'apparel.detail.detail.other.decorative'],
-      ['multiple_bows', 'apparel.detail.detail.other.decorative'],
-      ['gold_embroidery', 'apparel.detail.detail.other.decorative'],
-      ['multiple_hat_bows', 'apparel.detail.detail.other.decorative'],
-      ['see-through_bow', 'apparel.detail.detail.other.decorative'],
-      ['translucent', 'apparel.detail.detail.material_layer'],
-      ['mesh', 'apparel.detail.detail.material_layer'],
+      ['gold_trim', 'apparel.detail.trim_frill'],
+      ['fold-over_collar', 'apparel.detail.collar_neckline'],
+      ['double-breasted', 'apparel.detail.fastener'],
+      ['multiple_belts', 'apparel.detail.belt_sash'],
+      ['multiple_thigh_straps', 'apparel.detail.belt_sash'],
+      ['multiple_straps', 'apparel.detail.belt_sash'],
+      ['two-tone_belt', 'apparel.detail.belt_sash'],
+      ['multicolored_bow', 'apparel.detail.bow_ribbon_lace'],
+      ['multiple_bows', 'apparel.detail.bow_ribbon_lace'],
+      ['gold_embroidery', 'apparel.detail.trim_frill'],
+      ['multiple_hat_bows', 'apparel.detail.bow_ribbon_lace'],
+      ['see-through_bow', 'apparel.detail.bow_ribbon_lace'],
+      ['translucent', 'apparel.detail.material_layer'],
+      ['mesh', 'apparel.detail.material_layer'],
     ])
     const rows = collectMatchingTagPaths(parsed, expectedPaths)
 
     expect(rows).toHaveLength(expectedPaths.size)
     expect(rows.every((row) => row.path === expectedPaths.get(row.tag))).toBe(true)
-    expect((parsed.apparel.detail.detail as Record<string, unknown>)).not.toHaveProperty('damage_wear')
+    expect((parsed.apparel.detail as Record<string, unknown>)).not.toHaveProperty('damage_wear')
+  })
+
+  it('keeps objects classified by what they are, not by whether they have a name', () => {
+    const parsed = readSourceYaml<{
+      fandom: Record<string, unknown>
+      object: Record<string, unknown>
+    }>('data/source/danbooru_tag_tree_v3.yaml')
+    // Both of these were parallel trees: a second copy of an axis that already
+    // existed, keyed on whether an item came from a specific work.
+    // `object.named_object` repeated weapon_type / protective_gear / toy /
+    // scene_prop, and `fandom.named_object_reference` repeated the garment
+    // categories, so a named sword sat away from the swords and a named
+    // uniform away from the uniforms. Neither dissolution needed a new node.
+    const expectedPaths = new Map([
+      ['excalibur_(fate/stay_night)', 'object.weapon_type.melee.sword'],
+      ['master_sword', 'object.weapon_type.melee.sword'],
+      ['avalon_(fate)', 'object.weapon_type.sheath'],
+      ['official_alternate_costume', 'fandom.narrative_meta.alternate_version'],
+    ])
+    const rows = collectMatchingTagPaths(parsed, expectedPaths)
+
+    expect(rows).toHaveLength(expectedPaths.size)
+    expect(rows.every((row) => row.path === expectedPaths.get(row.tag))).toBe(true)
+    expect(parsed.object).not.toHaveProperty('named_object')
+    expect(parsed.fandom).not.toHaveProperty('named_object_reference')
+  })
+
+  it('keeps the dissolved catch-all buckets from growing back', () => {
+    const parsed = readSourceYaml<{
+      apparel: {
+        detail: Record<string, unknown>
+        state: Record<string, unknown>
+      }
+      explicit: {
+        fetish: Record<string, unknown>
+        sexual_act: Record<string, unknown>
+      }
+      object: {
+        vehicle: Record<string, unknown>
+      }
+    }>('data/source/danbooru_tag_tree_v3.yaml')
+
+    // `detail.detail` named nothing, and `detail.other` / `state.other` were
+    // wrappers holding a `general` dump underneath them.
+    expect(parsed.apparel.detail).not.toHaveProperty('detail')
+    expect(parsed.apparel.detail).not.toHaveProperty('other')
+    expect(parsed.apparel.state).not.toHaveProperty('other')
+    // These three drained completely once their tags were classified.
+    expect(parsed.explicit.sexual_act).not.toHaveProperty('general')
+    expect(parsed.explicit.fetish).not.toHaveProperty('general')
+    expect(parsed.object.vehicle).not.toHaveProperty('general')
   })
 })
