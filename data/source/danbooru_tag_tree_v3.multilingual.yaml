@@ -12,7 +12,7 @@ category.apparel.detail.pattern:
   zh-CN: 图案
 category.apparel.detail.pattern.dot_geometric:
   en: dot geometric
-  ja: 点与几何
+  ja: ドット・幾何学模様
   zh-CN: 点与几何
 category.apparel.detail.pattern.general:
   en: general
@@ -20,15 +20,15 @@ category.apparel.detail.pattern.general:
   zh-CN: 通用
 category.apparel.detail.pattern.plaid_check:
   en: plaid check
-  ja: 格纹
+  ja: チェック柄
   zh-CN: 格纹
 category.apparel.detail.pattern.print:
   en: print
-  ja: 印花
+  ja: プリント柄
   zh-CN: 印花
 category.apparel.detail.pattern.stripe:
   en: stripe
-  ja: 条纹
+  ja: ストライプ
   zh-CN: 条纹
 category.apparel.detail.sleeve:
   en: sleeve
@@ -116,7 +116,7 @@ category.apparel.garment.handwear:
   zh-CN: 手套
 category.apparel.garment.handwear.arm_cover:
   en: arm cover
-  ja: 臂套
+  ja: アームカバー
   zh-CN: 臂套
 category.apparel.garment.handwear.general:
   en: general
@@ -124,7 +124,7 @@ category.apparel.garment.handwear.general:
   zh-CN: 通用
 category.apparel.garment.handwear.gloves:
   en: gloves
-  ja: 手套
+  ja: 手袋
   zh-CN: 手套
 category.apparel.garment.outerwear:
   en: outerwear
@@ -576,15 +576,15 @@ category.apparel.worn_accessory.eyewear.general:
   zh-CN: 通用
 category.apparel.worn_accessory.eyewear.glasses:
   en: glasses
-  ja: 眼镜
+  ja: 眼鏡
   zh-CN: 眼镜
 category.apparel.worn_accessory.eyewear.goggles:
   en: goggles
-  ja: 护目镜
+  ja: ゴーグル
   zh-CN: 护目镜
 category.apparel.worn_accessory.eyewear.sunglasses:
   en: sunglasses
-  ja: 太阳镜
+  ja: サングラス
   zh-CN: 太阳镜
 category.apparel.worn_accessory.hair_ornament:
   en: hair ornament
@@ -656,7 +656,7 @@ category.apparel.worn_accessory.neckwear:
   zh-CN: 颈饰
 category.apparel.worn_accessory.neckwear.collar_piece:
   en: collar piece
-  ja: 领饰
+  ja: 襟飾り
   zh-CN: 领饰
 category.apparel.worn_accessory.neckwear.general:
   en: general
@@ -664,15 +664,15 @@ category.apparel.worn_accessory.neckwear.general:
   zh-CN: 通用
 category.apparel.worn_accessory.neckwear.neck_ribbon:
   en: neck ribbon
-  ja: 颈部丝带
+  ja: ネックリボン
   zh-CN: 颈部丝带
 category.apparel.worn_accessory.neckwear.scarf:
   en: scarf
-  ja: 围巾
+  ja: スカーフ
   zh-CN: 围巾
 category.apparel.worn_accessory.neckwear.tie:
   en: tie
-  ja: 领带
+  ja: ネクタイ
   zh-CN: 领带
 category.apparel.worn_accessory.wearable:
   en: wearable
@@ -680,15 +680,15 @@ category.apparel.worn_accessory.wearable:
   zh-CN: 其他穿戴物
 category.apparel.worn_accessory.wearable.bandage:
   en: bandage
-  ja: 绷带
+  ja: 包帯
   zh-CN: 绷带
 category.apparel.worn_accessory.wearable.belt_strap:
   en: belt strap
-  ja: 腰带与绑带
+  ja: ベルト・ストラップ
   zh-CN: 腰带与绑带
 category.apparel.worn_accessory.wearable.body_accessory:
   en: body accessory
-  ja: 身体配饰
+  ja: ボディアクセサリー
   zh-CN: 身体配饰
 category.apparel.worn_accessory.wearable.general:
   en: general
@@ -696,15 +696,15 @@ category.apparel.worn_accessory.wearable.general:
   zh-CN: 通用
 category.apparel.worn_accessory.wearable.headphone:
   en: headphone
-  ja: 耳机
+  ja: ヘッドホン
   zh-CN: 耳机
 category.apparel.worn_accessory.wearable.mask_face:
   en: mask face
-  ja: 面罩
+  ja: マスク
   zh-CN: 面罩
 category.apparel.worn_accessory.wearable.nail:
   en: nail
-  ja: 美甲
+  ja: ネイル
   zh-CN: 美甲
 category.character:
   en: character
@@ -720,7 +720,7 @@ category.character.affiliation.generic:
   zh-CN: 通用团体
 category.character.archetype:
   en: archetype
-  ja: 原型
+  ja: 類型
   zh-CN: 原型
 category.character.archetype.form:
   en: form
@@ -1536,7 +1536,7 @@ category.composition.framing.body_part_anchor.shoulder.general:
   zh-CN: 通用
 category.composition.framing.body_part_anchor.shoulder.on_shoulder:
   en: on shoulder
-  ja: 肩上
+  ja: 肩の上
   zh-CN: 肩上
 category.composition.framing.body_part_anchor.shoulder.over_shoulder:
   en: over shoulder
@@ -1576,11 +1576,11 @@ category.composition.visual_effect.effect:
   zh-CN: 效果
 category.composition.visual_effect.effect.blur:
   en: blur
-  ja: 模糊
+  ja: ぼかし
   zh-CN: 模糊
 category.composition.visual_effect.effect.color_effect:
   en: color effect
-  ja: 色彩效果
+  ja: 色彩効果
   zh-CN: 色彩效果
 category.composition.visual_effect.effect.general:
   en: general
@@ -1588,11 +1588,11 @@ category.composition.visual_effect.effect.general:
   zh-CN: 通用
 category.composition.visual_effect.effect.glow_light:
   en: glow light
-  ja: 发光
+  ja: 発光
   zh-CN: 发光
 category.composition.visual_effect.effect.line_effect:
   en: line effect
-  ja: 线条效果
+  ja: ライン効果
   zh-CN: 线条效果
 category.composition.visual_effect.effect.reflection:
   en: reflection
@@ -2180,11 +2180,11 @@ category.environment.location.indoor:
   zh-CN: 室内
 category.environment.location.indoor.architectural_element:
   en: architectural element
-  ja: 建筑构件
+  ja: 建築部材
   zh-CN: 建筑构件
 category.environment.location.indoor.facility:
   en: facility
-  ja: 设施
+  ja: 施設
   zh-CN: 设施
 category.environment.location.indoor.general:
   en: general
@@ -2192,7 +2192,7 @@ category.environment.location.indoor.general:
   zh-CN: 通用
 category.environment.location.indoor.room:
   en: room
-  ja: 房间
+  ja: 部屋
   zh-CN: 房间
 category.environment.location.outdoor:
   en: outdoor
@@ -2212,11 +2212,11 @@ category.environment.location.outdoor.urban:
   zh-CN: 城市
 category.environment.location.outdoor.urban.building:
   en: building
-  ja: 建筑
+  ja: 建物
   zh-CN: 建筑
 category.environment.location.outdoor.urban.country_city:
   en: country city
-  ja: 国家与城市
+  ja: 国と都市
   zh-CN: 国家与城市
 category.environment.location.outdoor.urban.general:
   en: general
@@ -2224,11 +2224,11 @@ category.environment.location.outdoor.urban.general:
   zh-CN: 通用
 category.environment.location.outdoor.urban.infrastructure:
   en: infrastructure
-  ja: 基础设施
+  ja: インフラ
   zh-CN: 基础设施
 category.environment.location.outdoor.urban.place:
   en: place
-  ja: 场所
+  ja: 場所
   zh-CN: 场所
 category.environment.scene_state:
   en: scene state
@@ -2288,7 +2288,7 @@ category.explicit.nudity.partial:
   zh-CN: 半裸
 category.explicit.nudity.topless:
   en: topless
-  ja: 上身裸
+  ja: 上半身裸
   zh-CN: 上身裸
 category.explicit.sexual_act:
   en: sexual act
@@ -2316,7 +2316,7 @@ category.explicit.sexual_anatomy:
   zh-CN: 性器官
 category.explicit.sexual_anatomy.anus:
   en: anus
-  ja: 肛门
+  ja: 肛門
   zh-CN: 肛门
 category.explicit.sexual_anatomy.general:
   en: general
@@ -2324,7 +2324,7 @@ category.explicit.sexual_anatomy.general:
   zh-CN: 通用
 category.explicit.sexual_anatomy.penis:
   en: penis
-  ja: 阴茎
+  ja: 陰茎
   zh-CN: 阴茎
 category.explicit.sexual_anatomy.testicle:
   en: testicle
@@ -2332,7 +2332,7 @@ category.explicit.sexual_anatomy.testicle:
   zh-CN: 睾丸
 category.explicit.sexual_anatomy.vagina:
   en: vagina
-  ja: 女阴
+  ja: 膣
   zh-CN: 女阴
 category.explicit.sexual_fluid:
   en: sexual fluid
@@ -2388,7 +2388,7 @@ category.fandom.meme.challenge_redraw:
   zh-CN: 挑战与重绘
 category.fandom.meme.character_icon:
   en: character icon
-  ja: 梗角色
+  ja: キャラクターアイコン
   zh-CN: 梗角色
 category.fandom.meme.dance_motion:
   en: dance motion
@@ -2728,7 +2728,7 @@ category.object.food_drink.food.fruit_vegetable:
   zh-CN: 水果蔬菜
 category.object.food_drink.food.fruit_vegetable.fruit:
   en: fruit
-  ja: 水果
+  ja: 果物
   zh-CN: 水果
 category.object.food_drink.food.fruit_vegetable.general:
   en: general
@@ -2736,11 +2736,11 @@ category.object.food_drink.food.fruit_vegetable.general:
   zh-CN: 通用
 category.object.food_drink.food.fruit_vegetable.nut_seed:
   en: nut seed
-  ja: 坚果与种子
+  ja: ナッツと種子
   zh-CN: 坚果与种子
 category.object.food_drink.food.fruit_vegetable.vegetable:
   en: vegetable
-  ja: 蔬菜
+  ja: 野菜
   zh-CN: 蔬菜
 category.object.food_drink.food.meal:
   en: meal
@@ -2748,11 +2748,11 @@ category.object.food_drink.food.meal:
   zh-CN: 餐
 category.object.food_drink.food.meal.bread_wheat:
   en: bread wheat
-  ja: 面包类
+  ja: パン類
   zh-CN: 面包类
 category.object.food_drink.food.meal.condiment:
   en: condiment
-  ja: 调味料
+  ja: 調味料
   zh-CN: 调味料
 category.object.food_drink.food.meal.general:
   en: general
@@ -2760,15 +2760,15 @@ category.object.food_drink.food.meal.general:
   zh-CN: 通用
 category.object.food_drink.food.meal.meat_fish:
   en: meat fish
-  ja: 肉鱼
+  ja: 肉・魚
   zh-CN: 肉鱼
 category.object.food_drink.food.meal.rice_noodle:
   en: rice noodle
-  ja: 饭面
+  ja: ご飯・麺
   zh-CN: 饭面
 category.object.food_drink.food.meal.sushi_japanese:
   en: sushi japanese
-  ja: 寿司与日料
+  ja: 寿司・和食
   zh-CN: 寿司与日料
 category.object.food_drink.food.snack:
   en: snack
@@ -2776,15 +2776,15 @@ category.object.food_drink.food.snack:
   zh-CN: 小吃
 category.object.food_drink.food.snack.baked:
   en: baked
-  ja: 烘焙
+  ja: 焼き菓子
   zh-CN: 烘焙
 category.object.food_drink.food.snack.cake:
   en: cake
-  ja: 蛋糕
+  ja: ケーキ
   zh-CN: 蛋糕
 category.object.food_drink.food.snack.candy:
   en: candy
-  ja: 糖果
+  ja: キャンディ
   zh-CN: 糖果
 category.object.food_drink.food.snack.general:
   en: general
@@ -2792,11 +2792,11 @@ category.object.food_drink.food.snack.general:
   zh-CN: 通用
 category.object.food_drink.food.snack.ice_cream:
   en: ice cream
-  ja: 冰品
+  ja: アイス
   zh-CN: 冰品
 category.object.food_drink.food.snack.japanese_sweet:
   en: japanese sweet
-  ja: 和果子
+  ja: 和菓子
   zh-CN: 和果子
 category.object.furniture:
   en: furniture
@@ -2804,7 +2804,7 @@ category.object.furniture:
   zh-CN: 家具
 category.object.furniture.bed:
   en: bed
-  ja: 床
+  ja: ベッド
   zh-CN: 床
 category.object.furniture.general:
   en: general
@@ -2812,15 +2812,15 @@ category.object.furniture.general:
   zh-CN: 通用
 category.object.furniture.seating:
   en: seating
-  ja: 座椅
+  ja: 座席
   zh-CN: 座椅
 category.object.furniture.storage:
   en: storage
-  ja: 收纳
+  ja: 収納
   zh-CN: 收纳
 category.object.furniture.table_desk:
   en: table desk
-  ja: 桌台
+  ja: テーブル・机
   zh-CN: 桌台
 category.object.household_item:
   en: household item
@@ -2860,19 +2860,19 @@ category.object.instrument.general:
   zh-CN: 通用
 category.object.instrument.keyboard:
   en: keyboard
-  ja: 键盘乐
+  ja: 鍵盤楽器
   zh-CN: 键盘乐
 category.object.instrument.percussion:
   en: percussion
-  ja: 打击乐
+  ja: 打楽器
   zh-CN: 打击乐
 category.object.instrument.string:
   en: string
-  ja: 弦乐
+  ja: 弦楽器
   zh-CN: 弦乐
 category.object.instrument.wind:
   en: wind
-  ja: 管乐
+  ja: 管楽器
   zh-CN: 管乐
 category.object.material:
   en: material
@@ -2892,7 +2892,7 @@ category.object.plant.flower:
   zh-CN: 花
 category.object.plant.flower.bouquet_arrange:
   en: bouquet arrange
-  ja: 花束与装饰
+  ja: 花束・アレンジメント
   zh-CN: 花束与装饰
 category.object.plant.flower.general:
   en: general
@@ -2900,7 +2900,7 @@ category.object.plant.flower.general:
   zh-CN: 通用
 category.object.plant.flower.specific_flower:
   en: specific flower
-  ja: 具体花种
+  ja: 花の種類
   zh-CN: 具体花种
 category.object.plant.general:
   en: general
@@ -3000,11 +3000,11 @@ category.object.stationery.general:
   zh-CN: 通用
 category.object.stationery.paper:
   en: paper
-  ja: 纸品
+  ja: 紙製品
   zh-CN: 纸品
 category.object.stationery.writing_tool:
   en: writing tool
-  ja: 书写工具
+  ja: 筆記用具
   zh-CN: 书写工具
 category.object.structure_item:
   en: structure item
@@ -3104,7 +3104,7 @@ category.object.toy_game_item.toy:
   zh-CN: 玩具
 category.object.toy_game_item.toy.ball:
   en: ball
-  ja: 球类
+  ja: ボール類
   zh-CN: 球类
 category.object.toy_game_item.toy.general:
   en: general
@@ -3112,11 +3112,11 @@ category.object.toy_game_item.toy.general:
   zh-CN: 通用
 category.object.toy_game_item.toy.spinning:
   en: spinning
-  ja: 运动玩具
+  ja: 回転玩具
   zh-CN: 运动玩具
 category.object.toy_game_item.toy.stuffed:
   en: stuffed
-  ja: 填充玩具
+  ja: ぬいぐるみ
   zh-CN: 填充玩具
 category.object.vehicle:
   en: vehicle
@@ -3240,7 +3240,7 @@ category.production.art_style:
   zh-CN: 艺术风格
 category.production.art_style.border_style:
   en: border style
-  ja: 边框风格
+  ja: 枠線スタイル
   zh-CN: 边框风格
 category.production.art_style.general:
   en: general
@@ -3248,19 +3248,19 @@ category.production.art_style.general:
   zh-CN: 通用
 category.production.art_style.outline_line:
   en: outline line
-  ja: 线条
+  ja: 輪郭線
   zh-CN: 线条
 category.production.art_style.pixel:
   en: pixel
-  ja: 像素
+  ja: ピクセル
   zh-CN: 像素
 category.production.art_style.retro:
   en: retro
-  ja: 复古
+  ja: レトロ
   zh-CN: 复古
 category.production.art_style.shading:
   en: shading
-  ja: 网点与阴影
+  ja: 陰影・網点
   zh-CN: 网点与阴影
 category.production.authorship:
   en: authorship
@@ -3292,19 +3292,19 @@ category.production.format:
   zh-CN: 格式
 category.production.format.card_medium:
   en: card medium
-  ja: 卡片媒材
+  ja: カード媒体
   zh-CN: 卡片媒材
 category.production.format.chart:
   en: chart
-  ja: 图表
+  ja: 図表
   zh-CN: 图表
 category.production.format.comic_format:
   en: comic format
-  ja: 漫画格式
+  ja: 漫画形式
   zh-CN: 漫画格式
 category.production.format.cover:
   en: cover
-  ja: 封面
+  ja: 表紙
   zh-CN: 封面
 category.production.format.general:
   en: general
@@ -3312,7 +3312,7 @@ category.production.format.general:
   zh-CN: 通用
 category.production.format.screenshot:
   en: screenshot
-  ja: 截图
+  ja: スクリーンショット
   zh-CN: 截图
 category.production.quality_control:
   en: quality control
@@ -3344,7 +3344,7 @@ category.text.symbol:
   zh-CN: 符号
 category.text.symbol.arrow_pointer:
   en: arrow pointer
-  ja: 箭头
+  ja: 矢印
   zh-CN: 箭头
 category.text.symbol.general:
   en: general
@@ -3352,7 +3352,7 @@ category.text.symbol.general:
   zh-CN: 通用
 category.text.symbol.heart:
   en: heart
-  ja: 爱心
+  ja: ハート
   zh-CN: 爱心
 category.text.symbol.music:
   en: music
@@ -3360,11 +3360,11 @@ category.text.symbol.music:
   zh-CN: 音符
 category.text.symbol.punctuation:
   en: punctuation
-  ja: 标点
+  ja: 句読点
   zh-CN: 标点
 category.text.symbol.spoken:
   en: spoken
-  ja: 对话气泡
+  ja: 吹き出し
   zh-CN: 对话气泡
 category.text.symbol.star:
   en: star
@@ -3404,7 +3404,7 @@ category.text.writing_system:
   zh-CN: 书写系统
 tag.!:
   en: '!'
-  ja: ！
+  ja: '!'
   zh-CN: ！
 tag.!!:
   en: '!!'
@@ -3968,7 +3968,7 @@ tag.;|:
   zh-CN: ;|
 tag.<o>_<o>:
   en: <o> <o>
-  ja: <o> <o>
+  ja: <o>_<o>
   zh-CN: <o> <o>
 tag.<|>_<|>:
   en: <|>_<|>
@@ -4808,7 +4808,7 @@ tag.ahegao:
   zh-CN: 阿黑颜
 tag.ahoge:
   en: ahoge
-  ja: 呆毛
+  ja: アホ毛
   zh-CN: 呆毛
 tag.ahoge_wag:
   en: ahoge wag
@@ -4980,7 +4980,7 @@ tag.akademeia_uniform:
   zh-CN: 学院制服
 tag.akademiya_uniform:
   en: akademiya uniform
-  ja: 教令院制服
+  ja: アカデミア制服
   zh-CN: 教令院制服
 tag.akanbe:
   en: akanbe
@@ -5036,7 +5036,7 @@ tag.akm:
   zh-CN: AKM
 tag.aks-74:
   en: aks-74
-  ja: aks-74
+  ja: AKS-74
   zh-CN: aks-74
 tag.aks-74u:
   en: aks-74 u
@@ -5532,7 +5532,7 @@ tag.anachronism:
   zh-CN: 不合时宜
 tag.anal:
   en: anal
-  ja: 肛交
+  ja: アナル
   zh-CN: 肛交
 tag.anal_ball_wear:
   en: anal ball wear
@@ -6296,7 +6296,7 @@ tag.aoki_ume_(style):
   zh-CN: 青木梅（风格）
 tag.aoqun:
   en: aoqun
-  ja: 袄裙
+  ja: アオチュン
   zh-CN: 袄裙
 tag.aoshidan_school_uniform:
   en: aoshidan school uniform
@@ -6812,7 +6812,7 @@ tag.aquarium_tunnel:
   zh-CN: 水族馆隧道
 tag.aquarius_(constellation):
   en: aquarius (constellation)
-  ja: 宝瓶座
+  ja: みずがめ座
   zh-CN: 宝瓶座
 tag.aquarius_(symbol):
   en: aquarius (symbol)
@@ -6836,7 +6836,7 @@ tag.aquiline_nose:
   zh-CN: 鹰钩鼻
 tag.ar-15:
   en: ar-15
-  ja: ar-15
+  ja: AR-15
   zh-CN: ar-15
 tag.ara_ara:
   en: ara ara
@@ -7368,7 +7368,7 @@ tag.arm_wrap:
   zh-CN: 手臂包裹
 tag.arm_wrestling:
   en: arm wrestling
-  ja: 掰手腕
+  ja: 腕相撲
   zh-CN: 掰手腕
 tag.armadillo:
   en: armadillo
@@ -7476,7 +7476,7 @@ tag.armored_vehicle:
   zh-CN: 装甲车
 tag.armpit_carry:
   en: armpit carry
-  ja: 腋下抱
+  ja: 脇抱え
   zh-CN: 腋下抱
 tag.armpit_crease:
   en: armpit crease
@@ -8068,7 +8068,7 @@ tag.asymmetrical_footwear:
   zh-CN: 不对称鞋类
 tag.asymmetrical_gloves:
   en: asymmetrical gloves
-  ja: 不对称手套
+  ja: 非対称手袋
   zh-CN: 不对称手套
 tag.asymmetrical_hair:
   en: asymmetrical hair
@@ -8288,7 +8288,7 @@ tag.autopaizuri:
   zh-CN: 自动派祖里
 tag.autumn:
   en: autumn
-  ja: 秋天
+  ja: 秋
   zh-CN: 秋天
 tag.autumn_leaves:
   en: autumn leaves
@@ -8492,7 +8492,7 @@ tag.back-seamed_legwear:
   zh-CN: 后缝裤袜
 tag.back-to-back:
   en: back-to-back
-  ja: 背靠背
+  ja: 背中合わせ
   zh-CN: 背靠背
 tag.back_bow:
   en: back bow
@@ -8596,7 +8596,7 @@ tag.backless_swimsuit:
   zh-CN: 露背泳衣
 tag.backlighting:
   en: backlighting
-  ja: 背光
+  ja: 逆光
   zh-CN: 背光
 tag.backpack:
   en: backpack
@@ -8624,7 +8624,7 @@ tag.backwards_virgin_killer_sweater:
   zh-CN: 向后的处女杀手毛衣
 tag.bacon:
   en: bacon
-  ja: 培根
+  ja: ベーコン
   zh-CN: 培根
 tag.bad_anatomy:
   en: bad anatomy
@@ -8772,7 +8772,7 @@ tag.bagpipes:
   zh-CN: 风笛
 tag.bags_under_eyes:
   en: bags under eyes
-  ja: 眼袋
+  ja: 目の下のクマ
   zh-CN: 眼袋
 tag.bagua:
   en: bagua
@@ -8872,7 +8872,7 @@ tag.balkenkreuz:
   zh-CN: 巴尔肯克罗伊茨
 tag.ball:
   en: ball
-  ja: 球
+  ja: ボール
   zh-CN: 球
 tag.ball_and_chain_(weapon):
   en: ball and chain (weapon)
@@ -9000,7 +9000,7 @@ tag.banana_boat:
   zh-CN: 香蕉船
 tag.banana_peel:
   en: banana peel
-  ja: 香蕉皮
+  ja: バナナの皮
   zh-CN: 香蕉皮
 tag.banana_print:
   en: banana print
@@ -9336,7 +9336,7 @@ tag.banknote:
   zh-CN: 纸币
 tag.banner:
   en: banner
-  ja: 横幅
+  ja: バナー
   zh-CN: 横幅
 tag.baozi:
   en: baozi
@@ -9344,7 +9344,7 @@ tag.baozi:
   zh-CN: 包子
 tag.bar_(place):
   en: bar (place)
-  ja: 酒吧
+  ja: バー
   zh-CN: 酒吧
 tag.bar_censor:
   en: bar censor
@@ -10216,7 +10216,7 @@ tag.bell_pepper_slice:
   zh-CN: 甜椒片
 tag.bell_sleeves:
   en: bell sleeves
-  ja: 喇叭袖
+  ja: ベルスリーブ
   zh-CN: 喇叭袖
 tag.bell_tower:
   en: bell tower
@@ -10240,7 +10240,7 @@ tag.belly_chain:
   zh-CN: 腹链
 tag.belly_dancing:
   en: belly dancing
-  ja: 肚皮舞
+  ja: ベリーダンス
   zh-CN: 肚皮舞
 tag.belly_grab:
   en: belly grab
@@ -10292,7 +10292,7 @@ tag.belt_collar:
   zh-CN: 皮带领
 tag.belt_pouch:
   en: belt pouch
-  ja: 腰包
+  ja: ベルトポーチ
   zh-CN: 腰包
 tag.belt_skirt:
   en: belt skirt
@@ -10976,7 +10976,7 @@ tag.bit_gag:
   zh-CN: 马衔口枷
 tag.bite_mark:
   en: bite mark
-  ja: 咬痕
+  ja: 噛み痕
   zh-CN: 咬痕
 tag.bite_mark_on_arm:
   en: bite mark on arm
@@ -11384,7 +11384,7 @@ tag.black_garter_belt:
   zh-CN: 黑色吊袜带
 tag.black_garter_straps:
   en: black garter straps
-  ja: 黑色吊袜带
+  ja: 黒いガーターベルト
   zh-CN: 黑色吊袜带
 tag.black_gauntlets:
   en: black gauntlets
@@ -12368,7 +12368,7 @@ tag.blowing_bubble_gum:
   zh-CN: 吹泡泡糖
 tag.blowing_bubbles:
   en: blowing bubbles
-  ja: 吹泡泡
+  ja: シャボン玉
   zh-CN: 吹泡泡
 tag.blowing_candle:
   en: blowing candle
@@ -13396,7 +13396,7 @@ tag.bois_de_justice:
   zh-CN: 司法森林
 tag.bokeh:
   en: bokeh
-  ja: 散景
+  ja: ボケ
   zh-CN: 散景
 tag.bokken:
   en: bokken
@@ -13920,7 +13920,7 @@ tag.bowgun:
   zh-CN: 弓箭枪
 tag.bowing:
   en: bowing
-  ja: 鞠躬
+  ja: お辞儀
   zh-CN: 鞠躬
 tag.bowl:
   en: bowl
@@ -14004,7 +14004,7 @@ tag.box_truck:
   zh-CN: 箱式卡车
 tag.boxcutter:
   en: boxcutter
-  ja: 美工刀
+  ja: カッターナイフ
   zh-CN: 美工刀
 tag.boxer:
   en: boxer
@@ -14332,7 +14332,7 @@ tag.breast_padding:
   zh-CN: 胸垫
 tag.breast_pillow:
   en: breast pillow
-  ja: 乳枕
+  ja: 胸枕
   zh-CN: 乳枕
 tag.breast_pocket:
   en: breast pocket
@@ -14472,7 +14472,7 @@ tag.breathing_on_hands:
   zh-CN: 朝手哈气
 tag.breathing_tube:
   en: breathing tube
-  ja: 呼吸管
+  ja: 呼吸チューブ
   zh-CN: 呼吸管
 tag.breeding_mount:
   en: breeding mount
@@ -14544,7 +14544,7 @@ tag.bridle:
   zh-CN: 缰绳
 tag.briefcase:
   en: briefcase
-  ja: 公文包
+  ja: ブリーフケース
   zh-CN: 公文包
 tag.briefs:
   en: briefs
@@ -16456,7 +16456,7 @@ tag.canopy_bed:
   zh-CN: 天蓬床
 tag.cantaloupe:
   en: cantaloupe
-  ja: 哈密瓜
+  ja: メロン
   zh-CN: 哈密瓜
 tag.canteen:
   en: canteen
@@ -16712,7 +16712,7 @@ tag.carhop:
   zh-CN: 汽车餐厅服务生
 tag.carnation:
   en: carnation
-  ja: 康乃馨
+  ja: カーネーション
   zh-CN: 康乃馨
 tag.carnival:
   en: carnival
@@ -16728,7 +16728,7 @@ tag.carousel:
   zh-CN: 旋转木马
 tag.carp:
   en: carp
-  ja: 鲤鱼
+  ja: 鯉
   zh-CN: 鲤鱼
 tag.carpet:
   en: carpet
@@ -17296,7 +17296,7 @@ tag.celestial_globe:
   zh-CN: 天球仪
 tag.cello:
   en: cello
-  ja: 大提琴
+  ja: チェロ
   zh-CN: 大提琴
 tag.cellphone:
   en: cellphone
@@ -17576,7 +17576,7 @@ tag.chalk_outline:
   zh-CN: 粉笔轮廓
 tag.chalkboard:
   en: chalkboard
-  ja: 黑板
+  ja: 黒板
   zh-CN: 黑板
 tag.chalkboard_sign:
   en: chalkboard sign
@@ -17944,7 +17944,7 @@ tag.checkered_dress:
   zh-CN: 格子连衣裙
 tag.checkered_flag:
   en: checkered flag
-  ja: 方格旗
+  ja: チェッカーフラッグ
   zh-CN: 方格旗
 tag.checkered_floor:
   en: checkered floor
@@ -18192,7 +18192,7 @@ tag.cheri_berry:
   zh-CN: 樱子果
 tag.cherry:
   en: cherry
-  ja: 樱桃
+  ja: さくらんぼ
   zh-CN: 樱桃
 tag.cherry_blossom_print:
   en: cherry blossom print
@@ -18240,7 +18240,7 @@ tag.chess:
   zh-CN: 国际象棋
 tag.chess_piece:
   en: chess piece
-  ja: 棋子
+  ja: チェスの駒
   zh-CN: 棋子
 tag.chessboard:
   en: chessboard
@@ -18368,7 +18368,7 @@ tag.chewing:
   zh-CN: 咀嚼
 tag.chewing_gum:
   en: chewing gum
-  ja: 口香糖
+  ja: ガム
   zh-CN: 口香糖
 tag.cheytac_m200:
   en: cheytac m200
@@ -18684,7 +18684,7 @@ tag.chocobo:
   zh-CN: 陆行鸟
 tag.chocolate:
   en: chocolate
-  ja: 巧克力
+  ja: チョコレート
   zh-CN: 巧克力
 tag.chocolate-covered_food:
   en: chocolate-covered food
@@ -18856,7 +18856,7 @@ tag.chopstick_rest:
   zh-CN: 筷架
 tag.chopsticks:
   en: chopsticks
-  ja: 筷子
+  ja: 箸
   zh-CN: 筷子
 tag.chopsticks_in_mouth:
   en: chopsticks in mouth
@@ -18988,7 +18988,7 @@ tag.chupacabra:
   zh-CN: 卓柏卡布拉
 tag.church:
   en: church
-  ja: 教堂
+  ja: 教会
   zh-CN: 教堂
 tag.churchill_(tank):
   en: churchill (tank)
@@ -19056,7 +19056,7 @@ tag.cinnamiku_hairstyle:
   zh-CN: 肉桂发型
 tag.cinnamon_roll:
   en: cinnamon roll
-  ja: 肉桂卷
+  ja: シナモンロール
   zh-CN: 肉桂卷
 tag.cinnamon_stick:
   en: cinnamon stick
@@ -19380,7 +19380,7 @@ tag.cliff:
   zh-CN: 悬崖
 tag.clima-tact:
   en: clima-tact
-  ja: 天候棒
+  ja: クリマタクト
   zh-CN: 天候棒
 tag.climbing:
   en: climbing
@@ -19456,7 +19456,7 @@ tag.clitoris_tweak:
   zh-CN: 阴蒂调整
 tag.cloaca:
   en: cloaca
-  ja: 泄殖腔
+  ja: 総排泄腔
   zh-CN: 泄殖腔
 tag.cloak:
   en: cloak
@@ -19508,7 +19508,7 @@ tag.clone_trooper:
   zh-CN: 克隆人士兵
 tag.close-up:
   en: close-up
-  ja: 特写
+  ja: クローズアップ
   zh-CN: 特写
 tag.close_game/offline_(project_sekai):
   en: close game/offline (project sekai)
@@ -19940,7 +19940,7 @@ tag.cockroach_girl:
   zh-CN: 蟑螂女孩
 tag.cocktail:
   en: cocktail
-  ja: 鸡尾酒
+  ja: カクテル
   zh-CN: 鸡尾酒
 tag.cocktail_dress:
   en: cocktail dress
@@ -20684,7 +20684,7 @@ tag.condenser_unit:
   zh-CN: 冷凝器单元
 tag.condom:
   en: condom
-  ja: 避孕套
+  ja: コンドーム
   zh-CN: 避孕套
 tag.condom_belt:
   en: condom belt
@@ -20740,7 +20740,7 @@ tag.conductor:
   zh-CN: 指挥者
 tag.conductor_baton:
   en: conductor baton
-  ja: 指挥棒
+  ja: 指揮棒
   zh-CN: 指挥棒
 tag.cone_hair_bun:
   en: cone hair bun
@@ -20904,7 +20904,7 @@ tag.controller:
   zh-CN: 控制器
 tag.convenience_store:
   en: convenience store
-  ja: 便利店
+  ja: コンビニ
   zh-CN: 便利店
 tag.convenient_arm:
   en: convenient arm
@@ -21252,7 +21252,7 @@ tag.couter:
   zh-CN: 护肘甲
 tag.cover:
   en: cover
-  ja: 封面
+  ja: 表紙
   zh-CN: 封面
 tag.cover_image:
   en: cover image
@@ -21496,7 +21496,7 @@ tag.cowbell:
   zh-CN: 牛铃
 tag.cowboy:
   en: cowboy
-  ja: 牛仔
+  ja: カウボーイ
   zh-CN: 牛仔
 tag.cowboy_boots:
   en: cowboy boots
@@ -21960,7 +21960,7 @@ tag.crocodilian_tail:
   zh-CN: 鳄鱼尾
 tag.crocs:
   en: crocs
-  ja: 洞洞鞋
+  ja: クロックス
   zh-CN: 洞洞鞋
 tag.croissant:
   en: croissant
@@ -22244,7 +22244,7 @@ tag.crossbone_vanguard:
   zh-CN: 交叉骨先锋
 tag.crossbow:
   en: crossbow
-  ja: 弩
+  ja: クロスボウ
   zh-CN: 弩
 tag.crosscounter:
   en: crosscounter
@@ -22412,7 +22412,7 @@ tag.crotchless_swimsuit:
   zh-CN: 开裆泳衣
 tag.croupier:
   en: croupier
-  ja: 荷官
+  ja: ディーラー
   zh-CN: 荷官
 tag.crow:
   en: crow
@@ -22672,7 +22672,7 @@ tag.cue_stick:
   zh-CN: 球杆
 tag.cuff_links:
   en: cuff links
-  ja: 袖扣
+  ja: カフスボタン
   zh-CN: 袖扣
 tag.cuffed:
   en: cuffed
@@ -23124,7 +23124,7 @@ tag.curtained_hair:
   zh-CN: 窗帘式刘海
 tag.curtains:
   en: curtains
-  ja: 窗帘
+  ja: カーテン
   zh-CN: 窗帘
 tag.curtsey:
   en: curtsey
@@ -23332,7 +23332,7 @@ tag.dachshund:
   zh-CN: 腊肠犬
 tag.daewoo_k2:
   en: daewoo k2
-  ja: 大宇k2
+  ja: 大宇K2
   zh-CN: 大宇k2
 tag.daffodil:
   en: daffodil
@@ -23420,7 +23420,7 @@ tag.dancing_stars_on_me!:
   zh-CN: 星星在我身上跳舞！
 tag.dandelion:
   en: dandelion
-  ja: 蒲公英
+  ja: タンポポ
   zh-CN: 蒲公英
 tag.dandelion_clock:
   en: dandelion clock
@@ -23444,7 +23444,7 @@ tag.dangling_eye:
   zh-CN: 悬垂的眼睛
 tag.dango:
   en: dango
-  ja: 团子
+  ja: 団子
   zh-CN: 团子
 tag.dango_hair_ornament:
   en: dango hair ornament
@@ -23720,7 +23720,7 @@ tag.decantering:
   zh-CN: 倾析
 tag.decapitation:
   en: decapitation
-  ja: 斩首
+  ja: 斬首
   zh-CN: 斩首
 tag.decay:
   en: decay
@@ -23888,7 +23888,7 @@ tag.deltoids:
   zh-CN: 三角肌
 tag.delusion_(genshin_impact):
   en: delusion (genshin impact)
-  ja: 妄想（原神）
+  ja: デリュージョン（原神）
   zh-CN: 妄想（原神）
 tag.demon:
   en: demon
@@ -23940,7 +23940,7 @@ tag.denial:
   zh-CN: 否认
 tag.denim:
   en: denim
-  ja: 牛仔布
+  ja: デニム
   zh-CN: 牛仔布
 tag.denim_dress:
   en: denim dress
@@ -23960,7 +23960,7 @@ tag.denim_shirt:
   zh-CN: 牛仔衬衫
 tag.denim_shorts:
   en: denim shorts
-  ja: 牛仔短裤
+  ja: デニムショーツ
   zh-CN: 牛仔短裤
 tag.denim_skirt:
   en: denim skirt
@@ -24036,7 +24036,7 @@ tag.desire_driver:
   zh-CN: 欲望驱动者
 tag.desk:
   en: desk
-  ja: 书桌
+  ja: 机
   zh-CN: 书桌
 tag.desk_lamp:
   en: desk lamp
@@ -24348,7 +24348,7 @@ tag.diary:
   zh-CN: 日记本
 tag.dice:
   en: dice
-  ja: 骰子
+  ja: サイコロ
   zh-CN: 骰子
 tag.dice_earrings:
   en: dice earrings
@@ -25020,7 +25020,7 @@ tag.dollhouse_view:
   zh-CN: 娃娃屋视角
 tag.dolphin:
   en: dolphin
-  ja: 海豚
+  ja: イルカ
   zh-CN: 海豚
 tag.dolphin_girl:
   en: dolphin girl
@@ -25156,7 +25156,7 @@ tag.dorayaki:
   zh-CN: 铜锣烧
 tag.doritos:
   en: doritos
-  ja: 多力多滋
+  ja: ドリトス
   zh-CN: 多力多滋
 tag.dorothea_arnault_(cosplay):
   en: dorothea arnault (cosplay)
@@ -25204,7 +25204,7 @@ tag.doting_parent:
   zh-CN: 溺爱的父母
 tag.dots:
   en: dots
-  ja: 点
+  ja: ドット
   zh-CN: 点
 tag.dotted_background:
   en: dotted background
@@ -25280,7 +25280,7 @@ tag.double_arm_hug:
   zh-CN: 双臂拥抱
 tag.double_bass:
   en: double bass
-  ja: 低音提琴
+  ja: コントラバス
   zh-CN: 低音提琴
 tag.double_biceps_pose:
   en: double biceps pose
@@ -25420,7 +25420,7 @@ tag.dough:
   zh-CN: 面团
 tag.doughnut:
   en: doughnut
-  ja: 甜甜圈
+  ja: ドーナツ
   zh-CN: 甜甜圈
 tag.doughnut_hair_bun:
   en: doughnut hair bun
@@ -25624,7 +25624,7 @@ tag.draw_this_in_your_style_challenge:
   zh-CN: 用你的风格画这个挑战
 tag.drawer:
   en: drawer
-  ja: 抽屉
+  ja: 引き出し
   zh-CN: 抽屉
 tag.drawing:
   en: drawing
@@ -25900,7 +25900,7 @@ tag.drinking_pee:
   zh-CN: 喝尿
 tag.drinking_straw:
   en: drinking straw
-  ja: 吸管
+  ja: ストロー
   zh-CN: 吸管
 tag.drinking_straw_in_mouth:
   en: drinking straw in mouth
@@ -25944,7 +25944,7 @@ tag.droneboat_(eve_online):
   zh-CN: 无人驾驶船（EVE Online）
 tag.drooling:
   en: drooling
-  ja: 流口水
+  ja: よだれ
   zh-CN: 流口水
 tag.droopy_ears:
   en: droopy ears
@@ -26156,7 +26156,7 @@ tag.duffel_coat:
   zh-CN: 粗呢大衣
 tag.duijin_ruqun:
   en: duijin ruqun
-  ja: 对襟襦裙
+  ja: 対襟襦裙
   zh-CN: 对襟襦裙
 tag.dullahan:
   en: dullahan
@@ -26416,7 +26416,7 @@ tag.eargasm:
   zh-CN: 耳高潮
 tag.earmuffs:
   en: earmuffs
-  ja: 耳罩
+  ja: イヤーマフ
   zh-CN: 耳罩
 tag.earmuffs_around_neck:
   en: earmuffs around neck
@@ -26672,7 +26672,7 @@ tag.eggplant:
   zh-CN: 茄子
 tag.eggshell:
   en: eggshell
-  ja: 蛋壳
+  ja: 卵殻
   zh-CN: 蛋壳
 tag.eggshell_hat:
   en: eggshell hat
@@ -26788,7 +26788,7 @@ tag.elbow_on_thigh:
   zh-CN: 肘部放在大腿上
 tag.elbow_pads:
   en: elbow pads
-  ja: 护肘
+  ja: 肘当て
   zh-CN: 护肘
 tag.elbow_rest:
   en: elbow rest
@@ -27012,7 +27012,7 @@ tag.embroidered_panties:
   zh-CN: 刺绣内裤
 tag.embroidery:
   en: embroidery
-  ja: 刺绣
+  ja: 刺繍
   zh-CN: 刺绣
 tag.emergency_exit:
   en: emergency exit
@@ -27068,7 +27068,7 @@ tag.empty_bottle:
   zh-CN: 空瓶
 tag.empty_eyes:
   en: empty eyes
-  ja: 空洞的眼神
+  ja: 虚ろな目
   zh-CN: 空洞的眼神
 tag.empty_picture_frame:
   en: empty picture frame
@@ -27180,7 +27180,7 @@ tag.energy_wings:
   zh-CN: 能量之翼
 tag.engine:
   en: engine
-  ja: 发动机
+  ja: エンジン
   zh-CN: 发动机
 tag.engineer:
   en: engineer
@@ -27252,7 +27252,7 @@ tag.entry_plug:
   zh-CN: 插入栓
 tag.envelope:
   en: envelope
-  ja: 信封
+  ja: 封筒
   zh-CN: 信封
 tag.envy:
   en: envy
@@ -27272,7 +27272,7 @@ tag.epee:
   zh-CN: 重剑
 tag.epiphyllum:
   en: epiphyllum
-  ja: 昙花
+  ja: 月下美人
   zh-CN: 昙花
 tag.episode_number:
   en: episode number
@@ -27948,7 +27948,7 @@ tag.eyes_visible_through_hair:
   zh-CN: 透过头发可见眼睛
 tag.eyeshadow:
   en: eyeshadow
-  ja: 眼影
+  ja: アイシャドウ
   zh-CN: 眼影
 tag.eyeshadow_under_eye:
   en: eyeshadow under eye
@@ -28896,7 +28896,7 @@ tag.felicia_(darkstalkers)_(cosplay):
   zh-CN: 费利西亚（黑暗行者）（cosplay）
 tag.fellatio:
   en: fellatio
-  ja: 口交
+  ja: フェラチオ
   zh-CN: 口交
 tag.fellatio_gesture:
   en: fellatio gesture
@@ -29272,7 +29272,7 @@ tag.finger_claws:
   zh-CN: 指爪
 tag.finger_cots:
   en: finger cots
-  ja: 指套
+  ja: 指サック
   zh-CN: 指套
 tag.finger_counting:
   en: finger counting
@@ -29708,7 +29708,7 @@ tag.fishing_lure:
   zh-CN: 鱼饵
 tag.fishing_net:
   en: fishing net
-  ja: 渔网
+  ja: 漁網
   zh-CN: 渔网
 tag.fishing_rod:
   en: fishing rod
@@ -30156,7 +30156,7 @@ tag.flipping_food:
   zh-CN: 翻转食物
 tag.flirting:
   en: flirting
-  ja: 调情
+  ja: いちゃつき
   zh-CN: 调情
 tag.floating:
   en: floating
@@ -30480,7 +30480,7 @@ tag.flower_facial_mark:
   zh-CN: 花面部标记
 tag.flower_field:
   en: flower field
-  ja: 花田
+  ja: 花畑
   zh-CN: 花田
 tag.flower_focus:
   en: flower focus
@@ -31468,7 +31468,7 @@ tag.framed_breasts:
   zh-CN: 框架乳房
 tag.framed_insect:
   en: framed insect
-  ja: 昆虫标本
+  ja: 昆虫標本
   zh-CN: 昆虫标本
 tag.france:
   en: france
@@ -31492,7 +31492,7 @@ tag.frayed_shorts:
   zh-CN: 磨损的短裤
 tag.freckles:
   en: freckles
-  ja: 雀斑
+  ja: そばかす
   zh-CN: 雀斑
 tag.free_hugs:
   en: free hugs
@@ -31908,7 +31908,7 @@ tag.frisbee:
   zh-CN: 飞盘
 tag.frog:
   en: frog
-  ja: 青蛙
+  ja: カエル
   zh-CN: 青蛙
 tag.frog_boy:
   en: frog boy
@@ -32804,7 +32804,7 @@ tag.gae_dearg_(fate):
   zh-CN: 盖·迪尔格（Fate）
 tag.gag:
   en: gag
-  ja: 口塞
+  ja: 猿轡
   zh-CN: 口塞
 tag.gag_around_neck:
   en: gag around neck
@@ -33052,7 +33052,7 @@ tag.garlean:
   zh-CN: 加雷马
 tag.garlic:
   en: garlic
-  ja: 大蒜
+  ja: ニンニク
   zh-CN: 大蒜
 tag.garmentmaker_(honkai:_star_rail):
   en: 'garmentmaker (honkai: star rail)'
@@ -33116,7 +33116,7 @@ tag.gas_pump_nozzle:
   zh-CN: 气泵喷嘴
 tag.gas_station:
   en: gas station
-  ja: 加油站
+  ja: ガソリンスタンド
   zh-CN: 加油站
 tag.gashapon:
   en: gashapon
@@ -33428,7 +33428,7 @@ tag.german_text:
   zh-CN: 德文文本
 tag.germany:
   en: germany
-  ja: 德国
+  ja: ドイツ
   zh-CN: 德国
 tag.gerudo:
   en: gerudo
@@ -33768,7 +33768,7 @@ tag.giving_wedgie:
   zh-CN: 拽内裤恶作剧
 tag.glacier:
   en: glacier
-  ja: 冰川
+  ja: 氷河
   zh-CN: 冰川
 tag.gladiator:
   en: gladiator
@@ -37120,7 +37120,7 @@ tag.hair_scarf:
   zh-CN: 发巾
 tag.hair_scrunchie:
   en: hair scrunchie
-  ja: 发圈
+  ja: シュシュ
   zh-CN: 发圈
 tag.hair_slicked_back:
   en: hair slicked back
@@ -37508,7 +37508,7 @@ tag.hammerhead_shark:
   zh-CN: 锤头鲨
 tag.hammock:
   en: hammock
-  ja: 吊床
+  ja: ハンモック
   zh-CN: 吊床
 tag.hamster:
   en: hamster
@@ -37692,7 +37692,7 @@ tag.hand_mirror:
   zh-CN: 手镜
 tag.hand_mouth:
   en: hand mouth
-  ja: 手口
+  ja: 口元の手
   zh-CN: 手口
 tag.hand_net:
   en: hand net
@@ -38168,7 +38168,7 @@ tag.handjob_over_clothes:
   zh-CN: 隔着衣服手交
 tag.handkerchief:
   en: handkerchief
-  ja: 手帕
+  ja: ハンカチ
   zh-CN: 手帕
 tag.handle:
   en: handle
@@ -38500,7 +38500,7 @@ tag.hanging_legs:
   zh-CN: 悬腿
 tag.hanging_light:
   en: hanging light
-  ja: 吊灯
+  ja: 吊り照明
   zh-CN: 吊灯
 tag.hanging_on:
   en: hanging on
@@ -38644,7 +38644,7 @@ tag.harbor:
   zh-CN: 港口
 tag.hard_hat:
   en: hard hat
-  ja: 安全帽
+  ja: ヘルメット
   zh-CN: 安全帽
 tag.hardboiled_egg:
   en: hardboiled egg
@@ -39204,7 +39204,7 @@ tag.heads_together:
   zh-CN: 头靠头
 tag.headscarf:
   en: headscarf
-  ja: 头巾
+  ja: 頭巾
   zh-CN: 头巾
 tag.headset:
   en: headset
@@ -39336,7 +39336,7 @@ tag.heart-shaped_pubic_hair:
   zh-CN: 心形阴毛
 tag.heart-shaped_pupils:
   en: heart-shaped pupils
-  ja: 心形瞳孔
+  ja: ハート型瞳孔
   zh-CN: 心形瞳孔
 tag.heart-shift_bracelets:
   en: heart-shift bracelets
@@ -39920,7 +39920,7 @@ tag.hibikino_high_school_uniform:
   zh-CN: 日野高中制服
 tag.hibiscus:
   en: hibiscus
-  ja: 芙蓉
+  ja: ハイビスカス
   zh-CN: 芙蓉
 tag.hibiscus_print:
   en: hibiscus print
@@ -39932,7 +39932,7 @@ tag.hiccup:
   zh-CN: 打嗝
 tag.hickey:
   en: hickey
-  ja: 吻痕
+  ja: キスマーク
   zh-CN: 吻痕
 tag.hidden_blade_(assassin's_creed):
   en: hidden blade (assassin's creed)
@@ -40044,7 +40044,7 @@ tag.high_five:
   zh-CN: 击掌
 tag.high_heel_boots:
   en: high heel boots
-  ja: 高跟靴
+  ja: ハイヒールブーツ
   zh-CN: 高跟靴
 tag.high_heel_sandals:
   en: high heel sandals
@@ -41780,7 +41780,7 @@ tag.holding_plant:
   zh-CN: 拿着植物
 tag.holding_plate:
   en: holding plate
-  ja: 端着盘子
+  ja: 皿を持つ
   zh-CN: 端着盘子
 tag.holding_plectrum:
   en: holding plectrum
@@ -42268,7 +42268,7 @@ tag.holding_toy_gun:
   zh-CN: 拿着玩具枪
 tag.holding_tray:
   en: holding tray
-  ja: 端着托盘
+  ja: トレイを持つ
   zh-CN: 端着托盘
 tag.holding_trident:
   en: holding trident
@@ -42776,7 +42776,7 @@ tag.hooded_dress:
   zh-CN: 连帽连衣裙
 tag.hooded_jacket:
   en: hooded jacket
-  ja: 连帽夹克
+  ja: フード付きジャケット
   zh-CN: 连帽夹克
 tag.hooded_jumpsuit:
   en: hooded jumpsuit
@@ -42836,7 +42836,7 @@ tag.hoof_shoes:
   zh-CN: 蹄鞋
 tag.hook:
   en: hook
-  ja: 钩子
+  ja: フック
   zh-CN: 钩子
 tag.hook_hand:
   en: hook hand
@@ -43140,7 +43140,7 @@ tag.hoshinoumi_academy_school_uniform:
   zh-CN: 星之海学园校服
 tag.hospital:
   en: hospital
-  ja: 医院
+  ja: 病院
   zh-CN: 医院
 tag.hospital_bed:
   en: hospital bed
@@ -43216,7 +43216,7 @@ tag.houndstooth:
   zh-CN: 千鸟格纹
 tag.hourglass:
   en: hourglass
-  ja: 沙漏
+  ja: 砂時計
   zh-CN: 沙漏
 tag.hourglass_earrings:
   en: hourglass earrings
@@ -43256,7 +43256,7 @@ tag.hoverboard:
   zh-CN: 悬浮滑板
 tag.how_to:
   en: how to
-  ja: 教程
+  ja: ハウツー
   zh-CN: 教程
 tag.howa_type_64:
   en: howa type 64
@@ -43744,7 +43744,7 @@ tag.ice_crystal:
   zh-CN: 冰晶
 tag.ice_cube:
   en: ice cube
-  ja: 冰块
+  ja: 氷
   zh-CN: 冰块
 tag.ice_fishing:
   en: ice fishing
@@ -43788,7 +43788,7 @@ tag.ice_wings:
   zh-CN: 冰翼
 tag.iceberg:
   en: iceberg
-  ja: 冰山
+  ja: 氷山
   zh-CN: 冰山
 tag.iced_coffee:
   en: iced coffee
@@ -44108,7 +44108,7 @@ tag.impaled:
   zh-CN: 被刺穿
 tag.impasto:
   en: impasto
-  ja: 厚涂
+  ja: 厚塗り
   zh-CN: 厚涂
 tag.imperial_aquila:
   en: imperial aquila
@@ -45680,7 +45680,7 @@ tag.jerry_can:
   zh-CN: 杰瑞罐
 tag.jersey:
   en: jersey
-  ja: 球衣
+  ja: ユニフォーム
   zh-CN: 球衣
 tag.jersey_maid:
   en: jersey maid
@@ -45760,7 +45760,7 @@ tag.jian_(weapon):
   zh-CN: 剑（武器）
 tag.jiangshi:
   en: jiangshi
-  ja: 僵尸
+  ja: キョンシー
   zh-CN: 僵尸
 tag.jiangshi_costume:
   en: jiangshi costume
@@ -45932,7 +45932,7 @@ tag.juban:
   zh-CN: 襦袢
 tag.judge:
   en: judge
-  ja: 法官
+  ja: 裁判官
   zh-CN: 法官
 tag.judgement_(tarot):
   en: judgement (tarot)
@@ -47112,7 +47112,7 @@ tag.knee_guards:
   zh-CN: 护膝
 tag.knee_pads:
   en: knee pads
-  ja: 护膝
+  ja: 膝当て
   zh-CN: 护膝
 tag.knee_spikes:
   en: knee spikes
@@ -47564,7 +47564,7 @@ tag.kunai:
   zh-CN: 苦无
 tag.kung_fu:
   en: kung fu
-  ja: 功夫
+  ja: カンフー
   zh-CN: 功夫
 tag.kunreishiki:
   en: kunreishiki
@@ -47632,7 +47632,7 @@ tag.kuuhaku_to_catharsis:
   zh-CN: 宣泄
 tag.kv-2:
   en: kv-2
-  ja: kv-2
+  ja: KV-2
   zh-CN: kv-2
 tag.kwon_eun-bi_(cosplay):
   en: kwon eun-bi (cosplay)
@@ -47668,7 +47668,7 @@ tag.l'ecole_des_cinq_lumieres_school_uniform:
   zh-CN: l'ecole des cinq lumieres 校服
 tag.l85:
   en: l85
-  ja: l85
+  ja: L85
   zh-CN: l85
 tag.l_hand:
   en: l hand
@@ -47920,7 +47920,7 @@ tag.lace_thighhighs:
   zh-CN: 蕾丝过膝袜
 tag.lace_trim:
   en: lace trim
-  ja: 蕾丝边
+  ja: レーストリム
   zh-CN: 蕾丝边
 tag.laces:
   en: laces
@@ -48384,7 +48384,7 @@ tag.launching:
   zh-CN: 发射
 tag.laundromat:
   en: laundromat
-  ja: 自助洗衣店
+  ja: コインランドリー
   zh-CN: 自助洗衣店
 tag.laundry:
   en: laundry
@@ -49092,11 +49092,11 @@ tag.letterboxed:
   zh-CN: 宽银幕黑边
 tag.letterman_jacket:
   en: letterman jacket
-  ja: 棒球外套
+  ja: スタジャン
   zh-CN: 棒球外套
 tag.lettuce:
   en: lettuce
-  ja: 生菜
+  ja: レタス
   zh-CN: 生菜
 tag.level_5_(toaru):
   en: level 5 (toaru)
@@ -49868,7 +49868,7 @@ tag.liyue_harbor:
   zh-CN: 璃月港
 tag.lizard:
   en: lizard
-  ja: 蜥蜴
+  ja: トカゲ
   zh-CN: 蜥蜴
 tag.lizard_tail:
   en: lizard tail
@@ -50476,7 +50476,7 @@ tag.lotus_pedestal:
   zh-CN: 莲花座
 tag.lotus_pod:
   en: lotus pod
-  ja: 莲蓬
+  ja: 蓮房
   zh-CN: 莲蓬
 tag.lotus_position:
   en: lotus position
@@ -50528,7 +50528,7 @@ tag.love_hotel:
   zh-CN: 情侣酒店
 tag.love_letter:
   en: love letter
-  ja: 情书
+  ja: ラブレター
   zh-CN: 情书
 tag.love_live!_series_asia_tour_2024:
   en: love live! series asia tour 2024
@@ -50544,7 +50544,7 @@ tag.love_train:
   zh-CN: 爱情火车
 tag.love_triangle:
   en: love triangle
-  ja: 三角恋
+  ja: 三角関係
   zh-CN: 三角恋
 tag.love_wing_bell:
   en: love wing bell
@@ -50824,7 +50824,7 @@ tag.lyre:
   zh-CN: 七弦琴
 tag.lyrics:
   en: lyrics
-  ja: 歌词
+  ja: 歌詞
   zh-CN: 歌词
 tag.m._bison_(cosplay):
   en: m. bison (cosplay)
@@ -50956,7 +50956,7 @@ tag.machine_gun:
   zh-CN: 机枪
 tag.machinery:
   en: machinery
-  ja: 机械
+  ja: 機械
   zh-CN: 机械
 tag.mackerel_(fish):
   en: mackerel (fish)
@@ -51364,7 +51364,7 @@ tag.mandarin_collar:
   zh-CN: 中式立领
 tag.mandarin_orange:
   en: mandarin orange
-  ja: 橘子
+  ja: みかん
   zh-CN: 橘子
 tag.mandibles:
   en: mandibles
@@ -51376,7 +51376,7 @@ tag.mandragora:
   zh-CN: 曼德拉草
 tag.mandrake:
   en: mandrake
-  ja: 曼德拉草
+  ja: マンドラゴラ
   zh-CN: 曼德拉草
 tag.mane:
   en: mane
@@ -51400,7 +51400,7 @@ tag.mangekyou_sharingan:
   zh-CN: 万花筒写轮眼
 tag.mango:
   en: mango
-  ja: 芒果
+  ja: マンゴー
   zh-CN: 芒果
 tag.manhole:
   en: manhole
@@ -51648,7 +51648,7 @@ tag.masanori_sato_(style):
   zh-CN: 佐藤正德（风格）
 tag.mascara:
   en: mascara
-  ja: 睫毛膏
+  ja: マスカラ
   zh-CN: 睫毛膏
 tag.mascara_wand:
   en: mascara wand
@@ -51716,7 +51716,7 @@ tag.masquerade_mask:
   zh-CN: 化装舞会面具
 tag.massage:
   en: massage
-  ja: 按摩
+  ja: マッサージ
   zh-CN: 按摩
 tag.massage_chair:
   en: massage chair
@@ -51996,7 +51996,7 @@ tag.measuring:
   zh-CN: 测量中
 tag.measuring_cup:
   en: measuring cup
-  ja: 量杯
+  ja: 計量カップ
   zh-CN: 量杯
 tag.meat:
   en: meat
@@ -52552,7 +52552,7 @@ tag.meteor:
   zh-CN: 流星
 tag.meteor_shower:
   en: meteor shower
-  ja: 流星雨
+  ja: 流星群
   zh-CN: 流星雨
 tag.metronome:
   en: metronome
@@ -52672,7 +52672,7 @@ tag.mid-stride:
   zh-CN: 中步
 tag.midair:
   en: midair
-  ja: 半空中
+  ja: 空中
   zh-CN: 半空中
 tag.middle_(identity)_(project_moon):
   en: middle (identity) (project moon)
@@ -53336,7 +53336,7 @@ tag.mitakihara_school_uniform:
   zh-CN: 御泷原校服
 tag.mitarashi_dango:
   en: mitarashi dango
-  ja: 御手洗团子
+  ja: 御手洗団子
   zh-CN: 御手洗团子
 tag.mithra_(ff11):
   en: mithra (ff11)
@@ -53952,7 +53952,7 @@ tag.moon_print:
   zh-CN: 月亮印
 tag.moon_rabbit:
   en: moon rabbit
-  ja: 月兔
+  ja: 月のうさぎ
   zh-CN: 月兔
 tag.moon_reflection:
   en: moon reflection
@@ -54008,7 +54008,7 @@ tag.moose_tail:
   zh-CN: 驼鹿尾巴
 tag.mop:
   en: mop
-  ja: 拖把
+  ja: モップ
   zh-CN: 拖把
 tag.moped:
   en: moped
@@ -54144,7 +54144,7 @@ tag.moth_wings:
   zh-CN: 飞蛾翅膀
 tag.mother's_day:
   en: mother's day
-  ja: 母亲节
+  ja: 母の日
   zh-CN: 母亲节
 tag.mother_and_child:
   en: mother and child
@@ -54300,7 +54300,7 @@ tag.mouth_insertion:
   zh-CN: 口插入
 tag.mouth_mask:
   en: mouth mask
-  ja: 口罩
+  ja: マスク
   zh-CN: 口罩
 tag.mouth_piercing:
   en: mouth piercing
@@ -54352,7 +54352,7 @@ tag.mp3_player:
   zh-CN: MP3播放器
 tag.mp40:
   en: mp40
-  ja: mp40
+  ja: MP40
   zh-CN: mp40
 tag.mtu_virus:
   en: mtu virus
@@ -55028,7 +55028,7 @@ tag.museum:
   zh-CN: 博物馆
 tag.mushroom:
   en: mushroom
-  ja: 蘑菇
+  ja: きのこ
   zh-CN: 蘑菇
 tag.mushroom_cloud:
   en: mushroom cloud
@@ -55136,7 +55136,7 @@ tag.mustache_stubble:
   zh-CN: 胡子茬
 tag.mustard:
   en: mustard
-  ja: 芥末
+  ja: マスタード
   zh-CN: 芥末
 tag.mustard_bottle:
   en: mustard bottle
@@ -55508,7 +55508,7 @@ tag.naked_vest:
   zh-CN: 裸背心
 tag.nambu_type_14:
   en: nambu type 14
-  ja: 南部14型
+  ja: 十四年式拳銃
   zh-CN: 南部14型
 tag.name_connection:
   en: name connection
@@ -56332,7 +56332,7 @@ tag.ninja_mask:
   zh-CN: 忍者面罩
 tag.ninjatou:
   en: ninjatou
-  ja: 忍者刀
+  ja: 忍刀
   zh-CN: 忍者刀
 tag.ninjutsu_research_club_(blue_archive):
   en: ninjutsu research club (blue archive)
@@ -57076,7 +57076,7 @@ tag.nozomi_(blue_archive)_(cosplay):
   zh-CN: 希 (蔚蓝档案) (cosplay)
 tag.nt-d:
   en: nt-d
-  ja: nt-d
+  ja: NT-D
   zh-CN: nt-d
 tag.ntw-20:
   en: ntw-20
@@ -57160,7 +57160,7 @@ tag.numbers_(nanoha):
   zh-CN: Numbers（奈叶）
 tag.nun:
   en: nun
-  ja: 修女
+  ja: 修道女
   zh-CN: 修女
 tag.nun_headdress:
   en: nun headdress
@@ -59176,7 +59176,7 @@ tag.orion_(constellation):
   zh-CN: 猎户座
 tag.oripathy_lesion_(arknights):
   en: oripathy lesion (arknights)
-  ja: 源石病
+  ja: 鉱石病
   zh-CN: 源石病
 tag.ornament:
   en: ornament
@@ -59644,7 +59644,7 @@ tag.p14_enfield:
   zh-CN: p14 恩菲尔德
 tag.p90:
   en: p90
-  ja: p90
+  ja: P90
   zh-CN: p90
 tag.pac-man_eyes:
   en: pac-man eyes
@@ -59824,7 +59824,7 @@ tag.painttool_sai:
   zh-CN: PaintTool SAI
 tag.paizuri:
   en: paizuri
-  ja: 乳交
+  ja: パイズリ
   zh-CN: 乳交
 tag.paizuri_day:
   en: paizuri day
@@ -59848,7 +59848,7 @@ tag.paizuri_under_clothes:
   zh-CN: 衣下乳交
 tag.pajamas:
   en: pajamas
-  ja: 睡衣
+  ja: パジャマ
   zh-CN: 睡衣
 tag.pajamas_challenge_(meme):
   en: pajamas challenge (meme)
@@ -60484,7 +60484,7 @@ tag.parfait:
   zh-CN: 芭菲
 tag.paris:
   en: paris
-  ja: 巴黎
+  ja: パリ
   zh-CN: 巴黎
 tag.park:
   en: park
@@ -60528,7 +60528,7 @@ tag.parted_bangs:
   zh-CN: 中分刘海
 tag.parted_hair:
   en: parted hair
-  ja: 分开的头发
+  ja: 分け目のある髪
   zh-CN: 分开的头发
 tag.parted_lips:
   en: parted lips
@@ -60848,7 +60848,7 @@ tag.peach:
   zh-CN: 桃子
 tag.peach_blossom:
   en: peach blossom
-  ja: 桃花
+  ja: 桃の花
   zh-CN: 桃花
 tag.peach_hair_ornament:
   en: peach hair ornament
@@ -60892,7 +60892,7 @@ tag.peaked_lapels:
   zh-CN: 尖驳领
 tag.peanut:
   en: peanut
-  ja: 花生
+  ja: 落花生
   zh-CN: 花生
 tag.peanut_mouth:
   en: peanut mouth
@@ -60936,7 +60936,7 @@ tag.pearl_hair_ornament:
   zh-CN: 珍珠发饰
 tag.pearl_necklace:
   en: pearl necklace
-  ja: 珍珠项链
+  ja: 真珠のネックレス
   zh-CN: 珍珠项链
 tag.pearl_thong:
   en: pearl thong
@@ -61028,7 +61028,7 @@ tag.pee_in_container:
   zh-CN: 在容器里小便
 tag.pee_pad:
   en: pee pad
-  ja: 尿垫
+  ja: ペットシーツ
   zh-CN: 尿垫
 tag.pee_puddle:
   en: pee puddle
@@ -61064,7 +61064,7 @@ tag.peeing_self:
   zh-CN: 着衣放尿
 tag.peeking:
   en: peeking
-  ja: 偷看
+  ja: 覗き見
   zh-CN: 偷看
 tag.peeking_out:
   en: peeking out
@@ -61512,7 +61512,7 @@ tag.perpendicular_paizuri:
   zh-CN: 垂直乳交
 tag.persimmon:
   en: persimmon
-  ja: 柿子
+  ja: 柿
   zh-CN: 柿子
 tag.persocom_(chobits):
   en: persocom (chobits)
@@ -63208,7 +63208,7 @@ tag.plaid_shorts:
   zh-CN: 格子短裤
 tag.plaid_skirt:
   en: plaid skirt
-  ja: 格子裙
+  ja: チェックスカート
   zh-CN: 格子裙
 tag.plaid_sleeves:
   en: plaid sleeves
@@ -63648,7 +63648,7 @@ tag.plum_blossom_print:
   zh-CN: 梅花印花
 tag.plum_blossoms:
   en: plum blossoms
-  ja: 梅花
+  ja: 梅の花
   zh-CN: 梅花
 tag.plume:
   en: plume
@@ -63680,7 +63680,7 @@ tag.pocari_sweat:
   zh-CN: 宝矿力水得
 tag.pocket:
   en: pocket
-  ja: 口袋
+  ja: ポケット
   zh-CN: 口袋
 tag.pocket_square:
   en: pocket square
@@ -64372,7 +64372,7 @@ tag.poodle:
   zh-CN: 贵宾犬
 tag.pool:
   en: pool
-  ja: 泳池
+  ja: プール
   zh-CN: 泳池
 tag.pool_ladder:
   en: pool ladder
@@ -64436,7 +64436,7 @@ tag.poppy_(flower):
   zh-CN: 罂粟（花）
 tag.popsicle:
   en: popsicle
-  ja: 冰棒
+  ja: アイスキャンディー
   zh-CN: 冰棒
 tag.popsicle_in_mouth:
   en: popsicle in mouth
@@ -64860,7 +64860,7 @@ tag.precum_through_clothes:
   zh-CN: 前液透过衣服
 tag.predacon:
   en: predacon
-  ja: 捕食者
+  ja: プレダコン
   zh-CN: 捕食者
 tag.predicament_bondage:
   en: predicament bondage
@@ -65048,7 +65048,7 @@ tag.princess:
   zh-CN: 公主
 tag.princess_carry:
   en: princess carry
-  ja: 公主抱
+  ja: お姫様抱っこ
   zh-CN: 公主抱
 tag.princess_leia_(cosplay):
   en: princess leia (cosplay)
@@ -65608,7 +65608,7 @@ tag.public_urination:
   zh-CN: 当众小便
 tag.public_use:
   en: public use
-  ja: 公共使用
+  ja: 公共利用
   zh-CN: 公共使用
 tag.public_vibrator:
   en: public vibrator
@@ -65628,7 +65628,7 @@ tag.puckered_lips:
   zh-CN: 撅起嘴唇
 tag.pudding:
   en: pudding
-  ja: 布丁
+  ja: プリン
   zh-CN: 布丁
 tag.pudding_a_la_mode:
   en: pudding a la mode
@@ -65996,7 +65996,7 @@ tag.purple_cardigan:
   zh-CN: 紫色开衫
 tag.purple_cat:
   en: purple cat
-  ja: 紫猫
+  ja: 紫の猫
   zh-CN: 紫猫
 tag.purple_choker:
   en: purple choker
@@ -66600,7 +66600,7 @@ tag.putting_on_legwear:
   zh-CN: 穿上裤袜
 tag.puzzle:
   en: puzzle
-  ja: 拼图
+  ja: パズル
   zh-CN: 拼图
 tag.puzzle_piece:
   en: puzzle piece
@@ -66676,7 +66676,7 @@ tag.qixiong_ruqun:
   zh-CN: 齐胸襦裙
 tag.qr_code:
   en: qr code
-  ja: 二维码
+  ja: QRコード
   zh-CN: 二维码
 tag.quad_braids:
   en: quad braids
@@ -66792,7 +66792,7 @@ tag.quincy_(bleach):
   zh-CN: 灭却师（死神）
 tag.quintuplets:
   en: quintuplets
-  ja: 五胞胎
+  ja: 五つ子
   zh-CN: 五胞胎
 tag.quinzhee:
   en: quinzhee
@@ -67160,7 +67160,7 @@ tag.railgun_(misaka_mikoto):
   zh-CN: 超电磁炮（御坂美琴）
 tag.railing:
   en: railing
-  ja: 栏杆
+  ja: 手すり
   zh-CN: 栏杆
 tag.railroad_crossing:
   en: railroad crossing
@@ -67196,7 +67196,7 @@ tag.rain_poncho:
   zh-CN: 雨披
 tag.rainbow:
   en: rainbow
-  ja: 彩虹
+  ja: 虹
   zh-CN: 彩虹
 tag.rainbow_background:
   en: rainbow background
@@ -68204,7 +68204,7 @@ tag.red_rope:
   zh-CN: 红绳
 tag.red_rose:
   en: red rose
-  ja: 红玫瑰
+  ja: 赤いバラ
   zh-CN: 红玫瑰
 tag.red_sailor_collar:
   en: red sailor collar
@@ -68448,7 +68448,7 @@ tag.reference_sheet:
   zh-CN: 人设
 tag.reflection:
   en: reflection
-  ja: 倒影
+  ja: 反射
   zh-CN: 倒影
 tag.reflection_focus:
   en: reflection focus
@@ -69368,7 +69368,7 @@ tag.rina-chan_board:
   zh-CN: 丽奈板
 tag.ring:
   en: ring
-  ja: 戒指
+  ja: 指輪
   zh-CN: 戒指
 tag.ring-con:
   en: ring-con
@@ -69660,7 +69660,7 @@ tag.rod_of_remorse:
   zh-CN: 悔恨之杖
 tag.roe:
   en: roe
-  ja: 鱼子
+  ja: 魚卵
   zh-CN: 鱼子
 tag.roegadyn:
   en: roegadyn
@@ -69828,7 +69828,7 @@ tag.rose_bush:
   zh-CN: 玫瑰丛
 tag.rose_petals:
   en: rose petals
-  ja: 玫瑰花瓣
+  ja: バラの花びら
   zh-CN: 玫瑰花瓣
 tag.rose_print:
   en: rose print
@@ -69980,7 +69980,7 @@ tag.rpg_(weapon):
   zh-CN: 火箭筒（武器）
 tag.rpk-16:
   en: rpk-16
-  ja: rpk-16
+  ja: RPK-16
   zh-CN: rpk-16
 tag.ruan:
   en: ruan
@@ -70020,7 +70020,7 @@ tag.rubble:
   zh-CN: 瓦砾
 tag.rubik's_cube:
   en: rubik's cube
-  ja: 魔方
+  ja: ルービックキューブ
   zh-CN: 魔方
 tag.rudder_footwear:
   en: rudder footwear
@@ -70092,7 +70092,7 @@ tag.runny_makeup:
   zh-CN: 花妆
 tag.runny_nose:
   en: runny nose
-  ja: 流鼻涕
+  ja: 鼻水
   zh-CN: 流鼻涕
 tag.runway:
   en: runway
@@ -70808,7 +70808,7 @@ tag.satellite_dish:
   zh-CN: 卫星天线
 tag.satin:
   en: satin
-  ja: 缎子
+  ja: サテン
   zh-CN: 缎子
 tag.satin_bikini:
   en: satin bikini
@@ -70872,7 +70872,7 @@ tag.saucer:
   zh-CN: 碟子
 tag.sauna:
   en: sauna
-  ja: 桑拿
+  ja: サウナ
   zh-CN: 桑拿
 tag.saunders_(emblem):
   en: saunders (emblem)
@@ -71164,7 +71164,7 @@ tag.school_chair:
   zh-CN: 学校椅子
 tag.school_desk:
   en: school desk
-  ja: 课桌
+  ja: 学校机
   zh-CN: 课桌
 tag.school_emblem:
   en: school emblem
@@ -71208,7 +71208,7 @@ tag.science_babies:
   zh-CN: 科学宝宝
 tag.science_fiction:
   en: science fiction
-  ja: 科幻
+  ja: SF
   zh-CN: 科幻
 tag.scientific_name:
   en: scientific name
@@ -71232,7 +71232,7 @@ tag.scissorhold:
   zh-CN: 剪刀式
 tag.scissors:
   en: scissors
-  ja: 剪刀
+  ja: はさみ
   zh-CN: 剪刀
 tag.scissors_hair_ornament:
   en: scissors hair ornament
@@ -71356,7 +71356,7 @@ tag.screaming:
   zh-CN: 尖叫
 tag.screen:
   en: screen
-  ja: 屏幕
+  ja: 画面
   zh-CN: 屏幕
 tag.screen_light:
   en: screen light
@@ -71552,7 +71552,7 @@ tag.searchlight:
   zh-CN: 探照灯
 tag.seascape:
   en: seascape
-  ja: 海景
+  ja: 海の景色
   zh-CN: 海景
 tag.seashell:
   en: seashell
@@ -71980,11 +71980,11 @@ tag.selfcest:
   zh-CN: 自我恋
 tag.selfie:
   en: selfie
-  ja: 自拍
+  ja: 自撮り
   zh-CN: 自拍
 tag.selfie_stick:
   en: selfie stick
-  ja: 自拍杆
+  ja: 自撮り棒
   zh-CN: 自拍杆
 tag.semi-circular_eyewear:
   en: semi-circular eyewear
@@ -72068,7 +72068,7 @@ tag.serafuku:
   zh-CN: 水手服
 tag.seraph:
   en: seraph
-  ja: 炽天使
+  ja: 熾天使
   zh-CN: 炽天使
 tag.seraphim_(one_piece):
   en: seraphim (one piece)
@@ -72268,7 +72268,7 @@ tag.sexting:
   zh-CN: 色情短信
 tag.sextuplets:
   en: sextuplets
-  ja: 六胞胎
+  ja: 六つ子
   zh-CN: 六胞胎
 tag.sexual_coaching:
   en: sexual coaching
@@ -72284,7 +72284,7 @@ tag.sexual_harassment:
   zh-CN: 性骚扰
 tag.sexually_suggestive:
   en: sexually suggestive
-  ja: 性暗示
+  ja: 性的示唆
   zh-CN: 性暗示
 tag.sexy_guilty_(idolmaster):
   en: sexy guilty (idolmaster)
@@ -72332,7 +72332,7 @@ tag.shading_eyes:
   zh-CN: 遮蔽眼睛
 tag.shadow:
   en: shadow
-  ja: 影子
+  ja: 影
   zh-CN: 影子
 tag.shadow_(persona):
   en: shadow (persona)
@@ -72740,7 +72740,7 @@ tag.shell_hair_ornament:
   zh-CN: 贝壳发饰
 tag.shell_necklace:
   en: shell necklace
-  ja: 贝壳项链
+  ja: 貝殻のネックレス
   zh-CN: 贝壳项链
 tag.shendyt:
   en: shendyt
@@ -72812,7 +72812,7 @@ tag.shichiten_shichitou:
   zh-CN: 七天七头
 tag.shield:
   en: shield
-  ja: 盾牌
+  ja: 盾
   zh-CN: 盾牌
 tag.shield_module:
   en: shield module
@@ -73524,7 +73524,7 @@ tag.shot_glass:
   zh-CN: 烈酒杯
 tag.shota:
   en: shota
-  ja: 正太
+  ja: ショタ
   zh-CN: 正太
 tag.shotadom:
   en: shotadom
@@ -73748,7 +73748,7 @@ tag.shrugging:
   zh-CN: 耸肩
 tag.shuangyaji:
   en: shuangyaji
-  ja: 双丫髻
+  ja: ツインお団子
   zh-CN: 双丫髻
 tag.shuka_high_school_uniform:
   en: shuka high school uniform
@@ -74128,7 +74128,7 @@ tag.silent_princess:
   zh-CN: 宁静公主（塞尔达）
 tag.silhouette:
   en: silhouette
-  ja: 剪影
+  ja: シルエット
   zh-CN: 剪影
 tag.silhouette_demon:
   en: silhouette demon
@@ -75204,7 +75204,7 @@ tag.skunk_tail:
   zh-CN: 臭鼬尾巴
 tag.sky:
   en: sky
-  ja: 天空
+  ja: 空
   zh-CN: 天空
 tag.sky_focus:
   en: sky focus
@@ -75320,7 +75320,7 @@ tag.sleep_mask:
   zh-CN: 睡眠眼罩
 tag.sleep_molestation:
   en: sleep molestation
-  ja: 睡奸
+  ja: 睡眠姦
   zh-CN: 睡奸
 tag.sleep_talking:
   en: sleep talking
@@ -75612,7 +75612,7 @@ tag.slipper_bathtub:
   zh-CN: 贵妃浴缸
 tag.slippers:
   en: slippers
-  ja: 拖鞋
+  ja: スリッパ
   zh-CN: 拖鞋
 tag.slipping:
   en: slipping
@@ -75728,7 +75728,7 @@ tag.smartphone_case:
   zh-CN: 智能手机外壳
 tag.smartwatch:
   en: smartwatch
-  ja: 智能手表
+  ja: スマートウォッチ
   zh-CN: 智能手表
 tag.smash_ball:
   en: smash ball
@@ -75872,7 +75872,7 @@ tag.smoking_pipe:
   zh-CN: 烟斗
 tag.smoothie:
   en: smoothie
-  ja: 冰沙
+  ja: スムージー
   zh-CN: 冰沙
 tag.smother:
   en: smother
@@ -76152,7 +76152,7 @@ tag.snowball:
   zh-CN: 滚雪球
 tag.snowball_fight:
   en: snowball fight
-  ja: 打雪仗
+  ja: 雪合戦
   zh-CN: 打雪仗
 tag.snowboard:
   en: snowboard
@@ -77520,7 +77520,7 @@ tag.spooning:
   zh-CN: 勺子抱
 tag.spork:
   en: spork
-  ja: 叉勺
+  ja: 先割れスプーン
   zh-CN: 叉勺
 tag.sports_bikini:
   en: sports bikini
@@ -77876,7 +77876,7 @@ tag.squiggle_eyes:
   zh-CN: 波浪眼
 tag.squinting:
   en: squinting
-  ja: 眯眼
+  ja: 目を細める
   zh-CN: 眯眼
 tag.squirrel:
   en: squirrel
@@ -78416,7 +78416,7 @@ tag.starfighter:
   zh-CN: 星际战斗机
 tag.starfish:
   en: starfish
-  ja: 海星
+  ja: ヒトデ
   zh-CN: 海星
 tag.starfish_bikini:
   en: starfish bikini
@@ -78548,7 +78548,7 @@ tag.stay_gold_clan_(umamusume):
   zh-CN: 留下黄金一族（umamusume）
 tag.steak:
   en: steak
-  ja: 牛排
+  ja: ステーキ
   zh-CN: 牛排
 tag.stealth_bondage:
   en: stealth bondage
@@ -78608,7 +78608,7 @@ tag.steaming_food:
   zh-CN: 蒸食物
 tag.steampunk:
   en: steampunk
-  ja: 蒸汽朋克
+  ja: スチームパンク
   zh-CN: 蒸汽朋克
 tag.steamroller:
   en: steamroller
@@ -79180,7 +79180,7 @@ tag.straw_doll:
   zh-CN: 稻草娃娃
 tag.straw_hat:
   en: straw hat
-  ja: 草帽
+  ja: 麦わら帽子
   zh-CN: 草帽
 tag.straw_hat_pirates:
   en: straw hat pirates
@@ -79192,7 +79192,7 @@ tag.straw_hats_jolly_roger:
   zh-CN: 草帽海盗旗
 tag.strawberry:
   en: strawberry
-  ja: 草莓
+  ja: いちご
   zh-CN: 草莓
 tag.strawberry_background:
   en: strawberry background
@@ -79516,7 +79516,7 @@ tag.striped_gloves:
   zh-CN: 条纹手套
 tag.striped_hair:
   en: striped hair
-  ja: 条纹头发
+  ja: ストライプ髪
   zh-CN: 条纹头发
 tag.striped_hairband:
   en: striped hairband
@@ -80200,7 +80200,7 @@ tag.sumi-e:
   zh-CN: 墨绘
 tag.summer:
   en: summer
-  ja: 夏天
+  ja: 夏
   zh-CN: 夏天
 tag.summer_festival:
   en: summer festival
@@ -80248,7 +80248,7 @@ tag.sun_hair_ornament:
   zh-CN: 太阳发饰
 tag.sun_hat:
   en: sun hat
-  ja: 遮阳帽
+  ja: サンハット
   zh-CN: 遮阳帽
 tag.sun_necklace:
   en: sun necklace
@@ -80336,7 +80336,7 @@ tag.sunflower_print:
   zh-CN: 向日葵印花
 tag.sunflower_seed:
   en: sunflower seed
-  ja: 葵花籽
+  ja: ひまわりの種
   zh-CN: 葵花籽
 tag.sunglasses:
   en: sunglasses
@@ -80356,7 +80356,7 @@ tag.sunny_day_song:
   zh-CN: 阳光灿烂的日子歌曲
 tag.sunrise:
   en: sunrise
-  ja: 日出
+  ja: 日の出
   zh-CN: 日出
 tag.sunrise_stance:
   en: sunrise stance
@@ -80480,7 +80480,7 @@ tag.supermarine_spitfire:
   zh-CN: 超级海军喷火式战斗机
 tag.supermarket:
   en: supermarket
-  ja: 超市
+  ja: スーパー
   zh-CN: 超市
 tag.suplex:
   en: suplex
@@ -80896,7 +80896,7 @@ tag.swimwear_(module):
   zh-CN: 泳装（模块）
 tag.swing:
   en: swing
-  ja: 秋千
+  ja: ブランコ
   zh-CN: 秋千
 tag.swing_set:
   en: swing set
@@ -80944,7 +80944,7 @@ tag.swiss_flag:
   zh-CN: 瑞士国旗
 tag.swiss_roll:
   en: swiss roll
-  ja: 瑞士卷
+  ja: ロールケーキ
   zh-CN: 瑞士卷
 tag.switch:
   en: switch
@@ -81112,7 +81112,7 @@ tag.syringe_holster:
   zh-CN: 注射器皮套
 tag.syrup:
   en: syrup
-  ja: 糖浆
+  ja: シロップ
   zh-CN: 糖浆
 tag.t-34:
   en: t-34
@@ -81120,7 +81120,7 @@ tag.t-34:
   zh-CN: t-34
 tag.t-34-85:
   en: t-34-85
-  ja: t-34-85
+  ja: T-34-85
   zh-CN: t-34-85
 tag.t-back:
   en: t-back
@@ -81136,7 +81136,7 @@ tag.t-shirt:
   zh-CN: T恤
 tag.t_t:
   en: t t
-  ja: tt
+  ja: T_T
   zh-CN: tt
 tag.ta_girls_school_uniform:
   en: ta girls school uniform
@@ -81276,7 +81276,7 @@ tag.taiko_drum:
   zh-CN: 太鼓
 tag.taiko_sticks:
   en: taiko sticks
-  ja: 太鼓棒
+  ja: バチ
   zh-CN: 太鼓棒
 tag.tail:
   en: tail
@@ -81396,7 +81396,7 @@ tag.tail_under_clothes:
   zh-CN: 尾巴藏在衣服下面
 tag.tail_wagging:
   en: tail wagging
-  ja: 摇尾巴
+  ja: 尻尾を振る
   zh-CN: 摇尾巴
 tag.tail_wrap:
   en: tail wrap
@@ -81620,7 +81620,7 @@ tag.tanabata:
   zh-CN: 七夕
 tag.tanghulu:
   en: tanghulu
-  ja: 糖葫芦
+  ja: タンフールー
   zh-CN: 糖葫芦
 tag.tango:
   en: tango
@@ -81728,7 +81728,7 @@ tag.tape_maebari:
   zh-CN: 遮挡贴布
 tag.tape_measure:
   en: tape measure
-  ja: 卷尺
+  ja: 巻尺
   zh-CN: 卷尺
 tag.tape_on_nipples:
   en: tape on nipples
@@ -81876,7 +81876,7 @@ tag.tasuki:
   zh-CN: 束袖带
 tag.tatami:
   en: tatami
-  ja: 榻榻米
+  ja: 畳
   zh-CN: 榻榻米
 tag.tate_eboshi:
   en: tate eboshi
@@ -82004,7 +82004,7 @@ tag.teaching:
   zh-CN: 教学
 tag.teacup:
   en: teacup
-  ja: 茶杯
+  ja: ティーカップ
   zh-CN: 茶杯
 tag.team_7_(naruto):
   en: team 7 (naruto)
@@ -82392,7 +82392,7 @@ tag.tentacle_grab:
   zh-CN: 触手抓取
 tag.tentacle_hair:
   en: tentacle hair
-  ja: 触手毛
+  ja: 触手髪
   zh-CN: 触手毛
 tag.tentacle_in_ear:
   en: tentacle in ear
@@ -82412,7 +82412,7 @@ tag.tentacle_sex:
   zh-CN: 触手性爱
 tag.tentacle_tail:
   en: tentacle tail
-  ja: 触手尾
+  ja: 触手尻尾
   zh-CN: 触手尾
 tag.tentacle_tongue:
   en: tentacle tongue
@@ -82860,7 +82860,7 @@ tag.thigh_sex:
   zh-CN: 大腿性爱
 tag.thigh_sheath:
   en: thigh sheath
-  ja: 大腿鞘
+  ja: 太腿ホルスター
   zh-CN: 大腿鞘
 tag.thigh_straddling:
   en: thigh straddling
@@ -82900,7 +82900,7 @@ tag.thighlet:
   zh-CN: 小大腿
 tag.thighs:
   en: thighs
-  ja: 大腿
+  ja: 太もも
   zh-CN: 大腿
 tag.thighs_together:
   en: thighs together
@@ -83184,7 +83184,7 @@ tag.thunder:
   zh-CN: 雷声
 tag.thunder_stone:
   en: thunder stone
-  ja: 雷石
+  ja: かみなりのいし
   zh-CN: 雷石
 tag.thunderseal:
   en: thunderseal
@@ -83424,7 +83424,7 @@ tag.tile_ceiling:
   zh-CN: 瓷砖天花板
 tag.tile_floor:
   en: tile floor
-  ja: 瓷砖地板
+  ja: タイルの床
   zh-CN: 瓷砖地板
 tag.tile_roof:
   en: tile roof
@@ -83432,7 +83432,7 @@ tag.tile_roof:
   zh-CN: 瓦屋顶
 tag.tile_wall:
   en: tile wall
-  ja: 瓷砖墙
+  ja: タイルの壁
   zh-CN: 瓷砖墙
 tag.tiles:
   en: tiles
@@ -84788,7 +84788,7 @@ tag.transparent_weapon:
   zh-CN: 透明武器
 tag.transparent_wings:
   en: transparent wings
-  ja: 透明翅膀
+  ja: 透明な羽
   zh-CN: 透明翅膀
 tag.transverse_flute:
   en: transverse flute
@@ -84812,7 +84812,7 @@ tag.trash:
   zh-CN: 垃圾
 tag.trash_bag:
   en: trash bag
-  ja: 垃圾袋
+  ja: ゴミ袋
   zh-CN: 垃圾袋
 tag.trash_can:
   en: trash can
@@ -85116,7 +85116,7 @@ tag.triple_wielding:
   zh-CN: 三持
 tag.triplets:
   en: triplets
-  ja: 三胞胎
+  ja: 三つ子
   zh-CN: 三胞胎
 tag.tripod:
   en: tripod
@@ -85156,7 +85156,7 @@ tag.trombone:
   zh-CN: 长号
 tag.trophy:
   en: trophy
-  ja: 奖杯
+  ja: トロフィー
   zh-CN: 奖杯
 tag.tropical:
   en: tropical
@@ -85188,7 +85188,7 @@ tag.trumpet_creeper:
   zh-CN: 喇叭爬山虎
 tag.truss:
   en: truss
-  ja: 桁架
+  ja: トラス
   zh-CN: 桁架
 tag.trust_me_(durarara!!):
   en: trust me (durarara!!)
@@ -85376,7 +85376,7 @@ tag.tulaytullah's_remembrance_(genshin_impact):
   zh-CN: 图莱图拉的纪念（原神）
 tag.tulip:
   en: tulip
-  ja: 郁金香
+  ja: チューリップ
   zh-CN: 郁金香
 tag.tulip_hat:
   en: tulip hat
@@ -86184,7 +86184,7 @@ tag.uchikake:
   zh-CN: 色打挂
 tag.uchiwa:
   en: uchiwa
-  ja: 团扇
+  ja: 団扇
   zh-CN: 团扇
 tag.udder:
   en: udder
@@ -87220,7 +87220,7 @@ tag.upper_teeth_only:
   zh-CN: 仅上牙
 tag.uppercut:
   en: uppercut
-  ja: 上勾拳
+  ja: アッパーカット
   zh-CN: 上勾拳
 tag.upright_ahoge:
   en: upright ahoge
@@ -87588,7 +87588,7 @@ tag.vanripper_(style):
   zh-CN: 万里珀（风格）
 tag.vaporwave:
   en: vaporwave
-  ja: 蒸汽波
+  ja: ヴェイパーウェイヴ
   zh-CN: 蒸汽波
 tag.varia_suit:
   en: varia suit
@@ -88100,7 +88100,7 @@ tag.viera:
   zh-CN: 维埃拉
 tag.vietnam:
   en: vietnam
-  ja: 越南
+  ja: ベトナム
   zh-CN: 越南
 tag.vietnam_war:
   en: vietnam war
@@ -88164,7 +88164,7 @@ tag.vine_whip:
   zh-CN: 藤鞭
 tag.vines:
   en: vines
-  ja: 藤蔓
+  ja: 蔓
   zh-CN: 藤蔓
 tag.vintage_microphone:
   en: vintage microphone
@@ -88184,7 +88184,7 @@ tag.violet_(flower):
   zh-CN: 紫罗兰（花）
 tag.violin:
   en: violin
-  ja: 小提琴
+  ja: バイオリン
   zh-CN: 小提琴
 tag.violin_case:
   en: violin case
@@ -88356,7 +88356,7 @@ tag.volumen_hydragyrum_(fate):
   zh-CN: 体积水合（Fate）
 tag.vomit:
   en: vomit
-  ja: 呕吐
+  ja: 嘔吐
   zh-CN: 呕吐
 tag.vomiting:
   en: vomiting
@@ -88444,7 +88444,7 @@ tag.wa_maid:
   zh-CN: 和风女仆
 tag.wading:
   en: wading
-  ja: 涉水
+  ja: 渡渉
   zh-CN: 涉水
 tag.wading_pool:
   en: wading pool
@@ -88688,7 +88688,7 @@ tag.waltz_(dance):
   zh-CN: 华尔兹
 tag.wand:
   en: wand
-  ja: 魔杖
+  ja: 魔法の杖
   zh-CN: 魔杖
 tag.wand_in_head:
   en: wand in head
@@ -89004,7 +89004,7 @@ tag.waves:
   zh-CN: 波浪
 tag.waving:
   en: waving
-  ja: 挥手
+  ja: 手を振る
   zh-CN: 挥手
 tag.waving_arm:
   en: waving arm
@@ -89044,7 +89044,7 @@ tag.wavy_hair:
   zh-CN: 波浪发
 tag.wavy_mouth:
   en: wavy mouth
-  ja: 波浪嘴
+  ja: 波型の口
   zh-CN: 波浪嘴
 tag.wavy_sidelocks:
   en: wavy sidelocks
@@ -89052,11 +89052,11 @@ tag.wavy_sidelocks:
   zh-CN: 波浪鬓发
 tag.wax:
   en: wax
-  ja: 蜡
+  ja: 蝋
   zh-CN: 蜡
 tag.wax_play:
   en: wax play
-  ja: 滴蜡
+  ja: ロウソクプレイ
   zh-CN: 滴蜡
 tag.wax_seal:
   en: wax seal
@@ -89232,7 +89232,7 @@ tag.weight_gain:
   zh-CN: 体重增加
 tag.weightlifting:
   en: weightlifting
-  ja: 举重
+  ja: 重量挙げ
   zh-CN: 举重
 tag.weights:
   en: weights
@@ -90496,7 +90496,7 @@ tag.wine:
   zh-CN: 酒
 tag.wine_bottle:
   en: wine bottle
-  ja: 酒瓶
+  ja: ワインボトル
   zh-CN: 酒瓶
 tag.wine_glass:
   en: wine glass
@@ -90652,7 +90652,7 @@ tag.winking_(animated):
   zh-CN: 眨眼（动画）
 tag.winter:
   en: winter
-  ja: 冬天
+  ja: 冬
   zh-CN: 冬天
 tag.winter_clothes:
   en: winter clothes
@@ -90724,7 +90724,7 @@ tag.wireless:
   zh-CN: 无线
 tag.wireless_earphones:
   en: wireless earphones
-  ja: 无线耳机
+  ja: ワイヤレスイヤホン
   zh-CN: 无线耳机
 tag.wireless_microphone:
   en: wireless microphone
@@ -91508,7 +91508,7 @@ tag.yarn:
   zh-CN: 毛线
 tag.yarn_ball:
   en: yarn ball
-  ja: 毛线球
+  ja: 毛糸玉
   zh-CN: 毛线球
 tag.yasogami_school_uniform:
   en: yasogami school uniform
@@ -91560,7 +91560,7 @@ tag.year_of_the_horse:
   zh-CN: 马年
 tag.year_of_the_monkey:
   en: year of the monkey
-  ja: 猴年
+  ja: 申年
   zh-CN: 猴年
 tag.year_of_the_ox:
   en: year of the ox
@@ -91572,7 +91572,7 @@ tag.year_of_the_pig:
   zh-CN: 猪年
 tag.year_of_the_rabbit:
   en: year of the rabbit
-  ja: 兔年
+  ja: 卯年
   zh-CN: 兔年
 tag.year_of_the_rat:
   en: year of the rat
@@ -92244,7 +92244,7 @@ tag.yoga_pants:
   zh-CN: 瑜伽裤
 tag.yogurt:
   en: yogurt
-  ja: 酸奶
+  ja: ヨーグルト
   zh-CN: 酸奶
 tag.yoko_littner_(cosplay):
   en: yoko littner (cosplay)
@@ -92840,11 +92840,11 @@ category.apparel.detail.material_layer:
   zh-CN: 材质与层次
 category.apparel.state.costume_change:
   en: costume change
-  ja: 换装
+  ja: 衣装チェンジ
   zh-CN: 换装
 category.apparel.state.coverage:
   en: coverage
-  ja: 遮露
+  ja: 露出度
   zh-CN: 遮露
 category.apparel.detail.belt_sash:
   en: belt & sash
@@ -93168,5 +93168,5 @@ tag.marshmallow_(site):
   zh-CN: Marshmallow（网站）
 tag."don't_say_""lazy""":
   en: don't say "lazy"
-  ja: Don't say "lazy"
+  ja: Don't Say "Lazy"
   zh-CN: Don't say "lazy"
