@@ -1068,15 +1068,14 @@ describe('taxonomy helpers', () => {
     expect(parsed.object.celestial_body.small_body).not.toHaveProperty('shower')
   })
 
-  it('keeps translations aligned with split pose tags and required locales', { timeout: 40000 }, () => {
+  it('pins split pose tags, chosen labels, and rejected node names', { timeout: 40000 }, () => {
     const taxonomy = readSourceYaml<Record<string, unknown>>('data/source/danbooru_tag_tree_v3.yaml')
     const translations = castTranslations(
       readSourceYaml<Record<string, unknown>>('data/source/danbooru_tag_tree_v3.multilingual.yaml'),
     )
-    const categoryKeys = new Set<string>()
     const tagKeys = new Set<string>()
 
-    function visit(value: unknown, path: string[]): void {
+    function visit(value: unknown): void {
       if (Array.isArray(value)) {
         for (const item of value) {
           if (typeof item === 'string') {
@@ -1096,23 +1095,16 @@ describe('taxonomy helpers', () => {
           continue
         }
 
-        const id = [...path, key].join('.')
-        categoryKeys.add(`category.${id}`)
-        visit(nestedValue, [...path, key])
+        visit(nestedValue)
       }
     }
 
-    visit(taxonomy, [])
+    visit(taxonomy)
 
-    const missingCategoryTranslations = [...categoryKeys].filter((key) => !translations[key])
-    const missingTagTranslations = [...tagKeys].filter((key) => !translations[key])
-    const extraCategoryTranslations = Object.keys(translations)
-      .filter((key) => key.startsWith('category.'))
-      .filter((key) => !categoryKeys.has(key))
-
-    expect(missingCategoryTranslations).toEqual([])
-    expect(missingTagTranslations).toEqual([])
-    expect(extraCategoryTranslations).toEqual([])
+    // Whether every node and tag carries a label, and whether any label is
+    // orphaned, belongs to `pnpm validate:data` — `pretest` runs it before this
+    // file. A second copy of that diff used to live here and had already
+    // drifted: it never checked for orphaned `tag.*` keys.
     expect(readFileSync(resolve(process.cwd(), 'data/source/danbooru_tag_tree_v3.yaml'), 'utf8')).not.toContain('\n_tags:')
     expect(tagKeys.has('tag.breasts_on_table')).toBe(true)
     expect(tagKeys.has('tag.ojou-sama_pose')).toBe(true)

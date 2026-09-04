@@ -13,6 +13,7 @@ It also includes multilingual labels (`zh-CN`, `en`, `ja`) and tag frequency dat
 
 - `data/source/`: taxonomy, translations, and tag frequency source files
 - `scripts/build-data.ts`: builds JSON files into `public/output/`
+- `scripts/validate-data.ts`: checks the source data holds together
 - `src/`: the Vue app
 
 ## Run it
@@ -63,7 +64,29 @@ repo reaches further down the long tail than its post-count floor.
 ## Basic checks
 
 ```bash
+pnpm validate:data
 pnpm test
 pnpm lint
 pnpm build
 ```
+
+## If you want to change the taxonomy
+
+Two things guard the tree, and they guard different halves of the problem.
+
+`pnpm validate:data` covers what can be checked mechanically: every tag appears
+exactly once, no node is empty, every node and tag has an `en`/`ja`/`zh-CN`
+label, no translation key is orphaned, and no `ja` label is a copy of its
+`zh-CN` one unless the word is listed in `data/source/ja-zh-homographs.txt`. It
+also prints how many tags are sitting in `general`/`other`/`misc` buckets per
+top-level branch, which is the quickest read on where the tree is still vague.
+It runs as the first step of `pnpm build`.
+
+`src/utils/taxonomy.test.ts` covers what cannot: it pins roughly 400 specific
+tag-to-path pairs, asserts that certain nodes exist, and asserts that certain
+node names stay *absent* — `character.affiliation.franchise`,
+`character.archetype.form.neutral`, `object.weapon_part` and others are shapes
+that were tried and rejected. This file is the taxonomy's decision record. A
+failing pin does not automatically mean the data is wrong; it means a decision
+is being reversed, so read the surrounding test to see what distinction it was
+defending before changing either side.

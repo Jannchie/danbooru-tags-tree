@@ -6,8 +6,10 @@
   "scripts": {
     "dev": "tsx scripts/dev.ts",
     "build:data": "tsx scripts/build-data.ts",
-    "build": "pnpm build:data && vue-tsc --noEmit && vite build",
+    "validate:data": "tsx scripts/validate-data.ts",
+    "build": "pnpm validate:data && pnpm build:data && vue-tsc --noEmit && vite build",
     "preview": "vite preview",
+    "pretest": "pnpm validate:data",
     "test": "vitest run",
     "typecheck": "vue-tsc --noEmit",
     "lint": "oxlint --vue-plugin --vitest-plugin .",
