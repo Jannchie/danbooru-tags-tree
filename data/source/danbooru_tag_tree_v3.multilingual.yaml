@@ -4425,7 +4425,7 @@ tag.adjusting_headphones:
 tag.adjusting_headset:
   en: adjusting headset
   ja: ヘッドセットの調整
-  zh-CN: 调整耳机
+  zh-CN: 调整耳麦
 tag.adjusting_headwear:
   en: adjusting headwear
   ja: 帽子の調整
@@ -4585,7 +4585,7 @@ tag.afghan_hound:
 tag.afloat:
   en: afloat
   ja: 浮かんでいる
-  zh-CN: 漂浮
+  zh-CN: 浮在水面
 tag.african_wild_dog_print:
   en: african wild dog print
   ja: アフリカの野生の犬のプリント
@@ -4701,7 +4701,7 @@ tag.against_bookshelf:
 tag.against_desk:
   en: against desk
   ja: 机に対して
-  zh-CN: 靠在桌子上
+  zh-CN: 靠在书桌上
 tag.against_door:
   en: against door
   ja: ドアに対して
@@ -4873,7 +4873,7 @@ tag.air_conditioner:
 tag.air_current:
   en: air current
   ja: 気流
-  zh-CN: 气流
+  zh-CN: 空气流动
 tag.air_guitar:
   en: air guitar
   ja: エアギター
@@ -5117,7 +5117,7 @@ tag.alley:
 tag.alligator:
   en: alligator
   ja: アリゲーター
-  zh-CN: 鳄鱼
+  zh-CN: 短吻鳄
 tag.almond:
   en: almond
   ja: アーモンド
@@ -5517,7 +5517,7 @@ tag.amputee:
 tag.amulet:
   en: amulet
   ja: お守り
-  zh-CN: 护身符
+  zh-CN: 护身吊坠
 tag.amusement_park:
   en: amusement park
   ja: 遊園地
@@ -5677,7 +5677,7 @@ tag.androgynous:
 tag.android:
   en: android
   ja: メカバレ
-  zh-CN: 人形机器人
+  zh-CN: 仿生人
 tag.anemo_symbol_(genshin_impact):
   en: anemo symbol (genshin impact)
   ja: アネモシンボル（原神）
@@ -5849,7 +5849,7 @@ tag.animal_ear_helmet:
 tag.animal_ear_hood:
   en: animal ear hood
   ja: 獣耳フード
-  zh-CN: 动物耳罩
+  zh-CN: 动物耳兜帽
 tag.animal_ear_legwear:
   en: animal ear legwear
   ja: 獣耳レッグウェア
@@ -5965,7 +5965,7 @@ tag.animal_on_lap:
 tag.animal_on_leg:
   en: animal on leg
   ja: 足の上の動物
-  zh-CN: 腿上的动物
+  zh-CN: 腿边的动物
 tag.animal_on_shoulder:
   en: animal on shoulder
   ja: 肩に乗った動物
@@ -6057,7 +6057,7 @@ tag.ankle_bell:
 tag.ankle_belt:
   en: ankle belt
   ja: アンクルベルト
-  zh-CN: 踝带
+  zh-CN: 脚踝皮带
 tag.ankle_boots:
   en: ankle boots
   ja: アンクルブーツ
@@ -6093,7 +6093,7 @@ tag.ankle_lace-up:
 tag.ankle_ribbon:
   en: ankle ribbon
   ja: 足首のリボン
-  zh-CN: 踝带
+  zh-CN: 脚踝丝带
 tag.ankle_scrunchie:
   en: ankle scrunchie
   ja: アンクルシュシュ
@@ -6401,7 +6401,7 @@ tag.applying_lipstick:
 tag.applying_makeup:
   en: applying makeup
   ja: 化粧をする
-  zh-CN: 化妆
+  zh-CN: 正在化妆
 tag.applying_manicure:
   en: applying manicure
   ja: マニキュア
@@ -6445,7 +6445,7 @@ tag.apron_hold:
 tag.apron_lift:
   en: apron lift
   ja: エプロンリフト
-  zh-CN: 围裙掀起
+  zh-CN: 掀起围裙
 tag.apron_pull:
   en: apron pull
   ja: エプロンを引く
@@ -6453,7 +6453,7 @@ tag.apron_pull:
 tag.apron_tug:
   en: apron tug
   ja: エプロン綱引き
-  zh-CN: 拉围裙
+  zh-CN: 拉扯围裙
 tag.apu_spills_his_tendies_(meme):
   en: apu spills his tendies (meme)
   ja: アプーは彼の傾向を漏らす（ミーム）
@@ -6493,7 +6493,7 @@ tag.aqua_bikini:
 tag.aqua_bodysuit:
   en: aqua bodysuit
   ja: アクアボディスーツ
-  zh-CN: 水色紧身衣
+  zh-CN: 水色连体衣
 tag.aqua_boots:
   en: aqua boots
   ja: アクアブーツ
@@ -6709,7 +6709,7 @@ tag.aqua_sarong:
 tag.aqua_sash:
   en: aqua sash
   ja: アクアサッシュ
-  zh-CN: 水色腰带
+  zh-CN: 水色腰封
 tag.aqua_scarf:
   en: aqua scarf
   ja: アクアスカーフ
@@ -7193,7 +7193,7 @@ tag.arm_behind_head:
 tag.arm_belt:
   en: arm belt
   ja: アームベルト
-  zh-CN: 臂带
+  zh-CN: 手臂皮带
 tag.arm_between_breasts:
   en: arm between breasts
   ja: 胸の間の腕
@@ -7557,7 +7557,7 @@ tag.arms_on_knees:
 tag.arms_on_table:
   en: arms on table
   ja: テーブルの上の腕
-  zh-CN: 手臂放在桌子上
+  zh-CN: 双臂放在桌子上
 tag.arms_under_breasts:
   en: arms under breasts
   ja: 胸の下の腕
@@ -7929,7 +7929,7 @@ tag.ass_shake:
 tag.ass_smack:
   en: ass smack
   ja: お尻を叩く
-  zh-CN: 打屁股
+  zh-CN: 拍打臀部
 tag.ass_support:
   en: ass support
   ja: お尻のサポート
@@ -8293,7 +8293,7 @@ tag.autumn:
 tag.autumn_leaves:
   en: autumn leaves
   ja: 紅葉
-  zh-CN: 黄叶
+  zh-CN: 秋叶
 tag.av_idol:
   en: av idol
   ja: AVアイドル
@@ -8457,11 +8457,11 @@ tag.babydoll:
 tag.babydoll_lift:
   en: babydoll lift
   ja: ベビードールリフト
-  zh-CN: 掀起娃娃裙
+  zh-CN: 掀起娃娃裙睡衣
 tag.babydoll_pull:
   en: babydoll pull
   ja: ベビードールプル
-  zh-CN: 拉扯娃娃裙
+  zh-CN: 拉娃娃裙睡衣
 tag.babydoll_t-shirt:
   en: babydoll t-shirt
   ja: ベビードールTシャツ
@@ -8701,7 +8701,7 @@ tag.bad_vulva:
 tag.badge:
   en: badge
   ja: バッジ
-  zh-CN: 徽章
+  zh-CN: 胸章
 tag.badger_ears:
   en: badger ears
   ja: アナグマの耳
@@ -8949,7 +8949,7 @@ tag.balmung_(fate):
 tag.baluster:
   en: baluster
   ja: 手すり子
-  zh-CN: 栏杆
+  zh-CN: 栏杆柱
 tag.bamboo:
   en: bamboo
   ja: 竹
@@ -9281,7 +9281,7 @@ tag.bandana_over_mouth:
 tag.bandeau:
   en: bandeau
   ja: 裹胸
-  zh-CN: 抹胸式
+  zh-CN: 抹胸
 tag.bandeau_lift:
   en: bandeau lift
   ja: バンドゥリフト
@@ -9321,7 +9321,7 @@ tag.bangs_pinned_back:
 tag.banister:
   en: banister
   ja: 手すり
-  zh-CN: 栏杆
+  zh-CN: 楼梯扶手
 tag.banjo:
   en: banjo
   ja: バンジョー
@@ -9353,7 +9353,7 @@ tag.bar_censor:
 tag.bar_soap:
   en: bar soap
   ja: 固形石鹸
-  zh-CN: 肥皂
+  zh-CN: 香皂
 tag.bar_stool:
   en: bar stool
   ja: バースツール
@@ -9493,7 +9493,7 @@ tag.barred_window:
 tag.barrel:
   en: barrel
   ja: 樽
-  zh-CN: 桶
+  zh-CN: 木桶
 tag.barrett_m82:
   en: barrett m82
   ja: バレットM82
@@ -9501,7 +9501,7 @@ tag.barrett_m82:
 tag.barricade:
   en: barricade
   ja: バリケード
-  zh-CN: 路障
+  zh-CN: 拦阻物
 tag.bars:
   en: bars
   ja: バー
@@ -9669,7 +9669,7 @@ tag.bath_stool:
 tag.bath_yukata:
   en: bath yukata
   ja: 温泉浴衣
-  zh-CN: 浴衣
+  zh-CN: 沐浴浴衣
 tag.bathhouse:
   en: bathhouse
   ja: 銭湯
@@ -9769,7 +9769,7 @@ tag.battleship:
 tag.battleship_(eve_online):
   en: battleship (eve online)
   ja: 戦艦（イブオンライン）
-  zh-CN: 战舰（EVE Online）
+  zh-CN: 战列舰（EVE Online）
 tag.battlesuit:
   en: battlesuit
   ja: 戦闘服
@@ -9821,7 +9821,7 @@ tag.bcy_username:
 tag.bdsm:
   en: bdsm
   ja: 拘束具
-  zh-CN: 虐待狂
+  zh-CN: 绳缚调教
 tag.beach:
   en: beach
   ja: 浜辺
@@ -10033,7 +10033,7 @@ tag.beast_ball:
 tag.beaten:
   en: beaten
   ja: 殴られた
-  zh-CN: 殴打
+  zh-CN: 被殴打
 tag.beating:
   en: beating
   ja: 殴る
@@ -10293,7 +10293,7 @@ tag.belt_collar:
 tag.belt_pouch:
   en: belt pouch
   ja: ベルトポーチ
-  zh-CN: 腰包
+  zh-CN: 皮带小袋
 tag.belt_skirt:
   en: belt skirt
   ja: ベルトスカート
@@ -10569,7 +10569,7 @@ tag.bike_shorts:
 tag.bike_shorts_pull:
   en: bike shorts pull
   ja: バイクショーツプル
-  zh-CN: 拉自行车短裤
+  zh-CN: 拉紧身短裤
 tag.bike_shorts_under_shorts:
   en: bike shorts under shorts
   ja: ショートパンツの下にバイクショーツ
@@ -10685,7 +10685,7 @@ tag.bikini_top_under_shirt:
 tag.bikini_tug:
   en: bikini tug
   ja: ビキニタグボート
-  zh-CN: 扯比基尼
+  zh-CN: 拉扯比基尼
 tag.bikini_under_clothes:
   en: bikini under clothes
   ja: 服の下に水着
@@ -10729,7 +10729,7 @@ tag.billiard_ball:
 tag.billiards:
   en: billiards
   ja: スヌーカー
-  zh-CN: 台球
+  zh-CN: 台球运动
 tag.bimbofication:
   en: bimbofication
   ja: ギャル化
@@ -11137,7 +11137,7 @@ tag.black_armband:
 tag.black_armlet:
   en: black armlet
   ja: 黒の腕輪
-  zh-CN: 黑色臂章
+  zh-CN: 黑色臂环
 tag.black_armor:
   en: black armor
   ja: 黒い鎧
@@ -11169,7 +11169,7 @@ tag.black_bandana:
 tag.black_bandeau:
   en: black bandeau
   ja: 黒のバンドー
-  zh-CN: 黑色抹胸
+  zh-CN: 黑色胸带
 tag.black_belt:
   en: black belt
   ja: 黒帯
@@ -11249,7 +11249,7 @@ tag.black_buruma:
 tag.black_bustier:
   en: black bustier
   ja: 黒のビスチェ
-  zh-CN: 黑色紧身胸衣
+  zh-CN: 黑色抹胸
 tag.black_butterfly:
   en: black butterfly
   ja: 黒い蝶
@@ -11309,7 +11309,7 @@ tag.black_coat_(kingdom_hearts):
 tag.black_coif:
   en: black coif
   ja: 黒のコイフ
-  zh-CN: 黑色头巾
+  zh-CN: 黑色贴头帽
 tag.black_collar:
   en: black collar
   ja: 黒い首輪
@@ -11377,11 +11377,11 @@ tag.black_fur:
 tag.black_garter:
   en: black garter
   ja: 黒のガーター
-  zh-CN: 黑色吊袜带
+  zh-CN: 黑色腿袜圈
 tag.black_garter_belt:
   en: black garter belt
   ja: 黒のガーターベルト
-  zh-CN: 黑色吊袜带
+  zh-CN: 黑色吊袜腰带
 tag.black_garter_straps:
   en: black garter straps
   ja: 黒いガーターベルト
@@ -11457,7 +11457,7 @@ tag.black_headphones:
 tag.black_headscarf:
   en: black headscarf
   ja: 黒のスカーフ
-  zh-CN: 黑色头巾
+  zh-CN: 黑色包头巾
 tag.black_headwear:
   en: black headwear
   ja: 黒い帽子
@@ -11581,11 +11581,11 @@ tag.black_neckwear:
 tag.black_negligee:
   en: black negligee
   ja: 黒のネグリジェ
-  zh-CN: 黑色睡衣
+  zh-CN: 黑色睡袍
 tag.black_nightgown:
   en: black nightgown
   ja: 黒のナイトガウン
-  zh-CN: 黑色睡衣
+  zh-CN: 黑色睡裙
 tag.black_nipples:
   en: black nipples
   ja: 黒い乳首
@@ -11717,7 +11717,7 @@ tag.black_serafuku:
 tag.black_shawl:
   en: black shawl
   ja: 黒のショール
-  zh-CN: 黑色披肩
+  zh-CN: 黑色大披巾
 tag.black_shirt:
   en: black shirt
   ja: 黒シャツ
@@ -11845,7 +11845,7 @@ tag.black_thong:
 tag.black_tiara:
   en: black tiara
   ja: 黒のティアラ
-  zh-CN: 黑色头饰
+  zh-CN: 黑色头冠
 tag.black_tongue:
   en: black tongue
   ja: 黒い舌
@@ -11877,7 +11877,7 @@ tag.black_undershirt:
 tag.black_unitard:
   en: black unitard
   ja: 黒のユニタード
-  zh-CN: 黑色紧身衣
+  zh-CN: 黑色连裤紧身衣
 tag.black_veil:
   en: black veil
   ja: 黒いベール
@@ -11969,7 +11969,7 @@ tag.blank_censor:
 tag.blank_eyes:
   en: blank eyes
   ja: 白目
-  zh-CN: 空洞的眼睛
+  zh-CN: 空白眼
 tag.blank_page:
   en: blank page
   ja: 空白のページ
@@ -12033,11 +12033,11 @@ tag.blind_obsession_(e.g.o):
 tag.blindfold:
   en: blindfold
   ja: 眼罩
-  zh-CN: 蒙住眼睛
+  zh-CN: 蒙眼布
 tag.blindfold_lift:
   en: blindfold lift
   ja: 目隠しリフト
-  zh-CN: 眼罩掀起
+  zh-CN: 掀起蒙眼布
 tag.blindfold_mask:
   en: blindfold mask
   ja: 目隠しマスク
@@ -12069,7 +12069,7 @@ tag.bloated:
 tag.blob:
   en: blob
   ja: ブロッブ
-  zh-CN: 斑点
+  zh-CN: 无定形生物
 tag.block_(mario):
   en: block (mario)
   ja: ブロック（マリオ）
@@ -12121,7 +12121,7 @@ tag.blood_bag:
 tag.blood_drip:
   en: blood drip
   ja: 血の点滴
-  zh-CN: 血滴
+  zh-CN: 滴血
 tag.blood_drop:
   en: blood drop
   ja: 血の滴
@@ -12205,7 +12205,7 @@ tag.blood_on_clothes:
 tag.blood_on_dress:
   en: blood on dress
   ja: ドレスについた血
-  zh-CN: 衣服上有血迹
+  zh-CN: 连衣裙上有血迹
 tag.blood_on_eyewear:
   en: blood on eyewear
   ja: メガネに血がついた
@@ -12305,7 +12305,7 @@ tag.blood_sword:
 tag.blood_trail:
   en: blood trail
   ja: 血の跡
-  zh-CN: 血迹
+  zh-CN: 血痕
 tag.blood_type:
   en: blood type
   ja: 血液型
@@ -12397,7 +12397,7 @@ tag.blowing_smoke:
 tag.blowing_whistle:
   en: blowing whistle
   ja: 笛を吹く
-  zh-CN: 吹口哨
+  zh-CN: 吹哨子
 tag.blu-ray_cover:
   en: blu-ray cover
   ja: ブルーレイジャケット
@@ -12441,7 +12441,7 @@ tag.blue_ascot:
 tag.blue_aura:
   en: blue aura
   ja: 青いオーラ
-  zh-CN: 蓝色光环
+  zh-CN: 蓝色光晕
 tag.blue_babydoll:
   en: blue babydoll
   ja: 青いベビードール
@@ -12537,7 +12537,7 @@ tag.blue_cape:
 tag.blue_capelet:
   en: blue capelet
   ja: 青いケープレット
-  zh-CN: 蓝色披肩
+  zh-CN: 蓝色短斗篷
 tag.blue_car:
   en: blue car
   ja: 青い車
@@ -12557,7 +12557,7 @@ tag.blue_choker:
 tag.blue_cloak:
   en: blue cloak
   ja: 青いマント
-  zh-CN: 蓝色斗篷
+  zh-CN: 蓝色长斗篷
 tag.blue_clouds:
   en: blue clouds
   ja: 青い雲
@@ -12625,7 +12625,7 @@ tag.blue_gakuran:
 tag.blue_garter_belt:
   en: blue garter belt
   ja: 青いガーターベルト
-  zh-CN: 蓝色吊袜带
+  zh-CN: 蓝色吊袜腰封
 tag.blue_garter_straps:
   en: blue garter straps
   ja: 青いガーターストラップ
@@ -12689,7 +12689,7 @@ tag.blue_headdress:
 tag.blue_headscarf:
   en: blue headscarf
   ja: 青いスカーフ
-  zh-CN: 蓝色头巾
+  zh-CN: 蓝色包头巾
 tag.blue_headwear:
   en: blue headwear
   ja: 青い帽子
@@ -12797,11 +12797,11 @@ tag.blue_neckwear:
 tag.blue_negligee:
   en: blue negligee
   ja: 青いネグリジェ
-  zh-CN: 蓝色睡衣
+  zh-CN: 蓝色透视睡袍
 tag.blue_nightgown:
   en: blue nightgown
   ja: 青いネグリジェ
-  zh-CN: 蓝色睡衣
+  zh-CN: 蓝色睡裙
 tag.blue_nipples:
   en: blue nipples
   ja: 青い乳首
@@ -13005,7 +13005,7 @@ tag.blue_suit:
 tag.blue_surcoat:
   en: blue surcoat
   ja: 青い外套
-  zh-CN: 蓝色外衣
+  zh-CN: 蓝色罩袍
 tag.blue_sweater:
   en: blue sweater
   ja: 青いセーター
@@ -13057,7 +13057,7 @@ tag.blue_trim:
 tag.blue_tube_top:
   en: blue tube top
   ja: ブルーのチューブトップ
-  zh-CN: 蓝色抹胸
+  zh-CN: 蓝色长款抹胸
 tag.blue_tulip:
   en: blue tulip
   ja: 青いチューリップ
@@ -13077,7 +13077,7 @@ tag.blue_undershirt:
 tag.blue_unitard:
   en: blue unitard
   ja: ブルーユニタード
-  zh-CN: 蓝色紧身衣
+  zh-CN: 蓝色连裤紧身衣
 tag.blue_veil:
   en: blue veil
   ja: ブルーベール
@@ -13121,7 +13121,7 @@ tag.blueberry_hair_ornament:
 tag.bluebird:
   en: bluebird
   ja: ルリツグミ
-  zh-CN: 蓝鸟
+  zh-CN: 蓝鸲
 tag.blueprint_(medium):
   en: blueprint (medium)
   ja: 設計図（中）
@@ -13269,7 +13269,7 @@ tag.bobbles:
 tag.bobby_pin:
   en: bobby pin
   ja: ボビーピン
-  zh-CN: 发夹
+  zh-CN: 一字夹
 tag.bobby_socks:
   en: bobby socks
   ja: ボビーソックス
@@ -13281,7 +13281,7 @@ tag.boc'z_(umamusume):
 tag.bodice:
   en: bodice
   ja: ボディス
-  zh-CN: 紧身胸衣
+  zh-CN: 紧身上衣
 tag.body_armor:
   en: body armor
   ja: ボディーアーマー
@@ -13317,7 +13317,7 @@ tag.body_freckles:
 tag.body_fur:
   en: body fur
   ja: 体毛
-  zh-CN: 体毛
+  zh-CN: 兽毛
 tag.body_hair:
   en: body hair
   ja: 体毛
@@ -13381,7 +13381,7 @@ tag.bodysuit:
 tag.bodysuit_pull:
   en: bodysuit pull
   ja: ボディスーツのプル
-  zh-CN: 拉连体衣
+  zh-CN: 拉连体紧身衣
 tag.bodysuit_under_clothes:
   en: bodysuit under clothes
   ja: 服の下のボディスーツ
@@ -13585,7 +13585,7 @@ tag.book_on_lap:
 tag.book_stack:
   en: book stack
   ja: 本の山
-  zh-CN: 书架
+  zh-CN: 书堆
 tag.book_stand:
   en: book stand
   ja: ブックスタンド
@@ -13601,7 +13601,7 @@ tag.book_to_mouth:
 tag.bookbag:
   en: bookbag
   ja: ブックバッグ
-  zh-CN: 书包
+  zh-CN: 书袋
 tag.bookmark:
   en: bookmark
   ja: 栞
@@ -13833,7 +13833,7 @@ tag.bousouzoku:
 tag.boutonniere:
   en: boutonniere
   ja: ブートニア
-  zh-CN: 胸花
+  zh-CN: 纽孔花
 tag.bow:
   en: bow
   ja: リボン
@@ -13957,7 +13957,7 @@ tag.bowling_alley:
 tag.bowling_ball:
   en: bowling ball
   ja: ボウリング
-  zh-CN: 保龄球
+  zh-CN: 保龄球用球
 tag.bowling_pin:
   en: bowling pin
   ja: ボウリングのピン
@@ -14061,7 +14061,7 @@ tag.bra:
 tag.bra_lift:
   en: bra lift
   ja: ブラジャーリフト
-  zh-CN: 掀胸罩
+  zh-CN: 掀起胸罩
 tag.bra_on_head:
   en: bra on head
   ja: ブラミミモード
@@ -14097,7 +14097,7 @@ tag.bracelet:
 tag.bracer:
   en: bracer
   ja: 遊撃士
-  zh-CN: 护腕
+  zh-CN: 护臂
 tag.braces:
   en: braces
   ja: 矯正萌え
@@ -14213,7 +14213,7 @@ tag.bread:
 tag.bread_bun:
   en: bread bun
   ja: パン
-  zh-CN: 面包
+  zh-CN: 面包卷
 tag.bread_eating_race:
   en: bread eating race
   ja: パン食い競争
@@ -14265,11 +14265,11 @@ tag.breast_contest:
 tag.breast_curtain:
   en: breast curtain
   ja: おっぱい前掛け
-  zh-CN: 乳暖帘
+  zh-CN: 胸帘
 tag.breast_curtain_lift:
   en: breast curtain lift
   ja: 胸部カーテンリフト
-  zh-CN: 胸帘掀起
+  zh-CN: 掀起胸帘
 tag.breast_curtains:
   en: breast curtains
   ja: 乳カーテン
@@ -14373,7 +14373,7 @@ tag.breast_smother:
 tag.breast_strap:
   en: breast strap
   ja: 胸ストラップ
-  zh-CN: 胸带
+  zh-CN: 束乳带
 tag.breast_sucking:
   en: breast sucking
   ja: 乳頭吸吮
@@ -14389,7 +14389,7 @@ tag.breast_suppress:
 tag.breast_tattoo:
   en: breast tattoo
   ja: 胸のタトゥー
-  zh-CN: 胸部纹身
+  zh-CN: 乳房纹身
 tag.breast_zipper:
   en: breast zipper
   ja: 胸のジッパー
@@ -14541,7 +14541,7 @@ tag.bridgeless_bra:
 tag.bridle:
   en: bridle
   ja: 手綱
-  zh-CN: 缰绳
+  zh-CN: 马辔头
 tag.briefcase:
   en: briefcase
   ja: ブリーフケース
@@ -14549,7 +14549,7 @@ tag.briefcase:
 tag.briefs:
   en: briefs
   ja: ブリーフ
-  zh-CN: 内裤
+  zh-CN: 三角内裤
 tag.bright_background:
   en: bright background
   ja: 明るい背景
@@ -14581,7 +14581,7 @@ tag.broken:
 tag.broken_arm:
   en: broken arm
   ja: 腕の骨折
-  zh-CN: 断臂
+  zh-CN: 骨折的手臂
 tag.broken_armor:
   en: broken armor
   ja: 壊れた鎧
@@ -14665,7 +14665,7 @@ tag.broken_horn:
 tag.broken_leg:
   en: broken leg
   ja: 骨折した足
-  zh-CN: 断腿
+  zh-CN: 骨折腿
 tag.broken_mask:
   en: broken mask
   ja: 壊れたマスク
@@ -14709,7 +14709,7 @@ tag.broken_tooth:
 tag.broken_umbrella:
   en: broken umbrella
   ja: 壊れた傘
-  zh-CN: 破伞
+  zh-CN: 折断伞
 tag.broken_vase:
   en: broken vase
   ja: 壊れた花瓶
@@ -14825,7 +14825,7 @@ tag.brown_bodysuit:
 tag.brown_bonnet:
   en: brown bonnet
   ja: 茶色のボンネット
-  zh-CN: 棕色帽子
+  zh-CN: 棕色系带帽
 tag.brown_boots:
   en: brown boots
   ja: 茶色のブーツ
@@ -14857,11 +14857,11 @@ tag.brown_camisole:
 tag.brown_cape:
   en: brown cape
   ja: 茶色のマント
-  zh-CN: 棕色斗篷
+  zh-CN: 棕色披风
 tag.brown_capelet:
   en: brown capelet
   ja: 茶色のケープレット
-  zh-CN: 棕色披肩
+  zh-CN: 棕色短斗篷
 tag.brown_cardigan:
   en: brown cardigan
   ja: 茶色のカーディガン
@@ -15277,7 +15277,7 @@ tag.bruise_on_stomach:
 tag.bruised_eye:
   en: bruised eye
   ja: 傷ついた目
-  zh-CN: 眼睛受伤
+  zh-CN: 眼部瘀伤
 tag.brush:
   en: brush
   ja: ブラシ
@@ -15321,7 +15321,7 @@ tag.bt-42:
 tag.bubble:
   en: bubble
   ja: 気泡
-  zh-CN: 泡沫
+  zh-CN: 泡泡
 tag.bubble_background:
   en: bubble background
   ja: バブルの背景
@@ -15549,7 +15549,7 @@ tag.bullying:
 tag.bumping:
   en: bumping
   ja: ぶつかる
-  zh-CN: 碰撞
+  zh-CN: 撞到人
 tag.bun_(food):
   en: bun (food)
   ja: パン（食べ物）
@@ -15561,7 +15561,7 @@ tag.bun_cover:
 tag.bun_with_braided_base:
   en: bun with braided base
   ja: 編み込みベースのお団子
-  zh-CN: 辫子发髻
+  zh-CN: 辫底发髻
 tag.bunbunmaru:
   en: bunbunmaru
   ja: 文々。
@@ -15661,7 +15661,7 @@ tag.burnt_food:
 tag.burp:
   en: burp
   ja: げっぷ
-  zh-CN: 打嗝
+  zh-CN: 打饱嗝
 tag.burst_bomb_(splatoon):
   en: burst bomb (splatoon)
   ja: バーストボム（スプラトゥーン）
@@ -15693,7 +15693,7 @@ tag.buruma_aside:
 tag.buruma_pull:
   en: buruma pull
   ja: ブルマプル
-  zh-CN: 拉运动短裤
+  zh-CN: 拉布鲁玛
 tag.buruma_under_skirt:
   en: buruma under skirt
   ja: スカートの下のブルマ
@@ -15733,7 +15733,7 @@ tag.business_casual:
 tag.business_suit:
   en: business suit
   ja: ビジネススーツ
-  zh-CN: 西装
+  zh-CN: 职业装
 tag.bust_(sculpture):
   en: bust (sculpture)
   ja: 胸像（彫刻）
@@ -15761,7 +15761,7 @@ tag.buster_sword:
 tag.bustier:
   en: bustier
   ja: ビスチェ
-  zh-CN: 紧身胸衣
+  zh-CN: 抹胸塑身衣
 tag.butch/femme_couple:
   en: butch/femme couple
   ja: ブッチ/ファムのカップル
@@ -15989,7 +15989,7 @@ tag.cabbit:
 tag.cabin:
   en: cabin
   ja: キャビン
-  zh-CN: 小屋
+  zh-CN: 木屋
 tag.cabinet:
   en: cabinet
   ja: キャビネット
@@ -16153,7 +16153,7 @@ tag.calvin_klein:
 tag.camcorder:
   en: camcorder
   ja: ビデオカメラ
-  zh-CN: 摄像机
+  zh-CN: 便携摄像机
 tag.camel:
   en: camel
   ja: 駱駝
@@ -16209,7 +16209,7 @@ tag.camisole:
 tag.camisole_lift:
   en: camisole lift
   ja: キャミソールリフト
-  zh-CN: 吊带背心掀起
+  zh-CN: 掀起吊带背心
 tag.camisole_over_clothes:
   en: camisole over clothes
   ja: 服の上からキャミソール
@@ -16333,7 +16333,7 @@ tag.cancer_(zodiac):
 tag.candelabra:
   en: candelabra
   ja: 燭台
-  zh-CN: 烛台
+  zh-CN: 多头烛台
 tag.candle:
   en: candle
   ja: 蝋燭
@@ -16493,7 +16493,7 @@ tag.cape_hold:
 tag.cape_lift:
   en: cape lift
   ja: ケープリフト
-  zh-CN: 披风撩起
+  zh-CN: 掀起披风
 tag.capelet:
   en: capelet
   ja: ケープレット
@@ -16537,7 +16537,7 @@ tag.captcha:
 tag.caption:
   en: caption
   ja: キャプション
-  zh-CN: 标题
+  zh-CN: 说明文字
 tag.captive_bead_ring:
   en: captive bead ring
   ja: キャプティブビーズリング
@@ -16661,7 +16661,7 @@ tag.cardigan_around_waist:
 tag.cardigan_lift:
   en: cardigan lift
   ja: カーディガンリフト
-  zh-CN: 撩起开衫
+  zh-CN: 掀起开衫
 tag.cardigan_on_shoulders:
   en: cardigan on shoulders
   ja: 肩にかけるカーディガン
@@ -16833,7 +16833,7 @@ tag.carrying_under_arm:
 tag.cart:
   en: cart
   ja: カート
-  zh-CN: 购物车
+  zh-CN: 手推车
 tag.carton:
   en: carton
   ja: カートン
@@ -16905,7 +16905,7 @@ tag.cassiopeia_(constellation):
 tag.cassock:
   en: cassock
   ja: 司祭平服
-  zh-CN: 袈裟
+  zh-CN: 教士长袍
 tag.cast:
   en: cast
   ja: キャスト
@@ -17093,7 +17093,7 @@ tag.cat_panties:
 tag.cat_paw:
   en: cat paw
   ja: 猫の足
-  zh-CN: 猫爪子
+  zh-CN: 单只猫爪
 tag.cat_paws:
   en: cat paws
   ja: 猫の足
@@ -17381,11 +17381,11 @@ tag.censored_with_cum:
 tag.centaur:
   en: centaur
   ja: 人馬
-  zh-CN: 半人马座
+  zh-CN: 半人马
 tag.centauroid:
   en: centauroid
   ja: タウル
-  zh-CN: 半人马座
+  zh-CN: 半人马型
 tag.center-flap_bangs:
   en: center-flap bangs
   ja: センターフラップ前髪
@@ -17537,7 +17537,7 @@ tag.chair:
 tag.chaise_longue:
   en: chaise longue
   ja: 長椅子
-  zh-CN: 躺椅
+  zh-CN: 贵妃椅
 tag.chajinbou:
   en: chajinbou
   ja: 茶人坊
@@ -17645,7 +17645,7 @@ tag.changing_clothes:
 tag.changing_room:
   en: changing room
   ja: 脱衣所
-  zh-CN: 更衣室
+  zh-CN: 换衣间
 tag.changmingsuo:
   en: changmingsuo
   ja: チャンミンスオ
@@ -17653,7 +17653,7 @@ tag.changmingsuo:
 tag.changpao:
   en: changpao
   ja: 長袍
-  zh-CN: 长袍
+  zh-CN: 长衫
 tag.channel_(caststation)_(style):
   en: channel (caststation) (style)
   ja: チャンネル (キャストステーション) (スタイル)
@@ -17909,7 +17909,7 @@ tag.checkered:
 tag.checkered_apron:
   en: checkered apron
   ja: チェック柄のエプロン
-  zh-CN: 格子围裙
+  zh-CN: 方格围裙
 tag.checkered_armband:
   en: checkered armband
   ja: 市松模様の腕章
@@ -17925,7 +17925,7 @@ tag.checkered_bikini:
 tag.checkered_blanket:
   en: checkered blanket
   ja: 市松模様の毛布
-  zh-CN: 格子毯子
+  zh-CN: 方格毯子
 tag.checkered_bow:
   en: checkered bow
   ja: 市松模様の弓
@@ -17941,7 +17941,7 @@ tag.checkered_clothes:
 tag.checkered_dress:
   en: checkered dress
   ja: 市松模様のドレス
-  zh-CN: 格子连衣裙
+  zh-CN: 方格连衣裙
 tag.checkered_flag:
   en: checkered flag
   ja: チェッカーフラッグ
@@ -17953,11 +17953,11 @@ tag.checkered_floor:
 tag.checkered_footwear:
   en: checkered footwear
   ja: 市松模様の靴
-  zh-CN: 格子鞋
+  zh-CN: 方格鞋
 tag.checkered_hairband:
   en: checkered hairband
   ja: 市松模様のヘアバンド
-  zh-CN: 格子发带
+  zh-CN: 方格发带
 tag.checkered_haori:
   en: checkered haori
   ja: チェックの羽織
@@ -17973,11 +17973,11 @@ tag.checkered_headwear:
 tag.checkered_jacket:
   en: checkered jacket
   ja: チェックのジャケット
-  zh-CN: 格子夹克
+  zh-CN: 方格夹克
 tag.checkered_kimono:
   en: checkered kimono
   ja: 市松模様の着物
-  zh-CN: 格子和服
+  zh-CN: 方格和服
 tag.checkered_legwear:
   en: checkered legwear
   ja: チェック柄のレッグウェア
@@ -17985,27 +17985,27 @@ tag.checkered_legwear:
 tag.checkered_neckerchief:
   en: checkered neckerchief
   ja: チェック柄のネッカチーフ
-  zh-CN: 格子围巾
+  zh-CN: 方格围巾
 tag.checkered_necktie:
   en: checkered necktie
   ja: チェック柄のネクタイ
-  zh-CN: 格子领带
+  zh-CN: 方格领带
 tag.checkered_panties:
   en: checkered panties
   ja: チェックのパンティー
-  zh-CN: 格子内裤
+  zh-CN: 方格内裤
 tag.checkered_pants:
   en: checkered pants
   ja: チェックパンツ
-  zh-CN: 格子裤
+  zh-CN: 方格裤
 tag.checkered_pillow:
   en: checkered pillow
   ja: 市松模様の枕
-  zh-CN: 格子枕头
+  zh-CN: 方格枕头
 tag.checkered_ribbon:
   en: checkered ribbon
   ja: 市松模様のリボン
-  zh-CN: 格子丝带
+  zh-CN: 方格丝带
 tag.checkered_sash:
   en: checkered sash
   ja: 市松模様のサッシ
@@ -18017,7 +18017,7 @@ tag.checkered_scarf:
 tag.checkered_shirt:
   en: checkered shirt
   ja: チェックシャツ
-  zh-CN: 格子衬衫
+  zh-CN: 方格衬衫
 tag.checkered_shorts:
   en: checkered shorts
   ja: チェックのショートパンツ
@@ -18025,7 +18025,7 @@ tag.checkered_shorts:
 tag.checkered_skirt:
   en: checkered skirt
   ja: チェックのスカート
-  zh-CN: 格子裙
+  zh-CN: 棋盘格裙
 tag.checkered_sleeves:
   en: checkered sleeves
   ja: チェックの袖
@@ -18033,7 +18033,7 @@ tag.checkered_sleeves:
 tag.checkered_socks:
   en: checkered socks
   ja: 市松模様の靴下
-  zh-CN: 格子袜
+  zh-CN: 方格袜
 tag.checkered_sweater_vest:
   en: checkered sweater vest
   ja: チェックのセーターベスト
@@ -18173,7 +18173,7 @@ tag.chemicals:
 tag.chemise:
   en: chemise
   ja: シュミーズ
-  zh-CN: 衬裙
+  zh-CN: 罩衫内衣
 tag.chemistry:
   en: chemistry
   ja: 化学
@@ -18269,7 +18269,7 @@ tag.chest_freckles:
 tag.chest_fur:
   en: chest fur
   ja: 胸毛
-  zh-CN: 胸毛
+  zh-CN: 胸部毛皮
 tag.chest_guard:
   en: chest guard
   ja: チェストガード
@@ -18313,7 +18313,7 @@ tag.chest_on_pillow:
 tag.chest_protector:
   en: chest protector
   ja: 胸部プロテクター
-  zh-CN: 护胸
+  zh-CN: 运动护胸
 tag.chest_ribbon:
   en: chest ribbon
   ja: 胸のリボン
@@ -18329,7 +18329,7 @@ tag.chest_sarashi:
 tag.chest_strap:
   en: chest strap
   ja: チェストストラップ
-  zh-CN: 胸带
+  zh-CN: 胸前细带
 tag.chest_tattoo:
   en: chest tattoo
   ja: 胸のタトゥー
@@ -18657,7 +18657,7 @@ tag.chipped_tooth:
 tag.chips_(food):
   en: chips (food)
   ja: 野菜チップス
-  zh-CN: 薯片
+  zh-CN: 薄脆零食
 tag.chireiden:
   en: chireiden
   ja: 地霊殿
@@ -18821,7 +18821,7 @@ tag.choker_jewel:
 tag.choker_pull:
   en: choker pull
   ja: チョーカープル
-  zh-CN: 拉项圈
+  zh-CN: 拉颈圈
 tag.choko_(cup):
   en: choko (cup)
   ja: 猪口
@@ -19369,7 +19369,7 @@ tag.clenched_teeth:
 tag.cleric:
   en: cleric
   ja: 聖職者
-  zh-CN: 牧师
+  zh-CN: 教士
 tag.clerical_collar:
   en: clerical collar
   ja: クレリックカラー
@@ -19657,7 +19657,7 @@ tag.clothes_iron:
 tag.clothes_lift:
   en: clothes lift
   ja: たくし上げ
-  zh-CN: 掀衣服
+  zh-CN: 掀起衣服
 tag.clothes_on_and_off:
   en: clothes on and off
   ja: 服のオンとオフ
@@ -19689,7 +19689,7 @@ tag.clothes_pull:
 tag.clothes_rack:
   en: clothes rack
   ja: ハンガーラック
-  zh-CN: 衣架
+  zh-CN: 衣物架
 tag.clothes_shop:
   en: clothes shop
   ja: 洋服屋
@@ -19701,7 +19701,7 @@ tag.clothes_theft:
 tag.clothes_tug:
   en: clothes tug
   ja: 服を引っ張る
-  zh-CN: 扯衣服
+  zh-CN: 拉扯衣服
 tag.clothes_writing:
   en: clothes writing
   ja: 服の文字
@@ -19841,7 +19841,7 @@ tag.clutching_clothes:
 tag.clutching_head:
   en: clutching head
   ja: 頭を握り締める
-  zh-CN: 抓头
+  zh-CN: 双手抱头
 tag.clutter:
   en: clutter
   ja: 乱雑
@@ -19869,11 +19869,11 @@ tag.coat_dress:
 tag.coat_lift:
   en: coat lift
   ja: コートリフト
-  zh-CN: 外套掀起
+  zh-CN: 掀起外套
 tag.coat_of_arms:
   en: coat of arms
   ja: 紋章
-  zh-CN: 徽章
+  zh-CN: 纹章
 tag.coat_on_shoulders:
   en: coat on shoulders
   ja: 肩にかけるコート
@@ -19893,7 +19893,7 @@ tag.coat_stash:
 tag.coattails:
   en: coattails
   ja: コートテール
-  zh-CN: 燕尾服
+  zh-CN: 燕尾
 tag.cobblestone:
   en: cobblestone
   ja: 石畳
@@ -20021,7 +20021,7 @@ tag.coffin:
 tag.coif:
   en: coif
   ja: コイフ
-  zh-CN: 头巾
+  zh-CN: 包发帽
 tag.coiled:
   en: coiled
   ja: コイル状の
@@ -20113,7 +20113,7 @@ tag.collar_tabs:
 tag.collar_tug:
   en: collar tug
   ja: 襟の引っ張り
-  zh-CN: 扯衣领
+  zh-CN: 拉扯项圈
 tag.collarbone:
   en: collarbone
   ja: 鎖骨
@@ -20129,7 +20129,7 @@ tag.collared_bodysuit:
 tag.collared_cape:
   en: collared cape
   ja: 襟付きケープ
-  zh-CN: 有领斗篷
+  zh-CN: 有领披风
 tag.collared_capelet:
   en: collared capelet
   ja: 襟付きケープレット
@@ -20293,7 +20293,7 @@ tag.colored_eyelashes:
 tag.colored_eyepatch:
   en: colored eyepatch
   ja: 色付き眼帯
-  zh-CN: 彩色眼罩
+  zh-CN: 彩色眼带
 tag.colored_inner_animal_ears:
   en: colored inner animal ears
   ja: 内側の動物の耳の色
@@ -20581,7 +20581,7 @@ tag.compass_uniform:
 tag.competition:
   en: competition
   ja: 競争
-  zh-CN: 竞争
+  zh-CN: 比赛
 tag.competition_school_swimsuit:
   en: competition school swimsuit
   ja: 競スク
@@ -20801,7 +20801,7 @@ tag.consensual_tentacles:
 tag.conservatory:
   en: conservatory
   ja: 温室
-  zh-CN: 温室
+  zh-CN: 阳光房
 tag.constellation:
   en: constellation
   ja: 星座
@@ -20965,7 +20965,7 @@ tag.conveyor_belt_sushi:
 tag.cookbook:
   en: cookbook
   ja: 料理本
-  zh-CN: 食谱
+  zh-CN: 食谱书
 tag.cookie:
   en: cookie
   ja: 曲奇
@@ -21061,7 +21061,7 @@ tag.coral_reef:
 tag.cord_pull:
   en: cord pull
   ja: コードプル
-  zh-CN: 拉绳
+  zh-CN: 拽拉绳
 tag.corded_phone:
   en: corded phone
   ja: コード付き電話
@@ -21837,7 +21837,7 @@ tag.crescent_hat_ornament:
 tag.crescent_moon:
   en: crescent moon
   ja: 弦月
-  zh-CN: 新月
+  zh-CN: 月牙
 tag.crescent_necklace:
   en: crescent necklace
   ja: 三日月ネックレス
@@ -21873,11 +21873,11 @@ tag.crest_worm:
 tag.crew_cut:
   en: crew cut
   ja: クルーカット
-  zh-CN: 平头
+  zh-CN: 板寸头
 tag.crew_neck:
   en: crew neck
   ja: クルーネック
-  zh-CN: 圆领
+  zh-CN: 圆领口
 tag.crewmate_(among_us)_(cosplay):
   en: crewmate (among us) (cosplay)
   ja: クルーメイト (Among Us) (コスプレ)
@@ -21905,7 +21905,7 @@ tag.crimson_moon's_semblance_(genshin_impact):
 tag.crinoline:
   en: crinoline
   ja: クリノリン
-  zh-CN: 衬裙
+  zh-CN: 裙撑
 tag.crisis_management_form_(machimazo):
   en: crisis management form (machimazo)
   ja: 危機管理
@@ -21981,7 +21981,7 @@ tag.crop_top:
 tag.crop_top_lift:
   en: crop top lift
   ja: クロップトップリフト
-  zh-CN: 掀起上衣
+  zh-CN: 掀起露腹短上衣
 tag.crop_top_overhang:
   en: crop top overhang
   ja: 裹胸帘
@@ -21989,7 +21989,7 @@ tag.crop_top_overhang:
 tag.cropped_arm:
   en: cropped arm
   ja: 切り取られた腕
-  zh-CN: 裁切至手臂
+  zh-CN: 裁切至单臂
 tag.cropped_arms:
   en: cropped arms
   ja: 切り取られた腕
@@ -22281,7 +22281,7 @@ tag.crossed_bangs:
 tag.crossed_belts:
   en: crossed belts
   ja: クロスベルト
-  zh-CN: 交叉带
+  zh-CN: 交叉皮带
 tag.crossed_fingers:
   en: crossed fingers
   ja: 交差した指
@@ -22689,7 +22689,7 @@ tag.cuffs-to-collar:
 tag.cuirass:
   en: cuirass
   ja: 胸当て
-  zh-CN: 胸甲
+  zh-CN: 胸背甲
 tag.cuisses:
   en: cuisses
   ja: キュイス
@@ -22773,7 +22773,7 @@ tag.cum_inflation:
 tag.cum_on_armpits:
   en: cum on armpits
   ja: 脇の下に兼
-  zh-CN: 精在腋下
+  zh-CN: 射在腋下
 tag.cum_on_ass:
   en: cum on ass
   ja: お尻に兼
@@ -22829,7 +22829,7 @@ tag.cum_on_floor:
 tag.cum_on_food:
   en: cum on food
   ja: 食べ物に兼
-  zh-CN: 精液在食物上
+  zh-CN: 射在食物上
 tag.cum_on_gloves:
   en: cum on gloves
   ja: 手袋に射精
@@ -22949,7 +22949,7 @@ tag.cumdump:
 tag.cummerbund:
   en: cummerbund
   ja: カマーバンド
-  zh-CN: 腰带
+  zh-CN: 腰封
 tag.cumulonimbus_cloud:
   en: cumulonimbus cloud
   ja: 入道雲
@@ -24057,11 +24057,11 @@ tag.despair:
 tag.desperation:
   en: desperation
   ja: 絶望
-  zh-CN: 绝望
+  zh-CN: 殊死一搏
 tag.dessert:
   en: dessert
   ja: お菓子
-  zh-CN: 点心
+  zh-CN: 甜点
 tag.destroyed:
   en: destroyed
   ja: 破壊された
@@ -24297,7 +24297,7 @@ tag.diamond_button:
 tag.diamond_choker:
   en: diamond choker
   ja: ダイヤモンドチョーカー
-  zh-CN: 钻石项链
+  zh-CN: 钻石项圈
 tag.diamond_clan_outfit:
   en: diamond clan outfit
   ja: ダイヤモンド一族の衣装
@@ -24453,7 +24453,7 @@ tag.dilation_belt:
 tag.dilation_tape:
   en: dilation tape
   ja: テープくぱぁ
-  zh-CN: 扩张带
+  zh-CN: 扩张胶带
 tag.dildo:
   en: dildo
   ja: ディルド
@@ -24505,7 +24505,7 @@ tag.diner:
 tag.dining_room:
   en: dining room
   ja: ダイニングルーム
-  zh-CN: 餐厅
+  zh-CN: 饭厅
 tag.dinner:
   en: dinner
   ja: 夕飯
@@ -24569,7 +24569,7 @@ tag.dirigible:
 tag.dirndl:
   en: dirndl
   ja: ディアンドル
-  zh-CN: 连衣裙
+  zh-CN: 巴伐利亚民族裙
 tag.dirt:
   en: dirt
   ja: 泥土
@@ -24629,7 +24629,7 @@ tag.disassembly:
 tag.disc:
   en: disc
   ja: ディスク
-  zh-CN: 光盘
+  zh-CN: 圆盘
 tag.disco:
   en: disco
   ja: ディスコ
@@ -24705,7 +24705,7 @@ tag.disintegration:
 tag.dismemberment:
   en: dismemberment
   ja: 肢解
-  zh-CN: 四肢切断
+  zh-CN: 肢体分离
 tag.dispersion_(optics):
   en: dispersion (optics)
   ja: 分散（光学）
@@ -24769,11 +24769,11 @@ tag.dithered_background:
 tag.dithering:
   en: dithering
   ja: 抖動
-  zh-CN: 点阵
+  zh-CN: 抖动效果
 tag.dive:
   en: dive
   ja: ダイビング
-  zh-CN: 潜水
+  zh-CN: 跳水
 tag.dive!_(love_live!):
   en: dive! (love live!)
   ja: 潜る！ (ラブライブ!)
@@ -24845,7 +24845,7 @@ tag.dobermann:
 tag.dock:
   en: dock
   ja: ドック
-  zh-CN: 码头
+  zh-CN: 系泊码头
 tag.doctor:
   en: doctor
   ja: 医師
@@ -25121,7 +25121,7 @@ tag.door:
 tag.door_handle:
   en: door handle
   ja: ドアハンドル
-  zh-CN: 门把手
+  zh-CN: 门拉手
 tag.doorbell:
   en: doorbell
   ja: ドアホン
@@ -25321,7 +25321,7 @@ tag.double_driver:
 tag.double_entendre:
   en: double entendre
   ja: ダブルミーニング
-  zh-CN: 双关语
+  zh-CN: 暗示性双关语
 tag.double_exposure:
   en: double exposure
   ja: 多重露光
@@ -25469,7 +25469,7 @@ tag.downpants:
 tag.downturned_eyes:
   en: downturned eyes
   ja: うつむいた目
-  zh-CN: 低垂的眼睛
+  zh-CN: 下垂眼型
 tag.downward_dog:
   en: downward dog
   ja: 下向きの犬
@@ -25765,11 +25765,11 @@ tag.dress_grab:
 tag.dress_in_mouth:
   en: dress in mouth
   ja: 口の中のドレス
-  zh-CN: 衣服含在嘴里
+  zh-CN: 裙子叼在嘴里
 tag.dress_lift:
   en: dress lift
   ja: ドレスめくり
-  zh-CN: 掀裙摆
+  zh-CN: 掀起连衣裙
 tag.dress_over_shirt:
   en: dress over shirt
   ja: シャツの上にドレスを着る
@@ -25809,7 +25809,7 @@ tag.dress_swimsuit:
 tag.dress_tug:
   en: dress tug
   ja: ドレスタグ
-  zh-CN: 扯礼服
+  zh-CN: 拉扯连衣裙
 tag.dress_vest:
   en: dress vest
   ja: ドレスベスト
@@ -25929,7 +25929,7 @@ tag.driving:
 tag.droid:
   en: droid
   ja: ドロイド
-  zh-CN: 机器人
+  zh-CN: 德罗伊德
 tag.dromas_(honkai:_star_rail):
   en: 'dromas (honkai: star rail)'
   ja: ドロマス（本海：スターレール）
@@ -26057,7 +26057,7 @@ tag.drying_own_hair:
 tag.dslr:
   en: dslr
   ja: デジタル一眼レフカメラ
-  zh-CN: 单反相机
+  zh-CN: 数码单反相机
 tag.dual_arm_cannons:
   en: dual arm cannons
   ja: 双腕大砲
@@ -26121,7 +26121,7 @@ tag.duckling:
 tag.duct_tape:
   en: duct tape
   ja: ダクトテープ
-  zh-CN: 胶带
+  zh-CN: 强力胶带
 tag.dudou:
   en: dudou
   ja: 兜兜
@@ -26173,7 +26173,7 @@ tag.dummy:
 tag.dumpling:
   en: dumpling
   ja: 団子
-  zh-CN: 饺子
+  zh-CN: 夹馅面点
 tag.dumpster:
   en: dumpster
   ja: ゴミ箱
@@ -26309,7 +26309,7 @@ tag.ea_(fate):
 tag.eagle:
   en: eagle
   ja: ワシ
-  zh-CN: 鹰
+  zh-CN: 雕
 tag.eagle_union_(emblem):
   en: eagle union (emblem)
   ja: イーグルユニオン（エンブレム）
@@ -26401,7 +26401,7 @@ tag.ear_wreath:
 tag.earbuds:
   en: earbuds
   ja: イヤホン
-  zh-CN: 耳塞
+  zh-CN: 入耳式耳机
 tag.earclip:
   en: earclip
   ja: イヤークリップ
@@ -26417,7 +26417,7 @@ tag.eargasm:
 tag.earmuffs:
   en: earmuffs
   ja: イヤーマフ
-  zh-CN: 耳罩
+  zh-CN: 保暖耳罩
 tag.earmuffs_around_neck:
   en: earmuffs around neck
   ja: 首にかけるイヤーマフ
@@ -26425,7 +26425,7 @@ tag.earmuffs_around_neck:
 tag.earphones:
   en: earphones
   ja: イヤホン
-  zh-CN: 耳机
+  zh-CN: 耳塞
 tag.earphones_on_animal_ears:
   en: earphones on animal ears
   ja: 動物の耳にイヤホン
@@ -26437,7 +26437,7 @@ tag.earphones_removed:
 tag.earpiece:
   en: earpiece
   ja: イヤホン
-  zh-CN: 耳机
+  zh-CN: 单耳耳机
 tag.earplugs:
   en: earplugs
   ja: 耳栓
@@ -26569,7 +26569,7 @@ tag.eclair_(food):
 tag.eclipse:
   en: eclipse
   ja: 日食
-  zh-CN: 日食
+  zh-CN: 日月食
 tag.ecstasy:
   en: ecstasy
   ja: エクスタシー
@@ -26781,7 +26781,7 @@ tag.elbow_on_knee:
 tag.elbow_on_table:
   en: elbow on table
   ja: テーブルに肘を置く
-  zh-CN: 肘部放在桌子上
+  zh-CN: 单肘放在桌子上
 tag.elbow_on_thigh:
   en: elbow on thigh
   ja: 肘を太ももの上に置く
@@ -26809,7 +26809,7 @@ tag.elbowing:
 tag.elbows_on_knees:
   en: elbows on knees
   ja: 肘を膝の上に置く
-  zh-CN: 肘部放在膝盖上
+  zh-CN: 双肘放在双膝上
 tag.elbows_on_table:
   en: elbows on table
   ja: テーブルに肘を置く
@@ -27033,7 +27033,7 @@ tag.emoji_censor:
 tag.emoticon:
   en: emoticon
   ja: 顔文字
-  zh-CN: 表情符号
+  zh-CN: 颜文字
 tag.emotional_engine_-_full_drive:
   en: emotional engine - full drive
   ja: 枕草子・春曙抄
@@ -27533,7 +27533,7 @@ tag.exercise_machine:
 tag.exercising:
   en: exercising
   ja: 運動
-  zh-CN: 体操
+  zh-CN: 锻炼
 tag.exhaust:
   en: exhaust
   ja: 排気
@@ -27913,7 +27913,7 @@ tag.eyepatch_bikini:
 tag.eyepatch_lift:
   en: eyepatch lift
   ja: 眼帯リフト
-  zh-CN: 撩起眼罩
+  zh-CN: 掀起眼罩
 tag.eyepatch_pull:
   en: eyepatch pull
   ja: 眼帯の引き手
@@ -27969,7 +27969,7 @@ tag.eyewear_in_mouth:
 tag.eyewear_lift:
   en: eyewear lift
   ja: メガネリフト
-  zh-CN: 眼镜掀起
+  zh-CN: 掀起眼镜
 tag.eyewear_on_head:
   en: eyewear on head
   ja: 頭に眼鏡
@@ -28053,7 +28053,7 @@ tag.face_between_breasts:
 tag.face_down:
   en: face down
   ja: うつむいて
-  zh-CN: 面朝下
+  zh-CN: 俯卧
 tag.face_filter:
   en: face filter
   ja: フェイスフィルター
@@ -28341,7 +28341,7 @@ tag.fake_magazine_cover:
 tag.fake_mustache:
   en: fake mustache
   ja: 偽の口ひげ
-  zh-CN: 假胡子
+  zh-CN: 假髭
 tag.fake_nails:
   en: fake nails
   ja: 偽の爪
@@ -28409,7 +28409,7 @@ tag.falcon:
 tag.falconry:
   en: falconry
   ja: 鷹狩り
-  zh-CN: 猎鹰
+  zh-CN: 驯鹰
 tag.fallen_angel:
   en: fallen angel
   ja: 堕天使
@@ -28465,7 +28465,7 @@ tag.false_arm:
 tag.false_limb:
   en: false limb
   ja: 仮肢
-  zh-CN: 假肢
+  zh-CN: 仿真假肢
 tag.false_smile:
   en: false smile
   ja: 怖い笑顔
@@ -29181,7 +29181,7 @@ tag.fighter_jet:
 tag.fighting:
   en: fighting
   ja: 打架
-  zh-CN: 战斗
+  zh-CN: 格斗
 tag.fighting_game:
   en: fighting game
   ja: 格ゲー
@@ -29437,7 +29437,7 @@ tag.fingers_to_cheek:
 tag.fingers_to_cheeks:
   en: fingers to cheeks
   ja: 指から頬まで
-  zh-CN: 手指到脸颊
+  zh-CN: 双手手指点脸颊
 tag.fingers_to_mouth:
   en: fingers to mouth
   ja: 指から口へ
@@ -29541,7 +29541,7 @@ tag.fireflies:
 tag.firefly:
   en: firefly
   ja: 蛍
-  zh-CN: 萤火虫
+  zh-CN: 单只萤火虫
 tag.firefly_(honkai:_star_rail)_(cosplay):
   en: 'firefly (honkai: star rail) (cosplay)'
   ja: ホタル (本海：スターレール) (コスプレ)
@@ -29549,7 +29549,7 @@ tag.firefly_(honkai:_star_rail)_(cosplay):
 tag.firelock:
   en: firelock
   ja: ファイアロック
-  zh-CN: 火枪
+  zh-CN: 火绳枪
 tag.fireman's_carry:
   en: fireman's carry
   ja: 消防士のキャリー
@@ -29633,7 +29633,7 @@ tag.fish_girl:
 tag.fish_grill:
   en: fish grill
   ja: 魚焼きグリル
-  zh-CN: 烤鱼
+  zh-CN: 烤鱼炉
 tag.fish_hair_ornament:
   en: fish hair ornament
   ja: 魚の髪飾り
@@ -29681,7 +29681,7 @@ tag.fish_tattoo:
 tag.fishbowl:
   en: fishbowl
   ja: 金魚鉢
-  zh-CN: 鱼缸
+  zh-CN: 金鱼缸
 tag.fishbowl_helmet:
   en: fishbowl helmet
   ja: 金魚鉢ヘルメット
@@ -29789,7 +29789,7 @@ tag.fishnet_veil:
 tag.fishnets:
   en: fishnets
   ja: 渔网服饰
-  zh-CN: 渔网
+  zh-CN: 渔网袜
 tag.fist_bump:
   en: fist bump
   ja: 拳のぶつかり合い
@@ -29973,7 +29973,7 @@ tag.flapper_shirt:
 tag.flapping:
   en: flapping
   ja: はためく
-  zh-CN: 拍打
+  zh-CN: 扑动
 tag.flapping_ears:
   en: flapping ears
   ja: パタパタ耳
@@ -29997,7 +29997,7 @@ tag.flashbang:
 tag.flashing:
   en: flashing
   ja: 点滅する
-  zh-CN: 闪烁
+  zh-CN: 露出
 tag.flashlight:
   en: flashlight
   ja: 懐中電灯
@@ -30073,7 +30073,7 @@ tag.fleet:
 tag.flesh:
   en: flesh
   ja: 肉
-  zh-CN: 肉
+  zh-CN: 血肉
 tag.fleur-de-lis:
   en: fleur-de-lis
   ja: フルール・ド・リス
@@ -30265,7 +30265,7 @@ tag.floating_weapon:
 tag.floatplane:
   en: floatplane
   ja: 水上飛行機
-  zh-CN: 水上飞机
+  zh-CN: 浮筒式水上飞机
 tag.flock:
   en: flock
   ja: 群れ
@@ -30561,7 +30561,7 @@ tag.flower_pot:
 tag.flower_ring:
   en: flower ring
   ja: フラワーリング
-  zh-CN: 花环
+  zh-CN: 花朵戒指
 tag.flower_shop:
   en: flower shop
   ja: 花屋
@@ -30597,7 +30597,7 @@ tag.flower_to_mouth:
 tag.flower_trim:
   en: flower trim
   ja: フラワートリム
-  zh-CN: 花饰
+  zh-CN: 花边饰
 tag.flower_underskirt:
   en: flower underskirt
   ja: 花のアンダースカート
@@ -31625,7 +31625,7 @@ tag.frilled_armband:
 tag.frilled_armlet:
   en: frilled armlet
   ja: フリルアームレット
-  zh-CN: 褶边臂章
+  zh-CN: 褶边臂环
 tag.frilled_ascot:
   en: frilled ascot
   ja: フリルアスコット
@@ -31637,7 +31637,7 @@ tag.frilled_babydoll:
 tag.frilled_bandeau:
   en: frilled bandeau
   ja: フリルバンドゥ
-  zh-CN: 褶边抹胸
+  zh-CN: 褶边胸带
 tag.frilled_bikini:
   en: frilled bikini
   ja: フレアビキニ
@@ -31653,7 +31653,7 @@ tag.frilled_bikini_top:
 tag.frilled_bonnet:
   en: frilled bonnet
   ja: フリルボンネット
-  zh-CN: 褶边帽子
+  zh-CN: 褶边系带帽
 tag.frilled_boots:
   en: frilled boots
   ja: フリルブーツ
@@ -31685,7 +31685,7 @@ tag.frilled_cape:
 tag.frilled_capelet:
   en: frilled capelet
   ja: フリルケープ
-  zh-CN: 褶边披肩
+  zh-CN: 褶边短斗篷
 tag.frilled_choker:
   en: frilled choker
   ja: フリルチョーカー
@@ -31693,7 +31693,7 @@ tag.frilled_choker:
 tag.frilled_cloak:
   en: frilled cloak
   ja: フリルマント
-  zh-CN: 褶边斗篷
+  zh-CN: 褶边披风
 tag.frilled_coat:
   en: frilled coat
   ja: フリルコート
@@ -31729,7 +31729,7 @@ tag.frilled_garter:
 tag.frilled_garter_belt:
   en: frilled garter belt
   ja: フリルガーターベルト
-  zh-CN: 褶边吊袜带
+  zh-CN: 褶边吊袜腰封
 tag.frilled_gloves:
   en: frilled gloves
   ja: フリル手袋
@@ -31785,7 +31785,7 @@ tag.frilled_necktie:
 tag.frilled_negligee:
   en: frilled negligee
   ja: フリルネグリジェ
-  zh-CN: 褶边睡衣
+  zh-CN: 褶边薄纱睡袍
 tag.frilled_nightgown:
   en: frilled nightgown
   ja: フリルナイトガウン
@@ -31797,7 +31797,7 @@ tag.frilled_one-piece_swimsuit:
 tag.frilled_pajamas:
   en: frilled pajamas
   ja: フリルパジャマ
-  zh-CN: 褶边睡衣
+  zh-CN: 褶边睡衣裤
 tag.frilled_panties:
   en: frilled panties
   ja: フリルパンティー
@@ -32061,7 +32061,7 @@ tag.frostbite_set_(zelda):
 tag.froth:
   en: froth
   ja: 泡立つ
-  zh-CN: 泡沫
+  zh-CN: 浮沫
 tag.frottage:
   en: frottage
   ja: 兜合わせ
@@ -32289,7 +32289,7 @@ tag.fullbottle:
 tag.fume:
   en: fume
   ja: ヒューム
-  zh-CN: 烟雾
+  zh-CN: 废气
 tag.fumo_(doll):
   en: fumo (doll)
   ja: ふもふも
@@ -32297,7 +32297,7 @@ tag.fumo_(doll):
 tag.fundoshi:
   en: fundoshi
   ja: 褌
-  zh-CN: 丰多什
+  zh-CN: 兜裆布
 tag.fundoshi_aside:
   en: fundoshi aside
   ja: ふんどしは脇に
@@ -32357,7 +32357,7 @@ tag.fur-trimmed_cape:
 tag.fur-trimmed_capelet:
   en: fur-trimmed capelet
   ja: ファートリムケープレット
-  zh-CN: 毛皮边饰披肩
+  zh-CN: 毛皮边饰短斗篷
 tag.fur-trimmed_choker:
   en: fur-trimmed choker
   ja: ファートリムチョーカー
@@ -32365,7 +32365,7 @@ tag.fur-trimmed_choker:
 tag.fur-trimmed_cloak:
   en: fur-trimmed cloak
   ja: 毛皮のトリミングされたマント
-  zh-CN: 毛皮边饰斗篷
+  zh-CN: 毛皮边饰长斗篷
 tag.fur-trimmed_coat:
   en: fur-trimmed coat
   ja: ファートリムコート
@@ -32513,11 +32513,11 @@ tag.fur_bracelet:
 tag.fur_cape:
   en: fur cape
   ja: 毛皮のケープ
-  zh-CN: 毛皮斗篷
+  zh-CN: 毛皮披风
 tag.fur_capelet:
   en: fur capelet
   ja: 毛皮のケープ
-  zh-CN: 毛皮披肩
+  zh-CN: 毛皮短斗篷
 tag.fur_choker:
   en: fur choker
   ja: 毛皮チョーカー
@@ -32641,7 +32641,7 @@ tag.furrowed_brow:
 tag.furry:
   en: furry
   ja: 獣人
-  zh-CN: 兽人
+  zh-CN: 福瑞
 tag.furry_and_animal:
   en: furry and animal
   ja: 毛皮と動物
@@ -33069,7 +33069,7 @@ tag.garnet_til_alexandros_xvii_(cosplay):
 tag.garnish:
   en: garnish
   ja: 飾り付け
-  zh-CN: 装饰
+  zh-CN: 点缀
 tag.garreg_mach_monastery_uniform:
   en: garreg mach monastery uniform
   ja: ガルグ=マッハ修道院の制服
@@ -33137,7 +33137,7 @@ tag.gat_(hat):
 tag.gate:
   en: gate
   ja: 門
-  zh-CN: 门
+  zh-CN: 大门
 tag.gate_of_babylon_(fate):
   en: gate of babylon (fate)
   ja: 王の財宝
@@ -33153,7 +33153,7 @@ tag.gatling_gun:
 tag.gattai:
   en: gattai
   ja: 合体ロボ
-  zh-CN: 合体
+  zh-CN: 机械合体
 tag.gauge:
   en: gauge
   ja: 計器
@@ -33197,7 +33197,7 @@ tag.gauze_over_eye:
 tag.gavel:
   en: gavel
   ja: 小槌
-  zh-CN: 木槌
+  zh-CN: 法槌
 tag.gawr_gura_(cosplay):
   en: gawr gura (cosplay)
   ja: ガウル・グラ（コスプレ）
@@ -33661,15 +33661,15 @@ tag.gingham_clothes:
 tag.gingham_dress:
   en: gingham dress
   ja: ギンガムチェックドレス
-  zh-CN: 格子连衣裙
+  zh-CN: 细格纹连衣裙
 tag.gingham_shirt:
   en: gingham shirt
   ja: ギンガムチェックシャツ
-  zh-CN: 格子衬衫
+  zh-CN: 细格纹衬衫
 tag.gingham_skirt:
   en: gingham skirt
   ja: ギンガムチェックスカート
-  zh-CN: 格子裙
+  zh-CN: 细格纹裙
 tag.ginkgo_guild_uniform:
   en: ginkgo guild uniform
   ja: イチョウギルドの制服
@@ -33785,7 +33785,7 @@ tag.gladiolus:
 tag.gladius:
   en: gladius
   ja: グラディウス
-  zh-CN: 短剑
+  zh-CN: 罗马短剑
 tag.glaive_(polearm):
   en: glaive (polearm)
   ja: グレイブ（ポールアーム）
@@ -33837,7 +33837,7 @@ tag.glass_pen:
 tag.glass_shard:
   en: glass shard
   ja: ガラスの破片
-  zh-CN: 玻璃碎片
+  zh-CN: 单片玻璃碎片
 tag.glass_shards:
   en: glass shards
   ja: ガラスの破片
@@ -33905,7 +33905,7 @@ tag.glitch_censor:
 tag.glitter:
   en: glitter
   ja: キラキラ
-  zh-CN: 闪光
+  zh-CN: 闪粉
 tag.glitter_dress:
   en: glitter dress
   ja: グリッタードレス
@@ -34021,7 +34021,7 @@ tag.glowing_earrings:
 tag.glowing_eye:
   en: glowing eye
   ja: 光る目
-  zh-CN: 发光的眼睛
+  zh-CN: 单眼发光
 tag.glowing_eyes:
   en: glowing eyes
   ja: 光る目
@@ -34057,7 +34057,7 @@ tag.glowing_hand:
 tag.glowing_hands:
   en: glowing hands
   ja: 光る手
-  zh-CN: 发光的手
+  zh-CN: 发光的双手
 tag.glowing_hat:
   en: glowing hat
   ja: 光る帽子
@@ -34429,7 +34429,7 @@ tag.gold_headband:
 tag.gold_headdress:
   en: gold headdress
   ja: ゴールドの頭飾り
-  zh-CN: 金色头饰
+  zh-CN: 金色头冠
 tag.gold_headwear:
   en: gold headwear
   ja: ゴールドの帽子
@@ -34537,7 +34537,7 @@ tag.gold_thighlet:
 tag.gold_tiara:
   en: gold tiara
   ja: ゴールドティアラ
-  zh-CN: 金皇冠
+  zh-CN: 金色头冠
 tag.gold_trim:
   en: gold trim
   ja: ゴールドトリム
@@ -35085,7 +35085,7 @@ tag.grandfather_and_granddaughter:
 tag.grandfather_and_grandson:
   en: grandfather and grandson
   ja: 祖父と孫
-  zh-CN: 祖孙
+  zh-CN: 爷孙
 tag.grandfather_clock:
   en: grandfather clock
   ja: 柱時計
@@ -35297,7 +35297,7 @@ tag.green_bandana:
 tag.green_bandeau:
   en: green bandeau
   ja: グリーンバンドー
-  zh-CN: 绿色抹胸
+  zh-CN: 绿色胸带
 tag.green_belt:
   en: green belt
   ja: グリーンベルト
@@ -35365,7 +35365,7 @@ tag.green_cape:
 tag.green_capelet:
   en: green capelet
   ja: 緑のケープレット
-  zh-CN: 绿色披肩
+  zh-CN: 绿色短披风
 tag.green_car:
   en: green car
   ja: グリーン車
@@ -35489,7 +35489,7 @@ tag.green_headband:
 tag.green_headscarf:
   en: green headscarf
   ja: 緑のスカーフ
-  zh-CN: 绿色头巾
+  zh-CN: 绿色包头巾
 tag.green_headwear:
   en: green headwear
   ja: 緑の帽子
@@ -35573,7 +35573,7 @@ tag.green_mask:
 tag.green_mittens:
   en: green mittens
   ja: 緑の手袋
-  zh-CN: 绿色手套
+  zh-CN: 绿色连指手套
 tag.green_nails:
   en: green nails
   ja: 緑の爪
@@ -35905,7 +35905,7 @@ tag.grey_bandana:
 tag.grey_bandeau:
   en: grey bandeau
   ja: グレーのバンドー
-  zh-CN: 灰色抹胸
+  zh-CN: 灰色胸带
 tag.grey_belt:
   en: grey belt
   ja: グレーのベルト
@@ -35949,11 +35949,11 @@ tag.grey_camisole:
 tag.grey_cape:
   en: grey cape
   ja: 灰色のマント
-  zh-CN: 灰色斗篷
+  zh-CN: 灰色披风
 tag.grey_capelet:
   en: grey capelet
   ja: グレーのケープレット
-  zh-CN: 灰色披肩
+  zh-CN: 灰色短披风
 tag.grey_car:
   en: grey car
   ja: 灰色の車
@@ -36053,7 +36053,7 @@ tag.grey_hat:
 tag.grey_headband:
   en: grey headband
   ja: グレーのヘッドバンド
-  zh-CN: 灰色发带
+  zh-CN: 灰色头带
 tag.grey_headwear:
   en: grey headwear
   ja: 灰色の帽子
@@ -36121,7 +36121,7 @@ tag.grey_mask:
 tag.grey_mittens:
   en: grey mittens
   ja: グレーのミトン
-  zh-CN: 灰色手套
+  zh-CN: 灰色连指手套
 tag.grey_nails:
   en: grey nails
   ja: 灰色の爪
@@ -36381,7 +36381,7 @@ tag.griffin_&_kryuger_military_uniform:
 tag.grill:
   en: grill
   ja: グリル
-  zh-CN: 烧烤
+  zh-CN: 烤架
 tag.grilled_corn:
   en: grilled corn
   ja: 焼きトウモロコシ
@@ -36465,7 +36465,7 @@ tag.groom:
 tag.groping:
   en: groping
   ja: 愛撫
-  zh-CN: 抚摸
+  zh-CN: 揉捏
 tag.groping_motion:
   en: groping motion
   ja: わきわき
@@ -36521,7 +36521,7 @@ tag.growing_out_of_body:
 tag.growling:
   en: growling
   ja: うなる
-  zh-CN: 咆哮
+  zh-CN: 低吼
 tag.grumpy:
   en: grumpy
   ja: 不機嫌そうな
@@ -36925,7 +36925,7 @@ tag.hair_bell:
 tag.hair_belt:
   en: hair belt
   ja: ヘアベルト
-  zh-CN: 发带
+  zh-CN: 宽发带
 tag.hair_between_breasts:
   en: hair between breasts
   ja: 胸の間の毛
@@ -37173,7 +37173,7 @@ tag.hair_tuft:
 tag.hair_undone:
   en: hair undone
   ja: 髪が解けた
-  zh-CN: 头发散开
+  zh-CN: 松开头发
 tag.hair_up:
   en: hair up
   ja: 扎头发
@@ -37217,7 +37217,7 @@ tag.hairpin:
 tag.hairpods:
   en: hairpods
   ja: ヘアポッド
-  zh-CN: 发夹
+  zh-CN: 豆荚状发饰
 tag.hairstyle_connection:
   en: hairstyle connection
   ja: 发型相仿
@@ -37245,7 +37245,7 @@ tag.hakama:
 tag.hakama_lift:
   en: hakama lift
   ja: 袴リフト
-  zh-CN: 撩袴
+  zh-CN: 掀起袴
 tag.hakama_pants:
   en: hakama pants
   ja: 馬乗袴
@@ -37317,7 +37317,7 @@ tag.halberd:
 tag.half-closed_eye:
   en: half-closed eye
   ja: 半目
-  zh-CN: 半闭眼
+  zh-CN: 单眼半闭
 tag.half-closed_eyes:
   en: half-closed eyes
   ja: 半目
@@ -37621,7 +37621,7 @@ tag.hand_grip:
 tag.hand_guard:
   en: hand guard
   ja: ハンドガード
-  zh-CN: 护手
+  zh-CN: 刀柄护手
 tag.hand_hair:
   en: hand hair
   ja: 手毛
@@ -37861,7 +37861,7 @@ tag.hand_on_headphones:
 tag.hand_on_headset:
   en: hand on headset
   ja: ヘッドセットを手に持って
-  zh-CN: 手放在耳机上
+  zh-CN: 手放在耳麦上
 tag.hand_on_headwear:
   en: hand on headwear
   ja: 帽子に手
@@ -38185,7 +38185,7 @@ tag.handlebar_mustache:
 tag.handprint:
   en: handprint
   ja: 手形
-  zh-CN: 手印
+  zh-CN: 手掌印
 tag.handrail:
   en: handrail
   ja: 手すり
@@ -38217,7 +38217,7 @@ tag.hands_in_own_hair:
 tag.hands_in_pocket:
   en: hands in pocket
   ja: ポケットに手を入れる
-  zh-CN: 手插在口袋里
+  zh-CN: 双手插在口袋里
 tag.hands_in_pockets:
   en: hands in pockets
   ja: ポケットに手を入れる
@@ -38229,7 +38229,7 @@ tag.hands_on_another's_arm:
 tag.hands_on_another's_arms:
   en: hands on another's arms
   ja: 他人の腕に手を置く
-  zh-CN: 手放在别人的手臂上
+  zh-CN: 双手放在别人的双臂上
 tag.hands_on_another's_ass:
   en: hands on another's ass
   ja: 他人のお尻に手をかける
@@ -38249,7 +38249,7 @@ tag.hands_on_another's_chest:
 tag.hands_on_another's_face:
   en: hands on another's face
   ja: 他人の顔に手を置く
-  zh-CN: 手放在别人脸上
+  zh-CN: 双手放在别人脸上
 tag.hands_on_another's_head:
   en: hands on another's head
   ja: 他人の頭に手を置く
@@ -38265,7 +38265,7 @@ tag.hands_on_another's_knees:
 tag.hands_on_another's_leg:
   en: hands on another's leg
   ja: 他人の足に手を置く
-  zh-CN: 手放在别人腿上
+  zh-CN: 双手放在别人腿上
 tag.hands_on_another's_neck:
   en: hands on another's neck
   ja: 他人の首に手を置く
@@ -38273,7 +38273,7 @@ tag.hands_on_another's_neck:
 tag.hands_on_another's_shoulder:
   en: hands on another's shoulder
   ja: 他人の肩に手を置く
-  zh-CN: 双手搭在别人的肩膀上
+  zh-CN: 双手搭在别人的一个肩膀上
 tag.hands_on_another's_shoulders:
   en: hands on another's shoulders
   ja: 他人の肩に手を置く
@@ -38281,11 +38281,11 @@ tag.hands_on_another's_shoulders:
 tag.hands_on_another's_stomach:
   en: hands on another's stomach
   ja: 他人のお腹に手を置く
-  zh-CN: 手放在别人的肚子上
+  zh-CN: 双手放在别人的肚子上
 tag.hands_on_another's_thighs:
   en: hands on another's thighs
   ja: 他人の太ももに手を置く
-  zh-CN: 手放在别人的大腿上
+  zh-CN: 双手放在别人的大腿上
 tag.hands_on_another's_waist:
   en: hands on another's waist
   ja: 他人の腰に手を置く
@@ -38297,7 +38297,7 @@ tag.hands_on_ass:
 tag.hands_on_eyewear:
   en: hands on eyewear
   ja: メガネを実際に手に取る
-  zh-CN: 手放在眼镜上
+  zh-CN: 双手放在眼镜上
 tag.hands_on_feet:
   en: hands on feet
   ja: 両手両足
@@ -38305,11 +38305,11 @@ tag.hands_on_feet:
 tag.hands_on_floor:
   en: hands on floor
   ja: 床に手を置く
-  zh-CN: 手放在地板上
+  zh-CN: 双手放在地板上
 tag.hands_on_ground:
   en: hands on ground
   ja: 地面に手を置く
-  zh-CN: 手放在地上
+  zh-CN: 双手放在地上
 tag.hands_on_headphones:
   en: hands on headphones
   ja: ヘッドフォンを手に取る
@@ -38377,7 +38377,7 @@ tag.hands_on_own_hips:
 tag.hands_on_own_knee:
   en: hands on own knee
   ja: 自分の膝に手を置く
-  zh-CN: 双手放在自己的膝盖上
+  zh-CN: 双手放在自己的单膝上
 tag.hands_on_own_knees:
   en: hands on own knees
   ja: 自分の膝に手を置く
@@ -38385,7 +38385,7 @@ tag.hands_on_own_knees:
 tag.hands_on_own_leg:
   en: hands on own leg
   ja: 自分の足に手を添える
-  zh-CN: 双手放在自己的腿上
+  zh-CN: 双手放在自己同一条腿上
 tag.hands_on_own_legs:
   en: hands on own legs
   ja: 自分の足に手を置く
@@ -38421,7 +38421,7 @@ tag.hands_on_stomach:
 tag.hands_on_table:
   en: hands on table
   ja: テーブルの上に手を置く
-  zh-CN: 手放在桌子上
+  zh-CN: 双手放在桌子上
 tag.hands_on_thighs:
   en: hands on thighs
   ja: 太ももに手を当てる
@@ -38721,7 +38721,7 @@ tag.harukawa_moe_(style):
 tag.haruna_(kancolle)_(cosplay):
   en: haruna (kancolle) (cosplay)
   ja: 榛名 (艦これ) (コスプレ)
-  zh-CN: 榛名（cosplay）
+  zh-CN: 榛名（舰队Collection）（cosplay）
 tag.harvest:
   en: harvest
   ja: 収穫
@@ -38837,7 +38837,7 @@ tag.hat_tip:
 tag.hat_tug:
   en: hat tug
   ja: 帽子引っ張り
-  zh-CN: 拉帽子
+  zh-CN: 拉扯帽子
 tag.hat_under_hood:
   en: hat under hood
   ja: フードの下の帽子
@@ -38861,7 +38861,7 @@ tag.hatchet_(axe):
 tag.hatching:
   en: hatching
   ja: 孵化
-  zh-CN: 排线
+  zh-CN: 孵化
 tag.hatching_(texture):
   en: hatching (texture)
   ja: ハッチング
@@ -39037,7 +39037,7 @@ tag.head_on_hand:
 tag.head_on_hands:
   en: head on hands
   ja: 頭を抱えて
-  zh-CN: 头靠在手上
+  zh-CN: 头靠在双手上
 tag.head_on_head:
   en: head on head
   ja: 頭と頭
@@ -39065,7 +39065,7 @@ tag.head_only:
 tag.head_ornament:
   en: head ornament
   ja: 頭飾り
-  zh-CN: 头饰
+  zh-CN: 头部饰品
 tag.head_out_of_frame:
   en: head out of frame
   ja: 目元より下で切り出すとエ口いらしい
@@ -39205,7 +39205,7 @@ tag.heads_together:
 tag.headscarf:
   en: headscarf
   ja: 頭巾
-  zh-CN: 头巾
+  zh-CN: 包头巾
 tag.headset:
   en: headset
   ja: インカム
@@ -39817,7 +39817,7 @@ tag.henohenomoheji:
 tag.henshin:
   en: henshin
   ja: 変身
-  zh-CN: 变身
+  zh-CN: 英雄变身
 tag.henshin_pose:
   en: henshin pose
   ja: 変身ポーズ
@@ -39825,7 +39825,7 @@ tag.henshin_pose:
 tag.heraldry:
   en: heraldry
   ja: 紋章学
-  zh-CN: 纹章
+  zh-CN: 纹章学
 tag.herb:
   en: herb
   ja: ハーブ
@@ -40157,7 +40157,7 @@ tag.hilda_(pokemon)_(cosplay):
 tag.hill:
   en: hill
   ja: 丘
-  zh-CN: 山
+  zh-CN: 丘陵
 tag.hilt:
   en: hilt
   ja: 柄
@@ -40373,7 +40373,7 @@ tag.hoe:
 tag.hogtie:
   en: hogtie
   ja: ホグタイ
-  zh-CN: 捆绑
+  zh-CN: 反绑
 tag.hogwarts_school_uniform:
   en: hogwarts school uniform
   ja: ホグワーツの制服
@@ -40429,7 +40429,7 @@ tag.holding_another's_leg:
 tag.holding_another's_legs:
   en: holding another's legs
   ja: 他人の足を掴む
-  zh-CN: 抱着别人的腿
+  zh-CN: 抱着别人的双腿
 tag.holding_another's_tail:
   en: holding another's tail
   ja: 他人の尻尾を掴む
@@ -40453,7 +40453,7 @@ tag.holding_another's_wrist:
 tag.holding_another's_wrists:
   en: holding another's wrists
   ja: 他人の手首を握る
-  zh-CN: 握住别人的手腕
+  zh-CN: 握住别人的双手腕
 tag.holding_arrow:
   en: holding arrow
   ja: 矢印を保持
@@ -41017,11 +41017,11 @@ tag.holding_dustpan:
 tag.holding_ear:
   en: holding ear
   ja: 耳を押さえる
-  zh-CN: 捂着耳朵
+  zh-CN: 捂着一只耳朵
 tag.holding_earphones:
   en: holding earphones
   ja: イヤホンを持っている
-  zh-CN: 拿着耳机
+  zh-CN: 拿着耳塞
 tag.holding_ears:
   en: holding ears
   ja: 耳を押さえる
@@ -41653,7 +41653,7 @@ tag.holding_own_leash:
 tag.holding_own_leg:
   en: holding own leg
   ja: 自分の足を抱えて
-  zh-CN: 抱着自己的腿
+  zh-CN: 抱着自己的一条腿
 tag.holding_own_tail:
   en: holding own tail
   ja: 自分の尻尾を抱えている
@@ -41977,7 +41977,7 @@ tag.holding_scroll:
 tag.holding_scythe:
   en: holding scythe
   ja: 鎌を持っている
-  zh-CN: 拿着镰刀
+  zh-CN: 拿着长柄镰刀
 tag.holding_seashell:
   en: holding seashell
   ja: 貝殻を持っている
@@ -42617,7 +42617,7 @@ tag.holotempus:
 tag.holox:
   en: holox
   ja: ホロライブ6期生
-  zh-CN: 全息图
+  zh-CN: 秘密结社HoloX
 tag.holster:
   en: holster
   ja: ホルスター
@@ -42753,7 +42753,7 @@ tag.hooded_bodysuit:
 tag.hooded_cape:
   en: hooded cape
   ja: フード付きケープ
-  zh-CN: 连帽斗篷
+  zh-CN: 连帽短斗篷
 tag.hooded_capelet:
   en: hooded capelet
   ja: フード付きケープレット
@@ -42801,7 +42801,7 @@ tag.hooded_robe:
 tag.hooded_shirt:
   en: hooded shirt
   ja: フード付きシャツ
-  zh-CN: 连帽衫
+  zh-CN: 连帽T恤
 tag.hooded_shrug:
   en: hooded shrug
   ja: フード付きの肩をすくめる
@@ -42829,7 +42829,7 @@ tag.hoodie:
 tag.hoodie_lift:
   en: hoodie lift
   ja: パーカーリフト
-  zh-CN: 连帽衫撩起
+  zh-CN: 掀起连帽衫
 tag.hoof_shoes:
   en: hoof shoes
   ja: ひづめの靴
@@ -42881,7 +42881,7 @@ tag.hoplite:
 tag.hopping:
   en: hopping
   ja: ホッピング
-  zh-CN: 跳跃
+  zh-CN: 蹦跳
 tag.horikoshi_kouhei_(style):
   en: horikoshi kouhei (style)
   ja: 堀越耕平（作風）
@@ -43525,7 +43525,7 @@ tag.humvee:
 tag.hunched_over:
   en: hunched over
   ja: 猫背
-  zh-CN: 弯腰
+  zh-CN: 弓背
 tag.hungry:
   en: hungry
   ja: 空腹
@@ -43689,7 +43689,7 @@ tag.ice:
 tag.ice_block:
   en: ice block
   ja: アイスブロック
-  zh-CN: 冰块
+  zh-CN: 大冰块
 tag.ice_bucket:
   en: ice bucket
   ja: アイスバケツ
@@ -43777,7 +43777,7 @@ tag.ice_shaver:
 tag.ice_skates:
   en: ice skates
   ja: アイススケート
-  zh-CN: 溜冰鞋
+  zh-CN: 冰刀鞋
 tag.ice_skating:
   en: ice skating
   ja: スケート
@@ -44605,7 +44605,7 @@ tag.index_finger_raised:
 tag.index_fingers_raised:
   en: index fingers raised
   ja: 人差し指を上げた
-  zh-CN: 食指举起
+  zh-CN: 双手食指举起
 tag.index_fingers_together:
   en: index fingers together
   ja: 人差し指を合わせて
@@ -44861,7 +44861,7 @@ tag.inside_creature:
 tag.insignia:
   en: insignia
   ja: 記章
-  zh-CN: 徽章
+  zh-CN: 军徽
 tag.instagram_logo:
   en: instagram logo
   ja: インスタグラムのロゴ
@@ -44885,7 +44885,7 @@ tag.instant_noodles:
 tag.instant_ramen:
   en: instant ramen
   ja: 即席麺
-  zh-CN: 方便面
+  zh-CN: 日式方便面
 tag.instant_soba:
   en: instant soba
   ja: 即席そば
@@ -45053,7 +45053,7 @@ tag.invincible_candy:
 tag.invisible:
   en: invisible
   ja: 透明人間
-  zh-CN: 透明
+  zh-CN: 隐身
 tag.invisible_air_(fate):
   en: invisible air (fate)
   ja: 風王結界
@@ -45101,7 +45101,7 @@ tag.ios_(os):
 tag.ipad:
   en: ipad
   ja: iPad
-  zh-CN: 平板电脑
+  zh-CN: 苹果平板电脑
 tag.iphone:
   en: iphone
   ja: iPhone
@@ -45185,7 +45185,7 @@ tag.ironwork:
 tag.irony:
   en: irony
   ja: 皮肉
-  zh-CN: 讽刺
+  zh-CN: 反讽
 tag.irregular_border:
   en: irregular border
   ja: 不規則な境界線
@@ -45417,7 +45417,7 @@ tag.jacket_grab:
 tag.jacket_lift:
   en: jacket lift
   ja: ジャケットリフト
-  zh-CN: 夹克撩起
+  zh-CN: 掀起夹克
 tag.jacket_on_shoulders:
   en: jacket on shoulders
   ja: 肩にかけたジャケット
@@ -45453,7 +45453,7 @@ tag.jacket_pull:
 tag.jacket_tug:
   en: jacket tug
   ja: ジャケット引っ張り
-  zh-CN: 拉夹克
+  zh-CN: 拉扯夹克
 tag.jade_(gemstone):
   en: jade (gemstone)
   ja: 翡翠（宝石）
@@ -45625,7 +45625,7 @@ tag.jaw_drop:
 tag.jaws:
   en: jaws
   ja: 顎
-  zh-CN: 下巴
+  zh-CN: 上下颚
 tag.jealous:
   en: jealous
   ja: 嫉妬
@@ -45693,7 +45693,7 @@ tag.jessie_(pokemon)_(cosplay):
 tag.jester:
   en: jester
   ja: ジェスター
-  zh-CN: 小丑
+  zh-CN: 弄臣
 tag.jester_cap:
   en: jester cap
   ja: 道化師の帽子
@@ -46013,7 +46013,7 @@ tag.jungle_gym:
 tag.junk:
   en: junk
   ja: ジャンク品
-  zh-CN: 垃圾
+  zh-CN: 废旧杂物
 tag.junkyard:
   en: junkyard
   ja: 廃品置き場
@@ -46497,7 +46497,7 @@ tag.keep_out:
 tag.keffiyeh:
   en: keffiyeh
   ja: クーフィーヤ
-  zh-CN: 头巾
+  zh-CN: 阿拉伯方巾
 tag.kei_car:
   en: kei car
   ja: 軽自動車
@@ -46549,7 +46549,7 @@ tag.kepi:
 tag.kerchief:
   en: kerchief
   ja: ハンカチ
-  zh-CN: 头巾
+  zh-CN: 三角头巾
 tag.kerosene_heater:
   en: kerosene heater
   ja: 石油ストーブ
@@ -46737,7 +46737,7 @@ tag.kimono_dress:
 tag.kimono_lift:
   en: kimono lift
   ja: 着物リフト
-  zh-CN: 和服撩起
+  zh-CN: 掀起和服
 tag.kimono_on_shoulders:
   en: kimono on shoulders
   ja: 肩に着物
@@ -47089,7 +47089,7 @@ tag.kneading_dough:
 tag.knee_armor:
   en: knee armor
   ja: 膝鎧
-  zh-CN: 护膝
+  zh-CN: 护膝甲
 tag.knee_blush:
   en: knee blush
   ja: 膝を赤らめる
@@ -47101,7 +47101,7 @@ tag.knee_boots:
 tag.knee_brace:
   en: knee brace
   ja: 膝ブレース
-  zh-CN: 护膝
+  zh-CN: 护膝支具
 tag.knee_cutout:
   en: knee cutout
   ja: 膝のカットアウト
@@ -47125,7 +47125,7 @@ tag.knee_strap:
 tag.knee_to_chest:
   en: knee to chest
   ja: 膝から胸まで
-  zh-CN: 膝盖到胸部
+  zh-CN: 单膝贴胸
 tag.knee_up:
   en: knee up
   ja: 膝を上げる
@@ -47321,7 +47321,7 @@ tag.kodomo_doushi:
 tag.kodomo_no_hi:
   en: kodomo no hi
   ja: 子供の日
-  zh-CN: 儿童节
+  zh-CN: 日本儿童节
 tag.kogal:
   en: kogal
   ja: ギャル
@@ -47525,7 +47525,7 @@ tag.ko~n:
 tag.kraken:
   en: kraken
   ja: クラーケン
-  zh-CN: 海怪
+  zh-CN: 克拉肯
 tag.kriegsmarine:
   en: kriegsmarine
   ja: ドイツ海軍
@@ -47689,7 +47689,7 @@ tag.lab_coat:
 tag.label:
   en: label
   ja: ラベル
-  zh-CN: 标签
+  zh-CN: 产品标签
 tag.labia_piercing:
   en: labia piercing
   ja: 陰唇ピアス
@@ -47925,7 +47925,7 @@ tag.lace_trim:
 tag.laces:
   en: laces
   ja: ひも
-  zh-CN: 鞋带
+  zh-CN: 系带
 tag.lacrosse:
   en: lacrosse
   ja: ラクロス
@@ -48637,7 +48637,7 @@ tag.leaning_to_the_side:
 tag.leash:
   en: leash
   ja: 手綱
-  zh-CN: 皮带
+  zh-CN: 牵引绳
 tag.leash_in_mouth:
   en: leash in mouth
   ja: 口の中のリード
@@ -48645,7 +48645,7 @@ tag.leash_in_mouth:
 tag.leash_pull:
   en: leash pull
   ja: リードを引く
-  zh-CN: 拉皮带
+  zh-CN: 拉牵引绳
 tag.leather:
   en: leather
   ja: 皮革
@@ -48917,7 +48917,7 @@ tag.legwear_cutout:
 tag.legwear_garter:
   en: legwear garter
   ja: ガーターソックス
-  zh-CN: 吊袜带
+  zh-CN: 大腿袜环
 tag.lei:
   en: lei
   ja: レイ
@@ -49049,7 +49049,7 @@ tag.leotard_aside:
 tag.leotard_lift:
   en: leotard lift
   ja: レオタードリフト
-  zh-CN: 掀起紧身衣
+  zh-CN: 掀起体操紧身衣
 tag.leotard_peek:
   en: leotard peek
   ja: レオタードのぞき見
@@ -49057,11 +49057,11 @@ tag.leotard_peek:
 tag.leotard_pull:
   en: leotard pull
   ja: レオタードプル
-  zh-CN: 拉紧身衣
+  zh-CN: 拉体操紧身衣
 tag.leotard_tug:
   en: leotard tug
   ja: レオタード綱引き
-  zh-CN: 拉扯紧身衣
+  zh-CN: 拉扯体操紧身衣
 tag.leotard_under_clothes:
   en: leotard under clothes
   ja: レオタードアンダーパンツ
@@ -49493,7 +49493,7 @@ tag.lightning_glare:
 tag.lights:
   en: lights
   ja: ライト
-  zh-CN: 灯
+  zh-CN: 灯饰
 tag.lightsaber:
   en: lightsaber
   ja: ライトセーバー
@@ -49785,7 +49785,7 @@ tag.liquid_weapon:
 tag.liquor:
   en: liquor
   ja: 酒
-  zh-CN: 酒
+  zh-CN: 烈酒
 tag.list:
   en: list
   ja: リスト
@@ -50089,7 +50089,7 @@ tag.long_fangs:
 tag.long_finger:
   en: long finger
   ja: 長い指
-  zh-CN: 长手指
+  zh-CN: 单指过长
 tag.long_fingernails:
   en: long fingernails
   ja: 長い爪
@@ -50129,7 +50129,7 @@ tag.long_legs:
 tag.long_mustache:
   en: long mustache
   ja: 長い口ひげ
-  zh-CN: 长胡子
+  zh-CN: 长髭
 tag.long_neck:
   en: long neck
   ja: 長い首
@@ -50277,7 +50277,7 @@ tag.looking_at_hand:
 tag.looking_at_hands:
   en: looking at hands
   ja: 手を見て
-  zh-CN: 看着手
+  zh-CN: 看着双手
 tag.looking_at_mirror:
   en: looking at mirror
   ja: 鏡を見ている
@@ -50941,7 +50941,7 @@ tag.macaw:
 tag.mace:
   en: mace
   ja: メイス
-  zh-CN: 狼牙棒
+  zh-CN: 钉头锤
 tag.machete:
   en: machete
   ja: マチェット
@@ -51301,7 +51301,7 @@ tag.male_underwear_peek:
 tag.male_underwear_pull:
   en: male underwear pull
   ja: 男性の下着を引っ張る
-  zh-CN: 拉男内裤
+  zh-CN: 拉男性内衣
 tag.male_with_breasts:
   en: male with breasts
   ja: 巨乳男子
@@ -51373,7 +51373,7 @@ tag.mandibles:
 tag.mandragora:
   en: mandragora
   ja: マンドラゴラ
-  zh-CN: 曼德拉草
+  zh-CN: 曼德拉草魔
 tag.mandrake:
   en: mandrake
   ja: マンドラゴラ
@@ -51553,7 +51553,7 @@ tag.mark_under_eye:
 tag.marker:
   en: marker
   ja: マーカー
-  zh-CN: 标记
+  zh-CN: 记号笔
 tag.market:
   en: market
   ja: 市場
@@ -51701,7 +51701,7 @@ tag.mask_over_one_eye:
 tag.mask_pull:
   en: mask pull
   ja: マスクプル
-  zh-CN: 拉面罩
+  zh-CN: 拉面具
 tag.masked:
   en: masked
   ja: マスクされた
@@ -51841,7 +51841,7 @@ tag.material_growth:
 tag.materializing:
   en: materializing
   ja: 物質化する
-  zh-CN: 物化
+  zh-CN: 实体化
 tag.math:
   en: math
   ja: 数学
@@ -52157,7 +52157,7 @@ tag.medicine:
 tag.medicine_bottle:
   en: medicine bottle
   ja: 薬瓶
-  zh-CN: 药瓶
+  zh-CN: 药水瓶
 tag.medicine_box:
   en: medicine box
   ja: 薬箱
@@ -52417,7 +52417,7 @@ tag.mermaid_out_of_environment:
 tag.merman:
   en: merman
   ja: マーマン
-  zh-CN: 人鱼
+  zh-CN: 男人鱼
 tag.merry_christmas:
   en: merry christmas
   ja: メリクリ
@@ -52425,7 +52425,7 @@ tag.merry_christmas:
 tag.mesh:
   en: mesh
   ja: メッシュ
-  zh-CN: 网格
+  zh-CN: 网眼布料
 tag.meslamtaea_(weapon):
   en: meslamtaea (weapon)
   ja: メスラムタエア（武器）
@@ -52549,7 +52549,7 @@ tag.metamoran_vest:
 tag.meteor:
   en: meteor
   ja: 流星
-  zh-CN: 流星
+  zh-CN: 陨石
 tag.meteor_shower:
   en: meteor shower
   ja: 流星群
@@ -52717,7 +52717,7 @@ tag.midriff_sarashi:
 tag.midriff_tattoo:
   en: midriff tattoo
   ja: へそタトゥー
-  zh-CN: 腹部纹身
+  zh-CN: 腰腹纹身
 tag.mifune_takashi_(style):
   en: mifune takashi (style)
   ja: 三船貴史（スタイル）
@@ -52801,7 +52801,7 @@ tag.military_dress_uniform:
 tag.military_fatigues:
   en: military fatigues
   ja: 軍用疲労
-  zh-CN: 军装
+  zh-CN: 迷彩作战服
 tag.military_hat:
   en: military hat
   ja: 軍帽
@@ -54365,7 +54365,7 @@ tag.muchourin:
 tag.mucus:
   en: mucus
   ja: 粘液
-  zh-CN: 粘液
+  zh-CN: 鼻涕
 tag.mud:
   en: mud
   ja: どろ
@@ -54493,7 +54493,7 @@ tag.multicolored_buttons:
 tag.multicolored_cape:
   en: multicolored cape
   ja: 色とりどりのマント
-  zh-CN: 五彩斗篷
+  zh-CN: 五彩披风
 tag.multicolored_capelet:
   en: multicolored capelet
   ja: 色とりどりのケープレット
@@ -55277,7 +55277,7 @@ tag.n_corp._fanatic_(identity)_(project_moon):
 tag.nabe:
   en: nabe
   ja: 鍋
-  zh-CN: 火锅
+  zh-CN: 日式锅物
 tag.nagant_m1895:
   en: nagant m1895
   ja: ナガンM1895
@@ -55377,7 +55377,7 @@ tag.naked_bowtie:
 tag.naked_cape:
   en: naked cape
   ja: 裸ケープ
-  zh-CN: 裸斗篷
+  zh-CN: 裸体披风
 tag.naked_capelet:
   en: naked capelet
   ja: 裸のケープレット
@@ -56025,7 +56025,7 @@ tag.neon_palette:
 tag.neon_sign:
   en: neon sign
   ja: ネオンサイン
-  zh-CN: 霓虹灯
+  zh-CN: 霓虹招牌
 tag.neon_trim:
   en: neon trim
   ja: ネオントリム
@@ -56249,7 +56249,7 @@ tag.nightclub:
 tag.nightgown:
   en: nightgown
   ja: 睡袍
-  zh-CN: 睡衣
+  zh-CN: 睡裙
 tag.nightgown_lift:
   en: nightgown lift
   ja: ナイトガウンリフト
@@ -56641,7 +56641,7 @@ tag.no_feet:
 tag.no_fingers:
   en: no fingers
   ja: 指なし
-  zh-CN: 缺少手指
+  zh-CN: 无手指
 tag.no_freckles:
   en: no freckles
   ja: そばかすがない
@@ -57313,7 +57313,7 @@ tag.oak_leaf:
 tag.oar:
   en: oar
   ja: 櫂
-  zh-CN: 桨
+  zh-CN: 船桨
 tag.oarfish:
   en: oarfish
   ja: リュウグウノツカイ
@@ -57917,7 +57917,7 @@ tag.on_cushion:
 tag.on_desk:
   en: on desk
   ja: 机の上
-  zh-CN: 在桌子上
+  zh-CN: 在书桌上
 tag.on_floor:
   en: on floor
   ja: 床の上で
@@ -58017,7 +58017,7 @@ tag.on_roof:
 tag.on_rooftop:
   en: on rooftop
   ja: 屋上で
-  zh-CN: 在屋顶上
+  zh-CN: 在天台上
 tag.on_scooter:
   en: on scooter
   ja: スクーターに乗って
@@ -58025,7 +58025,7 @@ tag.on_scooter:
 tag.on_ship:
   en: on ship
   ja: 船上
-  zh-CN: 在船上
+  zh-CN: 在轮船上
 tag.on_shoulder:
   en: on shoulder
   ja: 肩に
@@ -58077,7 +58077,7 @@ tag.on_train:
 tag.on_tree:
   en: on tree
   ja: 木の上で
-  zh-CN: 在树上
+  zh-CN: 贴在树干上
 tag.on_tree_stump:
   en: on tree stump
   ja: 木の切り株の上に
@@ -58189,7 +58189,7 @@ tag.oni:
 tag.oni_costume:
   en: oni costume
   ja: 鬼の衣装
-  zh-CN: 鬼服装
+  zh-CN: 鬼怪服装
 tag.oni_horns:
   en: oni horns
   ja: 鬼の角
@@ -58581,7 +58581,7 @@ tag.orange_bandana:
 tag.orange_bandeau:
   en: orange bandeau
   ja: オレンジ色のバンドー
-  zh-CN: 橙色抹胸
+  zh-CN: 橙色胸带
 tag.orange_belt:
   en: orange belt
   ja: オレンジ色のベルト
@@ -58629,7 +58629,7 @@ tag.orange_camisole:
 tag.orange_cape:
   en: orange cape
   ja: オレンジ色のマント
-  zh-CN: 橙色斗篷
+  zh-CN: 橙色披风
 tag.orange_capelet:
   en: orange capelet
   ja: オレンジ色のケープレット
@@ -58817,7 +58817,7 @@ tag.orange_male_underwear:
 tag.orange_mittens:
   en: orange mittens
   ja: オレンジ色のミトン
-  zh-CN: 橙色手套
+  zh-CN: 橙色连指手套
 tag.orange_moon:
   en: orange moon
   ja: オレンジムーン
@@ -58909,7 +58909,7 @@ tag.orange_sarong:
 tag.orange_sash:
   en: orange sash
   ja: オレンジ色のサッシュ
-  zh-CN: 橙色腰带
+  zh-CN: 橙色腰封
 tag.orange_scales:
   en: orange scales
   ja: オレンジ色の鱗
@@ -58929,7 +58929,7 @@ tag.orange_scrunchie:
 tag.orange_shawl:
   en: orange shawl
   ja: オレンジのショール
-  zh-CN: 橙色披肩
+  zh-CN: 橙色披巾
 tag.orange_shirt:
   en: orange shirt
   ja: オレンジ色のシャツ
@@ -59445,7 +59445,7 @@ tag.overall_shorts:
 tag.overall_skirt:
   en: overall skirt
   ja: サロペットスカート
-  zh-CN: 背带裙
+  zh-CN: 围裙背带裙
 tag.overalls:
   en: overalls
   ja: サロペット
@@ -59465,7 +59465,7 @@ tag.overexposure:
 tag.overflowing:
   en: overflowing
   ja: 溢れる
-  zh-CN: 溢出
+  zh-CN: 溢满
 tag.overgrown:
   en: overgrown
   ja: 生い茂った
@@ -59661,7 +59661,7 @@ tag.pacifier:
 tag.package:
   en: package
   ja: 包み
-  zh-CN: 包
+  zh-CN: 包裹
 tag.packet:
   en: packet
   ja: パケット
@@ -59805,7 +59805,7 @@ tag.painterly:
 tag.painting_(action):
   en: painting (action)
   ja: 絵を描く（アクション）
-  zh-CN: 绘画（动作）
+  zh-CN: 上色（动作）
 tag.painting_(object):
   en: painting (object)
   ja: 絵中絵
@@ -59849,7 +59849,7 @@ tag.paizuri_under_clothes:
 tag.pajamas:
   en: pajamas
   ja: パジャマ
-  zh-CN: 睡衣
+  zh-CN: 睡衣裤
 tag.pajamas_challenge_(meme):
   en: pajamas challenge (meme)
   ja: 睡衣挑戰
@@ -59861,7 +59861,7 @@ tag.pajamas_lift:
 tag.pajamas_pull:
   en: pajamas pull
   ja: パジャマプル
-  zh-CN: 拉睡衣
+  zh-CN: 拉睡衣裤
 tag.paku_paku_desuwa:
   en: paku paku desuwa
   ja: パクパクですわ
@@ -60049,7 +60049,7 @@ tag.panther_boy:
 tag.panther_ears:
   en: panther ears
   ja: ヒョウの耳
-  zh-CN: 豹耳
+  zh-CN: 黑豹耳
 tag.panther_girl:
   en: panther girl
   ja: パンサーガール
@@ -60057,7 +60057,7 @@ tag.panther_girl:
 tag.panther_print:
   en: panther print
   ja: パンサープリント
-  zh-CN: 豹纹
+  zh-CN: 黑豹纹
 tag.panther_tail:
   en: panther tail
   ja: パンサーテール
@@ -60169,7 +60169,7 @@ tag.pants_around_one_leg:
 tag.pants_lift:
   en: pants lift
   ja: パンツリフト
-  zh-CN: 撩裤子
+  zh-CN: 掀起裤子
 tag.pants_pull:
   en: pants pull
   ja: ズボンを引っ張る
@@ -60221,7 +60221,7 @@ tag.panty_gag:
 tag.panty_lift:
   en: panty lift
   ja: パンティリフト
-  zh-CN: 内裤撩起
+  zh-CN: 掀起内裤
 tag.panty_mask:
   en: panty mask
   ja: パンティマスク
@@ -60245,11 +60245,11 @@ tag.panty_tag:
 tag.panty_tug:
   en: panty tug
   ja: パンティー引っ張り
-  zh-CN: 内裤拖拽
+  zh-CN: 拉扯内裤
 tag.pantyhose:
   en: pantyhose
   ja: タイツ
-  zh-CN: 裤袜
+  zh-CN: 连裤袜
 tag.pantyhose_around_one_leg:
   en: pantyhose around one leg
   ja: 片足の周りのパンスト
@@ -60353,7 +60353,7 @@ tag.paper_crane:
 tag.paper_cutout:
   en: paper cutout
   ja: 切り紙
-  zh-CN: 剪纸
+  zh-CN: 纸片拼贴风格
 tag.paper_doll:
   en: paper doll
   ja: 紙人形
@@ -60501,7 +60501,7 @@ tag.parka:
 tag.parking_garage:
   en: parking garage
   ja: 駐車場
-  zh-CN: 停车场
+  zh-CN: 停车楼
 tag.parking_lot:
   en: parking lot
   ja: 駐車場
@@ -60737,7 +60737,7 @@ tag.patterned_legwear:
 tag.patting:
   en: patting
   ja: なでる
-  zh-CN: 拍打
+  zh-CN: 轻拍
 tag.patting_back:
   en: patting back
   ja: 背中を撫でる
@@ -60757,7 +60757,7 @@ tag.pause_button:
 tag.pavement:
   en: pavement
   ja: 石畳
-  zh-CN: 人行道
+  zh-CN: 铺装路面
 tag.paw-shaped_pupils:
   en: paw-shaped pupils
   ja: 足の形をした瞳孔
@@ -61021,7 +61021,7 @@ tag.pedophile:
 tag.pee:
   en: pee
   ja: 尿
-  zh-CN: 撒尿
+  zh-CN: 尿液
 tag.pee_in_container:
   en: pee in container
   ja: 容器に放尿
@@ -61113,7 +61113,7 @@ tag.pelican:
 tag.pelt:
   en: pelt
   ja: 毛皮
-  zh-CN: 毛皮
+  zh-CN: 兽皮
 tag.pelvic_curtain:
   en: pelvic curtain
   ja: 前垂れ
@@ -61125,7 +61125,7 @@ tag.pelvic_curtain_aside:
 tag.pelvic_curtain_lift:
   en: pelvic curtain lift
   ja: 骨盤カーテンリフト
-  zh-CN: 胯部帘布撩起
+  zh-CN: 掀起腰垂布
 tag.pelvic_thrust:
   en: pelvic thrust
   ja: 骨盤推力
@@ -62113,7 +62113,7 @@ tag.pilot_uniform:
 tag.piloting:
   en: piloting
   ja: 操縦
-  zh-CN: 驾驶
+  zh-CN: 操控机体
 tag.pimp:
   en: pimp
   ja: ポン引き
@@ -62121,11 +62121,11 @@ tag.pimp:
 tag.pin:
   en: pin
   ja: ピン
-  zh-CN: 针
+  zh-CN: 别针
 tag.pin_(hollow_knight):
   en: pin (hollow knight)
   ja: ピン（ホロウナイト）
-  zh-CN: 针（空洞骑士）
+  zh-CN: 细剑（空洞骑士）
 tag.pinafore_dress:
   en: pinafore dress
   ja: ピナフォア
@@ -62137,7 +62137,7 @@ tag.pince-nez:
 tag.pincers:
   en: pincers
   ja: ペンチ
-  zh-CN: 钳子
+  zh-CN: 螯钳
 tag.pinching:
   en: pinching
   ja: つねる
@@ -62229,7 +62229,7 @@ tag.pink_bandana:
 tag.pink_bandeau:
   en: pink bandeau
   ja: ピンクのバンドー
-  zh-CN: 粉色抹胸
+  zh-CN: 粉色胸带
 tag.pink_belt:
   en: pink belt
   ja: ピンクのベルト
@@ -62305,7 +62305,7 @@ tag.pink_cape:
 tag.pink_capelet:
   en: pink capelet
   ja: ピンクのケープレット
-  zh-CN: 粉色披肩
+  zh-CN: 粉色短披风
 tag.pink_car:
   en: pink car
   ja: ピンクの車
@@ -62397,7 +62397,7 @@ tag.pink_fur:
 tag.pink_garter_belt:
   en: pink garter belt
   ja: ピンクのガーターベルト
-  zh-CN: 粉色吊袜带
+  zh-CN: 粉色吊袜腰封
 tag.pink_garter_straps:
   en: pink garter straps
   ja: ピンクのガーターストラップ
@@ -62553,7 +62553,7 @@ tag.pink_negligee:
 tag.pink_nightgown:
   en: pink nightgown
   ja: ピンクのナイトガウン
-  zh-CN: 粉色睡衣
+  zh-CN: 粉色睡裙
 tag.pink_nose:
   en: pink nose
   ja: ピンクの鼻
@@ -63105,7 +63105,7 @@ tag.plaid_bra:
 tag.plaid_capelet:
   en: plaid capelet
   ja: チェック柄のケープ
-  zh-CN: 格子披肩
+  zh-CN: 格子短斗篷
 tag.plaid_clothes:
   en: plaid clothes
   ja: チェック柄の服
@@ -63709,7 +63709,7 @@ tag.pocky_kiss:
 tag.podium:
   en: podium
   ja: 表彰台
-  zh-CN: 讲台
+  zh-CN: 颁奖台
 tag.poem:
   en: poem
   ja: 詩
@@ -64081,7 +64081,7 @@ tag.police_uniform:
 tag.policeman:
   en: policeman
   ja: 警官
-  zh-CN: 警察
+  zh-CN: 男警察
 tag.policewoman:
   en: policewoman
   ja: 女警
@@ -64197,7 +64197,7 @@ tag.polka_dot_legwear:
 tag.polka_dot_neckerchief:
   en: polka dot neckerchief
   ja: 水玉模様のネッカチーフ
-  zh-CN: 圆点围巾
+  zh-CN: 圆点领巾
 tag.polka_dot_necktie:
   en: polka dot necktie
   ja: 水玉模様のネクタイ
@@ -64341,7 +64341,7 @@ tag.pon_de_ring:
 tag.poncho:
   en: poncho
   ja: ポンチョ
-  zh-CN: 雨披
+  zh-CN: 斗篷
 tag.pond:
   en: pond
   ja: 池
@@ -64517,7 +64517,7 @@ tag.pose_imitation:
 tag.poses:
   en: poses
   ja: ポーズ
-  zh-CN: 姿势
+  zh-CN: 多种姿势
 tag.posing:
   en: posing
   ja: ポーズをとる
@@ -65217,7 +65217,7 @@ tag.print_mug:
 tag.print_neckerchief:
   en: print neckerchief
   ja: プリントネッカチーフ
-  zh-CN: 印花围巾
+  zh-CN: 印花颈巾
 tag.print_necktie:
   en: print necktie
   ja: プリントネクタイ
@@ -65321,7 +65321,7 @@ tag.print_umbrella:
 tag.print_vest:
   en: print vest
   ja: プリントベスト
-  zh-CN: 印花背心
+  zh-CN: 印花马甲
 tag.printer:
   en: printer
   ja: プリンター
@@ -65493,7 +65493,7 @@ tag.prosthetic_hand:
 tag.prosthetic_leg:
   en: prosthetic leg
   ja: 義足
-  zh-CN: 假肢
+  zh-CN: 假肢腿
 tag.prosthetic_weapon:
   en: prosthetic weapon
   ja: 義手武器
@@ -65901,7 +65901,7 @@ tag.purple_ascot:
 tag.purple_aura:
   en: purple aura
   ja: 紫のオーラ
-  zh-CN: 紫色光环
+  zh-CN: 紫色气场
 tag.purple_babydoll:
   en: purple babydoll
   ja: 紫色のベビードール
@@ -65921,7 +65921,7 @@ tag.purple_bandana:
 tag.purple_bandeau:
   en: purple bandeau
   ja: 紫色のバンドー
-  zh-CN: 紫色抹胸
+  zh-CN: 紫色胸带
 tag.purple_belt:
   en: purple belt
   ja: 紫のベルト
@@ -65941,7 +65941,7 @@ tag.purple_bodysuit:
 tag.purple_bonnet:
   en: purple bonnet
   ja: 紫色のボンネット
-  zh-CN: 紫色帽子
+  zh-CN: 紫色系带帽
 tag.purple_boots:
   en: purple boots
   ja: 紫のブーツ
@@ -65989,7 +65989,7 @@ tag.purple_cape:
 tag.purple_capelet:
   en: purple capelet
   ja: 紫のケープレット
-  zh-CN: 紫色披肩
+  zh-CN: 紫色短披风
 tag.purple_cardigan:
   en: purple cardigan
   ja: 紫のカーディガン
@@ -66005,7 +66005,7 @@ tag.purple_choker:
 tag.purple_cloak:
   en: purple cloak
   ja: 紫のマント
-  zh-CN: 紫色斗篷
+  zh-CN: 紫色长斗篷
 tag.purple_clouds:
   en: purple clouds
   ja: 紫の雲
@@ -66065,7 +66065,7 @@ tag.purple_fur:
 tag.purple_garter_belt:
   en: purple garter belt
   ja: 紫のガーターベルト
-  zh-CN: 紫色吊袜带
+  zh-CN: 紫色吊袜腰封
 tag.purple_garter_straps:
   en: purple garter straps
   ja: 紫色のガーターストラップ
@@ -66197,7 +66197,7 @@ tag.purple_mask:
 tag.purple_mittens:
   en: purple mittens
   ja: 紫のミトン
-  zh-CN: 紫色手套
+  zh-CN: 紫色连指手套
 tag.purple_moon:
   en: purple moon
   ja: 紫の月
@@ -66217,7 +66217,7 @@ tag.purple_necktie:
 tag.purple_nightgown:
   en: purple nightgown
   ja: 紫のナイトガウン
-  zh-CN: 紫色睡衣
+  zh-CN: 紫色睡裙
 tag.purple_nipples:
   en: purple nipples
   ja: 紫色の乳首
@@ -66305,7 +66305,7 @@ tag.purple_sarong:
 tag.purple_sash:
   en: purple sash
   ja: 紫の帯
-  zh-CN: 紫色腰带
+  zh-CN: 紫色绶带
 tag.purple_scales:
   en: purple scales
   ja: 紫色の鱗
@@ -66433,7 +66433,7 @@ tag.purple_tunic:
 tag.purple_turban:
   en: purple turban
   ja: 紫のターバン
-  zh-CN: 紫色头巾
+  zh-CN: 紫色缠头巾
 tag.purple_umbrella:
   en: purple umbrella
   ja: 紫の傘
@@ -66605,7 +66605,7 @@ tag.puzzle:
 tag.puzzle_piece:
   en: puzzle piece
   ja: パズルのピース
-  zh-CN: 拼图
+  zh-CN: 拼图碎片
 tag.pyra_(xenoblade)_(cosplay):
   en: pyra (xenoblade) (cosplay)
   ja: パイラ (ゼノブレイド) (コスプレ)
@@ -67033,7 +67033,7 @@ tag.race_queen:
 tag.race_vehicle:
   en: race vehicle
   ja: レース車両
-  zh-CN: 赛车
+  zh-CN: 竞速载具
 tag.racecar:
   en: racecar
   ja: レーシングカー
@@ -67045,7 +67045,7 @@ tag.racerback:
 tag.racetrack:
   en: racetrack
   ja: サーキット
-  zh-CN: 赛马场
+  zh-CN: 赛道
 tag.racing:
   en: racing
   ja: 競泳
@@ -67117,7 +67117,7 @@ tag.radio_tower:
 tag.radish:
   en: radish
   ja: 大根
-  zh-CN: 萝卜
+  zh-CN: 小红萝卜
 tag.rafflesia_(flower):
   en: rafflesia (flower)
   ja: ラフレシア（花）
@@ -67269,7 +67269,7 @@ tag.raise_buckle:
 tag.raised_eyebrow:
   en: raised eyebrow
   ja: 上がった眉毛
-  zh-CN: 扬起眉毛
+  zh-CN: 单眉上扬
 tag.raised_eyebrows:
   en: raised eyebrows
   ja: 眉毛を上げた
@@ -67281,7 +67281,7 @@ tag.raised_fist:
 tag.raised_fists:
   en: raised fists
   ja: 拳を上げた
-  zh-CN: 举起拳头
+  zh-CN: 举起双拳
 tag.raised_inner_eyebrows:
   en: raised inner eyebrows
   ja: 眉毛の内側を上げた
@@ -67405,7 +67405,7 @@ tag.rattail:
 tag.rattle:
   en: rattle
   ja: がらがら
-  zh-CN: 拨浪鼓
+  zh-CN: 婴儿摇铃
 tag.rattle_drum:
   en: rattle drum
   ja: ガラガラ太鼓
@@ -67669,7 +67669,7 @@ tag.red_ascot:
 tag.red_aura:
   en: red aura
   ja: 赤いオーラ
-  zh-CN: 红色光环
+  zh-CN: 红色光晕
 tag.red_babydoll:
   en: red babydoll
   ja: 赤いベビードール
@@ -67761,7 +67761,7 @@ tag.red_buruma:
 tag.red_bustier:
   en: red bustier
   ja: 赤いビスチェ
-  zh-CN: 红色紧身胸衣
+  zh-CN: 红色束胸
 tag.red_butterfly:
   en: red butterfly
   ja: 赤い蝶
@@ -67781,7 +67781,7 @@ tag.red_cape:
 tag.red_capelet:
   en: red capelet
   ja: 红披肩
-  zh-CN: 红色披肩
+  zh-CN: 红色短斗篷
 tag.red_car:
   en: red car
   ja: 赤い車
@@ -67901,7 +67901,7 @@ tag.red_fur:
 tag.red_garter_belt:
   en: red garter belt
   ja: 赤いガーターベルト
-  zh-CN: 红色吊袜带
+  zh-CN: 红色吊袜腰封
 tag.red_garter_straps:
   en: red garter straps
   ja: 赤いガーターストラップ
@@ -68381,7 +68381,7 @@ tag.red_trim:
 tag.red_tube_top:
   en: red tube top
   ja: 赤いチューブトップ
-  zh-CN: 红色抹胸
+  zh-CN: 红色长款抹胸
 tag.red_tulip:
   en: red tulip
   ja: 赤いチューリップ
@@ -69297,7 +69297,7 @@ tag.rider_kick:
 tag.riding:
   en: riding
   ja: 乗る
-  zh-CN: 骑马
+  zh-CN: 骑乘
 tag.riding_animal:
   en: riding animal
   ja: 乗馬動物
@@ -69705,7 +69705,7 @@ tag.rolling_pin:
 tag.rolling_sleeves_up:
   en: rolling sleeves up
   ja: 袖をまくる
-  zh-CN: 卷起袖子
+  zh-CN: 正在卷袖子
 tag.rolling_suitcase:
   en: rolling suitcase
   ja: キャリーケース
@@ -70037,7 +70037,7 @@ tag.ruffling_hair:
 tag.rug:
   en: rug
   ja: 敷物
-  zh-CN: 地毯
+  zh-CN: 小地毯
 tag.rugby_ball:
   en: rugby ball
   ja: ラグビーボール
@@ -70237,7 +70237,7 @@ tag.saddlebags:
 tag.sadism:
   en: sadism
   ja: サディスト
-  zh-CN: 虐待狂
+  zh-CN: 施虐
 tag.safari_jacket:
   en: safari jacket
   ja: サファリジャケット
@@ -70329,7 +70329,7 @@ tag.sailing:
 tag.sailing_ship:
   en: sailing ship
   ja: 帆船
-  zh-CN: 帆船
+  zh-CN: 大帆船
 tag.sailor:
   en: sailor
   ja: 水兵服
@@ -70345,7 +70345,7 @@ tag.sailor_collar:
 tag.sailor_collar_lift:
   en: sailor collar lift
   ja: セーラーカラーリフト
-  zh-CN: 水手领掀起
+  zh-CN: 掀起水手领
 tag.sailor_dress:
   en: sailor dress
   ja: セーラーワンピース
@@ -70661,7 +70661,7 @@ tag.sandals:
 tag.sandbag:
   en: sandbag
   ja: 土嚢
-  zh-CN: 沙袋
+  zh-CN: 防洪沙袋
 tag.sandbox:
   en: sandbox
   ja: サンドボックス
@@ -70777,7 +70777,7 @@ tag.sarong:
 tag.sarong_lift:
   en: sarong lift
   ja: サロンリフト
-  zh-CN: 纱笼掀起
+  zh-CN: 掀起纱笼
 tag.saru_(style):
   en: saru (style)
   ja: さる（スタイル）
@@ -70933,7 +70933,7 @@ tag.sazae-san_food_gag_(meme):
 tag.scabbard:
   en: scabbard
   ja: 鞘
-  zh-CN: 刀鞘
+  zh-CN: 剑鞘
 tag.scaffolding:
   en: scaffolding
   ja: 足場
@@ -70965,7 +70965,7 @@ tag.scanlines:
 tag.scapular:
   en: scapular
   ja: 肩甲骨
-  zh-CN: 肩胛骨
+  zh-CN: 圣衣带
 tag.scar:
   en: scar
   ja: 傷跡
@@ -70981,7 +70981,7 @@ tag.scar_across_eyebrow:
 tag.scar_across_eyes:
   en: scar across eyes
   ja: 目を横切る傷跡
-  zh-CN: 眼睛上有疤痕
+  zh-CN: 横跨双眼的疤痕
 tag.scar_on_arm:
   en: scar on arm
   ja: 腕の傷跡
@@ -71221,7 +71221,7 @@ tag.scientist:
 tag.scimitar:
   en: scimitar
   ja: シミター
-  zh-CN: 弯刀
+  zh-CN: 阿拉伯弯刀
 tag.scissor_blade_(kill_la_kill):
   en: scissor blade (kill la kill)
   ja: 片太刀バサミ
@@ -71317,7 +71317,7 @@ tag.scouter:
 tag.scowl:
   en: scowl
   ja: ニラマレ
-  zh-CN: 皱眉
+  zh-CN: 怒容
 tag.scrape:
   en: scrape
   ja: こする
@@ -72369,7 +72369,7 @@ tag.shaking_head:
 tag.shako_cap:
   en: shako cap
   ja: シャコー帽
-  zh-CN: 军帽
+  zh-CN: 高筒军帽
 tag.shakujou:
   en: shakujou
   ja: 錫杖
@@ -72409,7 +72409,7 @@ tag.shampoo_hat:
 tag.shamrock:
   en: shamrock
   ja: シャムロック
-  zh-CN: 三叶草
+  zh-CN: 爱尔兰三叶草
 tag.shanghai_neckline:
   en: shanghai neckline
   ja: 上海ネックライン
@@ -72429,7 +72429,7 @@ tag.shapes:
 tag.shards:
   en: shards
   ja: 欠片
-  zh-CN: 碎片
+  zh-CN: 尖锐碎片
 tag.shared_bathing:
   en: shared bathing
   ja: 共同入浴
@@ -72617,7 +72617,7 @@ tag.sheaf:
 tag.shears:
   en: shears
   ja: ハサミ
-  zh-CN: 剪刀
+  zh-CN: 大剪刀
 tag.sheath:
   en: sheath
   ja: 鞘
@@ -73033,7 +73033,7 @@ tag.shiny_swimsuit:
 tag.ship:
   en: ship
   ja: 船
-  zh-CN: 船
+  zh-CN: 轮船
 tag.ship's_wheel:
   en: ship's wheel
   ja: 舵輪
@@ -73097,7 +73097,7 @@ tag.shiritori:
 tag.shiroko_(blue_archive)_(cosplay):
   en: shiroko (blue archive) (cosplay)
   ja: 白子 (ブルーアーカイブ) (コスプレ)
-  zh-CN: 白子（cosplay）
+  zh-CN: 白子（碧蓝档案）（cosplay）
 tag.shiromuku:
   en: shiromuku
   ja: 白無垢
@@ -73149,7 +73149,7 @@ tag.shirt_in_mouth:
 tag.shirt_lift:
   en: shirt lift
   ja: シャツたくし上げ
-  zh-CN: 掀衬衫
+  zh-CN: 掀起衬衫
 tag.shirt_on_shoulders:
   en: shirt on shoulders
   ja: 肩にシャツ
@@ -73205,7 +73205,7 @@ tag.shirt_tucked_in:
 tag.shirt_tug:
   en: shirt tug
   ja: 拖拽衬衣
-  zh-CN: 扯衬衫
+  zh-CN: 拉扯衬衫
 tag.shirt_under_dress:
   en: shirt under dress
   ja: ドレスの下のシャツ
@@ -73289,7 +73289,7 @@ tag.shoe_soles:
 tag.shoe_strap:
   en: shoe strap
   ja: 靴紐
-  zh-CN: 鞋带
+  zh-CN: 鞋扣带
 tag.shoebill:
   en: shoebill
   ja: ハシビロコウ
@@ -73565,7 +73565,7 @@ tag.shoulder_bag:
 tag.shoulder_belt:
   en: shoulder belt
   ja: ショルダーベルト
-  zh-CN: 肩带
+  zh-CN: 绶带
 tag.shoulder_blades:
   en: shoulder blades
   ja: 肩甲骨
@@ -73625,7 +73625,7 @@ tag.shoulder_pads:
 tag.shoulder_patch:
   en: shoulder patch
   ja: ショルダーパッチ
-  zh-CN: 肩章
+  zh-CN: 肩部布章
 tag.shoulder_peek:
   en: shoulder peek
   ja: 肩のぞき見
@@ -73633,7 +73633,7 @@ tag.shoulder_peek:
 tag.shoulder_plates:
   en: shoulder plates
   ja: ショルダープレート
-  zh-CN: 肩板
+  zh-CN: 肩甲板
 tag.shoulder_sash:
   en: shoulder sash
   ja: 斜肩挂幅
@@ -73889,7 +73889,7 @@ tag.side_braid:
 tag.side_braids:
   en: side braids
   ja: サイド三つ編み
-  zh-CN: 侧辫子
+  zh-CN: 双侧辫子
 tag.side_cape:
   en: side cape
   ja: サイドケープ
@@ -74109,11 +74109,11 @@ tag.signature:
 tag.signing:
   en: signing
   ja: 署名する
-  zh-CN: 签名
+  zh-CN: 手语
 tag.signpost:
   en: signpost
   ja: 道標
-  zh-CN: 路标
+  zh-CN: 路标柱
 tag.silence_glaive:
   en: silence glaive
   ja: 沈黙のグレイブ
@@ -74169,7 +74169,7 @@ tag.silver_bodysuit:
 tag.silver_bracelet:
   en: silver bracelet
   ja: シルバーブレスレット
-  zh-CN: 银手镯
+  zh-CN: 银手链
 tag.silver_chain:
   en: silver chain
   ja: シルバーチェーン
@@ -74877,7 +74877,7 @@ tag.skateboard:
 tag.skateboarding:
   en: skateboarding
   ja: スケートボード
-  zh-CN: 滑板
+  zh-CN: 滑板运动
 tag.skates:
   en: skates
   ja: スケート
@@ -74885,7 +74885,7 @@ tag.skates:
 tag.skating:
   en: skating
   ja: スケート
-  zh-CN: 滑冰
+  zh-CN: 滑行运动
 tag.skating_rink:
   en: skating rink
   ja: スケートリンク
@@ -74941,7 +74941,7 @@ tag.sketchbook:
 tag.sketching:
   en: sketching
   ja: スケッチ
-  zh-CN: 素描
+  zh-CN: 画草图
 tag.skewer:
   en: skewer
   ja: 串
@@ -75013,7 +75013,7 @@ tag.skinsuit:
 tag.skipping:
   en: skipping
   ja: スキップ
-  zh-CN: 跳绳
+  zh-CN: 蹦跳步
 tag.skirt:
   en: skirt
   ja: スカート
@@ -75065,7 +75065,7 @@ tag.skirt_in_mouth:
 tag.skirt_lift:
   en: skirt lift
   ja: スカート捲り
-  zh-CN: 掀裙
+  zh-CN: 掀起裙子
 tag.skirt_pull:
   en: skirt pull
   ja: スカートおろし
@@ -75081,11 +75081,11 @@ tag.skirt_set:
 tag.skirt_suit:
   en: skirt suit
   ja: リクルートスーツ
-  zh-CN: 裙子套装
+  zh-CN: 西装裙套装
 tag.skirt_tug:
   en: skirt tug
   ja: 前押さえ
-  zh-CN: 扯裙子
+  zh-CN: 拉扯裙子
 tag.skirt_under_dress:
   en: skirt under dress
   ja: ドレスの下のスカート
@@ -75097,7 +75097,7 @@ tag.skirt_under_kimono:
 tag.skis:
   en: skis
   ja: スキー
-  zh-CN: 滑雪板
+  zh-CN: 双板滑雪板
 tag.skorpion_vz._61:
   en: skorpion vz. 61
   ja: スコーピオンvz. 61
@@ -75309,7 +75309,7 @@ tag.slavic_clothes:
 tag.sled:
   en: sled
   ja: そり
-  zh-CN: 雪橇
+  zh-CN: 滑雪橇
 tag.sledgehammer:
   en: sledgehammer
   ja: 大型ハンマー
@@ -75373,7 +75373,7 @@ tag.sleepy:
 tag.sleeve_belt:
   en: sleeve belt
   ja: 袖ベルト
-  zh-CN: 袖带
+  zh-CN: 袖带扣
 tag.sleeve_bow:
   en: sleeve bow
   ja: 袖のリボン
@@ -75833,7 +75833,7 @@ tag.smock:
 tag.smog:
   en: smog
   ja: スモッグ
-  zh-CN: 烟雾
+  zh-CN: 雾霾
 tag.smoke:
   en: smoke
   ja: 煙
@@ -75853,7 +75853,7 @@ tag.smoke_trail:
 tag.smokestack:
   en: smokestack
   ja: 煙突
-  zh-CN: 烟囱
+  zh-CN: 工业烟囱
 tag.smokestack_hair_ornament:
   en: smokestack hair ornament
   ja: 煙突の髪飾り
@@ -75877,7 +75877,7 @@ tag.smoothie:
 tag.smother:
   en: smother
   ja: 窒息させる
-  zh-CN: 窒息
+  zh-CN: 捂口鼻
 tag.smudge:
   en: smudge
   ja: 汚れ
@@ -76069,7 +76069,7 @@ tag.snot_trail:
 tag.snout:
   en: snout
   ja: 鼻口部
-  zh-CN: 鼻子
+  zh-CN: 吻部
 tag.snow:
   en: snow
   ja: 雪原
@@ -76289,7 +76289,7 @@ tag.sobu_high_school_uniform:
 tag.soccer:
   en: soccer
   ja: サッカー
-  zh-CN: 足球
+  zh-CN: 足球运动
 tag.soccer_ball:
   en: soccer ball
   ja: サッカーボール
@@ -76441,7 +76441,7 @@ tag.solo_focus:
 tag.sombrero:
   en: sombrero
   ja: ソンブレロ
-  zh-CN: 阔边帽
+  zh-CN: 墨西哥阔边帽
 tag.somersault:
   en: somersault
   ja: 宙返り
@@ -76449,7 +76449,7 @@ tag.somersault:
 tag.son_goku_(cosplay):
   en: son goku (cosplay)
   ja: 孫悟空（コスプレ）
-  zh-CN: 孙悟空（cosplay）
+  zh-CN: 孙悟空（龙珠）（cosplay）
 tag.song_name:
   en: song name
   ja: 曲名
@@ -76781,7 +76781,7 @@ tag.sparks:
 tag.sparrow:
   en: sparrow
   ja: 雀
-  zh-CN: 麻雀
+  zh-CN: 雀
 tag.sparse_arm_hair:
   en: sparse arm hair
   ja: まばらな腕毛
@@ -76825,7 +76825,7 @@ tag.spasm:
 tag.spatula:
   en: spatula
   ja: へら
-  zh-CN: 铲子
+  zh-CN: 锅铲
 tag.speaker:
   en: speaker
   ja: スピーカー
@@ -77081,7 +77081,7 @@ tag.spiked_halo:
 tag.spiked_hat:
   en: spiked hat
   ja: スパイクハット
-  zh-CN: 尖顶帽子
+  zh-CN: 尖刺帽子
 tag.spiked_headband:
   en: spiked headband
   ja: スパイクヘッドバンド
@@ -77149,7 +77149,7 @@ tag.spikes:
 tag.spill:
   en: spill
   ja: こぼれる
-  zh-CN: 泄漏
+  zh-CN: 洒出
 tag.spilled_milk:
   en: spilled milk
   ja: こぼれたミルク
@@ -77537,7 +77537,7 @@ tag.sports_bra:
 tag.sports_bra_lift:
   en: sports bra lift
   ja: スポーツブラリフト
-  zh-CN: 掀运动内衣
+  zh-CN: 掀起运动胸罩
 tag.sports_bra_peek:
   en: sports bra peek
   ja: スポーツブラ覗き見
@@ -77545,7 +77545,7 @@ tag.sports_bra_peek:
 tag.sports_bra_pull:
   en: sports bra pull
   ja: スポーツブラのプル
-  zh-CN: 拉运动文胸
+  zh-CN: 拉运动胸罩
 tag.sports_car:
   en: sports car
   ja: スポーツカー
@@ -77977,7 +77977,7 @@ tag.staccato_2011:
 tag.stack:
   en: stack
   ja: スタック
-  zh-CN: 堆叠
+  zh-CN: 堆叠物
 tag.stacking:
   en: stacking
   ja: 積み重ねる
@@ -78633,7 +78633,7 @@ tag.steel_beam:
 tag.steeple:
   en: steeple
   ja: 尖塔
-  zh-CN: 尖塔
+  zh-CN: 教堂尖塔
 tag.steepled_fingers:
   en: steepled fingers
   ja: 尖った指
@@ -78677,7 +78677,7 @@ tag.step_and_repeat:
 tag.stepladder:
   en: stepladder
   ja: 脚立
-  zh-CN: 梯子
+  zh-CN: 人字梯
 tag.stepped_on:
   en: stepped on
   ja: 踏んだ
@@ -78741,7 +78741,7 @@ tag.stick_figure:
 tag.stick_grenade:
   en: stick grenade
   ja: スティック手榴弾
-  zh-CN: 手榴弹
+  zh-CN: 长柄手榴弹
 tag.stick_poster:
   en: stick poster
   ja: スティックポスター
@@ -78881,7 +78881,7 @@ tag.stitches:
 tag.stitching:
   en: stitching
   ja: ステッチ
-  zh-CN: 缝合
+  zh-CN: 缝线
 tag.stoat_girl:
   en: stoat girl
   ja: オコジョの女の子
@@ -78897,7 +78897,7 @@ tag.stocks:
 tag.stole:
   en: stole
   ja: ストール
-  zh-CN: 领巾
+  zh-CN: 长巾
 tag.stomach:
   en: stomach
   ja: 腹部
@@ -79081,7 +79081,7 @@ tag.strainer:
 tag.straitjacket:
   en: straitjacket
   ja: 拘束服
-  zh-CN: 紧身衣
+  zh-CN: 束缚衣
 tag.strangling:
   en: strangling
   ja: 絞殺
@@ -79113,7 +79113,7 @@ tag.strap_gap:
 tag.strap_lift:
   en: strap lift
   ja: ストラップリフト
-  zh-CN: 掀吊带
+  zh-CN: 掀起肩带
 tag.strap_pull:
   en: strap pull
   ja: ストラッププル
@@ -79341,7 +79341,7 @@ tag.string_around_finger:
 tag.string_around_neck:
   en: string around neck
   ja: 首にかける紐
-  zh-CN: 脖子上的绳子
+  zh-CN: 脖子上的细绳
 tag.string_bikini:
   en: string bikini
   ja: ストリングビキニ
@@ -79389,7 +79389,7 @@ tag.string_phone:
 tag.string_pull:
   en: string pull
   ja: 紐を引く
-  zh-CN: 拉绳
+  zh-CN: 拉细绳
 tag.string_tie:
   en: string tie
   ja: 紐結び
@@ -79609,7 +79609,7 @@ tag.striped_ribbon:
 tag.striped_sash:
   en: striped sash
   ja: 縞模様のサッシュ
-  zh-CN: 条纹腰带
+  zh-CN: 条纹绶带
 tag.striped_scarf:
   en: striped scarf
   ja: ストライプのスカーフ
@@ -79681,7 +79681,7 @@ tag.striped_underwear:
 tag.striped_vest:
   en: striped vest
   ja: ストライプのベスト
-  zh-CN: 条纹背心
+  zh-CN: 条纹马甲
 tag.striped_wall:
   en: striped wall
   ja: 縞模様の壁
@@ -80269,7 +80269,7 @@ tag.sun_tattoo:
 tag.sun_wukong_(cosplay):
   en: sun wukong (cosplay)
   ja: 孫悟空（コスプレ）
-  zh-CN: 孙悟空（cosplay）
+  zh-CN: 孙悟空（西游记）（cosplay）
 tag.sunagakure_symbol:
   en: sunagakure symbol
   ja: 砂隠れのシンボル
@@ -80513,7 +80513,7 @@ tag.surcoat:
 tag.surf:
   en: surf
   ja: サーフィン
-  zh-CN: 冲浪
+  zh-CN: 海浪
 tag.surfboard:
   en: surfboard
   ja: サーフボード
@@ -80621,7 +80621,7 @@ tag.suspenders_slip:
 tag.suspension:
   en: suspension
   ja: サスペンション
-  zh-CN: 悬浮
+  zh-CN: 悬吊
 tag.suspension_bridge:
   en: suspension bridge
   ja: 吊り橋
@@ -80645,7 +80645,7 @@ tag.suzumiya_haruhi_(cosplay):
 tag.suzuya_(kancolle)_(cosplay):
   en: suzuya (kancolle) (cosplay)
   ja: 鈴谷 (艦これ) (コスプレ)
-  zh-CN: 铃谷（cosplay）
+  zh-CN: 铃谷（舰队Collection）（cosplay）
 tag.sv-98:
   en: sv-98
   ja: SV-98
@@ -80733,7 +80733,7 @@ tag.sweater_jacket:
 tag.sweater_lift:
   en: sweater lift
   ja: セーターリフト
-  zh-CN: 掀毛衣
+  zh-CN: 掀起毛衣
 tag.sweater_pull:
   en: sweater pull
   ja: セーターを引っ張る
@@ -80745,7 +80745,7 @@ tag.sweater_tucked_in:
 tag.sweater_tug:
   en: sweater tug
   ja: セーター引っ張り
-  zh-CN: 扯毛衣
+  zh-CN: 拉扯毛衣
 tag.sweater_under_dress:
   en: sweater under dress
   ja: ドレスの下のセーター
@@ -80765,11 +80765,11 @@ tag.sweater_vest:
 tag.sweater_vest_lift:
   en: sweater vest lift
   ja: セーターベストリフト
-  zh-CN: 毛衣背心撩起
+  zh-CN: 掀起毛衣马甲
 tag.sweatpants:
   en: sweatpants
   ja: スウェットパンツ
-  zh-CN: 运动裤
+  zh-CN: 卫裤
 tag.sweaty_armpits:
   en: sweaty armpits
   ja: 脇汗
@@ -80813,7 +80813,7 @@ tag.sweet_potato:
 tag.sweets:
   en: sweets
   ja: 甜的
-  zh-CN: 糖果
+  zh-CN: 甜食
 tag.sweets_bird:
   en: sweets bird
   ja: お菓子の鳥
@@ -80869,7 +80869,7 @@ tag.swimsuit_hanger:
 tag.swimsuit_lift:
   en: swimsuit lift
   ja: 水着リフト
-  zh-CN: 泳衣掀起
+  zh-CN: 掀起泳装
 tag.swimsuit_over_clothes:
   en: swimsuit over clothes
   ja: 服の上から水着
@@ -80885,7 +80885,7 @@ tag.swimsuit_theft:
 tag.swimsuit_tug:
   en: swimsuit tug
   ja: 水着綱引き
-  zh-CN: 拉扯泳衣
+  zh-CN: 拉扯泳装
 tag.swimsuit_under_clothes:
   en: swimsuit under clothes
   ja: セラスク
@@ -80925,7 +80925,7 @@ tag.swinging_weapon:
 tag.swirl:
   en: swirl
   ja: 渦巻く
-  zh-CN: 漩涡
+  zh-CN: 螺旋纹
 tag.swirl_lollipop:
   en: swirl lollipop
   ja: 渦巻きロリポップ
@@ -81149,7 +81149,7 @@ tag.tabard:
 tag.tabard_lift:
   en: tabard lift
   ja: タバードを持ち上げる
-  zh-CN: 掀战袍
+  zh-CN: 掀起战袍
 tag.tabasco:
   en: tabasco
   ja: タバスコ
@@ -81185,7 +81185,7 @@ tag.table_tennis:
 tag.table_tennis_ball:
   en: table tennis ball
   ja: 卓球ボール
-  zh-CN: 乒乓球
+  zh-CN: 小白球
 tag.table_tennis_paddle:
   en: table tennis paddle
   ja: 卓球パドル
@@ -81309,7 +81309,7 @@ tag.tail_bell:
 tag.tail_belt:
   en: tail belt
   ja: テールベルト
-  zh-CN: 尾带
+  zh-CN: 尾部束带
 tag.tail_between_legs:
   en: tail between legs
   ja: 足の間の尻尾
@@ -81381,7 +81381,7 @@ tag.tail_ring:
 tag.tail_strap:
   en: tail strap
   ja: テールストラップ
-  zh-CN: 尾带
+  zh-CN: 尾部细带
 tag.tail_through_clothes:
   en: tail through clothes
   ja: 服を通した尻尾
@@ -81557,7 +81557,7 @@ tag.tally:
 tag.talons:
   en: talons
   ja: かぎ爪
-  zh-CN: 爪子
+  zh-CN: 钩爪
 tag.tam_(ragnarok_online):
   en: tam (ragnarok online)
   ja: タム（ラグナロクオンライン）
@@ -81593,7 +81593,7 @@ tag.tamandua_ears:
 tag.tamandua_tail:
   en: tamandua tail
   ja: タマンドゥアの尾
-  zh-CN: 食蚁兽尾巴
+  zh-CN: 小食蚁兽尾巴
 tag.tamaranean:
   en: tamaranean
   ja: タマラン語
@@ -81793,7 +81793,7 @@ tag.target_practice:
 tag.tarot:
   en: tarot
   ja: タロット
-  zh-CN: 塔罗牌
+  zh-CN: 塔罗主题
 tag.tarot_(medium):
   en: tarot (medium)
   ja: タロット（中）
@@ -81917,7 +81917,7 @@ tag.taurus_(zodiac):
 tag.taut_bodysuit:
   en: taut bodysuit
   ja: ピンと張ったボディスーツ
-  zh-CN: 绷紧的紧身衣
+  zh-CN: 绷紧的连体衣
 tag.taut_clothes:
   en: taut clothes
   ja: ぴんと張った服
@@ -82317,7 +82317,7 @@ tag.tenjou_utena_(cosplay):
 tag.tennis:
   en: tennis
   ja: テニス
-  zh-CN: 网球
+  zh-CN: 网球运动
 tag.tennis_ball:
   en: tennis ball
   ja: テニスボール
@@ -83017,7 +83017,7 @@ tag.three-toned_background:
 tag.three-wheeler:
   en: three-wheeler
   ja: 三輪車
-  zh-CN: 三轮车
+  zh-CN: 三轮摩托车
 tag.three_monkeys:
   en: three monkeys
   ja: 三猿
@@ -83177,7 +83177,7 @@ tag.thumbs_up:
 tag.thumbtack:
   en: thumbtack
   ja: 画鋲
-  zh-CN: 图钉
+  zh-CN: 平头图钉
 tag.thunder:
   en: thunder
   ja: 雷鳴
@@ -83785,7 +83785,7 @@ tag.tomato_juice:
 tag.tomato_sauce:
   en: tomato sauce
   ja: トマトソース
-  zh-CN: 番茄酱
+  zh-CN: 番茄沙司
 tag.tomato_slice:
   en: tomato slice
   ja: トマトのスライス
@@ -84009,7 +84009,7 @@ tag.toon_(style):
 tag.tooth:
   en: tooth
   ja: 歯
-  zh-CN: 牙齿
+  zh-CN: 单颗牙齿
 tag.tooth_earrings:
   en: tooth earrings
   ja: 歯のイヤリング
@@ -84097,7 +84097,7 @@ tag.toriyama_akira_(style):
 tag.torn:
   en: torn
   ja: 破れた
-  zh-CN: 撕裂
+  zh-CN: 破烂
 tag.torn_apron:
   en: torn apron
   ja: 破れたエプロン
@@ -84141,7 +84141,7 @@ tag.torn_capelet:
 tag.torn_cloak:
   en: torn cloak
   ja: 破れるマント
-  zh-CN: 撕裂的斗篷
+  zh-CN: 撕裂的长斗篷
 tag.torn_clothes:
   en: torn clothes
   ja: 破れた服
@@ -84221,7 +84221,7 @@ tag.torn_mask:
 tag.torn_neckerchief:
   en: torn neckerchief
   ja: 破れたネッカチーフ
-  zh-CN: 撕破的围巾
+  zh-CN: 撕破的领巾
 tag.torn_necktie:
   en: torn necktie
   ja: 破れたネクタイ
@@ -84273,7 +84273,7 @@ tag.torn_skirt:
 tag.torn_sleeve:
   en: torn sleeve
   ja: 破れた袖
-  zh-CN: 撕裂的袖子
+  zh-CN: 撕裂的单袖
 tag.torn_sleeves:
   en: torn sleeves
   ja: 破れた袖
@@ -84353,7 +84353,7 @@ tag.torso_grab:
 tag.tortoise:
   en: tortoise
   ja: 亀
-  zh-CN: 乌龟
+  zh-CN: 陆龟
 tag.torture:
   en: torture
   ja: 拷問
@@ -84881,7 +84881,7 @@ tag.treehouse:
 tag.trefoil:
   en: trefoil
   ja: 三つ葉
-  zh-CN: 三叶草
+  zh-CN: 三叶纹
 tag.trellis:
   en: trellis
   ja: トレリス
@@ -85021,7 +85021,7 @@ tag.triceratops:
 tag.trick-or-treating:
   en: trick-or-treating
   ja: トリック・オア・トリート
-  zh-CN: 不给糖就捣蛋
+  zh-CN: 万圣节讨糖
 tag.trick_or_treat:
   en: trick or treat
   ja: トリックオアトリート
@@ -85385,7 +85385,7 @@ tag.tulip_hat:
 tag.tumbler_glass:
   en: tumbler glass
   ja: タンブラーグラス
-  zh-CN: 玻璃杯
+  zh-CN: 平底杯
 tag.tumblr_logo:
   en: tumblr logo
   ja: タンブラーのロゴ
@@ -85413,7 +85413,7 @@ tag.tupet:
 tag.turban:
   en: turban
   ja: 頭巾
-  zh-CN: 头巾
+  zh-CN: 缠头
 tag.turkey_(food):
   en: turkey (food)
   ja: ターキー
@@ -85445,7 +85445,7 @@ tag.turning_page:
 tag.turnip:
   en: turnip
   ja: 蕪
-  zh-CN: 萝卜
+  zh-CN: 芜菁
 tag.turntable:
   en: turntable
   ja: ターンテーブル
@@ -85521,7 +85521,7 @@ tag.tutu:
 tag.tuxedo:
   en: tuxedo
   ja: タキシード
-  zh-CN: 燕尾服
+  zh-CN: 塔士多礼服
 tag.tuxedo_cat:
   en: tuxedo cat
   ja: タキシード猫
@@ -85565,7 +85565,7 @@ tag.twig:
 tag.twilight:
   en: twilight
   ja: 夕闇
-  zh-CN: 黄昏
+  zh-CN: 曙暮光
 tag.twilight_(e.g.o):
   en: twilight (e.g.o)
   ja: 夕暮れ（例）
@@ -85645,7 +85645,7 @@ tag.twitch_username:
 tag.twitching:
   en: twitching
   ja: 痙攣
-  zh-CN: 痉挛
+  zh-CN: 抽动
 tag.twitching_penis:
   en: twitching penis
   ja: ペニスのけいれん
@@ -85717,7 +85717,7 @@ tag.two-sided_capelet:
 tag.two-sided_cloak:
   en: two-sided cloak
   ja: 両面マント
-  zh-CN: 双面斗篷
+  zh-CN: 双面长斗篷
 tag.two-sided_coat:
   en: two-sided coat
   ja: 両面コート
@@ -85781,7 +85781,7 @@ tag.two-tone_bag:
 tag.two-tone_bandeau:
   en: two-tone bandeau
   ja: ツートンカラーのバンドー
-  zh-CN: 双色抹胸
+  zh-CN: 双色胸带
 tag.two-tone_beard:
   en: two-tone beard
   ja: ツートンカラーのひげ
@@ -85817,7 +85817,7 @@ tag.two-tone_bra:
 tag.two-tone_cape:
   en: two-tone cape
   ja: ツートンカラーのケープ
-  zh-CN: 双色斗篷
+  zh-CN: 双色披风
 tag.two-tone_capelet:
   en: two-tone capelet
   ja: ツートンカラーのケープレット
@@ -85933,7 +85933,7 @@ tag.two-tone_nails:
 tag.two-tone_neckerchief:
   en: two-tone neckerchief
   ja: ツートンカラーのネッカチーフ
-  zh-CN: 双色围巾
+  zh-CN: 双色领巾
 tag.two-tone_necktie:
   en: two-tone necktie
   ja: ツートンカラーのネクタイ
@@ -86041,7 +86041,7 @@ tag.two-tone_veil:
 tag.two-tone_vest:
   en: two-tone vest
   ja: ツートンカラーのベスト
-  zh-CN: 双色背心
+  zh-CN: 双色马甲
 tag.two-tone_wings:
   en: two-tone wings
   ja: ツートンカラーの翼
@@ -86081,7 +86081,7 @@ tag.two_tails:
 tag.tying:
   en: tying
   ja: 結ぶ
-  zh-CN: 捆绑
+  zh-CN: 系绑
 tag.tying_another's_hair:
   en: tying another's hair
   ja: 他人の髪を結ぶ
@@ -86205,7 +86205,7 @@ tag.ufo:
 tag.ugg_boots:
   en: ugg boots
   ja: アグブーツ
-  zh-CN: 雪地靴
+  zh-CN: 羊毛雪地靴
 tag.ugly_bastard:
   en: ugly bastard
   ja: 醜い野郎
@@ -86469,7 +86469,7 @@ tag.under_shot:
 tag.under_skirt:
   en: under skirt
   ja: スカート捕食
-  zh-CN: 裙底视角
+  zh-CN: 裙子下方
 tag.under_table:
   en: under table
   ja: 桌下
@@ -86805,7 +86805,7 @@ tag.unownglyphics:
 tag.unraveling:
   en: unraveling
   ja: 解き明かす
-  zh-CN: 解开
+  zh-CN: 绽线
 tag.unsheathed:
   en: unsheathed
   ja: 鞘から出された
@@ -86885,7 +86885,7 @@ tag.unworn_apron:
 tag.unworn_armband:
   en: unworn armband
   ja: 着用していない腕章
-  zh-CN: 未佩戴的臂章
+  zh-CN: 未戴的臂章
 tag.unworn_armor:
   en: unworn armor
   ja: 着用されていない鎧
@@ -86941,7 +86941,7 @@ tag.unworn_bra:
 tag.unworn_bracelet:
   en: unworn bracelet
   ja: 未使用のブレスレット
-  zh-CN: 未佩戴的手镯
+  zh-CN: 未戴的手镯
 tag.unworn_buruma:
   en: unworn buruma
   ja: 未着用のブルマ
@@ -87053,7 +87053,7 @@ tag.unworn_jacket:
 tag.unworn_jewelry:
   en: unworn jewelry
   ja: 着用していないジュエリー
-  zh-CN: 未佩戴过的珠宝
+  zh-CN: 未戴的首饰
 tag.unworn_kimono:
   en: unworn kimono
   ja: 未着の着物
@@ -87061,7 +87061,7 @@ tag.unworn_kimono:
 tag.unworn_lanyard:
   en: unworn lanyard
   ja: 使い古されていないストラップ
-  zh-CN: 未佩戴的挂绳
+  zh-CN: 未戴的挂绳
 tag.unworn_legwear:
   en: unworn legwear
   ja: 履いていないレッグウェア
@@ -87081,7 +87081,7 @@ tag.unworn_mittens:
 tag.unworn_neckerchief:
   en: unworn neckerchief
   ja: 着ていないネッカチーフ
-  zh-CN: 未佩戴的围巾
+  zh-CN: 未戴的领巾
 tag.unworn_necklace:
   en: unworn necklace
   ja: 未使用のネックレス
@@ -87109,7 +87109,7 @@ tag.unworn_ribbon:
 tag.unworn_ring:
   en: unworn ring
   ja: 使われていないリング
-  zh-CN: 未佩戴的戒指
+  zh-CN: 未戴的戒指
 tag.unworn_sandals:
   en: unworn sandals
   ja: 履いていないサンダル
@@ -87661,7 +87661,7 @@ tag.veil:
 tag.veil_lift:
   en: veil lift
   ja: ベールリフト
-  zh-CN: 面纱掀起
+  zh-CN: 掀起面纱
 tag.veil_over_eyes:
   en: veil over eyes
   ja: 目を覆うベール
@@ -87757,7 +87757,7 @@ tag.venus_symbol:
 tag.veranda:
   en: veranda
   ja: 縁側
-  zh-CN: 阳台
+  zh-CN: 门廊
 tag.vergil's_chair_(meme):
   en: vergil's chair (meme)
   ja: バージルの椅子 (ミーム)
@@ -87965,7 +87965,7 @@ tag.very_low_bun:
 tag.very_short_hair:
   en: very short hair
   ja: ベリショ
-  zh-CN: 寸头
+  zh-CN: 极短发
 tag.very_sweaty:
   en: very sweaty
   ja: とても汗だく
@@ -87989,7 +87989,7 @@ tag.vest:
 tag.vest_lift:
   en: vest lift
   ja: ベストリフト
-  zh-CN: 掀背心
+  zh-CN: 掀起背心
 tag.vhs_artifacts:
   en: vhs artifacts
   ja: VHS アーティファクト
@@ -88265,7 +88265,7 @@ tag.visor_cap:
 tag.visor_lift:
   en: visor lift
   ja: バイザーリフト
-  zh-CN: 遮阳板掀起
+  zh-CN: 掀起护目面罩
 tag.vistamp:
   en: vistamp
   ja: ビスタンプ
@@ -88357,7 +88357,7 @@ tag.volumen_hydragyrum_(fate):
 tag.vomit:
   en: vomit
   ja: 嘔吐
-  zh-CN: 呕吐
+  zh-CN: 呕吐物
 tag.vomiting:
   en: vomiting
   ja: 嘔吐
@@ -88481,7 +88481,7 @@ tag.wagnaria_uniform:
 tag.wagon:
   en: wagon
   ja: ワゴン
-  zh-CN: 马车
+  zh-CN: 篷车
 tag.wainscoting:
   en: wainscoting
   ja: 腰板
@@ -88493,7 +88493,7 @@ tag.waist_apron:
 tag.waist_bag:
   en: waist bag
   ja: ウエストバッグ
-  zh-CN: 腰包
+  zh-CN: 腰间包
 tag.waist_bow:
   en: waist bow
   ja: ウエストリボン
@@ -88537,7 +88537,7 @@ tag.waist_tassel:
 tag.waistband:
   en: waistband
   ja: ウエストバンド
-  zh-CN: 腰带
+  zh-CN: 裤腰
 tag.waistcoat:
   en: waistcoat
   ja: ジレ
@@ -88725,7 +88725,7 @@ tag.war_fan:
 tag.war_flag:
   en: war flag
   ja: 戦旗
-  zh-CN: 战旗
+  zh-CN: 军旗
 tag.war_hammer:
   en: war hammer
   ja: ウォーハンマー
@@ -89021,7 +89021,7 @@ tag.waving_flag:
 tag.waving_hands:
   en: waving hands
   ja: 手を振る
-  zh-CN: 挥手
+  zh-CN: 双手挥舞
 tag.wavy_background:
   en: wavy background
   ja: 波状の背景
@@ -89237,7 +89237,7 @@ tag.weightlifting:
 tag.weights:
   en: weights
   ja: 重み
-  zh-CN: 重量
+  zh-CN: 举重器械
 tag.weimao:
   en: weimao
   ja: 維茂
@@ -89521,7 +89521,7 @@ tag.whisker_markings:
 tag.whiskers:
   en: whiskers
   ja: ひげ
-  zh-CN: 胡须
+  zh-CN: 触须
 tag.whiskey:
   en: whiskey
   ja: ウイスキー
@@ -89529,7 +89529,7 @@ tag.whiskey:
 tag.whisking:
   en: whisking
   ja: 泡立てる
-  zh-CN: 搅拌
+  zh-CN: 搅打
 tag.whisp:
   en: whisp
   ja: ホイップ
@@ -89597,7 +89597,7 @@ tag.white_bandana:
 tag.white_bandeau:
   en: white bandeau
   ja: 白いバンドー
-  zh-CN: 白色抹胸
+  zh-CN: 白色胸带
 tag.white_beard:
   en: white beard
   ja: 白ひげ
@@ -89661,7 +89661,7 @@ tag.white_buruma:
 tag.white_bustier:
   en: white bustier
   ja: 白いビスチェ
-  zh-CN: 白色紧身胸衣
+  zh-CN: 白色束胸衣
 tag.white_butterfly:
   en: white butterfly
   ja: 白い蝶
@@ -89713,7 +89713,7 @@ tag.white_coat:
 tag.white_coif:
   en: white coif
   ja: 白いコイフ
-  zh-CN: 白色头巾
+  zh-CN: 白色包发帽
 tag.white_collar:
   en: white collar
   ja: ホワイトカラー
@@ -89797,11 +89797,11 @@ tag.white_gakuran:
 tag.white_garter:
   en: white garter
   ja: 白いガーター
-  zh-CN: 白色吊袜带
+  zh-CN: 白色袜圈
 tag.white_garter_belt:
   en: white garter belt
   ja: 白いガーターベルト
-  zh-CN: 白色吊袜带
+  zh-CN: 白色吊袜腰带
 tag.white_garter_straps:
   en: white garter straps
   ja: 白いガーターストラップ
@@ -89877,7 +89877,7 @@ tag.white_helmet:
 tag.white_hijab:
   en: white hijab
   ja: 白いヒジャブ
-  zh-CN: 白色头巾
+  zh-CN: 白色希贾布
 tag.white_hood:
   en: white hood
   ja: 白いフード
@@ -89977,7 +89977,7 @@ tag.white_necktie:
 tag.white_negligee:
   en: white negligee
   ja: 白いネグリジェ
-  zh-CN: 白色睡衣
+  zh-CN: 白色睡袍
 tag.white_nightgown:
   en: white nightgown
   ja: 白いナイトガウン
@@ -90097,7 +90097,7 @@ tag.white_serafuku:
 tag.white_shawl:
   en: white shawl
   ja: 白いショール
-  zh-CN: 白色披肩
+  zh-CN: 白色大披巾
 tag.white_shirt:
   en: white shirt
   ja: 白いシャツ
@@ -90249,7 +90249,7 @@ tag.white_uniform:
 tag.white_unitard:
   en: white unitard
   ja: 白いユニタード
-  zh-CN: 白色紧身衣
+  zh-CN: 白色连裤紧身衣
 tag.white_veil:
   en: white veil
   ja: 白いベール
@@ -90437,7 +90437,7 @@ tag.wind_turbine:
 tag.windbreaker:
   en: windbreaker
   ja: ウインドブレーカー
-  zh-CN: 风衣
+  zh-CN: 防风夹克
 tag.winding_key:
   en: winding key
   ja: 巻鍵
@@ -90473,7 +90473,7 @@ tag.window_shadow:
 tag.window_shutter:
   en: window shutter
   ja: シャッター
-  zh-CN: 百叶窗
+  zh-CN: 窗板
 tag.windows_logo:
   en: windows logo
   ja: 窓のロゴ
@@ -90493,7 +90493,7 @@ tag.windsock:
 tag.wine:
   en: wine
   ja: ワイン
-  zh-CN: 酒
+  zh-CN: 葡萄酒
 tag.wine_bottle:
   en: wine bottle
   ja: ワインボトル
@@ -90705,7 +90705,7 @@ tag.wiping_tears:
 tag.wire:
   en: wire
   ja: ワイヤー
-  zh-CN: 电线
+  zh-CN: 金属丝
 tag.wire_cutters:
   en: wire cutters
   ja: ワイヤーカッター
@@ -90713,7 +90713,7 @@ tag.wire_cutters:
 tag.wire_fence:
   en: wire fence
   ja: ワイヤーフェンス
-  zh-CN: 铁丝网
+  zh-CN: 铁丝围栏
 tag.wireframe:
   en: wireframe
   ja: ワイヤーフレーム
@@ -90889,7 +90889,7 @@ tag.wooden_beam:
 tag.wooden_bench:
   en: wooden bench
   ja: 木製ベンチ
-  zh-CN: 木凳
+  zh-CN: 木制长凳
 tag.wooden_bowl:
   en: wooden bowl
   ja: 木のボウル
@@ -90925,7 +90925,7 @@ tag.wooden_deck:
 tag.wooden_desk:
   en: wooden desk
   ja: 木製の机
-  zh-CN: 木桌
+  zh-CN: 木书桌
 tag.wooden_door:
   en: wooden door
   ja: 木製ドア
@@ -91017,7 +91017,7 @@ tag.working:
 tag.workout_clothes:
   en: workout clothes
   ja: トレーニングウェア
-  zh-CN: 运动服
+  zh-CN: 健身服
 tag.workshop:
   en: workshop
   ja: ワークショップ
@@ -91085,7 +91085,7 @@ tag.wrapping:
 tag.wreath:
   en: wreath
   ja: 花輪
-  zh-CN: 花环
+  zh-CN: 藤环
 tag.wreckage:
   en: wreckage
   ja: 残骸
@@ -91145,7 +91145,7 @@ tag.wrinkled_skin:
 tag.wrist_belt:
   en: wrist belt
   ja: 手首ベルト
-  zh-CN: 腕带
+  zh-CN: 手腕皮带
 tag.wrist_blades:
   en: wrist blades
   ja: リストブレード
@@ -91169,7 +91169,7 @@ tag.wrist_cutting:
 tag.wrist_extended:
   en: wrist extended
   ja: 手首を伸ばした状態
-  zh-CN: 手腕伸展
+  zh-CN: 单手腕伸展
 tag.wrist_flower:
   en: wrist flower
   ja: 手首の花
@@ -91189,7 +91189,7 @@ tag.wrist_scrunchie:
 tag.wrist_straps:
   en: wrist straps
   ja: リストストラップ
-  zh-CN: 腕带
+  zh-CN: 腕部绑带
 tag.wrist_tattoo:
   en: wrist tattoo
   ja: 手首のタトゥー
@@ -91425,7 +91425,7 @@ tag.yakumo_yukari_(cosplay):
 tag.yakuza:
   en: yakuza
   ja: やくざ
-  zh-CN: 黑帮
+  zh-CN: 极道
 tag.yamaboshi_private_high_school_uniform:
   en: yamaboshi private high school uniform
   ja: 私立ヤマボシ高校の制服
@@ -91709,7 +91709,7 @@ tag.yellow_cape:
 tag.yellow_capelet:
   en: yellow capelet
   ja: 黄色のケープレット
-  zh-CN: 黄色披肩
+  zh-CN: 黄色短斗篷
 tag.yellow_car:
   en: yellow car
   ja: 黄色い車
@@ -91917,7 +91917,7 @@ tag.yellow_mask:
 tag.yellow_mittens:
   en: yellow mittens
   ja: 黄色のミトン
-  zh-CN: 黄色手套
+  zh-CN: 黄色连指手套
 tag.yellow_moon:
   en: yellow moon
   ja: 黄色い月
@@ -92137,7 +92137,7 @@ tag.yellow_trim:
 tag.yellow_tube_top:
   en: yellow tube top
   ja: 黄色のチューブトップ
-  zh-CN: 黄色抹胸
+  zh-CN: 黄色长款抹胸
 tag.yellow_tulip:
   en: yellow tulip
   ja: 黄色いチューリップ
@@ -92720,8 +92720,8 @@ tag.zodiac_wheel:
   zh-CN: 黄道十二宫
 tag.zombie:
   en: zombie
-  ja: 丧尸
-  zh-CN: 僵尸
+  ja: ゾンビ
+  zh-CN: 丧尸
 tag.zombie_pose:
   en: zombie pose
   ja: ゾンビのポーズ
@@ -92761,7 +92761,7 @@ tag.zooming_in:
 tag.zooming_out:
   en: zooming out
   ja: ズームアウト
-  zh-CN: 缩小
+  zh-CN: 镜头拉远
 tag.zora:
   en: zora
   ja: ゾーラ族
