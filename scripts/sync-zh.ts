@@ -81,10 +81,20 @@ for (const item of (doc.contents as YAML.YAMLMap).items) {
   const current = value.get('zh-CN') as string | undefined
 
   // An explicit null is a review that found the name wrong and had no
-  // replacement. Drop ours too rather than leaving the rejected one standing.
+  // replacement: `tenga` carried 天加 and `yuru-chara` carried 尤鲁恰拉, both
+  // transliterations of names Chinese speakers say in the original.
+  //
+  // Write the tag's own name rather than deleting the label. Upstream holds one
+  // truth -- there is no Chinese name -- and each consumer expresses it in its own
+  // terms: the image library has no entry and falls back to the tag name, while
+  // this file's three locales are all required to be non-empty (a blank renders
+  // as a blank here, with nothing to fall back to). Storing the tag name says the
+  // same thing and keeps that invariant, so a future rejection cannot break the
+  // build the way this one did.
   if (entry.zh_hans === null) {
-    if (current !== undefined) {
-      value.delete('zh-CN')
+    const original = tag.replaceAll('_', ' ')
+    if (current !== original) {
+      value.set('zh-CN', original)
       cleared += 1
     }
     continue

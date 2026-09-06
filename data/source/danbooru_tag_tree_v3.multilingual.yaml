@@ -3405,15 +3405,15 @@ category.text.writing_system:
 tag.!:
   en: '!'
   ja: '!'
-  zh-CN: ！
+  zh-CN: 惊叹号
 tag.!!:
   en: '!!'
   ja: '!!'
-  zh-CN: '!!'
+  zh-CN: '双重惊叹号'
 tag.!?:
   en: '!?'
   ja: '!?'
-  zh-CN: ！？
+  zh-CN: 惊问号
 tag.#unicus_(idolmaster):
   en: '#unicus (idolmaster)'
   ja: ユニ募
@@ -3421,11 +3421,11 @@ tag.#unicus_(idolmaster):
 tag.+++:
   en: +++
   ja: +++
-  zh-CN: +++
+  zh-CN: 欢笑符号
 tag.+_+:
   en: +_+
   ja: 目がしいたけ
-  zh-CN: +_+
+  zh-CN: 星星眼
 tag.+_-:
   en: +_-
   ja: +_-
@@ -3433,11 +3433,11 @@ tag.+_-:
 tag....!:
   en: '...!'
   ja: …！
-  zh-CN: '...！'
+  zh-CN: '无言后惊觉'
 tag....?:
   en: '...?'
   ja: '...?'
-  zh-CN: '...？'
+  zh-CN: '疑惑无言'
 tag..52_gal_(splatoon):
   en: .52 gal (splatoon)
   ja: 0.52ガロン（スプラトゥーン）
@@ -3449,11 +3449,11 @@ tag..96_gal_(splatoon):
 tag.._.:
   en: ._.
   ja: ._.
-  zh-CN: ._.
+  zh-CN: 点点眼
 tag.0_0:
   en: 0 0
   ja: 0 0
-  zh-CN: 0 0
+  zh-CN: 竖椭圆眼
 tag.1-up_mushroom:
   en: 1-up mushroom
   ja: 1アップキノコ
@@ -3657,7 +3657,7 @@ tag.2_fuel_4_ammo_11_steel:
 tag.2b_(nier:automata)_(cosplay):
   en: 2 b (nier:automata) (cosplay)
   ja: 2 b (ニーア オートマタ) (コスプレ)
-  zh-CN: 2B（尼尔：机械纪元）（cosplay）
+  zh-CN: 2B（cosplay）
 tag.2boys:
   en: 2 boys
   ja: 男の子2人
@@ -3685,11 +3685,11 @@ tag.2wink_(ensemble_stars!):
 tag.39:
   en: '39'
   ja: '39'
-  zh-CN: '39'
+  zh-CN: '39(初音日谐音梗)'
 'tag.3:':
   en: '3:'
   ja: ひの字口
-  zh-CN: 3：
+  zh-CN: 撇嘴皱眉
 tag.3;:
   en: 3;
   ja: 3;
@@ -3821,7 +3821,7 @@ tag.666:
 tag.69:
   en: '69'
   ja: シックスナイン
-  zh-CN: '69'
+  zh-CN: '69式'
 tag.6_9:
   en: 6 9
   ja: 6 9
@@ -3853,35 +3853,35 @@ tag.9a-91:
 tag.9s_(nier:automata)_(cosplay):
   en: 9 s (nier:automata) (cosplay)
   ja: 9s (ニーア オートマタ) (コスプレ)
-  zh-CN: 9 s（尼尔：机械纪元）（cosplay）
+  zh-CN: 9S（cosplay）
 tag.:/:
   en: :/
   ja: :/
-  zh-CN: :/
+  zh-CN: 歪嘴不满
 tag.:3:
   en: :3
   ja: 猫口
-  zh-CN: :3
+  zh-CN: 猫嘴笑
 tag.:<:
   en: :<
   ja: への字口
-  zh-CN: :<
+  zh-CN: 撇嘴不满
 tag.:>:
   en: :>
   ja: :>
-  zh-CN: :>
+  zh-CN: 微笑嘴
 tag.:>=:
   en: :>=
   ja: ひょっとこフェラ
-  zh-CN: :>=
+  zh-CN: 俯视口交嘴
 tag.:c:
   en: :c
   ja: :c
-  zh-CN: ：c
+  zh-CN: C形撇嘴
 tag.:d:
   en: :d
   ja: :d
-  zh-CN: :D
+  zh-CN: 张嘴笑
 tag.:i:
   en: :i
   ja: ふくれっ面
@@ -3889,19 +3889,19 @@ tag.:i:
 tag.:o:
   en: :o
   ja: :o
-  zh-CN: :o
+  zh-CN: 圆嘴惊讶
 tag.:p:
   en: :p
   ja: :p
-  zh-CN: ：p
+  zh-CN: 吐舌（向下）
 tag.:q:
   en: :q
   ja: ペコ舌
-  zh-CN: :q
+  zh-CN: 舔嘴（舌尖向上）
 tag.:s:
   en: :s
   ja: :s
-  zh-CN: ：s
+  zh-CN: 别扭嘴
 tag.:t:
   en: :t
   ja: 膨れっ面
@@ -3913,7 +3913,7 @@ tag.:x:
 tag.:|:
   en: :|
   ja: :|
-  zh-CN: :|
+  zh-CN: 一字嘴
 tag.;"|:
   en: ;"|
   ja: ;"|
@@ -3921,11 +3921,11 @@ tag.;"|:
 tag.;(:
   en: ;(
   ja: ;(
-  zh-CN: ;(
+  zh-CN: 眨眼苦脸
 tag.;):
   en: ;)
   ja: ;)
-  zh-CN: ;)
+  zh-CN: 闭嘴眨眼笑
 tag.;/:
   en: ;/
   ja: ;/
@@ -3933,51 +3933,51 @@ tag.;/:
 tag.;3:
   en: ;3
   ja: ;3
-  zh-CN: ;3
+  zh-CN: 眨眼猫嘴笑
 tag.;<:
   en: ;<
   ja: ;<
-  zh-CN: ;<
+  zh-CN: 眨眼撇嘴
 tag.;>:
   en: ;>
   ja: ;>
-  zh-CN: ;>
+  zh-CN: ;>(单眼闭合微笑)
 tag.;d:
   en: ;d
   ja: ;d
-  zh-CN: ;d
+  zh-CN: 眨眼张嘴笑
 tag.;o:
   en: ;o
   ja: ;o
-  zh-CN: ;o
+  zh-CN: 眨眼圆嘴
 tag.;p:
   en: ;p
   ja: ;p
-  zh-CN: ;p
+  zh-CN: 眨眼吐舌（向下）
 tag.;q:
   en: ;q
   ja: ;q
-  zh-CN: ;q
+  zh-CN: 眨眼舔嘴（向上）
 tag.;t:
   en: ;t
   ja: ;t
-  zh-CN: ;t
+  zh-CN: ;t(眯眼撅嘴表情)
 tag.;|:
   en: ;|
   ja: ;|
-  zh-CN: ;|
+  zh-CN: ;|(单眼闭合面无表情)
 tag.<o>_<o>:
   en: <o> <o>
   ja: <o>_<o>
-  zh-CN: <o> <o>
+  zh-CN: 大杏仁眼
 tag.<|>_<|>:
   en: <|>_<|>
   ja: <|>_<|>
-  zh-CN: <|>_<|>
+  zh-CN: 猫瞳眼
 tag.=_=:
   en: =_=
   ja: 糸目
-  zh-CN: =_=
+  zh-CN: 眯眼脸
 tag.>3<:
   en: '>3<'
   ja: '>3<'
@@ -3985,15 +3985,15 @@ tag.>3<:
 tag.>:(:
   en: '>:('
   ja: '>:('
-  zh-CN: '>:('
+  zh-CN: '挑眉怒容'
 tag.>:):
   en: '>:)'
   ja: '>:)'
-  zh-CN: '>:)'
+  zh-CN: '挑眉坏笑'
 tag.>_<:
   en: '>_<'
   ja: '>_<'
-  zh-CN: '>_<'
+  zh-CN: '紧闭双眼'
 tag.>_o:
   en: '> o'
   ja: '> ああ'
@@ -4005,11 +4005,11 @@ tag.>o<:
 tag.?:
   en: '?'
   ja: きょとんハテナ
-  zh-CN: ？
+  zh-CN: 问号
 tag.??:
   en: ??
   ja: ??
-  zh-CN: ??
+  zh-CN: 双重问号
 tag.?_block:
   en: '? block'
   ja: ハテナブロック
@@ -4021,7 +4021,7 @@ tag.@_(symbol):
 tag.@_@:
   en: '@_@'
   ja: ぐるぐる目
-  zh-CN: '@_@'
+  zh-CN: '晕眩螺旋眼'
 tag.\(^o^)/:
   en: \(^o^)/
   ja: ＼(^o^)／
@@ -4041,15 +4041,15 @@ tag.\m/:
 tag.\n/:
   en: \n/
   ja: コルナ
-  zh-CN: \n/
+  zh-CN: 摇滚手势
 tag.\o/:
   en: \o/
   ja: \o/
-  zh-CN: \o/
+  zh-CN: 双臂高举欢呼
 tag.\||/:
   en: \||/
   ja: \||/
-  zh-CN: \||/
+  zh-CN: 张开摇滚手势
 tag.^3^:
   en: ^3^
   ja: ^3^
@@ -4057,11 +4057,11 @@ tag.^3^:
 tag.^^^:
   en: ^^^
   ja: ^^
-  zh-CN: ^^^
+  zh-CN: 顿悟惊讶纹
 tag.^_^:
   en: ^_^
   ja: ^_^
-  zh-CN: ^_^
+  zh-CN: 眯眼笑
 tag.^o^:
   en: ^o^
   ja: ^o^
@@ -4953,7 +4953,7 @@ tag.ajirogasa:
 tag.ak-12:
   en: ak-12
   ja: AK-12
-  zh-CN: AK-12
+  zh-CN: AK-12步枪
 tag.ak-15:
   en: ak-15
   ja: AK-15
@@ -4965,11 +4965,11 @@ tag.ak-47:
 tag.ak-74:
   en: ak-74
   ja: AK-74
-  zh-CN: AK-74
+  zh-CN: AK-74步枪
 tag.ak-74m:
   en: ak-74 m
   ja: AK-74m
-  zh-CN: ak-74 m
+  zh-CN: AK-74M步枪
 tag.akabeko:
   en: akabeko
   ja: 赤べこ
@@ -5033,7 +5033,7 @@ tag.akita_inu:
 tag.akm:
   en: akm
   ja: アクム
-  zh-CN: AKM
+  zh-CN: AKM步枪
 tag.aks-74:
   en: aks-74
   ja: AKS-74
@@ -5041,7 +5041,7 @@ tag.aks-74:
 tag.aks-74u:
   en: aks-74 u
   ja: aks-74u
-  zh-CN: aks-74 u
+  zh-CN: AKS-74U短突击步枪
 tag.alarm_clock:
   en: alarm clock
   ja: 目覚まし時計
@@ -5253,7 +5253,7 @@ tag.alternate_hair_color:
 tag.alternate_hair_length:
   en: alternate hair length
   ja: ロング化
-  zh-CN: 替代发长
+  zh-CN: 发长变化
 tag.alternate_hair_ornament:
   en: alternate hair ornament
   ja: 代替髪飾り
@@ -5709,7 +5709,7 @@ tag.angel_and_devil:
 tag.angel_mort:
   en: angel mort
   ja: エンジェルモート
-  zh-CN: Angel Mort
+  zh-CN: 死亡天使女侍装（寒蝉鸣泣时）
 tag.angel_statue:
   en: angel statue
   ja: 天使像
@@ -6837,7 +6837,7 @@ tag.aquiline_nose:
 tag.ar-15:
   en: ar-15
   ja: AR-15
-  zh-CN: ar-15
+  zh-CN: AR-15
 tag.ara_ara:
   en: ara ara
   ja: あらあら
@@ -8309,7 +8309,7 @@ tag.avalon_le_fae_(fate/grand_order):
 tag.ave_mujica_(bang_dream!):
   en: ave mujica (bang dream!)
   ja: アヴェ・ムヒカ（バンドリ！）
-  zh-CN: ave mujica（BanG Dream！）
+  zh-CN: Ave Mujica
 tag.averting_eyes:
   en: averting eyes
   ja: 目光闪躲
@@ -8645,7 +8645,7 @@ tag.bad_ass:
 tag.bad_end:
   en: bad end
   ja: バッドエンド
-  zh-CN: Bad End
+  zh-CN: 坏结局
 tag.bad_end_precure:
   en: bad end precure
   ja: バッドエンドプリキュア
@@ -13405,7 +13405,7 @@ tag.bokken:
 tag.boko_(girls_und_panzer)_(cosplay):
   en: boko (girls und panzer) (cosplay)
   ja: ボコ (ガールズ&パンツァー) (コスプレ)
-  zh-CN: 博科（少女与战车）（cosplay）
+  zh-CN: 博科熊（cosplay）
 tag.boku_no_ashiato_kimi_no_yukusaki_(project_sekai):
   en: boku no ashiato kimi no yukusaki (project sekai)
   ja: ボクのあしあと_キミのゆくさき
@@ -13421,7 +13421,7 @@ tag.bokura_no_live_kimi_to_no_life:
 tag.bokura_wa_ima_no_naka_de:
   en: bokura wa ima no naka de
   ja: 僕らは今のなかで
-  zh-CN: 我们在现在之中
+  zh-CN: bokura wa ima no naka de
 tag.bokutachi_no_seizon_tousou_(project_sekai):
   en: bokutachi no seizon tousou (project sekai)
   ja: 僕らの人生闘走 (プロジェクトセカイ)
@@ -18233,7 +18233,7 @@ tag.cherub:
 tag.cheshire_cat_(alice_in_wonderland)_(cosplay):
   en: cheshire cat (alice in wonderland) (cosplay)
   ja: チェシャ猫 (不思議の国のアリス) (コスプレ)
-  zh-CN: 柴郡猫（爱丽丝梦游仙境）（cosplay）
+  zh-CN: 柴郡猫（cosplay）
 tag.chess:
   en: chess
   ja: 國際象棋
@@ -18877,7 +18877,7 @@ tag.choujuu_gigaku:
 tag.christian_louboutin_(brand):
   en: christian louboutin (brand)
   ja: クリスチャン・ルブタン
-  zh-CN: Christian Louboutin
+  zh-CN: 克里斯提·鲁布托（品牌）
 tag.christianity:
   en: christianity
   ja: キリスト教
@@ -19409,7 +19409,7 @@ tag.clip_(weapon):
 tag.clip_studio_paint:
   en: clip studio paint
   ja: クリップスタジオペイント
-  zh-CN: Clip Studio Paint
+  zh-CN: CLIP STUDIO PAINT(绘图软件)
 tag.clipboard:
   en: clipboard
   ja: 用箋挟
@@ -20505,7 +20505,7 @@ tag.comic_cover:
 tag.comic_sans:
   en: comic sans
   ja: コミックサンズ
-  zh-CN: Comic Sans
+  zh-CN: Comic Sans字体
 tag.comically_large_ears:
   en: comically large ears
   ja: コミカルな大きな耳
@@ -21161,7 +21161,7 @@ tag.cosmos_(flower):
 tag.cosplay:
   en: cosplay
   ja: コスプレ
-  zh-CN: Cosplay
+  zh-CN: 角色扮演
 tag.costume:
   en: costume
   ja: 衣装
@@ -22481,7 +22481,7 @@ tag.crown_print:
 tag.crt:
   en: crt
   ja: ブラウン管
-  zh-CN: crt
+  zh-CN: CRT显像管
 tag.crucifixion:
   en: crucifixion
   ja: 磔
@@ -22625,7 +22625,7 @@ tag.crystallization:
 tag.cs/ls06:
   en: cs/ls06
   ja: cs/ls06
-  zh-CN: CS/LS06
+  zh-CN: 05式微声冲锋枪
 tag.cub:
   en: cub
   ja: カブ
@@ -23029,7 +23029,7 @@ tag.cupping_hands:
 tag.cure_black_(cosplay):
   en: cure black (cosplay)
   ja: キュアブラック（コスプレ）
-  zh-CN: 治愈黑（cosplay）
+  zh-CN: 黑天使（cosplay）
 tag.cure_black_pose:
   en: cure black pose
   ja: キュアブラックポーズ
@@ -23309,15 +23309,15 @@ tag.d-sword:
 tag.d.va_(overwatch)_(cosplay):
   en: d.va (overwatch) (cosplay)
   ja: d.va (オーバーウォッチ) (コスプレ)
-  zh-CN: d.va（守望先锋）（cosplay）
+  zh-CN: D.Va（cosplay）
 'tag.d:':
   en: 'd:'
   ja: 'd:'
-  zh-CN: 'd:'
+  zh-CN: '苦脸张嘴'
 tag.d;:
   en: d;
   ja: d;
-  zh-CN: d；
+  zh-CN: d;(委屈脸)
 tag.da_capo_(e.g.o):
   en: da capo (e.g.o)
   ja: ダ・カーポ (例)
@@ -25065,7 +25065,7 @@ tag.domino_mask:
 tag.don't_say_"lazy":
   en: don't say "lazy"
   ja: 「怠け者」なんて言わないで
-  zh-CN: 别说“懒”
+  zh-CN: don't say "lazy"
 tag.donation_box:
   en: donation box
   ja: 賽銭
@@ -25485,7 +25485,7 @@ tag.doyagao:
 tag.dr_pepper:
   en: dr pepper
   ja: ドクペ
-  zh-CN: Dr Pepper
+  zh-CN: 胡椒博士（饮料）
 tag.draenei:
   en: draenei
   ja: ドラネイ
@@ -25717,7 +25717,7 @@ tag.dreadlocks:
 tag.dream_believers:
   en: dream believers
   ja: 夢を信じる人たち
-  zh-CN: 梦想的信徒
+  zh-CN: dream believers
 tag.dream_catcher:
   en: dream catcher
   ja: ドリームキャッチャー
@@ -26241,7 +26241,7 @@ tag.dwarf:
 tag.dx:
   en: dx
   ja: DX
-  zh-CN: dx
+  zh-CN: 紧闭双眼苦脸
 tag.dyed_ahoge:
   en: dyed ahoge
   ja: アホ毛を染めた
@@ -26305,7 +26305,7 @@ tag.e=mc2_(equation):
 tag.ea_(fate):
   en: ea (fate)
   ja: EA（運命）
-  zh-CN: ea（Fate）
+  zh-CN: Ea(吉尔伽美什至宝)
 tag.eagle:
   en: eagle
   ja: ワシ
@@ -26933,7 +26933,7 @@ tag.elite_ii_(arknights):
 tag.elizabeth_bathory_(brave)_(fate)_(cosplay):
   en: elizabeth bathory (brave) (fate) (cosplay)
   ja: エリザベス・バートリー (ブレイブ) (Fate) (コスプレ)
-  zh-CN: 伊丽莎白·巴托里（勇敢）（Fate）（cosplay）
+  zh-CN: 伊丽莎白·巴托里（brave·Fate）（cosplay）
 tag.elizabeth_tower:
   en: elizabeth tower
   ja: ビッグベン
@@ -26957,7 +26957,7 @@ tag.elvaan:
 tag.em-2:
   en: em-2
   ja: em-2
-  zh-CN: EM-2
+  zh-CN: EM-2步枪
 tag.em_wave_change_(mega_man):
   en: em wave change (mega man)
   ja: EMウェーブチェンジ（ロックマン）
@@ -28669,7 +28669,7 @@ tag.fatal_fury_cap:
 tag.fate_testarossa_(cosplay):
   en: fate testarossa (cosplay)
   ja: フェイト・テスタロッサ（コスプレ）
-  zh-CN: 命运·泰斯塔罗莎（cosplay）
+  zh-CN: 菲特·泰斯塔罗莎（cosplay）
 tag.father's_day:
   en: father's day
   ja: 父の日
@@ -29005,7 +29005,7 @@ tag.fender_precision_bass:
 tag.fender_stratocaster:
   en: fender stratocaster
   ja: ストラト
-  zh-CN: Fender Stratocaster
+  zh-CN: 芬达Stratocaster吉他
 tag.fender_telecaster:
   en: fender telecaster
   ja: テレキャスター
@@ -30733,7 +30733,7 @@ tag.fn_f2000:
 tag.fn_fal:
   en: fn fal
   ja: FN FAL
-  zh-CN: FN FAL
+  zh-CN: FN FAL步枪
 tag.fn_five-seven:
   en: fn five-seven
   ja: FN Five-seveN
@@ -30745,7 +30745,7 @@ tag.fn_fnc:
 tag.fn_scar:
   en: fn scar
   ja: FN SCAR
-  zh-CN: FN SCAR
+  zh-CN: FN SCAR步枪
 tag.fn_scar_16:
   en: fn scar 16
   ja: FN SCAR 16
@@ -32797,7 +32797,7 @@ tag.gae_bolg_(fate):
 tag.gae_buidhe_(fate):
   en: gae buidhe (fate)
   ja: ゲイ・ブイデ (運命)
-  zh-CN: gae buidhe（Fate）
+  zh-CN: 黄蔷薇之枪（迪尔姆德,Fate）
 tag.gae_dearg_(fate):
   en: gae dearg (fate)
   ja: ゲイ・ディアグ (運命)
@@ -33065,7 +33065,7 @@ tag.garnet_rod:
 tag.garnet_til_alexandros_xvii_(cosplay):
   en: garnet til alexandros xvii (cosplay)
   ja: ガーネット・ティル・アレクサンドロス17世（コスプレ）
-  zh-CN: 石榴石·提尔·亚历山大十七世（cosplay）
+  zh-CN: 嘉妮特·蒂·亚历山德罗斯十七世（cosplay）
 tag.garnish:
   en: garnish
   ja: 飾り付け
@@ -33249,7 +33249,7 @@ tag.gears:
 tag.geass:
   en: geass
   ja: ギアス
-  zh-CN: Geass
+  zh-CN: Geass(反叛的鲁路修)
 tag.gecko:
   en: gecko
   ja: ヤモリ
@@ -34657,7 +34657,7 @@ tag.good_breasts_day:
 tag.good_end:
   en: good end
   ja: グッドエンド
-  zh-CN: Good End
+  zh-CN: 好结局
 tag.good_fortune_symbol:
   en: good fortune symbol
   ja: 福字
@@ -36541,7 +36541,7 @@ tag.guan_hat:
 tag.guarana_antarctica:
   en: guarana antarctica
   ja: ガラナ・アンタルチカ
-  zh-CN: Guaraná Antarctica
+  zh-CN: 南极瓜拉纳汽水
 tag.guard:
   en: guard
   ja: ガード
@@ -36781,15 +36781,15 @@ tag.gyuudon:
 tag.h&k_g11:
   en: h&k g11
   ja: h&k g11
-  zh-CN: H&K G11
+  zh-CN: G11步枪
 tag.h&k_g3:
   en: h&k g3
   ja: h&k g3
-  zh-CN: H&K G3
+  zh-CN: G3步枪
 tag.h&k_g36:
   en: h&k g36
   ja: h&k g36
-  zh-CN: H&K G36
+  zh-CN: G36步枪
 tag.h&k_g36c:
   en: h&k g36 c
   ja: h&k g36 c
@@ -36809,31 +36809,31 @@ tag.h&k_mg5:
 tag.h&k_mp5:
   en: h&k mp5
   ja: H&K MP5
-  zh-CN: H&K MP5
+  zh-CN: MP5冲锋枪
 tag.h&k_mp5k:
   en: h&k mp5 k
   ja: H&K MP5K
-  zh-CN: H&K MP5K
+  zh-CN: MP5K冲锋枪
 tag.h&k_mp7:
   en: h&k mp7
   ja: H&K MP7
-  zh-CN: H&K MP7
+  zh-CN: MP7冲锋枪
 tag.h&k_p30:
   en: h&k p30
   ja: H&K P30
-  zh-CN: H&K P30
+  zh-CN: P30手枪
 tag.h&k_psg1:
   en: h&k psg1
   ja: H&K PSG1
-  zh-CN: H&K PSG1
+  zh-CN: PSG1狙击步枪
 tag.h&k_ump:
   en: h&k ump
   ja: H&K UMP
-  zh-CN: H&K UMP
+  zh-CN: HK UMP
 tag.h&k_usp:
   en: h&k usp
   ja: H&K USP
-  zh-CN: H&K USP
+  zh-CN: USP手枪
 tag.h8k:
   en: h8 k
   ja: h8k
@@ -37629,7 +37629,7 @@ tag.hand_hair:
 tag.hand_in_another's_clothes:
   en: hand in another's clothes
   ja: 他人の服を手に入れる
-  zh-CN: hand in another's clothes
+  zh-CN: 手伸入他人衣物内
 tag.hand_in_another's_hair:
   en: hand in another's hair
   ja: 他人の髪に手を入れる
@@ -37745,7 +37745,7 @@ tag.hand_on_another's_foot:
 tag.hand_on_another's_forehead:
   en: hand on another's forehead
   ja: 他人の額に手を当てる
-  zh-CN: hand on another's forehead
+  zh-CN: 手放在他人额头上
 tag.hand_on_another's_hand:
   en: hand on another's hand
   ja: 他人の手に手を添える
@@ -42521,11 +42521,11 @@ tag.hollyhock:
 tag.holoadvent:
   en: holoadvent
   ja: ホロードベント
-  zh-CN: HoloAdvent
+  zh-CN: holoAdvent(降临组)
 tag.holocouncil:
   en: holocouncil
   ja: ホロカウンシル
-  zh-CN: HoloCouncil
+  zh-CN: holoCouncil(理事组)
 tag.holofive:
   en: holofive
   ja: ホロファイブ
@@ -42577,7 +42577,7 @@ tag.hololive_fantasy:
 tag.hololive_gamers:
   en: hololive gamers
   ja: 白上ブートキャンプ
-  zh-CN: Hololive Gamers
+  zh-CN: hololive Gamers(游戏部)
 tag.hololive_idol_uniform_(bright):
   en: hololive idol uniform (bright)
   ja: ひろがるホロライブ
@@ -42601,7 +42601,7 @@ tag.hololive_summer_2023_swimsuit:
 tag.holomyth:
   en: holomyth
   ja: ホロミス
-  zh-CN: HoloMyth
+  zh-CN: Hololive神话组
 tag.holopromise:
   en: holopromise
   ja: ホロプロミス
@@ -43933,7 +43933,7 @@ tag.illumination_stars_(idolmaster):
 tag.illyasviel_von_einzbern_(beast_style)_(cosplay):
   en: illyasviel von einzbern (beast style) (cosplay)
   ja: イリヤスフィール・フォン・アインツベルン（獣風）（コスプレ）
-  zh-CN: 伊利亚斯菲尔·冯·爱兹贝伦（野兽风格）（cosplay）
+  zh-CN: 伊莉雅斯菲尔·冯·爱因兹贝伦（beast style）（cosplay）
 tag.ilya_kuvshinov_(style):
   en: ilya kuvshinov (style)
   ja: イリヤ・クブシノフ (スタイル)
@@ -44785,7 +44785,7 @@ tag.inkstone:
 tag.inktober:
   en: inktober
   ja: いんくとーばー
-  zh-CN: Inktober
+  zh-CN: 十月墨水画挑战
 tag.inkwell:
   en: inkwell
   ja: インク壺
@@ -45121,7 +45121,7 @@ tag.ipod_ad:
 tag.ipod_nano:
   en: ipod nano
   ja: iPod nano
-  zh-CN: iPod Nano
+  zh-CN: iPod nano
 tag.ips_cells:
   en: ips cells
   ja: ips細胞
@@ -45361,7 +45361,7 @@ tag.jack_(playing_card):
 tag.jack_daniel's:
   en: jack daniel's
   ja: ジャックダニエル
-  zh-CN: Jack Daniel's
+  zh-CN: 杰克丹尼（威士忌）
 tag.jack_of_hearts:
   en: jack of hearts
   ja: ハートのジャック
@@ -45893,7 +45893,7 @@ tag.jojo_pose:
 tag.joker_(dc)_(cosplay):
   en: joker (dc) (cosplay)
   ja: ジョーカー (DC) (コスプレ)
-  zh-CN: 小丑（DC）（cosplay）
+  zh-CN: 小丑（cosplay）
 tag.joker_(playing_card):
   en: joker (playing card)
   ja: ジョーカー（トランプ）
@@ -46649,7 +46649,7 @@ tag.keytar:
 tag.kfp:
   en: kfp
   ja: KFP
-  zh-CN: KFP
+  zh-CN: KFP(炸凤凰,hololive梗)
 tag.kibina_high_school_uniform:
   en: kibina high school uniform
   ja: キビナ高校の制服
@@ -46717,7 +46717,7 @@ tag.kimi_to_boku_no_mirai:
 tag.kimi_to_semi_blue_(idolmaster):
   en: kimi to semi blue (idolmaster)
   ja: キミとセミブルー
-  zh-CN: 君与半蓝（偶像大师）
+  zh-CN: kimi to semi blue (idolmaster)
 tag.kimisaki_school_uniform:
   en: kimisaki school uniform
   ja: 君咲制服
@@ -47669,7 +47669,7 @@ tag.l'ecole_des_cinq_lumieres_school_uniform:
 tag.l85:
   en: l85
   ja: L85
-  zh-CN: l85
+  zh-CN: L85步枪
 tag.l_hand:
   en: l hand
   ja: 私は手します
@@ -48493,7 +48493,7 @@ tag.lcb_uniform_(project_moon):
 tag.lcl:
   en: lcl
   ja: LCL
-  zh-CN: LCL
+  zh-CN: LCL(EVA)
 tag.le_mans_prototype:
   en: le mans prototype
   ja: ルマンプロトタイプ
@@ -49793,7 +49793,7 @@ tag.list:
 tag.listen!!:
   en: listen!!
   ja: 聞いてください!!
-  zh-CN: 听着！！
+  zh-CN: listen!!
 tag.listening:
   en: listening
   ja: 聞いている
@@ -50829,7 +50829,7 @@ tag.lyrics:
 tag.m._bison_(cosplay):
   en: m. bison (cosplay)
   ja: メートル。バイソン（コスプレ）
-  zh-CN: M·拜森（cosplay）
+  zh-CN: 维加（cosplay）
 tag.m134_minigun:
   en: m134 minigun
   ja: M134 ミニガン
@@ -50837,7 +50837,7 @@ tag.m134_minigun:
 tag.m14:
   en: m14
   ja: M14
-  zh-CN: M14
+  zh-CN: M14步枪
 tag.m16:
   en: m16
   ja: M16
@@ -50845,7 +50845,7 @@ tag.m16:
 tag.m16a1:
   en: m16 a1
   ja: M16A1
-  zh-CN: M16A1
+  zh-CN: M16A1步枪
 tag.m16a2:
   en: m16 a2
   ja: M16A2
@@ -50861,7 +50861,7 @@ tag.m1903_springfield:
 tag.m1911:
   en: m1911
   ja: コルトガバメント
-  zh-CN: m1911
+  zh-CN: M1911
 tag.m1918_bar:
   en: m1918 bar
   ja: M1918 BAR
@@ -50925,7 +50925,7 @@ tag.maboroshi_no_ginzuishou:
 tag.mac-10/11:
   en: mac-10/11
   ja: マック-10/11
-  zh-CN: mac-10/11
+  zh-CN: MAC-10/11冲锋枪
 tag.macaron:
   en: macaron
   ja: マカロン
@@ -52341,11 +52341,11 @@ tag.menacing:
 tag.menacing_(jojo):
   en: menacing (jojo)
   ja: ゴゴゴゴ
-  zh-CN: ゴゴゴゴ（JOJO）
+  zh-CN: 危险感（JOJO梗）
 tag.meni_shuki_rush-sshu!:
   en: meni shuki rush-sshu!
   ja: メニシュキラッシュっしゅ！
-  zh-CN: meni shuki rush-sshu！
+  zh-CN: 目にしゅきラッシュっしゅ!
 tag.menpoo:
   en: menpoo
   ja: 面頬
@@ -53613,7 +53613,7 @@ tag.mofumofuen_(idolmaster):
 tag.mogyutto_"love"_de_sekkin_chuu!:
   en: mogyutto "love" de sekkin chuu!
   ja: もぎゅっと「love」で性感中！
-  zh-CN: mogyutto“爱”de sekkin chuu！
+  zh-CN: mogyutto "love" de sekkin chuu!
 tag.mohawk:
   en: mohawk
   ja: モヒカン
@@ -54353,7 +54353,7 @@ tag.mp3_player:
 tag.mp40:
   en: mp40
   ja: MP40
-  zh-CN: mp40
+  zh-CN: MP40冲锋枪
 tag.mtu_virus:
   en: mtu virus
   ja: mtuウイルス
@@ -55221,7 +55221,7 @@ tag.myers-briggs_type_indicator:
 tag.mygo!!!!!_(bang_dream!):
   en: mygo!!!!! (bang dream!)
   ja: マイゴ！！！！ (バンドリーム!)
-  zh-CN: MyGO!!!!!（BanG Dream!）
+  zh-CN: MyGO!!!!!
 tag.myon_(phrase):
   en: myon (phrase)
   ja: みょん
@@ -55689,7 +55689,7 @@ tag.native_american_headdress:
 tag.natsuiro_egao_de_1_2_jump!:
   en: natsuiro egao de 1 2 jump!
   ja: 夏色えがおで1
-  zh-CN: Natsuiro Egao de 1 2 跳跃！
+  zh-CN: natsuiro egao de 1 2 jump!
 tag.natsuki_subaru_(cosplay):
   en: natsuki subaru (cosplay)
   ja: ナツキ・スバル (コスプレ)
@@ -55949,7 +55949,7 @@ tag.needle_sword:
 tag.neet:
   en: neet
   ja: ニート
-  zh-CN: NEET
+  zh-CN: 尼特族
 tag.negai_wa_itsuka_asa_wo_koete_(project_sekai):
   en: negai wa itsuka asa wo koete (project sekai)
   ja: 願いは、いつか朝をこえて
@@ -56297,7 +56297,7 @@ tag.nijisanji_idol_uniform:
 tag.nike_(company):
   en: nike (company)
   ja: ナイキ
-  zh-CN: Nike
+  zh-CN: 耐克
 tag.nikke's_shooting_pose_(meme):
   en: nikke's shooting pose (meme)
   ja: ニッケの射撃ポーズ (ミーム)
@@ -56825,7 +56825,7 @@ tag.no_testicles:
 tag.no_thank_you!_(k-on!):
   en: no thank you! (k-on!)
   ja: いいえ、ありがとう！ (けいおん!)
-  zh-CN: 不，谢谢！ （咳咳！）
+  zh-CN: no thank you! (k-on!)
 tag.no_toes:
   en: no toes
   ja: つま先がない
@@ -57077,7 +57077,7 @@ tag.nozomi_(blue_archive)_(cosplay):
 tag.nt-d:
   en: nt-d
   ja: NT-D
-  zh-CN: nt-d
+  zh-CN: NT-D(独角兽高达强化系统)
 tag.ntw-20:
   en: ntw-20
   ja: ntw-20
@@ -57293,7 +57293,7 @@ tag.o-ring_top:
 tag.o3o:
   en: o3 o
   ja: 3の口
-  zh-CN: o3o
+  zh-CN: 撅嘴
 tag.o_o:
   en: o o
   ja: 〇目
@@ -57597,7 +57597,7 @@ tag.office_chair:
 tag.office_lady:
   en: office lady
   ja: オフィスレディ
-  zh-CN: OL
+  zh-CN: 职业女性(OL)
 tag.official_alternate_color:
   en: official alternate color
   ja: 公式代替色
@@ -64797,7 +64797,7 @@ tag.pp_tenshi_t-shirt:
 tag.ppsh-41:
   en: ppsh-41
   ja: ペーペーシャ
-  zh-CN: PPSH-41
+  zh-CN: PPSh-41冲锋枪
 tag.praetor_suit:
   en: praetor suit
   ja: 法務官のスーツ
@@ -65333,7 +65333,7 @@ tag.prism_tower:
 tag.prisma_illya_(cosplay):
   en: prisma illya (cosplay)
   ja: プリズマ☆イリヤ（コスプレ）
-  zh-CN: Prisma Illya（cosplay）
+  zh-CN: 伊莉雅（cosplay）
 tag.prison:
   en: prison
   ja: 牢屋
@@ -68565,7 +68565,7 @@ tag.reins:
 tag.reisen_udongein_inaba_(cosplay):
   en: reisen udongein inaba (cosplay)
   ja: 鈴仙・優曇華院・イナバ（コスプレ）
-  zh-CN: Reisen Udongein Inaba (cosplay)
+  zh-CN: 铃仙·优昙华院·因幡（cosplay）
 tag.reiwa:
   en: reiwa
   ja: 令和
@@ -69001,7 +69001,7 @@ tag.rhodes_island_uniform:
 tag.rhongomyniad_(fate):
   en: rhongomyniad (fate)
   ja: ロンの槍
-  zh-CN: Rhongomyniad（Fate）
+  zh-CN: 隆哥米尼亚德（誓约胜利之枪,Fate）
 tag.rhythmic_gymnastics:
   en: rhythmic gymnastics
   ja: 新体操
@@ -70173,7 +70173,7 @@ tag.s&w_m&p:
 tag.s.e.e.s:
   en: s.e.e.s
   ja: 特別課外活動部
-  zh-CN: S.E.E.S.
+  zh-CN: S.E.E.S
 tag.s.m.s.:
   en: s.m.s.
   ja: すみません
@@ -70193,7 +70193,7 @@ tag.sabaton:
 tag.saber_(fate)_(cosplay):
   en: saber (fate) (cosplay)
   ja: セイバー(Fate)(コスプレ)
-  zh-CN: Saber（Fate）（cosplay）
+  zh-CN: Saber（cosplay）
 tag.saber_(weapon):
   en: saber (weapon)
   ja: サーベル
@@ -74057,11 +74057,11 @@ tag.sig_556:
 tag.sig_mcx:
   en: sig mcx
   ja: シグマックス
-  zh-CN: sig mcx
+  zh-CN: SIG MCX步枪
 tag.sig_mpx:
   en: sig mpx
   ja: SIG MPX
-  zh-CN: SIG MPX
+  zh-CN: Sig MPX
 tag.sig_p220/p226:
   en: sig p220/p226
   ja: 署名 p220/p226
@@ -76089,7 +76089,7 @@ tag.snow_globe:
 tag.snow_halation:
   en: snow halation
   ja: スノーハレーション
-  zh-CN: 雪光晕
+  zh-CN: snow halation
 tag.snow_leopard:
   en: snow leopard
   ja: 雪豹
@@ -76489,7 +76489,7 @@ tag.sorcerer's_sutra_scroll:
 tag.sore_wa_bokutachi_no_kiseki:
   en: sore wa bokutachi no kiseki
   ja: それは僕たちの奇跡
-  zh-CN: 痛楚之轨迹
+  zh-CN: sore wa bokutachi no kiseki
 tag.sos_brigade:
   en: sos brigade
   ja: SOS団
@@ -76497,7 +76497,7 @@ tag.sos_brigade:
 tag.sothis_(fire_emblem)_(cosplay):
   en: sothis (fire emblem) (cosplay)
   ja: ソティス (ファイアーエムブレム) (コスプレ)
-  zh-CN: 索蒂斯（火焰纹章）（cosplay）
+  zh-CN: 索提斯（cosplay）
 tag.sotoba:
   en: sotoba
   ja: 卒塔婆
@@ -81117,7 +81117,7 @@ tag.syrup:
 tag.t-34:
   en: t-34
   ja: T-34
-  zh-CN: t-34
+  zh-CN: T-34坦克
 tag.t-34-85:
   en: t-34-85
   ja: T-34-85
@@ -81137,7 +81137,7 @@ tag.t-shirt:
 tag.t_t:
   en: t t
   ja: T_T
-  zh-CN: tt
+  zh-CN: T T(哭脸表情)
 tag.ta_girls_school_uniform:
   en: ta girls school uniform
   ja: 女子校の制服
@@ -81449,7 +81449,7 @@ tag.takanashi_kiara_(cosplay):
 tag.takaramonozu:
   en: takaramonozu
   ja: タカラモノズ
-  zh-CN: 宝物图
+  zh-CN: takaramonozu
 tag.takarazaki_school_uniform:
   en: takarazaki school uniform
   ja: 宝崎学生服
@@ -82297,7 +82297,7 @@ tag.tendril:
 tag.tenga:
   en: tenga
   ja: テンガ
-  zh-CN: 天加
+  zh-CN: tenga
 tag.tengu:
   en: tengu
   ja: 天狗
@@ -82597,7 +82597,7 @@ tag.thanksgiving:
 tag.tharja_(fire_emblem)_(cosplay):
   en: tharja (fire emblem) (cosplay)
   ja: サーリャ (ファイアーエムブレム) (コスプレ)
-  zh-CN: 塔尔加（火焰纹章）（cosplay）
+  zh-CN: 撒拉（cosplay）
 tag.thatched_roof:
   en: thatched roof
   ja: 茅葺き屋根
@@ -83549,7 +83549,7 @@ tag.title_screen:
 tag.tnt:
   en: tnt
   ja: トリニトロトルエン
-  zh-CN: tnt
+  zh-CN: TNT炸药
 tag.tnt_block_(minecraft):
   en: tnt block (minecraft)
   ja: TNTブロック（マインクラフト）
@@ -86169,11 +86169,11 @@ tag.u.a._school_uniform:
 tag.u.n._spacy:
   en: u.n. spacy
   ja: 地球統合軍
-  zh-CN: U.N. SPACY
+  zh-CN: U.N.斯培西
 tag.u_u:
   en: u u
   ja: u_u
-  zh-CN: u_u
+  zh-CN: U形闭眼
 tag.uchiha_symbol:
   en: uchiha symbol
   ja: うちはシンボル
@@ -87457,7 +87457,7 @@ tag.uzumaki_symbol:
 tag.v:
   en: v
   ja: ピース
-  zh-CN: v
+  zh-CN: V字手势
 tag.v-bangs:
   en: v-bangs
   ja: V字前髪
@@ -87485,7 +87485,7 @@ tag.v-taper:
 tag.v4x:
   en: v4 x
   ja: v4x
-  zh-CN: v4x
+  zh-CN: VOCALOID4X
 tag.v_arms:
   en: v arms
   ja: Vアーム
@@ -88289,7 +88289,7 @@ tag.vivid_bad_squad_(project_sekai):
 tag.vocaloid_append:
   en: vocaloid append
   ja: アペンド
-  zh-CN: VOCALOID Append
+  zh-CN: Append服装
 tag.vocaloid_boxart_pose:
   en: vocaloid boxart pose
   ja: ボーカロイドのボックスアートのポーズ
@@ -88421,7 +88421,7 @@ tag.vulture:
 tag.w:
   en: w
   ja: w
-  zh-CN: w
+  zh-CN: W手势
 tag.w_arms:
   en: w arms
   ja: 両腕
@@ -89249,7 +89249,7 @@ tag.weird_route_(deltarune):
 tag.weirdcore:
   en: weirdcore
   ja: 奇妙なコア
-  zh-CN: Weirdcore
+  zh-CN: 诡异核
 tag.welding_mask:
   en: welding mask
   ja: 溶接マスク
@@ -90365,7 +90365,7 @@ tag.wiggling_toes:
 tag.wii:
   en: wii
   ja: Wii
-  zh-CN: Wii
+  zh-CN: Wii(任天堂主机)
 tag.wii_remote:
   en: wii remote
   ja: wiiリモコン
@@ -91285,7 +91285,7 @@ tag.x-shaped_pupils:
 tag.x3:
   en: x3
   ja: ×3
-  zh-CN: x3
+  zh-CN: 眯眼猫嘴笑
 tag.x_(symbol):
   en: x (symbol)
   ja: ×（記号）
@@ -91325,7 +91325,7 @@ tag.x_navel:
 tag.x_x:
   en: x x
   ja: ××
-  zh-CN: x x
+  zh-CN: X形眼
 tag.xbox_360:
   en: xbox 360
   ja: Xbox 360
@@ -91337,7 +91337,7 @@ tag.xbox_controller:
 tag.xd:
   en: xd
   ja: xd
-  zh-CN: xd
+  zh-CN: 眯眼咧嘴笑
 tag.xiangyun:
   en: xiangyun
   ja: 祥雲
@@ -92481,7 +92481,7 @@ tag.yurigaoka_girls_academy_school_uniform:
 tag.yuru-chara:
   en: yuru-chara
   ja: ゆるキャラ
-  zh-CN: 尤鲁恰拉
+  zh-CN: yuru-chara
 tag.yusuf_dikec_(meme):
   en: yusuf dikec (meme)
   ja: ユスフ・ディケツ (ミーム)
@@ -92813,7 +92813,7 @@ tag.zzz:
 tag.|_|:
   en: '|_|'
   ja: '|_|'
-  zh-CN: '|_|'
+  zh-CN: '竖线眼'
 category.apparel.detail.trim_frill:
   en: trim frill
   ja: トリムフリル
@@ -93125,7 +93125,7 @@ tag.cross:
 tag....:
   en: ellipsis
   ja: 三点リーダー
-  zh-CN: 省略号
+  zh-CN: 省略号（无言以对）
 tag.web_address:
   en: web address
   ja: ウェブアドレス
